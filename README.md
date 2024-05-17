@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="img/kart.png" width = "200" />
+  <img src="img/kart.png" width = "350" />
 </p>
 <h1 align="center">Game Kart</h1>
 <h3 align="center"> Projeto de Desenvolvimento de uma Interface Portátil para Teleoperação de Robô em Ambiente de 
