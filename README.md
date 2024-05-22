@@ -30,7 +30,7 @@ Modelo Altera Cyclone IV **EP4CE22F17C6N** FPGA;
 <h3>Pinagem</h3>
 
 <p align="center">
-  <img src="img/GPIO.png" width = "400" />
+  <img src="img/GPIO.png" width = "600" />
 </p>
 <p align="center"><strong>Elementos Utilizados na Pinagem do FPGA</strong></p>
 
