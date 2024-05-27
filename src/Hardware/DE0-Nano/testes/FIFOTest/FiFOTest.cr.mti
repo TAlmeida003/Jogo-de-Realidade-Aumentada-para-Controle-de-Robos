@@ -1,0 +1,15 @@
+/home/gabriel/Documents/ConsoleFPGA/modulos/written_pulse/written_pulse.v {1 {vlog -work work -stats=none /home/gabriel/Documents/ConsoleFPGA/modulos/written_pulse/written_pulse.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module written_pulse
+
+Top level modules:
+	written_pulse
+
+} {} {}} /home/gabriel/Documents/ConsoleFPGA/testes/FIFOTest/FIFO_Test.v {1 {vlog -work work -stats=none /home/gabriel/Documents/ConsoleFPGA/testes/FIFOTest/FIFO_Test.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module FIFO_Test
+
+Top level modules:
+	FIFO_Test
+
+} {} {}}

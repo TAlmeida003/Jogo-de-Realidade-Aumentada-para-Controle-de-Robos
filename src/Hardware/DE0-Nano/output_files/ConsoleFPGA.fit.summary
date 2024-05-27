@@ -1,0 +1,16 @@
+Fitter Status : Successful - Thu Jan  5 17:11:09 2023
+Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+Revision Name : ConsoleFPGA
+Top-level Entity Name : ArquiteturaCollenda
+Family : Cyclone IV E
+Device : EP4CE22F17C6
+Timing Models : Final
+Total logic elements : 10,375 / 22,320 ( 46 % )
+    Total combinational functions : 8,707 / 22,320 ( 39 % )
+    Dedicated logic registers : 5,435 / 22,320 ( 24 % )
+Total registers : 5435
+Total pins : 29 / 154 ( 19 % )
+Total virtual pins : 0
+Total memory bits : 416,071 / 608,256 ( 68 % )
+Embedded Multiplier 9-bit elements : 70 / 132 ( 53 % )
+Total PLLs : 1 / 4 ( 25 % )

@@ -1,0 +1,36 @@
+/home/gabriel/Documents/ConsoleFPGA/modulos/collision/refresh_flags.v {1 {vlog -work work -stats=none /home/gabriel/Documents/ConsoleFPGA/modulos/collision/refresh_flags.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module refresh_flags
+
+Top level modules:
+	refresh_flags
+
+} {} {}} /home/gabriel/Documents/ConsoleFPGA/modulos/collision/mux_32x1.v {1 {vlog -work work -stats=none /home/gabriel/Documents/ConsoleFPGA/modulos/collision/mux_32x1.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module mux_32x1
+
+Top level modules:
+	mux_32x1
+
+} {} {}} /home/gabriel/Documents/ConsoleFPGA/modulos/collision/collision.v {1 {vlog -work work -stats=none /home/gabriel/Documents/ConsoleFPGA/modulos/collision/collision.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module collision
+
+Top level modules:
+	collision
+
+} {} {}} /home/gabriel/Documents/ConsoleFPGA/testes/Collision/CollisionTest.v {1 {vlog -work work -stats=none /home/gabriel/Documents/ConsoleFPGA/testes/Collision/CollisionTest.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module CollisionTest
+
+Top level modules:
+	CollisionTest
+
+} {} {}} /home/gabriel/Documents/ConsoleFPGA/modulos/collision/check_collision.v {1 {vlog -work work -stats=none /home/gabriel/Documents/ConsoleFPGA/modulos/collision/check_collision.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module check_collision
+
+Top level modules:
+	check_collision
+
+} {} {}}

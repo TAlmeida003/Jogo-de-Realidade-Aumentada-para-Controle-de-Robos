@@ -1,0 +1,3661 @@
+
+CollendaProgram.elf:     file format elf32-littlenios2
+CollendaProgram.elf
+architecture: nios2:r1, flags 0x00000112:
+EXEC_P, HAS_SYMS, D_PAGED
+start address 0x00008020
+
+Program Header:
+    LOAD off    0x00001000 vaddr 0x00008000 paddr 0x00008000 align 2**12
+         filesz 0x00000020 memsz 0x00000020 flags r-x
+    LOAD off    0x00001020 vaddr 0x00008020 paddr 0x00008020 align 2**12
+         filesz 0x00002804 memsz 0x00002804 flags r-x
+    LOAD off    0x00003824 vaddr 0x0000a824 paddr 0x0000a920 align 2**12
+         filesz 0x000000fc memsz 0x000000fc flags rw-
+    LOAD off    0x00003a1c vaddr 0x0000aa1c paddr 0x0000aa1c align 2**12
+         filesz 0x00000000 memsz 0x0000003c flags rw-
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .entry        00000020  00008000  00008000  00001000  2**5
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .exceptions   00000000  00008020  00008020  00003920  2**0
+                  CONTENTS
+  2 .text         00002704  00008020  00008020  00001020  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  3 .rodata       00000100  0000a724  0000a724  00003724  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  4 .rwdata       000000fc  0000a824  0000a920  00003824  2**2
+                  CONTENTS, ALLOC, LOAD, DATA, SMALL_DATA
+  5 .bss          0000003c  0000aa1c  0000aa1c  00003a1c  2**2
+                  ALLOC, SMALL_DATA
+  6 .onchip_memory2_0 00000000  0000aa58  0000aa58  00003920  2**0
+                  CONTENTS
+  7 .comment      0000002c  00000000  00000000  00003920  2**0
+                  CONTENTS, READONLY
+  8 .debug_aranges 000002c0  00000000  00000000  00003950  2**3
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_info   0000b175  00000000  00000000  00003c10  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_abbrev 00002835  00000000  00000000  0000ed85  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_line   00003d66  00000000  00000000  000115ba  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 12 .debug_frame  000004d4  00000000  00000000  00015320  2**2
+                  CONTENTS, READONLY, DEBUGGING
+ 13 .debug_str    000015ce  00000000  00000000  000157f4  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 14 .debug_loc    00003a04  00000000  00000000  00016dc2  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 15 .debug_alt_sim_info 00000010  00000000  00000000  0001a7c8  2**2
+                  CONTENTS, READONLY, DEBUGGING
+ 16 .debug_ranges 00000598  00000000  00000000  0001a7d8  2**3
+                  CONTENTS, READONLY, DEBUGGING
+ 17 .thread_model 00000003  00000000  00000000  0001c072  2**0
+                  CONTENTS, READONLY
+ 18 .cpu          0000000c  00000000  00000000  0001c075  2**0
+                  CONTENTS, READONLY
+ 19 .qsys         00000001  00000000  00000000  0001c081  2**0
+                  CONTENTS, READONLY
+ 20 .simulation_enabled 00000001  00000000  00000000  0001c082  2**0
+                  CONTENTS, READONLY
+ 21 .sysid_hash   00000004  00000000  00000000  0001c083  2**0
+                  CONTENTS, READONLY
+ 22 .sysid_base   00000004  00000000  00000000  0001c087  2**0
+                  CONTENTS, READONLY
+ 23 .sysid_time   00000004  00000000  00000000  0001c08b  2**0
+                  CONTENTS, READONLY
+ 24 .stderr_dev   0000000b  00000000  00000000  0001c08f  2**0
+                  CONTENTS, READONLY
+ 25 .stdin_dev    0000000b  00000000  00000000  0001c09a  2**0
+                  CONTENTS, READONLY
+ 26 .stdout_dev   0000000b  00000000  00000000  0001c0a5  2**0
+                  CONTENTS, READONLY
+ 27 .sopc_system_name 0000000b  00000000  00000000  0001c0b0  2**0
+                  CONTENTS, READONLY
+ 28 .quartus_project_dir 00000023  00000000  00000000  0001c0bb  2**0
+                  CONTENTS, READONLY
+ 29 .jdi          0000528f  00000000  00000000  0001c0de  2**0
+                  CONTENTS, READONLY
+ 30 .sopcinfo     00093507  00000000  00000000  0002136d  2**0
+                  CONTENTS, READONLY
+SYMBOL TABLE:
+00008000 l    d  .entry	00000000 .entry
+00008020 l    d  .exceptions	00000000 .exceptions
+00008020 l    d  .text	00000000 .text
+0000a724 l    d  .rodata	00000000 .rodata
+0000a824 l    d  .rwdata	00000000 .rwdata
+0000aa1c l    d  .bss	00000000 .bss
+0000aa58 l    d  .onchip_memory2_0	00000000 .onchip_memory2_0
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .debug_aranges	00000000 .debug_aranges
+00000000 l    d  .debug_info	00000000 .debug_info
+00000000 l    d  .debug_abbrev	00000000 .debug_abbrev
+00000000 l    d  .debug_line	00000000 .debug_line
+00000000 l    d  .debug_frame	00000000 .debug_frame
+00000000 l    d  .debug_str	00000000 .debug_str
+00000000 l    d  .debug_loc	00000000 .debug_loc
+00000000 l    d  .debug_alt_sim_info	00000000 .debug_alt_sim_info
+00000000 l    d  .debug_ranges	00000000 .debug_ranges
+00000000 l    df *ABS*	00000000 ../CollendaProgram_bsp//obj/HAL/src/crt0.o
+00008058 l       .text	00000000 alt_after_alt_main
+00000000 l    df *ABS*	00000000 graphic_processor.c
+0000805c l     F .text	00000038 sendInstruction
+00000000 l    df *ABS*	00000000 new_asteroids_game.c
+00000000 l    df *ABS*	00000000 lib2-divmod.c
+00000000 l    df *ABS*	00000000 rand.c
+0000aa24 l     O .bss	00000008 _randbits
+00000000 l    df *ABS*	00000000 time.c
+00000000 l    df *ABS*	00000000 gettimeofdayr.c
+00000000 l    df *ABS*	00000000 impure.c
+0000a824 l     O .rwdata	000000e4 impure_data
+00000000 l    df *ABS*	00000000 int_errno.c
+00000000 l    df *ABS*	00000000 libgcc2.c
+00000000 l    df *ABS*	00000000 lib2-mul.c
+00000000 l    df *ABS*	00000000 alt_gettod.c
+00000000 l    df *ABS*	00000000 alt_load.c
+00000000 l    df *ABS*	00000000 alt_main.c
+00000000 l    df *ABS*	00000000 alt_tick.c
+00000000 l    df *ABS*	00000000 alt_sys_init.c
+00000000 l    df *ABS*	00000000 alt_dcache_flush_all.c
+00000000 l    df *ABS*	00000000 alt_icache_flush_all.c
+00000000 l    df *ABS*	00000000 altera_nios2_gen2_irq.c
+00000000 l    df *ABS*	00000000 libgcc2.c
+00000000 l    df *ABS*	00000000 libgcc2.c
+00000000 l    df *ABS*	00000000 libgcc2.c
+00009a04 g     F .text	0000002c alt_main
+0000a920 g       *ABS*	00000000 __flash_rwdata_start
+0000965c g     F .text	0000004c _gettimeofday_r
+00008304 g     F .text	00000050 collision
+0000aa20 g     O .bss	00000004 points
+00009b44 g     F .text	00000008 altera_nios2_gen2_irq_init
+00008000 g     F .entry	0000000c __reset
+00008020 g       *ABS*	00000000 __flash_exceptions_start
+0000aa2c g     O .bss	00000004 errno
+0000aa3c g     O .bss	00000004 alt_argv
+00012908 g       *ABS*	00000000 _gp
+00008354 g     F .text	00000078 initialize_sprite_random
+00008000 g       *ABS*	00000000 __alt_mem_onchip_memory2_0
+000094d0 g     F .text	00000064 .hidden __udivsi3
+0000aa30 g     O .bss	00000008 alt_timezone
+0000aa1c g     O .bss	00000004 state_placar
+0000a160 g     F .text	000005c4 .hidden __umoddi3
+0000a90c g     O .rwdata	00000004 _global_impure_ptr
+0000aa58 g       *ABS*	00000000 __bss_end
+00009a60 g     F .text	000000b8 alt_tick
+00009a30 g     F .text	00000030 alt_alarm_stop
+000080d0 g     F .text	00000030 set_background_block
+00009b3c g     F .text	00000004 alt_dcache_flush_all
+0000a920 g       *ABS*	00000000 __ram_rwdata_end
+0000a824 g       *ABS*	00000000 __ram_rodata_end
+0000a91c g     O .rwdata	00000004 jtag_uart_0
+00009534 g     F .text	0000005c .hidden __umodsi3
+0000aa58 g       *ABS*	00000000 end
+0000a908 g     O .rwdata	00000004 number_of_asteroids
+0000f530 g       *ABS*	00000000 __alt_stack_pointer
+00008020 g     F .text	0000003c _start
+0000aa48 g     O .bss	00000004 _alt_tick_rate
+000095a4 g     F .text	00000060 rand
+0000aa44 g     O .bss	00000004 _alt_nticks
+00009b38 g     F .text	00000004 alt_sys_init
+000097ac g     F .text	00000028 .hidden __mulsi3
+0000a824 g       *ABS*	00000000 __ram_rwdata_start
+0000a724 g       *ABS*	00000000 __ram_rodata_start
+0000aa58 g       *ABS*	00000000 __alt_stack_base
+000097d4 g     F .text	0000017c gettimeofday
+0000aa1c g       *ABS*	00000000 __bss_start
+000086ec g     F .text	00000cf0 main
+0000aa38 g     O .bss	00000004 alt_envp
+00008574 g     F .text	00000178 atirar_sp
+00009590 g     F .text	00000014 srand
+00009604 g     F .text	00000058 time
+000093dc g     F .text	00000080 .hidden __divsi3
+0000a724 g       *ABS*	00000000 __flash_rodata_start
+00008094 g     F .text	00000024 set_sprite
+00009b18 g     F .text	00000020 alt_irq_init
+0000a724 g     O .rodata	00000100 .hidden __clz_tab
+0000846c g     F .text	00000108 collision_between_tiro_and_ast
+0000a910 g     O .rwdata	00000004 _impure_ptr
+0000aa40 g     O .bss	00000004 alt_argc
+0000aa4c g     O .bss	0000000c alt_resettime
+000080b8 g     F .text	00000018 set_background_color
+00008020 g       *ABS*	00000000 __ram_exceptions_start
+0000a920 g       *ABS*	00000000 _edata
+0000aa58 g       *ABS*	00000000 _end
+00008020 g       *ABS*	00000000 __ram_exceptions_end
+0000945c g     F .text	00000074 .hidden __modsi3
+0000f530 g       *ABS*	00000000 __alt_data_end
+00008100 g     F .text	00000204 increase_coordinate
+00009b4c g     F .text	00000614 .hidden __moddi3
+0000800c g       .entry	00000000 _exit
+000096a8 g     F .text	00000104 .hidden __muldi3
+00009b40 g     F .text	00000004 alt_icache_flush_all
+0000a914 g     O .rwdata	00000008 alt_alarm_list
+000083cc g     F .text	000000a0 increase_points
+00009950 g     F .text	000000b4 alt_load
+
+
+
+Disassembly of section .entry:
+
+00008000 <__reset>:
+ * Jump to the _start entry point in the .text section if reset code
+ * is allowed or if optimizing for RTL simulation.
+ */
+#if defined(ALT_ALLOW_CODE_AT_RESET) || defined(ALT_SIM_OPTIMIZE)
+    /* Jump to the _start entry point in the .text section. */
+    movhi r1, %hi(_start)
+    8000:	00400034 	movhi	at,0
+    ori r1, r1, %lo(_start)
+    8004:	08600814 	ori	at,at,32800
+    jmp r1
+    8008:	0800683a 	jmp	at
+
+0000800c <_exit>:
+	...
+
+Disassembly of section .text:
+
+00008020 <_start>:
+
+    /*
+     * Now that the caches are initialized, set up the stack pointer and global pointer.
+     * The values provided by the linker are assumed to be correctly aligned.
+     */
+    movhi sp, %hi(__alt_stack_pointer)
+    8020:	06c00034 	movhi	sp,0
+    ori sp, sp, %lo(__alt_stack_pointer)
+    8024:	defd4c14 	ori	sp,sp,62768
+    movhi gp, %hi(_gp)
+    8028:	06800074 	movhi	gp,1
+    ori gp, gp, %lo(_gp)
+    802c:	d68a4214 	ori	gp,gp,10504
+ */
+#ifndef ALT_SIM_OPTIMIZE
+    /* Log that the BSS is about to be cleared. */
+    ALT_LOG_PUTS(alt_log_msg_bss)
+
+    movhi r2, %hi(__bss_start)
+    8030:	00800034 	movhi	r2,0
+    ori r2, r2, %lo(__bss_start)
+    8034:	10aa8714 	ori	r2,r2,43548
+
+    movhi r3, %hi(__bss_end)
+    8038:	00c00034 	movhi	r3,0
+    ori r3, r3, %lo(__bss_end)
+    803c:	18ea9614 	ori	r3,r3,43608
+
+    beq r2, r3, 1f
+    8040:	10c00326 	beq	r2,r3,8050 <_start+0x30>
+
+0:
+    stw zero, (r2)
+    8044:	10000015 	stw	zero,0(r2)
+    addi r2, r2, 4
+    8048:	10800104 	addi	r2,r2,4
+    bltu r2, r3, 0b
+    804c:	10fffd36 	bltu	r2,r3,8044 <_start+0x24>
+     * section aren't defined until alt_load() has been called).
+     */
+    mov   et, zero
+#endif
+
+    call alt_load
+    8050:	00099500 	call	9950 <alt_load>
+
+    /* Log that alt_main is about to be called. */
+    ALT_LOG_PUTS(alt_log_msg_alt_main)
+
+    /* Call the C entry point. It should never return. */
+    call alt_main
+    8054:	0009a040 	call	9a04 <alt_main>
+
+00008058 <alt_after_alt_main>:
+
+    /* Wait in infinite loop in case alt_main does return. */
+alt_after_alt_main:
+    br alt_after_alt_main
+    8058:	003fff06 	br	8058 <alt_after_alt_main>
+
+0000805c <sendInstruction>:
+#define WRREG_BASE 0x111a0
+/* ================================================================================
+Funcao usava para envio de instrucoes para o processador grafico.
+===================================================================================*/
+static int sendInstruction(unsigned long dataA, unsigned long dataB){
+	if(IORD(WRFULL_BASE,0) == 0){                        //FIFO nao esta cheia
+    805c:	00800074 	movhi	r2,1
+    8060:	10846437 	ldwio	r2,4496(r2)
+    8064:	1000091e 	bne	r2,zero,808c <sendInstruction+0x30>
+		IOWR_ALTERA_AVALON_PIO_DATA(WRREG_BASE,0);       //Desabilita o sinal de escrita
+    8068:	00800074 	movhi	r2,1
+    806c:	10046835 	stwio	zero,4512(r2)
+		IOWR_ALTERA_AVALON_PIO_DATA(DATA_A_BASE,dataA);  //Envia o dataA
+    8070:	11047435 	stwio	r4,4560(r2)
+		IOWR_ALTERA_AVALON_PIO_DATA(DATA_B_BASE,dataB);  //Envia o dataB
+    8074:	11447035 	stwio	r5,4544(r2)
+		IOWR_ALTERA_AVALON_PIO_DATA(WRREG_BASE,1);
+    8078:	00c00044 	movi	r3,1
+    807c:	10c46835 	stwio	r3,4512(r2)
+		IOWR_ALTERA_AVALON_PIO_DATA(WRREG_BASE,0);
+    8080:	10046835 	stwio	zero,4512(r2)
+    8084:	00800044 	movi	r2,1
+    8088:	f800283a 	ret
+		return 1;
+	}else{
+		return 0;
+    808c:	0005883a 	mov	r2,zero
+	}
+}
+    8090:	f800283a 	ret
+
+00008094 <set_sprite>:
+Funcao que define o barramento dataB da instrucao de modificar os dados de um sprite.
+===================================================================================*/
+static unsigned long dataB_builder(int x, int y, int offset, int ativacao){
+	unsigned long data = 0; 
+	data = data | ativacao; //coloca o bit de ativacao do sprite.
+    data = data << 10;    	//desloca o bit de ativacao em 10 posicoes a esquerda.
+    8094:	d8800017 	ldw	r2,0(sp)
+}
+
+int set_sprite(int registrador, int x, int y, int offset, int activation_bit){
+	unsigned long dataA = dataA_builder(0,registrador,0);
+	unsigned long dataB = dataB_builder(x, y, offset, activation_bit);
+	return sendInstruction(dataA, dataB);
+    8098:	2008913a 	slli	r4,r4,4
+    data = data << 10;    	//desloca o bit de ativacao em 10 posicoes a esquerda.
+    809c:	100492ba 	slli	r2,r2,10
+    data = data | x;      	//operacao OR com a variavel data. (insere x no barramento de bits)
+    80a0:	2884b03a 	or	r2,r5,r2
+    data = data << 10;    	//desloca os bits em 10 posicoes a esquerda.
+    80a4:	100492ba 	slli	r2,r2,10
+    data = data | y;      	//operacao OR com a variavel data. (insere y no barramento de bits)
+    80a8:	308cb03a 	or	r6,r6,r2
+    data = data << 9;     	//desloca os bits em 9 posicoes a esquerda.
+    80ac:	300c927a 	slli	r6,r6,9
+	return sendInstruction(dataA, dataB);
+    80b0:	398ab03a 	or	r5,r7,r6
+    80b4:	000805c1 	jmpi	805c <sendInstruction>
+
+000080b8 <set_background_color>:
+
+
+int set_background_color(int R, int G, int B){
+	unsigned long dataA = dataA_builder(0,0,0);
+	unsigned long color = B;
+	color = color << 3;
+    80b8:	300c90fa 	slli	r6,r6,3
+	color = color | G;
+    80bc:	298ab03a 	or	r5,r5,r6
+	color = color << 3;
+    80c0:	280a90fa 	slli	r5,r5,3
+	color = color | R;
+	return sendInstruction(dataA, color);
+    80c4:	214ab03a 	or	r5,r4,r5
+    80c8:	0009883a 	mov	r4,zero
+    80cc:	000805c1 	jmpi	805c <sendInstruction>
+
+000080d0 <set_background_block>:
+}
+
+int set_background_block(int column, int line, int R, int G, int B){
+	int address = (line * 80) + column;
+    80d0:	280490ba 	slli	r2,r5,2
+    80d4:	1145883a 	add	r2,r2,r5
+    80d8:	1004913a 	slli	r2,r2,4
+    80dc:	1109883a 	add	r4,r2,r4
+	unsigned long dataA = dataA_builder(2, 0, address);
+	unsigned long color = B;
+	color = color << 3;
+    80e0:	d8800017 	ldw	r2,0(sp)
+			data = data << 4;					//deslocamento a esquerda em 4 posicoes.
+    80e4:	2008913a 	slli	r4,r4,4
+	color = color << 3;
+    80e8:	100490fa 	slli	r2,r2,3
+	color = color | G;
+	color = color << 3;
+	color = color | R;
+	return sendInstruction(dataA, color);
+    80ec:	21000094 	ori	r4,r4,2
+	color = color | G;
+    80f0:	388eb03a 	or	r7,r7,r2
+	color = color << 3;
+    80f4:	380e90fa 	slli	r7,r7,3
+	return sendInstruction(dataA, color);
+    80f8:	31cab03a 	or	r5,r6,r7
+    80fc:	000805c1 	jmpi	805c <sendInstruction>
+
+00008100 <increase_coordinate>:
+}
+
+void increase_coordinate(Sprite *sp, int mirror){
+	switch((*sp).direction){
+    8100:	20800217 	ldw	r2,8(r4)
+    8104:	10c00228 	cmpgeui	r3,r2,8
+    8108:	1800341e 	bne	r3,zero,81dc <increase_coordinate+0xdc>
+    810c:	100490ba 	slli	r2,r2,2
+    8110:	00c00074 	movhi	r3,1
+    8114:	29400058 	cmpnei	r5,r5,1
+    8118:	10c7883a 	add	r3,r2,r3
+    811c:	18a04917 	ldw	r2,-32476(r3)
+    8120:	1000683a 	jmp	r2
+    8124:	00008144 	movi	zero,517
+    8128:	00008168 	cmpgeui	zero,zero,517
+    812c:	000081c4 	movi	zero,519
+    8130:	000081e8 	cmpgeui	zero,zero,519
+    8134:	00008224 	muli	zero,zero,520
+    8138:	00008254 	movui	zero,521
+    813c:	00008294 	movui	zero,522
+    8140:	000082bc 	xorhi	zero,zero,522
+		case LEFT:                   							//0 graus   (esquerda)
+			(*sp).coord_x -= (*sp).step_x; 						//Atualiza a coordenada X.
+    8144:	20800017 	ldw	r2,0(r4)
+    8148:	20c00517 	ldw	r3,20(r4)
+    814c:	10c5c83a 	sub	r2,r2,r3
+    8150:	20800015 	stw	r2,0(r4)
+			if(mirror == 1){
+    8154:	2800301e 	bne	r5,zero,8218 <increase_coordinate+0x118>
+				if((*sp).coord_x < 1){                          //Realiza a troca de posicao do sprite ao chegar no limite esquerdo da tela.
+    8158:	00802016 	blt	zero,r2,81dc <increase_coordinate+0xdc>
+					(*sp).coord_x = 640;
+    815c:	0080a004 	movi	r2,640
+				}
+			}else {
+				if((*sp).coord_x < 1){
+					(*sp).coord_x = 1;
+    8160:	20800015 	stw	r2,0(r4)
+    8164:	f800283a 	ret
+				}
+			}
+			break;
+		case UPPER_RIGHT:                                       //45 graus  (diagonal superior direita)
+			(*sp).coord_x += (*sp).step_x; 						//Atualiza a coordenada X.
+    8168:	20800017 	ldw	r2,0(r4)
+    816c:	20c00517 	ldw	r3,20(r4)
+			(*sp).coord_y -= (*sp).step_y; 						//Atualiza a coordenada Y.
+    8170:	21800617 	ldw	r6,24(r4)
+			(*sp).coord_x += (*sp).step_x; 						//Atualiza a coordenada X.
+    8174:	10c5883a 	add	r2,r2,r3
+			(*sp).coord_y -= (*sp).step_y; 						//Atualiza a coordenada Y.
+    8178:	20c00117 	ldw	r3,4(r4)
+			(*sp).coord_x += (*sp).step_x; 						//Atualiza a coordenada X.
+    817c:	20800015 	stw	r2,0(r4)
+			(*sp).coord_y -= (*sp).step_y; 						//Atualiza a coordenada Y.
+    8180:	1987c83a 	sub	r3,r3,r6
+    8184:	20c00115 	stw	r3,4(r4)
+			if(mirror == 1){
+    8188:	2800081e 	bne	r5,zero,81ac <increase_coordinate+0xac>
+				if((*sp).coord_y < 0){                          //Realiza a troca de posicao do sprite ao chegar no limite superior da tela.
+    818c:	1800030e 	bge	r3,zero,819c <increase_coordinate+0x9c>
+					(*sp).coord_y = 480;
+    8190:	00807804 	movi	r2,480
+    8194:	20800115 	stw	r2,4(r4)
+    8198:	f800283a 	ret
+				}else if((*sp).coord_x > 640){                  //Realiza a troca de posicao do sprite ao chegar no limite direito da tela.
+    819c:	1080a050 	cmplti	r2,r2,641
+    81a0:	10000e1e 	bne	r2,zero,81dc <increase_coordinate+0xdc>
+					(*sp).coord_x = 0;	
+    81a4:	20000015 	stw	zero,0(r4)
+    81a8:	f800283a 	ret
+				}
+			}else{
+				if((*sp).coord_y < 0){
+    81ac:	1800020e 	bge	r3,zero,81b8 <increase_coordinate+0xb8>
+					(*sp).coord_y = 0;
+    81b0:	20000115 	stw	zero,4(r4)
+    81b4:	f800283a 	ret
+				}else if((*sp).coord_x > 640){
+    81b8:	1080a048 	cmpgei	r2,r2,641
+    81bc:	103fe71e 	bne	r2,zero,815c <increase_coordinate+0x5c>
+    81c0:	f800283a 	ret
+					(*sp).coord_x = 640;
+				}
+			}
+			break;
+		case UP:                                                //90 graus  (pra cima)
+			(*sp).coord_y -= (*sp).step_y; 						//Atualiza a coordenada Y.
+    81c4:	20800117 	ldw	r2,4(r4)
+    81c8:	20c00617 	ldw	r3,24(r4)
+    81cc:	10c5c83a 	sub	r2,r2,r3
+    81d0:	20800115 	stw	r2,4(r4)
+			if(mirror == 1){
+    81d4:	2800021e 	bne	r5,zero,81e0 <increase_coordinate+0xe0>
+				if((*sp).coord_y < 0){                          //Realiza a troca de posicao do sprite ao chegar no limite superior da tela.
+    81d8:	103fed16 	blt	r2,zero,8190 <increase_coordinate+0x90>
+					(*sp).coord_x = 640;
+				}
+			}
+			break;
+	}
+}
+    81dc:	f800283a 	ret
+				if((*sp).coord_y < 0){
+    81e0:	103ffe0e 	bge	r2,zero,81dc <increase_coordinate+0xdc>
+    81e4:	003ff206 	br	81b0 <increase_coordinate+0xb0>
+			(*sp).coord_x -= (*sp).step_x; 						//Atualiza a coordenada X.
+    81e8:	20800017 	ldw	r2,0(r4)
+    81ec:	20c00517 	ldw	r3,20(r4)
+			(*sp).coord_y -= (*sp).step_y; 						//Atualiza a coordenada Y.
+    81f0:	21800617 	ldw	r6,24(r4)
+			(*sp).coord_x -= (*sp).step_x; 						//Atualiza a coordenada X.
+    81f4:	10c5c83a 	sub	r2,r2,r3
+			(*sp).coord_y -= (*sp).step_y; 						//Atualiza a coordenada Y.
+    81f8:	20c00117 	ldw	r3,4(r4)
+			(*sp).coord_x -= (*sp).step_x; 						//Atualiza a coordenada X.
+    81fc:	20800015 	stw	r2,0(r4)
+			(*sp).coord_y -= (*sp).step_y; 						//Atualiza a coordenada Y.
+    8200:	1987c83a 	sub	r3,r3,r6
+    8204:	20c00115 	stw	r3,4(r4)
+			if(mirror == 1){
+    8208:	2800021e 	bne	r5,zero,8214 <increase_coordinate+0x114>
+				if((*sp).coord_y < 0){                          //Realiza a troca de posicao do sprite ao chegar no limite superior da tela.
+    820c:	183fd20e 	bge	r3,zero,8158 <increase_coordinate+0x58>
+    8210:	003fdf06 	br	8190 <increase_coordinate+0x90>
+				if((*sp).coord_y < 0){
+    8214:	183fe616 	blt	r3,zero,81b0 <increase_coordinate+0xb0>
+				if((*sp).coord_x < 1){
+    8218:	00bff016 	blt	zero,r2,81dc <increase_coordinate+0xdc>
+					(*sp).coord_x = 1;
+    821c:	00800044 	movi	r2,1
+    8220:	003fcf06 	br	8160 <increase_coordinate+0x60>
+			(*sp).coord_x += (*sp).step_x; 						//Atualiza a coordenada X.
+    8224:	20800017 	ldw	r2,0(r4)
+    8228:	20c00517 	ldw	r3,20(r4)
+    822c:	10c5883a 	add	r2,r2,r3
+    8230:	20800015 	stw	r2,0(r4)
+			if(mirror == 1){
+    8234:	2800031e 	bne	r5,zero,8244 <increase_coordinate+0x144>
+				if((*sp).coord_x > 640){                        //Realiza a troca de posicao do sprite ao chegar no limite direito da tela.
+    8238:	1080a048 	cmpgei	r2,r2,641
+    823c:	103fd91e 	bne	r2,zero,81a4 <increase_coordinate+0xa4>
+    8240:	f800283a 	ret
+				if((*sp).coord_x > 620){
+    8244:	10809b50 	cmplti	r2,r2,621
+    8248:	103fe41e 	bne	r2,zero,81dc <increase_coordinate+0xdc>
+					(*sp).coord_x = 620;
+    824c:	00809b04 	movi	r2,620
+    8250:	003fc306 	br	8160 <increase_coordinate+0x60>
+			(*sp).coord_x -= (*sp).step_x; 						//Atualiza a coordenada X.
+    8254:	20c00017 	ldw	r3,0(r4)
+    8258:	20800517 	ldw	r2,20(r4)
+			(*sp).coord_y += (*sp).step_y; 						//Atualiza a coordenada Y.
+    825c:	21800617 	ldw	r6,24(r4)
+			(*sp).coord_x -= (*sp).step_x; 						//Atualiza a coordenada X.
+    8260:	1887c83a 	sub	r3,r3,r2
+			(*sp).coord_y += (*sp).step_y; 						//Atualiza a coordenada Y.
+    8264:	20800117 	ldw	r2,4(r4)
+			(*sp).coord_x -= (*sp).step_x; 						//Atualiza a coordenada X.
+    8268:	20c00015 	stw	r3,0(r4)
+			(*sp).coord_y += (*sp).step_y; 						//Atualiza a coordenada Y.
+    826c:	1185883a 	add	r2,r2,r6
+    8270:	20800115 	stw	r2,4(r4)
+			if(mirror == 1){
+    8274:	10807848 	cmpgei	r2,r2,481
+    8278:	2800031e 	bne	r5,zero,8288 <increase_coordinate+0x188>
+				if((*sp).coord_y > 480){                        //Realiza a troca de posicao do sprite ao chegar no limite inferior da tela.
+    827c:	103fcc1e 	bne	r2,zero,81b0 <increase_coordinate+0xb0>
+				}else if((*sp).coord_x < 1){                    //Realiza a troca de posicao do sprite ao chegar no limite esquerdo da tela.
+    8280:	00ffd616 	blt	zero,r3,81dc <increase_coordinate+0xdc>
+    8284:	003fb506 	br	815c <increase_coordinate+0x5c>
+				if((*sp).coord_y > 480){
+    8288:	103fc11e 	bne	r2,zero,8190 <increase_coordinate+0x90>
+				}else if((*sp).coord_x < 1){
+    828c:	00ffd316 	blt	zero,r3,81dc <increase_coordinate+0xdc>
+    8290:	003fe206 	br	821c <increase_coordinate+0x11c>
+			(*sp).coord_y += (*sp).step_y; 						//Atualiza a coordenada Y.
+    8294:	20800117 	ldw	r2,4(r4)
+    8298:	20c00617 	ldw	r3,24(r4)
+    829c:	10c5883a 	add	r2,r2,r3
+    82a0:	20800115 	stw	r2,4(r4)
+			if(mirror == 1){
+    82a4:	10807848 	cmpgei	r2,r2,481
+    82a8:	2800021e 	bne	r5,zero,82b4 <increase_coordinate+0x1b4>
+				if((*sp).coord_y > 480){                        //Realiza a troca de posicao do sprite ao chegar no limite inferior da tela.
+    82ac:	103fc01e 	bne	r2,zero,81b0 <increase_coordinate+0xb0>
+    82b0:	f800283a 	ret
+				if((*sp).coord_y > 480){
+    82b4:	103fb61e 	bne	r2,zero,8190 <increase_coordinate+0x90>
+    82b8:	f800283a 	ret
+			(*sp).coord_x += (*sp).step_x; 						//Atualiza a coordenada X.
+    82bc:	20800017 	ldw	r2,0(r4)
+    82c0:	20c00517 	ldw	r3,20(r4)
+			(*sp).coord_y += (*sp).step_y; 						//Atualiza a coordenada Y.
+    82c4:	21800617 	ldw	r6,24(r4)
+			(*sp).coord_x += (*sp).step_x; 						//Atualiza a coordenada X.
+    82c8:	10c5883a 	add	r2,r2,r3
+			(*sp).coord_y += (*sp).step_y; 						//Atualiza a coordenada Y.
+    82cc:	20c00117 	ldw	r3,4(r4)
+			(*sp).coord_x += (*sp).step_x; 						//Atualiza a coordenada X.
+    82d0:	20800015 	stw	r2,0(r4)
+			(*sp).coord_y += (*sp).step_y; 						//Atualiza a coordenada Y.
+    82d4:	1987883a 	add	r3,r3,r6
+    82d8:	20c00115 	stw	r3,4(r4)
+			if(mirror == 1){
+    82dc:	18c07848 	cmpgei	r3,r3,481
+    82e0:	2800041e 	bne	r5,zero,82f4 <increase_coordinate+0x1f4>
+				if((*sp).coord_y > 480){                        //Realiza a troca de posicao do sprite ao chegar no limite inferior da tela.
+    82e4:	183fb21e 	bne	r3,zero,81b0 <increase_coordinate+0xb0>
+				}else if((*sp).coord_x > 640){                  //Realiza a troca de posicao do sprite ao chegar no limite direito da tela.
+    82e8:	1080a048 	cmpgei	r2,r2,641
+    82ec:	103fad1e 	bne	r2,zero,81a4 <increase_coordinate+0xa4>
+    82f0:	f800283a 	ret
+				if((*sp).coord_y > 480){
+    82f4:	183fa61e 	bne	r3,zero,8190 <increase_coordinate+0x90>
+				}else if((*sp).coord_x > 640){
+    82f8:	1080a048 	cmpgei	r2,r2,641
+    82fc:	103f971e 	bne	r2,zero,815c <increase_coordinate+0x5c>
+    8300:	003fb606 	br	81dc <increase_coordinate+0xdc>
+
+00008304 <collision>:
+
+
+int collision(Sprite *sp1, Sprite *sp2){
+	int h = 15;
+	int y_face_1 = (*sp1).coord_y + h;
+    8304:	21c00117 	ldw	r7,4(r4)
+	int y_face_2 = (*sp2).coord_y + h;
+    8308:	29800117 	ldw	r6,4(r5)
+	int x_face_1 = (*sp1).coord_x + h;
+    830c:	20800017 	ldw	r2,0(r4)
+	int y_face_1 = (*sp1).coord_y + h;
+    8310:	390003c4 	addi	r4,r7,15
+	int x_face_2 = (*sp2).coord_x + h;
+    8314:	28c00017 	ldw	r3,0(r5)
+	/*-------------------------------------*/   
+	if( (y_face_1 > (*sp2).coord_y ) && ((*sp1).coord_y < y_face_2) ){
+    8318:	3100090e 	bge	r6,r4,8340 <collision+0x3c>
+	int y_face_2 = (*sp2).coord_y + h;
+    831c:	318003c4 	addi	r6,r6,15
+	if( (y_face_1 > (*sp2).coord_y ) && ((*sp1).coord_y < y_face_2) ){
+    8320:	3980070e 	bge	r7,r6,8340 <collision+0x3c>
+	int x_face_1 = (*sp1).coord_x + h;
+    8324:	110003c4 	addi	r4,r2,15
+		//Colisoes a esquerda --------------------------------------------
+		if( ( x_face_1 > (*sp2).coord_x ) && (x_face_1 < x_face_2) ){
+    8328:	19000716 	blt	r3,r4,8348 <collision+0x44>
+			return 1;
+		}else if ( (x_face_1 < x_face_2) && (x_face_1 > (*sp2).coord_x) ){
+    832c:	10c00416 	blt	r2,r3,8340 <collision+0x3c>
+			return 1;
+		}
+		/*--------------------------------------------------------------*/
+		//Colisoes a direita --------------------------------------------
+		if( ( x_face_1 > x_face_2) && (x_face_2 > (*sp1).coord_x) ){
+    8330:	1880030e 	bge	r3,r2,8340 <collision+0x3c>
+	int x_face_2 = (*sp2).coord_x + h;
+    8334:	18c003c4 	addi	r3,r3,15
+			return 1;
+		}else if( ( x_face_1 > x_face_2) && (x_face_2 > (*sp1).coord_x) ){
+    8338:	10c4803a 	cmplt	r2,r2,r3
+    833c:	f800283a 	ret
+			return 1;
+		}
+		/*--------------------------------------------------------------*/
+	}
+	return 0;
+    8340:	0005883a 	mov	r2,zero
+    8344:	f800283a 	ret
+		}else if ( (x_face_1 < x_face_2) && (x_face_1 > (*sp2).coord_x) ){
+    8348:	10fff90e 	bge	r2,r3,8330 <collision+0x2c>
+			return 1;
+    834c:	00800044 	movi	r2,1
+}
+    8350:	f800283a 	ret
+
+00008354 <initialize_sprite_random>:
+	/*---------------------------------------------------------------*/
+	return 0;
+}
+/*----------FIM DA FUNCAO PRINCIPAL--------------------------*/
+
+void initialize_sprite_random(int offset, Sprite *sp){
+    8354:	defffd04 	addi	sp,sp,-12
+    8358:	dfc00215 	stw	ra,8(sp)
+    835c:	dc400115 	stw	r17,4(sp)
+    8360:	dc000015 	stw	r16,0(sp)
+	(*sp).collision = 0;
+    8364:	28000815 	stw	zero,32(r5)
+void initialize_sprite_random(int offset, Sprite *sp){
+    8368:	2821883a 	mov	r16,r5
+    836c:	2023883a 	mov	r17,r4
+	(*sp).coord_x   = 1 + rand() % 639;     //sorteio da posicao x.
+    8370:	00095a40 	call	95a4 <rand>
+    8374:	01409fc4 	movi	r5,639
+    8378:	1009883a 	mov	r4,r2
+    837c:	000945c0 	call	945c <__modsi3>
+    8380:	10800044 	addi	r2,r2,1
+    8384:	80800015 	stw	r2,0(r16)
+	(*sp).coord_y   = 1 + rand() % 439;     //sorteio da posicao y.
+    8388:	00095a40 	call	95a4 <rand>
+    838c:	01406dc4 	movi	r5,439
+    8390:	1009883a 	mov	r4,r2
+    8394:	000945c0 	call	945c <__modsi3>
+    8398:	10800044 	addi	r2,r2,1
+    839c:	80800115 	stw	r2,4(r16)
+	(*sp).offset    = offset;               //definicao do offset de memoria.
+    83a0:	84400315 	stw	r17,12(r16)
+	(*sp).direction = rand() % 7;           //sorteio do anngulo inicial de movimento do sprite.
+    83a4:	00095a40 	call	95a4 <rand>
+    83a8:	014001c4 	movi	r5,7
+    83ac:	1009883a 	mov	r4,r2
+    83b0:	000945c0 	call	945c <__modsi3>
+    83b4:	80800215 	stw	r2,8(r16)
+}
+    83b8:	dfc00217 	ldw	ra,8(sp)
+    83bc:	dc400117 	ldw	r17,4(sp)
+    83c0:	dc000017 	ldw	r16,0(sp)
+    83c4:	dec00304 	addi	sp,sp,12
+    83c8:	f800283a 	ret
+
+000083cc <increase_points>:
+	}
+}
+
+void increase_points(Sprite_Fixed *dg_1, Sprite_Fixed *dg_2, Sprite_Fixed *dg_3){
+	int incresed = 0;
+	while(incresed == 0 && state_placar != 3){
+    83cc:	d0a04517 	ldw	r2,-32492(gp)
+    83d0:	0007883a 	mov	r3,zero
+		if(state_placar == 0){ // controla o primeiro digito
+			if((*dg_1).offset == 24){
+				(*dg_1).offset = 15; // numero 0
+    83d4:	01c003c4 	movi	r7,15
+	while(incresed == 0 && state_placar != 3){
+    83d8:	120000d8 	cmpnei	r8,r2,3
+    83dc:	4000031e 	bne	r8,zero,83ec <increase_points+0x20>
+    83e0:	18c03fcc 	andi	r3,r3,255
+    83e4:	1800121e 	bne	r3,zero,8430 <increase_points+0x64>
+				state_placar    = 0;
+				incresed        = 1;
+			}	
+		}
+	}
+}
+    83e8:	f800283a 	ret
+		if(state_placar == 0){ // controla o primeiro digito
+    83ec:	1000061e 	bne	r2,zero,8408 <increase_points+0x3c>
+			if((*dg_1).offset == 24){
+    83f0:	20800217 	ldw	r2,8(r4)
+    83f4:	10c00618 	cmpnei	r3,r2,24
+    83f8:	18000f1e 	bne	r3,zero,8438 <increase_points+0x6c>
+				(*dg_1).offset = 15; // numero 0
+    83fc:	21c00215 	stw	r7,8(r4)
+    8400:	00c00044 	movi	r3,1
+				state_placar    = 1;
+    8404:	00800044 	movi	r2,1
+		}else if(state_placar == 1){  // controla o segundo digito
+    8408:	12000058 	cmpnei	r8,r2,1
+    840c:	4000111e 	bne	r8,zero,8454 <increase_points+0x88>
+			if((*dg_2).offset == 24){
+    8410:	28800217 	ldw	r2,8(r5)
+    8414:	10c00618 	cmpnei	r3,r2,24
+    8418:	18000b1e 	bne	r3,zero,8448 <increase_points+0x7c>
+				(*dg_2).offset = 15; // numero 0
+    841c:	29c00215 	stw	r7,8(r5)
+			if((*dg_3).offset == 24){
+    8420:	30800217 	ldw	r2,8(r6)
+    8424:	10c00618 	cmpnei	r3,r2,24
+    8428:	18000d1e 	bne	r3,zero,8460 <increase_points+0x94>
+				state_placar = 3; // vai para um estado inexistente. Nao conta mais. Chegou na pontuacao limite (900).
+    842c:	008000c4 	movi	r2,3
+    8430:	d0a04515 	stw	r2,-32492(gp)
+}
+    8434:	003fec06 	br	83e8 <increase_points+0x1c>
+				(*dg_1).offset += 1;
+    8438:	10800044 	addi	r2,r2,1
+    843c:	20800215 	stw	r2,8(r4)
+				state_placar    = 0;
+    8440:	d0204515 	stw	zero,-32492(gp)
+	while(incresed == 0 && state_placar != 3){
+    8444:	f800283a 	ret
+				(*dg_2).offset += 1;
+    8448:	10800044 	addi	r2,r2,1
+    844c:	28800215 	stw	r2,8(r5)
+    8450:	003ffb06 	br	8440 <increase_points+0x74>
+		}else if(state_placar == 2){ // controla o terceiro digito
+    8454:	12000098 	cmpnei	r8,r2,2
+    8458:	403fdf1e 	bne	r8,zero,83d8 <increase_points+0xc>
+    845c:	003ff006 	br	8420 <increase_points+0x54>
+				(*dg_3).offset += 1;
+    8460:	10800044 	addi	r2,r2,1
+    8464:	30800215 	stw	r2,8(r6)
+				state_placar    = 0;
+    8468:	003ff506 	br	8440 <increase_points+0x74>
+
+0000846c <collision_between_tiro_and_ast>:
+void collision_between_tiro_and_ast(Sprite *tiro, Sprite* asteroids[], Sprite_Fixed* placar[]){
+    846c:	defff904 	addi	sp,sp,-28
+    8470:	dd400515 	stw	r21,20(sp)
+    8474:	dcc00315 	stw	r19,12(sp)
+    8478:	dc800215 	stw	r18,8(sp)
+    847c:	dc400115 	stw	r17,4(sp)
+    8480:	dfc00615 	stw	ra,24(sp)
+    8484:	dd000415 	stw	r20,16(sp)
+    8488:	dc000015 	stw	r16,0(sp)
+    848c:	2027883a 	mov	r19,r4
+    8490:	282b883a 	mov	r21,r5
+    8494:	3023883a 	mov	r17,r6
+	for (int i = 0; i < number_of_asteroids; i++){
+    8498:	0025883a 	mov	r18,zero
+    849c:	d0a00017 	ldw	r2,-32768(gp)
+    84a0:	90800916 	blt	r18,r2,84c8 <collision_between_tiro_and_ast+0x5c>
+}
+    84a4:	dfc00617 	ldw	ra,24(sp)
+    84a8:	dd400517 	ldw	r21,20(sp)
+    84ac:	dd000417 	ldw	r20,16(sp)
+    84b0:	dcc00317 	ldw	r19,12(sp)
+    84b4:	dc800217 	ldw	r18,8(sp)
+    84b8:	dc400117 	ldw	r17,4(sp)
+    84bc:	dc000017 	ldw	r16,0(sp)
+    84c0:	dec00704 	addi	sp,sp,28
+    84c4:	f800283a 	ret
+		Sprite *ast = asteroids[i];
+    84c8:	900490ba 	slli	r2,r18,2
+    84cc:	a885883a 	add	r2,r21,r2
+    84d0:	14000017 	ldw	r16,0(r2)
+		if((*ast).ativo == 1){
+    84d4:	80c00717 	ldw	r3,28(r16)
+    84d8:	18c00060 	cmpeqi	r3,r3,1
+    84dc:	18001026 	beq	r3,zero,8520 <collision_between_tiro_and_ast+0xb4>
+			if(collision(tiro, ast) == 1){
+    84e0:	800b883a 	mov	r5,r16
+    84e4:	9809883a 	mov	r4,r19
+    84e8:	00083040 	call	8304 <collision>
+    84ec:	1029883a 	mov	r20,r2
+    84f0:	10800058 	cmpnei	r2,r2,1
+    84f4:	10000a1e 	bne	r2,zero,8520 <collision_between_tiro_and_ast+0xb4>
+				increase_points(placar[0], placar[1], placar[2]);
+    84f8:	89800217 	ldw	r6,8(r17)
+    84fc:	89400117 	ldw	r5,4(r17)
+    8500:	89000017 	ldw	r4,0(r17)
+    8504:	00083cc0 	call	83cc <increase_points>
+				(*ast).offset += 1;
+    8508:	80800317 	ldw	r2,12(r16)
+				(*tiro).collision = 1;
+    850c:	9d000815 	stw	r20,32(r19)
+				(*ast).offset += 1;
+    8510:	10c00044 	addi	r3,r2,1
+				if((*ast).offset == 2){
+    8514:	10800060 	cmpeqi	r2,r2,1
+    8518:	1000031e 	bne	r2,zero,8528 <collision_between_tiro_and_ast+0xbc>
+				(*ast).offset += 1;
+    851c:	80c00315 	stw	r3,12(r16)
+	for (int i = 0; i < number_of_asteroids; i++){
+    8520:	94800044 	addi	r18,r18,1
+    8524:	003fdd06 	br	849c <collision_between_tiro_and_ast+0x30>
+					(*ast).offset    = 0;
+    8528:	80000315 	stw	zero,12(r16)
+					(*ast).coord_x   = 1 + rand() % 639;     //sorteio de uma nova posicaoo x.
+    852c:	00095a40 	call	95a4 <rand>
+    8530:	01409fc4 	movi	r5,639
+    8534:	1009883a 	mov	r4,r2
+    8538:	000945c0 	call	945c <__modsi3>
+    853c:	10800044 	addi	r2,r2,1
+    8540:	80800015 	stw	r2,0(r16)
+					(*ast).coord_y   = 1 + rand() % 439;     //sorteio de uma nova posicaoo y.
+    8544:	00095a40 	call	95a4 <rand>
+    8548:	01406dc4 	movi	r5,439
+    854c:	1009883a 	mov	r4,r2
+    8550:	000945c0 	call	945c <__modsi3>
+    8554:	10800044 	addi	r2,r2,1
+    8558:	80800115 	stw	r2,4(r16)
+					(*ast).direction = rand() % 7;           //sorteio de um novo angulo inicial de movimento do sprite.
+    855c:	00095a40 	call	95a4 <rand>
+    8560:	014001c4 	movi	r5,7
+    8564:	1009883a 	mov	r4,r2
+    8568:	000945c0 	call	945c <__modsi3>
+    856c:	80800215 	stw	r2,8(r16)
+    8570:	003feb06 	br	8520 <collision_between_tiro_and_ast+0xb4>
+
+00008574 <atirar_sp>:
+
+
+void atirar_sp(Sprite *nave, Sprite *tiro){
+	switch((*nave).offset){
+    8574:	20800317 	ldw	r2,12(r4)
+    8578:	10bfff44 	addi	r2,r2,-3
+    857c:	10c00228 	cmpgeui	r3,r2,8
+    8580:	1800201e 	bne	r3,zero,8604 <atirar_sp+0x90>
+    8584:	100490ba 	slli	r2,r2,2
+    8588:	00c00074 	movhi	r3,1
+    858c:	10c7883a 	add	r3,r2,r3
+    8590:	18a16617 	ldw	r2,-31336(r3)
+    8594:	1000683a 	jmp	r2
+    8598:	00008608 	cmpgei	zero,zero,536
+    859c:	000085dc 	xori	zero,zero,535
+    85a0:	00008654 	movui	zero,537
+    85a4:	000086c4 	movi	zero,539
+    85a8:	000086a0 	cmpeqi	zero,zero,538
+    85ac:	00008678 	rdprs	zero,zero,537
+    85b0:	000085b8 	rdprs	zero,zero,534
+    85b4:	0000862c 	andhi	zero,zero,536
+		case 9: //esquerda
+			(*tiro).coord_x   = (*nave).coord_x - 20;
+    85b8:	20800017 	ldw	r2,0(r4)
+    85bc:	10bffb04 	addi	r2,r2,-20
+    85c0:	28800015 	stw	r2,0(r5)
+			(*tiro).coord_y   = (*nave).coord_y;
+    85c4:	20800117 	ldw	r2,4(r4)
+			(*tiro).offset    = 13;
+			(*tiro).direction = LEFT;
+    85c8:	28000215 	stw	zero,8(r5)
+			(*tiro).coord_y   = (*nave).coord_y;
+    85cc:	28800115 	stw	r2,4(r5)
+			(*tiro).offset    = 13;
+    85d0:	00800344 	movi	r2,13
+    85d4:	28800315 	stw	r2,12(r5)
+			break;
+    85d8:	f800283a 	ret
+		case 4: //direita diagonal superior
+			(*tiro).coord_x   = (*nave).coord_x + 20;
+    85dc:	20800017 	ldw	r2,0(r4)
+    85e0:	10800504 	addi	r2,r2,20
+    85e4:	28800015 	stw	r2,0(r5)
+			(*tiro).coord_y   = (*nave).coord_y - 20;
+    85e8:	20800117 	ldw	r2,4(r4)
+    85ec:	10bffb04 	addi	r2,r2,-20
+    85f0:	28800115 	stw	r2,4(r5)
+			(*tiro).offset    = 12;
+    85f4:	00800304 	movi	r2,12
+    85f8:	28800315 	stw	r2,12(r5)
+			(*tiro).direction = UPPER_RIGHT;
+    85fc:	00800044 	movi	r2,1
+			break;
+		case 6: //diagonal direita inferior
+			(*tiro).coord_x   = (*nave).coord_x + 20;
+			(*tiro).coord_y   = (*nave).coord_y + 20;
+			(*tiro).offset    = 14;
+			(*tiro).direction = BOTTOM_RIGHT;
+    8600:	28800215 	stw	r2,8(r5)
+			break;
+	}
+    8604:	f800283a 	ret
+			(*tiro).coord_x   = (*nave).coord_x;
+    8608:	20800017 	ldw	r2,0(r4)
+    860c:	28800015 	stw	r2,0(r5)
+			(*tiro).coord_y   = (*nave).coord_y - 20;
+    8610:	20800117 	ldw	r2,4(r4)
+    8614:	10bffb04 	addi	r2,r2,-20
+    8618:	28800115 	stw	r2,4(r5)
+			(*tiro).offset    = 11;
+    861c:	008002c4 	movi	r2,11
+    8620:	28800315 	stw	r2,12(r5)
+			(*tiro).direction = UP;
+    8624:	00800084 	movi	r2,2
+    8628:	003ff506 	br	8600 <atirar_sp+0x8c>
+			(*tiro).coord_x   = (*nave).coord_x - 20;
+    862c:	20800017 	ldw	r2,0(r4)
+    8630:	10bffb04 	addi	r2,r2,-20
+    8634:	28800015 	stw	r2,0(r5)
+			(*tiro).coord_y   = (*nave).coord_y - 20;
+    8638:	20800117 	ldw	r2,4(r4)
+    863c:	10bffb04 	addi	r2,r2,-20
+    8640:	28800115 	stw	r2,4(r5)
+			(*tiro).offset    = 14;
+    8644:	00800384 	movi	r2,14
+    8648:	28800315 	stw	r2,12(r5)
+			(*tiro).direction = UPPER_LEFT;
+    864c:	008000c4 	movi	r2,3
+    8650:	003feb06 	br	8600 <atirar_sp+0x8c>
+			(*tiro).coord_x   = (*nave).coord_x + 20;
+    8654:	20800017 	ldw	r2,0(r4)
+    8658:	10800504 	addi	r2,r2,20
+    865c:	28800015 	stw	r2,0(r5)
+			(*tiro).coord_y   = (*nave).coord_y;
+    8660:	20800117 	ldw	r2,4(r4)
+    8664:	28800115 	stw	r2,4(r5)
+			(*tiro).offset    = 13;
+    8668:	00800344 	movi	r2,13
+    866c:	28800315 	stw	r2,12(r5)
+			(*tiro).direction = RIGHT;
+    8670:	00800104 	movi	r2,4
+    8674:	003fe206 	br	8600 <atirar_sp+0x8c>
+			(*tiro).coord_x   = (*nave).coord_x - 20;
+    8678:	20800017 	ldw	r2,0(r4)
+    867c:	10bffb04 	addi	r2,r2,-20
+    8680:	28800015 	stw	r2,0(r5)
+			(*tiro).coord_y   = (*nave).coord_y + 20;
+    8684:	20800117 	ldw	r2,4(r4)
+    8688:	10800504 	addi	r2,r2,20
+    868c:	28800115 	stw	r2,4(r5)
+			(*tiro).offset    = 12;
+    8690:	00800304 	movi	r2,12
+    8694:	28800315 	stw	r2,12(r5)
+			(*tiro).direction = BOTTOM_LEFT;
+    8698:	00800144 	movi	r2,5
+    869c:	003fd806 	br	8600 <atirar_sp+0x8c>
+			(*tiro).coord_x   = (*nave).coord_x;
+    86a0:	20800017 	ldw	r2,0(r4)
+    86a4:	28800015 	stw	r2,0(r5)
+			(*tiro).coord_y   = (*nave).coord_y + 20;
+    86a8:	20800117 	ldw	r2,4(r4)
+    86ac:	10800504 	addi	r2,r2,20
+    86b0:	28800115 	stw	r2,4(r5)
+			(*tiro).offset    = 11;
+    86b4:	008002c4 	movi	r2,11
+    86b8:	28800315 	stw	r2,12(r5)
+			(*tiro).direction = DOWN;
+    86bc:	00800184 	movi	r2,6
+    86c0:	003fcf06 	br	8600 <atirar_sp+0x8c>
+			(*tiro).coord_x   = (*nave).coord_x + 20;
+    86c4:	20800017 	ldw	r2,0(r4)
+    86c8:	10800504 	addi	r2,r2,20
+    86cc:	28800015 	stw	r2,0(r5)
+			(*tiro).coord_y   = (*nave).coord_y + 20;
+    86d0:	20800117 	ldw	r2,4(r4)
+    86d4:	10800504 	addi	r2,r2,20
+    86d8:	28800115 	stw	r2,4(r5)
+			(*tiro).offset    = 14;
+    86dc:	00800384 	movi	r2,14
+    86e0:	28800315 	stw	r2,12(r5)
+			(*tiro).direction = BOTTOM_RIGHT;
+    86e4:	008001c4 	movi	r2,7
+    86e8:	003fc506 	br	8600 <atirar_sp+0x8c>
+
+000086ec <main>:
+int main(){
+    86ec:	deff4e04 	addi	sp,sp,-712
+	srand(time(NULL));
+    86f0:	0009883a 	mov	r4,zero
+int main(){
+    86f4:	dfc0b115 	stw	ra,708(sp)
+    86f8:	df00b015 	stw	fp,704(sp)
+    86fc:	ddc0af15 	stw	r23,700(sp)
+    8700:	dd80ae15 	stw	r22,696(sp)
+    8704:	dd40ad15 	stw	r21,692(sp)
+    8708:	dd00ac15 	stw	r20,688(sp)
+    870c:	dcc0ab15 	stw	r19,684(sp)
+    8710:	dc80aa15 	stw	r18,680(sp)
+    8714:	dc40a915 	stw	r17,676(sp)
+    8718:	dc00a815 	stw	r16,672(sp)
+	srand(time(NULL));
+    871c:	00096040 	call	9604 <time>
+    8720:	1009883a 	mov	r4,r2
+    8724:	00095900 	call	9590 <srand>
+	ast_1.ativo  = 1;
+    8728:	04000044 	movi	r16,1
+	initialize_sprite_random(0,&ast_1);
+    872c:	d9401804 	addi	r5,sp,96
+    8730:	0009883a 	mov	r4,zero
+	ast_1.ativo  = 1;
+    8734:	dc001f15 	stw	r16,124(sp)
+	ast_2.ativo  = 1;
+    8738:	dc002815 	stw	r16,160(sp)
+	ast_3.ativo  = 1;
+    873c:	dc003115 	stw	r16,196(sp)
+	ast_4.ativo  = 1;
+    8740:	dc003a15 	stw	r16,232(sp)
+	ast_5.ativo  = 1;
+    8744:	dc004315 	stw	r16,268(sp)
+	ast_6.ativo  = 1;
+    8748:	dc004c15 	stw	r16,304(sp)
+	ast_7.ativo  = 1;
+    874c:	dc005515 	stw	r16,340(sp)
+	ast_8.ativo  = 1;
+    8750:	dc005e15 	stw	r16,376(sp)
+	ast_9.ativo  = 1;
+    8754:	dc006715 	stw	r16,412(sp)
+	initialize_sprite_random(0,&ast_1);
+    8758:	00083540 	call	8354 <initialize_sprite_random>
+	initialize_sprite_random(0,&ast_2);
+    875c:	d9402104 	addi	r5,sp,132
+    8760:	0009883a 	mov	r4,zero
+    8764:	00083540 	call	8354 <initialize_sprite_random>
+	initialize_sprite_random(0,&ast_3);
+    8768:	d9402a04 	addi	r5,sp,168
+    876c:	0009883a 	mov	r4,zero
+    8770:	00083540 	call	8354 <initialize_sprite_random>
+	initialize_sprite_random(0,&ast_4);
+    8774:	d9403304 	addi	r5,sp,204
+    8778:	0009883a 	mov	r4,zero
+    877c:	00083540 	call	8354 <initialize_sprite_random>
+	initialize_sprite_random(0,&ast_5);
+    8780:	d9403c04 	addi	r5,sp,240
+    8784:	0009883a 	mov	r4,zero
+    8788:	00083540 	call	8354 <initialize_sprite_random>
+	initialize_sprite_random(0,&ast_6);
+    878c:	d9404504 	addi	r5,sp,276
+    8790:	0009883a 	mov	r4,zero
+    8794:	00083540 	call	8354 <initialize_sprite_random>
+	initialize_sprite_random(0,&ast_7);
+    8798:	d9404e04 	addi	r5,sp,312
+    879c:	0009883a 	mov	r4,zero
+    87a0:	00083540 	call	8354 <initialize_sprite_random>
+	initialize_sprite_random(0,&ast_8);
+    87a4:	d9405704 	addi	r5,sp,348
+    87a8:	0009883a 	mov	r4,zero
+    87ac:	00083540 	call	8354 <initialize_sprite_random>
+	initialize_sprite_random(0,&ast_9);
+    87b0:	d9406004 	addi	r5,sp,384
+    87b4:	0009883a 	mov	r4,zero
+    87b8:	00083540 	call	8354 <initialize_sprite_random>
+	ast_1.data_register  = 18;
+    87bc:	00c00484 	movi	r3,18
+    87c0:	d8c01c15 	stw	r3,112(sp)
+	ast_5.data_register  = 4;
+    87c4:	00c00104 	movi	r3,4
+    87c8:	d8c04015 	stw	r3,256(sp)
+	ast_7.data_register  = 6;
+    87cc:	00c00184 	movi	r3,6
+    87d0:	d8c05215 	stw	r3,328(sp)
+	ast_8.data_register  = 7;
+    87d4:	00c001c4 	movi	r3,7
+    87d8:	d8c05b15 	stw	r3,364(sp)
+	ast_9.data_register  = 8;
+    87dc:	00c00204 	movi	r3,8
+    87e0:	d8c06415 	stw	r3,400(sp)
+	nave.data_register   = 9;
+    87e4:	00c00244 	movi	r3,9
+    87e8:	d8c06d15 	stw	r3,436(sp)
+	tiro3.data_register  = 12;
+    87ec:	00c00304 	movi	r3,12
+	ast_1.step_x = 2;	ast_1.step_y = 2;
+    87f0:	00800084 	movi	r2,2
+	ast_6.data_register  = 5;
+    87f4:	04400144 	movi	r17,5
+	tiro2.data_register  = 11;
+    87f8:	048002c4 	movi	r18,11
+	tiro.data_register   = 10;
+    87fc:	01000284 	movi	r4,10
+	ast_4.data_register  = 3;
+    8800:	014000c4 	movi	r5,3
+	tiro3.data_register  = 12;
+    8804:	d8c08815 	stw	r3,544(sp)
+	tiro4.data_register  = 13;
+    8808:	00c00344 	movi	r3,13
+	ast_1.step_x = 2;	ast_1.step_y = 2;
+    880c:	d8801d15 	stw	r2,116(sp)
+    8810:	d8801e15 	stw	r2,120(sp)
+	ast_2.step_x = 2;	ast_2.step_y = 2;
+    8814:	d8802615 	stw	r2,152(sp)
+    8818:	d8802715 	stw	r2,156(sp)
+	ast_3.step_x = 2;	ast_3.step_y = 2;
+    881c:	d8802f15 	stw	r2,188(sp)
+    8820:	d8803015 	stw	r2,192(sp)
+	ast_4.step_x = 2;	ast_4.step_y = 2;
+    8824:	d8803815 	stw	r2,224(sp)
+    8828:	d8803915 	stw	r2,228(sp)
+	ast_5.step_x = 2;	ast_5.step_y = 2;
+    882c:	d8804115 	stw	r2,260(sp)
+    8830:	d8804215 	stw	r2,264(sp)
+	ast_6.step_x = 2;	ast_6.step_y = 2;
+    8834:	d8804a15 	stw	r2,296(sp)
+    8838:	d8804b15 	stw	r2,300(sp)
+	ast_7.step_x = 2;	ast_7.step_y = 2;
+    883c:	d8805315 	stw	r2,332(sp)
+    8840:	d8805415 	stw	r2,336(sp)
+	ast_8.step_x = 2;	ast_8.step_y = 2;
+    8844:	d8805c15 	stw	r2,368(sp)
+    8848:	d8805d15 	stw	r2,372(sp)
+	ast_9.step_x = 2;	ast_9.step_y = 2; 
+    884c:	d8806515 	stw	r2,404(sp)
+    8850:	d8806615 	stw	r2,408(sp)
+	ast_2.data_register  = 1;
+    8854:	dc002515 	stw	r16,148(sp)
+	ast_3.data_register  = 2;
+    8858:	d8802e15 	stw	r2,184(sp)
+	ast_4.data_register  = 3;
+    885c:	d9403715 	stw	r5,220(sp)
+	ast_6.data_register  = 5;
+    8860:	dc404915 	stw	r17,292(sp)
+	tiro.data_register   = 10;
+    8864:	d9007615 	stw	r4,472(sp)
+	tiro2.data_register  = 11;
+    8868:	dc807f15 	stw	r18,508(sp)
+	tiro4.data_register  = 13;
+    886c:	d8c09115 	stw	r3,580(sp)
+	placar_dg2.data_register = 16;
+    8870:	01800404 	movi	r6,16
+	tiro5.data_register  = 14;
+    8874:	00c00384 	movi	r3,14
+    8878:	d8c09a15 	stw	r3,616(sp)
+	placar_dg2.data_register = 16;
+    887c:	d9801115 	stw	r6,68(sp)
+	placar_dg3.data_register = 17;
+    8880:	01800444 	movi	r6,17
+    8884:	d9801615 	stw	r6,88(sp)
+	placar_dg1.coord_x = 20; placar_dg2.coord_x = 40; placar_dg3.coord_x = 60;
+    8888:	01800504 	movi	r6,20
+	placar_dg1.data_register = 15;
+    888c:	00c003c4 	movi	r3,15
+	placar_dg1.coord_x = 20; placar_dg2.coord_x = 40; placar_dg3.coord_x = 60;
+    8890:	d9800915 	stw	r6,36(sp)
+    8894:	01800a04 	movi	r6,40
+	placar_dg1.data_register = 15;
+    8898:	d8c00c15 	stw	r3,48(sp)
+	placar_dg1.coord_x = 20; placar_dg2.coord_x = 40; placar_dg3.coord_x = 60;
+    889c:	d9800e15 	stw	r6,56(sp)
+	placar_dg1.offset  = 15; placar_dg2.offset  = 15; placar_dg3.offset  = 15;
+    88a0:	d8c00b15 	stw	r3,44(sp)
+	placar_dg1.coord_x = 20; placar_dg2.coord_x = 40; placar_dg3.coord_x = 60;
+    88a4:	01800f04 	movi	r6,60
+	placar_dg1.offset  = 15; placar_dg2.offset  = 15; placar_dg3.offset  = 15;
+    88a8:	d8c01015 	stw	r3,64(sp)
+    88ac:	d8c01515 	stw	r3,84(sp)
+	nave.coord_x   = 320;
+    88b0:	00c05004 	movi	r3,320
+	placar_dg1.coord_x = 20; placar_dg2.coord_x = 40; placar_dg3.coord_x = 60;
+    88b4:	d9801315 	stw	r6,76(sp)
+	placar_dg1.coord_y = 10; placar_dg2.coord_y = 10; placar_dg3.coord_y = 10;
+    88b8:	d9000a15 	stw	r4,40(sp)
+    88bc:	d9000f15 	stw	r4,60(sp)
+    88c0:	d9001415 	stw	r4,80(sp)
+	nave.coord_x   = 320;
+    88c4:	d8c06915 	stw	r3,420(sp)
+	nave.offset    = 3;
+    88c8:	d9406c15 	stw	r5,432(sp)
+	nave.coord_y   = 430;
+    88cc:	00c06b84 	movi	r3,430
+	set_sprite(placar_dg1.data_register,placar_dg1.coord_x,placar_dg1.coord_y , placar_dg1.offset, placar_dg1.ativo);
+    88d0:	dc000015 	stw	r16,0(sp)
+    88d4:	01c003c4 	movi	r7,15
+    88d8:	01800284 	movi	r6,10
+    88dc:	01400504 	movi	r5,20
+    88e0:	010003c4 	movi	r4,15
+	nave.coord_y   = 430;
+    88e4:	d8c06a15 	stw	r3,424(sp)
+	placar_dg1.ativo   = 1;  placar_dg2.ativo   = 1;  placar_dg3.ativo   = 1;
+    88e8:	dc000d15 	stw	r16,52(sp)
+    88ec:	dc001215 	stw	r16,72(sp)
+    88f0:	dc001715 	stw	r16,92(sp)
+	nave.step_x    = 5;
+    88f4:	dc406e15 	stw	r17,440(sp)
+	nave.step_y    = 5;
+    88f8:	dc406f15 	stw	r17,444(sp)
+	nave.ativo     = 1;
+    88fc:	dc007015 	stw	r16,448(sp)
+	nave.direction = 2;
+    8900:	d8806b15 	stw	r2,428(sp)
+	nave.collision = 0;
+    8904:	d8007115 	stw	zero,452(sp)
+	set_sprite(placar_dg1.data_register,placar_dg1.coord_x,placar_dg1.coord_y , placar_dg1.offset, placar_dg1.ativo);
+    8908:	00080940 	call	8094 <set_sprite>
+	set_sprite(placar_dg2.data_register,placar_dg2.coord_x,placar_dg2.coord_y , placar_dg2.offset, placar_dg2.ativo);
+    890c:	d8801217 	ldw	r2,72(sp)
+    8910:	d9c01017 	ldw	r7,64(sp)
+    8914:	d9800f17 	ldw	r6,60(sp)
+    8918:	d9400e17 	ldw	r5,56(sp)
+    891c:	d9001117 	ldw	r4,68(sp)
+    8920:	d8800015 	stw	r2,0(sp)
+	int state_game  = 0; //0 - em andamento; 1 - pausado.
+    8924:	0029883a 	mov	r20,zero
+	set_sprite(placar_dg2.data_register,placar_dg2.coord_x,placar_dg2.coord_y , placar_dg2.offset, placar_dg2.ativo);
+    8928:	00080940 	call	8094 <set_sprite>
+	set_sprite(placar_dg3.data_register,placar_dg3.coord_x,placar_dg3.coord_y , placar_dg3.offset, placar_dg3.ativo);
+    892c:	d8801717 	ldw	r2,92(sp)
+    8930:	d9c01517 	ldw	r7,84(sp)
+    8934:	d9801417 	ldw	r6,80(sp)
+    8938:	d9401317 	ldw	r5,76(sp)
+    893c:	d9001617 	ldw	r4,88(sp)
+    8940:	d8800015 	stw	r2,0(sp)
+	int check_collision = 0; //flag para controle da analise de colisao.
+    8944:	0039883a 	mov	fp,zero
+	set_sprite(placar_dg3.data_register,placar_dg3.coord_x,placar_dg3.coord_y , placar_dg3.offset, placar_dg3.ativo);
+    8948:	00080940 	call	8094 <set_sprite>
+	set_sprite(nave.data_register,nave.coord_x,nave.coord_y , nave.offset, nave.ativo);
+    894c:	d8807017 	ldw	r2,448(sp)
+    8950:	d9c06c17 	ldw	r7,432(sp)
+    8954:	d9806a17 	ldw	r6,424(sp)
+    8958:	d9406917 	ldw	r5,420(sp)
+    895c:	d9006d17 	ldw	r4,436(sp)
+    8960:	d8800015 	stw	r2,0(sp)
+	int wait_shoot    = 0;
+    8964:	0021883a 	mov	r16,zero
+	set_sprite(nave.data_register,nave.coord_x,nave.coord_y , nave.offset, nave.ativo);
+    8968:	00080940 	call	8094 <set_sprite>
+	int number_screen = 0, number_screen_2 = 0, number_screen_3 = 0, number_screen_4 = 0;
+    896c:	002b883a 	mov	r21,zero
+	tiro.step_x    = 5;
+    8970:	dc407715 	stw	r17,476(sp)
+	tiro.step_y    = 5;
+    8974:	dc407815 	stw	r17,480(sp)
+	tiro.offset    = 11;
+    8978:	dc807515 	stw	r18,468(sp)
+	tiro2.step_x    = 5;
+    897c:	dc408015 	stw	r17,512(sp)
+	tiro2.step_y    = 5;
+    8980:	dc408115 	stw	r17,516(sp)
+	tiro2.offset    = 11;
+    8984:	dc807e15 	stw	r18,504(sp)
+	tiro3.step_x    = 5;
+    8988:	dc408915 	stw	r17,548(sp)
+	tiro3.step_y    = 5;
+    898c:	dc408a15 	stw	r17,552(sp)
+	tiro3.offset    = 11;
+    8990:	dc808715 	stw	r18,540(sp)
+	tiro4.step_x    = 5;
+    8994:	dc409215 	stw	r17,584(sp)
+	tiro4.step_y    = 5;
+    8998:	dc409315 	stw	r17,588(sp)
+	tiro4.offset    = 11;
+    899c:	dc809015 	stw	r18,576(sp)
+	tiro5.step_x    = 5;
+    89a0:	dc409b15 	stw	r17,620(sp)
+	tiro5.step_y    = 5;
+    89a4:	dc409c15 	stw	r17,624(sp)
+	tiro5.offset    = 11;
+    89a8:	dc809915 	stw	r18,612(sp)
+	tiro.ativo     = 0;
+    89ac:	d8007915 	stw	zero,484(sp)
+	tiro2.ativo     = 0;
+    89b0:	d8008215 	stw	zero,520(sp)
+	tiro3.ativo     = 0;
+    89b4:	d8008b15 	stw	zero,556(sp)
+	tiro4.ativo     = 0;
+    89b8:	d8009415 	stw	zero,592(sp)
+	tiro5.ativo     = 0;
+    89bc:	d8009d15 	stw	zero,628(sp)
+	int atirar        = 0;
+    89c0:	0023883a 	mov	r17,zero
+	int number_screen = 0, number_screen_2 = 0, number_screen_3 = 0, number_screen_4 = 0;
+    89c4:	002f883a 	mov	r23,zero
+    89c8:	0027883a 	mov	r19,zero
+    89cc:	002d883a 	mov	r22,zero
+	int refresh_coord = 0;
+    89d0:	0025883a 	mov	r18,zero
+	while(nave.collision == 0){
+    89d4:	d8807117 	ldw	r2,452(sp)
+    89d8:	10003726 	beq	r2,zero,8ab8 <main+0x3cc>
+	int lot1 = 0;
+    89dc:	0005883a 	mov	r2,zero
+	int send = 0;
+    89e0:	0021883a 	mov	r16,zero
+		if(IORD(SCREEN_BASE,0) == 1){
+    89e4:	00c00074 	movhi	r3,1
+    89e8:	18c46037 	ldwio	r3,4480(r3)
+    89ec:	19000058 	cmpnei	r4,r3,1
+    89f0:	2000051e 	bne	r4,zero,8a08 <main+0x31c>
+			IOWR_ALTERA_AVALON_PIO_DATA(RESET_PULSECOUNTER_BASE,1);
+    89f4:	01000074 	movhi	r4,1
+    89f8:	20c46c35 	stwio	r3,4528(r4)
+			IOWR_ALTERA_AVALON_PIO_DATA(RESET_PULSECOUNTER_BASE,0);
+    89fc:	00c00074 	movhi	r3,1
+    8a00:	18046c35 	stwio	zero,4528(r3)
+			send++;
+    8a04:	84000044 	addi	r16,r16,1
+		if(IORD(WRFULL_BASE,0) == 0 && send == 1 && lot1 == 0){
+    8a08:	00c00074 	movhi	r3,1
+    8a0c:	18c46437 	ldwio	r3,4496(r3)
+    8a10:	1801f51e 	bne	r3,zero,91e8 <main+0xafc>
+    8a14:	80c00058 	cmpnei	r3,r16,1
+    8a18:	1801f31e 	bne	r3,zero,91e8 <main+0xafc>
+    8a1c:	1001f11e 	bne	r2,zero,91e4 <main+0xaf8>
+			set_sprite(ast_1.data_register,ast_1.coord_x,ast_1.coord_y , ast_1.offset, 0);
+    8a20:	d9c01b17 	ldw	r7,108(sp)
+    8a24:	d9801917 	ldw	r6,100(sp)
+    8a28:	d9401817 	ldw	r5,96(sp)
+    8a2c:	d9001c17 	ldw	r4,112(sp)
+    8a30:	d8000015 	stw	zero,0(sp)
+    8a34:	00080940 	call	8094 <set_sprite>
+			set_sprite(ast_2.data_register,ast_2.coord_x,ast_2.coord_y , ast_2.offset, 0);
+    8a38:	d9c02417 	ldw	r7,144(sp)
+    8a3c:	d9802217 	ldw	r6,136(sp)
+    8a40:	d9402117 	ldw	r5,132(sp)
+    8a44:	d9002517 	ldw	r4,148(sp)
+    8a48:	d8000015 	stw	zero,0(sp)
+    8a4c:	00080940 	call	8094 <set_sprite>
+			set_sprite(ast_3.data_register,ast_3.coord_x,ast_3.coord_y , ast_3.offset, 0);
+    8a50:	d9c02d17 	ldw	r7,180(sp)
+    8a54:	d9802b17 	ldw	r6,172(sp)
+    8a58:	d9402a17 	ldw	r5,168(sp)
+    8a5c:	d9002e17 	ldw	r4,184(sp)
+    8a60:	d8000015 	stw	zero,0(sp)
+    8a64:	00080940 	call	8094 <set_sprite>
+			set_sprite(ast_4.data_register,ast_4.coord_x,ast_4.coord_y , ast_4.offset, 0);
+    8a68:	d9c03617 	ldw	r7,216(sp)
+    8a6c:	d9803417 	ldw	r6,208(sp)
+    8a70:	d9403317 	ldw	r5,204(sp)
+    8a74:	d9003717 	ldw	r4,220(sp)
+    8a78:	d8000015 	stw	zero,0(sp)
+    8a7c:	00080940 	call	8094 <set_sprite>
+			set_sprite(ast_5.data_register,ast_5.coord_x,ast_5.coord_y , ast_5.offset, 0);
+    8a80:	d9c03f17 	ldw	r7,252(sp)
+    8a84:	d9803d17 	ldw	r6,244(sp)
+    8a88:	d9403c17 	ldw	r5,240(sp)
+    8a8c:	d9004017 	ldw	r4,256(sp)
+    8a90:	d8000015 	stw	zero,0(sp)
+    8a94:	00080940 	call	8094 <set_sprite>
+			set_sprite(ast_6.data_register,ast_6.coord_x,ast_6.coord_y , ast_6.offset, 0);
+    8a98:	d9c04817 	ldw	r7,288(sp)
+    8a9c:	d9804617 	ldw	r6,280(sp)
+    8aa0:	d9404517 	ldw	r5,276(sp)
+    8aa4:	d9004917 	ldw	r4,292(sp)
+    8aa8:	d8000015 	stw	zero,0(sp)
+    8aac:	00080940 	call	8094 <set_sprite>
+			lot1 = 1;
+    8ab0:	00800044 	movi	r2,1
+    8ab4:	003fcb06 	br	89e4 <main+0x2f8>
+		start_pause = IORD(START_BASE,0);
+    8ab8:	00800074 	movhi	r2,1
+    8abc:	10844037 	ldwio	r2,4352(r2)
+    8ac0:	d8800115 	stw	r2,4(sp)
+		TR    = IORD(TR_BASE,0);
+    8ac4:	00800074 	movhi	r2,1
+    8ac8:	10845437 	ldwio	r2,4432(r2)
+    8acc:	d8800215 	stw	r2,8(sp)
+		TL    = IORD(TL_BASE,0);
+    8ad0:	00800074 	movhi	r2,1
+    8ad4:	10845037 	ldwio	r2,4416(r2)
+    8ad8:	d8800315 	stw	r2,12(sp)
+		A     = IORD(A_BASE,0);
+    8adc:	00800074 	movhi	r2,1
+    8ae0:	10845837 	ldwio	r2,4448(r2)
+    8ae4:	d8800415 	stw	r2,16(sp)
+		move  = IORD(DIRECTION_ANALOGIC_BASE,0);
+    8ae8:	00800074 	movhi	r2,1
+    8aec:	10845c37 	ldwio	r2,4464(r2)
+    8af0:	d8800515 	stw	r2,20(sp)
+		if(IORD(SCREEN_BASE,0) == 1){ // Verifica se uma tela terminou de ser impressa
+    8af4:	00800074 	movhi	r2,1
+    8af8:	10846037 	ldwio	r2,4480(r2)
+    8afc:	10800058 	cmpnei	r2,r2,1
+    8b00:	1000201e 	bne	r2,zero,8b84 <main+0x498>
+			wait_shoot++;
+    8b04:	84000044 	addi	r16,r16,1
+			if(wait_shoot == screen_for_1s){
+    8b08:	80800ed8 	cmpnei	r2,r16,59
+			number_screen++;          // Contagem de telas para 
+    8b0c:	b5800044 	addi	r22,r22,1
+			number_screen_2++;        // Contagem de telas para 
+    8b10:	9cc00044 	addi	r19,r19,1
+			number_screen_3++;        // Contagem de telas para 
+    8b14:	bdc00044 	addi	r23,r23,1
+			number_screen_4++;        // Contagem de telas para 
+    8b18:	ad400044 	addi	r21,r21,1
+			if(wait_shoot == screen_for_1s){
+    8b1c:	1000011e 	bne	r2,zero,8b24 <main+0x438>
+				atirar = 1; //ativa a possibilidade de atirar.
+    8b20:	04400044 	movi	r17,1
+			IOWR_ALTERA_AVALON_PIO_DATA(RESET_PULSECOUNTER_BASE,1);
+    8b24:	00c00044 	movi	r3,1
+    8b28:	00800074 	movhi	r2,1
+    8b2c:	10c46c35 	stwio	r3,4528(r2)
+			IOWR_ALTERA_AVALON_PIO_DATA(RESET_PULSECOUNTER_BASE,0);
+    8b30:	10046c35 	stwio	zero,4528(r2)
+		if(state_game == 0) { 
+    8b34:	a000871e 	bne	r20,zero,8d54 <main+0x668>
+			switch(move){
+    8b38:	d8800517 	ldw	r2,20(sp)
+    8b3c:	10bffec4 	addi	r2,r2,-5
+    8b40:	10c002a8 	cmpgeui	r3,r2,10
+    8b44:	18006a1e 	bne	r3,zero,8cf0 <main+0x604>
+    8b48:	100490ba 	slli	r2,r2,2
+    8b4c:	00c00074 	movhi	r3,1
+    8b50:	10c7883a 	add	r3,r2,r3
+    8b54:	18a2d717 	ldw	r2,-29860(r3)
+    8b58:	1000683a 	jmp	r2
+    8b5c:	000090e4 	muli	zero,zero,579
+    8b60:	000090fc 	xorhi	zero,zero,579
+    8b64:	00008cdc 	xori	zero,zero,563
+    8b68:	00008cf0 	cmpltui	zero,zero,563
+    8b6c:	000090ec 	andhi	zero,zero,579
+    8b70:	000090f4 	movhi	zero,579
+    8b74:	00008ce8 	cmpgeui	zero,zero,563
+    8b78:	00008cf0 	cmpltui	zero,zero,563
+    8b7c:	000090d4 	movui	zero,579
+    8b80:	000090dc 	xori	zero,zero,579
+			if(check_collision == 1){ //realiza as analises de colisao.
+    8b84:	e03feb26 	beq	fp,zero,8b34 <main+0x448>
+				Sprite* asteroids[9] = { &ast_1, &ast_2, &ast_3, &ast_4, &ast_5, &ast_6, &ast_7, &ast_8, &ast_9 };
+    8b88:	d8801804 	addi	r2,sp,96
+    8b8c:	d8809f15 	stw	r2,636(sp)
+    8b90:	d8802104 	addi	r2,sp,132
+    8b94:	d880a015 	stw	r2,640(sp)
+    8b98:	d8802a04 	addi	r2,sp,168
+    8b9c:	d880a115 	stw	r2,644(sp)
+    8ba0:	d8803304 	addi	r2,sp,204
+    8ba4:	d880a215 	stw	r2,648(sp)
+    8ba8:	d8803c04 	addi	r2,sp,240
+    8bac:	d880a315 	stw	r2,652(sp)
+    8bb0:	d8804504 	addi	r2,sp,276
+    8bb4:	d880a415 	stw	r2,656(sp)
+    8bb8:	d8804e04 	addi	r2,sp,312
+    8bbc:	d880a515 	stw	r2,660(sp)
+				for(int i = 0; i < number_of_asteroids; i++) {
+    8bc0:	df007117 	ldw	fp,452(sp)
+				Sprite* asteroids[9] = { &ast_1, &ast_2, &ast_3, &ast_4, &ast_5, &ast_6, &ast_7, &ast_8, &ast_9 };
+    8bc4:	d8805704 	addi	r2,sp,348
+    8bc8:	d880a615 	stw	r2,664(sp)
+    8bcc:	d8806004 	addi	r2,sp,384
+    8bd0:	d880a715 	stw	r2,668(sp)
+				for(int i = 0; i < number_of_asteroids; i++) {
+    8bd4:	d0a00017 	ldw	r2,-32768(gp)
+    8bd8:	e080090e 	bge	fp,r2,8c00 <main+0x514>
+					Sprite *ast = asteroids[i];
+    8bdc:	e00490ba 	slli	r2,fp,2
+    8be0:	d8c09f04 	addi	r3,sp,636
+					if(collision(&nave, ast) == 1){
+    8be4:	d9006904 	addi	r4,sp,420
+					Sprite *ast = asteroids[i];
+    8be8:	1885883a 	add	r2,r3,r2
+					if(collision(&nave, ast) == 1){
+    8bec:	11400017 	ldw	r5,0(r2)
+    8bf0:	00083040 	call	8304 <collision>
+    8bf4:	10c00058 	cmpnei	r3,r2,1
+    8bf8:	1800361e 	bne	r3,zero,8cd4 <main+0x5e8>
+						nave.collision = 1;
+    8bfc:	d8807115 	stw	r2,452(sp)
+				Sprite_Fixed* placar[3] = { &placar_dg3, &placar_dg2, &placar_dg1 };
+    8c00:	d8801304 	addi	r2,sp,76
+    8c04:	d8800615 	stw	r2,24(sp)
+    8c08:	d8800e04 	addi	r2,sp,56
+    8c0c:	d8800715 	stw	r2,28(sp)
+    8c10:	d8800904 	addi	r2,sp,36
+    8c14:	d8800815 	stw	r2,32(sp)
+				if(tiro.ativo  == 1 && tiro.collision   == 0){ collision_between_tiro_and_ast(&tiro,  asteroids, placar); }
+    8c18:	d8807917 	ldw	r2,484(sp)
+    8c1c:	10800058 	cmpnei	r2,r2,1
+    8c20:	1000061e 	bne	r2,zero,8c3c <main+0x550>
+    8c24:	d8807a17 	ldw	r2,488(sp)
+    8c28:	1000041e 	bne	r2,zero,8c3c <main+0x550>
+    8c2c:	d9800604 	addi	r6,sp,24
+    8c30:	d9409f04 	addi	r5,sp,636
+    8c34:	d9007204 	addi	r4,sp,456
+    8c38:	000846c0 	call	846c <collision_between_tiro_and_ast>
+				if(tiro2.ativo == 1 && tiro2.collision  == 0){ collision_between_tiro_and_ast(&tiro2, asteroids, placar); }
+    8c3c:	d8808217 	ldw	r2,520(sp)
+    8c40:	10800058 	cmpnei	r2,r2,1
+    8c44:	1000061e 	bne	r2,zero,8c60 <main+0x574>
+    8c48:	d8808317 	ldw	r2,524(sp)
+    8c4c:	1000041e 	bne	r2,zero,8c60 <main+0x574>
+    8c50:	d9800604 	addi	r6,sp,24
+    8c54:	d9409f04 	addi	r5,sp,636
+    8c58:	d9007b04 	addi	r4,sp,492
+    8c5c:	000846c0 	call	846c <collision_between_tiro_and_ast>
+				if(tiro3.ativo == 1 && tiro3.collision  == 0){ collision_between_tiro_and_ast(&tiro3, asteroids, placar); }
+    8c60:	d8808b17 	ldw	r2,556(sp)
+    8c64:	10800058 	cmpnei	r2,r2,1
+    8c68:	1000061e 	bne	r2,zero,8c84 <main+0x598>
+    8c6c:	d8808c17 	ldw	r2,560(sp)
+    8c70:	1000041e 	bne	r2,zero,8c84 <main+0x598>
+    8c74:	d9800604 	addi	r6,sp,24
+    8c78:	d9409f04 	addi	r5,sp,636
+    8c7c:	d9008404 	addi	r4,sp,528
+    8c80:	000846c0 	call	846c <collision_between_tiro_and_ast>
+				if(tiro4.ativo == 1 && tiro4.collision  == 0){ collision_between_tiro_and_ast(&tiro4, asteroids, placar); }
+    8c84:	d8809417 	ldw	r2,592(sp)
+    8c88:	10800058 	cmpnei	r2,r2,1
+    8c8c:	1000061e 	bne	r2,zero,8ca8 <main+0x5bc>
+    8c90:	d8809517 	ldw	r2,596(sp)
+    8c94:	1000041e 	bne	r2,zero,8ca8 <main+0x5bc>
+    8c98:	d9800604 	addi	r6,sp,24
+    8c9c:	d9409f04 	addi	r5,sp,636
+    8ca0:	d9008d04 	addi	r4,sp,564
+    8ca4:	000846c0 	call	846c <collision_between_tiro_and_ast>
+				if(tiro5.ativo == 1 && tiro5.collision  == 0){ collision_between_tiro_and_ast(&tiro5, asteroids, placar); }
+    8ca8:	d8809d17 	ldw	r2,628(sp)
+    8cac:	10800058 	cmpnei	r2,r2,1
+    8cb0:	1000061e 	bne	r2,zero,8ccc <main+0x5e0>
+    8cb4:	d8809e17 	ldw	r2,632(sp)
+    8cb8:	1000041e 	bne	r2,zero,8ccc <main+0x5e0>
+    8cbc:	d9800604 	addi	r6,sp,24
+    8cc0:	d9409f04 	addi	r5,sp,636
+    8cc4:	d9009604 	addi	r4,sp,600
+    8cc8:	000846c0 	call	846c <collision_between_tiro_and_ast>
+				check_collision = 0;  //desativa a flag para uma nova analise
+    8ccc:	0039883a 	mov	fp,zero
+    8cd0:	003f9806 	br	8b34 <main+0x448>
+				for(int i = 0; i < number_of_asteroids; i++) {
+    8cd4:	e7000044 	addi	fp,fp,1
+    8cd8:	003fbe06 	br	8bd4 <main+0x4e8>
+					nave.direction = RIGHT;
+    8cdc:	00800104 	movi	r2,4
+					nave.direction = BOTTOM_RIGHT;
+    8ce0:	d8806b15 	stw	r2,428(sp)
+    8ce4:	00000106 	br	8cec <main+0x600>
+					nave.direction = LEFT;
+    8ce8:	d8006b15 	stw	zero,428(sp)
+					refresh_coord = 1;
+    8cec:	04800044 	movi	r18,1
+			if(A == 1 && atirar == 1){ // Verificar a possibilidade de novos tiros.
+    8cf0:	d8800417 	ldw	r2,16(sp)
+    8cf4:	10800058 	cmpnei	r2,r2,1
+    8cf8:	10000a1e 	bne	r2,zero,8d24 <main+0x638>
+    8cfc:	88000926 	beq	r17,zero,8d24 <main+0x638>
+				if(tiro.ativo == 0 && tiro.collision == 0){        tiro.ativo  = 1; atirar_sp(&nave, &tiro);  }
+    8d00:	dc007917 	ldw	r16,484(sp)
+    8d04:	d8807a17 	ldw	r2,488(sp)
+    8d08:	80a0b03a 	or	r16,r16,r2
+    8d0c:	8000fd1e 	bne	r16,zero,9104 <main+0xa18>
+    8d10:	dc407915 	stw	r17,484(sp)
+    8d14:	d9407204 	addi	r5,sp,456
+				else if(tiro5.ativo == 0 && tiro5.collision == 0){ tiro5.ativo = 1; atirar_sp(&nave, &tiro5); }
+    8d18:	d9006904 	addi	r4,sp,420
+    8d1c:	00085740 	call	8574 <atirar_sp>
+				atirar     = 0; // Depois de atirar, espera um novo momento.
+    8d20:	0023883a 	mov	r17,zero
+			if(number_screen_2 == 6){
+    8d24:	98800198 	cmpnei	r2,r19,6
+    8d28:	1001231e 	bne	r2,zero,91b8 <main+0xacc>
+				if(TR == 1){
+    8d2c:	d8800217 	ldw	r2,8(sp)
+    8d30:	10800058 	cmpnei	r2,r2,1
+    8d34:	1001141e 	bne	r2,zero,9188 <main+0xa9c>
+					nave.offset += 1;       // muda o sprite de animacao da nave
+    8d38:	d8806c17 	ldw	r2,432(sp)
+    8d3c:	10800044 	addi	r2,r2,1
+					if(nave.offset > 10){
+    8d40:	10c002c8 	cmpgei	r3,r2,11
+    8d44:	18010e1e 	bne	r3,zero,9180 <main+0xa94>
+						nave.offset = 3;    // muda o sprite de animacao da nave
+    8d48:	d8806c15 	stw	r2,432(sp)
+				number_screen_2 = 0;
+    8d4c:	0027883a 	mov	r19,zero
+					refresh_coord = 0;
+    8d50:	0025883a 	mov	r18,zero
+		if(number_screen == 2){
+    8d54:	b0800098 	cmpnei	r2,r22,2
+    8d58:	10005d1e 	bne	r2,zero,8ed0 <main+0x7e4>
+			if(IORD(WRFULL_BASE,0) == 0){                           //FIFO nao esta cheia
+    8d5c:	00800074 	movhi	r2,1
+    8d60:	10846437 	ldwio	r2,4496(r2)
+    8d64:	10005a1e 	bne	r2,zero,8ed0 <main+0x7e4>
+				if(state_game == 0) { 
+    8d68:	a001161e 	bne	r20,zero,91c4 <main+0xad8>
+					if(tiro.collision  == 1){ tiro.ativo  = 0; tiro.collision  = 0; }
+    8d6c:	d8807a17 	ldw	r2,488(sp)
+    8d70:	10800058 	cmpnei	r2,r2,1
+    8d74:	1000021e 	bne	r2,zero,8d80 <main+0x694>
+    8d78:	d8007915 	stw	zero,484(sp)
+    8d7c:	d8007a15 	stw	zero,488(sp)
+					if(tiro2.collision == 1){ tiro2.ativo = 0; tiro2.collision = 0; }
+    8d80:	d8808317 	ldw	r2,524(sp)
+    8d84:	10800058 	cmpnei	r2,r2,1
+    8d88:	1000021e 	bne	r2,zero,8d94 <main+0x6a8>
+    8d8c:	d8008215 	stw	zero,520(sp)
+    8d90:	d8008315 	stw	zero,524(sp)
+					if(tiro3.collision == 1){ tiro3.ativo = 0; tiro3.collision = 0; }
+    8d94:	d8808c17 	ldw	r2,560(sp)
+    8d98:	10800058 	cmpnei	r2,r2,1
+    8d9c:	1000021e 	bne	r2,zero,8da8 <main+0x6bc>
+    8da0:	d8008b15 	stw	zero,556(sp)
+    8da4:	d8008c15 	stw	zero,560(sp)
+					if(tiro4.collision == 1){ tiro4.ativo = 0; tiro4.collision = 0; }
+    8da8:	d8809517 	ldw	r2,596(sp)
+    8dac:	10800058 	cmpnei	r2,r2,1
+    8db0:	1000021e 	bne	r2,zero,8dbc <main+0x6d0>
+    8db4:	d8009415 	stw	zero,592(sp)
+    8db8:	d8009515 	stw	zero,596(sp)
+					if(tiro5.collision == 1){ tiro5.ativo = 0; tiro5.collision = 0; }
+    8dbc:	d8809e17 	ldw	r2,632(sp)
+    8dc0:	10800058 	cmpnei	r2,r2,1
+    8dc4:	1000021e 	bne	r2,zero,8dd0 <main+0x6e4>
+    8dc8:	d8009d15 	stw	zero,628(sp)
+    8dcc:	d8009e15 	stw	zero,632(sp)
+					if(refresh_coord == 1){ increase_coordinate(&nave,  1); }
+    8dd0:	90000326 	beq	r18,zero,8de0 <main+0x6f4>
+    8dd4:	01400044 	movi	r5,1
+    8dd8:	d9006904 	addi	r4,sp,420
+    8ddc:	00081000 	call	8100 <increase_coordinate>
+					increase_coordinate(&tiro,  1);
+    8de0:	01400044 	movi	r5,1
+    8de4:	d9007204 	addi	r4,sp,456
+    8de8:	00081000 	call	8100 <increase_coordinate>
+					increase_coordinate(&tiro2, 1);
+    8dec:	01400044 	movi	r5,1
+    8df0:	d9007b04 	addi	r4,sp,492
+    8df4:	00081000 	call	8100 <increase_coordinate>
+					increase_coordinate(&tiro3, 1);
+    8df8:	01400044 	movi	r5,1
+    8dfc:	d9008404 	addi	r4,sp,528
+    8e00:	00081000 	call	8100 <increase_coordinate>
+					increase_coordinate(&tiro4, 1);
+    8e04:	01400044 	movi	r5,1
+    8e08:	d9008d04 	addi	r4,sp,564
+    8e0c:	00081000 	call	8100 <increase_coordinate>
+					increase_coordinate(&tiro5, 1);
+    8e10:	01400044 	movi	r5,1
+    8e14:	d9009604 	addi	r4,sp,600
+    8e18:	00081000 	call	8100 <increase_coordinate>
+					set_sprite(nave.data_register,  nave.coord_x, nave.coord_y ,   nave.offset, nave.ativo);
+    8e1c:	d8807017 	ldw	r2,448(sp)
+    8e20:	d9c06c17 	ldw	r7,432(sp)
+    8e24:	d9806a17 	ldw	r6,424(sp)
+    8e28:	d9406917 	ldw	r5,420(sp)
+    8e2c:	d9006d17 	ldw	r4,436(sp)
+    8e30:	d8800015 	stw	r2,0(sp)
+				number_screen = 0;
+    8e34:	002d883a 	mov	r22,zero
+					set_sprite(nave.data_register,  nave.coord_x, nave.coord_y ,   nave.offset, nave.ativo);
+    8e38:	00080940 	call	8094 <set_sprite>
+					set_sprite(tiro.data_register,  tiro.coord_x, tiro.coord_y ,   tiro.offset, tiro.ativo);
+    8e3c:	d8807917 	ldw	r2,484(sp)
+    8e40:	d9c07517 	ldw	r7,468(sp)
+    8e44:	d9807317 	ldw	r6,460(sp)
+    8e48:	d9407217 	ldw	r5,456(sp)
+    8e4c:	d9007617 	ldw	r4,472(sp)
+    8e50:	d8800015 	stw	r2,0(sp)
+					refresh_coord   = 0;
+    8e54:	0025883a 	mov	r18,zero
+					set_sprite(tiro.data_register,  tiro.coord_x, tiro.coord_y ,   tiro.offset, tiro.ativo);
+    8e58:	00080940 	call	8094 <set_sprite>
+					set_sprite(tiro2.data_register, tiro2.coord_x, tiro2.coord_y , tiro2.offset, tiro2.ativo);
+    8e5c:	d8808217 	ldw	r2,520(sp)
+    8e60:	d9c07e17 	ldw	r7,504(sp)
+    8e64:	d9807c17 	ldw	r6,496(sp)
+    8e68:	d9407b17 	ldw	r5,492(sp)
+    8e6c:	d9007f17 	ldw	r4,508(sp)
+    8e70:	d8800015 	stw	r2,0(sp)
+					check_collision = 1; // Habilita a analise de colisao
+    8e74:	07000044 	movi	fp,1
+					set_sprite(tiro2.data_register, tiro2.coord_x, tiro2.coord_y , tiro2.offset, tiro2.ativo);
+    8e78:	00080940 	call	8094 <set_sprite>
+					set_sprite(tiro3.data_register, tiro3.coord_x,tiro3.coord_y ,  tiro3.offset, tiro3.ativo);
+    8e7c:	d8808b17 	ldw	r2,556(sp)
+    8e80:	d9c08717 	ldw	r7,540(sp)
+    8e84:	d9808517 	ldw	r6,532(sp)
+    8e88:	d9408417 	ldw	r5,528(sp)
+    8e8c:	d9008817 	ldw	r4,544(sp)
+    8e90:	d8800015 	stw	r2,0(sp)
+    8e94:	00080940 	call	8094 <set_sprite>
+					set_sprite(tiro4.data_register, tiro4.coord_x,tiro4.coord_y ,  tiro4.offset, tiro4.ativo);
+    8e98:	d8809417 	ldw	r2,592(sp)
+    8e9c:	d9c09017 	ldw	r7,576(sp)
+    8ea0:	d9808e17 	ldw	r6,568(sp)
+    8ea4:	d9408d17 	ldw	r5,564(sp)
+    8ea8:	d9009117 	ldw	r4,580(sp)
+    8eac:	d8800015 	stw	r2,0(sp)
+    8eb0:	00080940 	call	8094 <set_sprite>
+					set_sprite(tiro5.data_register, tiro5.coord_x,tiro5.coord_y ,  tiro5.offset, tiro5.ativo);
+    8eb4:	d8809d17 	ldw	r2,628(sp)
+    8eb8:	d9c09917 	ldw	r7,612(sp)
+    8ebc:	d9809717 	ldw	r6,604(sp)
+    8ec0:	d9409617 	ldw	r5,600(sp)
+    8ec4:	d9009a17 	ldw	r4,616(sp)
+    8ec8:	d8800015 	stw	r2,0(sp)
+    8ecc:	00080940 	call	8094 <set_sprite>
+		if(number_screen_3 == 1){
+    8ed0:	b8800058 	cmpnei	r2,r23,1
+    8ed4:	1000421e 	bne	r2,zero,8fe0 <main+0x8f4>
+			if(IORD(WRFULL_BASE,0) == 0){
+    8ed8:	00800074 	movhi	r2,1
+    8edc:	10846437 	ldwio	r2,4496(r2)
+    8ee0:	10003f1e 	bne	r2,zero,8fe0 <main+0x8f4>
+				if(state_game == 0) { 
+    8ee4:	a0003d1e 	bne	r20,zero,8fdc <main+0x8f0>
+					increase_coordinate(&ast_1,1);
+    8ee8:	01400044 	movi	r5,1
+    8eec:	d9001804 	addi	r4,sp,96
+    8ef0:	00081000 	call	8100 <increase_coordinate>
+					increase_coordinate(&ast_2,1);
+    8ef4:	01400044 	movi	r5,1
+    8ef8:	d9002104 	addi	r4,sp,132
+    8efc:	00081000 	call	8100 <increase_coordinate>
+					increase_coordinate(&ast_3,1);
+    8f00:	01400044 	movi	r5,1
+    8f04:	d9002a04 	addi	r4,sp,168
+    8f08:	00081000 	call	8100 <increase_coordinate>
+					increase_coordinate(&ast_4,1);
+    8f0c:	01400044 	movi	r5,1
+    8f10:	d9003304 	addi	r4,sp,204
+    8f14:	00081000 	call	8100 <increase_coordinate>
+					increase_coordinate(&ast_5,1);
+    8f18:	01400044 	movi	r5,1
+    8f1c:	d9003c04 	addi	r4,sp,240
+    8f20:	00081000 	call	8100 <increase_coordinate>
+					increase_coordinate(&ast_6,1);
+    8f24:	01400044 	movi	r5,1
+    8f28:	d9004504 	addi	r4,sp,276
+    8f2c:	00081000 	call	8100 <increase_coordinate>
+					set_sprite(ast_1.data_register,ast_1.coord_x,ast_1.coord_y , ast_1.offset, ast_1.ativo);
+    8f30:	d8801f17 	ldw	r2,124(sp)
+    8f34:	d9c01b17 	ldw	r7,108(sp)
+    8f38:	d9801917 	ldw	r6,100(sp)
+    8f3c:	d9401817 	ldw	r5,96(sp)
+    8f40:	d9001c17 	ldw	r4,112(sp)
+    8f44:	d8800015 	stw	r2,0(sp)
+					check_collision = 1;
+    8f48:	07000044 	movi	fp,1
+					set_sprite(ast_1.data_register,ast_1.coord_x,ast_1.coord_y , ast_1.offset, ast_1.ativo);
+    8f4c:	00080940 	call	8094 <set_sprite>
+					set_sprite(ast_2.data_register,ast_2.coord_x,ast_2.coord_y , ast_2.offset, ast_2.ativo);
+    8f50:	d8802817 	ldw	r2,160(sp)
+    8f54:	d9c02417 	ldw	r7,144(sp)
+    8f58:	d9802217 	ldw	r6,136(sp)
+    8f5c:	d9402117 	ldw	r5,132(sp)
+    8f60:	d9002517 	ldw	r4,148(sp)
+    8f64:	d8800015 	stw	r2,0(sp)
+    8f68:	00080940 	call	8094 <set_sprite>
+					set_sprite(ast_3.data_register,ast_3.coord_x,ast_3.coord_y , ast_3.offset, ast_3.ativo);
+    8f6c:	d8803117 	ldw	r2,196(sp)
+    8f70:	d9c02d17 	ldw	r7,180(sp)
+    8f74:	d9802b17 	ldw	r6,172(sp)
+    8f78:	d9402a17 	ldw	r5,168(sp)
+    8f7c:	d9002e17 	ldw	r4,184(sp)
+    8f80:	d8800015 	stw	r2,0(sp)
+    8f84:	00080940 	call	8094 <set_sprite>
+					set_sprite(ast_4.data_register,ast_4.coord_x,ast_4.coord_y , ast_4.offset, ast_4.ativo);
+    8f88:	d8803a17 	ldw	r2,232(sp)
+    8f8c:	d9c03617 	ldw	r7,216(sp)
+    8f90:	d9803417 	ldw	r6,208(sp)
+    8f94:	d9403317 	ldw	r5,204(sp)
+    8f98:	d9003717 	ldw	r4,220(sp)
+    8f9c:	d8800015 	stw	r2,0(sp)
+    8fa0:	00080940 	call	8094 <set_sprite>
+					set_sprite(ast_5.data_register,ast_5.coord_x,ast_5.coord_y , ast_5.offset, ast_5.ativo);
+    8fa4:	d8804317 	ldw	r2,268(sp)
+    8fa8:	d9c03f17 	ldw	r7,252(sp)
+    8fac:	d9803d17 	ldw	r6,244(sp)
+    8fb0:	d9403c17 	ldw	r5,240(sp)
+    8fb4:	d9004017 	ldw	r4,256(sp)
+    8fb8:	d8800015 	stw	r2,0(sp)
+    8fbc:	00080940 	call	8094 <set_sprite>
+					set_sprite(ast_6.data_register,ast_6.coord_x,ast_6.coord_y , ast_6.offset, ast_6.ativo);
+    8fc0:	d8804c17 	ldw	r2,304(sp)
+    8fc4:	d9c04817 	ldw	r7,288(sp)
+    8fc8:	d9804617 	ldw	r6,280(sp)
+    8fcc:	d9404517 	ldw	r5,276(sp)
+    8fd0:	d9004917 	ldw	r4,292(sp)
+    8fd4:	d8800015 	stw	r2,0(sp)
+    8fd8:	00080940 	call	8094 <set_sprite>
+				number_screen_3 = 0;
+    8fdc:	002f883a 	mov	r23,zero
+		if(number_screen_4 == 3){
+    8fe0:	a88000d8 	cmpnei	r2,r21,3
+    8fe4:	1000791e 	bne	r2,zero,91cc <main+0xae0>
+			if(IORD(WRFULL_BASE,0) == 0){
+    8fe8:	00800074 	movhi	r2,1
+    8fec:	10846437 	ldwio	r2,4496(r2)
+    8ff0:	1000761e 	bne	r2,zero,91cc <main+0xae0>
+				if(state_game == 0) { 
+    8ff4:	a000f51e 	bne	r20,zero,93cc <main+0xce0>
+					increase_coordinate(&ast_7,1);
+    8ff8:	01400044 	movi	r5,1
+    8ffc:	d9004e04 	addi	r4,sp,312
+    9000:	00081000 	call	8100 <increase_coordinate>
+					increase_coordinate(&ast_8,1);
+    9004:	01400044 	movi	r5,1
+    9008:	d9005704 	addi	r4,sp,348
+    900c:	00081000 	call	8100 <increase_coordinate>
+					increase_coordinate(&ast_9,1);
+    9010:	01400044 	movi	r5,1
+    9014:	d9006004 	addi	r4,sp,384
+    9018:	00081000 	call	8100 <increase_coordinate>
+					set_sprite(placar_dg1.data_register,placar_dg1.coord_x,placar_dg1.coord_y , placar_dg1.offset, placar_dg1.ativo);
+    901c:	d8800d17 	ldw	r2,52(sp)
+    9020:	d9c00b17 	ldw	r7,44(sp)
+    9024:	d9800a17 	ldw	r6,40(sp)
+    9028:	d9400917 	ldw	r5,36(sp)
+    902c:	d9000c17 	ldw	r4,48(sp)
+    9030:	d8800015 	stw	r2,0(sp)
+				number_screen_4 = 0;
+    9034:	002b883a 	mov	r21,zero
+					set_sprite(placar_dg1.data_register,placar_dg1.coord_x,placar_dg1.coord_y , placar_dg1.offset, placar_dg1.ativo);
+    9038:	00080940 	call	8094 <set_sprite>
+					set_sprite(placar_dg2.data_register,placar_dg2.coord_x,placar_dg2.coord_y , placar_dg2.offset, placar_dg2.ativo);
+    903c:	d8801217 	ldw	r2,72(sp)
+    9040:	d9c01017 	ldw	r7,64(sp)
+    9044:	d9800f17 	ldw	r6,60(sp)
+    9048:	d9400e17 	ldw	r5,56(sp)
+    904c:	d9001117 	ldw	r4,68(sp)
+    9050:	d8800015 	stw	r2,0(sp)
+    9054:	00080940 	call	8094 <set_sprite>
+					set_sprite(placar_dg3.data_register,placar_dg3.coord_x,placar_dg3.coord_y , placar_dg3.offset, placar_dg3.ativo);
+    9058:	d8801717 	ldw	r2,92(sp)
+    905c:	d9c01517 	ldw	r7,84(sp)
+    9060:	d9801417 	ldw	r6,80(sp)
+    9064:	d9401317 	ldw	r5,76(sp)
+    9068:	d9001617 	ldw	r4,88(sp)
+    906c:	d8800015 	stw	r2,0(sp)
+    9070:	00080940 	call	8094 <set_sprite>
+					set_sprite(ast_7.data_register,ast_7.coord_x,ast_7.coord_y , ast_7.offset, ast_7.ativo);
+    9074:	d8805517 	ldw	r2,340(sp)
+    9078:	d9c05117 	ldw	r7,324(sp)
+    907c:	d9804f17 	ldw	r6,316(sp)
+    9080:	d9404e17 	ldw	r5,312(sp)
+    9084:	d9005217 	ldw	r4,328(sp)
+    9088:	d8800015 	stw	r2,0(sp)
+    908c:	00080940 	call	8094 <set_sprite>
+					set_sprite(ast_8.data_register,ast_8.coord_x,ast_8.coord_y , ast_8.offset, ast_8.ativo);
+    9090:	d8805e17 	ldw	r2,376(sp)
+    9094:	d9c05a17 	ldw	r7,360(sp)
+    9098:	d9805817 	ldw	r6,352(sp)
+    909c:	d9405717 	ldw	r5,348(sp)
+    90a0:	d9005b17 	ldw	r4,364(sp)
+    90a4:	d8800015 	stw	r2,0(sp)
+    90a8:	00080940 	call	8094 <set_sprite>
+					set_sprite(ast_9.data_register,ast_9.coord_x,ast_9.coord_y , ast_9.offset, ast_9.ativo);
+    90ac:	d8806717 	ldw	r2,412(sp)
+    90b0:	d9c06317 	ldw	r7,396(sp)
+    90b4:	d9806117 	ldw	r6,388(sp)
+    90b8:	d9406017 	ldw	r5,384(sp)
+    90bc:	d9006417 	ldw	r4,400(sp)
+    90c0:	d8800015 	stw	r2,0(sp)
+    90c4:	00080940 	call	8094 <set_sprite>
+		if(start_pause == 1 && state_game == 0){ state_game = 1;}
+    90c8:	d8800117 	ldw	r2,4(sp)
+    90cc:	15000060 	cmpeqi	r20,r2,1
+    90d0:	003e4006 	br	89d4 <main+0x2e8>
+					nave.direction = UP;
+    90d4:	00800084 	movi	r2,2
+    90d8:	003f0106 	br	8ce0 <main+0x5f4>
+					nave.direction = DOWN;
+    90dc:	00800184 	movi	r2,6
+    90e0:	003eff06 	br	8ce0 <main+0x5f4>
+					nave.direction = UPPER_RIGHT;
+    90e4:	00800044 	movi	r2,1
+    90e8:	003efd06 	br	8ce0 <main+0x5f4>
+					nave.direction = UPPER_LEFT;
+    90ec:	008000c4 	movi	r2,3
+    90f0:	003efb06 	br	8ce0 <main+0x5f4>
+					nave.direction = BOTTOM_LEFT;
+    90f4:	00800144 	movi	r2,5
+    90f8:	003ef906 	br	8ce0 <main+0x5f4>
+					nave.direction = BOTTOM_RIGHT;
+    90fc:	008001c4 	movi	r2,7
+    9100:	003ef706 	br	8ce0 <main+0x5f4>
+				else if(tiro2.ativo == 0 && tiro2.collision == 0){ tiro2.ativo = 1; atirar_sp(&nave, &tiro2); }
+    9104:	dc008217 	ldw	r16,520(sp)
+    9108:	d8808317 	ldw	r2,524(sp)
+    910c:	80a0b03a 	or	r16,r16,r2
+    9110:	8000031e 	bne	r16,zero,9120 <main+0xa34>
+    9114:	dc408215 	stw	r17,520(sp)
+    9118:	d9407b04 	addi	r5,sp,492
+    911c:	003efe06 	br	8d18 <main+0x62c>
+				else if(tiro3.ativo == 0 && tiro3.collision == 0){ tiro3.ativo = 1; atirar_sp(&nave, &tiro3); }
+    9120:	dc008b17 	ldw	r16,556(sp)
+    9124:	d8808c17 	ldw	r2,560(sp)
+    9128:	80a0b03a 	or	r16,r16,r2
+    912c:	8000031e 	bne	r16,zero,913c <main+0xa50>
+    9130:	dc408b15 	stw	r17,556(sp)
+    9134:	d9408404 	addi	r5,sp,528
+    9138:	003ef706 	br	8d18 <main+0x62c>
+				else if(tiro4.ativo == 0 && tiro4.collision == 0){ tiro4.ativo = 1; atirar_sp(&nave, &tiro4); }
+    913c:	dc009417 	ldw	r16,592(sp)
+    9140:	d8809517 	ldw	r2,596(sp)
+    9144:	80a0b03a 	or	r16,r16,r2
+    9148:	8000031e 	bne	r16,zero,9158 <main+0xa6c>
+    914c:	dc409415 	stw	r17,592(sp)
+    9150:	d9408d04 	addi	r5,sp,564
+    9154:	003ef006 	br	8d18 <main+0x62c>
+				else if(tiro5.ativo == 0 && tiro5.collision == 0){ tiro5.ativo = 1; atirar_sp(&nave, &tiro5); }
+    9158:	dc009d17 	ldw	r16,628(sp)
+    915c:	d8809e17 	ldw	r2,632(sp)
+    9160:	80a0b03a 	or	r16,r16,r2
+    9164:	8000031e 	bne	r16,zero,9174 <main+0xa88>
+    9168:	dc409d15 	stw	r17,628(sp)
+    916c:	d9409604 	addi	r5,sp,600
+    9170:	003ee906 	br	8d18 <main+0x62c>
+				atirar     = 0; // Depois de atirar, espera um novo momento.
+    9174:	0023883a 	mov	r17,zero
+				wait_shoot = 0;
+    9178:	0021883a 	mov	r16,zero
+    917c:	003ee906 	br	8d24 <main+0x638>
+						nave.offset = 3;    // muda o sprite de animacao da nave
+    9180:	008000c4 	movi	r2,3
+    9184:	003ef006 	br	8d48 <main+0x65c>
+				}else if(TL == 1){
+    9188:	d8800317 	ldw	r2,12(sp)
+    918c:	10800058 	cmpnei	r2,r2,1
+    9190:	1000051e 	bne	r2,zero,91a8 <main+0xabc>
+					nave.offset -= 1;       // muda o sprite de animacao da nave
+    9194:	d8806c17 	ldw	r2,432(sp)
+    9198:	10bfffc4 	addi	r2,r2,-1
+					if(nave.offset < 3){
+    919c:	10c000d0 	cmplti	r3,r2,3
+    91a0:	1800031e 	bne	r3,zero,91b0 <main+0xac4>
+						nave.offset = 10;   // muda o sprite de animacao da nave
+    91a4:	d8806c15 	stw	r2,432(sp)
+				number_screen_2 = 0;
+    91a8:	0027883a 	mov	r19,zero
+    91ac:	003ee906 	br	8d54 <main+0x668>
+						nave.offset = 10;   // muda o sprite de animacao da nave
+    91b0:	00800284 	movi	r2,10
+    91b4:	003ffb06 	br	91a4 <main+0xab8>
+			}else if(number_screen_2 > 6){number_screen_2 = 0;}
+    91b8:	988001d0 	cmplti	r2,r19,7
+    91bc:	103ee51e 	bne	r2,zero,8d54 <main+0x668>
+    91c0:	003ff906 	br	91a8 <main+0xabc>
+				number_screen = 0;
+    91c4:	002d883a 	mov	r22,zero
+    91c8:	003f4106 	br	8ed0 <main+0x7e4>
+		if(start_pause == 1 && state_game == 0){ state_game = 1;}
+    91cc:	d8800117 	ldw	r2,4(sp)
+    91d0:	10800058 	cmpnei	r2,r2,1
+    91d4:	103dff1e 	bne	r2,zero,89d4 <main+0x2e8>
+    91d8:	d8800117 	ldw	r2,4(sp)
+    91dc:	1529c83a 	sub	r20,r2,r20
+    91e0:	003dfc06 	br	89d4 <main+0x2e8>
+    91e4:	1021883a 	mov	r16,r2
+		}else if(IORD(WRFULL_BASE,0) == 0 && send == 2){
+    91e8:	00c00074 	movhi	r3,1
+    91ec:	18c46437 	ldwio	r3,4496(r3)
+    91f0:	18001d1e 	bne	r3,zero,9268 <main+0xb7c>
+    91f4:	80c00098 	cmpnei	r3,r16,2
+    91f8:	183dfa1e 	bne	r3,zero,89e4 <main+0x2f8>
+			set_sprite(ast_7.data_register,ast_7.coord_x,ast_7.coord_y , ast_7.offset, 0);
+    91fc:	d9c05117 	ldw	r7,324(sp)
+    9200:	d9804f17 	ldw	r6,316(sp)
+    9204:	d9404e17 	ldw	r5,312(sp)
+    9208:	d9005217 	ldw	r4,328(sp)
+    920c:	d8000015 	stw	zero,0(sp)
+    9210:	00080940 	call	8094 <set_sprite>
+			set_sprite(ast_8.data_register,ast_8.coord_x,ast_8.coord_y , ast_8.offset, 0);
+    9214:	d9c05a17 	ldw	r7,360(sp)
+    9218:	d9805817 	ldw	r6,352(sp)
+    921c:	d9405717 	ldw	r5,348(sp)
+    9220:	d9005b17 	ldw	r4,364(sp)
+    9224:	d8000015 	stw	zero,0(sp)
+    9228:	00080940 	call	8094 <set_sprite>
+			set_sprite(ast_9.data_register,ast_9.coord_x,ast_9.coord_y , ast_9.offset, 0);
+    922c:	d9c06317 	ldw	r7,396(sp)
+    9230:	d9806117 	ldw	r6,388(sp)
+    9234:	d9406017 	ldw	r5,384(sp)
+    9238:	d9006417 	ldw	r4,400(sp)
+    923c:	d8000015 	stw	zero,0(sp)
+    9240:	00080940 	call	8094 <set_sprite>
+			set_sprite(nave.data_register ,nave.coord_x,nave.coord_y   , nave.offset,  0);
+    9244:	d9c06c17 	ldw	r7,432(sp)
+    9248:	d9806a17 	ldw	r6,424(sp)
+    924c:	d9406917 	ldw	r5,420(sp)
+    9250:	d9006d17 	ldw	r4,436(sp)
+    9254:	d8000015 	stw	zero,0(sp)
+    9258:	00080940 	call	8094 <set_sprite>
+	while(send < 2){
+    925c:	0005883a 	mov	r2,zero
+    9260:	0021883a 	mov	r16,zero
+    9264:	00003006 	br	9328 <main+0xc3c>
+    9268:	80c000a0 	cmpeqi	r3,r16,2
+    926c:	183ddd26 	beq	r3,zero,89e4 <main+0x2f8>
+    9270:	003ffa06 	br	925c <main+0xb70>
+    9274:	1021883a 	mov	r16,r2
+		}else if(IORD(WRFULL_BASE,0) == 0 && send == 2){
+    9278:	00c00074 	movhi	r3,1
+    927c:	19046437 	ldwio	r4,4496(r3)
+    9280:	80c00098 	cmpnei	r3,r16,2
+    9284:	2000271e 	bne	r4,zero,9324 <main+0xc38>
+    9288:	1800271e 	bne	r3,zero,9328 <main+0xc3c>
+			set_sprite(5,340,240, 29, 1); //O
+    928c:	04000044 	movi	r16,1
+    9290:	01c00744 	movi	r7,29
+    9294:	01803c04 	movi	r6,240
+    9298:	01405504 	movi	r5,340
+    929c:	01000144 	movi	r4,5
+    92a0:	dc000015 	stw	r16,0(sp)
+    92a4:	00080940 	call	8094 <set_sprite>
+			set_sprite(6,360,240, 30, 1); //V
+    92a8:	01c00784 	movi	r7,30
+    92ac:	01803c04 	movi	r6,240
+    92b0:	01405a04 	movi	r5,360
+    92b4:	01000184 	movi	r4,6
+    92b8:	dc000015 	stw	r16,0(sp)
+    92bc:	00080940 	call	8094 <set_sprite>
+			set_sprite(7,380,240, 28, 1); //E
+    92c0:	01c00704 	movi	r7,28
+    92c4:	01803c04 	movi	r6,240
+    92c8:	01405f04 	movi	r5,380
+    92cc:	010001c4 	movi	r4,7
+    92d0:	dc000015 	stw	r16,0(sp)
+    92d4:	00080940 	call	8094 <set_sprite>
+			set_sprite(8,400,240, 31, 1); //R
+    92d8:	01c007c4 	movi	r7,31
+    92dc:	dc000015 	stw	r16,0(sp)
+    92e0:	01803c04 	movi	r6,240
+    92e4:	01406404 	movi	r5,400
+    92e8:	01000204 	movi	r4,8
+    92ec:	00080940 	call	8094 <set_sprite>
+}
+    92f0:	0005883a 	mov	r2,zero
+    92f4:	dfc0b117 	ldw	ra,708(sp)
+    92f8:	df00b017 	ldw	fp,704(sp)
+    92fc:	ddc0af17 	ldw	r23,700(sp)
+    9300:	dd80ae17 	ldw	r22,696(sp)
+    9304:	dd40ad17 	ldw	r21,692(sp)
+    9308:	dd00ac17 	ldw	r20,688(sp)
+    930c:	dcc0ab17 	ldw	r19,684(sp)
+    9310:	dc80aa17 	ldw	r18,680(sp)
+    9314:	dc40a917 	ldw	r17,676(sp)
+    9318:	dc00a817 	ldw	r16,672(sp)
+    931c:	dec0b204 	addi	sp,sp,712
+    9320:	f800283a 	ret
+	while(send < 2){
+    9324:	183ff226 	beq	r3,zero,92f0 <main+0xc04>
+		if(IORD(SCREEN_BASE,0) == 1){
+    9328:	00c00074 	movhi	r3,1
+    932c:	18c46037 	ldwio	r3,4480(r3)
+    9330:	19000058 	cmpnei	r4,r3,1
+    9334:	2000051e 	bne	r4,zero,934c <main+0xc60>
+			IOWR_ALTERA_AVALON_PIO_DATA(RESET_PULSECOUNTER_BASE,1);
+    9338:	01000074 	movhi	r4,1
+    933c:	20c46c35 	stwio	r3,4528(r4)
+			IOWR_ALTERA_AVALON_PIO_DATA(RESET_PULSECOUNTER_BASE,0);
+    9340:	00c00074 	movhi	r3,1
+    9344:	18046c35 	stwio	zero,4528(r3)
+			send++;
+    9348:	84000044 	addi	r16,r16,1
+		if(IORD(WRFULL_BASE,0) == 0 && send == 1 && lot1 == 0){
+    934c:	00c00074 	movhi	r3,1
+    9350:	18c46437 	ldwio	r3,4496(r3)
+    9354:	183fc81e 	bne	r3,zero,9278 <main+0xb8c>
+    9358:	80c00058 	cmpnei	r3,r16,1
+    935c:	183fc61e 	bne	r3,zero,9278 <main+0xb8c>
+    9360:	103fc41e 	bne	r2,zero,9274 <main+0xb88>
+			set_sprite(1,240,240, 25, 1); //G
+    9364:	01c00644 	movi	r7,25
+    9368:	01803c04 	movi	r6,240
+    936c:	01403c04 	movi	r5,240
+    9370:	01000044 	movi	r4,1
+    9374:	dc000015 	stw	r16,0(sp)
+    9378:	00080940 	call	8094 <set_sprite>
+			set_sprite(2,260,240, 26, 1); //A
+    937c:	01c00684 	movi	r7,26
+    9380:	01803c04 	movi	r6,240
+    9384:	01404104 	movi	r5,260
+    9388:	01000084 	movi	r4,2
+    938c:	dc000015 	stw	r16,0(sp)
+    9390:	00080940 	call	8094 <set_sprite>
+			set_sprite(3,280,240, 27, 1); //M
+    9394:	01c006c4 	movi	r7,27
+    9398:	01803c04 	movi	r6,240
+    939c:	01404604 	movi	r5,280
+    93a0:	010000c4 	movi	r4,3
+    93a4:	dc000015 	stw	r16,0(sp)
+    93a8:	00080940 	call	8094 <set_sprite>
+			set_sprite(4,300,240, 28, 1); //E
+    93ac:	01c00704 	movi	r7,28
+    93b0:	dc000015 	stw	r16,0(sp)
+    93b4:	01803c04 	movi	r6,240
+    93b8:	01404b04 	movi	r5,300
+    93bc:	01000104 	movi	r4,4
+    93c0:	00080940 	call	8094 <set_sprite>
+			lot1 = 1;
+    93c4:	00800044 	movi	r2,1
+    93c8:	003fd706 	br	9328 <main+0xc3c>
+		if(start_pause == 1 && state_game == 0){ state_game = 1;}
+    93cc:	d8800117 	ldw	r2,4(sp)
+				number_screen_4 = 0;
+    93d0:	002b883a 	mov	r21,zero
+		if(start_pause == 1 && state_game == 0){ state_game = 1;}
+    93d4:	15000058 	cmpnei	r20,r2,1
+    93d8:	003d7e06 	br	89d4 <main+0x2e8>
+
+000093dc <__divsi3>:
+    93dc:	20001a16 	blt	r4,zero,9448 <__divsi3+0x6c>
+    93e0:	000f883a 	mov	r7,zero
+    93e4:	2800020e 	bge	r5,zero,93f0 <__divsi3+0x14>
+    93e8:	014bc83a 	sub	r5,zero,r5
+    93ec:	39c0005c 	xori	r7,r7,1
+    93f0:	200d883a 	mov	r6,r4
+    93f4:	00c00044 	movi	r3,1
+    93f8:	2900092e 	bgeu	r5,r4,9420 <__divsi3+0x44>
+    93fc:	00800804 	movi	r2,32
+    9400:	00c00044 	movi	r3,1
+    9404:	00000106 	br	940c <__divsi3+0x30>
+    9408:	10001226 	beq	r2,zero,9454 <__divsi3+0x78>
+    940c:	294b883a 	add	r5,r5,r5
+    9410:	10bfffc4 	addi	r2,r2,-1
+    9414:	18c7883a 	add	r3,r3,r3
+    9418:	293ffb36 	bltu	r5,r4,9408 <__divsi3+0x2c>
+    941c:	18000d26 	beq	r3,zero,9454 <__divsi3+0x78>
+    9420:	0005883a 	mov	r2,zero
+    9424:	31400236 	bltu	r6,r5,9430 <__divsi3+0x54>
+    9428:	314dc83a 	sub	r6,r6,r5
+    942c:	10c4b03a 	or	r2,r2,r3
+    9430:	1806d07a 	srli	r3,r3,1
+    9434:	280ad07a 	srli	r5,r5,1
+    9438:	183ffa1e 	bne	r3,zero,9424 <__divsi3+0x48>
+    943c:	38000126 	beq	r7,zero,9444 <__divsi3+0x68>
+    9440:	0085c83a 	sub	r2,zero,r2
+    9444:	f800283a 	ret
+    9448:	0109c83a 	sub	r4,zero,r4
+    944c:	01c00044 	movi	r7,1
+    9450:	003fe406 	br	93e4 <__divsi3+0x8>
+    9454:	0005883a 	mov	r2,zero
+    9458:	003ff806 	br	943c <__divsi3+0x60>
+
+0000945c <__modsi3>:
+    945c:	20001916 	blt	r4,zero,94c4 <__modsi3+0x68>
+    9460:	000f883a 	mov	r7,zero
+    9464:	2005883a 	mov	r2,r4
+    9468:	2800010e 	bge	r5,zero,9470 <__modsi3+0x14>
+    946c:	014bc83a 	sub	r5,zero,r5
+    9470:	00c00044 	movi	r3,1
+    9474:	2900092e 	bgeu	r5,r4,949c <__modsi3+0x40>
+    9478:	01800804 	movi	r6,32
+    947c:	00c00044 	movi	r3,1
+    9480:	00000106 	br	9488 <__modsi3+0x2c>
+    9484:	30000d26 	beq	r6,zero,94bc <__modsi3+0x60>
+    9488:	294b883a 	add	r5,r5,r5
+    948c:	31bfffc4 	addi	r6,r6,-1
+    9490:	18c7883a 	add	r3,r3,r3
+    9494:	293ffb36 	bltu	r5,r4,9484 <__modsi3+0x28>
+    9498:	18000826 	beq	r3,zero,94bc <__modsi3+0x60>
+    949c:	1806d07a 	srli	r3,r3,1
+    94a0:	11400136 	bltu	r2,r5,94a8 <__modsi3+0x4c>
+    94a4:	1145c83a 	sub	r2,r2,r5
+    94a8:	280ad07a 	srli	r5,r5,1
+    94ac:	183ffb1e 	bne	r3,zero,949c <__modsi3+0x40>
+    94b0:	38000126 	beq	r7,zero,94b8 <__modsi3+0x5c>
+    94b4:	0085c83a 	sub	r2,zero,r2
+    94b8:	f800283a 	ret
+    94bc:	2005883a 	mov	r2,r4
+    94c0:	003ffb06 	br	94b0 <__modsi3+0x54>
+    94c4:	0109c83a 	sub	r4,zero,r4
+    94c8:	01c00044 	movi	r7,1
+    94cc:	003fe506 	br	9464 <__modsi3+0x8>
+
+000094d0 <__udivsi3>:
+    94d0:	200d883a 	mov	r6,r4
+    94d4:	2900152e 	bgeu	r5,r4,952c <__udivsi3+0x5c>
+    94d8:	28001416 	blt	r5,zero,952c <__udivsi3+0x5c>
+    94dc:	00800804 	movi	r2,32
+    94e0:	00c00044 	movi	r3,1
+    94e4:	00000206 	br	94f0 <__udivsi3+0x20>
+    94e8:	10000e26 	beq	r2,zero,9524 <__udivsi3+0x54>
+    94ec:	28000516 	blt	r5,zero,9504 <__udivsi3+0x34>
+    94f0:	294b883a 	add	r5,r5,r5
+    94f4:	10bfffc4 	addi	r2,r2,-1
+    94f8:	18c7883a 	add	r3,r3,r3
+    94fc:	293ffa36 	bltu	r5,r4,94e8 <__udivsi3+0x18>
+    9500:	18000826 	beq	r3,zero,9524 <__udivsi3+0x54>
+    9504:	0005883a 	mov	r2,zero
+    9508:	31400236 	bltu	r6,r5,9514 <__udivsi3+0x44>
+    950c:	314dc83a 	sub	r6,r6,r5
+    9510:	10c4b03a 	or	r2,r2,r3
+    9514:	1806d07a 	srli	r3,r3,1
+    9518:	280ad07a 	srli	r5,r5,1
+    951c:	183ffa1e 	bne	r3,zero,9508 <__udivsi3+0x38>
+    9520:	f800283a 	ret
+    9524:	0005883a 	mov	r2,zero
+    9528:	f800283a 	ret
+    952c:	00c00044 	movi	r3,1
+    9530:	003ff406 	br	9504 <__udivsi3+0x34>
+
+00009534 <__umodsi3>:
+    9534:	2005883a 	mov	r2,r4
+    9538:	2900132e 	bgeu	r5,r4,9588 <__umodsi3+0x54>
+    953c:	28001216 	blt	r5,zero,9588 <__umodsi3+0x54>
+    9540:	01800804 	movi	r6,32
+    9544:	00c00044 	movi	r3,1
+    9548:	00000206 	br	9554 <__umodsi3+0x20>
+    954c:	30000c26 	beq	r6,zero,9580 <__umodsi3+0x4c>
+    9550:	28000516 	blt	r5,zero,9568 <__umodsi3+0x34>
+    9554:	294b883a 	add	r5,r5,r5
+    9558:	31bfffc4 	addi	r6,r6,-1
+    955c:	18c7883a 	add	r3,r3,r3
+    9560:	293ffa36 	bltu	r5,r4,954c <__umodsi3+0x18>
+    9564:	18000626 	beq	r3,zero,9580 <__umodsi3+0x4c>
+    9568:	1806d07a 	srli	r3,r3,1
+    956c:	11400136 	bltu	r2,r5,9574 <__umodsi3+0x40>
+    9570:	1145c83a 	sub	r2,r2,r5
+    9574:	280ad07a 	srli	r5,r5,1
+    9578:	183ffb1e 	bne	r3,zero,9568 <__umodsi3+0x34>
+    957c:	f800283a 	ret
+    9580:	2005883a 	mov	r2,r4
+    9584:	f800283a 	ret
+    9588:	00c00044 	movi	r3,1
+    958c:	003ff606 	br	9568 <__umodsi3+0x34>
+
+00009590 <srand>:
+    9590:	00800074 	movhi	r2,1
+    9594:	112a8915 	stw	r4,-21980(r2)
+    9598:	00800074 	movhi	r2,1
+    959c:	102a8a15 	stw	zero,-21976(r2)
+    95a0:	f800283a 	ret
+
+000095a4 <rand>:
+    95a4:	00800074 	movhi	r2,1
+    95a8:	112a8917 	ldw	r4,-21980(r2)
+    95ac:	00800074 	movhi	r2,1
+    95b0:	116a8a17 	ldw	r5,-21976(r2)
+    95b4:	01932574 	movhi	r6,19605
+    95b8:	01d614b4 	movhi	r7,22610
+    95bc:	deffff04 	addi	sp,sp,-4
+    95c0:	319fcb44 	addi	r6,r6,32557
+    95c4:	39fd0b44 	addi	r7,r7,-3027
+    95c8:	dfc00015 	stw	ra,0(sp)
+    95cc:	00096a80 	call	96a8 <__muldi3>
+    95d0:	11000044 	addi	r4,r2,1
+    95d4:	2085803a 	cmpltu	r2,r4,r2
+    95d8:	10c7883a 	add	r3,r2,r3
+    95dc:	00800074 	movhi	r2,1
+    95e0:	112a8915 	stw	r4,-21980(r2)
+    95e4:	00800074 	movhi	r2,1
+    95e8:	10ea8a15 	stw	r3,-21976(r2)
+    95ec:	00a00034 	movhi	r2,32768
+    95f0:	10bfffc4 	addi	r2,r2,-1
+    95f4:	1884703a 	and	r2,r3,r2
+    95f8:	dfc00017 	ldw	ra,0(sp)
+    95fc:	dec00104 	addi	sp,sp,4
+    9600:	f800283a 	ret
+
+00009604 <time>:
+    9604:	defffb04 	addi	sp,sp,-20
+    9608:	00800074 	movhi	r2,1
+    960c:	dc000315 	stw	r16,12(sp)
+    9610:	2021883a 	mov	r16,r4
+    9614:	112a4417 	ldw	r4,-22256(r2)
+    9618:	000d883a 	mov	r6,zero
+    961c:	d80b883a 	mov	r5,sp
+    9620:	dfc00415 	stw	ra,16(sp)
+    9624:	000965c0 	call	965c <_gettimeofday_r>
+    9628:	1000030e 	bge	r2,zero,9638 <time+0x34>
+    962c:	00bfffc4 	movi	r2,-1
+    9630:	d8800015 	stw	r2,0(sp)
+    9634:	d8800115 	stw	r2,4(sp)
+    9638:	d8800017 	ldw	r2,0(sp)
+    963c:	d8c00117 	ldw	r3,4(sp)
+    9640:	80000226 	beq	r16,zero,964c <time+0x48>
+    9644:	80800015 	stw	r2,0(r16)
+    9648:	80c00115 	stw	r3,4(r16)
+    964c:	dfc00417 	ldw	ra,16(sp)
+    9650:	dc000317 	ldw	r16,12(sp)
+    9654:	dec00504 	addi	sp,sp,20
+    9658:	f800283a 	ret
+
+0000965c <_gettimeofday_r>:
+    965c:	defffe04 	addi	sp,sp,-8
+    9660:	dc000015 	stw	r16,0(sp)
+    9664:	00800074 	movhi	r2,1
+    9668:	2021883a 	mov	r16,r4
+    966c:	2809883a 	mov	r4,r5
+    9670:	300b883a 	mov	r5,r6
+    9674:	dfc00115 	stw	ra,4(sp)
+    9678:	102a8b15 	stw	zero,-21972(r2)
+    967c:	00097d40 	call	97d4 <gettimeofday>
+    9680:	10ffffd8 	cmpnei	r3,r2,-1
+    9684:	1800041e 	bne	r3,zero,9698 <_gettimeofday_r+0x3c>
+    9688:	00c00074 	movhi	r3,1
+    968c:	18ea8b17 	ldw	r3,-21972(r3)
+    9690:	18000126 	beq	r3,zero,9698 <_gettimeofday_r+0x3c>
+    9694:	80c00015 	stw	r3,0(r16)
+    9698:	dfc00117 	ldw	ra,4(sp)
+    969c:	dc000017 	ldw	r16,0(sp)
+    96a0:	dec00204 	addi	sp,sp,8
+    96a4:	f800283a 	ret
+
+000096a8 <__muldi3>:
+    96a8:	defff704 	addi	sp,sp,-36
+    96ac:	dd400515 	stw	r21,20(sp)
+    96b0:	dd000415 	stw	r20,16(sp)
+    96b4:	202ad43a 	srli	r21,r4,16
+    96b8:	253fffcc 	andi	r20,r4,65535
+    96bc:	dc000015 	stw	r16,0(sp)
+    96c0:	343fffcc 	andi	r16,r6,65535
+    96c4:	dcc00315 	stw	r19,12(sp)
+    96c8:	dc800215 	stw	r18,8(sp)
+    96cc:	2027883a 	mov	r19,r4
+    96d0:	2825883a 	mov	r18,r5
+    96d4:	a009883a 	mov	r4,r20
+    96d8:	800b883a 	mov	r5,r16
+    96dc:	dfc00815 	stw	ra,32(sp)
+    96e0:	ddc00715 	stw	r23,28(sp)
+    96e4:	dd800615 	stw	r22,24(sp)
+    96e8:	302ed43a 	srli	r23,r6,16
+    96ec:	382d883a 	mov	r22,r7
+    96f0:	dc400115 	stw	r17,4(sp)
+    96f4:	3023883a 	mov	r17,r6
+    96f8:	00097ac0 	call	97ac <__mulsi3>
+    96fc:	800b883a 	mov	r5,r16
+    9700:	a809883a 	mov	r4,r21
+    9704:	1021883a 	mov	r16,r2
+    9708:	00097ac0 	call	97ac <__mulsi3>
+    970c:	a809883a 	mov	r4,r21
+    9710:	b80b883a 	mov	r5,r23
+    9714:	102b883a 	mov	r21,r2
+    9718:	00097ac0 	call	97ac <__mulsi3>
+    971c:	a009883a 	mov	r4,r20
+    9720:	b80b883a 	mov	r5,r23
+    9724:	1029883a 	mov	r20,r2
+    9728:	00097ac0 	call	97ac <__mulsi3>
+    972c:	8010d43a 	srli	r8,r16,16
+    9730:	1545883a 	add	r2,r2,r21
+    9734:	4091883a 	add	r8,r8,r2
+    9738:	4540022e 	bgeu	r8,r21,9744 <__muldi3+0x9c>
+    973c:	00800074 	movhi	r2,1
+    9740:	a0a9883a 	add	r20,r20,r2
+    9744:	4006d43a 	srli	r3,r8,16
+    9748:	4010943a 	slli	r8,r8,16
+    974c:	b00b883a 	mov	r5,r22
+    9750:	9809883a 	mov	r4,r19
+    9754:	843fffcc 	andi	r16,r16,65535
+    9758:	1d29883a 	add	r20,r3,r20
+    975c:	4421883a 	add	r16,r8,r16
+    9760:	00097ac0 	call	97ac <__mulsi3>
+    9764:	900b883a 	mov	r5,r18
+    9768:	8809883a 	mov	r4,r17
+    976c:	1529883a 	add	r20,r2,r20
+    9770:	00097ac0 	call	97ac <__mulsi3>
+    9774:	1007883a 	mov	r3,r2
+    9778:	a0c7883a 	add	r3,r20,r3
+    977c:	8005883a 	mov	r2,r16
+    9780:	dfc00817 	ldw	ra,32(sp)
+    9784:	ddc00717 	ldw	r23,28(sp)
+    9788:	dd800617 	ldw	r22,24(sp)
+    978c:	dd400517 	ldw	r21,20(sp)
+    9790:	dd000417 	ldw	r20,16(sp)
+    9794:	dcc00317 	ldw	r19,12(sp)
+    9798:	dc800217 	ldw	r18,8(sp)
+    979c:	dc400117 	ldw	r17,4(sp)
+    97a0:	dc000017 	ldw	r16,0(sp)
+    97a4:	dec00904 	addi	sp,sp,36
+    97a8:	f800283a 	ret
+
+000097ac <__mulsi3>:
+    97ac:	0005883a 	mov	r2,zero
+    97b0:	20000726 	beq	r4,zero,97d0 <__mulsi3+0x24>
+    97b4:	20c0004c 	andi	r3,r4,1
+    97b8:	2008d07a 	srli	r4,r4,1
+    97bc:	18000126 	beq	r3,zero,97c4 <__mulsi3+0x18>
+    97c0:	1145883a 	add	r2,r2,r5
+    97c4:	294b883a 	add	r5,r5,r5
+    97c8:	203ffa1e 	bne	r4,zero,97b4 <__mulsi3+0x8>
+    97cc:	f800283a 	ret
+    97d0:	f800283a 	ret
+
+000097d4 <gettimeofday>:
+ */
+ 
+
+#if defined (__GNUC__) && (__GNUC__ >= 4)
+int ALT_GETTIMEOFDAY (struct timeval  *ptimeval, void *ptimezone_vptr)
+{
+    97d4:	defffa04 	addi	sp,sp,-24
+    97d8:	dd000415 	stw	r20,16(sp)
+ * Obtain the system clock rate in ticks/s. 
+ */
+
+static ALT_INLINE alt_u32 ALT_ALWAYS_INLINE alt_ticks_per_second (void)
+{
+  return _alt_tick_rate;
+    97dc:	d5205017 	ldw	r20,-32448(gp)
+    97e0:	dcc00315 	stw	r19,12(sp)
+ * alt_nticks() returns the elapsed number of system clock ticks since reset.
+ */
+
+static ALT_INLINE alt_u32 ALT_ALWAYS_INLINE alt_nticks (void)
+{
+  return _alt_nticks;
+    97e4:	d4e04f17 	ldw	r19,-32452(gp)
+    97e8:	dfc00515 	stw	ra,20(sp)
+    97ec:	dc800215 	stw	r18,8(sp)
+    97f0:	dc400115 	stw	r17,4(sp)
+    97f4:	dc000015 	stw	r16,0(sp)
+   * non-zero system clock rate. If the system clock is not running, an error
+   * is generated and the contents of "ptimeval" and "ptimezone" are not
+   * updated.
+   */
+
+  if (tick_rate)
+    97f8:	a0004c26 	beq	r20,zero,992c <gettimeofday+0x158>
+    97fc:	2021883a 	mov	r16,r4
+    9800:	2823883a 	mov	r17,r5
+  {
+    ptimeval->tv_sec  = alt_resettime.tv_sec  + nticks/tick_rate;
+    9804:	9809883a 	mov	r4,r19
+    9808:	a00b883a 	mov	r5,r20
+    980c:	00094d00 	call	94d0 <__udivsi3>
+    9810:	00c00074 	movhi	r3,1
+    9814:	18ea9317 	ldw	r3,-21940(r3)
+    9818:	04800074 	movhi	r18,1
+    981c:	94aa9304 	addi	r18,r18,-21940
+    9820:	91000117 	ldw	r4,4(r18)
+    9824:	10c7883a 	add	r3,r2,r3
+    9828:	1885803a 	cmpltu	r2,r3,r2
+    982c:	1105883a 	add	r2,r2,r4
+    ptimeval->tv_usec = alt_resettime.tv_usec +
+     (alt_u32)(((alt_u64)nticks*(ALT_US/tick_rate))%ALT_US);
+    9830:	010003f4 	movhi	r4,15
+    ptimeval->tv_sec  = alt_resettime.tv_sec  + nticks/tick_rate;
+    9834:	80c00015 	stw	r3,0(r16)
+     (alt_u32)(((alt_u64)nticks*(ALT_US/tick_rate))%ALT_US);
+    9838:	a00b883a 	mov	r5,r20
+    983c:	21109004 	addi	r4,r4,16960
+    ptimeval->tv_sec  = alt_resettime.tv_sec  + nticks/tick_rate;
+    9840:	80800115 	stw	r2,4(r16)
+     (alt_u32)(((alt_u64)nticks*(ALT_US/tick_rate))%ALT_US);
+    9844:	00094d00 	call	94d0 <__udivsi3>
+    9848:	980d883a 	mov	r6,r19
+    984c:	000f883a 	mov	r7,zero
+    9850:	1009883a 	mov	r4,r2
+    9854:	000b883a 	mov	r5,zero
+    9858:	00096a80 	call	96a8 <__muldi3>
+    985c:	018003f4 	movhi	r6,15
+    9860:	180b883a 	mov	r5,r3
+    9864:	31909004 	addi	r6,r6,16960
+    9868:	000f883a 	mov	r7,zero
+    986c:	1009883a 	mov	r4,r2
+    9870:	000a1600 	call	a160 <__umoddi3>
+    ptimeval->tv_usec = alt_resettime.tv_usec +
+    9874:	90c00217 	ldw	r3,8(r18)
+          break;
+      }
+      else
+      {
+          ptimeval->tv_sec--;
+          ptimeval->tv_usec += ALT_US;
+    9878:	014003f4 	movhi	r5,15
+    987c:	29509004 	addi	r5,r5,16960
+    ptimeval->tv_usec = alt_resettime.tv_usec +
+    9880:	1887883a 	add	r3,r3,r2
+    9884:	80c00215 	stw	r3,8(r16)
+    while(ptimeval->tv_usec < 0) {
+    9888:	81000217 	ldw	r4,8(r16)
+    988c:	2000080e 	bge	r4,zero,98b0 <gettimeofday+0xdc>
+      if (ptimeval->tv_sec <= 0)
+    9890:	80800117 	ldw	r2,4(r16)
+    9894:	80c00017 	ldw	r3,0(r16)
+    9898:	00801216 	blt	zero,r2,98e4 <gettimeofday+0x110>
+    989c:	1000011e 	bne	r2,zero,98a4 <gettimeofday+0xd0>
+    98a0:	1800101e 	bne	r3,zero,98e4 <gettimeofday+0x110>
+          ptimeval->tv_sec = 0;
+    98a4:	80000015 	stw	zero,0(r16)
+    98a8:	80000115 	stw	zero,4(r16)
+          ptimeval->tv_usec = 0;
+    98ac:	80000215 	stw	zero,8(r16)
+      }
+    }
+    
+    while(ptimeval->tv_usec >= ALT_US) {
+    98b0:	010003f4 	movhi	r4,15
+      ptimeval->tv_sec++;
+      ptimeval->tv_usec -= ALT_US;
+    98b4:	017ffc74 	movhi	r5,65521
+    while(ptimeval->tv_usec >= ALT_US) {
+    98b8:	21108fc4 	addi	r4,r4,16959
+      ptimeval->tv_usec -= ALT_US;
+    98bc:	296f7004 	addi	r5,r5,-16960
+    while(ptimeval->tv_usec >= ALT_US) {
+    98c0:	80c00217 	ldw	r3,8(r16)
+    98c4:	20c00f16 	blt	r4,r3,9904 <gettimeofday+0x130>
+    }
+      
+    if (ptimezone)
+    98c8:	88000426 	beq	r17,zero,98dc <gettimeofday+0x108>
+    { 
+      ptimezone->tz_minuteswest = alt_timezone.tz_minuteswest;
+    98cc:	d0a04a17 	ldw	r2,-32472(gp)
+    98d0:	88800015 	stw	r2,0(r17)
+      ptimezone->tz_dsttime     = alt_timezone.tz_dsttime;
+    98d4:	d0a04b17 	ldw	r2,-32468(gp)
+    98d8:	88800115 	stw	r2,4(r17)
+    }
+
+    return 0;
+    98dc:	0005883a 	mov	r2,zero
+    98e0:	00001306 	br	9930 <gettimeofday+0x15c>
+          ptimeval->tv_sec--;
+    98e4:	19bfffc4 	addi	r6,r3,-1
+    98e8:	1807003a 	cmpeq	r3,r3,zero
+    98ec:	10c5c83a 	sub	r2,r2,r3
+          ptimeval->tv_usec += ALT_US;
+    98f0:	2149883a 	add	r4,r4,r5
+          ptimeval->tv_sec--;
+    98f4:	81800015 	stw	r6,0(r16)
+    98f8:	80800115 	stw	r2,4(r16)
+          ptimeval->tv_usec += ALT_US;
+    98fc:	81000215 	stw	r4,8(r16)
+    9900:	003fe106 	br	9888 <gettimeofday+0xb4>
+      ptimeval->tv_sec++;
+    9904:	80800017 	ldw	r2,0(r16)
+    9908:	81c00117 	ldw	r7,4(r16)
+      ptimeval->tv_usec -= ALT_US;
+    990c:	1947883a 	add	r3,r3,r5
+      ptimeval->tv_sec++;
+    9910:	11800044 	addi	r6,r2,1
+    9914:	3085803a 	cmpltu	r2,r6,r2
+    9918:	11c5883a 	add	r2,r2,r7
+    991c:	81800015 	stw	r6,0(r16)
+    9920:	80800115 	stw	r2,4(r16)
+      ptimeval->tv_usec -= ALT_US;
+    9924:	80c00215 	stw	r3,8(r16)
+    9928:	003fe506 	br	98c0 <gettimeofday+0xec>
+  }
+
+  return -ENOTSUP;
+    992c:	00bfde84 	movi	r2,-134
+}
+    9930:	dfc00517 	ldw	ra,20(sp)
+    9934:	dd000417 	ldw	r20,16(sp)
+    9938:	dcc00317 	ldw	r19,12(sp)
+    993c:	dc800217 	ldw	r18,8(sp)
+    9940:	dc400117 	ldw	r17,4(sp)
+    9944:	dc000017 	ldw	r16,0(sp)
+    9948:	dec00604 	addi	sp,sp,24
+    994c:	f800283a 	ret
+
+00009950 <alt_load>:
+ * there is no bootloader, so this application is responsible for loading to
+ * RAM any sections that are required.
+ */  
+
+void alt_load (void)
+{
+    9950:	deffff04 	addi	sp,sp,-4
+
+static void ALT_INLINE alt_load_section (alt_u32* from, 
+                                         alt_u32* to, 
+                                         alt_u32* end)
+{
+  if (to != from)
+    9954:	00800074 	movhi	r2,1
+    9958:	00c00074 	movhi	r3,1
+    995c:	dfc00015 	stw	ra,0(sp)
+    9960:	10aa0904 	addi	r2,r2,-22492
+    9964:	18ea4804 	addi	r3,r3,-22240
+    9968:	10c00326 	beq	r2,r3,9978 <alt_load+0x28>
+  {
+    while( to != end )
+    996c:	01000074 	movhi	r4,1
+    9970:	212a4804 	addi	r4,r4,-22240
+    9974:	1100141e 	bne	r2,r4,99c8 <alt_load+0x78>
+  if (to != from)
+    9978:	00800074 	movhi	r2,1
+    997c:	00c00074 	movhi	r3,1
+    9980:	10a00804 	addi	r2,r2,-32736
+    9984:	18e00804 	addi	r3,r3,-32736
+    9988:	10c00326 	beq	r2,r3,9998 <alt_load+0x48>
+    while( to != end )
+    998c:	01000074 	movhi	r4,1
+    9990:	21200804 	addi	r4,r4,-32736
+    9994:	1100111e 	bne	r2,r4,99dc <alt_load+0x8c>
+  if (to != from)
+    9998:	00800074 	movhi	r2,1
+    999c:	00c00074 	movhi	r3,1
+    99a0:	10a9c904 	addi	r2,r2,-22748
+    99a4:	18e9c904 	addi	r3,r3,-22748
+    99a8:	10c00326 	beq	r2,r3,99b8 <alt_load+0x68>
+    while( to != end )
+    99ac:	01000074 	movhi	r4,1
+    99b0:	212a0904 	addi	r4,r4,-22492
+    99b4:	11000e1e 	bne	r2,r4,99f0 <alt_load+0xa0>
+  
+  /*
+   * Now ensure that the caches are in synch.
+   */
+  
+  alt_dcache_flush_all();
+    99b8:	0009b3c0 	call	9b3c <alt_dcache_flush_all>
+  alt_icache_flush_all();
+}
+    99bc:	dfc00017 	ldw	ra,0(sp)
+    99c0:	dec00104 	addi	sp,sp,4
+  alt_icache_flush_all();
+    99c4:	0009b401 	jmpi	9b40 <alt_icache_flush_all>
+    {
+      *to++ = *from++;
+    99c8:	19400017 	ldw	r5,0(r3)
+    99cc:	10800104 	addi	r2,r2,4
+    99d0:	18c00104 	addi	r3,r3,4
+    99d4:	117fff15 	stw	r5,-4(r2)
+    99d8:	003fe606 	br	9974 <alt_load+0x24>
+    99dc:	19400017 	ldw	r5,0(r3)
+    99e0:	10800104 	addi	r2,r2,4
+    99e4:	18c00104 	addi	r3,r3,4
+    99e8:	117fff15 	stw	r5,-4(r2)
+    99ec:	003fe906 	br	9994 <alt_load+0x44>
+    99f0:	19400017 	ldw	r5,0(r3)
+    99f4:	10800104 	addi	r2,r2,4
+    99f8:	18c00104 	addi	r3,r3,4
+    99fc:	117fff15 	stw	r5,-4(r2)
+    9a00:	003fec06 	br	99b4 <alt_load+0x64>
+
+00009a04 <alt_main>:
+ * devices/filesystems/components in the system; and call the entry point for
+ * the users application, i.e. main().
+ */
+
+void alt_main (void)
+{
+    9a04:	deffff04 	addi	sp,sp,-4
+#endif
+
+  /* ALT LOG - please see HAL/sys/alt_log_printf.h for details */
+  ALT_LOG_PRINT_BOOT("[alt_main.c] Entering alt_main, calling alt_irq_init.\r\n");
+  /* Initialize the interrupt controller. */
+  alt_irq_init (NULL);
+    9a08:	0009883a 	mov	r4,zero
+{
+    9a0c:	dfc00015 	stw	ra,0(sp)
+  alt_irq_init (NULL);
+    9a10:	0009b180 	call	9b18 <alt_irq_init>
+  ALT_LOG_PRINT_BOOT("[alt_main.c] Done OS Init, calling alt_sem_create.\r\n");
+  ALT_SEM_CREATE (&alt_fd_list_lock, 1);
+
+  /* Initialize the device drivers/software components. */
+  ALT_LOG_PRINT_BOOT("[alt_main.c] Calling alt_sys_init.\r\n");
+  alt_sys_init();
+    9a14:	0009b380 	call	9b38 <alt_sys_init>
+   */
+
+  ALT_LOG_PRINT_BOOT("[alt_main.c] Calling main.\r\n");
+
+#ifdef ALT_NO_EXIT
+  main (alt_argc, alt_argv, alt_envp);
+    9a18:	d1a04c17 	ldw	r6,-32464(gp)
+    9a1c:	d1604d17 	ldw	r5,-32460(gp)
+    9a20:	d1204e17 	ldw	r4,-32456(gp)
+  close(STDOUT_FILENO);
+  exit (result);
+#endif
+
+  ALT_LOG_PRINT_BOOT("[alt_main.c] After main - we should not be here?.\r\n");
+}
+    9a24:	dfc00017 	ldw	ra,0(sp)
+    9a28:	dec00104 	addi	sp,sp,4
+  main (alt_argc, alt_argv, alt_envp);
+    9a2c:	00086ec1 	jmpi	86ec <main>
+
+00009a30 <alt_alarm_stop>:
+static ALT_INLINE alt_irq_context ALT_ALWAYS_INLINE 
+       alt_irq_disable_all (void)
+{
+  alt_irq_context context;
+
+  NIOS2_READ_STATUS (context);
+    9a30:	0007303a 	rdctl	r3,status
+
+  NIOS2_WRITE_STATUS (context & ~NIOS2_STATUS_PIE_MSK);
+    9a34:	00bfff84 	movi	r2,-2
+    9a38:	1884703a 	and	r2,r3,r2
+    9a3c:	1001703a 	wrctl	status,r2
+ * input argument is the element to remove.
+ */
+     
+static ALT_INLINE void ALT_ALWAYS_INLINE alt_llist_remove(alt_llist* entry)
+{
+  entry->next->previous = entry->previous;
+    9a40:	21400017 	ldw	r5,0(r4)
+    9a44:	20800117 	ldw	r2,4(r4)
+    9a48:	28800115 	stw	r2,4(r5)
+  entry->previous->next = entry->next;
+    9a4c:	11400015 	stw	r5,0(r2)
+  /* 
+   * Set the entry to point to itself, so that any further calls to
+   * alt_llist_remove() are harmless.
+   */
+
+  entry->previous = entry;
+    9a50:	21000115 	stw	r4,4(r4)
+  entry->next     = entry;
+    9a54:	21000015 	stw	r4,0(r4)
+  status &= ~NIOS2_STATUS_PIE_MSK;
+  status |= (context & NIOS2_STATUS_PIE_MSK);
+  
+  NIOS2_WRITE_STATUS (status);
+#else
+  NIOS2_WRITE_STATUS (context);
+    9a58:	1801703a 	wrctl	status,r3
+  alt_irq_context irq_context;
+
+  irq_context = alt_irq_disable_all();
+  alt_llist_remove (&alarm->llist);
+  alt_irq_enable_all (irq_context);
+}
+    9a5c:	f800283a 	ret
+
+00009a60 <alt_tick>:
+
+  alt_u32    next_callback;
+
+  /* update the tick counter */
+
+  _alt_nticks++;
+    9a60:	d0a04f17 	ldw	r2,-32452(gp)
+{
+    9a64:	defffb04 	addi	sp,sp,-20
+    9a68:	dc000015 	stw	r16,0(sp)
+  alt_alarm* alarm = (alt_alarm*) alt_alarm_list.next;
+    9a6c:	d4200317 	ldw	r16,-32756(gp)
+  _alt_nticks++;
+    9a70:	10800044 	addi	r2,r2,1
+{
+    9a74:	dc800215 	stw	r18,8(sp)
+    9a78:	dc400115 	stw	r17,4(sp)
+    9a7c:	dfc00415 	stw	ra,16(sp)
+    9a80:	dcc00315 	stw	r19,12(sp)
+  _alt_nticks++;
+    9a84:	d0a04f15 	stw	r2,-32452(gp)
+
+  /* process the registered callbacks */
+
+  while (alarm != (alt_alarm*) &alt_alarm_list)
+    9a88:	d4600304 	addi	r17,gp,-32756
+         * flag. This will prevent the subsequent tick event from causing
+         * an alarm too early.
+         */
+        if(alarm->time < _alt_nticks)
+        {
+          alarm->rollover = 1;
+    9a8c:	04800044 	movi	r18,1
+  while (alarm != (alt_alarm*) &alt_alarm_list)
+    9a90:	8440071e 	bne	r16,r17,9ab0 <alt_tick+0x50>
+  /* 
+   * Update the operating system specific timer facilities.
+   */
+
+  ALT_OS_TIME_TICK();
+}
+    9a94:	dfc00417 	ldw	ra,16(sp)
+    9a98:	dcc00317 	ldw	r19,12(sp)
+    9a9c:	dc800217 	ldw	r18,8(sp)
+    9aa0:	dc400117 	ldw	r17,4(sp)
+    9aa4:	dc000017 	ldw	r16,0(sp)
+    9aa8:	dec00504 	addi	sp,sp,20
+    9aac:	f800283a 	ret
+    if ((alarm->rollover) && (_alt_nticks == 0))
+    9ab0:	80800403 	ldbu	r2,16(r16)
+    next = (alt_alarm*) alarm->llist.next;
+    9ab4:	84c00017 	ldw	r19,0(r16)
+    if ((alarm->rollover) && (_alt_nticks == 0))
+    9ab8:	10000326 	beq	r2,zero,9ac8 <alt_tick+0x68>
+    9abc:	d0a04f17 	ldw	r2,-32452(gp)
+    9ac0:	1000011e 	bne	r2,zero,9ac8 <alt_tick+0x68>
+      alarm->rollover = 0;
+    9ac4:	80000405 	stb	zero,16(r16)
+    if ((alarm->time <= _alt_nticks) && (alarm->rollover == 0))
+    9ac8:	d0e04f17 	ldw	r3,-32452(gp)
+    9acc:	80800217 	ldw	r2,8(r16)
+    9ad0:	18800836 	bltu	r3,r2,9af4 <alt_tick+0x94>
+    9ad4:	80800403 	ldbu	r2,16(r16)
+    9ad8:	1000061e 	bne	r2,zero,9af4 <alt_tick+0x94>
+      next_callback = alarm->callback (alarm->context);
+    9adc:	80800317 	ldw	r2,12(r16)
+    9ae0:	81000517 	ldw	r4,20(r16)
+    9ae4:	103ee83a 	callr	r2
+      if (next_callback == 0)
+    9ae8:	1000041e 	bne	r2,zero,9afc <alt_tick+0x9c>
+        alt_alarm_stop (alarm);
+    9aec:	8009883a 	mov	r4,r16
+    9af0:	0009a300 	call	9a30 <alt_alarm_stop>
+{
+    9af4:	9821883a 	mov	r16,r19
+    9af8:	003fe506 	br	9a90 <alt_tick+0x30>
+        alarm->time += next_callback;
+    9afc:	80c00217 	ldw	r3,8(r16)
+    9b00:	10c5883a 	add	r2,r2,r3
+        if(alarm->time < _alt_nticks)
+    9b04:	d0e04f17 	ldw	r3,-32452(gp)
+        alarm->time += next_callback;
+    9b08:	80800215 	stw	r2,8(r16)
+        if(alarm->time < _alt_nticks)
+    9b0c:	10fff92e 	bgeu	r2,r3,9af4 <alt_tick+0x94>
+          alarm->rollover = 1;
+    9b10:	84800405 	stb	r18,16(r16)
+    9b14:	003ff706 	br	9af4 <alt_tick+0x94>
+
+00009b18 <alt_irq_init>:
+ * The "base" parameter is ignored and only
+ * present for backwards-compatibility.
+ */
+
+void alt_irq_init ( const void* base )
+{
+    9b18:	deffff04 	addi	sp,sp,-4
+    9b1c:	dfc00015 	stw	ra,0(sp)
+    ALTERA_NIOS2_GEN2_IRQ_INIT ( NIOS2_GEN2_0, nios2_gen2_0);
+    9b20:	0009b440 	call	9b44 <altera_nios2_gen2_irq_init>
+ * alt_irq_cpu_enable_interrupts() enables the CPU to start taking interrupts.
+ */
+static ALT_INLINE void ALT_ALWAYS_INLINE 
+       alt_irq_cpu_enable_interrupts (void)
+{
+    NIOS2_WRITE_STATUS(NIOS2_STATUS_PIE_MSK
+    9b24:	00800044 	movi	r2,1
+    9b28:	1001703a 	wrctl	status,r2
+    alt_irq_cpu_enable_interrupts();
+}
+    9b2c:	dfc00017 	ldw	ra,0(sp)
+    9b30:	dec00104 	addi	sp,sp,4
+    9b34:	f800283a 	ret
+
+00009b38 <alt_sys_init>:
+
+void alt_sys_init( void )
+{
+    ALTERA_AVALON_JTAG_UART_INIT ( JTAG_UART_0, jtag_uart_0);
+    ALTERA_AVALON_SYSID_QSYS_INIT ( SYSID_QSYS_0, sysid_qsys_0);
+}
+    9b38:	f800283a 	ret
+
+00009b3c <alt_dcache_flush_all>:
+  for (i = (char*) 0; i < (char*) NIOS2_DCACHE_SIZE; i+= NIOS2_DCACHE_LINE_SIZE)
+  { 
+    __asm__ volatile ("flushd (%0)" :: "r" (i));
+  }
+#endif /* NIOS2_DCACHE_SIZE > 0 */
+}
+    9b3c:	f800283a 	ret
+
+00009b40 <alt_icache_flush_all>:
+void alt_icache_flush_all (void)
+{
+#if NIOS2_ICACHE_SIZE > 0
+  alt_icache_flush (0, NIOS2_ICACHE_SIZE);
+#endif
+}
+    9b40:	f800283a 	ret
+
+00009b44 <altera_nios2_gen2_irq_init>:
+ * To initialize the internal interrupt controller, just clear the IENABLE
+ * register so that all possible IRQs are disabled.
+ */
+void altera_nios2_gen2_irq_init(void) 
+{
+    NIOS2_WRITE_IENABLE(0);
+    9b44:	000170fa 	wrctl	ienable,zero
+}
+    9b48:	f800283a 	ret
+
+00009b4c <__moddi3>:
+    9b4c:	defff304 	addi	sp,sp,-52
+    9b50:	dc400415 	stw	r17,16(sp)
+    9b54:	dc000315 	stw	r16,12(sp)
+    9b58:	dfc00c15 	stw	ra,48(sp)
+    9b5c:	df000b15 	stw	fp,44(sp)
+    9b60:	ddc00a15 	stw	r23,40(sp)
+    9b64:	dd800915 	stw	r22,36(sp)
+    9b68:	dd400815 	stw	r21,32(sp)
+    9b6c:	dd000715 	stw	r20,28(sp)
+    9b70:	dcc00615 	stw	r19,24(sp)
+    9b74:	dc800515 	stw	r18,20(sp)
+    9b78:	2823883a 	mov	r17,r5
+    9b7c:	2021883a 	mov	r16,r4
+    9b80:	2800a716 	blt	r5,zero,9e20 <__moddi3+0x2d4>
+    9b84:	0025883a 	mov	r18,zero
+    9b88:	3800040e 	bge	r7,zero,9b9c <__moddi3+0x50>
+    9b8c:	3026c03a 	cmpne	r19,r6,zero
+    9b90:	01c9c83a 	sub	r4,zero,r7
+    9b94:	24cfc83a 	sub	r7,r4,r19
+    9b98:	018dc83a 	sub	r6,zero,r6
+    9b9c:	3827883a 	mov	r19,r7
+    9ba0:	302b883a 	mov	r21,r6
+    9ba4:	8029883a 	mov	r20,r16
+    9ba8:	882f883a 	mov	r23,r17
+    9bac:	38004d1e 	bne	r7,zero,9ce4 <__moddi3+0x198>
+    9bb0:	8980502e 	bgeu	r17,r6,9cf4 <__moddi3+0x1a8>
+    9bb4:	00bfffd4 	movui	r2,65535
+    9bb8:	1180a936 	bltu	r2,r6,9e60 <__moddi3+0x314>
+    9bbc:	30804030 	cmpltui	r2,r6,256
+    9bc0:	1001531e 	bne	r2,zero,a110 <__moddi3+0x5c4>
+    9bc4:	3006d23a 	srli	r3,r6,8
+    9bc8:	04c00204 	movi	r19,8
+    9bcc:	00800074 	movhi	r2,1
+    9bd0:	1885883a 	add	r2,r3,r2
+    9bd4:	1129c903 	ldbu	r4,-22748(r2)
+    9bd8:	00800804 	movi	r2,32
+    9bdc:	24c9883a 	add	r4,r4,r19
+    9be0:	1127c83a 	sub	r19,r2,r4
+    9be4:	11000526 	beq	r2,r4,9bfc <__moddi3+0xb0>
+    9be8:	8ce2983a 	sll	r17,r17,r19
+    9bec:	8108d83a 	srl	r4,r16,r4
+    9bf0:	34ea983a 	sll	r21,r6,r19
+    9bf4:	84e8983a 	sll	r20,r16,r19
+    9bf8:	246eb03a 	or	r23,r4,r17
+    9bfc:	a838d43a 	srli	fp,r21,16
+    9c00:	b809883a 	mov	r4,r23
+    9c04:	adbfffcc 	andi	r22,r21,65535
+    9c08:	e00b883a 	mov	r5,fp
+    9c0c:	00095340 	call	9534 <__umodsi3>
+    9c10:	e00b883a 	mov	r5,fp
+    9c14:	b809883a 	mov	r4,r23
+    9c18:	1023883a 	mov	r17,r2
+    9c1c:	00094d00 	call	94d0 <__udivsi3>
+    9c20:	b009883a 	mov	r4,r22
+    9c24:	100b883a 	mov	r5,r2
+    9c28:	00097ac0 	call	97ac <__mulsi3>
+    9c2c:	8822943a 	slli	r17,r17,16
+    9c30:	a008d43a 	srli	r4,r20,16
+    9c34:	8908b03a 	or	r4,r17,r4
+    9c38:	2080032e 	bgeu	r4,r2,9c48 <__moddi3+0xfc>
+    9c3c:	2549883a 	add	r4,r4,r21
+    9c40:	25400136 	bltu	r4,r21,9c48 <__moddi3+0xfc>
+    9c44:	20814436 	bltu	r4,r2,a158 <__moddi3+0x60c>
+    9c48:	20a1c83a 	sub	r16,r4,r2
+    9c4c:	e00b883a 	mov	r5,fp
+    9c50:	8009883a 	mov	r4,r16
+    9c54:	00095340 	call	9534 <__umodsi3>
+    9c58:	e00b883a 	mov	r5,fp
+    9c5c:	8009883a 	mov	r4,r16
+    9c60:	1023883a 	mov	r17,r2
+    9c64:	00094d00 	call	94d0 <__udivsi3>
+    9c68:	8822943a 	slli	r17,r17,16
+    9c6c:	100b883a 	mov	r5,r2
+    9c70:	b009883a 	mov	r4,r22
+    9c74:	00097ac0 	call	97ac <__mulsi3>
+    9c78:	a0ffffcc 	andi	r3,r20,65535
+    9c7c:	88c6b03a 	or	r3,r17,r3
+    9c80:	1880042e 	bgeu	r3,r2,9c94 <__moddi3+0x148>
+    9c84:	1d47883a 	add	r3,r3,r21
+    9c88:	1d400236 	bltu	r3,r21,9c94 <__moddi3+0x148>
+    9c8c:	1880012e 	bgeu	r3,r2,9c94 <__moddi3+0x148>
+    9c90:	1d47883a 	add	r3,r3,r21
+    9c94:	1885c83a 	sub	r2,r3,r2
+    9c98:	14c4d83a 	srl	r2,r2,r19
+    9c9c:	0007883a 	mov	r3,zero
+    9ca0:	90000426 	beq	r18,zero,9cb4 <__moddi3+0x168>
+    9ca4:	1020c03a 	cmpne	r16,r2,zero
+    9ca8:	00e3c83a 	sub	r17,zero,r3
+    9cac:	8c07c83a 	sub	r3,r17,r16
+    9cb0:	0085c83a 	sub	r2,zero,r2
+    9cb4:	dfc00c17 	ldw	ra,48(sp)
+    9cb8:	df000b17 	ldw	fp,44(sp)
+    9cbc:	ddc00a17 	ldw	r23,40(sp)
+    9cc0:	dd800917 	ldw	r22,36(sp)
+    9cc4:	dd400817 	ldw	r21,32(sp)
+    9cc8:	dd000717 	ldw	r20,28(sp)
+    9ccc:	dcc00617 	ldw	r19,24(sp)
+    9cd0:	dc800517 	ldw	r18,20(sp)
+    9cd4:	dc400417 	ldw	r17,16(sp)
+    9cd8:	dc000317 	ldw	r16,12(sp)
+    9cdc:	dec00d04 	addi	sp,sp,52
+    9ce0:	f800283a 	ret
+    9ce4:	8005883a 	mov	r2,r16
+    9ce8:	89c0392e 	bgeu	r17,r7,9dd0 <__moddi3+0x284>
+    9cec:	8807883a 	mov	r3,r17
+    9cf0:	003feb06 	br	9ca0 <__moddi3+0x154>
+    9cf4:	3000041e 	bne	r6,zero,9d08 <__moddi3+0x1bc>
+    9cf8:	000b883a 	mov	r5,zero
+    9cfc:	01000044 	movi	r4,1
+    9d00:	00094d00 	call	94d0 <__udivsi3>
+    9d04:	102b883a 	mov	r21,r2
+    9d08:	00bfffd4 	movui	r2,65535
+    9d0c:	15404a2e 	bgeu	r2,r21,9e38 <__moddi3+0x2ec>
+    9d10:	00804034 	movhi	r2,256
+    9d14:	a8810336 	bltu	r21,r2,a124 <__moddi3+0x5d8>
+    9d18:	a806d63a 	srli	r3,r21,24
+    9d1c:	04c00604 	movi	r19,24
+    9d20:	00800074 	movhi	r2,1
+    9d24:	1885883a 	add	r2,r3,r2
+    9d28:	15e9c903 	ldbu	r23,-22748(r2)
+    9d2c:	00800804 	movi	r2,32
+    9d30:	bcef883a 	add	r23,r23,r19
+    9d34:	15e7c83a 	sub	r19,r2,r23
+    9d38:	15c0bc1e 	bne	r2,r23,a02c <__moddi3+0x4e0>
+    9d3c:	a838d43a 	srli	fp,r21,16
+    9d40:	8d63c83a 	sub	r17,r17,r21
+    9d44:	adbfffcc 	andi	r22,r21,65535
+    9d48:	8809883a 	mov	r4,r17
+    9d4c:	e00b883a 	mov	r5,fp
+    9d50:	00095340 	call	9534 <__umodsi3>
+    9d54:	8809883a 	mov	r4,r17
+    9d58:	e00b883a 	mov	r5,fp
+    9d5c:	1023883a 	mov	r17,r2
+    9d60:	00094d00 	call	94d0 <__udivsi3>
+    9d64:	1009883a 	mov	r4,r2
+    9d68:	b00b883a 	mov	r5,r22
+    9d6c:	00097ac0 	call	97ac <__mulsi3>
+    9d70:	8822943a 	slli	r17,r17,16
+    9d74:	a008d43a 	srli	r4,r20,16
+    9d78:	8908b03a 	or	r4,r17,r4
+    9d7c:	2080042e 	bgeu	r4,r2,9d90 <__moddi3+0x244>
+    9d80:	2549883a 	add	r4,r4,r21
+    9d84:	25400236 	bltu	r4,r21,9d90 <__moddi3+0x244>
+    9d88:	2080012e 	bgeu	r4,r2,9d90 <__moddi3+0x244>
+    9d8c:	2549883a 	add	r4,r4,r21
+    9d90:	20a1c83a 	sub	r16,r4,r2
+    9d94:	e00b883a 	mov	r5,fp
+    9d98:	8009883a 	mov	r4,r16
+    9d9c:	00095340 	call	9534 <__umodsi3>
+    9da0:	e00b883a 	mov	r5,fp
+    9da4:	8009883a 	mov	r4,r16
+    9da8:	1023883a 	mov	r17,r2
+    9dac:	8822943a 	slli	r17,r17,16
+    9db0:	00094d00 	call	94d0 <__udivsi3>
+    9db4:	b00b883a 	mov	r5,r22
+    9db8:	1009883a 	mov	r4,r2
+    9dbc:	00097ac0 	call	97ac <__mulsi3>
+    9dc0:	a53fffcc 	andi	r20,r20,65535
+    9dc4:	8d06b03a 	or	r3,r17,r20
+    9dc8:	18bfb22e 	bgeu	r3,r2,9c94 <__moddi3+0x148>
+    9dcc:	003fad06 	br	9c84 <__moddi3+0x138>
+    9dd0:	00ffffd4 	movui	r3,65535
+    9dd4:	19c01d2e 	bgeu	r3,r7,9e4c <__moddi3+0x300>
+    9dd8:	00c04034 	movhi	r3,256
+    9ddc:	38c0ce36 	bltu	r7,r3,a118 <__moddi3+0x5cc>
+    9de0:	380ad63a 	srli	r5,r7,24
+    9de4:	01000604 	movi	r4,24
+    9de8:	00c00074 	movhi	r3,1
+    9dec:	28c7883a 	add	r3,r5,r3
+    9df0:	1da9c903 	ldbu	r22,-22748(r3)
+    9df4:	00c00804 	movi	r3,32
+    9df8:	b12d883a 	add	r22,r22,r4
+    9dfc:	1dabc83a 	sub	r21,r3,r22
+    9e00:	1d801c1e 	bne	r3,r22,9e74 <__moddi3+0x328>
+    9e04:	3c400136 	bltu	r7,r17,9e0c <__moddi3+0x2c0>
+    9e08:	81bfb836 	bltu	r16,r6,9cec <__moddi3+0x1a0>
+    9e0c:	8185c83a 	sub	r2,r16,r6
+    9e10:	89e3c83a 	sub	r17,r17,r7
+    9e14:	80a1803a 	cmpltu	r16,r16,r2
+    9e18:	8c23c83a 	sub	r17,r17,r16
+    9e1c:	003fb306 	br	9cec <__moddi3+0x1a0>
+    9e20:	2004c03a 	cmpne	r2,r4,zero
+    9e24:	0163c83a 	sub	r17,zero,r5
+    9e28:	88a3c83a 	sub	r17,r17,r2
+    9e2c:	0121c83a 	sub	r16,zero,r4
+    9e30:	04bfffc4 	movi	r18,-1
+    9e34:	003f5406 	br	9b88 <__moddi3+0x3c>
+    9e38:	a8804030 	cmpltui	r2,r21,256
+    9e3c:	1000b21e 	bne	r2,zero,a108 <__moddi3+0x5bc>
+    9e40:	a806d23a 	srli	r3,r21,8
+    9e44:	04c00204 	movi	r19,8
+    9e48:	003fb506 	br	9d20 <__moddi3+0x1d4>
+    9e4c:	38c04030 	cmpltui	r3,r7,256
+    9e50:	1800b71e 	bne	r3,zero,a130 <__moddi3+0x5e4>
+    9e54:	380ad23a 	srli	r5,r7,8
+    9e58:	01000204 	movi	r4,8
+    9e5c:	003fe206 	br	9de8 <__moddi3+0x29c>
+    9e60:	00804034 	movhi	r2,256
+    9e64:	3080b536 	bltu	r6,r2,a13c <__moddi3+0x5f0>
+    9e68:	3006d63a 	srli	r3,r6,24
+    9e6c:	04c00604 	movi	r19,24
+    9e70:	003f5606 	br	9bcc <__moddi3+0x80>
+    9e74:	3588d83a 	srl	r4,r6,r22
+    9e78:	3d4e983a 	sll	r7,r7,r21
+    9e7c:	8daed83a 	srl	r23,r17,r22
+    9e80:	8584d83a 	srl	r2,r16,r22
+    9e84:	21e6b03a 	or	r19,r4,r7
+    9e88:	8d62983a 	sll	r17,r17,r21
+    9e8c:	9838d43a 	srli	fp,r19,16
+    9e90:	3546983a 	sll	r3,r6,r21
+    9e94:	b809883a 	mov	r4,r23
+    9e98:	1444b03a 	or	r2,r2,r17
+    9e9c:	e00b883a 	mov	r5,fp
+    9ea0:	d8c00115 	stw	r3,4(sp)
+    9ea4:	d8800015 	stw	r2,0(sp)
+    9ea8:	00095340 	call	9534 <__umodsi3>
+    9eac:	b809883a 	mov	r4,r23
+    9eb0:	e00b883a 	mov	r5,fp
+    9eb4:	102f883a 	mov	r23,r2
+    9eb8:	9c7fffcc 	andi	r17,r19,65535
+    9ebc:	00094d00 	call	94d0 <__udivsi3>
+    9ec0:	8809883a 	mov	r4,r17
+    9ec4:	100b883a 	mov	r5,r2
+    9ec8:	1029883a 	mov	r20,r2
+    9ecc:	00097ac0 	call	97ac <__mulsi3>
+    9ed0:	d9000017 	ldw	r4,0(sp)
+    9ed4:	b806943a 	slli	r3,r23,16
+    9ed8:	8560983a 	sll	r16,r16,r21
+    9edc:	2008d43a 	srli	r4,r4,16
+    9ee0:	1908b03a 	or	r4,r3,r4
+    9ee4:	2080062e 	bgeu	r4,r2,9f00 <__moddi3+0x3b4>
+    9ee8:	24c9883a 	add	r4,r4,r19
+    9eec:	a17fffc4 	addi	r5,r20,-1
+    9ef0:	24c09736 	bltu	r4,r19,a150 <__moddi3+0x604>
+    9ef4:	2080962e 	bgeu	r4,r2,a150 <__moddi3+0x604>
+    9ef8:	a53fff84 	addi	r20,r20,-2
+    9efc:	24c9883a 	add	r4,r4,r19
+    9f00:	20afc83a 	sub	r23,r4,r2
+    9f04:	e00b883a 	mov	r5,fp
+    9f08:	b809883a 	mov	r4,r23
+    9f0c:	00095340 	call	9534 <__umodsi3>
+    9f10:	e00b883a 	mov	r5,fp
+    9f14:	b809883a 	mov	r4,r23
+    9f18:	1039883a 	mov	fp,r2
+    9f1c:	00094d00 	call	94d0 <__udivsi3>
+    9f20:	100b883a 	mov	r5,r2
+    9f24:	8809883a 	mov	r4,r17
+    9f28:	d8800215 	stw	r2,8(sp)
+    9f2c:	00097ac0 	call	97ac <__mulsi3>
+    9f30:	d8c00017 	ldw	r3,0(sp)
+    9f34:	e038943a 	slli	fp,fp,16
+    9f38:	d9400217 	ldw	r5,8(sp)
+    9f3c:	1c7fffcc 	andi	r17,r3,65535
+    9f40:	e462b03a 	or	r17,fp,r17
+    9f44:	8880062e 	bgeu	r17,r2,9f60 <__moddi3+0x414>
+    9f48:	8ce3883a 	add	r17,r17,r19
+    9f4c:	28ffffc4 	addi	r3,r5,-1
+    9f50:	8cc07d36 	bltu	r17,r19,a148 <__moddi3+0x5fc>
+    9f54:	88807c2e 	bgeu	r17,r2,a148 <__moddi3+0x5fc>
+    9f58:	297fff84 	addi	r5,r5,-2
+    9f5c:	8ce3883a 	add	r17,r17,r19
+    9f60:	d9c00117 	ldw	r7,4(sp)
+    9f64:	a02e943a 	slli	r23,r20,16
+    9f68:	29bfffcc 	andi	r6,r5,65535
+    9f6c:	38ffffcc 	andi	r3,r7,65535
+    9f70:	1839883a 	mov	fp,r3
+    9f74:	b96eb03a 	or	r23,r23,r5
+    9f78:	180b883a 	mov	r5,r3
+    9f7c:	3806d43a 	srli	r3,r7,16
+    9f80:	b82ed43a 	srli	r23,r23,16
+    9f84:	3009883a 	mov	r4,r6
+    9f88:	d9800215 	stw	r6,8(sp)
+    9f8c:	d8c00015 	stw	r3,0(sp)
+    9f90:	88a3c83a 	sub	r17,r17,r2
+    9f94:	00097ac0 	call	97ac <__mulsi3>
+    9f98:	e00b883a 	mov	r5,fp
+    9f9c:	b809883a 	mov	r4,r23
+    9fa0:	1039883a 	mov	fp,r2
+    9fa4:	00097ac0 	call	97ac <__mulsi3>
+    9fa8:	d8c00017 	ldw	r3,0(sp)
+    9fac:	b809883a 	mov	r4,r23
+    9fb0:	102f883a 	mov	r23,r2
+    9fb4:	180b883a 	mov	r5,r3
+    9fb8:	00097ac0 	call	97ac <__mulsi3>
+    9fbc:	d9800217 	ldw	r6,8(sp)
+    9fc0:	d9400017 	ldw	r5,0(sp)
+    9fc4:	d8800015 	stw	r2,0(sp)
+    9fc8:	3009883a 	mov	r4,r6
+    9fcc:	00097ac0 	call	97ac <__mulsi3>
+    9fd0:	e008d43a 	srli	r4,fp,16
+    9fd4:	15c5883a 	add	r2,r2,r23
+    9fd8:	d9800017 	ldw	r6,0(sp)
+    9fdc:	2089883a 	add	r4,r4,r2
+    9fe0:	25c0022e 	bgeu	r4,r23,9fec <__moddi3+0x4a0>
+    9fe4:	00800074 	movhi	r2,1
+    9fe8:	308d883a 	add	r6,r6,r2
+    9fec:	2006d43a 	srli	r3,r4,16
+    9ff0:	2008943a 	slli	r4,r4,16
+    9ff4:	e73fffcc 	andi	fp,fp,65535
+    9ff8:	1987883a 	add	r3,r3,r6
+    9ffc:	2709883a 	add	r4,r4,fp
+    a000:	88c03a36 	bltu	r17,r3,a0ec <__moddi3+0x5a0>
+    a004:	88c03826 	beq	r17,r3,a0e8 <__moddi3+0x59c>
+    a008:	8109c83a 	sub	r4,r16,r4
+    a00c:	88c7c83a 	sub	r3,r17,r3
+    a010:	8121803a 	cmpltu	r16,r16,r4
+    a014:	1c23c83a 	sub	r17,r3,r16
+    a018:	8da0983a 	sll	r16,r17,r22
+    a01c:	2544d83a 	srl	r2,r4,r21
+    a020:	8d46d83a 	srl	r3,r17,r21
+    a024:	8084b03a 	or	r2,r16,r2
+    a028:	003f1d06 	br	9ca0 <__moddi3+0x154>
+    a02c:	acea983a 	sll	r21,r21,r19
+    a030:	8de8d83a 	srl	r20,r17,r23
+    a034:	8ce2983a 	sll	r17,r17,r19
+    a038:	a838d43a 	srli	fp,r21,16
+    a03c:	a009883a 	mov	r4,r20
+    a040:	85eed83a 	srl	r23,r16,r23
+    a044:	e00b883a 	mov	r5,fp
+    a048:	00095340 	call	9534 <__umodsi3>
+    a04c:	a009883a 	mov	r4,r20
+    a050:	e00b883a 	mov	r5,fp
+    a054:	bc6eb03a 	or	r23,r23,r17
+    a058:	adbfffcc 	andi	r22,r21,65535
+    a05c:	1023883a 	mov	r17,r2
+    a060:	00094d00 	call	94d0 <__udivsi3>
+    a064:	b009883a 	mov	r4,r22
+    a068:	100b883a 	mov	r5,r2
+    a06c:	00097ac0 	call	97ac <__mulsi3>
+    a070:	8822943a 	slli	r17,r17,16
+    a074:	b808d43a 	srli	r4,r23,16
+    a078:	84e8983a 	sll	r20,r16,r19
+    a07c:	8908b03a 	or	r4,r17,r4
+    a080:	2080042e 	bgeu	r4,r2,a094 <__moddi3+0x548>
+    a084:	2549883a 	add	r4,r4,r21
+    a088:	25400236 	bltu	r4,r21,a094 <__moddi3+0x548>
+    a08c:	2080012e 	bgeu	r4,r2,a094 <__moddi3+0x548>
+    a090:	2549883a 	add	r4,r4,r21
+    a094:	20a1c83a 	sub	r16,r4,r2
+    a098:	8009883a 	mov	r4,r16
+    a09c:	e00b883a 	mov	r5,fp
+    a0a0:	00095340 	call	9534 <__umodsi3>
+    a0a4:	8009883a 	mov	r4,r16
+    a0a8:	1021883a 	mov	r16,r2
+    a0ac:	e00b883a 	mov	r5,fp
+    a0b0:	8020943a 	slli	r16,r16,16
+    a0b4:	00094d00 	call	94d0 <__udivsi3>
+    a0b8:	100b883a 	mov	r5,r2
+    a0bc:	b009883a 	mov	r4,r22
+    a0c0:	bc7fffcc 	andi	r17,r23,65535
+    a0c4:	00097ac0 	call	97ac <__mulsi3>
+    a0c8:	8462b03a 	or	r17,r16,r17
+    a0cc:	8880042e 	bgeu	r17,r2,a0e0 <__moddi3+0x594>
+    a0d0:	8d63883a 	add	r17,r17,r21
+    a0d4:	8d400236 	bltu	r17,r21,a0e0 <__moddi3+0x594>
+    a0d8:	8880012e 	bgeu	r17,r2,a0e0 <__moddi3+0x594>
+    a0dc:	8d63883a 	add	r17,r17,r21
+    a0e0:	88a3c83a 	sub	r17,r17,r2
+    a0e4:	003f1806 	br	9d48 <__moddi3+0x1fc>
+    a0e8:	813fc72e 	bgeu	r16,r4,a008 <__moddi3+0x4bc>
+    a0ec:	d8800117 	ldw	r2,4(sp)
+    a0f0:	20a9c83a 	sub	r20,r4,r2
+    a0f4:	2509803a 	cmpltu	r4,r4,r20
+    a0f8:	24c9883a 	add	r4,r4,r19
+    a0fc:	1907c83a 	sub	r3,r3,r4
+    a100:	a009883a 	mov	r4,r20
+    a104:	003fc006 	br	a008 <__moddi3+0x4bc>
+    a108:	a807883a 	mov	r3,r21
+    a10c:	003f0406 	br	9d20 <__moddi3+0x1d4>
+    a110:	3007883a 	mov	r3,r6
+    a114:	003ead06 	br	9bcc <__moddi3+0x80>
+    a118:	380ad43a 	srli	r5,r7,16
+    a11c:	01000404 	movi	r4,16
+    a120:	003f3106 	br	9de8 <__moddi3+0x29c>
+    a124:	a806d43a 	srli	r3,r21,16
+    a128:	04c00404 	movi	r19,16
+    a12c:	003efc06 	br	9d20 <__moddi3+0x1d4>
+    a130:	380b883a 	mov	r5,r7
+    a134:	0009883a 	mov	r4,zero
+    a138:	003f2b06 	br	9de8 <__moddi3+0x29c>
+    a13c:	3006d43a 	srli	r3,r6,16
+    a140:	04c00404 	movi	r19,16
+    a144:	003ea106 	br	9bcc <__moddi3+0x80>
+    a148:	180b883a 	mov	r5,r3
+    a14c:	003f8406 	br	9f60 <__moddi3+0x414>
+    a150:	2829883a 	mov	r20,r5
+    a154:	003f6a06 	br	9f00 <__moddi3+0x3b4>
+    a158:	2549883a 	add	r4,r4,r21
+    a15c:	003eba06 	br	9c48 <__moddi3+0xfc>
+
+0000a160 <__umoddi3>:
+    a160:	defff304 	addi	sp,sp,-52
+    a164:	dc400415 	stw	r17,16(sp)
+    a168:	dc000315 	stw	r16,12(sp)
+    a16c:	dfc00c15 	stw	ra,48(sp)
+    a170:	df000b15 	stw	fp,44(sp)
+    a174:	ddc00a15 	stw	r23,40(sp)
+    a178:	dd800915 	stw	r22,36(sp)
+    a17c:	dd400815 	stw	r21,32(sp)
+    a180:	dd000715 	stw	r20,28(sp)
+    a184:	dcc00615 	stw	r19,24(sp)
+    a188:	dc800515 	stw	r18,20(sp)
+    a18c:	2823883a 	mov	r17,r5
+    a190:	2021883a 	mov	r16,r4
+    a194:	38003b1e 	bne	r7,zero,a284 <__umoddi3+0x124>
+    a198:	3825883a 	mov	r18,r7
+    a19c:	3029883a 	mov	r20,r6
+    a1a0:	2027883a 	mov	r19,r4
+    a1a4:	29805b2e 	bgeu	r5,r6,a314 <__umoddi3+0x1b4>
+    a1a8:	00bfffd4 	movui	r2,65535
+    a1ac:	282d883a 	mov	r22,r5
+    a1b0:	11809a2e 	bgeu	r2,r6,a41c <__umoddi3+0x2bc>
+    a1b4:	00804034 	movhi	r2,256
+    a1b8:	30814436 	bltu	r6,r2,a6cc <__umoddi3+0x56c>
+    a1bc:	3006d63a 	srli	r3,r6,24
+    a1c0:	04800604 	movi	r18,24
+    a1c4:	00800074 	movhi	r2,1
+    a1c8:	1885883a 	add	r2,r3,r2
+    a1cc:	1129c903 	ldbu	r4,-22748(r2)
+    a1d0:	00800804 	movi	r2,32
+    a1d4:	2489883a 	add	r4,r4,r18
+    a1d8:	1125c83a 	sub	r18,r2,r4
+    a1dc:	11000526 	beq	r2,r4,a1f4 <__umoddi3+0x94>
+    a1e0:	8ca2983a 	sll	r17,r17,r18
+    a1e4:	8108d83a 	srl	r4,r16,r4
+    a1e8:	34a8983a 	sll	r20,r6,r18
+    a1ec:	84a6983a 	sll	r19,r16,r18
+    a1f0:	246cb03a 	or	r22,r4,r17
+    a1f4:	a02ed43a 	srli	r23,r20,16
+    a1f8:	b009883a 	mov	r4,r22
+    a1fc:	a57fffcc 	andi	r21,r20,65535
+    a200:	b80b883a 	mov	r5,r23
+    a204:	00095340 	call	9534 <__umodsi3>
+    a208:	b80b883a 	mov	r5,r23
+    a20c:	b009883a 	mov	r4,r22
+    a210:	1023883a 	mov	r17,r2
+    a214:	00094d00 	call	94d0 <__udivsi3>
+    a218:	a809883a 	mov	r4,r21
+    a21c:	100b883a 	mov	r5,r2
+    a220:	00097ac0 	call	97ac <__mulsi3>
+    a224:	8822943a 	slli	r17,r17,16
+    a228:	9808d43a 	srli	r4,r19,16
+    a22c:	8908b03a 	or	r4,r17,r4
+    a230:	2080042e 	bgeu	r4,r2,a244 <__umoddi3+0xe4>
+    a234:	2509883a 	add	r4,r4,r20
+    a238:	25000236 	bltu	r4,r20,a244 <__umoddi3+0xe4>
+    a23c:	2080012e 	bgeu	r4,r2,a244 <__umoddi3+0xe4>
+    a240:	2509883a 	add	r4,r4,r20
+    a244:	20a1c83a 	sub	r16,r4,r2
+    a248:	b80b883a 	mov	r5,r23
+    a24c:	8009883a 	mov	r4,r16
+    a250:	00095340 	call	9534 <__umodsi3>
+    a254:	b80b883a 	mov	r5,r23
+    a258:	8009883a 	mov	r4,r16
+    a25c:	1023883a 	mov	r17,r2
+    a260:	00094d00 	call	94d0 <__udivsi3>
+    a264:	8822943a 	slli	r17,r17,16
+    a268:	100b883a 	mov	r5,r2
+    a26c:	a809883a 	mov	r4,r21
+    a270:	00097ac0 	call	97ac <__mulsi3>
+    a274:	98ffffcc 	andi	r3,r19,65535
+    a278:	88c6b03a 	or	r3,r17,r3
+    a27c:	18805e2e 	bgeu	r3,r2,a3f8 <__umoddi3+0x298>
+    a280:	00005906 	br	a3e8 <__umoddi3+0x288>
+    a284:	2005883a 	mov	r2,r4
+    a288:	29c00d2e 	bgeu	r5,r7,a2c0 <__umoddi3+0x160>
+    a28c:	2807883a 	mov	r3,r5
+    a290:	dfc00c17 	ldw	ra,48(sp)
+    a294:	df000b17 	ldw	fp,44(sp)
+    a298:	ddc00a17 	ldw	r23,40(sp)
+    a29c:	dd800917 	ldw	r22,36(sp)
+    a2a0:	dd400817 	ldw	r21,32(sp)
+    a2a4:	dd000717 	ldw	r20,28(sp)
+    a2a8:	dcc00617 	ldw	r19,24(sp)
+    a2ac:	dc800517 	ldw	r18,20(sp)
+    a2b0:	dc400417 	ldw	r17,16(sp)
+    a2b4:	dc000317 	ldw	r16,12(sp)
+    a2b8:	dec00d04 	addi	sp,sp,52
+    a2bc:	f800283a 	ret
+    a2c0:	013fffd4 	movui	r4,65535
+    a2c4:	2807883a 	mov	r3,r5
+    a2c8:	21c0592e 	bgeu	r4,r7,a430 <__umoddi3+0x2d0>
+    a2cc:	01004034 	movhi	r4,256
+    a2d0:	39010336 	bltu	r7,r4,a6e0 <__umoddi3+0x580>
+    a2d4:	3808d63a 	srli	r4,r7,24
+    a2d8:	02000604 	movi	r8,24
+    a2dc:	01400074 	movhi	r5,1
+    a2e0:	214b883a 	add	r5,r4,r5
+    a2e4:	2d29c903 	ldbu	r20,-22748(r5)
+    a2e8:	01000804 	movi	r4,32
+    a2ec:	a229883a 	add	r20,r20,r8
+    a2f0:	252bc83a 	sub	r21,r4,r20
+    a2f4:	2500531e 	bne	r4,r20,a444 <__umoddi3+0x2e4>
+    a2f8:	3c400136 	bltu	r7,r17,a300 <__umoddi3+0x1a0>
+    a2fc:	81bfe436 	bltu	r16,r6,a290 <__umoddi3+0x130>
+    a300:	8185c83a 	sub	r2,r16,r6
+    a304:	89cfc83a 	sub	r7,r17,r7
+    a308:	8087803a 	cmpltu	r3,r16,r2
+    a30c:	38c7c83a 	sub	r3,r7,r3
+    a310:	003fdf06 	br	a290 <__umoddi3+0x130>
+    a314:	3000041e 	bne	r6,zero,a328 <__umoddi3+0x1c8>
+    a318:	000b883a 	mov	r5,zero
+    a31c:	01000044 	movi	r4,1
+    a320:	00094d00 	call	94d0 <__udivsi3>
+    a324:	1029883a 	mov	r20,r2
+    a328:	00bfffd4 	movui	r2,65535
+    a32c:	1500362e 	bgeu	r2,r20,a408 <__umoddi3+0x2a8>
+    a330:	00804034 	movhi	r2,256
+    a334:	a080ed36 	bltu	r20,r2,a6ec <__umoddi3+0x58c>
+    a338:	a006d63a 	srli	r3,r20,24
+    a33c:	04800604 	movi	r18,24
+    a340:	00800074 	movhi	r2,1
+    a344:	1885883a 	add	r2,r3,r2
+    a348:	15a9c903 	ldbu	r22,-22748(r2)
+    a34c:	00800804 	movi	r2,32
+    a350:	b4ad883a 	add	r22,r22,r18
+    a354:	15a5c83a 	sub	r18,r2,r22
+    a358:	1580a51e 	bne	r2,r22,a5f0 <__umoddi3+0x490>
+    a35c:	a02ed43a 	srli	r23,r20,16
+    a360:	8d23c83a 	sub	r17,r17,r20
+    a364:	a57fffcc 	andi	r21,r20,65535
+    a368:	8809883a 	mov	r4,r17
+    a36c:	b80b883a 	mov	r5,r23
+    a370:	00095340 	call	9534 <__umodsi3>
+    a374:	8809883a 	mov	r4,r17
+    a378:	b80b883a 	mov	r5,r23
+    a37c:	1023883a 	mov	r17,r2
+    a380:	00094d00 	call	94d0 <__udivsi3>
+    a384:	1009883a 	mov	r4,r2
+    a388:	a80b883a 	mov	r5,r21
+    a38c:	00097ac0 	call	97ac <__mulsi3>
+    a390:	8822943a 	slli	r17,r17,16
+    a394:	9808d43a 	srli	r4,r19,16
+    a398:	8908b03a 	or	r4,r17,r4
+    a39c:	2080032e 	bgeu	r4,r2,a3ac <__umoddi3+0x24c>
+    a3a0:	2509883a 	add	r4,r4,r20
+    a3a4:	25000136 	bltu	r4,r20,a3ac <__umoddi3+0x24c>
+    a3a8:	2080dc36 	bltu	r4,r2,a71c <__umoddi3+0x5bc>
+    a3ac:	20a1c83a 	sub	r16,r4,r2
+    a3b0:	b80b883a 	mov	r5,r23
+    a3b4:	8009883a 	mov	r4,r16
+    a3b8:	00095340 	call	9534 <__umodsi3>
+    a3bc:	b80b883a 	mov	r5,r23
+    a3c0:	8009883a 	mov	r4,r16
+    a3c4:	1023883a 	mov	r17,r2
+    a3c8:	8822943a 	slli	r17,r17,16
+    a3cc:	00094d00 	call	94d0 <__udivsi3>
+    a3d0:	a80b883a 	mov	r5,r21
+    a3d4:	1009883a 	mov	r4,r2
+    a3d8:	00097ac0 	call	97ac <__mulsi3>
+    a3dc:	9cffffcc 	andi	r19,r19,65535
+    a3e0:	8cc6b03a 	or	r3,r17,r19
+    a3e4:	1880042e 	bgeu	r3,r2,a3f8 <__umoddi3+0x298>
+    a3e8:	1d07883a 	add	r3,r3,r20
+    a3ec:	1d000236 	bltu	r3,r20,a3f8 <__umoddi3+0x298>
+    a3f0:	1880012e 	bgeu	r3,r2,a3f8 <__umoddi3+0x298>
+    a3f4:	1d07883a 	add	r3,r3,r20
+    a3f8:	1885c83a 	sub	r2,r3,r2
+    a3fc:	1484d83a 	srl	r2,r2,r18
+    a400:	0007883a 	mov	r3,zero
+    a404:	003fa206 	br	a290 <__umoddi3+0x130>
+    a408:	a0804030 	cmpltui	r2,r20,256
+    a40c:	1000ba1e 	bne	r2,zero,a6f8 <__umoddi3+0x598>
+    a410:	a006d23a 	srli	r3,r20,8
+    a414:	04800204 	movi	r18,8
+    a418:	003fc906 	br	a340 <__umoddi3+0x1e0>
+    a41c:	30804030 	cmpltui	r2,r6,256
+    a420:	1000ad1e 	bne	r2,zero,a6d8 <__umoddi3+0x578>
+    a424:	3006d23a 	srli	r3,r6,8
+    a428:	04800204 	movi	r18,8
+    a42c:	003f6506 	br	a1c4 <__umoddi3+0x64>
+    a430:	39004030 	cmpltui	r4,r7,256
+    a434:	2000b21e 	bne	r4,zero,a700 <__umoddi3+0x5a0>
+    a438:	3808d23a 	srli	r4,r7,8
+    a43c:	02000204 	movi	r8,8
+    a440:	003fa606 	br	a2dc <__umoddi3+0x17c>
+    a444:	3d4e983a 	sll	r7,r7,r21
+    a448:	3508d83a 	srl	r4,r6,r20
+    a44c:	8d2cd83a 	srl	r22,r17,r20
+    a450:	8504d83a 	srl	r2,r16,r20
+    a454:	21e4b03a 	or	r18,r4,r7
+    a458:	8d62983a 	sll	r17,r17,r21
+    a45c:	9026d43a 	srli	r19,r18,16
+    a460:	354c983a 	sll	r6,r6,r21
+    a464:	1444b03a 	or	r2,r2,r17
+    a468:	b009883a 	mov	r4,r22
+    a46c:	980b883a 	mov	r5,r19
+    a470:	d9800115 	stw	r6,4(sp)
+    a474:	d8800015 	stw	r2,0(sp)
+    a478:	00095340 	call	9534 <__umodsi3>
+    a47c:	980b883a 	mov	r5,r19
+    a480:	b009883a 	mov	r4,r22
+    a484:	102f883a 	mov	r23,r2
+    a488:	947fffcc 	andi	r17,r18,65535
+    a48c:	00094d00 	call	94d0 <__udivsi3>
+    a490:	8809883a 	mov	r4,r17
+    a494:	100b883a 	mov	r5,r2
+    a498:	1039883a 	mov	fp,r2
+    a49c:	00097ac0 	call	97ac <__mulsi3>
+    a4a0:	d8c00017 	ldw	r3,0(sp)
+    a4a4:	b82e943a 	slli	r23,r23,16
+    a4a8:	8560983a 	sll	r16,r16,r21
+    a4ac:	1808d43a 	srli	r4,r3,16
+    a4b0:	b908b03a 	or	r4,r23,r4
+    a4b4:	2080062e 	bgeu	r4,r2,a4d0 <__umoddi3+0x370>
+    a4b8:	2489883a 	add	r4,r4,r18
+    a4bc:	e17fffc4 	addi	r5,fp,-1
+    a4c0:	24809436 	bltu	r4,r18,a714 <__umoddi3+0x5b4>
+    a4c4:	2080932e 	bgeu	r4,r2,a714 <__umoddi3+0x5b4>
+    a4c8:	e73fff84 	addi	fp,fp,-2
+    a4cc:	2489883a 	add	r4,r4,r18
+    a4d0:	20adc83a 	sub	r22,r4,r2
+    a4d4:	980b883a 	mov	r5,r19
+    a4d8:	b009883a 	mov	r4,r22
+    a4dc:	00095340 	call	9534 <__umodsi3>
+    a4e0:	980b883a 	mov	r5,r19
+    a4e4:	b009883a 	mov	r4,r22
+    a4e8:	102f883a 	mov	r23,r2
+    a4ec:	00094d00 	call	94d0 <__udivsi3>
+    a4f0:	100b883a 	mov	r5,r2
+    a4f4:	8809883a 	mov	r4,r17
+    a4f8:	d8800215 	stw	r2,8(sp)
+    a4fc:	00097ac0 	call	97ac <__mulsi3>
+    a500:	d8c00017 	ldw	r3,0(sp)
+    a504:	b82e943a 	slli	r23,r23,16
+    a508:	d9400217 	ldw	r5,8(sp)
+    a50c:	1c7fffcc 	andi	r17,r3,65535
+    a510:	bc62b03a 	or	r17,r23,r17
+    a514:	8880062e 	bgeu	r17,r2,a530 <__umoddi3+0x3d0>
+    a518:	8ca3883a 	add	r17,r17,r18
+    a51c:	28ffffc4 	addi	r3,r5,-1
+    a520:	8c807a36 	bltu	r17,r18,a70c <__umoddi3+0x5ac>
+    a524:	8880792e 	bgeu	r17,r2,a70c <__umoddi3+0x5ac>
+    a528:	297fff84 	addi	r5,r5,-2
+    a52c:	8ca3883a 	add	r17,r17,r18
+    a530:	e02c943a 	slli	r22,fp,16
+    a534:	d9c00117 	ldw	r7,4(sp)
+    a538:	29bfffcc 	andi	r6,r5,65535
+    a53c:	b16cb03a 	or	r22,r22,r5
+    a540:	38ffffcc 	andi	r3,r7,65535
+    a544:	b02cd43a 	srli	r22,r22,16
+    a548:	180b883a 	mov	r5,r3
+    a54c:	3009883a 	mov	r4,r6
+    a550:	3838d43a 	srli	fp,r7,16
+    a554:	182f883a 	mov	r23,r3
+    a558:	d9800015 	stw	r6,0(sp)
+    a55c:	88a3c83a 	sub	r17,r17,r2
+    a560:	00097ac0 	call	97ac <__mulsi3>
+    a564:	b80b883a 	mov	r5,r23
+    a568:	b009883a 	mov	r4,r22
+    a56c:	102f883a 	mov	r23,r2
+    a570:	00097ac0 	call	97ac <__mulsi3>
+    a574:	e00b883a 	mov	r5,fp
+    a578:	b009883a 	mov	r4,r22
+    a57c:	102d883a 	mov	r22,r2
+    a580:	00097ac0 	call	97ac <__mulsi3>
+    a584:	d9800017 	ldw	r6,0(sp)
+    a588:	e00b883a 	mov	r5,fp
+    a58c:	1039883a 	mov	fp,r2
+    a590:	3009883a 	mov	r4,r6
+    a594:	00097ac0 	call	97ac <__mulsi3>
+    a598:	b808d43a 	srli	r4,r23,16
+    a59c:	1585883a 	add	r2,r2,r22
+    a5a0:	2089883a 	add	r4,r4,r2
+    a5a4:	2580022e 	bgeu	r4,r22,a5b0 <__umoddi3+0x450>
+    a5a8:	00800074 	movhi	r2,1
+    a5ac:	e0b9883a 	add	fp,fp,r2
+    a5b0:	2006d43a 	srli	r3,r4,16
+    a5b4:	2008943a 	slli	r4,r4,16
+    a5b8:	bdffffcc 	andi	r23,r23,65535
+    a5bc:	1f07883a 	add	r3,r3,fp
+    a5c0:	25c9883a 	add	r4,r4,r23
+    a5c4:	88c03a36 	bltu	r17,r3,a6b0 <__umoddi3+0x550>
+    a5c8:	88c03826 	beq	r17,r3,a6ac <__umoddi3+0x54c>
+    a5cc:	8109c83a 	sub	r4,r16,r4
+    a5d0:	8121803a 	cmpltu	r16,r16,r4
+    a5d4:	88c7c83a 	sub	r3,r17,r3
+    a5d8:	1c07c83a 	sub	r3,r3,r16
+    a5dc:	1d04983a 	sll	r2,r3,r20
+    a5e0:	2548d83a 	srl	r4,r4,r21
+    a5e4:	1d46d83a 	srl	r3,r3,r21
+    a5e8:	1104b03a 	or	r2,r2,r4
+    a5ec:	003f2806 	br	a290 <__umoddi3+0x130>
+    a5f0:	a4a8983a 	sll	r20,r20,r18
+    a5f4:	8da6d83a 	srl	r19,r17,r22
+    a5f8:	8ca2983a 	sll	r17,r17,r18
+    a5fc:	a02ed43a 	srli	r23,r20,16
+    a600:	9809883a 	mov	r4,r19
+    a604:	85acd83a 	srl	r22,r16,r22
+    a608:	b80b883a 	mov	r5,r23
+    a60c:	00095340 	call	9534 <__umodsi3>
+    a610:	9809883a 	mov	r4,r19
+    a614:	b80b883a 	mov	r5,r23
+    a618:	b46cb03a 	or	r22,r22,r17
+    a61c:	a57fffcc 	andi	r21,r20,65535
+    a620:	1023883a 	mov	r17,r2
+    a624:	00094d00 	call	94d0 <__udivsi3>
+    a628:	a809883a 	mov	r4,r21
+    a62c:	100b883a 	mov	r5,r2
+    a630:	00097ac0 	call	97ac <__mulsi3>
+    a634:	8822943a 	slli	r17,r17,16
+    a638:	b008d43a 	srli	r4,r22,16
+    a63c:	84a6983a 	sll	r19,r16,r18
+    a640:	8908b03a 	or	r4,r17,r4
+    a644:	2080042e 	bgeu	r4,r2,a658 <__umoddi3+0x4f8>
+    a648:	2509883a 	add	r4,r4,r20
+    a64c:	25000236 	bltu	r4,r20,a658 <__umoddi3+0x4f8>
+    a650:	2080012e 	bgeu	r4,r2,a658 <__umoddi3+0x4f8>
+    a654:	2509883a 	add	r4,r4,r20
+    a658:	20a1c83a 	sub	r16,r4,r2
+    a65c:	8009883a 	mov	r4,r16
+    a660:	b80b883a 	mov	r5,r23
+    a664:	00095340 	call	9534 <__umodsi3>
+    a668:	8009883a 	mov	r4,r16
+    a66c:	1021883a 	mov	r16,r2
+    a670:	b80b883a 	mov	r5,r23
+    a674:	8020943a 	slli	r16,r16,16
+    a678:	00094d00 	call	94d0 <__udivsi3>
+    a67c:	100b883a 	mov	r5,r2
+    a680:	a809883a 	mov	r4,r21
+    a684:	b47fffcc 	andi	r17,r22,65535
+    a688:	00097ac0 	call	97ac <__mulsi3>
+    a68c:	8462b03a 	or	r17,r16,r17
+    a690:	8880042e 	bgeu	r17,r2,a6a4 <__umoddi3+0x544>
+    a694:	8d23883a 	add	r17,r17,r20
+    a698:	8d000236 	bltu	r17,r20,a6a4 <__umoddi3+0x544>
+    a69c:	8880012e 	bgeu	r17,r2,a6a4 <__umoddi3+0x544>
+    a6a0:	8d23883a 	add	r17,r17,r20
+    a6a4:	88a3c83a 	sub	r17,r17,r2
+    a6a8:	003f2f06 	br	a368 <__umoddi3+0x208>
+    a6ac:	813fc72e 	bgeu	r16,r4,a5cc <__umoddi3+0x46c>
+    a6b0:	d8800117 	ldw	r2,4(sp)
+    a6b4:	20a7c83a 	sub	r19,r4,r2
+    a6b8:	24c9803a 	cmpltu	r4,r4,r19
+    a6bc:	2489883a 	add	r4,r4,r18
+    a6c0:	1907c83a 	sub	r3,r3,r4
+    a6c4:	9809883a 	mov	r4,r19
+    a6c8:	003fc006 	br	a5cc <__umoddi3+0x46c>
+    a6cc:	3006d43a 	srli	r3,r6,16
+    a6d0:	04800404 	movi	r18,16
+    a6d4:	003ebb06 	br	a1c4 <__umoddi3+0x64>
+    a6d8:	3007883a 	mov	r3,r6
+    a6dc:	003eb906 	br	a1c4 <__umoddi3+0x64>
+    a6e0:	3808d43a 	srli	r4,r7,16
+    a6e4:	02000404 	movi	r8,16
+    a6e8:	003efc06 	br	a2dc <__umoddi3+0x17c>
+    a6ec:	a006d43a 	srli	r3,r20,16
+    a6f0:	04800404 	movi	r18,16
+    a6f4:	003f1206 	br	a340 <__umoddi3+0x1e0>
+    a6f8:	a007883a 	mov	r3,r20
+    a6fc:	003f1006 	br	a340 <__umoddi3+0x1e0>
+    a700:	3809883a 	mov	r4,r7
+    a704:	0011883a 	mov	r8,zero
+    a708:	003ef406 	br	a2dc <__umoddi3+0x17c>
+    a70c:	180b883a 	mov	r5,r3
+    a710:	003f8706 	br	a530 <__umoddi3+0x3d0>
+    a714:	2839883a 	mov	fp,r5
+    a718:	003f6d06 	br	a4d0 <__umoddi3+0x370>
+    a71c:	2509883a 	add	r4,r4,r20
+    a720:	003f2206 	br	a3ac <__umoddi3+0x24c>

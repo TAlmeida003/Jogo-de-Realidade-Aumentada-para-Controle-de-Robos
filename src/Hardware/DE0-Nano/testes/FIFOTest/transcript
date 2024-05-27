@@ -1,0 +1,863 @@
+# Loading project FiFOTest
+# reading /opt/intelFPGA_lite/20.1/modelsim_ase/linuxaloem/../modelsim.ini
+cd /home/gabriel/Documents/TCC/Formas_geometricas/Testes
+# Loading project Test_pipeline
+# Compile of Formas_geometricas.vo was successful.
+# Compile of Formas_geometricas_v.sdo failed with 1 errors.
+# 2 compiles, 1 failed with 1 error.
+# Compile of Formas_geometricas.vo was successful.
+# Load canceled
+vmap -del work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap -del work 
+# Removing reference to logical library work
+# Modifying /home/gabriel/Documents/TCC/Formas_geometricas/Testes/Test_pipeline.mpf
+vmap work /home/gabriel/Documents/TCC/Formas_geometricas/Testes/work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work /home/gabriel/Documents/TCC/Formas_geometricas/Testes/work 
+# Modifying /home/gabriel/Documents/TCC/Formas_geometricas/Testes/Test_pipeline.mpf
+vmap -del work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap -del work 
+# Removing reference to logical library work
+# Modifying /home/gabriel/Documents/TCC/Formas_geometricas/Testes/Test_pipeline.mpf
+vmap work /home/gabriel/Documents/TCC/Formas_geometricas/Testes/work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work /home/gabriel/Documents/TCC/Formas_geometricas/Testes/work 
+# Modifying /home/gabriel/Documents/TCC/Formas_geometricas/Testes/Test_pipeline.mpf
+vlog -work /home/gabriel/Documents/TCC/Formas_geometricas/Testes/work -refresh -force_refresh
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:11:21 on Oct 22,2022
+# vlog -reportprogress 300 -work /home/gabriel/Documents/TCC/Formas_geometricas/Testes/work -refresh -force_refresh 
+# -- Refreshing module hard_block
+# -- Refreshing module square_determinants
+# End time: 17:11:21 on Oct 22,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -work /home/gabriel/Documents/TCC/Formas_geometricas/Testes/work -refresh -force_refresh
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:11:22 on Oct 22,2022
+# vcom -reportprogress 300 -work /home/gabriel/Documents/TCC/Formas_geometricas/Testes/work -refresh -force_refresh 
+# -- Skipping module hard_block
+# -- Skipping module square_determinants
+# End time: 17:11:22 on Oct 22,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Load canceled
+# Compile of Formas_geometricas.vo was successful.
+# Compile of test_pipeline.v was successful.
+# 2 compiles, 0 failed with no errors.
+vmap -del work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap -del work 
+# Removing reference to logical library work
+# Modifying /home/gabriel/Documents/TCC/Formas_geometricas/Testes/Test_pipeline.mpf
+vmap work /home/gabriel/Documents/TCC/Formas_geometricas/Testes/work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work /home/gabriel/Documents/TCC/Formas_geometricas/Testes/work 
+# Modifying /home/gabriel/Documents/TCC/Formas_geometricas/Testes/Test_pipeline.mpf
+vlog -work /home/gabriel/Documents/TCC/Formas_geometricas/Testes/work -refresh -force_refresh
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:15:33 on Oct 22,2022
+# vlog -reportprogress 300 -work /home/gabriel/Documents/TCC/Formas_geometricas/Testes/work -refresh -force_refresh 
+# -- Refreshing module hard_block
+# -- Refreshing module square_determinants
+# -- Refreshing module teste_determinants
+# End time: 17:15:34 on Oct 22,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vcom -work /home/gabriel/Documents/TCC/Formas_geometricas/Testes/work -refresh -force_refresh
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:15:34 on Oct 22,2022
+# vcom -reportprogress 300 -work /home/gabriel/Documents/TCC/Formas_geometricas/Testes/work -refresh -force_refresh 
+# -- Skipping module hard_block
+# -- Skipping module square_determinants
+# -- Skipping module teste_determinants
+# End time: 17:15:34 on Oct 22,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Project file /home/gabriel/Documents/TCC/Formas_geometricas/Testes/Test_pipeline.mpf is write protected, data cannot be saved.
+# Unable to save project.
+# Project file /home/gabriel/Documents/TCC/Formas_geometricas/Testes/Test_pipeline.mpf is write protected, data cannot be saved.
+# Unable to save project.
+# Project file /home/gabriel/Documents/TCC/Formas_geometricas/Testes/Test_pipeline.mpf is write protected, data cannot be saved.
+# Unable to save project.
+# reading /opt/intelFPGA_lite/20.1/modelsim_ase/linuxaloem/../modelsim.ini
+# Loading project test_pipeline
+vmap -del work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap -del work 
+# Removing reference to logical library work
+# Modifying /home/gabriel/Documents/TCC/Formas_geometricas/Testes/test_pipeline.mpf
+vmap work /home/gabriel/Documents/TCC/Formas_geometricas/Testes/work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work /home/gabriel/Documents/TCC/Formas_geometricas/Testes/work 
+# Modifying /home/gabriel/Documents/TCC/Formas_geometricas/Testes/test_pipeline.mpf
+vlog -work /home/gabriel/Documents/TCC/Formas_geometricas/Testes/work -refresh -force_refresh
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:27:01 on Oct 22,2022
+# vlog -reportprogress 300 -work /home/gabriel/Documents/TCC/Formas_geometricas/Testes/work -refresh -force_refresh 
+# End time: 17:27:01 on Oct 22,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -work /home/gabriel/Documents/TCC/Formas_geometricas/Testes/work -refresh -force_refresh
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:27:01 on Oct 22,2022
+# vcom -reportprogress 300 -work /home/gabriel/Documents/TCC/Formas_geometricas/Testes/work -refresh -force_refresh 
+# End time: 17:27:01 on Oct 22,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vmap -del work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap -del work 
+# Removing reference to logical library work
+# Modifying /home/gabriel/Documents/TCC/Formas_geometricas/Testes/test_pipeline.mpf
+vmap work /home/gabriel/Documents/TCC/Formas_geometricas/Testes/work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work /home/gabriel/Documents/TCC/Formas_geometricas/Testes/work 
+# Modifying /home/gabriel/Documents/TCC/Formas_geometricas/Testes/test_pipeline.mpf
+vmap -del work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap -del work 
+# Removing reference to logical library work
+# Modifying /home/gabriel/Documents/TCC/Formas_geometricas/Testes/test_pipeline.mpf
+vdel -all -lib work
+cd /home/gabriel/Documents/TCC/Formas_geometricas/Testes
+# reading /opt/intelFPGA_lite/20.1/modelsim_ase/linuxaloem/../modelsim.ini
+# Loading project test_pipepline
+vmap -del work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap -del work 
+# Removing reference to logical library work
+# Modifying /home/gabriel/Documents/TCC/Formas_geometricas/Testes/test_pipepline.mpf
+vmap work /home/gabriel/Documents/TCC/Formas_geometricas/Testes/work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work /home/gabriel/Documents/TCC/Formas_geometricas/Testes/work 
+# Modifying /home/gabriel/Documents/TCC/Formas_geometricas/Testes/test_pipepline.mpf
+vmap -del work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap -del work 
+# Removing reference to logical library work
+# Modifying /home/gabriel/Documents/TCC/Formas_geometricas/Testes/test_pipepline.mpf
+vdel -all -lib work
+vlib work
+vmap work work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work work 
+# Modifying /home/gabriel/Documents/TCC/Formas_geometricas/Testes/test_pipepline.mpf
+vlog -work work -refresh -force_refresh
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:30:56 on Oct 22,2022
+# vlog -reportprogress 300 -work work -refresh -force_refresh 
+# End time: 17:30:57 on Oct 22,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vcom -work work -refresh -force_refresh
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:30:57 on Oct 22,2022
+# vcom -reportprogress 300 -work work -refresh -force_refresh 
+# End time: 17:30:57 on Oct 22,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# reading /opt/intelFPGA_lite/20.1/modelsim_ase/linuxaloem/../modelsim.ini
+# Loading project test_pipeline
+vlog -work /home/gabriel/Documents/ConsoleFPGA/testes/Background_module/work -refresh -force_refresh
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:32:11 on Oct 22,2022
+# vlog -reportprogress 300 -work /home/gabriel/Documents/ConsoleFPGA/testes/Background_module/work -refresh -force_refresh 
+# -- Refreshing module background_block
+# -- Refreshing module background_module_test
+# -- Refreshing module BlockModule
+# -- Refreshing module clock_pll
+# -- Refreshing module controlUnit
+# -- Refreshing module counter
+# -- Refreshing module hard_block
+# -- Refreshing module vertices_calculator
+# -- Refreshing module vertices_calculator_vlg_vec_tst
+# -- Refreshing module VGA_sync
+# End time: 17:32:11 on Oct 22,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -work /home/gabriel/Documents/ConsoleFPGA/testes/Background_module/work -refresh -force_refresh
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:32:11 on Oct 22,2022
+# vcom -reportprogress 300 -work /home/gabriel/Documents/ConsoleFPGA/testes/Background_module/work -refresh -force_refresh 
+# -- Skipping module background_block
+# -- Skipping module background_module_test
+# -- Skipping module BlockModule
+# -- Skipping module clock_pll
+# -- Skipping module controlUnit
+# -- Skipping module counter
+# -- Skipping module hard_block
+# -- Skipping module vertices_calculator
+# -- Skipping module vertices_calculator_vlg_vec_tst
+# -- Skipping module VGA_sync
+# End time: 17:32:12 on Oct 22,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vlog -work /home/gabriel/Documents/ConsoleFPGA/testes/Background_module/work -refresh -force_refresh
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:32:17 on Oct 22,2022
+# vlog -reportprogress 300 -work /home/gabriel/Documents/ConsoleFPGA/testes/Background_module/work -refresh -force_refresh 
+# -- Refreshing module background_block
+# -- Refreshing module background_module_test
+# -- Refreshing module BlockModule
+# -- Refreshing module clock_pll
+# -- Refreshing module controlUnit
+# -- Refreshing module counter
+# -- Refreshing module hard_block
+# -- Refreshing module vertices_calculator
+# -- Refreshing module vertices_calculator_vlg_vec_tst
+# -- Refreshing module VGA_sync
+# End time: 17:32:17 on Oct 22,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -work /home/gabriel/Documents/ConsoleFPGA/testes/Background_module/work -refresh -force_refresh
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:32:17 on Oct 22,2022
+# vcom -reportprogress 300 -work /home/gabriel/Documents/ConsoleFPGA/testes/Background_module/work -refresh -force_refresh 
+# -- Skipping module background_block
+# -- Skipping module background_module_test
+# -- Skipping module BlockModule
+# -- Skipping module clock_pll
+# -- Skipping module controlUnit
+# -- Skipping module counter
+# -- Skipping module hard_block
+# -- Skipping module vertices_calculator
+# -- Skipping module vertices_calculator_vlg_vec_tst
+# -- Skipping module VGA_sync
+# End time: 17:32:17 on Oct 22,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Error: (vdel-11) Could not find work.background_block.
+# /opt/intelFPGA_lite/20.1/modelsim_ase/linuxaloem/vdel failed.
+# ** Error: (vdel-11) Could not find work.background_module_test.
+# /opt/intelFPGA_lite/20.1/modelsim_ase/linuxaloem/vdel failed.
+# ** Error: (vdel-11) Could not find work.BlockModule.
+# /opt/intelFPGA_lite/20.1/modelsim_ase/linuxaloem/vdel failed.
+# ** Error: (vdel-11) Could not find work.clock_pll.
+# /opt/intelFPGA_lite/20.1/modelsim_ase/linuxaloem/vdel failed.
+# ** Error: (vdel-11) Could not find work.controlUnit.
+# /opt/intelFPGA_lite/20.1/modelsim_ase/linuxaloem/vdel failed.
+# ** Error: (vdel-11) Could not find work.counter.
+# /opt/intelFPGA_lite/20.1/modelsim_ase/linuxaloem/vdel failed.
+# ** Error: (vdel-11) Could not find work.hard_block.
+# /opt/intelFPGA_lite/20.1/modelsim_ase/linuxaloem/vdel failed.
+# ** Error: (vdel-11) Could not find work.vertices_calculator.
+# /opt/intelFPGA_lite/20.1/modelsim_ase/linuxaloem/vdel failed.
+# ** Error: (vdel-11) Could not find work.vertices_calculator_vlg_vec_tst.
+# /opt/intelFPGA_lite/20.1/modelsim_ase/linuxaloem/vdel failed.
+# ** Error: (vdel-11) Could not find work.VGA_sync.
+# /opt/intelFPGA_lite/20.1/modelsim_ase/linuxaloem/vdel failed.
+# ** Error: (vdel-11) Could not find work.background_block.
+# /opt/intelFPGA_lite/20.1/modelsim_ase/linuxaloem/vdel failed.
+vlog -work /home/gabriel/Documents/ConsoleFPGA/testes/Background_module/work -refresh -force_refresh
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:32:58 on Oct 22,2022
+# vlog -reportprogress 300 -work /home/gabriel/Documents/ConsoleFPGA/testes/Background_module/work -refresh -force_refresh 
+# -- Refreshing module background_block
+# -- Refreshing module background_module_test
+# -- Refreshing module BlockModule
+# -- Refreshing module clock_pll
+# -- Refreshing module controlUnit
+# -- Refreshing module counter
+# -- Refreshing module hard_block
+# -- Refreshing module vertices_calculator
+# -- Refreshing module vertices_calculator_vlg_vec_tst
+# -- Refreshing module VGA_sync
+# End time: 17:32:59 on Oct 22,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vcom -work /home/gabriel/Documents/ConsoleFPGA/testes/Background_module/work -refresh -force_refresh
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:32:59 on Oct 22,2022
+# vcom -reportprogress 300 -work /home/gabriel/Documents/ConsoleFPGA/testes/Background_module/work -refresh -force_refresh 
+# -- Skipping module background_block
+# -- Skipping module background_module_test
+# -- Skipping module BlockModule
+# -- Skipping module clock_pll
+# -- Skipping module controlUnit
+# -- Skipping module counter
+# -- Skipping module hard_block
+# -- Skipping module vertices_calculator
+# -- Skipping module vertices_calculator_vlg_vec_tst
+# -- Skipping module VGA_sync
+# End time: 17:32:59 on Oct 22,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+cd /home/gabriel/Documents/TCC/Formas_geometricas/Testes
+# reading /opt/intelFPGA_lite/20.1/modelsim_ase/linuxaloem/../modelsim.ini
+# Loading project test_pipeline
+vlog -work /home/gabriel/Documents/ConsoleFPGA/testes/Background_module/work -refresh -force_refresh
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:34:53 on Oct 22,2022
+# vlog -reportprogress 300 -work /home/gabriel/Documents/ConsoleFPGA/testes/Background_module/work -refresh -force_refresh 
+# -- Refreshing module background_block
+# -- Refreshing module background_module_test
+# -- Refreshing module BlockModule
+# -- Refreshing module clock_pll
+# -- Refreshing module controlUnit
+# -- Refreshing module counter
+# -- Refreshing module hard_block
+# -- Refreshing module vertices_calculator
+# -- Refreshing module vertices_calculator_vlg_vec_tst
+# -- Refreshing module VGA_sync
+# End time: 17:34:54 on Oct 22,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vcom -work /home/gabriel/Documents/ConsoleFPGA/testes/Background_module/work -refresh -force_refresh
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:34:54 on Oct 22,2022
+# vcom -reportprogress 300 -work /home/gabriel/Documents/ConsoleFPGA/testes/Background_module/work -refresh -force_refresh 
+# -- Skipping module background_block
+# -- Skipping module background_module_test
+# -- Skipping module BlockModule
+# -- Skipping module clock_pll
+# -- Skipping module controlUnit
+# -- Skipping module counter
+# -- Skipping module hard_block
+# -- Skipping module vertices_calculator
+# -- Skipping module vertices_calculator_vlg_vec_tst
+# -- Skipping module VGA_sync
+# End time: 17:34:54 on Oct 22,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vmap -del work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap -del work 
+# Removing reference to logical library work
+# Modifying /home/gabriel/Documents/TCC/Formas_geometricas/Testes/test_pipeline.mpf
+vmap work /home/gabriel/Documents/TCC/Formas_geometricas/Testes/work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work /home/gabriel/Documents/TCC/Formas_geometricas/Testes/work 
+# Modifying /home/gabriel/Documents/TCC/Formas_geometricas/Testes/test_pipeline.mpf
+# Compile of test_pipeline.v was successful.
+# Compile of Formas_geometricas.vo was successful.
+# 2 compiles, 0 failed with no errors.
+# Compile of Formas_geometricas.vo was successful.
+# Compile of test_pipeline.v was successful.
+# 2 compiles, 0 failed with no errors.
+# Compile of Formas_geometricas.vo was successful.
+# Compile of test_pipeline.v failed with 1 errors.
+# 2 compiles, 1 failed with 1 error.
+# Compile of Formas_geometricas.vo was successful.
+# Compile of test_pipeline.v was successful.
+# 2 compiles, 0 failed with no errors.
+# Load canceled
+vlog -work /home/gabriel/Documents/TCC/Formas_geometricas/Testes/work -refresh -force_refresh
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:47:19 on Oct 22,2022
+# vlog -reportprogress 300 -work /home/gabriel/Documents/TCC/Formas_geometricas/Testes/work -refresh -force_refresh 
+# -- Refreshing module divisor_base_hight
+# -- Refreshing module hard_block
+# -- Refreshing module teste_determinants
+# -- Refreshing module teste_pipeline
+# End time: 17:47:20 on Oct 22,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vcom -work /home/gabriel/Documents/TCC/Formas_geometricas/Testes/work -refresh -force_refresh
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:47:20 on Oct 22,2022
+# vcom -reportprogress 300 -work /home/gabriel/Documents/TCC/Formas_geometricas/Testes/work -refresh -force_refresh 
+# -- Skipping module divisor_base_hight
+# -- Skipping module hard_block
+# -- Skipping module teste_determinants
+# -- Skipping module teste_pipeline
+# End time: 17:47:20 on Oct 22,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.teste_pipeline -t ns -L cycloneive_ver -L altera_ver
+# vsim work.teste_pipeline -t ns -L cycloneive_ver -L altera_ver 
+# Start time: 17:47:53 on Oct 22,2022
+# Loading work.teste_pipeline
+# Loading work.divisor_base_hight
+# Loading work.hard_block
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading cycloneive_ver.cycloneive_clkctrl
+# Loading cycloneive_ver.cycloneive_mux41
+# Loading cycloneive_ver.cycloneive_ena_reg
+# Loading altera_ver.dffeas
+# Loading cycloneive_ver.cycloneive_lcell_comb
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (10) for port 'mult'. The port definition is at: /home/gabriel/Documents/TCC/Formas_geometricas/simulation/modelsim/Formas_geometricas.vo(37).
+#    Time: 0 ns  Iteration: 0  Instance: /teste_pipeline/divisor_base_hight_inst File: /home/gabriel/Documents/TCC/Formas_geometricas/Testes/test_pipeline.v Line: 31
+# Loading altera_ver.PRIM_GDFF_LOW
+# Compile of Formas_geometricas.vo was successful.
+# Compile of test_pipeline.v was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.teste_pipeline
+# Loading work.divisor_base_hight
+# Loading work.hard_block
+add wave -position insertpoint  \
+sim:/teste_pipeline/v1
+add wave -position insertpoint  \
+sim:/teste_pipeline/v2
+add wave -position insertpoint  \
+sim:/teste_pipeline/v3
+add wave -position insertpoint  \
+sim:/teste_pipeline/v4
+add wave -position insertpoint  \
+sim:/teste_pipeline/out_form
+add wave -position insertpoint  \
+sim:/teste_pipeline/clk
+add wave -position insertpoint  \
+sim:/teste_pipeline/reset
+add wave -position insertpoint  \
+sim:/teste_pipeline/ref_point_x
+add wave -position insertpoint  \
+sim:/teste_pipeline/ref_point_y
+add wave -position insertpoint  \
+sim:/teste_pipeline/mult
+# Compile of Formas_geometricas.vo was successful.
+# Compile of test_pipeline.v was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.teste_pipeline
+# Loading work.divisor_base_hight
+# Loading work.hard_block
+add wave -position insertpoint  \
+sim:/teste_pipeline/form
+run
+#############  Autofindloop Analysis  ###############
+#############  Loop found at time 0 ns ###############
+#   Wakeup process: /teste_pipeline/#ALWAYS#16 @ sub-iteration 0
+#     Source: /home/gabriel/Documents/TCC/Formas_geometricas/Testes/test_pipeline.v:16
+#   Wakeup process: /teste_pipeline/#ALWAYS#16 @ sub-iteration 1
+#     Source: /home/gabriel/Documents/TCC/Formas_geometricas/Testes/test_pipeline.v:16
+#   Wakeup process: /teste_pipeline/#ALWAYS#16 @ sub-iteration 2
+#     Source: /home/gabriel/Documents/TCC/Formas_geometricas/Testes/test_pipeline.v:16
+################# END OF LOOP #################
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 0 ns.
+######## Additional Loop Analysis Started ##########
+####################################################
+# Simulation time has advanced while attempting to find the loop.
+# This may mean that the simulation iteration limit is set too low.
+####################################################
+##############  Autofindloop Step ##################
+#   Active process: /teste_pipeline/#IMPLICIT-WIRE(clk)#35
+#     Source: /home/gabriel/Documents/TCC/Formas_geometricas/Testes/test_pipeline.v:35
+#   Active process: /teste_pipeline/divisor_base_hight_inst/\clk~input /#ALWAYS#6384
+#     Source: /home/gabriel/Documents/TCC/Formas_geometricas/simulation/modelsim/Formas_geometricas.vo:1538
+#   Active process: /teste_pipeline/divisor_base_hight_inst/\clk~input /#IMPLICIT-WIRE(out_tmp)#6426
+#     Source: /home/gabriel/Documents/TCC/Formas_geometricas/simulation/modelsim/Formas_geometricas.vo:1538
+#   Active process: /teste_pipeline/divisor_base_hight_inst/\clk~input /#PMOS#6426
+#     Source: $MODEL_TECH/../altera/verilog/src/cycloneive_atoms.v:6426
+#   Active process: /teste_pipeline/divisor_base_hight_inst/\clk~inputclkctrl /#BUF#7186
+#     Source: $MODEL_TECH/../altera/verilog/src/cycloneive_atoms.v:7186
+#   Active process: /teste_pipeline/divisor_base_hight_inst/\clk~inputclkctrl /clk_mux/#BUF#268
+#     Source: $MODEL_TECH/../altera/verilog/src/cycloneive_atoms.v:268
+#   Active process: /teste_pipeline/divisor_base_hight_inst/\clk~inputclkctrl /clk_mux/#BUF#288
+#     Source: $MODEL_TECH/../altera/verilog/src/cycloneive_atoms.v:288
+#   Active process: /teste_pipeline/divisor_base_hight_inst/\clk~inputclkctrl /extena0_reg/#BUF#7094
+#     Source: $MODEL_TECH/../altera/verilog/src/cycloneive_atoms.v:7094
+#   Active process: /teste_pipeline/divisor_base_hight_inst/\clk~inputclkctrl /extena1_reg/#BUF#7094
+#     Source: $MODEL_TECH/../altera/verilog/src/cycloneive_atoms.v:7094
+#   Active process: /teste_pipeline/divisor_base_hight_inst/\clk~inputclkctrl /#AND#7223
+#     Source: $MODEL_TECH/../altera/verilog/src/cycloneive_atoms.v:7223
+#   Active process: /teste_pipeline/divisor_base_hight_inst/\clk~inputclkctrl /extena0_reg/#ALWAYS#7113
+#     Source: $MODEL_TECH/../altera/verilog/src/cycloneive_atoms.v:7202
+#   Active process: /teste_pipeline/divisor_base_hight_inst/\clk~inputclkctrl /extena1_reg/#ALWAYS#7113
+#     Source: $MODEL_TECH/../altera/verilog/src/cycloneive_atoms.v:7211
+###################################################
+# Compile of Formas_geometricas.vo was successful.
+# Compile of test_pipeline.v was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.teste_pipeline
+# Loading work.divisor_base_hight
+# Loading work.hard_block
+run
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 0 ns.
+run -all
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 0 ns.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run -all
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 0 ns.
+run -all
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 0 ns.
+run
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 0 ns.
+run -all
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run -all
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 0 ns.
+run -all
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 0 ns.
+run -all
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 0 ns.
+run -all
+run -all
+# WARNING: No extended dataflow license exists
+run
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+run
+run
+run
+run
+run
+run
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 0 ns.
+run
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 0 ns.
+run
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 0 ns.
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run -continue
+run -all
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+restart
+# Compile of Formas_geometricas.vo was successful.
+# Compile of test_pipeline.v was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.teste_pipeline
+# Loading work.divisor_base_hight
+# Loading work.hard_block
+run
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 0 ns.
+run -all
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 0 ns.
+run -all
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 0 ns.
+run -all
+run -all
+run -all
+run -all
+run -all
+run -all
+run -all
+run
+run
+run
+run
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+add wave -position insertpoint  \
+sim:/teste_pipeline/divisor_base_hight_inst/clk
+add wave -position insertpoint  \
+sim:/teste_pipeline/divisor_base_hight_inst/reset
+add wave -position insertpoint  \
+sim:/teste_pipeline/divisor_base_hight_inst/ref_point_x
+add wave -position insertpoint  \
+sim:/teste_pipeline/divisor_base_hight_inst/ref_point_y
+add wave -position insertpoint  \
+sim:/teste_pipeline/divisor_base_hight_inst/mult
+add wave -position insertpoint  \
+sim:/teste_pipeline/divisor_base_hight_inst/form
+add wave -position insertpoint  \
+sim:/teste_pipeline/divisor_base_hight_inst/out_form
+add wave -position insertpoint  \
+sim:/teste_pipeline/divisor_base_hight_inst/v1
+add wave -position insertpoint  \
+sim:/teste_pipeline/divisor_base_hight_inst/v2
+add wave -position insertpoint  \
+sim:/teste_pipeline/divisor_base_hight_inst/v3
+add wave -position insertpoint  \
+sim:/teste_pipeline/divisor_base_hight_inst/v4
+restart
+run
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 0 ns.
+run -all
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 0 ns.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+force -freeze sim:/teste_pipeline/divisor_base_hight_inst/clk 0 0, 1 {5 ns} -r 10
+run -all
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 0 ns.
+run
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 0 ns.
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Load canceled
+run
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 0 ns.
+# Compile of Formas_geometricas.vo was successful.
+# Compile of test_pipeline.v was successful.
+# 2 compiles, 0 failed with no errors.
+# Compile of Formas_geometricas.vo was successful.
+# Compile of test_pipeline.v was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.teste_pipeline
+# Loading work.divisor_base_hight
+# Loading work.hard_block
+run
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 0 ns.
+# Compile of Formas_geometricas.vo was successful.
+# Compile of test_pipeline.v was successful.
+# 2 compiles, 0 failed with no errors.
+run
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 0 ns.
+run
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 0 ns.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.teste_pipeline
+# Loading work.divisor_base_hight
+# Loading work.hard_block
+run
+run
+run
+run
+run
+run -all
+restart
+force -freeze sim:/teste_pipeline/divisor_base_hight_inst/clk 0 0, 1 {5 ns} -r 10
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+restart
+run -all
+add wave -position insertpoint  \
+sim:/teste_pipeline/clk
+add wave -position insertpoint  \
+sim:/teste_pipeline/reset
+add wave -position insertpoint  \
+sim:/teste_pipeline/ref_point_x
+add wave -position insertpoint  \
+sim:/teste_pipeline/ref_point_y
+add wave -position insertpoint  \
+sim:/teste_pipeline/mult
+add wave -position insertpoint  \
+sim:/teste_pipeline/form
+add wave -position insertpoint  \
+sim:/teste_pipeline/v1
+add wave -position insertpoint  \
+sim:/teste_pipeline/v2
+add wave -position insertpoint  \
+sim:/teste_pipeline/v3
+add wave -position insertpoint  \
+sim:/teste_pipeline/v4
+add wave -position insertpoint  \
+sim:/teste_pipeline/out_form
+restart
+run
+# Compile of Formas_geometricas.vo was successful.
+# Compile of test_pipeline.v was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.teste_pipeline
+# Loading work.divisor_base_hight
+# Loading work.hard_block
+run -all
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 0 ns.
+run -all
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 0 ns.
+# Compile of Formas_geometricas.vo was successful.
+# Compile of test_pipeline.v was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.teste_pipeline
+# Loading work.divisor_base_hight
+# Loading work.hard_block
+run -all
+restart
+run
+run
+run
+run
+# Compile of Formas_geometricas.vo was successful.
+# Compile of test_pipeline.v was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.teste_pipeline
+# Loading work.divisor_base_hight
+# Loading work.hard_block
+run
+run
+run
+run
+vmap -del work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap -del work 
+# Removing reference to logical library work
+# Modifying /home/gabriel/Documents/TCC/Formas_geometricas/Testes/test_pipeline.mpf
+vmap work /home/gabriel/Documents/TCC/Formas_geometricas/simulation/qsim/work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work /home/gabriel/Documents/TCC/Formas_geometricas/simulation/qsim/work 
+# Modifying /home/gabriel/Documents/TCC/Formas_geometricas/Testes/test_pipeline.mpf
+vlog -work /home/gabriel/Documents/TCC/Formas_geometricas/simulation/qsim/work -refresh -force_refresh
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 19:22:40 on Oct 22,2022
+# vlog -reportprogress 300 -work /home/gabriel/Documents/TCC/Formas_geometricas/simulation/qsim/work -refresh -force_refresh 
+# End time: 19:22:40 on Oct 22,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -work /home/gabriel/Documents/TCC/Formas_geometricas/simulation/qsim/work -refresh -force_refresh
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 19:22:40 on Oct 22,2022
+# vcom -reportprogress 300 -work /home/gabriel/Documents/TCC/Formas_geometricas/simulation/qsim/work -refresh -force_refresh 
+# End time: 19:22:41 on Oct 22,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vlog -work /home/gabriel/Documents/TCC/Formas_geometricas/simulation/qsim/work -refresh -force_refresh
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 19:23:37 on Oct 22,2022
+# vlog -reportprogress 300 -work /home/gabriel/Documents/TCC/Formas_geometricas/simulation/qsim/work -refresh -force_refresh 
+# End time: 19:23:37 on Oct 22,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -work /home/gabriel/Documents/TCC/Formas_geometricas/simulation/qsim/work -refresh -force_refresh
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 19:23:37 on Oct 22,2022
+# vcom -reportprogress 300 -work /home/gabriel/Documents/TCC/Formas_geometricas/simulation/qsim/work -refresh -force_refresh 
+# End time: 19:23:37 on Oct 22,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+quit -sim
+# End time: 19:25:11 on Oct 22,2022, Elapsed time: 1:37:18
+# Errors: 0, Warnings: 1
+# reading /opt/intelFPGA_lite/20.1/modelsim_ase/linuxaloem/../modelsim.ini
+vmap -del work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap -del work 
+# Removing reference to logical library work
+# Modifying /opt/intelFPGA_lite/20.1/modelsim_ase/linuxaloem/../modelsim.ini
+vmap work /home/gabriel/Documents/TCC/Formas_geometricas/simulation/qsim/work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work /home/gabriel/Documents/TCC/Formas_geometricas/simulation/qsim/work 
+# Modifying /opt/intelFPGA_lite/20.1/modelsim_ase/linuxaloem/../modelsim.ini
+# Loading project test_pipeline
+# Compile of test_pipeline.v was successful.
+# Compile of Formas_geometricas.vo was successful.
+# Compile of Formas_geometricas_v.sdo failed with 1 errors.
+# 3 compiles, 1 failed with 1 error.
+vsim -t ns -L cycloneive_ver -L altera_ver work.teste_pipeline
+# vsim -t ns -L cycloneive_ver -L altera_ver work.teste_pipeline 
+# Start time: 19:28:24 on Oct 22,2022
+# Loading work.teste_pipeline
+# Loading work.divisor_base_hight
+# Loading work.hard_block
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading cycloneive_ver.cycloneive_clkctrl
+# Loading cycloneive_ver.cycloneive_mux41
+# Loading cycloneive_ver.cycloneive_ena_reg
+# Loading cycloneive_ver.cycloneive_lcell_comb
+# Loading altera_ver.dffeas
+# Loading instances from Formas_geometricas_v.sdo
+# Loading altera_ver.PRIM_GDFF_LOW
+# Loading timing data from Formas_geometricas_v.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ns  Iteration: 0  Instance: /teste_pipeline File: /home/gabriel/Documents/TCC/Formas_geometricas/simulation/qsim/test_pipeline.v
+add wave -position insertpoint  \
+sim:/teste_pipeline/clk
+add wave -position insertpoint  \
+sim:/teste_pipeline/reset
+add wave -position insertpoint  \
+sim:/teste_pipeline/ref_point_x
+add wave -position insertpoint  \
+sim:/teste_pipeline/ref_point_y
+add wave -position insertpoint  \
+sim:/teste_pipeline/mult
+add wave -position insertpoint  \
+sim:/teste_pipeline/form
+add wave -position insertpoint  \
+sim:/teste_pipeline/v1
+add wave -position insertpoint  \
+sim:/teste_pipeline/v2
+add wave -position insertpoint  \
+sim:/teste_pipeline/v3
+add wave -position insertpoint  \
+sim:/teste_pipeline/v4
+add wave -position insertpoint  \
+sim:/teste_pipeline/out_form
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading instances from Formas_geometricas_v.sdo
+# Loading timing data from Formas_geometricas_v.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ns  Iteration: 0  Instance: /teste_pipeline File: /home/gabriel/Documents/TCC/Formas_geometricas/simulation/qsim/test_pipeline.v
+run
+run
+run
+# Compile of test_pipeline.v was successful.
+# Compile of Formas_geometricas.vo was successful.
+# 2 compiles, 0 failed with no errors.
+run
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.teste_pipeline
+# Loading work.divisor_base_hight
+# Loading work.hard_block
+# Loading instances from Formas_geometricas_v.sdo
+# Loading timing data from Formas_geometricas_v.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ns  Iteration: 0  Instance: /teste_pipeline File: /home/gabriel/Documents/TCC/Formas_geometricas/simulation/qsim/test_pipeline.v
+run
+run
+run
+restart
+run
+# Compile of test_pipeline.v was successful.
+# Compile of Formas_geometricas.vo was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.teste_pipeline
+# Loading work.divisor_base_hight
+# Loading work.hard_block
+# Loading instances from Formas_geometricas_v.sdo
+# Loading timing data from Formas_geometricas_v.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ns  Iteration: 0  Instance: /teste_pipeline File: /home/gabriel/Documents/TCC/Formas_geometricas/simulation/qsim/test_pipeline.v
+run
+run
+run
+run
+# Compile of test_pipeline.v was successful.
+# Compile of Formas_geometricas.vo was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.teste_pipeline
+# Loading work.divisor_base_hight
+# Loading work.hard_block
+# SDF 2020.1 Compiler 2020.02 Feb 28 2020
+# Loading instances from Formas_geometricas_v.sdo
+# Loading timing data from Formas_geometricas_v.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ns  Iteration: 0  Instance: /teste_pipeline File: /home/gabriel/Documents/TCC/Formas_geometricas/simulation/qsim/test_pipeline.v
+run
+run
+# Compile of test_pipeline.v was successful.
+# Compile of Formas_geometricas.vo was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.teste_pipeline
+# Loading work.divisor_base_hight
+# Loading work.hard_block
+# SDF 2020.1 Compiler 2020.02 Feb 28 2020
+# Loading instances from Formas_geometricas_v.sdo
+# Loading timing data from Formas_geometricas_v.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ns  Iteration: 0  Instance: /teste_pipeline File: /home/gabriel/Documents/TCC/Formas_geometricas/simulation/qsim/test_pipeline.v
+run
+run
+run
+# End time: 20:02:29 on Oct 22,2022, Elapsed time: 0:34:05
+# Errors: 0, Warnings: 1

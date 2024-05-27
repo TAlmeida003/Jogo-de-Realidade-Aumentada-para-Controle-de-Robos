@@ -12,9 +12,10 @@ Realidade Aumentada Usando FPGA
 <h1 align="center"> Sumário </h1>
 <div id="sumario">
 	<ul>
-        <li><a href="#controle"> FPGA De0-Nano </a></li>
-        <li><a href="#controle"> Interface Portátil </a></li>
+        <li><a href="#FPGA"> FPGA De0-Nano </a></li>
+        <li><a href="#gpu"> Graphics Processing Unit (GPU) </a></li>
         <li><a href="#hdmi"> High-Definition Multimedia Interface (HDMI) </a></li>
+        <li><a href="#controle"> Interface Portátil </a></li>
         <li><a href="#referencias"> Referências </a></li>
 	</ul>	
 </div>
@@ -65,41 +66,15 @@ Modelo Altera Cyclone IV **EP4CE22F17C6N** FPGA;
 </div>
 </div>
 
+<div align="justify">
+<div id="gpu">
+<h2>Graphics Processing Unit (GPU)</h2>
 
-<div align="justify"> 
-<div id="controle"> 
 
-<h2>Inteface Portátil
-</h2>
-
-<h3>Pinagem
-</h3>
-
-<div align="center">
-
-| PIN  | Definição | | PIN | Definição |
-|------|-----------|-|-----|-----------|
-| 1  	 | 3.3 V     | | 2   | 5 V       |
-| 7    | SELECT V  | | 4   | 5 V       |
-| 9    | GND       | | 6   | GND       |
-| 17   | 3.3 V     | | 12  | TL        |
-| 25   | GND       | | 14  | GND       |
-| 29   | UP        | | 16  | TR        |
-| 31   | DOWN      | | 20  | GND       |
-| 33   | LEFT      | | 30  | GND       |
-| 35   | RIGHT     | | 32  | B         |
-| 37   | A         | | 34  | GND       |
-| 39   | GND       | | 36  | X         |
-| -    | -         | | 38  | Y         |
-| -    | -         | | 40  | START     |
-
-</div>
-
-<p align="center">
-<strong> Tabela com a pinagem do controle</strong></p>
 
 </div>
 </div>
+
 
 <div align="justify"> 
 <div id="hdmi"> 
@@ -147,9 +122,44 @@ a sincronização.
 </p>
 <p align="center"><strong>Diagrama de funcionamento do TMDS</strong></p>
 
+
 </div>
 </div>
 
+<div align="justify"> 
+<div id="controle"> 
+
+<h2>Inteface Portátil
+</h2>
+
+<h3>Pinagem
+</h3>
+
+<div align="center">
+
+| PIN  | Definição | | PIN | Definição |
+|------|-----------|-|-----|-----------|
+| 1  	 | 3.3 V     | | 2   | 5 V       |
+| 7    | SELECT V  | | 4   | 5 V       |
+| 9    | GND       | | 6   | GND       |
+| 17   | 3.3 V     | | 12  | TL        |
+| 25   | GND       | | 14  | GND       |
+| 29   | UP        | | 16  | TR        |
+| 31   | DOWN      | | 20  | GND       |
+| 33   | LEFT      | | 30  | GND       |
+| 35   | RIGHT     | | 32  | B         |
+| 37   | A         | | 34  | GND       |
+| 39   | GND       | | 36  | X         |
+| -    | -         | | 38  | Y         |
+| -    | -         | | 40  | START     |
+
+</div>
+
+<p align="center">
+<strong> Tabela com a pinagem do controle</strong></p>
+
+</div>
+</div>
 
 <div align="justify"> 
 <div id="referencias"> 

@@ -1,0 +1,1016 @@
+# Loading project controlUnit_test
+vsim work.controleUnitTeste -t ns
+# vsim work.controleUnitTeste -t ns 
+# Start time: 14:53:57 on May 05,2021
+# Loading work.controleUnitTeste
+# Loading work.controlUnit
+add wave -position insertpoint  \
+sim:/controleUnitTeste/controlUnit_inst/clk
+add wave -position insertpoint  \
+sim:/controleUnitTeste/controlUnit_inst/reset
+add wave -position insertpoint  \
+sim:/controleUnitTeste/controlUnit_inst/opCode
+add wave -position insertpoint  \
+sim:/controleUnitTeste/controlUnit_inst/printtingScreen
+add wave -position insertpoint  \
+sim:/controleUnitTeste/controlUnit_inst/doneInst
+add wave -position insertpoint  \
+sim:/controleUnitTeste/controlUnit_inst/fifo_empty
+add wave -position insertpoint  \
+sim:/controleUnitTeste/controlUnit_inst/state
+add wave -position insertpoint  \
+sim:/controleUnitTeste/controlUnit_inst/state
+add wave -position insertpoint  \
+sim:/controleUnitTeste/controlUnit_inst/next
+force -freeze sim:/controleUnitTeste/controlUnit_inst/clk 0 0, 1 {5 ns} -r 10
+# Compile of controlUnitTeste.v was successful.
+# Compile of controlUnit.v was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.controleUnitTeste
+# Loading work.controlUnit
+force -freeze sim:/controleUnitTeste/controlUnit_inst/clk 0 0, 1 {5 ns} -r 10
+run -all
+# ** Note: $stop    : /home/gabriel/Documents/ConsoleFPGA/testes/ControlUnitTest/controlUnitTeste.v(58)
+#    Time: 165 ns  Iteration: 1  Instance: /controleUnitTeste
+# Break in Module controleUnitTeste at /home/gabriel/Documents/ConsoleFPGA/testes/ControlUnitTest/controlUnitTeste.v line 58
+quit -sim
+# End time: 15:08:43 on May 05,2021, Elapsed time: 0:14:46
+# Errors: 0, Warnings: 1
+cd /home/gabriel/Documents/ConsoleFPGA/testes/printModule_full_test
+# reading /opt/intelFPGA_lite/20.1/modelsim_ase/linuxaloem/../modelsim.ini
+# Load canceled
+# Loading project printModule_fullTest
+# Compile of printModule_full_test.v was successful.
+# Compile of full_print_module.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -t ns work.printModule_full_test
+# vsim -t ns work.printModule_full_test 
+# Start time: 15:41:34 on May 05,2021
+# Loading work.printModule_full_test
+# Loading work.full_print_module
+# ** Error: (vsim-3033) Instantiation of 'printModule' failed. The design unit was not found.
+#    Time: 0 ns  Iteration: 0  Instance: /printModule_full_test/full_print_module_inst File: /home/gabriel/Documents/ConsoleFPGA/modulos/full_print_module/full_print_module.v Line: 26
+#         Searched libraries:
+#             /home/gabriel/Documents/ConsoleFPGA/testes/printModule_full_test/work
+# ** Error: (vsim-3033) Instantiation of 'calculoAddress' failed. The design unit was not found.
+#    Time: 0 ns  Iteration: 0  Instance: /printModule_full_test/full_print_module_inst File: /home/gabriel/Documents/ConsoleFPGA/modulos/full_print_module/full_print_module.v Line: 44
+#         Searched libraries:
+#             /home/gabriel/Documents/ConsoleFPGA/testes/printModule_full_test/work
+# ** Error: (vsim-3033) Instantiation of 'multiplexador' failed. The design unit was not found.
+#    Time: 0 ns  Iteration: 0  Instance: /printModule_full_test/full_print_module_inst File: /home/gabriel/Documents/ConsoleFPGA/modulos/full_print_module/full_print_module.v Line: 58
+#         Searched libraries:
+#             /home/gabriel/Documents/ConsoleFPGA/testes/printModule_full_test/work
+# Error loading design
+# End time: 15:41:34 on May 05,2021, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 6
+# Compile of printModule_full_test.v was successful.
+# Compile of full_print_module.v was successful.
+# Compile of printModule.v was successful.
+# Compile of calculoAddress.v was successful.
+# Compile of multiplexador.v was successful.
+# 5 compiles, 0 failed with no errors.
+vsim -t ns work.printModule_full_test
+# vsim -t ns work.printModule_full_test 
+# Start time: 15:43:16 on May 05,2021
+# Loading work.printModule_full_test
+# Loading work.full_print_module
+# Loading work.printModule
+# Loading work.calculoAddress
+# Loading work.multiplexador
+# ** Warning: (vsim-3015) [PCDPC] - Port size (14) does not match connection size (17) for port 'memory_address'. The port definition is at: /home/gabriel/Documents/ConsoleFPGA/modulos/full_print_module/full_print_module.v(13).
+#    Time: 0 ns  Iteration: 0  Instance: /printModule_full_test/full_print_module_inst File: /home/gabriel/Documents/ConsoleFPGA/testes/printModule_full_test/printModule_full_test.v Line: 73
+# ** Warning: (vsim-3015) [PCDPC] - Port size (20) does not match connection size (19) for port 'check_value'. The port definition is at: /home/gabriel/Documents/ConsoleFPGA/modulos/full_print_module/full_print_module.v(14).
+#    Time: 0 ns  Iteration: 0  Instance: /printModule_full_test/full_print_module_inst File: /home/gabriel/Documents/ConsoleFPGA/testes/printModule_full_test/printModule_full_test.v Line: 73
+# Compile of printModule_full_test.v was successful.
+# Compile of full_print_module.v was successful.
+# Compile of printModule.v was successful.
+# Compile of calculoAddress.v was successful.
+# Compile of multiplexador.v was successful.
+# 5 compiles, 0 failed with no errors.
+add wave -position insertpoint  \
+sim:/printModule_full_test/full_print_module_inst/clk
+add wave -position insertpoint  \
+sim:/printModule_full_test/full_print_module_inst/clk_pixel
+add wave -position insertpoint  \
+sim:/printModule_full_test/full_print_module_inst/reset
+add wave -position insertpoint  \
+sim:/printModule_full_test/full_print_module_inst/pixel_x
+add wave -position insertpoint  \
+sim:/printModule_full_test/full_print_module_inst/pixel_y
+add wave -position insertpoint  \
+sim:/printModule_full_test/full_print_module_inst/memory_address
+add wave -position insertpoint  \
+sim:/printModule_full_test/full_print_module_inst/check_value
+add wave -position insertpoint  \
+sim:/printModule_full_test/full_print_module_inst/printting
+# Compile of printModule_full_test.v was successful.
+# Compile of full_print_module.v was successful.
+# Compile of printModule.v was successful.
+# Compile of calculoAddress.v was successful.
+# Compile of multiplexador.v was successful.
+# 5 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.printModule_full_test
+# Loading work.full_print_module
+# Loading work.printModule
+# Loading work.calculoAddress
+# Loading work.multiplexador
+force -freeze sim:/printModule_full_test/full_print_module_inst/clk 0 0, 1 {5 ns} -r 10
+force -freeze sim:/printModule_full_test/full_print_module_inst/clk_pixel 0 0, 1 {10 ns} -r 20
+run -all
+# saidas: address_memory:     x | printtingScreen: z
+# ** Note: $stop    : /home/gabriel/Documents/ConsoleFPGA/testes/printModule_full_test/printModule_full_test.v(66)
+#    Time: 880 ns  Iteration: 1  Instance: /printModule_full_test
+# Break in Module printModule_full_test at /home/gabriel/Documents/ConsoleFPGA/testes/printModule_full_test/printModule_full_test.v line 66
+# Compile of printModule_full_test.v was successful.
+# Compile of full_print_module.v was successful.
+# Compile of printModule.v was successful.
+# Compile of calculoAddress.v was successful.
+# Compile of multiplexador.v was successful.
+# 5 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.printModule_full_test
+# Loading work.full_print_module
+# Loading work.printModule
+# Loading work.calculoAddress
+# Loading work.multiplexador
+force -freeze sim:/printModule_full_test/full_print_module_inst/clk 0 0, 1 {5 ns} -r 10
+force -freeze sim:/printModule_full_test/full_print_module_inst/clk_pixel 0 0, 1 {10 ns} -r 20
+run -all
+# saidas: address_memory:     x | printtingScreen: z
+# saidas: address_memory: 16383 | printtingScreen: z
+# saidas: address_memory:     x | printtingScreen: z
+# saidas: address_memory: 16383 | printtingScreen: z
+# ** Note: $stop    : /home/gabriel/Documents/ConsoleFPGA/testes/printModule_full_test/printModule_full_test.v(66)
+#    Time: 880 ns  Iteration: 1  Instance: /printModule_full_test
+# Break in Module printModule_full_test at /home/gabriel/Documents/ConsoleFPGA/testes/printModule_full_test/printModule_full_test.v line 66
+add wave -position insertpoint  \
+sim:/printModule_full_test/full_print_module_inst/printModule_inst/state
+add wave -position insertpoint  \
+sim:/printModule_full_test/full_print_module_inst/printModule_inst/next
+restart
+run -all
+# saidas: address_memory:     x | printtingScreen: z
+# saidas: address_memory: 16383 | printtingScreen: z
+# ** Note: $stop    : /home/gabriel/Documents/ConsoleFPGA/testes/printModule_full_test/printModule_full_test.v(66)
+#    Time: 880 ns  Iteration: 1  Instance: /printModule_full_test
+# Break in Module printModule_full_test at /home/gabriel/Documents/ConsoleFPGA/testes/printModule_full_test/printModule_full_test.v line 66
+add wave -position insertpoint  \
+sim:/printModule_full_test/active_area
+restart
+run -all
+# saidas: address_memory:     x | printtingScreen: z
+# saidas: address_memory: 16383 | printtingScreen: z
+# ** Note: $stop    : /home/gabriel/Documents/ConsoleFPGA/testes/printModule_full_test/printModule_full_test.v(66)
+#    Time: 880 ns  Iteration: 1  Instance: /printModule_full_test
+# Break in Module printModule_full_test at /home/gabriel/Documents/ConsoleFPGA/testes/printModule_full_test/printModule_full_test.v line 66
+# Compile of printModule_full_test.v was successful.
+# Compile of full_print_module.v was successful.
+# Compile of printModule.v was successful.
+# Compile of calculoAddress.v was successful.
+# Compile of multiplexador.v was successful.
+# 5 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.printModule_full_test
+# Loading work.full_print_module
+# Loading work.printModule
+# Loading work.calculoAddress
+# Loading work.multiplexador
+run -all
+# saidas: address_memory:     x | printtingScreen: z
+# saidas: address_memory: 16383 | printtingScreen: z
+# ** Note: $stop    : /home/gabriel/Documents/ConsoleFPGA/testes/printModule_full_test/printModule_full_test.v(66)
+#    Time: 880 ns  Iteration: 1  Instance: /printModule_full_test
+# Break in Module printModule_full_test at /home/gabriel/Documents/ConsoleFPGA/testes/printModule_full_test/printModule_full_test.v line 66
+add wave -position insertpoint  \
+sim:/printModule_full_test/data_reg
+restart
+run -all
+# saidas: address_memory:     x | printtingScreen: z
+# saidas: address_memory: 16383 | printtingScreen: z
+# ** Note: $stop    : /home/gabriel/Documents/ConsoleFPGA/testes/printModule_full_test/printModule_full_test.v(66)
+#    Time: 880 ns  Iteration: 1  Instance: /printModule_full_test
+# Break in Module printModule_full_test at /home/gabriel/Documents/ConsoleFPGA/testes/printModule_full_test/printModule_full_test.v line 66
+# WARNING: No extended dataflow license exists
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Compile of printModule_full_test.v was successful.
+# Compile of full_print_module.v was successful.
+# Compile of printModule.v was successful.
+# Compile of calculoAddress.v was successful.
+# Compile of multiplexador.v was successful.
+# 5 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.printModule_full_test
+# Loading work.full_print_module
+# Loading work.printModule
+# Loading work.calculoAddress
+# Loading work.multiplexador
+run -all
+# saidas: address_memory:     x | printtingScreen: z
+# saidas: address_memory: 16383 | printtingScreen: z
+# saidas: address_memory:  3215 | printtingScreen: z
+# ** Note: $stop    : /home/gabriel/Documents/ConsoleFPGA/testes/printModule_full_test/printModule_full_test.v(66)
+#    Time: 880 ns  Iteration: 1  Instance: /printModule_full_test
+# Break in Module printModule_full_test at /home/gabriel/Documents/ConsoleFPGA/testes/printModule_full_test/printModule_full_test.v line 66
+# Compile of printModule_full_test.v was successful.
+# Compile of full_print_module.v was successful.
+# Compile of printModule.v was successful.
+# Compile of calculoAddress.v was successful.
+# Compile of multiplexador.v was successful.
+# 5 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.printModule_full_test
+# Loading work.full_print_module
+# Loading work.printModule
+# Loading work.calculoAddress
+# Loading work.multiplexador
+run -all
+# saidas: address_memory:     x | printtingScreen: z
+# saidas: address_memory: 16383 | printtingScreen: z
+# saidas: address_memory:  3215 | printtingScreen: z
+# ** Note: $stop    : /home/gabriel/Documents/ConsoleFPGA/testes/printModule_full_test/printModule_full_test.v(66)
+#    Time: 840 ns  Iteration: 1  Instance: /printModule_full_test
+# Break in Module printModule_full_test at /home/gabriel/Documents/ConsoleFPGA/testes/printModule_full_test/printModule_full_test.v line 66
+# Compile of printModule_full_test.v was successful.
+# Compile of full_print_module.v was successful.
+# Compile of printModule.v was successful.
+# Compile of calculoAddress.v was successful.
+# Compile of multiplexador.v was successful.
+# 5 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.printModule_full_test
+# Loading work.full_print_module
+# Loading work.printModule
+# Loading work.calculoAddress
+# Loading work.multiplexador
+run -all
+# saidas: address_memory:     x | printtingScreen: z
+# saidas: address_memory: 16383 | printtingScreen: z
+# saidas: address_memory:  3215 | printtingScreen: z
+# ** Note: $stop    : /home/gabriel/Documents/ConsoleFPGA/testes/printModule_full_test/printModule_full_test.v(66)
+#    Time: 840 ns  Iteration: 1  Instance: /printModule_full_test
+# Break in Module printModule_full_test at /home/gabriel/Documents/ConsoleFPGA/testes/printModule_full_test/printModule_full_test.v line 66
+# Compile of printModule_full_test.v was successful.
+# Compile of full_print_module.v was successful.
+# Compile of printModule.v was successful.
+# Compile of calculoAddress.v was successful.
+# Compile of multiplexador.v was successful.
+# 5 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.printModule_full_test
+# Loading work.full_print_module
+# Loading work.printModule
+# Loading work.calculoAddress
+# Loading work.multiplexador
+run -all
+# saidas: address_memory:     x | printtingScreen: z
+# saidas: address_memory: 16383 | printtingScreen: z
+# saidas: address_memory:     0 | printtingScreen: z
+# ** Note: $stop    : /home/gabriel/Documents/ConsoleFPGA/testes/printModule_full_test/printModule_full_test.v(66)
+#    Time: 840 ns  Iteration: 1  Instance: /printModule_full_test
+# Break in Module printModule_full_test at /home/gabriel/Documents/ConsoleFPGA/testes/printModule_full_test/printModule_full_test.v line 66
+# Compile of printModule_full_test.v was successful.
+# Compile of full_print_module.v was successful.
+# Compile of printModule.v was successful.
+# Compile of calculoAddress.v was successful.
+# Compile of multiplexador.v was successful.
+# 5 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.printModule_full_test
+# Loading work.full_print_module
+# Loading work.printModule
+# Loading work.calculoAddress
+# Loading work.multiplexador
+run -all
+# saidas: address_memory:     x | printtingScreen: z
+# saidas: address_memory: 16383 | printtingScreen: z
+# saidas: address_memory:     0 | printtingScreen: z
+# saidas: address_memory:     2 | printtingScreen: z
+# saidas: address_memory:     3 | printtingScreen: z
+# saidas: address_memory:     4 | printtingScreen: z
+# saidas: address_memory:     5 | printtingScreen: z
+# saidas: address_memory:     6 | printtingScreen: z
+# saidas: address_memory:     7 | printtingScreen: z
+# saidas: address_memory:     8 | printtingScreen: z
+# saidas: address_memory:     9 | printtingScreen: z
+# saidas: address_memory:    10 | printtingScreen: z
+# saidas: address_memory:    11 | printtingScreen: z
+# saidas: address_memory:    12 | printtingScreen: z
+# saidas: address_memory:    13 | printtingScreen: z
+# saidas: address_memory:    14 | printtingScreen: z
+# saidas: address_memory:    15 | printtingScreen: z
+# saidas: address_memory:    16 | printtingScreen: z
+# saidas: address_memory:    17 | printtingScreen: z
+# saidas: address_memory:    18 | printtingScreen: z
+# saidas: address_memory:    19 | printtingScreen: z
+# ** Note: $stop    : /home/gabriel/Documents/ConsoleFPGA/testes/printModule_full_test/printModule_full_test.v(67)
+#    Time: 840 ns  Iteration: 1  Instance: /printModule_full_test
+# Break in Module printModule_full_test at /home/gabriel/Documents/ConsoleFPGA/testes/printModule_full_test/printModule_full_test.v line 67
+# Compile of printModule_full_test.v was successful.
+# Compile of full_print_module.v was successful.
+# Compile of printModule.v was successful.
+# Compile of calculoAddress.v was successful.
+# Compile of multiplexador.v was successful.
+# 5 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.printModule_full_test
+# Loading work.full_print_module
+# Loading work.printModule
+# Loading work.calculoAddress
+# Loading work.multiplexador
+run -all
+# saidas: address_memory:     x | printtingScreen: x
+# saidas: address_memory:     x | printtingScreen: 1
+# saidas: address_memory: 16383 | printtingScreen: 1
+# saidas: address_memory:     0 | printtingScreen: 1
+# saidas: address_memory:     2 | printtingScreen: 1
+# saidas: address_memory:     3 | printtingScreen: 1
+# saidas: address_memory:     4 | printtingScreen: 1
+# saidas: address_memory:     5 | printtingScreen: 1
+# saidas: address_memory:     6 | printtingScreen: 1
+# saidas: address_memory:     7 | printtingScreen: 1
+# saidas: address_memory:     8 | printtingScreen: 1
+# saidas: address_memory:     9 | printtingScreen: 1
+# saidas: address_memory:    10 | printtingScreen: 1
+# saidas: address_memory:    11 | printtingScreen: 1
+# saidas: address_memory:    12 | printtingScreen: 1
+# saidas: address_memory:    13 | printtingScreen: 1
+# saidas: address_memory:    14 | printtingScreen: 1
+# saidas: address_memory:    15 | printtingScreen: 1
+# saidas: address_memory:    16 | printtingScreen: 1
+# saidas: address_memory:    17 | printtingScreen: 1
+# saidas: address_memory:    18 | printtingScreen: 1
+# saidas: address_memory:    19 | printtingScreen: 1
+# ** Note: $stop    : /home/gabriel/Documents/ConsoleFPGA/testes/printModule_full_test/printModule_full_test.v(67)
+#    Time: 840 ns  Iteration: 1  Instance: /printModule_full_test
+# Break in Module printModule_full_test at /home/gabriel/Documents/ConsoleFPGA/testes/printModule_full_test/printModule_full_test.v line 67
+# Compile of printModule_full_test.v was successful.
+# Compile of full_print_module.v was successful.
+# Compile of printModule.v was successful.
+# Compile of calculoAddress.v was successful.
+# Compile of multiplexador.v was successful.
+# 5 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.printModule_full_test
+# Loading work.full_print_module
+# Loading work.printModule
+# Loading work.calculoAddress
+# Loading work.multiplexador
+run -all
+# saidas: address_memory:     x | printtingScreen: x
+# saidas: address_memory:     x | printtingScreen: 1
+# saidas: address_memory: 16383 | printtingScreen: 1
+# saidas: address_memory:     0 | printtingScreen: 1
+# saidas: address_memory:     2 | printtingScreen: 1
+# saidas: address_memory:     3 | printtingScreen: 1
+# saidas: address_memory:     4 | printtingScreen: 1
+# saidas: address_memory:     5 | printtingScreen: 1
+# saidas: address_memory:     6 | printtingScreen: 1
+# saidas: address_memory:     7 | printtingScreen: 1
+# saidas: address_memory:     8 | printtingScreen: 1
+# saidas: address_memory:     9 | printtingScreen: 1
+# saidas: address_memory:    10 | printtingScreen: 1
+# saidas: address_memory:    11 | printtingScreen: 1
+# saidas: address_memory:    12 | printtingScreen: 1
+# saidas: address_memory:    13 | printtingScreen: 1
+# saidas: address_memory:    14 | printtingScreen: 1
+# saidas: address_memory:    15 | printtingScreen: 1
+# saidas: address_memory:    16 | printtingScreen: 1
+# saidas: address_memory:    17 | printtingScreen: 1
+# saidas: address_memory:    18 | printtingScreen: 1
+# saidas: address_memory:    19 | printtingScreen: 1
+# saidas: address_memory: 16383 | printtingScreen: 1
+# ** Note: $stop    : /home/gabriel/Documents/ConsoleFPGA/testes/printModule_full_test/printModule_full_test.v(67)
+#    Time: 880 ns  Iteration: 1  Instance: /printModule_full_test
+# Break in Module printModule_full_test at /home/gabriel/Documents/ConsoleFPGA/testes/printModule_full_test/printModule_full_test.v line 67
+# Compile of printModule_full_test.v was successful.
+# Compile of full_print_module.v was successful.
+# Compile of printModule.v was successful.
+# Compile of calculoAddress.v was successful.
+# Compile of multiplexador.v was successful.
+# 5 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.printModule_full_test
+# Loading work.full_print_module
+# Loading work.printModule
+# Loading work.calculoAddress
+# Loading work.multiplexador
+run -all
+# saidas: address_memory:     x | printtingScreen: x
+# saidas: address_memory:     x | printtingScreen: 1
+# saidas: address_memory: 16383 | printtingScreen: 1
+# saidas: address_memory:     0 | printtingScreen: 1
+# saidas: address_memory:     1 | printtingScreen: 1
+# saidas: address_memory:     2 | printtingScreen: 1
+# saidas: address_memory:     3 | printtingScreen: 1
+# saidas: address_memory:     4 | printtingScreen: 1
+# saidas: address_memory:     5 | printtingScreen: 1
+# saidas: address_memory:     6 | printtingScreen: 1
+# saidas: address_memory:     7 | printtingScreen: 1
+# saidas: address_memory:     8 | printtingScreen: 1
+# saidas: address_memory:     9 | printtingScreen: 1
+# saidas: address_memory:    10 | printtingScreen: 1
+# saidas: address_memory:    11 | printtingScreen: 1
+# saidas: address_memory:    12 | printtingScreen: 1
+# saidas: address_memory:    13 | printtingScreen: 1
+# saidas: address_memory:    14 | printtingScreen: 1
+# saidas: address_memory:    15 | printtingScreen: 1
+# saidas: address_memory:    16 | printtingScreen: 1
+# saidas: address_memory:    17 | printtingScreen: 1
+# saidas: address_memory:    18 | printtingScreen: 1
+# saidas: address_memory:    19 | printtingScreen: 1
+# ** Note: $stop    : /home/gabriel/Documents/ConsoleFPGA/testes/printModule_full_test/printModule_full_test.v(67)
+#    Time: 880 ns  Iteration: 1  Instance: /printModule_full_test
+# Break in Module printModule_full_test at /home/gabriel/Documents/ConsoleFPGA/testes/printModule_full_test/printModule_full_test.v line 67
+# Compile of printModule_full_test.v was successful.
+# Compile of full_print_module.v was successful.
+# Compile of printModule.v was successful.
+# Compile of calculoAddress.v was successful.
+# Compile of multiplexador.v was successful.
+# 5 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.printModule_full_test
+# Loading work.full_print_module
+# Loading work.printModule
+# Loading work.calculoAddress
+# Loading work.multiplexador
+run -all
+# saidas: address_memory:     x | printtingScreen: x
+# saidas: address_memory:     x | printtingScreen: 1
+# saidas: address_memory: 16383 | printtingScreen: 1
+# saidas: address_memory:     0 | printtingScreen: 1
+# saidas: address_memory:     1 | printtingScreen: 1
+# saidas: address_memory:     2 | printtingScreen: 1
+# saidas: address_memory:     3 | printtingScreen: 1
+# saidas: address_memory:     4 | printtingScreen: 1
+# saidas: address_memory:     5 | printtingScreen: 1
+# saidas: address_memory:     6 | printtingScreen: 1
+# saidas: address_memory:     7 | printtingScreen: 1
+# saidas: address_memory:     8 | printtingScreen: 1
+# saidas: address_memory:     9 | printtingScreen: 1
+# saidas: address_memory:    10 | printtingScreen: 1
+# saidas: address_memory:    11 | printtingScreen: 1
+# saidas: address_memory:    12 | printtingScreen: 1
+# saidas: address_memory:    13 | printtingScreen: 1
+# saidas: address_memory:    14 | printtingScreen: 1
+# saidas: address_memory:    15 | printtingScreen: 1
+# saidas: address_memory:    16 | printtingScreen: 1
+# saidas: address_memory:    17 | printtingScreen: 1
+# saidas: address_memory:    18 | printtingScreen: 1
+# saidas: address_memory:    19 | printtingScreen: 1
+# saidas: address_memory:     0 | printtingScreen: 1
+# ** Note: $stop    : /home/gabriel/Documents/ConsoleFPGA/testes/printModule_full_test/printModule_full_test.v(68)
+#    Time: 920 ns  Iteration: 1  Instance: /printModule_full_test
+# Break in Module printModule_full_test at /home/gabriel/Documents/ConsoleFPGA/testes/printModule_full_test/printModule_full_test.v line 68
+add wave -position insertpoint  \
+sim:/printModule_full_test/full_print_module_inst/calculoAddress_inst/sprite_on
+restart
+run -all
+# saidas: address_memory:     x | printtingScreen: x
+# saidas: address_memory:     x | printtingScreen: 1
+# saidas: address_memory: 16383 | printtingScreen: 1
+# saidas: address_memory:     0 | printtingScreen: 1
+# saidas: address_memory:     1 | printtingScreen: 1
+# saidas: address_memory:     2 | printtingScreen: 1
+# saidas: address_memory:     3 | printtingScreen: 1
+# saidas: address_memory:     4 | printtingScreen: 1
+# saidas: address_memory:     5 | printtingScreen: 1
+# saidas: address_memory:     6 | printtingScreen: 1
+# saidas: address_memory:     7 | printtingScreen: 1
+# saidas: address_memory:     8 | printtingScreen: 1
+# saidas: address_memory:     9 | printtingScreen: 1
+# saidas: address_memory:    10 | printtingScreen: 1
+# saidas: address_memory:    11 | printtingScreen: 1
+# saidas: address_memory:    12 | printtingScreen: 1
+# saidas: address_memory:    13 | printtingScreen: 1
+# saidas: address_memory:    14 | printtingScreen: 1
+# saidas: address_memory:    15 | printtingScreen: 1
+# saidas: address_memory:    16 | printtingScreen: 1
+# saidas: address_memory:    17 | printtingScreen: 1
+# saidas: address_memory:    18 | printtingScreen: 1
+# saidas: address_memory:    19 | printtingScreen: 1
+# saidas: address_memory:     0 | printtingScreen: 1
+# ** Note: $stop    : /home/gabriel/Documents/ConsoleFPGA/testes/printModule_full_test/printModule_full_test.v(68)
+#    Time: 920 ns  Iteration: 1  Instance: /printModule_full_test
+# Break in Module printModule_full_test at /home/gabriel/Documents/ConsoleFPGA/testes/printModule_full_test/printModule_full_test.v line 68
+add wave -position insertpoint  \
+sim:/printModule_full_test/full_print_module_inst/calculoAddress_inst/aux_x_sprite
+add wave -position insertpoint  \
+sim:/printModule_full_test/full_print_module_inst/calculoAddress_inst/screen_x
+restart
+run -all
+# saidas: address_memory:     x | printtingScreen: x
+# saidas: address_memory:     x | printtingScreen: 1
+# saidas: address_memory: 16383 | printtingScreen: 1
+# saidas: address_memory:     0 | printtingScreen: 1
+# saidas: address_memory:     1 | printtingScreen: 1
+# saidas: address_memory:     2 | printtingScreen: 1
+# saidas: address_memory:     3 | printtingScreen: 1
+# saidas: address_memory:     4 | printtingScreen: 1
+# saidas: address_memory:     5 | printtingScreen: 1
+# saidas: address_memory:     6 | printtingScreen: 1
+# saidas: address_memory:     7 | printtingScreen: 1
+# saidas: address_memory:     8 | printtingScreen: 1
+# saidas: address_memory:     9 | printtingScreen: 1
+# saidas: address_memory:    10 | printtingScreen: 1
+# saidas: address_memory:    11 | printtingScreen: 1
+# saidas: address_memory:    12 | printtingScreen: 1
+# saidas: address_memory:    13 | printtingScreen: 1
+# saidas: address_memory:    14 | printtingScreen: 1
+# saidas: address_memory:    15 | printtingScreen: 1
+# saidas: address_memory:    16 | printtingScreen: 1
+# saidas: address_memory:    17 | printtingScreen: 1
+# saidas: address_memory:    18 | printtingScreen: 1
+# saidas: address_memory:    19 | printtingScreen: 1
+# saidas: address_memory:     0 | printtingScreen: 1
+# ** Note: $stop    : /home/gabriel/Documents/ConsoleFPGA/testes/printModule_full_test/printModule_full_test.v(68)
+#    Time: 920 ns  Iteration: 1  Instance: /printModule_full_test
+# Break in Module printModule_full_test at /home/gabriel/Documents/ConsoleFPGA/testes/printModule_full_test/printModule_full_test.v line 68
+# Compile of printModule_full_test.v was successful.
+# Compile of full_print_module.v was successful.
+# Compile of printModule.v was successful.
+# Compile of calculoAddress.v was successful.
+# Compile of multiplexador.v was successful.
+# 5 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.printModule_full_test
+# Loading work.full_print_module
+# Loading work.printModule
+# Loading work.calculoAddress
+# Loading work.multiplexador
+run -all
+# saidas: address_memory:     x | printtingScreen: x
+# saidas: address_memory:     x | printtingScreen: 1
+# saidas: address_memory: 16383 | printtingScreen: 1
+# saidas: address_memory:     0 | printtingScreen: 1
+# saidas: address_memory:     1 | printtingScreen: 1
+# saidas: address_memory:     2 | printtingScreen: 1
+# saidas: address_memory:     3 | printtingScreen: 1
+# saidas: address_memory:     4 | printtingScreen: 1
+# saidas: address_memory:     5 | printtingScreen: 1
+# saidas: address_memory:     6 | printtingScreen: 1
+# saidas: address_memory:     7 | printtingScreen: 1
+# saidas: address_memory:     8 | printtingScreen: 1
+# saidas: address_memory:     9 | printtingScreen: 1
+# saidas: address_memory:    10 | printtingScreen: 1
+# saidas: address_memory:    11 | printtingScreen: 1
+# saidas: address_memory:    12 | printtingScreen: 1
+# saidas: address_memory:    13 | printtingScreen: 1
+# saidas: address_memory:    14 | printtingScreen: 1
+# saidas: address_memory:    15 | printtingScreen: 1
+# saidas: address_memory:    16 | printtingScreen: 1
+# saidas: address_memory:    17 | printtingScreen: 1
+# saidas: address_memory:    18 | printtingScreen: 1
+# saidas: address_memory:    19 | printtingScreen: 1
+# saidas: address_memory:     0 | printtingScreen: 1
+# ** Note: $stop    : /home/gabriel/Documents/ConsoleFPGA/testes/printModule_full_test/printModule_full_test.v(68)
+#    Time: 920 ns  Iteration: 1  Instance: /printModule_full_test
+# Break in Module printModule_full_test at /home/gabriel/Documents/ConsoleFPGA/testes/printModule_full_test/printModule_full_test.v line 68
+# Compile of printModule_full_test.v was successful.
+# Compile of full_print_module.v was successful.
+# Compile of printModule.v was successful.
+# Compile of calculoAddress.v was successful.
+# Compile of multiplexador.v was successful.
+# 5 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.printModule_full_test
+# Loading work.full_print_module
+# Loading work.printModule
+# Loading work.calculoAddress
+# Loading work.multiplexador
+run -all
+# saidas: address_memory:     x | printtingScreen: x
+# saidas: address_memory:     x | printtingScreen: 1
+# saidas: address_memory: 16383 | printtingScreen: 1
+# saidas: address_memory:     0 | printtingScreen: 1
+# saidas: address_memory:     1 | printtingScreen: 1
+# saidas: address_memory:     2 | printtingScreen: 1
+# saidas: address_memory:     3 | printtingScreen: 1
+# saidas: address_memory:     4 | printtingScreen: 1
+# saidas: address_memory:     5 | printtingScreen: 1
+# saidas: address_memory:     6 | printtingScreen: 1
+# saidas: address_memory:     7 | printtingScreen: 1
+# saidas: address_memory:     8 | printtingScreen: 1
+# saidas: address_memory:     9 | printtingScreen: 1
+# saidas: address_memory:    10 | printtingScreen: 1
+# saidas: address_memory:    11 | printtingScreen: 1
+# saidas: address_memory:    12 | printtingScreen: 1
+# saidas: address_memory:    13 | printtingScreen: 1
+# saidas: address_memory:    14 | printtingScreen: 1
+# saidas: address_memory:    15 | printtingScreen: 1
+# saidas: address_memory:    16 | printtingScreen: 1
+# saidas: address_memory:    17 | printtingScreen: 1
+# saidas: address_memory:    18 | printtingScreen: 1
+# saidas: address_memory:    19 | printtingScreen: 1
+# saidas: address_memory:     0 | printtingScreen: 1
+# ** Note: $stop    : /home/gabriel/Documents/ConsoleFPGA/testes/printModule_full_test/printModule_full_test.v(68)
+#    Time: 920 ns  Iteration: 1  Instance: /printModule_full_test
+# Break in Module printModule_full_test at /home/gabriel/Documents/ConsoleFPGA/testes/printModule_full_test/printModule_full_test.v line 68
+# Compile of printModule_full_test.v was successful.
+# Compile of full_print_module.v was successful.
+# Compile of printModule.v was successful.
+# Compile of calculoAddress.v was successful.
+# Compile of multiplexador.v was successful.
+# 5 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.printModule_full_test
+# Loading work.full_print_module
+# Loading work.printModule
+# Loading work.calculoAddress
+# Loading work.multiplexador
+run -all
+# saidas: address_memory:     x | printtingScreen: x
+# saidas: address_memory:     x | printtingScreen: 1
+# saidas: address_memory: 16383 | printtingScreen: 1
+# saidas: address_memory:     0 | printtingScreen: 1
+# saidas: address_memory:     1 | printtingScreen: 1
+# saidas: address_memory:     2 | printtingScreen: 1
+# saidas: address_memory:     3 | printtingScreen: 1
+# saidas: address_memory:     4 | printtingScreen: 1
+# saidas: address_memory:     5 | printtingScreen: 1
+# saidas: address_memory:     6 | printtingScreen: 1
+# saidas: address_memory:     7 | printtingScreen: 1
+# saidas: address_memory:     8 | printtingScreen: 1
+# saidas: address_memory:     9 | printtingScreen: 1
+# saidas: address_memory:    10 | printtingScreen: 1
+# saidas: address_memory:    11 | printtingScreen: 1
+# saidas: address_memory:    12 | printtingScreen: 1
+# saidas: address_memory:    13 | printtingScreen: 1
+# saidas: address_memory:    14 | printtingScreen: 1
+# saidas: address_memory:    15 | printtingScreen: 1
+# saidas: address_memory:    16 | printtingScreen: 1
+# saidas: address_memory:    17 | printtingScreen: 1
+# saidas: address_memory:    18 | printtingScreen: 1
+# saidas: address_memory:    19 | printtingScreen: 1
+# saidas: address_memory:     0 | printtingScreen: 1
+# ** Note: $stop    : /home/gabriel/Documents/ConsoleFPGA/testes/printModule_full_test/printModule_full_test.v(68)
+#    Time: 920 ns  Iteration: 1  Instance: /printModule_full_test
+# Break in Module printModule_full_test at /home/gabriel/Documents/ConsoleFPGA/testes/printModule_full_test/printModule_full_test.v line 68
+# Compile of printModule_full_test.v was successful.
+# Compile of full_print_module.v was successful.
+# Compile of printModule.v was successful.
+# Compile of calculoAddress.v was successful.
+# Compile of multiplexador.v was successful.
+# 5 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.printModule_full_test
+# Loading work.full_print_module
+# Loading work.printModule
+# Loading work.calculoAddress
+# Loading work.multiplexador
+run -all
+# saidas: address_memory:     x | printtingScreen: x
+# saidas: address_memory:     x | printtingScreen: 1
+# saidas: address_memory:     5 | printtingScreen: 1
+# saidas: address_memory:     0 | printtingScreen: 1
+# saidas: address_memory:     1 | printtingScreen: 1
+# saidas: address_memory:     2 | printtingScreen: 1
+# saidas: address_memory:     3 | printtingScreen: 1
+# saidas: address_memory:     4 | printtingScreen: 1
+# saidas: address_memory:     5 | printtingScreen: 1
+# saidas: address_memory:     6 | printtingScreen: 1
+# saidas: address_memory:     7 | printtingScreen: 1
+# saidas: address_memory:     8 | printtingScreen: 1
+# saidas: address_memory:     9 | printtingScreen: 1
+# saidas: address_memory:    10 | printtingScreen: 1
+# saidas: address_memory:    11 | printtingScreen: 1
+# saidas: address_memory:    12 | printtingScreen: 1
+# saidas: address_memory:    13 | printtingScreen: 1
+# saidas: address_memory:    14 | printtingScreen: 1
+# saidas: address_memory:    15 | printtingScreen: 1
+# saidas: address_memory:    16 | printtingScreen: 1
+# saidas: address_memory:    17 | printtingScreen: 1
+# saidas: address_memory:    18 | printtingScreen: 1
+# saidas: address_memory:    19 | printtingScreen: 1
+# saidas: address_memory:     0 | printtingScreen: 1
+# ** Note: $stop    : /home/gabriel/Documents/ConsoleFPGA/testes/printModule_full_test/printModule_full_test.v(68)
+#    Time: 920 ns  Iteration: 1  Instance: /printModule_full_test
+# Break in Module printModule_full_test at /home/gabriel/Documents/ConsoleFPGA/testes/printModule_full_test/printModule_full_test.v line 68
+# Compile of printModule_full_test.v was successful.
+# Compile of full_print_module.v was successful.
+# Compile of printModule.v was successful.
+# Compile of calculoAddress.v was successful.
+# Compile of multiplexador.v was successful.
+# 5 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.printModule_full_test
+# Loading work.full_print_module
+# Loading work.printModule
+# Loading work.calculoAddress
+# Loading work.multiplexador
+run -all
+# saidas: address_memory:     x | printtingScreen: x
+# saidas: address_memory:     x | printtingScreen: 1
+# saidas: address_memory: 16383 | printtingScreen: 1
+# saidas: address_memory:     0 | printtingScreen: 1
+# saidas: address_memory:     1 | printtingScreen: 1
+# saidas: address_memory:     2 | printtingScreen: 1
+# saidas: address_memory:     3 | printtingScreen: 1
+# saidas: address_memory:     4 | printtingScreen: 1
+# saidas: address_memory:     5 | printtingScreen: 1
+# saidas: address_memory:     6 | printtingScreen: 1
+# saidas: address_memory:     7 | printtingScreen: 1
+# saidas: address_memory:     8 | printtingScreen: 1
+# saidas: address_memory:     9 | printtingScreen: 1
+# saidas: address_memory:    10 | printtingScreen: 1
+# saidas: address_memory:    11 | printtingScreen: 1
+# saidas: address_memory:    12 | printtingScreen: 1
+# saidas: address_memory:    13 | printtingScreen: 1
+# saidas: address_memory:    14 | printtingScreen: 1
+# saidas: address_memory:    15 | printtingScreen: 1
+# saidas: address_memory:    16 | printtingScreen: 1
+# saidas: address_memory:    17 | printtingScreen: 1
+# saidas: address_memory:    18 | printtingScreen: 1
+# saidas: address_memory:    19 | printtingScreen: 1
+# saidas: address_memory:     0 | printtingScreen: 1
+# ** Note: $stop    : /home/gabriel/Documents/ConsoleFPGA/testes/printModule_full_test/printModule_full_test.v(68)
+#    Time: 920 ns  Iteration: 1  Instance: /printModule_full_test
+# Break in Module printModule_full_test at /home/gabriel/Documents/ConsoleFPGA/testes/printModule_full_test/printModule_full_test.v line 68
+# Compile of printModule_full_test.v was successful.
+# Compile of full_print_module.v was successful.
+# Compile of printModule.v was successful.
+# Compile of calculoAddress.v was successful.
+# Compile of multiplexador.v was successful.
+# 5 compiles, 0 failed with no errors.
+# Compile of printModule_full_test.v was successful.
+# Compile of full_print_module.v was successful.
+# Compile of printModule.v was successful.
+# Compile of calculoAddress.v failed with 2 errors.
+# Compile of multiplexador.v was successful.
+# 5 compiles, 1 failed with 2 errors.
+# Compile of printModule_full_test.v was successful.
+# Compile of full_print_module.v was successful.
+# Compile of printModule.v was successful.
+# Compile of calculoAddress.v was successful.
+# Compile of multiplexador.v was successful.
+# 5 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.printModule_full_test
+# Loading work.full_print_module
+# Loading work.printModule
+# Loading work.calculoAddress
+# Loading work.multiplexador
+run -all
+# saidas: address_memory:     x | printtingScreen: x
+# saidas: address_memory:     x | printtingScreen: 1
+# saidas: address_memory: 16383 | printtingScreen: 1
+# saidas: address_memory:     0 | printtingScreen: 1
+# saidas: address_memory:     1 | printtingScreen: 1
+# saidas: address_memory:     2 | printtingScreen: 1
+# saidas: address_memory:     3 | printtingScreen: 1
+# saidas: address_memory:     4 | printtingScreen: 1
+# saidas: address_memory:     5 | printtingScreen: 1
+# saidas: address_memory:     6 | printtingScreen: 1
+# saidas: address_memory:     7 | printtingScreen: 1
+# saidas: address_memory:     8 | printtingScreen: 1
+# saidas: address_memory:     9 | printtingScreen: 1
+# saidas: address_memory:    10 | printtingScreen: 1
+# saidas: address_memory:    11 | printtingScreen: 1
+# saidas: address_memory:    12 | printtingScreen: 1
+# saidas: address_memory:    13 | printtingScreen: 1
+# saidas: address_memory:    14 | printtingScreen: 1
+# saidas: address_memory:    15 | printtingScreen: 1
+# saidas: address_memory:    16 | printtingScreen: 1
+# saidas: address_memory:    17 | printtingScreen: 1
+# saidas: address_memory:    18 | printtingScreen: 1
+# saidas: address_memory:    19 | printtingScreen: 1
+# saidas: address_memory:     0 | printtingScreen: 1
+# ** Note: $stop    : /home/gabriel/Documents/ConsoleFPGA/testes/printModule_full_test/printModule_full_test.v(68)
+#    Time: 920 ns  Iteration: 1  Instance: /printModule_full_test
+# Break in Module printModule_full_test at /home/gabriel/Documents/ConsoleFPGA/testes/printModule_full_test/printModule_full_test.v line 68
+# Compile of printModule_full_test.v was successful.
+# Compile of full_print_module.v was successful.
+# Compile of printModule.v was successful.
+# Compile of calculoAddress.v was successful.
+# Compile of multiplexador.v was successful.
+# 5 compiles, 0 failed with no errors.
+run -all
+# saidas: address_memory:     x | printtingScreen: 1
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.printModule_full_test
+# Loading work.full_print_module
+# Loading work.printModule
+# Loading work.calculoAddress
+# Loading work.multiplexador
+run -all
+# saidas: address_memory:     x | printtingScreen: x
+# saidas: address_memory:     x | printtingScreen: 1
+# saidas: address_memory: 16383 | printtingScreen: 1
+# saidas: address_memory:     0 | printtingScreen: 1
+# saidas: address_memory:     1 | printtingScreen: 1
+# saidas: address_memory:     2 | printtingScreen: 1
+# saidas: address_memory:     3 | printtingScreen: 1
+# saidas: address_memory:     4 | printtingScreen: 1
+# saidas: address_memory:     5 | printtingScreen: 1
+# saidas: address_memory:     6 | printtingScreen: 1
+# saidas: address_memory:     7 | printtingScreen: 1
+# saidas: address_memory:     8 | printtingScreen: 1
+# saidas: address_memory:     9 | printtingScreen: 1
+# saidas: address_memory:    10 | printtingScreen: 1
+# saidas: address_memory:    11 | printtingScreen: 1
+# saidas: address_memory:    12 | printtingScreen: 1
+# saidas: address_memory:    13 | printtingScreen: 1
+# saidas: address_memory:    14 | printtingScreen: 1
+# saidas: address_memory:    15 | printtingScreen: 1
+# saidas: address_memory:    16 | printtingScreen: 1
+# saidas: address_memory:    17 | printtingScreen: 1
+# saidas: address_memory:    18 | printtingScreen: 1
+# saidas: address_memory:    19 | printtingScreen: 1
+# saidas: address_memory:     0 | printtingScreen: 1
+# ** Note: $stop    : /home/gabriel/Documents/ConsoleFPGA/testes/printModule_full_test/printModule_full_test.v(68)
+#    Time: 920 ns  Iteration: 1  Instance: /printModule_full_test
+# Break in Module printModule_full_test at /home/gabriel/Documents/ConsoleFPGA/testes/printModule_full_test/printModule_full_test.v line 68
+# Compile of printModule_full_test.v was successful.
+# Compile of full_print_module.v was successful.
+# Compile of printModule.v was successful.
+# Compile of calculoAddress.v was successful.
+# Compile of multiplexador.v was successful.
+# 5 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.printModule_full_test
+# Loading work.full_print_module
+# Loading work.printModule
+# Loading work.calculoAddress
+# Loading work.multiplexador
+run -all
+# saidas: address_memory:     x | printtingScreen: x
+# saidas: address_memory:     x | printtingScreen: 1
+# saidas: address_memory: 16383 | printtingScreen: 1
+# saidas: address_memory:     0 | printtingScreen: 1
+# saidas: address_memory:     1 | printtingScreen: 1
+# saidas: address_memory:     2 | printtingScreen: 1
+# saidas: address_memory:     3 | printtingScreen: 1
+# saidas: address_memory:     4 | printtingScreen: 1
+# saidas: address_memory:     5 | printtingScreen: 1
+# saidas: address_memory:     6 | printtingScreen: 1
+# saidas: address_memory:     7 | printtingScreen: 1
+# saidas: address_memory:     8 | printtingScreen: 1
+# saidas: address_memory:     9 | printtingScreen: 1
+# saidas: address_memory:    10 | printtingScreen: 1
+# saidas: address_memory:    11 | printtingScreen: 1
+# saidas: address_memory:    12 | printtingScreen: 1
+# saidas: address_memory:    13 | printtingScreen: 1
+# saidas: address_memory:    14 | printtingScreen: 1
+# saidas: address_memory:    15 | printtingScreen: 1
+# saidas: address_memory:    16 | printtingScreen: 1
+# saidas: address_memory:    17 | printtingScreen: 1
+# saidas: address_memory:    18 | printtingScreen: 1
+# saidas: address_memory:    19 | printtingScreen: 1
+# saidas: address_memory:     0 | printtingScreen: 1
+# ** Note: $stop    : /home/gabriel/Documents/ConsoleFPGA/testes/printModule_full_test/printModule_full_test.v(66)
+#    Time: 920 ns  Iteration: 1  Instance: /printModule_full_test
+# Break in Module printModule_full_test at /home/gabriel/Documents/ConsoleFPGA/testes/printModule_full_test/printModule_full_test.v line 66
+add wave -position insertpoint  \
+sim:/printModule_full_test/full_print_module_inst/calculoAddress_inst/memory_address
+restart
+run -all
+# saidas: address_memory:     x | printtingScreen: x
+# saidas: address_memory:     x | printtingScreen: 1
+# saidas: address_memory: 16383 | printtingScreen: 1
+# saidas: address_memory:     0 | printtingScreen: 1
+# saidas: address_memory:     1 | printtingScreen: 1
+# saidas: address_memory:     2 | printtingScreen: 1
+# saidas: address_memory:     3 | printtingScreen: 1
+# saidas: address_memory:     4 | printtingScreen: 1
+# saidas: address_memory:     5 | printtingScreen: 1
+# saidas: address_memory:     6 | printtingScreen: 1
+# saidas: address_memory:     7 | printtingScreen: 1
+# saidas: address_memory:     8 | printtingScreen: 1
+# saidas: address_memory:     9 | printtingScreen: 1
+# saidas: address_memory:    10 | printtingScreen: 1
+# saidas: address_memory:    11 | printtingScreen: 1
+# saidas: address_memory:    12 | printtingScreen: 1
+# saidas: address_memory:    13 | printtingScreen: 1
+# saidas: address_memory:    14 | printtingScreen: 1
+# saidas: address_memory:    15 | printtingScreen: 1
+# saidas: address_memory:    16 | printtingScreen: 1
+# saidas: address_memory:    17 | printtingScreen: 1
+# saidas: address_memory:    18 | printtingScreen: 1
+# saidas: address_memory:    19 | printtingScreen: 1
+# saidas: address_memory:     0 | printtingScreen: 1
+# ** Note: $stop    : /home/gabriel/Documents/ConsoleFPGA/testes/printModule_full_test/printModule_full_test.v(66)
+#    Time: 920 ns  Iteration: 1  Instance: /printModule_full_test
+# Break in Module printModule_full_test at /home/gabriel/Documents/ConsoleFPGA/testes/printModule_full_test/printModule_full_test.v line 66
+# Compile of printModule_full_test.v was successful.
+# Compile of full_print_module.v was successful.
+# Compile of printModule.v was successful.
+# Compile of calculoAddress.v was successful.
+# Compile of multiplexador.v was successful.
+# 5 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.printModule_full_test
+# Loading work.full_print_module
+# Loading work.printModule
+# Loading work.calculoAddress
+# Loading work.multiplexador
+run -all
+# saidas: address_memory:     x | printtingScreen: x
+# saidas: address_memory:     x | printtingScreen: 1
+# saidas: address_memory: 16383 | printtingScreen: 1
+# saidas: address_memory:     0 | printtingScreen: 1
+# saidas: address_memory:     1 | printtingScreen: 1
+# saidas: address_memory:     2 | printtingScreen: 1
+# saidas: address_memory:     3 | printtingScreen: 1
+# saidas: address_memory:     4 | printtingScreen: 1
+# saidas: address_memory:     5 | printtingScreen: 1
+# saidas: address_memory:     6 | printtingScreen: 1
+# saidas: address_memory:     7 | printtingScreen: 1
+# saidas: address_memory:     8 | printtingScreen: 1
+# saidas: address_memory:     9 | printtingScreen: 1
+# saidas: address_memory:    10 | printtingScreen: 1
+# saidas: address_memory:    11 | printtingScreen: 1
+# saidas: address_memory:    12 | printtingScreen: 1
+# saidas: address_memory:    13 | printtingScreen: 1
+# saidas: address_memory:    14 | printtingScreen: 1
+# saidas: address_memory:    15 | printtingScreen: 1
+# saidas: address_memory:    16 | printtingScreen: 1
+# saidas: address_memory:    17 | printtingScreen: 1
+# saidas: address_memory:    18 | printtingScreen: 1
+# saidas: address_memory:    19 | printtingScreen: 1
+# saidas: address_memory:     0 | printtingScreen: 1
+# saidas: address_memory: 16383 | printtingScreen: 1
+# saidas: address_memory:     x | printtingScreen: 1
+# ** Note: $stop    : /home/gabriel/Documents/ConsoleFPGA/testes/printModule_full_test/printModule_full_test.v(66)
+#    Time: 920 ns  Iteration: 1  Instance: /printModule_full_test
+# Break in Module printModule_full_test at /home/gabriel/Documents/ConsoleFPGA/testes/printModule_full_test/printModule_full_test.v line 66
+restart
+run -all
+# saidas: address_memory:     x | printtingScreen: x
+# saidas: address_memory:     x | printtingScreen: 1
+# saidas: address_memory: 16383 | printtingScreen: 1
+# saidas: address_memory:     0 | printtingScreen: 1
+# saidas: address_memory:     1 | printtingScreen: 1
+# saidas: address_memory:     2 | printtingScreen: 1
+# saidas: address_memory:     3 | printtingScreen: 1
+# saidas: address_memory:     4 | printtingScreen: 1
+# saidas: address_memory:     5 | printtingScreen: 1
+# saidas: address_memory:     6 | printtingScreen: 1
+# saidas: address_memory:     7 | printtingScreen: 1
+# saidas: address_memory:     8 | printtingScreen: 1
+# saidas: address_memory:     9 | printtingScreen: 1
+# saidas: address_memory:    10 | printtingScreen: 1
+# saidas: address_memory:    11 | printtingScreen: 1
+# saidas: address_memory:    12 | printtingScreen: 1
+# saidas: address_memory:    13 | printtingScreen: 1
+# saidas: address_memory:    14 | printtingScreen: 1
+# saidas: address_memory:    15 | printtingScreen: 1
+# saidas: address_memory:    16 | printtingScreen: 1
+# saidas: address_memory:    17 | printtingScreen: 1
+# saidas: address_memory:    18 | printtingScreen: 1
+# saidas: address_memory:    19 | printtingScreen: 1
+# saidas: address_memory:     0 | printtingScreen: 1
+# saidas: address_memory: 16383 | printtingScreen: 1
+# saidas: address_memory:     x | printtingScreen: 1
+# ** Note: $stop    : /home/gabriel/Documents/ConsoleFPGA/testes/printModule_full_test/printModule_full_test.v(66)
+#    Time: 920 ns  Iteration: 1  Instance: /printModule_full_test
+# Break in Module printModule_full_test at /home/gabriel/Documents/ConsoleFPGA/testes/printModule_full_test/printModule_full_test.v line 66
+# Compile of printModule_full_test.v was successful.
+# Compile of full_print_module.v failed with 1 errors.
+# Compile of printModule.v was successful.
+# Compile of calculoAddress.v was successful.
+# Compile of multiplexador.v was successful.
+# 5 compiles, 1 failed with 1 error.
+# Compile of printModule_full_test.v was successful.
+# Compile of full_print_module.v was successful.
+# Compile of printModule.v was successful.
+# Compile of calculoAddress.v was successful.
+# Compile of multiplexador.v was successful.
+# 5 compiles, 0 failed with no errors.
+# Compile of printModule_full_test.v was successful.
+# Compile of full_print_module.v was successful.
+# Compile of printModule.v was successful.
+# Compile of calculoAddress.v was successful.
+# Compile of multiplexador.v was successful.
+# 5 compiles, 0 failed with no errors.
+# End time: 18:36:42 on May 05,2021, Elapsed time: 2:53:26
+# Errors: 0, Warnings: 4

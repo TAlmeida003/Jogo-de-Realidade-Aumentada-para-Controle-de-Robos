@@ -1,0 +1,282 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+d/home/gabriel
+vbackground_block
+Z0 !s110 1652788916
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+!i10b 1
+!s100 PI`AhR`=^TD9UMG?O[N:J3
+IYZAPI3a`MDgkIQ[Z<KbVj1
+Z2 d/home/gabriel/Documents/ConsoleFPGA/testes/Background_module
+w1652788879
+8/home/gabriel/Documents/ConsoleFPGA/modulos/Drawing_Module/background_block/background_block.v
+F/home/gabriel/Documents/ConsoleFPGA/modulos/Drawing_Module/background_block/background_block.v
+!i122 184
+L0 1 242
+Z3 OV;L;2020.1;71
+31
+Z4 !s108 1652788916.000000
+!s107 /home/gabriel/Documents/ConsoleFPGA/modulos/Drawing_Module/background_block/background_block.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/gabriel/Documents/ConsoleFPGA/modulos/Drawing_Module/background_block/background_block.v|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+vbackground_module_test
+Z7 !s110 1652788917
+R1
+r1
+!s85 0
+!i10b 1
+!s100 ?a]>0>a;4GIR>QnD]bF8:1
+IzzE@NTolNTc?W=@R1VO>V1
+R2
+w1652788499
+8/home/gabriel/Documents/ConsoleFPGA/testes/Background_module/background_module_test.v
+F/home/gabriel/Documents/ConsoleFPGA/testes/Background_module/background_module_test.v
+!i122 188
+L0 2 139
+R3
+31
+Z8 !s108 1652788917.000000
+!s107 /home/gabriel/Documents/ConsoleFPGA/testes/Background_module/background_module_test.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/gabriel/Documents/ConsoleFPGA/testes/Background_module/background_module_test.v|
+!i113 1
+R5
+R6
+vBlockModule
+R0
+R1
+r1
+!s85 0
+!i10b 1
+!s100 5O=QG^@2Wn<[HOVm4_=oQ3
+IYSQLHH4j@^aKJT:nC3gda3
+R2
+w1652788445
+8/home/gabriel/Documents/ConsoleFPGA/modulos/Drawing_Module/background_block/BlockModule.v
+F/home/gabriel/Documents/ConsoleFPGA/modulos/Drawing_Module/background_block/BlockModule.v
+!i122 185
+L0 1 55
+R3
+31
+R4
+!s107 /home/gabriel/Documents/ConsoleFPGA/modulos/Drawing_Module/background_block/BlockModule.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/gabriel/Documents/ConsoleFPGA/modulos/Drawing_Module/background_block/BlockModule.v|
+!i113 1
+R5
+R6
+n@block@module
+vclock_pll
+R7
+R1
+r1
+!s85 0
+!i10b 1
+!s100 _nJmEE?Z<>RZ_=n4>n41S1
+IMgN9SAWaNOEoj2>GIJI6N3
+R2
+w1632322358
+8/home/gabriel/Documents/ConsoleFPGA/modulos/PLL/clock_pll.v
+F/home/gabriel/Documents/ConsoleFPGA/modulos/PLL/clock_pll.v
+!i122 187
+L0 40 126
+R3
+31
+R4
+!s107 /home/gabriel/Documents/ConsoleFPGA/modulos/PLL/clock_pll.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/gabriel/Documents/ConsoleFPGA/modulos/PLL/clock_pll.v|
+!i113 1
+R5
+R6
+vcontrolUnit
+R7
+R1
+r1
+!s85 0
+!i10b 1
+!s100 AFc=o?iLF;P@m2oz<[FK02
+IXW_MlPcZ:^ooPPc>lH1:i1
+R2
+w1651672053
+8/home/gabriel/Documents/ConsoleFPGA/modulos/ControlUnit/controlUnit.v
+F/home/gabriel/Documents/ConsoleFPGA/modulos/ControlUnit/controlUnit.v
+!i122 190
+L0 21 245
+R3
+31
+R8
+!s107 /home/gabriel/Documents/ConsoleFPGA/modulos/ControlUnit/controlUnit.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/gabriel/Documents/ConsoleFPGA/modulos/ControlUnit/controlUnit.v|
+!i113 1
+R5
+R6
+ncontrol@unit
+vcounter
+R7
+R1
+r1
+!s85 0
+!i10b 1
+!s100 zj1bW;3C[ZK9jz4XX:4N=1
+IH[I7gl9nB[8lZ8K[[UamK2
+R2
+w1631129992
+8/home/gabriel/Documents/ConsoleFPGA/modulos/Counter/counter.v
+F/home/gabriel/Documents/ConsoleFPGA/modulos/Counter/counter.v
+!i122 189
+L0 1 19
+R3
+31
+R8
+!s107 /home/gabriel/Documents/ConsoleFPGA/modulos/Counter/counter.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/gabriel/Documents/ConsoleFPGA/modulos/Counter/counter.v|
+!i113 1
+R5
+R6
+vdivisor_base_hight
+Z9 !s110 1666477138
+!i10b 1
+!s100 aeI1ZYFzhMGToTc_V68NQ0
+Z10 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IFL8CNaoj`OO[k;7em0@Nb0
+R1
+Z11 d/home/gabriel/Documents/TCC/Formas_geometricas/simulation/qsim
+Z12 w1666477133
+Z13 8Formas_geometricas.vo
+Z14 FFormas_geometricas.vo
+!i122 249
+L0 32 4915
+R3
+r1
+!s85 0
+31
+Z15 !s108 1666477137.000000
+Z16 !s107 Formas_geometricas.vo|
+Z17 !s90 -work|work|Formas_geometricas.vo|
+!i113 1
+R5
+R6
+vdivisor_base_hight_vlg_vec_tst
+R9
+!i10b 1
+!s100 ?`_Vn6Yc]Mdk7o68oXQ9O2
+R10
+I4a1FZ:3N7MmN8ak0G@^eK1
+R1
+R11
+w1666477127
+8test_pipeline.vwf.vt
+Ftest_pipeline.vwf.vt
+!i122 250
+L0 30 175
+R3
+r1
+!s85 0
+31
+!s108 1666477138.000000
+!s107 test_pipeline.vwf.vt|
+!s90 -work|work|test_pipeline.vwf.vt|
+!i113 1
+R5
+R6
+vhard_block
+R9
+!i10b 1
+!s100 ^X6i8ZlzP:iT]G36`_jLB0
+R10
+IlP0d3LIN8J9FCFN^6ZG?B3
+R1
+R11
+R12
+R13
+R14
+!i122 249
+L0 4948 34
+R3
+r1
+!s85 0
+31
+R15
+R16
+R17
+!i113 1
+R5
+R6
+vvertices_calculator
+Z18 !s110 1664027856
+R1
+r1
+!s85 0
+!i10b 1
+!s100 9i?e4Wg0fGPPN:JTQ30Ja2
+I>BHCnBf4flIc=``cCQ:=@0
+R11
+w1664027851
+R13
+R14
+!i122 213
+L0 32 3234
+R3
+31
+Z19 !s108 1664027856.000000
+R16
+R17
+!i113 1
+R5
+R6
+vvertices_calculator_vlg_vec_tst
+R18
+R1
+r1
+!s85 0
+!i10b 1
+!s100 4jVYk0BUVa3ZfReDMJ80E3
+Ih49_^:`hoRe^<>Yhe0R>@0
+R11
+w1664027845
+8Formas_geometricas.vwf.vt
+FFormas_geometricas.vwf.vt
+!i122 214
+L0 30 238
+R3
+31
+R19
+!s107 Formas_geometricas.vwf.vt|
+!s90 -work|work|Formas_geometricas.vwf.vt|
+!i113 1
+R5
+R6
+vVGA_sync
+R0
+R1
+r1
+!s85 0
+!i10b 1
+!s100 DolAEN9UO9lMHJnlnO[hF3
+I10RK@]f2T`FDn^WlGmjgC1
+R2
+w1632146908
+8/home/gabriel/Documents/ConsoleFPGA/modulos/VGA_Controller/VGA_sync.v
+F/home/gabriel/Documents/ConsoleFPGA/modulos/VGA_Controller/VGA_sync.v
+!i122 186
+L0 18 113
+R3
+31
+R4
+!s107 /home/gabriel/Documents/ConsoleFPGA/modulos/VGA_Controller/VGA_sync.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/gabriel/Documents/ConsoleFPGA/modulos/VGA_Controller/VGA_sync.v|
+!i113 1
+R5
+R6
+n@v@g@a_sync

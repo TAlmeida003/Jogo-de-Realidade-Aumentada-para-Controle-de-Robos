@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Thu Jan  5 17:04:36 2023
+Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+Revision Name : ConsoleFPGA
+Top-level Entity Name : ArquiteturaCollenda
+Family : Cyclone IV E
+Total logic elements : 11,466
+    Total combinational functions : 8,477
+    Dedicated logic registers : 6,268
+Total registers : 6268
+Total pins : 29
+Total virtual pins : 0
+Total memory bits : 416,071
+Embedded Multiplier 9-bit elements : 70
+Total PLLs : 1

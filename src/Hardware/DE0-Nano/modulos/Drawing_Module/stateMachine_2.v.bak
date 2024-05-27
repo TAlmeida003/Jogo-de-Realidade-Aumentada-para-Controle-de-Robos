@@ -1,0 +1,94 @@
+module stateMachine_2(
+	input wire  clk,
+	input wire  reset,
+	input wire  en_2,
+	input wire [31:0] data_reg,
+	output reg en_background,
+	output reg en_address,
+	output reg en_refresh_RGB
+
+);
+
+parameter [1:0] B2    = 3'b00,
+				C2    = 3'b01,
+				D2    = 3'b10,
+				E2    = 3'b11;
+
+reg [1:0] state, next;
+
+always @(posedge clk or negedge reset) begin
+	if (!reset) begin
+		state <= B2;
+	end
+	else
+		state <= next;
+end
+
+always @(state or en_2) begin
+	next = 2'bxx;
+	case(state)
+		B2: begin
+			if(!en_2) begin
+				next = B2;
+			end
+			else begin
+				next = C2;
+			end
+		end
+		C2: begin
+			if(en_2 == 1'b0 || en_2 == 1'b1) begin
+				next = D2;
+			end
+		end
+		D2: begin
+			if(en_2 == 1'b0 || en_2 == 1'b1) begin
+				next = E2;
+			end
+		end
+		E2: begin
+			if(en_2 == 1'b0 || en_2 == 1'b1) begin
+				next = B2;
+			end
+		end
+	endcase
+end
+
+
+always @(state or data_reg or en_2) begin
+	case(state)
+		B2: begin
+			if(!en_2) begin
+				en_address     = 1'b0;
+				en_refresh_RGB = 1'b0;
+				en_background  = 1'b0;
+			end
+			else begin
+				en_address     = 1'b1;
+				en_refresh_RGB = 1'b0;
+				if(data_reg == 32'h00000001) begin
+					en_background = 1'b1;
+				end
+				else begin
+					en_background = 1'b0;
+				end
+			end
+		end
+		C2: begin
+			en_address     = 1'b1;
+			en_refresh_RGB = 1'b0;
+			en_background  = 1'b0;
+		end
+		D2: begin
+			en_address     = 1'b1;
+			en_refresh_RGB = 1'b1;
+			en_background  = 1'b0;
+		end
+		E2: begin
+			en_address     = 1'b0;
+			en_refresh_RGB = 1'b0;
+			en_background  = 1'b0;
+		end
+	endcase
+end
+
+endmodule

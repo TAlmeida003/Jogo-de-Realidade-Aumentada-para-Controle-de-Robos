@@ -1,0 +1,80 @@
+module DrawingModule(
+	input wire clk,
+	input wire reset,
+	input wire enable,
+	input wire is_pixel,
+	input wire [31:0] data_reg,
+	input wire [9:0]  pixel_x,
+	input wire [9:0]  pixel_y,
+	input wire [8:0]  dataRGB,
+
+	output reg        out_en_comp,
+	output reg [13:0] memory_address,
+	output reg [8:0]  RGB
+);
+
+wire en_2;
+wire en_background;
+wire en_refresh_RGB;
+wire [13:0] reg_memory_address;
+wire en_comp;
+
+stateMachine_1 
+stateMachine_1_inst(
+	.clk(clk),
+	.reset(reset),
+	.enu(enable),
+	.is_pixel(is_pixel),
+	.en_comp(en_comp),
+	.en_2(en_2)
+);
+
+stateMachine_2
+stateMachine_2_inst(
+	.clk(clk),
+	.reset(reset),
+	.en_2(en_2),
+	.data_reg(data_reg),
+	.en_background(en_background),
+	.en_address(en_address),
+	.en_refresh_RGB(en_refresh_RGB)
+);
+
+calculo_address_memory #(.size_x(10), .size_y(10), .size_address(14) )
+calculo_address_memory_inst
+(
+	.pixel_x(pixel_x) , 	               // input [size_x-1:0] pixel_x_sig
+	.pixel_y(pixel_y) ,	                   // input [size_y-1:0] pixel_y_sig
+	.sprite_datas(data_reg) ,	           // input [31:0] sprite_datas_sig
+	.memory_address(reg_memory_address),    // output [size_address-1:0] memory_address_sig
+	.en_background(en_background),
+	.enable(en_address)
+);
+
+assign out_en_comp    = en_comp;
+assign memory_address = reg_memory_address;
+
+/*always @(posedge clk or negedge reset) begin
+	if (!reset) begin
+		memory_address <= 14'd0;
+	end
+	else begin
+		if(en_address) begin
+			memory_address <= reg_memory_address;
+		end
+	end
+end
+*/
+
+always @(posedge clk or negedge reset) begin
+	if (!reset) begin
+		RGB <= 9'd0;
+	end
+	else begin
+		if(en_refresh_RGB) begin
+			RGB <= dataRGB;
+		end
+	end
+end
+
+endmodule

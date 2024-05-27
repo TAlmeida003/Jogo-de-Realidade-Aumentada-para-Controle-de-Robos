@@ -1,0 +1,15 @@
+/home/gabriel/Documents/ConsoleFPGA/testes/frequencyDivisorTeste/testFrequencyDivisor.v {1 {vlog -work work -stats=none /home/gabriel/Documents/ConsoleFPGA/testes/frequencyDivisorTeste/testFrequencyDivisor.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module frequencyDivisor
+
+Top level modules:
+	frequencyDivisor
+
+} {} {}} /home/gabriel/Documents/ConsoleFPGA/testes/frequencyDivisorTeste/frequency_divisor.v {1 {vlog -work work -stats=none /home/gabriel/Documents/ConsoleFPGA/testes/frequencyDivisorTeste/frequency_divisor.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module frequency_divisor
+
+Top level modules:
+	frequency_divisor
+
+} {} {}}

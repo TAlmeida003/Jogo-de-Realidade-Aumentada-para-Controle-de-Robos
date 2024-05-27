@@ -1,0 +1,141 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "rdempty_A",
+					"strict" : false
+				},
+				{
+					"name" : "rdempty_B",
+					"strict" : false
+				},
+				{
+					"name" : "wrfull_A",
+					"strict" : false
+				},
+				{
+					"name" : "wrfull_B",
+					"strict" : false
+				},
+				{
+					"name" : "out_hsync",
+					"strict" : false
+				},
+				{
+					"name" : "out_vsync",
+					"strict" : false
+				},
+				{
+					"name" : "B[2]",
+					"strict" : false
+				},
+				{
+					"name" : "B[1]",
+					"strict" : false
+				},
+				{
+					"name" : "B[0]",
+					"strict" : false
+				},
+				{
+					"name" : "G[2]",
+					"strict" : false
+				},
+				{
+					"name" : "G[1]",
+					"strict" : false
+				},
+				{
+					"name" : "G[0]",
+					"strict" : false
+				},
+				{
+					"name" : "R[2]",
+					"strict" : false
+				},
+				{
+					"name" : "R[1]",
+					"strict" : false
+				},
+				{
+					"name" : "R[0]",
+					"strict" : false
+				},
+				{
+					"name" : "main_clk",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				},
+				{
+					"name" : "direction_analogic[1]",
+					"strict" : false
+				},
+				{
+					"name" : "direction_analogic[0]",
+					"strict" : false
+				},
+				{
+					"name" : "direction_analogic[3]",
+					"strict" : false
+				},
+				{
+					"name" : "direction_analogic[2]",
+					"strict" : false
+				},
+				{
+					"name" : "x_button",
+					"strict" : false
+				},
+				{
+					"name" : "select_button",
+					"strict" : false
+				},
+				{
+					"name" : "start_button",
+					"strict" : false
+				},
+				{
+					"name" : "a_button",
+					"strict" : false
+				},
+				{
+					"name" : "tl_button",
+					"strict" : false
+				},
+				{
+					"name" : "tr_button",
+					"strict" : false
+				},
+				{
+					"name" : "y_button",
+					"strict" : false
+				},
+				{
+					"name" : "b_button",
+					"strict" : false
+				},
+				{
+					"name" : "altera_reserved_tms",
+					"strict" : false
+				},
+				{
+					"name" : "altera_reserved_tck",
+					"strict" : false
+				},
+				{
+					"name" : "altera_reserved_tdi",
+					"strict" : false
+				},
+				{
+					"name" : "altera_reserved_tdo",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

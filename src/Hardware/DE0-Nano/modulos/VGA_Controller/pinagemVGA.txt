@@ -1,0 +1,67 @@
+//--------------Parameters of controls of the syncronism--------------------------------------
+localparam H_start   = 56;                //H_sync start
+localparam H_end     = 120 + 56;          //H_sync finished
+localparam HA_active = 120 + 56 + 64;     //Active area of the horizontal start
+localparam V_start   = 600 + 37;          //V_sync start
+localparam V_end     = 600 + 37 + 6;      //v_sync finished
+localparam VA_end    = 600;               //Active area of the vertical start
+localparam counter_time_H = 1040;         //total of cycles for horizontal
+localparam counter_time_V = 666;          //total of cycles for vertical
+
+DE0-nano
+pinagem vga:
+pino 07 - H_sync - pin_A4
+pino 06 - V_sync - pin_B5
+pino 09  - B2    - pin_D5
+pino 011 - B1    - pin_A6
+pino 013 - B0    - pin D6
+pino 015 - G2    - pin_C6
+pino 017 - G1    - pin_E6
+pino 019 - G0    - pin_D8
+pino 021 - R2    - pin_F8
+pino 023 - R1    - pin_E9
+pino 022 - R0    - pin_F9
+
+
+/////////////////////////////////////////////////////////////////////////////////
+
+Pinagem mercúrio IV
+
+H_sync - B16
+V_sync - A17
+Clk    - T1
+B[2]   - B15
+B[1]   - A15
+B[0]   - B14
+G[2]   - B13
+G[1]   - A13
+G[0]   - C13
+R[2]   - A10
+R[1]   - C10
+R[0]   - A9
+
+////////////////////////////////////////////////////////////////
+PINAGEM DO WAVESHARK:
+
+TL:			- L15 
+TR:			- P16
+A:			- K16
+B:			- K15
+X:			- J14
+Y:			- N14
+START:		- P14
+SELECT:		- L13
+UP:			- P9    position [2]   /* posição no barramento de tamanho 4. *\
+DOWN:		- N11   position [3]
+LEFT:		- R11   position [0]
+RIGHT:		- R10   position [1]
+
+
+
+
+
+
+
+
+
+

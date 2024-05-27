@@ -1,0 +1,29 @@
+/home/gabriel/Documents/ConsoleFPGA/modulos/printModule/printModule.v {1 {vlog -work work -stats=none /home/gabriel/Documents/ConsoleFPGA/modulos/printModule/printModule.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module printModule
+
+Top level modules:
+	printModule
+
+} {} {}} /home/gabriel/Documents/ConsoleFPGA/modulos/sprite_line_counter/calculoAddress.v {1 {vlog -work work -stats=none /home/gabriel/Documents/ConsoleFPGA/modulos/sprite_line_counter/calculoAddress.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module calculoAddress
+
+Top level modules:
+	calculoAddress
+
+} {} {}} /home/gabriel/Documents/ConsoleFPGA/modulos/multiplexador/multiplexador.v {1 {vlog -work work -stats=none /home/gabriel/Documents/ConsoleFPGA/modulos/multiplexador/multiplexador.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module multiplexador
+
+Top level modules:
+	multiplexador
+
+} {} {}} /home/gabriel/Documents/ConsoleFPGA/testes/printModule_full_test/printModule_full_test.v {1 {vlog -work work -stats=none /home/gabriel/Documents/ConsoleFPGA/testes/printModule_full_test/printModule_full_test.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module printModule_full_test
+
+Top level modules:
+	printModule_full_test
+
+} {} {}}

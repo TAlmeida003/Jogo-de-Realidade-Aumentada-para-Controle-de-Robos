@@ -1,0 +1,17 @@
+//ordem: opcode, done, printtingScreen, fifo_empty
+xxxx000  //vai para READ_INSTRUCTION
+xxxx000  //espera um pulso para se direcionar ao estado de PRONTO
+0000000  //Vai para ESCREVER_NO_BANCO
+0000000  //Permanece no estado ESCREVER_NO_BANCO
+0000100  //Finalizou a escrita no banco e volta ao estado de WAIT
+xxxx000  //vai para READ_INSTRUCTION
+xxxx000  //espera um pulso para se direcionar ao estado de PRONTO
+0001000  //Vai para ESCRITA_NO_MEMORIA
+0001100  //Finalizou a escrita na memória e volta ao estado de WAIT
+xxxx000  //vai para READ_INSTRUCTION
+xxxx000  //espera um pulso para se direcionar ao estado de PRONTO
+xxxx010  //Vai para HABILITAR_IMPRESSÃO
+xxxx010  //Permanece no estado HABILITAR_IMPRESSÃO
+xxxx000  //Finalizou a impressão e volta ao estado de WAIT
+
+

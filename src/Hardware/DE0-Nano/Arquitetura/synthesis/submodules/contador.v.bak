@@ -1,0 +1,32 @@
+module contador #(parameter MAX_VALUE = 10000)(
+	input  wire        clk,
+	input  wire 	   reset,
+	input  wire [9:0]  pixel_y,
+	output wire [31:0] codeScreen
+);
+
+reg [31:0] code;
+
+always @(posedge clk or negedge reset) begin
+	if(!reset) begin
+		code <= 31'd0;
+	end
+	else begin
+		if(pixel_y == 10'd640) begin
+			if(code == MAX_VALUE) begin
+				code <= 31'd0;
+			end
+			else begin
+				code <= code + 31'd1;
+			end
+		end
+		else begin
+			code <= code;
+		end
+	end
+end
+
+assign codeScreen = code;
+
+
+endmodule

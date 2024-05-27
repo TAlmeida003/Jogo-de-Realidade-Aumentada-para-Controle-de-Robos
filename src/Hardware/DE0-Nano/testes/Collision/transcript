@@ -1,0 +1,697 @@
+# Loading project CollisionTest
+# reading /opt/intelFPGA_lite/20.1/modelsim_ase/linuxaloem/../modelsim.ini
+# Loading project FIFOTest
+# Compile of FIFO_Test.v failed with 2 errors.
+# Compile of FIFO.v was successful.
+# 2 compiles, 1 failed with 2 errors.
+# Compile of FIFO_Test.v failed with 2 errors.
+# Compile of FIFO.v was successful.
+# 2 compiles, 1 failed with 2 errors.
+# Compile of FIFO_Test.v failed with 2 errors.
+# Compile of FIFO.v was successful.
+# 2 compiles, 1 failed with 2 errors.
+# Compile of FIFO_Test.v failed with 2 errors.
+# Compile of FIFO.v was successful.
+# 2 compiles, 1 failed with 2 errors.
+# Compile of FIFO_Test.v failed with 2 errors.
+# Compile of FIFO.v was successful.
+# 2 compiles, 1 failed with 2 errors.
+# Compile of FIFO_Test.v failed with 2 errors.
+# Compile of FIFO.v was successful.
+# 2 compiles, 1 failed with 2 errors.
+# Compile of FIFO_Test.v was successful.
+# Compile of FIFO.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim work.FIFO_Test -t ns
+# vsim work.FIFO_Test -t ns 
+# Start time: 11:17:34 on Apr 19,2021
+# Loading work.FIFO_Test
+# Loading work.FIFO
+# ** Error (suppressible): (vsim-3009) [TSCALE] - Module 'FIFO_Test' does not have a timeunit/timeprecision specification in effect, but other modules do.
+#    Time: 0 ns  Iteration: 0  Instance: /FIFO_Test/FIFO_inst File: /home/gabriel/Documents/ConsoleFPGA/modulos/FIFO/FIFO.v
+# ** Error: (vsim-3033) Instantiation of 'dcfifo' failed. The design unit was not found.
+#    Time: 0 ns  Iteration: 0  Instance: /FIFO_Test/FIFO_inst File: /home/gabriel/Documents/ConsoleFPGA/modulos/FIFO/FIFO.v Line: 66
+#         Searched libraries:
+#             /home/gabriel/Documents/ConsoleFPGA/testes/FIFOTest/work
+# Error loading design
+# End time: 11:17:36 on Apr 19,2021, Elapsed time: 0:00:02
+# Errors: 2, Warnings: 12
+# Compile of FIFO_Test.v failed with 2 errors.
+# Compile of FIFO.v was successful.
+# 2 compiles, 1 failed with 2 errors.
+# Compile of FIFO_Test.v was successful.
+# Compile of FIFO.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -t ns work.FIFO_Test
+# vsim -t ns work.FIFO_Test 
+# Start time: 11:19:35 on Apr 19,2021
+# Loading work.FIFO_Test
+# Loading work.FIFO
+# ** Error: (vsim-3033) Instantiation of 'dcfifo' failed. The design unit was not found.
+#    Time: 0 ns  Iteration: 0  Instance: /FIFO_Test/FIFO_inst File: /home/gabriel/Documents/ConsoleFPGA/modulos/FIFO/FIFO.v Line: 66
+#         Searched libraries:
+#             /home/gabriel/Documents/ConsoleFPGA/testes/FIFOTest/work
+# Error loading design
+# End time: 11:19:36 on Apr 19,2021, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 3
+vsim -t ns work.FIFO_Test -L altera_mf
+# vsim -t ns work.FIFO_Test -L altera_mf 
+# Start time: 11:28:08 on Apr 19,2021
+# Loading work.FIFO_Test
+# Loading work.FIFO
+# ** Error (suppressible): (vsim-10000) Unresolved defparam reference to 'dcfifo_component' in dcfifo_component.intended_device_family.
+#    Time: 0 ns  Iteration: 0  Instance: /FIFO_Test/FIFO_inst File: /home/gabriel/Documents/ConsoleFPGA/modulos/FIFO/FIFO.v Line: 82
+# ** Error (suppressible): (vsim-10000) Unresolved defparam reference to 'dcfifo_component' in dcfifo_component.lpm_numwords.
+#    Time: 0 ns  Iteration: 0  Instance: /FIFO_Test/FIFO_inst File: /home/gabriel/Documents/ConsoleFPGA/modulos/FIFO/FIFO.v Line: 83
+# ** Error (suppressible): (vsim-10000) Unresolved defparam reference to 'dcfifo_component' in dcfifo_component.lpm_showahead.
+#    Time: 0 ns  Iteration: 0  Instance: /FIFO_Test/FIFO_inst File: /home/gabriel/Documents/ConsoleFPGA/modulos/FIFO/FIFO.v Line: 84
+# ** Error (suppressible): (vsim-10000) Unresolved defparam reference to 'dcfifo_component' in dcfifo_component.lpm_type.
+#    Time: 0 ns  Iteration: 0  Instance: /FIFO_Test/FIFO_inst File: /home/gabriel/Documents/ConsoleFPGA/modulos/FIFO/FIFO.v Line: 85
+# ** Error (suppressible): (vsim-10000) Unresolved defparam reference to 'dcfifo_component' in dcfifo_component.lpm_width.
+#    Time: 0 ns  Iteration: 0  Instance: /FIFO_Test/FIFO_inst File: /home/gabriel/Documents/ConsoleFPGA/modulos/FIFO/FIFO.v Line: 86
+# ** Error (suppressible): (vsim-10000) Unresolved defparam reference to 'dcfifo_component' in dcfifo_component.lpm_widthu.
+#    Time: 0 ns  Iteration: 0  Instance: /FIFO_Test/FIFO_inst File: /home/gabriel/Documents/ConsoleFPGA/modulos/FIFO/FIFO.v Line: 87
+# ** Error (suppressible): (vsim-10000) Unresolved defparam reference to 'dcfifo_component' in dcfifo_component.overflow_checking.
+#    Time: 0 ns  Iteration: 0  Instance: /FIFO_Test/FIFO_inst File: /home/gabriel/Documents/ConsoleFPGA/modulos/FIFO/FIFO.v Line: 88
+# ** Error (suppressible): (vsim-10000) Unresolved defparam reference to 'dcfifo_component' in dcfifo_component.rdsync_delaypipe.
+#    Time: 0 ns  Iteration: 0  Instance: /FIFO_Test/FIFO_inst File: /home/gabriel/Documents/ConsoleFPGA/modulos/FIFO/FIFO.v Line: 89
+# ** Error (suppressible): (vsim-10000) Unresolved defparam reference to 'dcfifo_component' in dcfifo_component.underflow_checking.
+#    Time: 0 ns  Iteration: 0  Instance: /FIFO_Test/FIFO_inst File: /home/gabriel/Documents/ConsoleFPGA/modulos/FIFO/FIFO.v Line: 90
+# ** Error (suppressible): (vsim-10000) Unresolved defparam reference to 'dcfifo_component' in dcfifo_component.use_eab.
+#    Time: 0 ns  Iteration: 0  Instance: /FIFO_Test/FIFO_inst File: /home/gabriel/Documents/ConsoleFPGA/modulos/FIFO/FIFO.v Line: 91
+# ** Error (suppressible): (vsim-10000) Unresolved defparam reference to 'dcfifo_component' in dcfifo_component.wrsync_delaypipe.
+#    Time: 0 ns  Iteration: 0  Instance: /FIFO_Test/FIFO_inst File: /home/gabriel/Documents/ConsoleFPGA/modulos/FIFO/FIFO.v Line: 92
+# Error loading design
+# End time: 11:28:08 on Apr 19,2021, Elapsed time: 0:00:00
+# Errors: 11, Warnings: 1
+# Load canceled
+vsim -t ns -L /opt/intelFPGA_lite/20.1/modelsim_ase/altera/vhdl/altera_mf work.FIFO_Test
+# vsim -t ns -L /opt/intelFPGA_lite/20.1/modelsim_ase/altera/vhdl/altera_mf work.FIFO_Test 
+# Start time: 11:32:50 on Apr 19,2021
+# Loading work.FIFO_Test
+# Loading work.FIFO
+# ** Error (suppressible): (vsim-10000) Unresolved defparam reference to 'dcfifo_component' in dcfifo_component.intended_device_family.
+#    Time: 0 ns  Iteration: 0  Instance: /FIFO_Test/FIFO_inst File: /home/gabriel/Documents/ConsoleFPGA/modulos/FIFO/FIFO.v Line: 82
+# ** Error (suppressible): (vsim-10000) Unresolved defparam reference to 'dcfifo_component' in dcfifo_component.lpm_numwords.
+#    Time: 0 ns  Iteration: 0  Instance: /FIFO_Test/FIFO_inst File: /home/gabriel/Documents/ConsoleFPGA/modulos/FIFO/FIFO.v Line: 83
+# ** Error (suppressible): (vsim-10000) Unresolved defparam reference to 'dcfifo_component' in dcfifo_component.lpm_showahead.
+#    Time: 0 ns  Iteration: 0  Instance: /FIFO_Test/FIFO_inst File: /home/gabriel/Documents/ConsoleFPGA/modulos/FIFO/FIFO.v Line: 84
+# ** Error (suppressible): (vsim-10000) Unresolved defparam reference to 'dcfifo_component' in dcfifo_component.lpm_type.
+#    Time: 0 ns  Iteration: 0  Instance: /FIFO_Test/FIFO_inst File: /home/gabriel/Documents/ConsoleFPGA/modulos/FIFO/FIFO.v Line: 85
+# ** Error (suppressible): (vsim-10000) Unresolved defparam reference to 'dcfifo_component' in dcfifo_component.lpm_width.
+#    Time: 0 ns  Iteration: 0  Instance: /FIFO_Test/FIFO_inst File: /home/gabriel/Documents/ConsoleFPGA/modulos/FIFO/FIFO.v Line: 86
+# ** Error (suppressible): (vsim-10000) Unresolved defparam reference to 'dcfifo_component' in dcfifo_component.lpm_widthu.
+#    Time: 0 ns  Iteration: 0  Instance: /FIFO_Test/FIFO_inst File: /home/gabriel/Documents/ConsoleFPGA/modulos/FIFO/FIFO.v Line: 87
+# ** Error (suppressible): (vsim-10000) Unresolved defparam reference to 'dcfifo_component' in dcfifo_component.overflow_checking.
+#    Time: 0 ns  Iteration: 0  Instance: /FIFO_Test/FIFO_inst File: /home/gabriel/Documents/ConsoleFPGA/modulos/FIFO/FIFO.v Line: 88
+# ** Error (suppressible): (vsim-10000) Unresolved defparam reference to 'dcfifo_component' in dcfifo_component.rdsync_delaypipe.
+#    Time: 0 ns  Iteration: 0  Instance: /FIFO_Test/FIFO_inst File: /home/gabriel/Documents/ConsoleFPGA/modulos/FIFO/FIFO.v Line: 89
+# ** Error (suppressible): (vsim-10000) Unresolved defparam reference to 'dcfifo_component' in dcfifo_component.underflow_checking.
+#    Time: 0 ns  Iteration: 0  Instance: /FIFO_Test/FIFO_inst File: /home/gabriel/Documents/ConsoleFPGA/modulos/FIFO/FIFO.v Line: 90
+# ** Error (suppressible): (vsim-10000) Unresolved defparam reference to 'dcfifo_component' in dcfifo_component.use_eab.
+#    Time: 0 ns  Iteration: 0  Instance: /FIFO_Test/FIFO_inst File: /home/gabriel/Documents/ConsoleFPGA/modulos/FIFO/FIFO.v Line: 91
+# ** Error (suppressible): (vsim-10000) Unresolved defparam reference to 'dcfifo_component' in dcfifo_component.wrsync_delaypipe.
+#    Time: 0 ns  Iteration: 0  Instance: /FIFO_Test/FIFO_inst File: /home/gabriel/Documents/ConsoleFPGA/modulos/FIFO/FIFO.v Line: 92
+# Error loading design
+# End time: 11:32:50 on Apr 19,2021, Elapsed time: 0:00:00
+# Errors: 11, Warnings: 1
+# Load canceled
+vsim -t ns -L altera_mf_ver -L altera_mf work.FIFO_Test
+# vsim -t ns -L altera_mf_ver -L altera_mf work.FIFO_Test 
+# Start time: 11:35:23 on Apr 19,2021
+# Loading work.FIFO_Test
+# Loading work.FIFO
+# Loading altera_mf_ver.dcfifo
+# Loading altera_mf_ver.dcfifo_mixed_widths
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.dcfifo_low_latency
+# Loading altera_mf_ver.ALTERA_MF_HINT_EVALUATION
+# Loading altera_mf_ver.dcfifo_dffpipe
+# Loading altera_mf_ver.dcfifo_async
+# Loading altera_mf_ver.dcfifo_fefifo
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'q'. The port definition is at: /home/gabriel/Documents/ConsoleFPGA/modulos/FIFO/FIFO.v(46).
+#    Time: 0 ns  Iteration: 0  Instance: /FIFO_Test/FIFO_inst File: /home/gabriel/Documents/ConsoleFPGA/testes/FIFOTest/FIFO_Test.v Line: 30
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'DCFIFO_MW'.  Expected 14, found 13.
+#    Time: 0 ns  Iteration: 0  Instance: /FIFO_Test/FIFO_inst/dcfifo_component/DCFIFO_MW File: $MODEL_TECH/../altera/verilog/src/altera_mf.v Line: 31791
+# ** Warning: (vsim-3722) $MODEL_TECH/../altera/verilog/src/altera_mf.v(31791): [TFMPC] - Missing connection for port 'eccstatus'.
+# Compile of FIFO_Test.v was successful.
+# Compile of FIFO.v was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.FIFO_Test
+# Loading work.FIFO
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'DCFIFO_MW'.  Expected 14, found 13.
+#    Time: 0 ns  Iteration: 0  Instance: /FIFO_Test/FIFO_inst/dcfifo_component/DCFIFO_MW File: $MODEL_TECH/../altera/verilog/src/altera_mf.v Line: 31791
+# ** Warning: (vsim-3722) $MODEL_TECH/../altera/verilog/src/altera_mf.v(31791): [TFMPC] - Missing connection for port 'eccstatus'.
+vsim -t ns -L altera_mf_ver -L altera_mf work.FIFO_Test
+# End time: 11:36:43 on Apr 19,2021, Elapsed time: 0:01:20
+# Errors: 0, Warnings: 3
+# vsim -t ns -L altera_mf_ver -L altera_mf work.FIFO_Test 
+# Start time: 11:36:43 on Apr 19,2021
+# Loading work.FIFO_Test
+# Loading work.FIFO
+# Loading altera_mf_ver.dcfifo
+# Loading altera_mf_ver.dcfifo_mixed_widths
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.dcfifo_low_latency
+# Loading altera_mf_ver.ALTERA_MF_HINT_EVALUATION
+# Loading altera_mf_ver.dcfifo_dffpipe
+# Loading altera_mf_ver.dcfifo_async
+# Loading altera_mf_ver.dcfifo_fefifo
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'DCFIFO_MW'.  Expected 14, found 13.
+#    Time: 0 ns  Iteration: 0  Instance: /FIFO_Test/FIFO_inst/dcfifo_component/DCFIFO_MW File: $MODEL_TECH/../altera/verilog/src/altera_mf.v Line: 31791
+# ** Warning: (vsim-3722) $MODEL_TECH/../altera/verilog/src/altera_mf.v(31791): [TFMPC] - Missing connection for port 'eccstatus'.
+add wave -position insertpoint  \
+sim:/FIFO_Test/wrclk
+add wave -position insertpoint  \
+sim:/FIFO_Test/wrreq
+add wave -position insertpoint  \
+sim:/FIFO_Test/data
+add wave -position insertpoint  \
+sim:/FIFO_Test/wrfull
+add wave -position insertpoint  \
+sim:/FIFO_Test/q
+# Compile of FIFO_Test.v was successful.
+# Compile of FIFO.v was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.FIFO_Test
+# Loading work.FIFO
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'DCFIFO_MW'.  Expected 14, found 13.
+#    Time: 0 ns  Iteration: 0  Instance: /FIFO_Test/FIFO_inst/dcfifo_component/DCFIFO_MW File: $MODEL_TECH/../altera/verilog/src/altera_mf.v Line: 31791
+# ** Warning: (vsim-3722) $MODEL_TECH/../altera/verilog/src/altera_mf.v(31791): [TFMPC] - Missing connection for port 'eccstatus'.
+force -freeze sim:/FIFO_Test/wrclk 0 0, 1 {10 ns} -r 20
+run -all
+#############  Autofindloop Analysis  ###############
+#############  Loop found at time 0 ns ###############
+#   Wakeup process: /FIFO_Test/#ALWAYS#48 @ sub-iteration 0
+#     Source: /home/gabriel/Documents/ConsoleFPGA/testes/FIFOTest/FIFO_Test.v:48
+#   Wakeup process: /FIFO_Test/#ALWAYS#41 @ sub-iteration 0
+#     Source: /home/gabriel/Documents/ConsoleFPGA/testes/FIFOTest/FIFO_Test.v:41
+#   Wakeup process: /FIFO_Test/#ALWAYS#48 @ sub-iteration 1
+#     Source: /home/gabriel/Documents/ConsoleFPGA/testes/FIFOTest/FIFO_Test.v:48
+#   Wakeup process: /FIFO_Test/#ALWAYS#41 @ sub-iteration 1
+#     Source: /home/gabriel/Documents/ConsoleFPGA/testes/FIFOTest/FIFO_Test.v:41
+#   Wakeup process: /FIFO_Test/#ALWAYS#48 @ sub-iteration 2
+#     Source: /home/gabriel/Documents/ConsoleFPGA/testes/FIFOTest/FIFO_Test.v:48
+################# END OF LOOP #################
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 0 ns.
+# Break key hit
+# Compile of FIFO_Test.v was successful.
+# Compile of FIFO.v was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.FIFO_Test
+# Loading work.FIFO
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'DCFIFO_MW'.  Expected 14, found 13.
+#    Time: 0 ns  Iteration: 0  Instance: /FIFO_Test/FIFO_inst/dcfifo_component/DCFIFO_MW File: $MODEL_TECH/../altera/verilog/src/altera_mf.v Line: 31791
+# ** Warning: (vsim-3722) $MODEL_TECH/../altera/verilog/src/altera_mf.v(31791): [TFMPC] - Missing connection for port 'eccstatus'.
+force -freeze sim:/FIFO_Test/wrclk 0 0, 1 {10 ns} -r 20
+run -all
+# ** Note: $stop    : /home/gabriel/Documents/ConsoleFPGA/testes/FIFOTest/FIFO_Test.v(28)
+#    Time: 0 ns  Iteration: 0  Instance: /FIFO_Test
+# Break in Module FIFO_Test at /home/gabriel/Documents/ConsoleFPGA/testes/FIFOTest/FIFO_Test.v line 28
+# Compile of FIFO_Test.v was successful.
+# Compile of FIFO.v was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.FIFO_Test
+# Loading work.FIFO
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'DCFIFO_MW'.  Expected 14, found 13.
+#    Time: 0 ns  Iteration: 0  Instance: /FIFO_Test/FIFO_inst/dcfifo_component/DCFIFO_MW File: $MODEL_TECH/../altera/verilog/src/altera_mf.v Line: 31791
+# ** Warning: (vsim-3722) $MODEL_TECH/../altera/verilog/src/altera_mf.v(31791): [TFMPC] - Missing connection for port 'eccstatus'.
+force -freeze sim:/FIFO_Test/wrclk 0 0, 1 {10 ns} -r 20
+run -all
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 0 ns.
+# Break key hit
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'DCFIFO_MW'.  Expected 14, found 13.
+#    Time: 0 ns  Iteration: 0  Instance: /FIFO_Test/FIFO_inst/dcfifo_component/DCFIFO_MW File: $MODEL_TECH/../altera/verilog/src/altera_mf.v Line: 31791
+# ** Warning: (vsim-3722) $MODEL_TECH/../altera/verilog/src/altera_mf.v(31791): [TFMPC] - Missing connection for port 'eccstatus'.
+force -freeze sim:/FIFO_Test/wrclk 0 0, 1 {10 ns} -r 20
+run -all
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 0 ns.
+# Break key hit
+# Compile of FIFO_Test.v was successful.
+# Compile of FIFO.v was successful.
+# 2 compiles, 0 failed with no errors.
+force -freeze sim:/FIFO_Test/wrclk 0 0, 1 {10 ns} -r 20
+run -all
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 0 ns.
+# Compile of FIFO_Test.v was successful.
+# Compile of FIFO.v was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.FIFO_Test
+# Loading work.FIFO
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'DCFIFO_MW'.  Expected 14, found 13.
+#    Time: 0 ns  Iteration: 0  Instance: /FIFO_Test/FIFO_inst/dcfifo_component/DCFIFO_MW File: $MODEL_TECH/../altera/verilog/src/altera_mf.v Line: 31791
+# ** Warning: (vsim-3722) $MODEL_TECH/../altera/verilog/src/altera_mf.v(31791): [TFMPC] - Missing connection for port 'eccstatus'.
+force -freeze sim:/FIFO_Test/wrclk 0 0, 1 {10 ns} -r 20
+run -all
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 0 ns.
+# Break key hit
+# Compile of FIFO_Test.v was successful.
+# Compile of FIFO.v was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.FIFO_Test
+# Loading work.FIFO
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'DCFIFO_MW'.  Expected 14, found 13.
+#    Time: 0 ns  Iteration: 0  Instance: /FIFO_Test/FIFO_inst/dcfifo_component/DCFIFO_MW File: $MODEL_TECH/../altera/verilog/src/altera_mf.v Line: 31791
+# ** Warning: (vsim-3722) $MODEL_TECH/../altera/verilog/src/altera_mf.v(31791): [TFMPC] - Missing connection for port 'eccstatus'.
+run -all
+# ** Note: $stop    : /home/gabriel/Documents/ConsoleFPGA/testes/FIFOTest/FIFO_Test.v(20)
+#    Time: 0 ns  Iteration: 0  Instance: /FIFO_Test
+# Break in Module FIFO_Test at /home/gabriel/Documents/ConsoleFPGA/testes/FIFOTest/FIFO_Test.v line 20
+# Compile of FIFO_Test.v was successful.
+# Compile of FIFO.v was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.FIFO_Test
+# Loading work.FIFO
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'DCFIFO_MW'.  Expected 14, found 13.
+#    Time: 0 ns  Iteration: 0  Instance: /FIFO_Test/FIFO_inst/dcfifo_component/DCFIFO_MW File: $MODEL_TECH/../altera/verilog/src/altera_mf.v Line: 31791
+# ** Warning: (vsim-3722) $MODEL_TECH/../altera/verilog/src/altera_mf.v(31791): [TFMPC] - Missing connection for port 'eccstatus'.
+run -all
+# ** Note: $stop    : /home/gabriel/Documents/ConsoleFPGA/testes/FIFOTest/FIFO_Test.v(21)
+#    Time: 0 ns  Iteration: 1  Instance: /FIFO_Test
+# Break in Module FIFO_Test at /home/gabriel/Documents/ConsoleFPGA/testes/FIFOTest/FIFO_Test.v line 21
+# Compile of FIFO_Test.v was successful.
+# Compile of FIFO.v was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.FIFO_Test
+# Loading work.FIFO
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'DCFIFO_MW'.  Expected 14, found 13.
+#    Time: 0 ns  Iteration: 0  Instance: /FIFO_Test/FIFO_inst/dcfifo_component/DCFIFO_MW File: $MODEL_TECH/../altera/verilog/src/altera_mf.v Line: 31791
+# ** Warning: (vsim-3722) $MODEL_TECH/../altera/verilog/src/altera_mf.v(31791): [TFMPC] - Missing connection for port 'eccstatus'.
+run -all
+# ** Note: $stop    : /home/gabriel/Documents/ConsoleFPGA/testes/FIFOTest/FIFO_Test.v(27)
+#    Time: 0 ns  Iteration: 0  Instance: /FIFO_Test
+# Break in Module FIFO_Test at /home/gabriel/Documents/ConsoleFPGA/testes/FIFOTest/FIFO_Test.v line 27
+# Compile of FIFO_Test.v was successful.
+# Compile of FIFO.v was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.FIFO_Test
+# Loading work.FIFO
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'DCFIFO_MW'.  Expected 14, found 13.
+#    Time: 0 ns  Iteration: 0  Instance: /FIFO_Test/FIFO_inst/dcfifo_component/DCFIFO_MW File: $MODEL_TECH/../altera/verilog/src/altera_mf.v Line: 31791
+# ** Warning: (vsim-3722) $MODEL_TECH/../altera/verilog/src/altera_mf.v(31791): [TFMPC] - Missing connection for port 'eccstatus'.
+run -all
+# ** Note: $stop    : /home/gabriel/Documents/ConsoleFPGA/testes/FIFOTest/FIFO_Test.v(30)
+#    Time: 0 ns  Iteration: 22  Instance: /FIFO_Test
+# Break in Module FIFO_Test at /home/gabriel/Documents/ConsoleFPGA/testes/FIFOTest/FIFO_Test.v line 30
+add wave -position insertpoint  \
+sim:/FIFO_Test/FIFO_inst/wrclk
+add wave -position insertpoint  \
+sim:/FIFO_Test/FIFO_inst/wrreq
+add wave -position insertpoint  \
+sim:/FIFO_Test/FIFO_inst/data
+add wave -position insertpoint  \
+sim:/FIFO_Test/FIFO_inst/wrfull
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'DCFIFO_MW'.  Expected 14, found 13.
+#    Time: 0 ns  Iteration: 0  Instance: /FIFO_Test/FIFO_inst/dcfifo_component/DCFIFO_MW File: $MODEL_TECH/../altera/verilog/src/altera_mf.v Line: 31791
+# ** Warning: (vsim-3722) $MODEL_TECH/../altera/verilog/src/altera_mf.v(31791): [TFMPC] - Missing connection for port 'eccstatus'.
+run -all
+# ** Note: $stop    : /home/gabriel/Documents/ConsoleFPGA/testes/FIFOTest/FIFO_Test.v(30)
+#    Time: 0 ns  Iteration: 22  Instance: /FIFO_Test
+# Break in Module FIFO_Test at /home/gabriel/Documents/ConsoleFPGA/testes/FIFOTest/FIFO_Test.v line 30
+force -freeze sim:/FIFO_Test/FIFO_inst/wrclk 0 0, 1 {10 ns} -r 20
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'DCFIFO_MW'.  Expected 14, found 13.
+#    Time: 0 ns  Iteration: 0  Instance: /FIFO_Test/FIFO_inst/dcfifo_component/DCFIFO_MW File: $MODEL_TECH/../altera/verilog/src/altera_mf.v Line: 31791
+# ** Warning: (vsim-3722) $MODEL_TECH/../altera/verilog/src/altera_mf.v(31791): [TFMPC] - Missing connection for port 'eccstatus'.
+force -freeze sim:/FIFO_Test/FIFO_inst/wrclk 0 0, 1 {10 ns} -r 20
+run -all
+# ** Note: $stop    : /home/gabriel/Documents/ConsoleFPGA/testes/FIFOTest/FIFO_Test.v(30)
+#    Time: 0 ns  Iteration: 22  Instance: /FIFO_Test
+# Break in Module FIFO_Test at /home/gabriel/Documents/ConsoleFPGA/testes/FIFOTest/FIFO_Test.v line 30
+# Compile of FIFO_Test.v was successful.
+# Compile of FIFO.v was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.FIFO_Test
+# Loading work.FIFO
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'DCFIFO_MW'.  Expected 14, found 13.
+#    Time: 0 ns  Iteration: 0  Instance: /FIFO_Test/FIFO_inst/dcfifo_component/DCFIFO_MW File: $MODEL_TECH/../altera/verilog/src/altera_mf.v Line: 31791
+# ** Warning: (vsim-3722) $MODEL_TECH/../altera/verilog/src/altera_mf.v(31791): [TFMPC] - Missing connection for port 'eccstatus'.
+force -freeze sim:/FIFO_Test/FIFO_inst/wrclk 0 0, 1 {10 ns} -r 20
+run -all
+# ** Note: $stop    : /home/gabriel/Documents/ConsoleFPGA/testes/FIFOTest/FIFO_Test.v(30)
+#    Time: 220 ns  Iteration: 1  Instance: /FIFO_Test
+# Break in Module FIFO_Test at /home/gabriel/Documents/ConsoleFPGA/testes/FIFOTest/FIFO_Test.v line 30
+# Compile of FIFO_Test.v was successful.
+# Compile of FIFO.v was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.FIFO_Test
+# Loading work.FIFO
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'DCFIFO_MW'.  Expected 14, found 13.
+#    Time: 0 ns  Iteration: 0  Instance: /FIFO_Test/FIFO_inst/dcfifo_component/DCFIFO_MW File: $MODEL_TECH/../altera/verilog/src/altera_mf.v Line: 31791
+# ** Warning: (vsim-3722) $MODEL_TECH/../altera/verilog/src/altera_mf.v(31791): [TFMPC] - Missing connection for port 'eccstatus'.
+force -freeze sim:/FIFO_Test/FIFO_inst/wrclk 0 0, 1 {10 ns} -r 20
+run -all
+# ** Note: $stop    : /home/gabriel/Documents/ConsoleFPGA/testes/FIFOTest/FIFO_Test.v(30)
+#    Time: 260 ns  Iteration: 1  Instance: /FIFO_Test
+# Break in Module FIFO_Test at /home/gabriel/Documents/ConsoleFPGA/testes/FIFOTest/FIFO_Test.v line 30
+# Compile of FIFO_Test.v was successful.
+# Compile of FIFO.v was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.FIFO_Test
+# Loading work.FIFO
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'DCFIFO_MW'.  Expected 14, found 13.
+#    Time: 0 ns  Iteration: 0  Instance: /FIFO_Test/FIFO_inst/dcfifo_component/DCFIFO_MW File: $MODEL_TECH/../altera/verilog/src/altera_mf.v Line: 31791
+# ** Warning: (vsim-3722) $MODEL_TECH/../altera/verilog/src/altera_mf.v(31791): [TFMPC] - Missing connection for port 'eccstatus'.
+force -freeze sim:/FIFO_Test/FIFO_inst/wrclk 0 0, 1 {10 ns} -r 20
+run -all
+# ** Note: $stop    : /home/gabriel/Documents/ConsoleFPGA/testes/FIFOTest/FIFO_Test.v(30)
+#    Time: 250 ns  Iteration: 1  Instance: /FIFO_Test
+# Break in Module FIFO_Test at /home/gabriel/Documents/ConsoleFPGA/testes/FIFOTest/FIFO_Test.v line 30
+# Compile of FIFO_Test.v was successful.
+# Compile of FIFO.v was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.FIFO_Test
+# Loading work.FIFO
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'DCFIFO_MW'.  Expected 14, found 13.
+#    Time: 0 ns  Iteration: 0  Instance: /FIFO_Test/FIFO_inst/dcfifo_component/DCFIFO_MW File: $MODEL_TECH/../altera/verilog/src/altera_mf.v Line: 31791
+# ** Warning: (vsim-3722) $MODEL_TECH/../altera/verilog/src/altera_mf.v(31791): [TFMPC] - Missing connection for port 'eccstatus'.
+force -freeze sim:/FIFO_Test/FIFO_inst/wrclk 0 0, 1 {10 ns} -r 20
+run -all
+# ** Note: $stop    : /home/gabriel/Documents/ConsoleFPGA/testes/FIFOTest/FIFO_Test.v(29)
+#    Time: 240 ns  Iteration: 1  Instance: /FIFO_Test
+# Break in Module FIFO_Test at /home/gabriel/Documents/ConsoleFPGA/testes/FIFOTest/FIFO_Test.v line 29
+# Compile of FIFO_Test.v was successful.
+# Compile of FIFO.v was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.FIFO_Test
+# Loading work.FIFO
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'DCFIFO_MW'.  Expected 14, found 13.
+#    Time: 0 ns  Iteration: 0  Instance: /FIFO_Test/FIFO_inst/dcfifo_component/DCFIFO_MW File: $MODEL_TECH/../altera/verilog/src/altera_mf.v Line: 31791
+# ** Warning: (vsim-3722) $MODEL_TECH/../altera/verilog/src/altera_mf.v(31791): [TFMPC] - Missing connection for port 'eccstatus'.
+force -freeze sim:/FIFO_Test/FIFO_inst/wrclk 0 0, 1 {10 ns} -r 20
+run -all
+# ** Note: $stop    : /home/gabriel/Documents/ConsoleFPGA/testes/FIFOTest/FIFO_Test.v(29)
+#    Time: 240 ns  Iteration: 1  Instance: /FIFO_Test
+# Break in Module FIFO_Test at /home/gabriel/Documents/ConsoleFPGA/testes/FIFOTest/FIFO_Test.v line 29
+# Compile of FIFO_Test.v was successful.
+# Compile of FIFO.v was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.FIFO_Test
+# Loading work.FIFO
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'DCFIFO_MW'.  Expected 14, found 13.
+#    Time: 0 ns  Iteration: 0  Instance: /FIFO_Test/FIFO_inst/dcfifo_component/DCFIFO_MW File: $MODEL_TECH/../altera/verilog/src/altera_mf.v Line: 31791
+# ** Warning: (vsim-3722) $MODEL_TECH/../altera/verilog/src/altera_mf.v(31791): [TFMPC] - Missing connection for port 'eccstatus'.
+force -freeze sim:/FIFO_Test/FIFO_inst/wrclk 0 0, 1 {10 ns} -r 20
+run -all
+# ** Note: $stop    : /home/gabriel/Documents/ConsoleFPGA/testes/FIFOTest/FIFO_Test.v(29)
+#    Time: 240 ns  Iteration: 1  Instance: /FIFO_Test
+# Break in Module FIFO_Test at /home/gabriel/Documents/ConsoleFPGA/testes/FIFOTest/FIFO_Test.v line 29
+# Compile of FIFO_Test.v was successful.
+# Compile of FIFO.v was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.FIFO_Test
+# Loading work.FIFO
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'DCFIFO_MW'.  Expected 14, found 13.
+#    Time: 0 ns  Iteration: 0  Instance: /FIFO_Test/FIFO_inst/dcfifo_component/DCFIFO_MW File: $MODEL_TECH/../altera/verilog/src/altera_mf.v Line: 31791
+# ** Warning: (vsim-3722) $MODEL_TECH/../altera/verilog/src/altera_mf.v(31791): [TFMPC] - Missing connection for port 'eccstatus'.
+force -freeze sim:/FIFO_Test/FIFO_inst/wrclk 0 0, 1 {10 ns} -r 20
+run -all
+# Error! LPM_NUMWORDS must be less than or equal to 2**LPM_WIDTHU.
+# ** Note: $stop    : /home/gabriel/Documents/ConsoleFPGA/testes/FIFOTest/FIFO_Test.v(29)
+#    Time: 240 ns  Iteration: 1  Instance: /FIFO_Test
+# Break in Module FIFO_Test at /home/gabriel/Documents/ConsoleFPGA/testes/FIFOTest/FIFO_Test.v line 29
+# Compile of FIFO_Test.v was successful.
+# Compile of FIFO.v was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.FIFO_Test
+# Loading work.FIFO
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'DCFIFO_MW'.  Expected 14, found 13.
+#    Time: 0 ns  Iteration: 0  Instance: /FIFO_Test/FIFO_inst/dcfifo_component/DCFIFO_MW File: $MODEL_TECH/../altera/verilog/src/altera_mf.v Line: 31791
+# ** Warning: (vsim-3722) $MODEL_TECH/../altera/verilog/src/altera_mf.v(31791): [TFMPC] - Missing connection for port 'eccstatus'.
+force -freeze sim:/FIFO_Test/FIFO_inst/wrclk 0 0, 1 {10 ns} -r 20
+run -all
+# Error! LPM_NUMWORDS must be less than or equal to 2**LPM_WIDTHU.
+# ** Note: $stop    : /home/gabriel/Documents/ConsoleFPGA/testes/FIFOTest/FIFO_Test.v(29)
+#    Time: 240 ns  Iteration: 1  Instance: /FIFO_Test
+# Break in Module FIFO_Test at /home/gabriel/Documents/ConsoleFPGA/testes/FIFOTest/FIFO_Test.v line 29
+# Compile of FIFO_Test.v was successful.
+# Compile of FIFO.v was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.FIFO_Test
+# Loading work.FIFO
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'DCFIFO_MW'.  Expected 14, found 13.
+#    Time: 0 ns  Iteration: 0  Instance: /FIFO_Test/FIFO_inst/dcfifo_component/DCFIFO_MW File: $MODEL_TECH/../altera/verilog/src/altera_mf.v Line: 31791
+# ** Warning: (vsim-3722) $MODEL_TECH/../altera/verilog/src/altera_mf.v(31791): [TFMPC] - Missing connection for port 'eccstatus'.
+force -freeze sim:/FIFO_Test/FIFO_inst/wrclk 0 0, 1 {10 ns} -r 20
+run -all
+# ** Note: $stop    : /home/gabriel/Documents/ConsoleFPGA/testes/FIFOTest/FIFO_Test.v(29)
+#    Time: 240 ns  Iteration: 1  Instance: /FIFO_Test
+# Break in Module FIFO_Test at /home/gabriel/Documents/ConsoleFPGA/testes/FIFOTest/FIFO_Test.v line 29
+# Compile of FIFO_Test.v was successful.
+# Compile of FIFO.v was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.FIFO_Test
+# Loading work.FIFO
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'DCFIFO_MW'.  Expected 14, found 13.
+#    Time: 0 ns  Iteration: 0  Instance: /FIFO_Test/FIFO_inst/dcfifo_component/DCFIFO_MW File: $MODEL_TECH/../altera/verilog/src/altera_mf.v Line: 31791
+# ** Warning: (vsim-3722) $MODEL_TECH/../altera/verilog/src/altera_mf.v(31791): [TFMPC] - Missing connection for port 'eccstatus'.
+force -freeze sim:/FIFO_Test/FIFO_inst/wrclk 0 0, 1 {10 ns} -r 20
+run -all
+# ** Note: $stop    : /home/gabriel/Documents/ConsoleFPGA/testes/FIFOTest/FIFO_Test.v(29)
+#    Time: 320 ns  Iteration: 1  Instance: /FIFO_Test
+# Break in Module FIFO_Test at /home/gabriel/Documents/ConsoleFPGA/testes/FIFOTest/FIFO_Test.v line 29
+# Compile of FIFO_Test.v was successful.
+# Compile of FIFO.v was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.FIFO_Test
+# Loading work.FIFO
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'DCFIFO_MW'.  Expected 14, found 13.
+#    Time: 0 ns  Iteration: 0  Instance: /FIFO_Test/FIFO_inst/dcfifo_component/DCFIFO_MW File: $MODEL_TECH/../altera/verilog/src/altera_mf.v Line: 31791
+# ** Warning: (vsim-3722) $MODEL_TECH/../altera/verilog/src/altera_mf.v(31791): [TFMPC] - Missing connection for port 'eccstatus'.
+force -freeze sim:/FIFO_Test/FIFO_inst/wrclk 0 0, 1 {10 ns} -r 20
+run -all
+# ** Note: $stop    : /home/gabriel/Documents/ConsoleFPGA/testes/FIFOTest/FIFO_Test.v(29)
+#    Time: 340 ns  Iteration: 1  Instance: /FIFO_Test
+# Break in Module FIFO_Test at /home/gabriel/Documents/ConsoleFPGA/testes/FIFOTest/FIFO_Test.v line 29
+# Compile of FIFO_Test.v was successful.
+# Compile of FIFO.v was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.FIFO_Test
+# Loading work.FIFO
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'DCFIFO_MW'.  Expected 14, found 13.
+#    Time: 0 ns  Iteration: 0  Instance: /FIFO_Test/FIFO_inst/dcfifo_component/DCFIFO_MW File: $MODEL_TECH/../altera/verilog/src/altera_mf.v Line: 31791
+# ** Warning: (vsim-3722) $MODEL_TECH/../altera/verilog/src/altera_mf.v(31791): [TFMPC] - Missing connection for port 'eccstatus'.
+force -freeze sim:/FIFO_Test/FIFO_inst/wrclk 0 0, 1 {10 ns} -r 20
+run -all
+# ** Note: $stop    : /home/gabriel/Documents/ConsoleFPGA/testes/FIFOTest/FIFO_Test.v(29)
+#    Time: 400 ns  Iteration: 1  Instance: /FIFO_Test
+# Break in Module FIFO_Test at /home/gabriel/Documents/ConsoleFPGA/testes/FIFOTest/FIFO_Test.v line 29
+# Compile of FIFO_Test.v was successful.
+# Compile of FIFO.v was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.FIFO_Test
+# Loading work.FIFO
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'DCFIFO_MW'.  Expected 14, found 13.
+#    Time: 0 ns  Iteration: 0  Instance: /FIFO_Test/FIFO_inst/dcfifo_component/DCFIFO_MW File: $MODEL_TECH/../altera/verilog/src/altera_mf.v Line: 31791
+# ** Warning: (vsim-3722) $MODEL_TECH/../altera/verilog/src/altera_mf.v(31791): [TFMPC] - Missing connection for port 'eccstatus'.
+force -freeze sim:/FIFO_Test/FIFO_inst/wrclk 0 0, 1 {10 ns} -r 20
+run -all
+# ** Note: $stop    : /home/gabriel/Documents/ConsoleFPGA/testes/FIFOTest/FIFO_Test.v(29)
+#    Time: 400 ns  Iteration: 1  Instance: /FIFO_Test
+# Break in Module FIFO_Test at /home/gabriel/Documents/ConsoleFPGA/testes/FIFOTest/FIFO_Test.v line 29
+# Compile of FIFO_Test.v was successful.
+# Compile of FIFO.v was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.FIFO_Test
+# Loading work.FIFO
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'DCFIFO_MW'.  Expected 14, found 13.
+#    Time: 0 ns  Iteration: 0  Instance: /FIFO_Test/FIFO_inst/dcfifo_component/DCFIFO_MW File: $MODEL_TECH/../altera/verilog/src/altera_mf.v Line: 31791
+# ** Warning: (vsim-3722) $MODEL_TECH/../altera/verilog/src/altera_mf.v(31791): [TFMPC] - Missing connection for port 'eccstatus'.
+force -freeze sim:/FIFO_Test/FIFO_inst/wrclk 0 0, 1 {10 ns} -r 20
+run -all
+# ** Note: $stop    : /home/gabriel/Documents/ConsoleFPGA/testes/FIFOTest/FIFO_Test.v(29)
+#    Time: 400 ns  Iteration: 1  Instance: /FIFO_Test
+# Break in Module FIFO_Test at /home/gabriel/Documents/ConsoleFPGA/testes/FIFOTest/FIFO_Test.v line 29
+# Compile of FIFO_Test.v was successful.
+# Compile of FIFO.v was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.FIFO_Test
+# Loading work.FIFO
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'DCFIFO_MW'.  Expected 14, found 13.
+#    Time: 0 ns  Iteration: 0  Instance: /FIFO_Test/FIFO_inst/dcfifo_component/DCFIFO_MW File: $MODEL_TECH/../altera/verilog/src/altera_mf.v Line: 31791
+# ** Warning: (vsim-3722) $MODEL_TECH/../altera/verilog/src/altera_mf.v(31791): [TFMPC] - Missing connection for port 'eccstatus'.
+force -freeze sim:/FIFO_Test/FIFO_inst/wrclk 0 0, 1 {10 ns} -r 20
+run -all
+# ** Note: $stop    : /home/gabriel/Documents/ConsoleFPGA/testes/FIFOTest/FIFO_Test.v(30)
+#    Time: 400 ns  Iteration: 1  Instance: /FIFO_Test
+# Break in Module FIFO_Test at /home/gabriel/Documents/ConsoleFPGA/testes/FIFOTest/FIFO_Test.v line 30
+# Compile of FIFO_Test.v failed with 1 errors.
+# Compile of FIFO.v was successful.
+# 2 compiles, 1 failed with 1 error.
+# Compile of FIFO_Test.v was successful.
+# Compile of FIFO.v was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.FIFO_Test
+# Loading work.FIFO
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'DCFIFO_MW'.  Expected 14, found 13.
+#    Time: 0 ns  Iteration: 0  Instance: /FIFO_Test/FIFO_inst/dcfifo_component/DCFIFO_MW File: $MODEL_TECH/../altera/verilog/src/altera_mf.v Line: 31791
+# ** Warning: (vsim-3722) $MODEL_TECH/../altera/verilog/src/altera_mf.v(31791): [TFMPC] - Missing connection for port 'eccstatus'.
+force -freeze sim:/FIFO_Test/FIFO_inst/wrclk 0 0, 1 {10 ns} -r 20
+run -all
+# ** Note: $stop    : /home/gabriel/Documents/ConsoleFPGA/testes/FIFOTest/FIFO_Test.v(29)
+#    Time: 400 ns  Iteration: 1  Instance: /FIFO_Test
+# Break in Module FIFO_Test at /home/gabriel/Documents/ConsoleFPGA/testes/FIFOTest/FIFO_Test.v line 29
+add wave -position insertpoint  \
+sim:/FIFO_Test/wrclk
+add wave -position insertpoint  \
+sim:/FIFO_Test/wrreq
+add wave -position insertpoint  \
+sim:/FIFO_Test/data
+add wave -position insertpoint  \
+sim:/FIFO_Test/wrfull
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'DCFIFO_MW'.  Expected 14, found 13.
+#    Time: 0 ns  Iteration: 0  Instance: /FIFO_Test/FIFO_inst/dcfifo_component/DCFIFO_MW File: $MODEL_TECH/../altera/verilog/src/altera_mf.v Line: 31791
+# ** Warning: (vsim-3722) $MODEL_TECH/../altera/verilog/src/altera_mf.v(31791): [TFMPC] - Missing connection for port 'eccstatus'.
+force -freeze sim:/FIFO_Test/wrclk 0 0, 1 {10 ns} -r 20
+run -all
+# ** Note: $stop    : /home/gabriel/Documents/ConsoleFPGA/testes/FIFOTest/FIFO_Test.v(29)
+#    Time: 400 ns  Iteration: 0  Instance: /FIFO_Test
+# Break in Module FIFO_Test at /home/gabriel/Documents/ConsoleFPGA/testes/FIFOTest/FIFO_Test.v line 29
+# Compile of FIFO_Test.v was successful.
+# Compile of FIFO.v was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.FIFO_Test
+# Loading work.FIFO
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'DCFIFO_MW'.  Expected 14, found 13.
+#    Time: 0 ns  Iteration: 0  Instance: /FIFO_Test/FIFO_inst/dcfifo_component/DCFIFO_MW File: $MODEL_TECH/../altera/verilog/src/altera_mf.v Line: 31791
+# ** Warning: (vsim-3722) $MODEL_TECH/../altera/verilog/src/altera_mf.v(31791): [TFMPC] - Missing connection for port 'eccstatus'.
+noforce sim:/FIFO_Test/wrclk
+force -freeze sim:/FIFO_Test/wrclk 0 0, 1 {10 ns} -r 20
+run -all
+# ** Note: $stop    : /home/gabriel/Documents/ConsoleFPGA/testes/FIFOTest/FIFO_Test.v(29)
+#    Time: 400 ns  Iteration: 0  Instance: /FIFO_Test
+# Break in Module FIFO_Test at /home/gabriel/Documents/ConsoleFPGA/testes/FIFOTest/FIFO_Test.v line 29
+# Compile of FIFO_Test.v was successful.
+# Compile of FIFO.v was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.FIFO_Test
+# Loading work.FIFO
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'DCFIFO_MW'.  Expected 14, found 13.
+#    Time: 0 ns  Iteration: 0  Instance: /FIFO_Test/FIFO_inst/dcfifo_component/DCFIFO_MW File: $MODEL_TECH/../altera/verilog/src/altera_mf.v Line: 31791
+# ** Warning: (vsim-3722) $MODEL_TECH/../altera/verilog/src/altera_mf.v(31791): [TFMPC] - Missing connection for port 'eccstatus'.
+force -freeze sim:/FIFO_Test/wrclk 0 0, 1 {10 ns} -r 20
+run -all
+# ** Note: $stop    : /home/gabriel/Documents/ConsoleFPGA/testes/FIFOTest/FIFO_Test.v(29)
+#    Time: 400 ns  Iteration: 0  Instance: /FIFO_Test
+# Break in Module FIFO_Test at /home/gabriel/Documents/ConsoleFPGA/testes/FIFOTest/FIFO_Test.v line 29
+# Compile of FIFO_Test.v was successful.
+# Compile of FIFO.v was successful.
+# 2 compiles, 0 failed with no errors.
+# Compile of FIFO_Test.v was successful.
+# Compile of FIFO.v was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.FIFO_Test
+# Loading work.FIFO
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'DCFIFO_MW'.  Expected 14, found 13.
+#    Time: 0 ns  Iteration: 0  Instance: /FIFO_Test/FIFO_inst/dcfifo_component/DCFIFO_MW File: $MODEL_TECH/../altera/verilog/src/altera_mf.v Line: 31791
+# ** Warning: (vsim-3722) $MODEL_TECH/../altera/verilog/src/altera_mf.v(31791): [TFMPC] - Missing connection for port 'eccstatus'.
+# Compile of FIFO_Test.v was successful.
+# Compile of FIFO.v was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.FIFO_Test
+# Loading work.FIFO
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'DCFIFO_MW'.  Expected 14, found 13.
+#    Time: 0 ns  Iteration: 0  Instance: /FIFO_Test/FIFO_inst/dcfifo_component/DCFIFO_MW File: $MODEL_TECH/../altera/verilog/src/altera_mf.v Line: 31791
+# ** Warning: (vsim-3722) $MODEL_TECH/../altera/verilog/src/altera_mf.v(31791): [TFMPC] - Missing connection for port 'eccstatus'.
+force -freeze sim:/FIFO_Test/wrclk 0 0, 1 {10 ns} -r 20
+run -all
+# ** Note: $stop    : /home/gabriel/Documents/ConsoleFPGA/testes/FIFOTest/FIFO_Test.v(29)
+#    Time: 500 ns  Iteration: 0  Instance: /FIFO_Test
+# Break in Module FIFO_Test at /home/gabriel/Documents/ConsoleFPGA/testes/FIFOTest/FIFO_Test.v line 29
+# Compile of FIFO_Test.v was successful.
+# Compile of FIFO.v was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.FIFO_Test
+# Loading work.FIFO
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'DCFIFO_MW'.  Expected 14, found 13.
+#    Time: 0 ns  Iteration: 0  Instance: /FIFO_Test/FIFO_inst/dcfifo_component/DCFIFO_MW File: $MODEL_TECH/../altera/verilog/src/altera_mf.v Line: 31791
+# ** Warning: (vsim-3722) $MODEL_TECH/../altera/verilog/src/altera_mf.v(31791): [TFMPC] - Missing connection for port 'eccstatus'.
+force -freeze sim:/FIFO_Test/wrclk 0 0, 1 {10 ns} -r 20
+run -all
+# ** Note: $stop    : /home/gabriel/Documents/ConsoleFPGA/testes/FIFOTest/FIFO_Test.v(29)
+#    Time: 500 ns  Iteration: 0  Instance: /FIFO_Test
+# Break in Module FIFO_Test at /home/gabriel/Documents/ConsoleFPGA/testes/FIFOTest/FIFO_Test.v line 29
+# Compile of FIFO_Test.v was successful.
+# Compile of FIFO.v was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.FIFO_Test
+# Loading work.FIFO
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'DCFIFO_MW'.  Expected 14, found 13.
+#    Time: 0 ns  Iteration: 0  Instance: /FIFO_Test/FIFO_inst/dcfifo_component/DCFIFO_MW File: $MODEL_TECH/../altera/verilog/src/altera_mf.v Line: 31791
+# ** Warning: (vsim-3722) $MODEL_TECH/../altera/verilog/src/altera_mf.v(31791): [TFMPC] - Missing connection for port 'eccstatus'.
+force -freeze sim:/FIFO_Test/wrclk 0 0, 1 {10 ns} -r 20
+run -all
+# ** Note: $stop    : /home/gabriel/Documents/ConsoleFPGA/testes/FIFOTest/FIFO_Test.v(29)
+#    Time: 500 ns  Iteration: 0  Instance: /FIFO_Test
+# Break in Module FIFO_Test at /home/gabriel/Documents/ConsoleFPGA/testes/FIFOTest/FIFO_Test.v line 29
+# End time: 23:10:01 on Apr 19,2021, Elapsed time: 11:33:18
+# Errors: 0, Warnings: 3
