@@ -40,22 +40,21 @@ Modelo Altera Cyclone IV **EP4CE22F17C6N** FPGA;
 
 | PIN | Name PIN | FPGA PIN | Função no Controle |
 |-----|----------|----------|--------------------|
-| 2   | GPIO_10  | PIN_F13  | START              |
-| 4   | GPIO_11  | PIN_T15  | Y                  |
-| 6   | GPIO_13  | PIN_T13  | X                  |
-| 8   | GPIO_15  | PIN_T12  | B                  |
-| 10  | GPIO_17  | PIN_T11  | TR                 |
-| 12  | GND      | -        | -                  |
-| 14  | GPIO_19  | PIN_R11  | TL                 |
-| 16  | GPIO_111 | PIN_R10  | A                  |
-| 18  | GPIO_113 | PIN_P9   | RIGHT              |
-| 20  | GPIO_115 | PIN_N11  | LEFT               |
-| 22  | GPIO_117 | PIN_K16  | DOWN               |
-| 24  | GPIO_119 | PIN_L15  | UP                 |
-| 26  | GPIO_121 | PIN_P16  | SELECT             |
-| 28  | GPIO_123 | PIN_N16  | START              |
-| 30  | GND      |          | -                  |
-| -   | CLOCK_50 | PIN_R8   | -                  |
+| 2   | GPIO0_00  | PIN_D3  | Y                  |
+| 4   | GPIO0_01  | PIN_C3  | START              |
+| 6   | GPIO0_03  | PIN_A3  | A                  |
+| 8   | GPIO0_05  | PIN_B4  | RIGHT              |
+| 10  | GPIO0_07  | PIN_B5  | LEFT               |
+| 12  | GND       | -       | -                  |
+| 14  | GPIO0_09  | PIN_D5  | DOWN               |
+| 16  | GPIO0_011 | PIN_A6  | UP                 |
+| 18  | GPIO0_013 | PIN_D6  | B                  |
+| 20  | GPIO0_015 | PIN_C6  | TR                 |
+| 22  | GPIO0_017 | PIN_E6  | SELECT             |
+| 24  | GPIO0_019 | PIN_D8  | X                  |
+| 26  | GPIO0_021 | PIN_F8  | TL                 |
+| 30  | GND       |         | -                  |
+| -   | CLOCK_50  | PIN_R8  | -                  |
 
 </div>
 
