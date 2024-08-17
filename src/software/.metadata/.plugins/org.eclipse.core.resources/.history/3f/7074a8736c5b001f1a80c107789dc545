@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include "system.h"
+#include <alt_types.h>
+
+#define MEMORIA_BASE 0x03000 // Defina o endere�o base da mem�ria
+#define REG_DATA_OFFSET 0
+#define A 1
+int main() {
+    volatile  int *p_led = ( int *) MEMORIA_BASE;
+
+
+    volatile int valor = *(p_led + REG_DATA_OFFSET);
+ //   usleep(A);
+
+    printf("init \n");
+
+    while(1){
+    	valor = *(p_led + REG_DATA_OFFSET);
+    	if (valor != 0){
+    		printf("Botao foi precionado \n");
+    		*(p_led + 0) = 1;
+    	}
+    }
+    return 0;
+}

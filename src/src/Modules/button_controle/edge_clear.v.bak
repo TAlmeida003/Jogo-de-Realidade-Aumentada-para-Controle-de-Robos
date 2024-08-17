@@ -1,0 +1,27 @@
+module edge_clear #(
+    parameter DATA_WIDTH = 8
+) (
+    input  wire clk, rst_n, we, register_addr,
+    output wire  [DATA_WIDTH-1:0] clr_reg
+);
+    
+    reg reg_d;
+    wire pulse;
+
+    initial begin
+        reg_d = 1'b0;
+    end
+
+    always @(posedge clk or negedge rst_n) begin
+        if (!rst_n) begin
+            reg_d <= 1'b1;
+        end else if (!register_addr) begin
+            reg_d <= we;
+        end
+    end
+
+    assign pulse =  we & ~reg_d;
+
+    assign clr_reg = (pulse) ? 8'b11111111 : 8'b00000000;
+
+endmodule

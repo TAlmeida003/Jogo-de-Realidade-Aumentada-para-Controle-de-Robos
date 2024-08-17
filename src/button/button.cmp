@@ -1,0 +1,9 @@
+	component button is
+		port (
+			buttons_write    : in  std_logic_vector(7 downto 0) := (others => 'X'); -- write
+			buttons_readdata : out std_logic_vector(7 downto 0);                    -- readdata
+			clk_clk          : in  std_logic                    := 'X';             -- clk
+			reset_reset_n    : in  std_logic                    := 'X'              -- reset_n
+		);
+	end component button;
+
