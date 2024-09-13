@@ -13,8 +13,6 @@ Realidade Aumentada Usando FPGA
 <div id="sumario">
 	<ul>
         <li><a href="#FPGA"> FPGA De0-Nano </a></li>
-        <li><a href="#gpu"> Graphics Processing Unit (GPU) </a></li>
-        <li><a href="#hdmi"> High-Definition Multimedia Interface (HDMI) </a></li>
         <li><a href="#controle"> Interface Portátil </a></li>
         <li><a href="#referencias"> Referências </a></li>
 	</ul>	
@@ -65,65 +63,6 @@ Modelo Altera Cyclone IV **EP4CE22F17C6N** FPGA;
 </div>
 </div>
 
-<div align="justify">
-<div id="gpu">
-<h2>Graphics Processing Unit (GPU)</h2>
-
-
-
-</div>
-</div>
-
-
-<div align="justify"> 
-<div id="hdmi"> 
-<h2>High-Definition Multimedia Interface (HDMI)</h2>
-
-<h3> Pinagem </h3>
-
-<p align="center">
-  <img src="img/HDMI.png" width = "400" />
-</p>
-<p align="center"><strong>Organização dos pinos do HDMI</strong></p>
-
-<div align="center">
-
-| PIN   | Definição                        | | PIN | Definição                                  |
-|-------|----------------------------------|-|-----|--------------------------------------------|
-| 1  	  | Dados2+ (TMDS Dados2+)           | | 11  | Escudo do Relógio (Escudo do Relógio TMDS) |
-| 2  	  | Escudo TMDS Data2                | | 12  | Relógio- (Relógio TMDS–)                   |
-| 3  	  | Dados2- (Dados TMDS2-)           | | 13  | CEC                                        |
-| 4  	  | Dados1+ (Dados TMDS1+)           | | 14  | reserva                                    |
-| 5  	  | Escudo TMDS Data1                | | 15  | Linha de relógio DDC (SCL)                 |
-| 6  	  | Dados1- (Dados TMDS1-)           | | 16  | Linha de dados DDC (SDA)                   |
-| 7  	  | Dados0+ (Dados TMDS0+)           | | 17  | DDC/CEC GND                                |
-| 8  	  | Escudo Data0 (Escudo Data0 TMDS) | | 18  | Fonte de alimentação +5V (alimentação)     |
-| 9  	  | Dados0- (Dados TMDS0-)           | | 19  | Detecção de hot plug                       |
-| 10  	 | Relógio+ (Relógio TMDS+)         | | -   | -                                          |
-
-</div>
-<p align="center">
-<strong> Tabela com a pinagem do HDMI </strong></p>
-
-<h3> Transition Minimized Differential signal (TMDS) </h3>
-
-O sistema de transmissão TMDS em HDMI é dividido em duas partes: a extremidade de envio e a extremidade de recepção. O 
-transmissor TMDS recebe dados paralelos de 24 bits representando o sinal RGB da interface HDMI (TMDS codifica as três 
-cores primárias RGB de cada pixel em 8 bits, ou seja, o sinal R possui 8 bits, o sinal G possui 8 bits e o sinal B tem
-8 bits), então codifica e converte esses dados e sinais de clock em paralelo/serial e, em seguida, distribui os dados e 
-sinais de clock que representam os três sinais RGB para canais de transmissão independentes e os envia. A extremidade 
-receptora recebe o sinal serial da extremidade transmissora, decodifica-o e converte-o em serial/paralelo e, em seguida,
-envia-o para a extremidade de controle do display. Simultaneamente, o sinal do relógio também é recebido para obter 
-a sincronização.
-
-<p align="center">
-  <img src="img/DiagramaTMDS.png" width = "700" />
-</p>
-<p align="center"><strong>Diagrama de funcionamento do TMDS</strong></p>
-
-
-</div>
-</div>
 
 <div align="justify"> 
 <div id="controle"> 
@@ -154,11 +93,86 @@ a sincronização.
 
 </div>
 
+
 <p align="center">
 <strong> Tabela com a pinagem do controle</strong></p>
 
 </div>
 </div>
+
+<div align="justify"> 
+<div id="referencias"> 
+<h2>Módulo I/O</h2>
+
+Para gerenciar os periféricos do controle, foi desenvolvido um **módulo de I/O** responsável pela leitura dos dados dos botões e do joystick, enviando essas informações ao processador quando solicitado. Esta seção explicará o funcionamento desse módulo a nivel de hadware e como ele pode ser utilizado a nivel de software.
+
+
+<h3>Hadware</h3>
+
+<h3>Biblioteca</h3>
+
+Para facilitar o uso do módulo de I/O, foi desenvolvida uma biblioteca em C que contém funções para inicializar, finalizar e ler os dados dos botões e do joystick, chamada `joystick_io.h`. Ela encontrasse no diretótio `src/software/lib_joystick` do projeto. Para se utilizar essa biblioteca, basta incluir o arquivo `joystick_io.h` no código do projeto.
+
+```c
+#include "joystick_io.h"
+```
+
+Para entender como utilizar as funções da biblioteca, a seguir será explicado o funcionamento de cada uma delas, divididas em funções de controle, funções de leitura de botões e funções de leitura do joystick.
+
+<h4>Funções de Controle</h4>
+
+`initialize_joystick`: Inicializar o módulo de I/O para leitura dos botões e do joystick. Ao chamar essa função o módulo é reiniciado tendo os valores de controle zerados e é habilitado o sinal de enable.
+
+**parametros:** 
+A função não recebe parâmetros.
+
+**retorno:** 
+A função não retorna nada.
+
+**exemplo de uso:**
+```c
+initialize_joystick();
+```
+
+> **Observação:** A função deve ser chamada antes de qualquer outra função da biblioteca.
+
+`close_joystick`: Finalizar o módulo de I/O zerando todos os valores de controle e desabilitando o sinal de enable.
+
+**parametros:**
+A função não recebe parâmetros.
+
+**retorno:**
+A função não retorna nada.
+
+**exemplo de uso:**
+```c
+close_joystick();
+```
+
+> **Observação:** A função  deve ser chamada ao final do programa para liberar os recursos utilizados pelo módulo de I/O.
+
+<h4> Funções de Leitura de Botões</h4>
+
+`read_KEY`:
+
+`is_KEY_pressed`:
+
+`is_KEY_released`:
+
+`set_KEY_callback`:
+
+`clear_edge_capture`:
+
+<h4> Funções de Leitura do Joystick</h4>
+
+`read_JOY`:
+
+`get_joystick_direction`:
+
+</div>
+</div>
+
+
 
 <div align="justify"> 
 <div id="referencias"> 
