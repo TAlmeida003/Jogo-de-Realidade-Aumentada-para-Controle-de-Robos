@@ -1,6 +1,0 @@
-
-State Machine - |main|button:bt|button_avalon_interface:button_avalon_interface_0|top_button_controller:tbc|register_file:rf|state
-Name state.IDLE state.READING state.WRITING 
-state.IDLE 0 0 0 
-state.WRITING 1 0 1 
-state.READING 1 1 0 

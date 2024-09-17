@@ -19,7 +19,7 @@
 #
 # Quartus Prime
 # Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
-# Date created = 18:58:40  August 11, 2024
+# Date created = 19:01:11  September 05, 2024
 #
 # -------------------------------------------------------------------------- #
 #
@@ -39,9 +39,9 @@
 
 set_global_assignment -name FAMILY "Cyclone IV E"
 set_global_assignment -name DEVICE EP4CE22F17C6
-set_global_assignment -name TOP_LEVEL_ENTITY main
+set_global_assignment -name TOP_LEVEL_ENTITY top
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 23.1STD.1
-set_global_assignment -name PROJECT_CREATION_TIME_DATE "18:58:39  AUGUST 11, 2024"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "19:01:11  SEPTEMBER 05, 2024"
 set_global_assignment -name LAST_QUARTUS_VERSION "23.1std.1 Lite Edition"
 set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
@@ -57,38 +57,38 @@ set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_boundary_scan
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
-set_location_assignment PIN_C3 -to buttons[1]
-set_location_assignment PIN_F8 -to buttons[7]
-set_location_assignment PIN_D8 -to buttons[6]
-set_location_assignment PIN_E6 -to buttons[5]
-set_location_assignment PIN_C6 -to buttons[4]
-set_location_assignment PIN_D6 -to buttons[3]
-set_location_assignment PIN_A3 -to buttons[2]
-set_location_assignment PIN_D3 -to buttons[0]
 set_location_assignment PIN_R8 -to clk
-set_location_assignment PIN_L3 -to leds[7]
-set_location_assignment PIN_B1 -to leds[6]
-set_location_assignment PIN_F3 -to leds[5]
-set_location_assignment PIN_D1 -to leds[4]
-set_location_assignment PIN_A11 -to leds[3]
-set_location_assignment PIN_B13 -to leds[2]
-set_location_assignment PIN_A13 -to leds[1]
+set_location_assignment PIN_A3 -to A
+set_location_assignment PIN_A8 -to DOWN
+set_location_assignment PIN_B5 -to LEFT
+set_location_assignment PIN_B4 -to RIGHT
+set_location_assignment PIN_A4 -to SELECT
+set_location_assignment PIN_C3 -to START
+set_location_assignment PIN_A5 -to TL
+set_location_assignment PIN_B3 -to TR
+set_location_assignment PIN_B8 -to UP
+set_location_assignment PIN_B6 -to X
+set_location_assignment PIN_D3 -to Y
+set_location_assignment PIN_E1 -to button_reset
 set_location_assignment PIN_A15 -to leds[0]
-set_location_assignment PIN_E1 -to rst_n
-set_global_assignment -name QIP_FILE button/synthesis/button.qip
-set_global_assignment -name VERILOG_FILE src/Modules/button_controle/button_avalon_interface.v
-set_global_assignment -name VERILOG_FILE src/Modules/button_controle/main.v
-set_global_assignment -name VERILOG_FILE src/Modules/button_controle/top_button_controller.v
-set_global_assignment -name VERILOG_FILE src/Modules/button_controle/time_counter.v
-set_global_assignment -name VERILOG_FILE src/Modules/button_controle/select_data_button.v
-set_global_assignment -name VERILOG_FILE src/Modules/button_controle/register_file.v
-set_global_assignment -name VERILOG_FILE src/Modules/button_controle/edge_detector.v
-set_global_assignment -name VERILOG_FILE src/Modules/button_controle/edge_clear.v
-set_global_assignment -name VERILOG_FILE src/Modules/button_controle/button_data.v
+set_location_assignment PIN_A13 -to leds[1]
+set_location_assignment PIN_B13 -to leds[2]
+set_location_assignment PIN_A11 -to leds[3]
+set_location_assignment PIN_D1 -to leds[4]
+set_location_assignment PIN_F3 -to leds[5]
+set_location_assignment PIN_B1 -to leds[6]
+set_location_assignment PIN_L3 -to leds[7]
+set_global_assignment -name QIP_FILE IO_contoller/synthesis/IO_contoller.qip
+set_global_assignment -name VERILOG_FILE top.v
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to X
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to A
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to SELECT
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to Y
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to TR
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to START
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to TL
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_global_assignment -name EDA_MAP_ILLEGAL_CHARACTERS OFF -section_id eda_simulation
-set_global_assignment -name EDA_RUN_TOOL_AUTOMATICALLY OFF -section_id eda_simulation
-set_global_assignment -name EDA_ENABLE_GLITCH_FILTERING ON -section_id eda_simulation
+set_location_assignment PIN_A2 -to B
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

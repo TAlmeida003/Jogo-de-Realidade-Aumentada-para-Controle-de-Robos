@@ -67,44 +67,12 @@ Modelo Altera Cyclone IV **EP4CE22F17C6N** FPGA;
 <div align="justify"> 
 <div id="controle"> 
 
-<h2>Inteface Portátil
-</h2>
-
-<h3>Pinagem
-</h3>
-
-<div align="center">
-
-| PIN  | Definição | | PIN | Definição |
-|------|-----------|-|-----|-----------|
-| 1  	 | 3.3 V     | | 2   | 5 V       |
-| 7    | SELECT V  | | 4   | 5 V       |
-| 9    | GND       | | 6   | GND       |
-| 17   | 3.3 V     | | 12  | TL        |
-| 25   | GND       | | 14  | GND       |
-| 29   | UP        | | 16  | TR        |
-| 31   | DOWN      | | 20  | GND       |
-| 33   | LEFT      | | 30  | GND       |
-| 35   | RIGHT     | | 32  | B         |
-| 37   | A         | | 34  | GND       |
-| 39   | GND       | | 36  | X         |
-| -    | -         | | 38  | Y         |
-| -    | -         | | 40  | START     |
-
-</div>
-
-
-<p align="center">
-<strong> Tabela com a pinagem do controle</strong></p>
-
-</div>
-</div>
 
 <div align="justify"> 
 <div id="referencias"> 
 <h2>Módulo I/O</h2>
 
-Para gerenciar os periféricos do controle, foi desenvolvido um **módulo de I/O** responsável pela leitura dos dados dos botões e do joystick, enviando essas informações ao processador quando solicitado. Esta seção explicará o funcionamento desse módulo a nivel de hadware e como ele pode ser utilizado a nivel de software.
+Para gerenciar os periféricos de controle, foi desenvolvido um **módulo de I/O** dedicado à leitura dos dados dos botões e do joystick. Esse módulo é responsável por capturar e enviar essas informações ao processador sempre que solicitado. Nesta seção, será explicado o funcionamento do módulo tanto no nível de hardware quanto no nível de software, detalhando sua arquitetura, interfaces e como os desenvolvedores podem integrá-lo em suas aplicações.
 
 
 <h3>Hadware</h3>
@@ -153,7 +121,7 @@ close_joystick();
 
 <h4> Funções de Leitura de Botões</h4>
 
-`read_KEY`:
+`read_KEY`: 
 
 `is_KEY_pressed`:
 

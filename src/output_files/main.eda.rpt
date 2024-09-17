@@ -1,5 +1,5 @@
 EDA Netlist Writer report for main
-Thu Aug 15 20:43:09 2024
+Fri Sep 13 10:37:37 2024
 Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
@@ -37,9 +37,9 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Thu Aug 15 20:43:09 2024 ;
+; EDA Netlist Writer Status ; Successful - Fri Sep 13 10:37:37 2024 ;
 ; Revision Name             ; main                                  ;
-; Top-level Entity Name     ; main                                  ;
+; Top-level Entity Name     ; top                                   ;
 ; Family                    ; Cyclone IV E                          ;
 ; Simulation Files Creation ; Successful                            ;
 +---------------------------+---------------------------------------+
@@ -57,7 +57,7 @@ https://fpgasoftware.intel.com/eula.
 ; Flatten buses into individual nodes                                                               ; Off                         ;
 ; Maintain hierarchy                                                                                ; Off                         ;
 ; Bring out device-wide set/reset signals as ports                                                  ; Off                         ;
-; Enable glitch filtering                                                                           ; On                          ;
+; Enable glitch filtering                                                                           ; Off                         ;
 ; Do not write top level VHDL entity                                                                ; Off                         ;
 ; Disable detection of setup and hold time violations in the input registers of bi-directional pins ; Off                         ;
 ; Architecture name in VHDL output netlist                                                          ; structure                   ;
@@ -66,13 +66,13 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------------------------------------------+-----------------------------+
 
 
-+------------------------------------------------------------+
-; Simulation Generated Files                                 ;
-+------------------------------------------------------------+
-; Generated Files                                            ;
-+------------------------------------------------------------+
-; C:/Users/thiag/Desktop/ICdaPeste/simulation/questa/main.vo ;
-+------------------------------------------------------------+
++-----------------------------------------------------------+
+; Simulation Generated Files                                ;
++-----------------------------------------------------------+
+; Generated Files                                           ;
++-----------------------------------------------------------+
+; C:/Users/thiag/Documents/New_Ic/simulation/questa/main.vo ;
++-----------------------------------------------------------+
 
 
 +-----------------------------+
@@ -81,13 +81,13 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
     Info: Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
-    Info: Processing started: Thu Aug 15 20:43:07 2024
-Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off botton_controller -c main
+    Info: Processing started: Fri Sep 13 10:37:35 2024
+Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off teste -c main
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (204019): Generated file main.vo in folder "C:/Users/thiag/Desktop/ICdaPeste/simulation/questa/" for EDA simulation tool
+Info (204019): Generated file main.vo in folder "C:/Users/thiag/Documents/New_Ic/simulation/questa/" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4664 megabytes
-    Info: Processing ended: Thu Aug 15 20:43:09 2024
+    Info: Peak virtual memory: 4667 megabytes
+    Info: Processing ended: Fri Sep 13 10:37:37 2024
     Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:02
 

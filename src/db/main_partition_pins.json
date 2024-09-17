@@ -36,35 +36,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "buttons[0]",
-					"strict" : false
-				},
-				{
-					"name" : "buttons[1]",
-					"strict" : false
-				},
-				{
-					"name" : "buttons[2]",
-					"strict" : false
-				},
-				{
-					"name" : "buttons[3]",
-					"strict" : false
-				},
-				{
-					"name" : "buttons[4]",
-					"strict" : false
-				},
-				{
-					"name" : "buttons[5]",
-					"strict" : false
-				},
-				{
-					"name" : "buttons[6]",
-					"strict" : false
-				},
-				{
-					"name" : "buttons[7]",
+					"name" : "SELECT",
 					"strict" : false
 				},
 				{
@@ -72,7 +44,51 @@
 					"strict" : false
 				},
 				{
-					"name" : "rst_n",
+					"name" : "START",
+					"strict" : false
+				},
+				{
+					"name" : "TL",
+					"strict" : false
+				},
+				{
+					"name" : "TR",
+					"strict" : false
+				},
+				{
+					"name" : "B",
+					"strict" : false
+				},
+				{
+					"name" : "A",
+					"strict" : false
+				},
+				{
+					"name" : "Y",
+					"strict" : false
+				},
+				{
+					"name" : "X",
+					"strict" : false
+				},
+				{
+					"name" : "button_reset",
+					"strict" : false
+				},
+				{
+					"name" : "LEFT",
+					"strict" : false
+				},
+				{
+					"name" : "RIGHT",
+					"strict" : false
+				},
+				{
+					"name" : "UP",
+					"strict" : false
+				},
+				{
+					"name" : "DOWN",
 					"strict" : false
 				},
 				{

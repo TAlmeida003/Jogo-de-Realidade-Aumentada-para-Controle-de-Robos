@@ -1,4 +1,4 @@
-#define MEMORIA_BASE_KEY 0x03000
+#define MEMORIA_BASE_KEY 0x03010
 #define REG_DATA_OFFSET 0
 #define REG_CONTROLE_OFFSET 1
 
@@ -8,6 +8,7 @@ int open_KEY(){
     *(p_led + REG_CONTROLE_OFFSET) = 2047;
     return 1;
 }
+
 
 int read_KEY (int* kay_data){
     volatile int *p_led = (int *) MEMORIA_BASE_KEY;

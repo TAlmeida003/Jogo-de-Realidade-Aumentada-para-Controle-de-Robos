@@ -5,10 +5,11 @@
 #define REG_DATA_OFFSET 0
 #define REG_CONTROLE_OFFSET 1
 
-int open_KEY();
+int initialize_joystick();
+
+int close_joystick();
 
 int read_KEY(int* kay_data);
 
-int close_KEY();
 
 #endif

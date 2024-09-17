@@ -1,45 +1,19 @@
 Archive member included to satisfy reference by file (symbol)
 
-c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-printf.o)
-                              obj/default/hello_world_small.o (printf)
-c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-puts.o)
-                              obj/default/hello_world_small.o (puts)
-c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-strlen.o)
-                              c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-puts.o) (strlen)
-c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-impure.o)
-                              c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-printf.o) (_impure_ptr)
-c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-vfprintf.o)
-                              c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-printf.o) (___vfprintf_internal_r)
-c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-fvwrite_small_dev.o)
-                              c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-printf.o) (__sfvwrite_small_dev)
-c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-writer.o)
-                              c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-fvwrite_small_dev.o) (_write_r)
-c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-int_errno.o)
-                              c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-writer.o) (errno)
-c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/mno-hw-mul\libgcc.a(lib2-divmod.o)
-                              c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-vfprintf.o) (__udivsi3)
-c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/mno-hw-mul\libgcc.a(lib2-mul.o)
-                              c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-vfprintf.o) (__mulsi3)
-c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp/\libhal_bsp.a(alt_load.o)
-                              c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp//obj/HAL/src/crt0.o (alt_load)
-c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp/\libhal_bsp.a(alt_main.o)
-                              c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp//obj/HAL/src/crt0.o (alt_main)
-c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp/\libhal_bsp.a(alt_write.o)
-                              c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-writer.o) (write)
-c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp/\libhal_bsp.a(alt_sys_init.o)
-                              c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp/\libhal_bsp.a(alt_main.o) (alt_irq_init)
-c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
-                              c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp/\libhal_bsp.a(alt_write.o) (altera_avalon_jtag_uart_write)
-c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
-                              c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp/\libhal_bsp.a(alt_load.o) (alt_dcache_flush_all)
-c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp/\libhal_bsp.a(alt_errno.o)
-                              c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp/\libhal_bsp.a(alt_write.o) (alt_errno)
-c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
-                              c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp/\libhal_bsp.a(alt_load.o) (alt_icache_flush_all)
-c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
-                              c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp/\libhal_bsp.a(alt_sys_init.o) (altera_nios2_gen2_irq_init)
+c:/Users/thiag/Documents/GitHub/IC-Jogo-de-Realidade-Aumentada-para-Controle-de-Robos/src/software/proj_nios_bsp/\libhal_bsp.a(alt_load.o)
+                              c:/Users/thiag/Documents/GitHub/IC-Jogo-de-Realidade-Aumentada-para-Controle-de-Robos/src/software/proj_nios_bsp//obj/HAL/src/crt0.o (alt_load)
+c:/Users/thiag/Documents/GitHub/IC-Jogo-de-Realidade-Aumentada-para-Controle-de-Robos/src/software/proj_nios_bsp/\libhal_bsp.a(alt_main.o)
+                              c:/Users/thiag/Documents/GitHub/IC-Jogo-de-Realidade-Aumentada-para-Controle-de-Robos/src/software/proj_nios_bsp//obj/HAL/src/crt0.o (alt_main)
+c:/Users/thiag/Documents/GitHub/IC-Jogo-de-Realidade-Aumentada-para-Controle-de-Robos/src/software/proj_nios_bsp/\libhal_bsp.a(alt_sys_init.o)
+                              c:/Users/thiag/Documents/GitHub/IC-Jogo-de-Realidade-Aumentada-para-Controle-de-Robos/src/software/proj_nios_bsp/\libhal_bsp.a(alt_main.o) (alt_irq_init)
+c:/Users/thiag/Documents/GitHub/IC-Jogo-de-Realidade-Aumentada-para-Controle-de-Robos/src/software/proj_nios_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+                              c:/Users/thiag/Documents/GitHub/IC-Jogo-de-Realidade-Aumentada-para-Controle-de-Robos/src/software/proj_nios_bsp/\libhal_bsp.a(alt_load.o) (alt_dcache_flush_all)
+c:/Users/thiag/Documents/GitHub/IC-Jogo-de-Realidade-Aumentada-para-Controle-de-Robos/src/software/proj_nios_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+                              c:/Users/thiag/Documents/GitHub/IC-Jogo-de-Realidade-Aumentada-para-Controle-de-Robos/src/software/proj_nios_bsp/\libhal_bsp.a(alt_load.o) (alt_icache_flush_all)
+c:/Users/thiag/Documents/GitHub/IC-Jogo-de-Realidade-Aumentada-para-Controle-de-Robos/src/software/proj_nios_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+                              c:/Users/thiag/Documents/GitHub/IC-Jogo-de-Realidade-Aumentada-para-Controle-de-Robos/src/software/proj_nios_bsp/\libhal_bsp.a(alt_sys_init.o) (altera_nios2_gen2_irq_init)
 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-memcpy.o)
-                              c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp/\libhal_bsp.a(alt_load.o) (memcpy)
+                              c:/Users/thiag/Documents/GitHub/IC-Jogo-de-Realidade-Aumentada-para-Controle-de-Robos/src/software/proj_nios_bsp/\libhal_bsp.a(alt_load.o) (memcpy)
 
 Memory Configuration
 
@@ -50,7 +24,7 @@ onchip_memory2_0 0x00001020         0x00000fe0
 
 Linker script and memory map
 
-LOAD c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp//obj/HAL/src/crt0.o
+LOAD c:/Users/thiag/Documents/GitHub/IC-Jogo-de-Realidade-Aumentada-para-Controle-de-Robos/src/software/proj_nios_bsp//obj/HAL/src/crt0.o
 LOAD obj/default/hello_world_small.o
 LOAD obj/default/lib_KEY/KEY.o
 LOAD c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libstdc++.a
@@ -59,7 +33,7 @@ LOAD c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/
 START GROUP
 LOAD c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a
 LOAD c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/mno-hw-mul\libgcc.a
-LOAD c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp/\libhal_bsp.a
+LOAD c:/Users/thiag/Documents/GitHub/IC-Jogo-de-Realidade-Aumentada-para-Controle-de-Robos/src/software/proj_nios_bsp/\libhal_bsp.a
 LOAD c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libm.a
 END GROUP
 LOAD c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/mno-hw-mul\libgcc.a
@@ -67,7 +41,7 @@ LOAD c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/
 
 .entry          0x00001000       0x20
  *(.entry)
- .entry         0x00001000       0x20 c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp//obj/HAL/src/crt0.o
+ .entry         0x00001000       0x20 c:/Users/thiag/Documents/GitHub/IC-Jogo-de-Realidade-Aumentada-para-Controle-de-Robos/src/software/proj_nios_bsp//obj/HAL/src/crt0.o
                 0x00001000                __reset
                 0x0000100c                _exit
 
@@ -99,7 +73,7 @@ LOAD c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/
                 0x00001020                        PROVIDE (__ram_exceptions_end = ABSOLUTE (.))
                 0x00001020                        PROVIDE (__flash_exceptions_start = LOADADDR (.exceptions))
 
-.text           0x00001020      0xc20
+.text           0x00001020      0x194
                 [!provide]                        PROVIDE (stext = ABSOLUTE (.))
  *(.interp)
  *(.hash)
@@ -144,83 +118,38 @@ LOAD c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/
  *(.init)
  *(.plt)
  *(.text .stub .text.* .gnu.linkonce.t.*)
- .text          0x00001020       0x3c c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp//obj/HAL/src/crt0.o
+ .text          0x00001020       0x3c c:/Users/thiag/Documents/GitHub/IC-Jogo-de-Realidade-Aumentada-para-Controle-de-Robos/src/software/proj_nios_bsp//obj/HAL/src/crt0.o
                 0x00001020                _start
  .text          0x0000105c        0x0 obj/default/hello_world_small.o
- .text.startup  0x0000105c       0x64 obj/default/hello_world_small.o
+ .text.startup  0x0000105c        0x8 obj/default/hello_world_small.o
                 0x0000105c                main
- .text          0x000010c0       0x44 obj/default/lib_KEY/KEY.o
-                0x000010c0                open_KEY
-                0x000010d0                read_KEY
-                0x000010f8                close_KEY
- .text          0x00001104        0x0 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-printf.o)
- .text._printf_r
-                0x00001104       0x3c c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-printf.o)
-                0x00001104                _printf_r
- .text.printf   0x00001140       0x48 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-printf.o)
-                0x00001140                printf
- .text          0x00001188        0x0 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-puts.o)
- .text._puts_r  0x00001188       0x80 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-puts.o)
-                0x00001188                _puts_r
- .text.puts     0x00001208       0x10 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-puts.o)
-                0x00001208                puts
- .text          0x00001218        0x0 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-strlen.o)
- .text.strlen   0x00001218       0x1c c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-strlen.o)
-                0x00001218                strlen
- .text          0x00001234        0x0 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-impure.o)
- .text          0x00001234        0x0 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-vfprintf.o)
- .text.print_repeat
-                0x00001234       0x6c c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-vfprintf.o)
- .text.___vfprintf_internal_r
-                0x000012a0      0x51c c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-vfprintf.o)
-                0x000012a0                ___vfprintf_internal_r
- .text.__vfprintf_internal
-                0x000017bc       0x18 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-vfprintf.o)
-                0x000017bc                __vfprintf_internal
- .text          0x000017d4        0x0 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-fvwrite_small_dev.o)
- .text.__sfvwrite_small_dev
-                0x000017d4       0xa8 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-fvwrite_small_dev.o)
-                0x000017d4                __sfvwrite_small_dev
- .text          0x0000187c        0x0 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-writer.o)
- .text._write_r
-                0x0000187c       0x50 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-writer.o)
-                0x0000187c                _write_r
- .text          0x000018cc        0x0 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-int_errno.o)
- .text          0x000018cc      0x1b4 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/mno-hw-mul\libgcc.a(lib2-divmod.o)
-                0x000018cc                __divsi3
-                0x0000194c                __modsi3
-                0x000019c0                __udivsi3
-                0x00001a24                __umodsi3
- .text          0x00001a80       0x28 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/mno-hw-mul\libgcc.a(lib2-mul.o)
-                0x00001a80                __mulsi3
- .text          0x00001aa8       0x84 c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp/\libhal_bsp.a(alt_load.o)
-                0x00001aa8                alt_load
- .text          0x00001b2c       0x2c c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp/\libhal_bsp.a(alt_main.o)
-                0x00001b2c                alt_main
- .text          0x00001b58       0x5c c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp/\libhal_bsp.a(alt_write.o)
-                0x00001b58                write
- .text          0x00001bb4       0x24 c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp/\libhal_bsp.a(alt_sys_init.o)
-                0x00001bb4                alt_irq_init
-                0x00001bd4                alt_sys_init
- .text          0x00001bd8       0x30 c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
-                0x00001bd8                altera_avalon_jtag_uart_write
- .text          0x00001c08        0x4 c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
-                0x00001c08                alt_dcache_flush_all
- .text          0x00001c0c        0x0 c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp/\libhal_bsp.a(alt_errno.o)
- .text          0x00001c0c        0x4 c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
-                0x00001c0c                alt_icache_flush_all
- .text          0x00001c10        0x8 c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
-                0x00001c10                altera_nios2_gen2_irq_init
- .text          0x00001c18        0x0 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-memcpy.o)
- .text.memcpy   0x00001c18       0x28 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-memcpy.o)
-                0x00001c18                memcpy
+ .text          0x00001064       0x44 obj/default/lib_KEY/KEY.o
+                0x00001064                open_KEY
+                0x00001074                read_KEY
+                0x0000109c                close_KEY
+ .text          0x000010a8       0x84 c:/Users/thiag/Documents/GitHub/IC-Jogo-de-Realidade-Aumentada-para-Controle-de-Robos/src/software/proj_nios_bsp/\libhal_bsp.a(alt_load.o)
+                0x000010a8                alt_load
+ .text          0x0000112c       0x2c c:/Users/thiag/Documents/GitHub/IC-Jogo-de-Realidade-Aumentada-para-Controle-de-Robos/src/software/proj_nios_bsp/\libhal_bsp.a(alt_main.o)
+                0x0000112c                alt_main
+ .text          0x00001158       0x24 c:/Users/thiag/Documents/GitHub/IC-Jogo-de-Realidade-Aumentada-para-Controle-de-Robos/src/software/proj_nios_bsp/\libhal_bsp.a(alt_sys_init.o)
+                0x00001158                alt_irq_init
+                0x00001178                alt_sys_init
+ .text          0x0000117c        0x4 c:/Users/thiag/Documents/GitHub/IC-Jogo-de-Realidade-Aumentada-para-Controle-de-Robos/src/software/proj_nios_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+                0x0000117c                alt_dcache_flush_all
+ .text          0x00001180        0x4 c:/Users/thiag/Documents/GitHub/IC-Jogo-de-Realidade-Aumentada-para-Controle-de-Robos/src/software/proj_nios_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+                0x00001180                alt_icache_flush_all
+ .text          0x00001184        0x8 c:/Users/thiag/Documents/GitHub/IC-Jogo-de-Realidade-Aumentada-para-Controle-de-Robos/src/software/proj_nios_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+                0x00001184                altera_nios2_gen2_irq_init
+ .text          0x0000118c        0x0 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-memcpy.o)
+ .text.memcpy   0x0000118c       0x28 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-memcpy.o)
+                0x0000118c                memcpy
  *(.gnu.warning.*)
  *(.fini)
                 [!provide]                        PROVIDE (__etext = ABSOLUTE (.))
                 [!provide]                        PROVIDE (_etext = ABSOLUTE (.))
                 [!provide]                        PROVIDE (etext = ABSOLUTE (.))
  *(.eh_frame_hdr)
-                0x00001c40                        . = ALIGN (0x4)
+                0x000011b4                        . = ALIGN (0x4)
                 [!provide]                        PROVIDE (__preinit_array_start = ABSOLUTE (.))
  *(.preinit_array)
                 [!provide]                        PROVIDE (__preinit_array_end = ABSOLUTE (.))
@@ -243,128 +172,86 @@ LOAD c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/
  *(SORT_BY_NAME(.dtors.*))
                 [!provide]                        PROVIDE (__DTOR_END__ = ABSOLUTE (.))
  *(.jcr)
-                0x00001c40                        . = ALIGN (0x4)
+                0x000011b4                        . = ALIGN (0x4)
 
-.rodata         0x00001c40       0x28
-                0x00001c40                        PROVIDE (__ram_rodata_start = ABSOLUTE (.))
-                0x00001c40                        . = ALIGN (0x4)
+.rodata         0x000011b4        0x0
+                0x000011b4                        PROVIDE (__ram_rodata_start = ABSOLUTE (.))
+                0x000011b4                        . = ALIGN (0x4)
  *(.rodata .rodata.* .gnu.linkonce.r.*)
- .rodata.str1.4
-                0x00001c40       0x23 obj/default/hello_world_small.o
- *fill*         0x00001c63        0x1 
- .rodata._puts_r.str1.4
-                0x00001c64        0x2 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-puts.o)
  *(.rodata1)
-                0x00001c68                        . = ALIGN (0x4)
- *fill*         0x00001c66        0x2 
-                0x00001c68                        PROVIDE (__ram_rodata_end = ABSOLUTE (.))
-                0x00001c40                        PROVIDE (__flash_rodata_start = LOADADDR (.rodata))
+                0x000011b4                        . = ALIGN (0x4)
+                0x000011b4                        PROVIDE (__ram_rodata_end = ABSOLUTE (.))
+                0x000011b4                        PROVIDE (__flash_rodata_start = LOADADDR (.rodata))
 
-.rwdata         0x00001c68       0x5c load address 0x00001cc4
-                0x00001c68                        PROVIDE (__ram_rwdata_start = ABSOLUTE (.))
-                0x00001c68                        . = ALIGN (0x4)
+.rwdata         0x000011b4        0x0
+                0x000011b4                        PROVIDE (__ram_rwdata_start = ABSOLUTE (.))
+                0x000011b4                        . = ALIGN (0x4)
  *(.got.plt)
  *(.got)
  *(.data1)
  *(.data .data.* .gnu.linkonce.d.*)
- .data          0x00001c68        0x0 c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp//obj/HAL/src/crt0.o
- .data          0x00001c68        0x0 obj/default/hello_world_small.o
- .data          0x00001c68        0x0 obj/default/lib_KEY/KEY.o
- .data          0x00001c68        0x0 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-printf.o)
- .data          0x00001c68        0x0 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-puts.o)
- .data          0x00001c68        0x0 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-strlen.o)
- .data          0x00001c68        0x0 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-impure.o)
- .data._impure_data
-                0x00001c68       0x54 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-impure.o)
-                0x00001c68                _impure_data
- .data          0x00001cbc        0x0 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-vfprintf.o)
- .data          0x00001cbc        0x0 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-fvwrite_small_dev.o)
- .data          0x00001cbc        0x0 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-writer.o)
- .data          0x00001cbc        0x0 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-int_errno.o)
- .data          0x00001cbc        0x0 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/mno-hw-mul\libgcc.a(lib2-divmod.o)
- .data          0x00001cbc        0x0 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/mno-hw-mul\libgcc.a(lib2-mul.o)
- .data          0x00001cbc        0x0 c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp/\libhal_bsp.a(alt_load.o)
- .data          0x00001cbc        0x0 c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp/\libhal_bsp.a(alt_main.o)
- .data          0x00001cbc        0x0 c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp/\libhal_bsp.a(alt_write.o)
- .data          0x00001cbc        0x0 c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp/\libhal_bsp.a(alt_sys_init.o)
- .data          0x00001cbc        0x0 c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
- .data          0x00001cbc        0x0 c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
- .data          0x00001cbc        0x0 c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp/\libhal_bsp.a(alt_errno.o)
- .data          0x00001cbc        0x0 c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
- .data          0x00001cbc        0x0 c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
- .data          0x00001cbc        0x0 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-memcpy.o)
-                0x00009cbc                        _gp = ABSOLUTE ((. + 0x8000))
+ .data          0x000011b4        0x0 c:/Users/thiag/Documents/GitHub/IC-Jogo-de-Realidade-Aumentada-para-Controle-de-Robos/src/software/proj_nios_bsp//obj/HAL/src/crt0.o
+ .data          0x000011b4        0x0 obj/default/hello_world_small.o
+ .data          0x000011b4        0x0 obj/default/lib_KEY/KEY.o
+ .data          0x000011b4        0x0 c:/Users/thiag/Documents/GitHub/IC-Jogo-de-Realidade-Aumentada-para-Controle-de-Robos/src/software/proj_nios_bsp/\libhal_bsp.a(alt_load.o)
+ .data          0x000011b4        0x0 c:/Users/thiag/Documents/GitHub/IC-Jogo-de-Realidade-Aumentada-para-Controle-de-Robos/src/software/proj_nios_bsp/\libhal_bsp.a(alt_main.o)
+ .data          0x000011b4        0x0 c:/Users/thiag/Documents/GitHub/IC-Jogo-de-Realidade-Aumentada-para-Controle-de-Robos/src/software/proj_nios_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .data          0x000011b4        0x0 c:/Users/thiag/Documents/GitHub/IC-Jogo-de-Realidade-Aumentada-para-Controle-de-Robos/src/software/proj_nios_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .data          0x000011b4        0x0 c:/Users/thiag/Documents/GitHub/IC-Jogo-de-Realidade-Aumentada-para-Controle-de-Robos/src/software/proj_nios_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .data          0x000011b4        0x0 c:/Users/thiag/Documents/GitHub/IC-Jogo-de-Realidade-Aumentada-para-Controle-de-Robos/src/software/proj_nios_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .data          0x000011b4        0x0 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-memcpy.o)
+                0x000091b4                        _gp = ABSOLUTE ((. + 0x8000))
                 [!provide]                        PROVIDE (gp = _gp)
  *(.rwdata .rwdata.*)
  *(.sdata .sdata.* .gnu.linkonce.s.*)
- .sdata._impure_ptr
-                0x00001cbc        0x4 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-impure.o)
-                0x00001cbc                _impure_ptr
- .sdata         0x00001cc0        0x4 c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp/\libhal_bsp.a(alt_errno.o)
-                0x00001cc0                alt_errno
  *(.sdata2 .sdata2.* .gnu.linkonce.s2.*)
-                0x00001cc4                        . = ALIGN (0x4)
-                0x00001cc4                        _edata = ABSOLUTE (.)
+                0x000011b4                        . = ALIGN (0x4)
+                0x000011b4                        _edata = ABSOLUTE (.)
                 [!provide]                        PROVIDE (edata = ABSOLUTE (.))
-                0x00001cc4                        PROVIDE (__ram_rwdata_end = ABSOLUTE (.))
-                0x00001cc4                        PROVIDE (__flash_rwdata_start = LOADADDR (.rwdata))
+                0x000011b4                        PROVIDE (__ram_rwdata_end = ABSOLUTE (.))
+                0x000011b4                        PROVIDE (__flash_rwdata_start = LOADADDR (.rwdata))
 
-.bss            0x00001d20       0x14
-                0x00001d20                        __bss_start = ABSOLUTE (.)
+.bss            0x000011b4       0x10
+                0x000011b4                        __bss_start = ABSOLUTE (.)
                 [!provide]                        PROVIDE (__sbss_start = ABSOLUTE (.))
                 [!provide]                        PROVIDE (___sbss_start = ABSOLUTE (.))
  *(.dynsbss)
  *(.sbss .sbss.* .gnu.linkonce.sb.*)
- .sbss.errno    0x00001d20        0x4 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-int_errno.o)
-                0x00001d20                errno
- .sbss          0x00001d24        0xc c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp/\libhal_bsp.a(alt_main.o)
-                0x00001d24                alt_envp
-                0x00001d28                alt_argv
-                0x00001d2c                alt_argc
- .sbss          0x00001d30        0x4 c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp/\libhal_bsp.a(alt_sys_init.o)
-                0x00001d30                jtag_uart_0
+ .sbss          0x000011b4        0xc c:/Users/thiag/Documents/GitHub/IC-Jogo-de-Realidade-Aumentada-para-Controle-de-Robos/src/software/proj_nios_bsp/\libhal_bsp.a(alt_main.o)
+                0x000011b4                alt_envp
+                0x000011b8                alt_argv
+                0x000011bc                alt_argc
+ .sbss          0x000011c0        0x4 c:/Users/thiag/Documents/GitHub/IC-Jogo-de-Realidade-Aumentada-para-Controle-de-Robos/src/software/proj_nios_bsp/\libhal_bsp.a(alt_sys_init.o)
+                0x000011c0                jtag_uart_0
  *(.sbss2 .sbss2.* .gnu.linkonce.sb2.*)
  *(.scommon)
                 [!provide]                        PROVIDE (__sbss_end = ABSOLUTE (.))
                 [!provide]                        PROVIDE (___sbss_end = ABSOLUTE (.))
  *(.dynbss)
  *(.bss .bss.* .gnu.linkonce.b.*)
- .bss           0x00001d34        0x0 c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp//obj/HAL/src/crt0.o
- .bss           0x00001d34        0x0 obj/default/hello_world_small.o
- .bss           0x00001d34        0x0 obj/default/lib_KEY/KEY.o
- .bss           0x00001d34        0x0 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-printf.o)
- .bss           0x00001d34        0x0 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-puts.o)
- .bss           0x00001d34        0x0 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-strlen.o)
- .bss           0x00001d34        0x0 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-impure.o)
- .bss           0x00001d34        0x0 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-vfprintf.o)
- .bss           0x00001d34        0x0 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-fvwrite_small_dev.o)
- .bss           0x00001d34        0x0 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-writer.o)
- .bss           0x00001d34        0x0 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-int_errno.o)
- .bss           0x00001d34        0x0 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/mno-hw-mul\libgcc.a(lib2-divmod.o)
- .bss           0x00001d34        0x0 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/mno-hw-mul\libgcc.a(lib2-mul.o)
- .bss           0x00001d34        0x0 c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp/\libhal_bsp.a(alt_load.o)
- .bss           0x00001d34        0x0 c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp/\libhal_bsp.a(alt_main.o)
- .bss           0x00001d34        0x0 c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp/\libhal_bsp.a(alt_write.o)
- .bss           0x00001d34        0x0 c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp/\libhal_bsp.a(alt_sys_init.o)
- .bss           0x00001d34        0x0 c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
- .bss           0x00001d34        0x0 c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
- .bss           0x00001d34        0x0 c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp/\libhal_bsp.a(alt_errno.o)
- .bss           0x00001d34        0x0 c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
- .bss           0x00001d34        0x0 c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
- .bss           0x00001d34        0x0 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-memcpy.o)
+ .bss           0x000011c4        0x0 c:/Users/thiag/Documents/GitHub/IC-Jogo-de-Realidade-Aumentada-para-Controle-de-Robos/src/software/proj_nios_bsp//obj/HAL/src/crt0.o
+ .bss           0x000011c4        0x0 obj/default/hello_world_small.o
+ .bss           0x000011c4        0x0 obj/default/lib_KEY/KEY.o
+ .bss           0x000011c4        0x0 c:/Users/thiag/Documents/GitHub/IC-Jogo-de-Realidade-Aumentada-para-Controle-de-Robos/src/software/proj_nios_bsp/\libhal_bsp.a(alt_load.o)
+ .bss           0x000011c4        0x0 c:/Users/thiag/Documents/GitHub/IC-Jogo-de-Realidade-Aumentada-para-Controle-de-Robos/src/software/proj_nios_bsp/\libhal_bsp.a(alt_main.o)
+ .bss           0x000011c4        0x0 c:/Users/thiag/Documents/GitHub/IC-Jogo-de-Realidade-Aumentada-para-Controle-de-Robos/src/software/proj_nios_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .bss           0x000011c4        0x0 c:/Users/thiag/Documents/GitHub/IC-Jogo-de-Realidade-Aumentada-para-Controle-de-Robos/src/software/proj_nios_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .bss           0x000011c4        0x0 c:/Users/thiag/Documents/GitHub/IC-Jogo-de-Realidade-Aumentada-para-Controle-de-Robos/src/software/proj_nios_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .bss           0x000011c4        0x0 c:/Users/thiag/Documents/GitHub/IC-Jogo-de-Realidade-Aumentada-para-Controle-de-Robos/src/software/proj_nios_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .bss           0x000011c4        0x0 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-memcpy.o)
  *(COMMON)
-                0x00001d34                        . = ALIGN (0x4)
-                0x00001d34                        __bss_end = ABSOLUTE (.)
+                0x000011c4                        . = ALIGN (0x4)
+                0x000011c4                        __bss_end = ABSOLUTE (.)
 
 .onchip_memory2_0
-                0x00001d34        0x0
+                0x000011c4        0x0
                 [!provide]                        PROVIDE (_alt_partition_onchip_memory2_0_start = ABSOLUTE (.))
  *(.onchip_memory2_0 .onchip_memory2_0. onchip_memory2_0.*)
-                0x00001d34                        . = ALIGN (0x4)
+                0x000011c4                        . = ALIGN (0x4)
                 [!provide]                        PROVIDE (_alt_partition_onchip_memory2_0_end = ABSOLUTE (.))
-                0x00001d34                        _end = ABSOLUTE (.)
-                0x00001d34                        end = ABSOLUTE (.)
-                0x00001d34                        __alt_stack_base = ABSOLUTE (.)
+                0x000011c4                        _end = ABSOLUTE (.)
+                0x000011c4                        end = ABSOLUTE (.)
+                0x000011c4                        __alt_stack_base = ABSOLUTE (.)
                 [!provide]                        PROVIDE (_alt_partition_onchip_memory2_0_load_addr = LOADADDR (.onchip_memory2_0))
 
 .stab
@@ -390,25 +277,12 @@ LOAD c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/
  .comment       0x00000000       0x2d obj/default/hello_world_small.o
                                  0x2e (size before relaxing)
  .comment       0x0000002d       0x2e obj/default/lib_KEY/KEY.o
- .comment       0x0000002d       0x2e c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-printf.o)
- .comment       0x0000002d       0x2e c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-puts.o)
- .comment       0x0000002d       0x2e c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-strlen.o)
- .comment       0x0000002d       0x2e c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-impure.o)
- .comment       0x0000002d       0x2e c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-vfprintf.o)
- .comment       0x0000002d       0x2e c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-fvwrite_small_dev.o)
- .comment       0x0000002d       0x2e c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-writer.o)
- .comment       0x0000002d       0x2e c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-int_errno.o)
- .comment       0x0000002d       0x2e c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/mno-hw-mul\libgcc.a(lib2-divmod.o)
- .comment       0x0000002d       0x2e c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/mno-hw-mul\libgcc.a(lib2-mul.o)
- .comment       0x0000002d       0x2e c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp/\libhal_bsp.a(alt_load.o)
- .comment       0x0000002d       0x2e c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp/\libhal_bsp.a(alt_main.o)
- .comment       0x0000002d       0x2e c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp/\libhal_bsp.a(alt_write.o)
- .comment       0x0000002d       0x2e c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp/\libhal_bsp.a(alt_sys_init.o)
- .comment       0x0000002d       0x2e c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
- .comment       0x0000002d       0x2e c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
- .comment       0x0000002d       0x2e c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp/\libhal_bsp.a(alt_errno.o)
- .comment       0x0000002d       0x2e c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
- .comment       0x0000002d       0x2e c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .comment       0x0000002d       0x2e c:/Users/thiag/Documents/GitHub/IC-Jogo-de-Realidade-Aumentada-para-Controle-de-Robos/src/software/proj_nios_bsp/\libhal_bsp.a(alt_load.o)
+ .comment       0x0000002d       0x2e c:/Users/thiag/Documents/GitHub/IC-Jogo-de-Realidade-Aumentada-para-Controle-de-Robos/src/software/proj_nios_bsp/\libhal_bsp.a(alt_main.o)
+ .comment       0x0000002d       0x2e c:/Users/thiag/Documents/GitHub/IC-Jogo-de-Realidade-Aumentada-para-Controle-de-Robos/src/software/proj_nios_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .comment       0x0000002d       0x2e c:/Users/thiag/Documents/GitHub/IC-Jogo-de-Realidade-Aumentada-para-Controle-de-Robos/src/software/proj_nios_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .comment       0x0000002d       0x2e c:/Users/thiag/Documents/GitHub/IC-Jogo-de-Realidade-Aumentada-para-Controle-de-Robos/src/software/proj_nios_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .comment       0x0000002d       0x2e c:/Users/thiag/Documents/GitHub/IC-Jogo-de-Realidade-Aumentada-para-Controle-de-Robos/src/software/proj_nios_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
  .comment       0x0000002d       0x2e c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-memcpy.o)
 
 .debug
@@ -423,200 +297,101 @@ LOAD c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/
 .debug_sfnames
  *(.debug_sfnames)
 
-.debug_aranges  0x00000000      0x2f0
+.debug_aranges  0x00000000      0x148
  *(.debug_aranges)
  .debug_aranges
-                0x00000000       0x28 c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp//obj/HAL/src/crt0.o
+                0x00000000       0x28 c:/Users/thiag/Documents/GitHub/IC-Jogo-de-Realidade-Aumentada-para-Controle-de-Robos/src/software/proj_nios_bsp//obj/HAL/src/crt0.o
  .debug_aranges
                 0x00000028       0x20 obj/default/hello_world_small.o
  .debug_aranges
                 0x00000048       0x20 obj/default/lib_KEY/KEY.o
  .debug_aranges
-                0x00000068       0x28 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-printf.o)
+                0x00000068       0x20 c:/Users/thiag/Documents/GitHub/IC-Jogo-de-Realidade-Aumentada-para-Controle-de-Robos/src/software/proj_nios_bsp/\libhal_bsp.a(alt_load.o)
  .debug_aranges
-                0x00000090       0x28 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-puts.o)
+                0x00000088       0x20 c:/Users/thiag/Documents/GitHub/IC-Jogo-de-Realidade-Aumentada-para-Controle-de-Robos/src/software/proj_nios_bsp/\libhal_bsp.a(alt_main.o)
  .debug_aranges
-                0x000000b8       0x20 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-strlen.o)
+                0x000000a8       0x20 c:/Users/thiag/Documents/GitHub/IC-Jogo-de-Realidade-Aumentada-para-Controle-de-Robos/src/software/proj_nios_bsp/\libhal_bsp.a(alt_sys_init.o)
  .debug_aranges
-                0x000000d8       0x18 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-impure.o)
+                0x000000c8       0x20 c:/Users/thiag/Documents/GitHub/IC-Jogo-de-Realidade-Aumentada-para-Controle-de-Robos/src/software/proj_nios_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
  .debug_aranges
-                0x000000f0       0x30 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-vfprintf.o)
+                0x000000e8       0x20 c:/Users/thiag/Documents/GitHub/IC-Jogo-de-Realidade-Aumentada-para-Controle-de-Robos/src/software/proj_nios_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
  .debug_aranges
-                0x00000120       0x20 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-fvwrite_small_dev.o)
+                0x00000108       0x20 c:/Users/thiag/Documents/GitHub/IC-Jogo-de-Realidade-Aumentada-para-Controle-de-Robos/src/software/proj_nios_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
  .debug_aranges
-                0x00000140       0x20 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-writer.o)
- .debug_aranges
-                0x00000160       0x18 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-int_errno.o)
- .debug_aranges
-                0x00000178       0x20 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/mno-hw-mul\libgcc.a(lib2-divmod.o)
- .debug_aranges
-                0x00000198       0x20 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/mno-hw-mul\libgcc.a(lib2-mul.o)
- .debug_aranges
-                0x000001b8       0x20 c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp/\libhal_bsp.a(alt_load.o)
- .debug_aranges
-                0x000001d8       0x20 c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp/\libhal_bsp.a(alt_main.o)
- .debug_aranges
-                0x000001f8       0x20 c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp/\libhal_bsp.a(alt_write.o)
- .debug_aranges
-                0x00000218       0x20 c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp/\libhal_bsp.a(alt_sys_init.o)
- .debug_aranges
-                0x00000238       0x20 c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
- .debug_aranges
-                0x00000258       0x20 c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
- .debug_aranges
-                0x00000278       0x18 c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp/\libhal_bsp.a(alt_errno.o)
- .debug_aranges
-                0x00000290       0x20 c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
- .debug_aranges
-                0x000002b0       0x20 c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
- .debug_aranges
-                0x000002d0       0x20 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-memcpy.o)
+                0x00000128       0x20 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-memcpy.o)
 
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x00000000     0x3ce7
+.debug_info     0x00000000      0x89f
  *(.debug_info .gnu.linkonce.wi.*)
- .debug_info    0x00000000       0x3f c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp//obj/HAL/src/crt0.o
- .debug_info    0x0000003f      0x16e obj/default/hello_world_small.o
- .debug_info    0x000001ad       0xb6 obj/default/lib_KEY/KEY.o
- .debug_info    0x00000263      0x666 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-printf.o)
- .debug_info    0x000008c9      0x5ec c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-puts.o)
- .debug_info    0x00000eb5       0xd1 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-strlen.o)
- .debug_info    0x00000f86      0x4eb c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-impure.o)
- .debug_info    0x00001471      0xd7f c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-vfprintf.o)
- .debug_info    0x000021f0      0x5c4 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-fvwrite_small_dev.o)
- .debug_info    0x000027b4      0x5a4 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-writer.o)
- .debug_info    0x00002d58       0x85 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-int_errno.o)
- .debug_info    0x00002ddd      0x347 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/mno-hw-mul\libgcc.a(lib2-divmod.o)
- .debug_info    0x00003124       0xc4 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/mno-hw-mul\libgcc.a(lib2-mul.o)
- .debug_info    0x000031e8      0x239 c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp/\libhal_bsp.a(alt_load.o)
- .debug_info    0x00003421      0x13e c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp/\libhal_bsp.a(alt_main.o)
- .debug_info    0x0000355f      0x1a8 c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp/\libhal_bsp.a(alt_write.o)
- .debug_info    0x00003707      0x127 c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp/\libhal_bsp.a(alt_sys_init.o)
- .debug_info    0x0000382e      0x149 c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
- .debug_info    0x00003977       0x8d c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
- .debug_info    0x00003a04       0xa8 c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp/\libhal_bsp.a(alt_errno.o)
- .debug_info    0x00003aac       0x8d c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
- .debug_info    0x00003b39       0x8d c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
- .debug_info    0x00003bc6      0x121 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-memcpy.o)
+ .debug_info    0x00000000       0x3f c:/Users/thiag/Documents/GitHub/IC-Jogo-de-Realidade-Aumentada-para-Controle-de-Robos/src/software/proj_nios_bsp//obj/HAL/src/crt0.o
+ .debug_info    0x0000003f       0x44 obj/default/hello_world_small.o
+ .debug_info    0x00000083       0xb6 obj/default/lib_KEY/KEY.o
+ .debug_info    0x00000139      0x239 c:/Users/thiag/Documents/GitHub/IC-Jogo-de-Realidade-Aumentada-para-Controle-de-Robos/src/software/proj_nios_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_info    0x00000372      0x13e c:/Users/thiag/Documents/GitHub/IC-Jogo-de-Realidade-Aumentada-para-Controle-de-Robos/src/software/proj_nios_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_info    0x000004b0      0x127 c:/Users/thiag/Documents/GitHub/IC-Jogo-de-Realidade-Aumentada-para-Controle-de-Robos/src/software/proj_nios_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_info    0x000005d7       0x8d c:/Users/thiag/Documents/GitHub/IC-Jogo-de-Realidade-Aumentada-para-Controle-de-Robos/src/software/proj_nios_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_info    0x00000664       0x8d c:/Users/thiag/Documents/GitHub/IC-Jogo-de-Realidade-Aumentada-para-Controle-de-Robos/src/software/proj_nios_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_info    0x000006f1       0x8d c:/Users/thiag/Documents/GitHub/IC-Jogo-de-Realidade-Aumentada-para-Controle-de-Robos/src/software/proj_nios_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .debug_info    0x0000077e      0x121 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-memcpy.o)
 
-.debug_abbrev   0x00000000     0x1669
+.debug_abbrev   0x00000000      0x5a7
  *(.debug_abbrev)
- .debug_abbrev  0x00000000       0x1f c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp//obj/HAL/src/crt0.o
- .debug_abbrev  0x0000001f       0xed obj/default/hello_world_small.o
- .debug_abbrev  0x0000010c       0xa8 obj/default/lib_KEY/KEY.o
- .debug_abbrev  0x000001b4      0x1ec c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-printf.o)
- .debug_abbrev  0x000003a0      0x1db c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-puts.o)
- .debug_abbrev  0x0000057b       0x8c c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-strlen.o)
- .debug_abbrev  0x00000607      0x142 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-impure.o)
- .debug_abbrev  0x00000749      0x2d9 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-vfprintf.o)
- .debug_abbrev  0x00000a22      0x1c9 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-fvwrite_small_dev.o)
- .debug_abbrev  0x00000beb      0x1ae c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-writer.o)
- .debug_abbrev  0x00000d99       0x39 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-int_errno.o)
- .debug_abbrev  0x00000dd2      0x10c c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/mno-hw-mul\libgcc.a(lib2-divmod.o)
- .debug_abbrev  0x00000ede       0x80 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/mno-hw-mul\libgcc.a(lib2-mul.o)
- .debug_abbrev  0x00000f5e      0x12c c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp/\libhal_bsp.a(alt_load.o)
- .debug_abbrev  0x0000108a       0xeb c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp/\libhal_bsp.a(alt_main.o)
- .debug_abbrev  0x00001175      0x117 c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp/\libhal_bsp.a(alt_write.o)
- .debug_abbrev  0x0000128c      0x107 c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp/\libhal_bsp.a(alt_sys_init.o)
- .debug_abbrev  0x00001393       0xdc c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
- .debug_abbrev  0x0000146f       0x43 c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
- .debug_abbrev  0x000014b2       0x70 c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp/\libhal_bsp.a(alt_errno.o)
- .debug_abbrev  0x00001522       0x43 c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
- .debug_abbrev  0x00001565       0x43 c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
- .debug_abbrev  0x000015a8       0xc1 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-memcpy.o)
+ .debug_abbrev  0x00000000       0x1f c:/Users/thiag/Documents/GitHub/IC-Jogo-de-Realidade-Aumentada-para-Controle-de-Robos/src/software/proj_nios_bsp//obj/HAL/src/crt0.o
+ .debug_abbrev  0x0000001f       0x38 obj/default/hello_world_small.o
+ .debug_abbrev  0x00000057       0xa8 obj/default/lib_KEY/KEY.o
+ .debug_abbrev  0x000000ff      0x12c c:/Users/thiag/Documents/GitHub/IC-Jogo-de-Realidade-Aumentada-para-Controle-de-Robos/src/software/proj_nios_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_abbrev  0x0000022b       0xeb c:/Users/thiag/Documents/GitHub/IC-Jogo-de-Realidade-Aumentada-para-Controle-de-Robos/src/software/proj_nios_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_abbrev  0x00000316      0x107 c:/Users/thiag/Documents/GitHub/IC-Jogo-de-Realidade-Aumentada-para-Controle-de-Robos/src/software/proj_nios_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_abbrev  0x0000041d       0x43 c:/Users/thiag/Documents/GitHub/IC-Jogo-de-Realidade-Aumentada-para-Controle-de-Robos/src/software/proj_nios_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_abbrev  0x00000460       0x43 c:/Users/thiag/Documents/GitHub/IC-Jogo-de-Realidade-Aumentada-para-Controle-de-Robos/src/software/proj_nios_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_abbrev  0x000004a3       0x43 c:/Users/thiag/Documents/GitHub/IC-Jogo-de-Realidade-Aumentada-para-Controle-de-Robos/src/software/proj_nios_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .debug_abbrev  0x000004e6       0xc1 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-memcpy.o)
 
-.debug_line     0x00000000     0x13cb
+.debug_line     0x00000000      0x4d7
  *(.debug_line)
- .debug_line    0x00000000       0x66 c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp//obj/HAL/src/crt0.o
- .debug_line    0x00000066       0x95 obj/default/hello_world_small.o
- .debug_line    0x000000fb       0xa7 obj/default/lib_KEY/KEY.o
- .debug_line    0x000001a2       0xd4 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-printf.o)
- .debug_line    0x00000276       0xc2 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-puts.o)
- .debug_line    0x00000338       0x7c c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-strlen.o)
- .debug_line    0x000003b4       0x4c c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-impure.o)
- .debug_line    0x00000400      0x581 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-vfprintf.o)
- .debug_line    0x00000981       0xd7 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-fvwrite_small_dev.o)
- .debug_line    0x00000a58       0xae c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-writer.o)
- .debug_line    0x00000b06       0x3a c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-int_errno.o)
- .debug_line    0x00000b40      0x2e3 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/mno-hw-mul\libgcc.a(lib2-divmod.o)
- .debug_line    0x00000e23       0x88 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/mno-hw-mul\libgcc.a(lib2-mul.o)
- .debug_line    0x00000eab       0xd2 c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp/\libhal_bsp.a(alt_load.o)
- .debug_line    0x00000f7d       0xa2 c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp/\libhal_bsp.a(alt_main.o)
- .debug_line    0x0000101f       0xc5 c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp/\libhal_bsp.a(alt_write.o)
- .debug_line    0x000010e4       0x8e c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp/\libhal_bsp.a(alt_sys_init.o)
- .debug_line    0x00001172       0x93 c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
- .debug_line    0x00001205       0x4e c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
- .debug_line    0x00001253       0x4c c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp/\libhal_bsp.a(alt_errno.o)
- .debug_line    0x0000129f       0x4c c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
- .debug_line    0x000012eb       0x54 c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
- .debug_line    0x0000133f       0x8c c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-memcpy.o)
+ .debug_line    0x00000000       0x66 c:/Users/thiag/Documents/GitHub/IC-Jogo-de-Realidade-Aumentada-para-Controle-de-Robos/src/software/proj_nios_bsp//obj/HAL/src/crt0.o
+ .debug_line    0x00000066       0x4e obj/default/hello_world_small.o
+ .debug_line    0x000000b4       0xa7 obj/default/lib_KEY/KEY.o
+ .debug_line    0x0000015b       0xd2 c:/Users/thiag/Documents/GitHub/IC-Jogo-de-Realidade-Aumentada-para-Controle-de-Robos/src/software/proj_nios_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_line    0x0000022d       0xa2 c:/Users/thiag/Documents/GitHub/IC-Jogo-de-Realidade-Aumentada-para-Controle-de-Robos/src/software/proj_nios_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_line    0x000002cf       0x8e c:/Users/thiag/Documents/GitHub/IC-Jogo-de-Realidade-Aumentada-para-Controle-de-Robos/src/software/proj_nios_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_line    0x0000035d       0x4e c:/Users/thiag/Documents/GitHub/IC-Jogo-de-Realidade-Aumentada-para-Controle-de-Robos/src/software/proj_nios_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_line    0x000003ab       0x4c c:/Users/thiag/Documents/GitHub/IC-Jogo-de-Realidade-Aumentada-para-Controle-de-Robos/src/software/proj_nios_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_line    0x000003f7       0x54 c:/Users/thiag/Documents/GitHub/IC-Jogo-de-Realidade-Aumentada-para-Controle-de-Robos/src/software/proj_nios_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .debug_line    0x0000044b       0x8c c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-memcpy.o)
 
-.debug_frame    0x00000000      0x3f0
+.debug_frame    0x00000000      0x174
  *(.debug_frame)
- .debug_frame   0x00000000       0x34 obj/default/hello_world_small.o
- .debug_frame   0x00000034       0x40 obj/default/lib_KEY/KEY.o
- .debug_frame   0x00000074       0x48 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-printf.o)
- .debug_frame   0x000000bc       0x48 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-puts.o)
- .debug_frame   0x00000104       0x20 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-strlen.o)
- .debug_frame   0x00000124       0x90 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-vfprintf.o)
- .debug_frame   0x000001b4       0x3c c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-fvwrite_small_dev.o)
- .debug_frame   0x000001f0       0x30 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-writer.o)
- .debug_frame   0x00000220       0x50 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/mno-hw-mul\libgcc.a(lib2-divmod.o)
- .debug_frame   0x00000270       0x20 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/mno-hw-mul\libgcc.a(lib2-mul.o)
- .debug_frame   0x00000290       0x2c c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp/\libhal_bsp.a(alt_load.o)
- .debug_frame   0x000002bc       0x2c c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp/\libhal_bsp.a(alt_main.o)
- .debug_frame   0x000002e8       0x2c c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp/\libhal_bsp.a(alt_write.o)
- .debug_frame   0x00000314       0x3c c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp/\libhal_bsp.a(alt_sys_init.o)
- .debug_frame   0x00000350       0x20 c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
- .debug_frame   0x00000370       0x20 c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
- .debug_frame   0x00000390       0x20 c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
- .debug_frame   0x000003b0       0x20 c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
- .debug_frame   0x000003d0       0x20 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-memcpy.o)
+ .debug_frame   0x00000000       0x20 obj/default/hello_world_small.o
+ .debug_frame   0x00000020       0x40 obj/default/lib_KEY/KEY.o
+ .debug_frame   0x00000060       0x2c c:/Users/thiag/Documents/GitHub/IC-Jogo-de-Realidade-Aumentada-para-Controle-de-Robos/src/software/proj_nios_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_frame   0x0000008c       0x2c c:/Users/thiag/Documents/GitHub/IC-Jogo-de-Realidade-Aumentada-para-Controle-de-Robos/src/software/proj_nios_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_frame   0x000000b8       0x3c c:/Users/thiag/Documents/GitHub/IC-Jogo-de-Realidade-Aumentada-para-Controle-de-Robos/src/software/proj_nios_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_frame   0x000000f4       0x20 c:/Users/thiag/Documents/GitHub/IC-Jogo-de-Realidade-Aumentada-para-Controle-de-Robos/src/software/proj_nios_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_frame   0x00000114       0x20 c:/Users/thiag/Documents/GitHub/IC-Jogo-de-Realidade-Aumentada-para-Controle-de-Robos/src/software/proj_nios_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_frame   0x00000134       0x20 c:/Users/thiag/Documents/GitHub/IC-Jogo-de-Realidade-Aumentada-para-Controle-de-Robos/src/software/proj_nios_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .debug_frame   0x00000154       0x20 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-memcpy.o)
 
-.debug_str      0x00000000      0xa81
+.debug_str      0x00000000      0x3aa
  *(.debug_str)
- .debug_str     0x00000000       0x5e c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp//obj/HAL/src/crt0.o
+ .debug_str     0x00000000       0x5e c:/Users/thiag/Documents/GitHub/IC-Jogo-de-Realidade-Aumentada-para-Controle-de-Robos/src/software/proj_nios_bsp//obj/HAL/src/crt0.o
                                  0x65 (size before relaxing)
- .debug_str     0x0000005e       0xe7 obj/default/hello_world_small.o
-                                0x12a (size before relaxing)
- .debug_str     0x00000145        0xf obj/default/lib_KEY/KEY.o
+ .debug_str     0x0000005e       0x53 obj/default/hello_world_small.o
+                                 0x58 (size before relaxing)
+ .debug_str     0x000000b1       0x2b obj/default/lib_KEY/KEY.o
                                  0x7e (size before relaxing)
- .debug_str     0x00000154      0x339 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-printf.o)
-                                0x402 (size before relaxing)
- .debug_str     0x0000048d        0xf c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-puts.o)
-                                0x3b3 (size before relaxing)
- .debug_str     0x0000049c        0xf c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-strlen.o)
-                                0x114 (size before relaxing)
- .debug_str     0x0000049c        0xd c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-impure.o)
-                                0x390 (size before relaxing)
- .debug_str     0x000004a9      0x2a1 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-vfprintf.o)
-                                0x749 (size before relaxing)
- .debug_str     0x0000074a       0x25 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-fvwrite_small_dev.o)
-                                0x3bd (size before relaxing)
- .debug_str     0x0000076f       0x25 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-writer.o)
-                                0x39c (size before relaxing)
- .debug_str     0x0000076f      0x106 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-int_errno.o)
- .debug_str     0x0000076f       0xcd c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/mno-hw-mul\libgcc.a(lib2-divmod.o)
-                                0x122 (size before relaxing)
- .debug_str     0x0000083c       0xe6 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/mno-hw-mul\libgcc.a(lib2-mul.o)
- .debug_str     0x0000083c      0x119 c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_str     0x000000dc      0x175 c:/Users/thiag/Documents/GitHub/IC-Jogo-de-Realidade-Aumentada-para-Controle-de-Robos/src/software/proj_nios_bsp/\libhal_bsp.a(alt_load.o)
                                 0x208 (size before relaxing)
- .debug_str     0x00000955       0x4b c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_str     0x00000251       0x4b c:/Users/thiag/Documents/GitHub/IC-Jogo-de-Realidade-Aumentada-para-Controle-de-Robos/src/software/proj_nios_bsp/\libhal_bsp.a(alt_main.o)
                                 0x138 (size before relaxing)
- .debug_str     0x000009a0       0x62 c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp/\libhal_bsp.a(alt_write.o)
-                                0x162 (size before relaxing)
- .debug_str     0x00000a02       0x5c c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_str     0x0000029c       0x88 c:/Users/thiag/Documents/GitHub/IC-Jogo-de-Realidade-Aumentada-para-Controle-de-Robos/src/software/proj_nios_bsp/\libhal_bsp.a(alt_sys_init.o)
                                 0x18a (size before relaxing)
- .debug_str     0x00000a5e        0x7 c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
-                                0x15c (size before relaxing)
- .debug_str     0x00000a65       0xfd c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
- .debug_str     0x00000a65        0x8 c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp/\libhal_bsp.a(alt_errno.o)
-                                 0xfa (size before relaxing)
- .debug_str     0x00000a6d       0xfd c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
- .debug_str     0x00000a6d      0x103 c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
- .debug_str     0x00000a6d       0x14 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-memcpy.o)
+ .debug_str     0x00000324       0xfd c:/Users/thiag/Documents/GitHub/IC-Jogo-de-Realidade-Aumentada-para-Controle-de-Robos/src/software/proj_nios_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_str     0x00000324       0xfd c:/Users/thiag/Documents/GitHub/IC-Jogo-de-Realidade-Aumentada-para-Controle-de-Robos/src/software/proj_nios_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_str     0x00000324      0x103 c:/Users/thiag/Documents/GitHub/IC-Jogo-de-Realidade-Aumentada-para-Controle-de-Robos/src/software/proj_nios_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .debug_str     0x00000324       0x86 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-memcpy.o)
                                 0x122 (size before relaxing)
 
 .debug_loc
@@ -641,7 +416,7 @@ LOAD c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/
                 0x00000000       0x10
  *(.debug_alt_sim_info)
  .debug_alt_sim_info
-                0x00000000       0x10 c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp//obj/HAL/src/crt0.o
+                0x00000000       0x10 c:/Users/thiag/Documents/GitHub/IC-Jogo-de-Realidade-Aumentada-para-Controle-de-Robos/src/software/proj_nios_bsp//obj/HAL/src/crt0.o
                 0x00002000                        __alt_data_end = 0x2000
                 0x00002000                        PROVIDE (__alt_stack_pointer = __alt_data_end)
                 [!provide]                        PROVIDE (__alt_stack_limit = __alt_stack_base)
@@ -651,127 +426,50 @@ OUTPUT(proj_nios.elf elf32-littlenios2)
 LOAD linker stubs
 
 .debug_ranges   0x00000000       0x20
- .debug_ranges  0x00000000       0x20 c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp//obj/HAL/src/crt0.o
-
-.debug_loclists
-                0x00000000     0x107e
- .debug_loclists
-                0x00000000       0x28 obj/default/hello_world_small.o
- .debug_loclists
-                0x00000028       0xaa c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-printf.o)
- .debug_loclists
-                0x000000d2       0x73 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-puts.o)
- .debug_loclists
-                0x00000145       0x32 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-strlen.o)
- .debug_loclists
-                0x00000177      0x822 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-vfprintf.o)
- .debug_loclists
-                0x00000999       0xc5 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-fvwrite_small_dev.o)
- .debug_loclists
-                0x00000a5e       0x88 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-writer.o)
- .debug_loclists
-                0x00000ae6      0x37a c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/mno-hw-mul\libgcc.a(lib2-divmod.o)
- .debug_loclists
-                0x00000e60       0x5b c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/mno-hw-mul\libgcc.a(lib2-mul.o)
- .debug_loclists
-                0x00000ebb       0x7b c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp/\libhal_bsp.a(alt_write.o)
- .debug_loclists
-                0x00000f36       0x1e c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp/\libhal_bsp.a(alt_sys_init.o)
- .debug_loclists
-                0x00000f54       0x5e c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
- .debug_loclists
-                0x00000fb2       0xcc c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-memcpy.o)
+ .debug_ranges  0x00000000       0x20 c:/Users/thiag/Documents/GitHub/IC-Jogo-de-Realidade-Aumentada-para-Controle-de-Robos/src/software/proj_nios_bsp//obj/HAL/src/crt0.o
 
 .debug_rnglists
-                0x00000000      0x18f
+                0x00000000       0x49
  .debug_rnglists
                 0x00000000       0x13 obj/default/hello_world_small.o
  .debug_rnglists
-                0x00000013       0x19 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-printf.o)
+                0x00000013       0x23 c:/Users/thiag/Documents/GitHub/IC-Jogo-de-Realidade-Aumentada-para-Controle-de-Robos/src/software/proj_nios_bsp/\libhal_bsp.a(alt_load.o)
  .debug_rnglists
-                0x0000002c       0x1a c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-puts.o)
- .debug_rnglists
-                0x00000046       0x13 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-strlen.o)
- .debug_rnglists
-                0x00000059       0x84 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-vfprintf.o)
- .debug_rnglists
-                0x000000dd       0x14 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-fvwrite_small_dev.o)
- .debug_rnglists
-                0x000000f1       0x13 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-writer.o)
- .debug_rnglists
-                0x00000104       0x3f c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/mno-hw-mul\libgcc.a(lib2-divmod.o)
- .debug_rnglists
-                0x00000143       0x23 c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp/\libhal_bsp.a(alt_load.o)
- .debug_rnglists
-                0x00000166       0x16 c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp/\libhal_bsp.a(alt_write.o)
- .debug_rnglists
-                0x0000017c       0x13 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-memcpy.o)
+                0x00000036       0x13 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-memcpy.o)
 
 .debug_line_str
-                0x00000000      0x965
+                0x00000000      0x3ec
  .debug_line_str
-                0x00000000       0xb7 obj/default/hello_world_small.o
-                                0x113 (size before relaxing)
+                0x00000000       0x81 obj/default/hello_world_small.o
+                                0x116 (size before relaxing)
  .debug_line_str
-                0x000000b7        0xe obj/default/lib_KEY/KEY.o
-                                 0x8a (size before relaxing)
+                0x00000081       0x16 obj/default/lib_KEY/KEY.o
+                                 0xfc (size before relaxing)
  .debug_line_str
-                0x000000c5      0x23c c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-printf.o)
-                                0x2e1 (size before relaxing)
- .debug_line_str
-                0x00000301       0x3f c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-puts.o)
-                                0x2d3 (size before relaxing)
- .debug_line_str
-                0x00000340       0x69 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-strlen.o)
-                                0x259 (size before relaxing)
- .debug_line_str
-                0x000003a9       0x67 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-impure.o)
-                                0x25a (size before relaxing)
- .debug_line_str
-                0x00000410       0x91 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-vfprintf.o)
-                                0x33e (size before relaxing)
- .debug_line_str
-                0x000004a1       0x43 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-fvwrite_small_dev.o)
-                                0x2e7 (size before relaxing)
- .debug_line_str
-                0x000004e4       0x41 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-writer.o)
-                                0x2cf (size before relaxing)
- .debug_line_str
-                0x00000525       0x3b c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-int_errno.o)
-                                0x186 (size before relaxing)
- .debug_line_str
-                0x00000560       0xf2 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/mno-hw-mul\libgcc.a(lib2-divmod.o)
-                                0x187 (size before relaxing)
- .debug_line_str
-                0x00000652       0x3a c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/mno-hw-mul\libgcc.a(lib2-mul.o)
-                                0x17e (size before relaxing)
- .debug_line_str
-                0x0000068c       0x8e c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp/\libhal_bsp.a(alt_load.o)
+                0x00000097       0x99 c:/Users/thiag/Documents/GitHub/IC-Jogo-de-Realidade-Aumentada-para-Controle-de-Robos/src/software/proj_nios_bsp/\libhal_bsp.a(alt_load.o)
                                  0xe7 (size before relaxing)
  .debug_line_str
-                0x0000071a       0x4a c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp/\libhal_bsp.a(alt_main.o)
+                0x00000130       0x4a c:/Users/thiag/Documents/GitHub/IC-Jogo-de-Realidade-Aumentada-para-Controle-de-Robos/src/software/proj_nios_bsp/\libhal_bsp.a(alt_main.o)
                                  0xe6 (size before relaxing)
  .debug_line_str
-                0x00000764       0xcf c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp/\libhal_bsp.a(alt_write.o)
-                                0x17f (size before relaxing)
- .debug_line_str
-                0x00000833       0x4f c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp/\libhal_bsp.a(alt_sys_init.o)
+                0x0000017a       0x4f c:/Users/thiag/Documents/GitHub/IC-Jogo-de-Realidade-Aumentada-para-Controle-de-Robos/src/software/proj_nios_bsp/\libhal_bsp.a(alt_sys_init.o)
                                  0xff (size before relaxing)
  .debug_line_str
-                0x00000882       0x38 c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
-                                0x126 (size before relaxing)
- .debug_line_str
-                0x000008ba       0x1f c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+                0x000001c9       0x1f c:/Users/thiag/Documents/GitHub/IC-Jogo-de-Realidade-Aumentada-para-Controle-de-Robos/src/software/proj_nios_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
                                  0xc5 (size before relaxing)
  .debug_line_str
-                0x000008d9       0x14 c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp/\libhal_bsp.a(alt_errno.o)
-                                0x118 (size before relaxing)
- .debug_line_str
-                0x000008ed       0x1f c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+                0x000001e8       0x1f c:/Users/thiag/Documents/GitHub/IC-Jogo-de-Realidade-Aumentada-para-Controle-de-Robos/src/software/proj_nios_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
                                  0xc5 (size before relaxing)
  .debug_line_str
-                0x0000090c       0x20 c:/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+                0x00000207       0x20 c:/Users/thiag/Documents/GitHub/IC-Jogo-de-Realidade-Aumentada-para-Controle-de-Robos/src/software/proj_nios_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
                                  0xc8 (size before relaxing)
  .debug_line_str
-                0x0000092c       0x39 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-memcpy.o)
+                0x00000227      0x1c5 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-memcpy.o)
                                 0x259 (size before relaxing)
+
+.debug_loclists
+                0x00000000       0xea
+ .debug_loclists
+                0x00000000       0x1e c:/Users/thiag/Documents/GitHub/IC-Jogo-de-Realidade-Aumentada-para-Controle-de-Robos/src/software/proj_nios_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_loclists
+                0x0000001e       0xcc c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-memcpy.o)

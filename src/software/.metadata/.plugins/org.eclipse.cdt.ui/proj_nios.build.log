@@ -1,9 +1,9 @@
-23:10:00 **** Incremental Build of configuration Nios II for project proj_nios ****
+22:35:46 **** Incremental Build of configuration Nios II for project proj_nios ****
 wsl make all 
-Info: Building /mnt/c/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp/
-make --no-print-directory -C /mnt/c/Users/thiag/Desktop/ICdaPeste/software/proj_nios_bsp/
+Info: Building /mnt/c/Users/thiag/Documents/GitHub/IC-Jogo-de-Realidade-Aumentada-para-Controle-de-Robos/src/software/proj_nios_bsp/
+make --no-print-directory -C /mnt/c/Users/thiag/Documents/GitHub/IC-Jogo-de-Realidade-Aumentada-para-Controle-de-Robos/src/software/proj_nios_bsp/
 [BSP build complete]
 [proj_nios build complete]
 
-23:10:03 Build Finished (took 2s.836ms)
+22:35:54 Build Finished (took 8s.260ms)
 

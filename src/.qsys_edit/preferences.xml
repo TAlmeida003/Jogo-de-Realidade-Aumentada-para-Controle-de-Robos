@@ -7,8 +7,8 @@
    <irq preferredWidth="34" />
   </columns>
  </systemtable>
- <library expandedCategories="Project/My Own IP Cores,Project,Library" />
+ <library
+   expandedCategories="Library/Basic Functions/Simulation; Debug and Verification/Debug and Performance,Library/Basic Functions/Bridges and Adaptors/Memory Mapped,Library/Basic Functions/Simulation; Debug and Verification,Library,Library/Interface Protocols/Serial,Library/Basic Functions,Project,Library/Interface Protocols,Library/Basic Functions/Bridges and Adaptors" />
  <window width="1920" height="1020" x="0" y="0" />
  <hdlexample language="VERILOG" />
- <generation path="button" />
 </preferences>
