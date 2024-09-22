@@ -97,17 +97,17 @@ Para gerenciar os periféricos de controle, foi desenvolvido um **módulo de I/O
 <strong> Tabela com os opcodes da interface de comunicação</strong></p>
 
 <p align="center">
-  <img src="img/INtrução WDEC.png" width = "600" />
+  <img src="img/INtrução WDEC.png" width = "1000" />
 </p>
 <p align="center"><strong> Formato da instrução WCTL</strong></p>
 
 <p align="center">
-  <img src="img/intrução WCLT.png" width = "600" />
+  <img src="img/intrução WCLT.png" width = "1000" />
 </p>
 <p align="center"><strong> Formato da instrução WDEC</strong></p>
 
 <p align="center">
-  <img src="img/instrução WMIRQ.png" width = "600" />
+  <img src="img/instrução WMIRQ.png" width = "1000" />
 </p>
 <p align="center"><strong> Formato da instrução WMIRQ</strong></p>
 
