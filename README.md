@@ -13,7 +13,7 @@ Realidade Aumentada Usando FPGA
 <div id="sumario">
 	<ul>
         <li><a href="#FPGA"> FPGA De0-Nano </a></li>
-        <li><a href="#controle"> Interface Portátil </a></li>
+        <li><a href="#io"> Módulo I/O </a></li>
         <li><a href="#referencias"> Referências </a></li>
 	</ul>	
 </div>
@@ -69,7 +69,7 @@ Modelo Altera Cyclone IV **EP4CE22F17C6N** FPGA;
 
 
 <div align="justify"> 
-<div id="referencias"> 
+<div id="io"> 
 <h2>Módulo I/O</h2>
 
 Para gerenciar os periféricos de controle, foi desenvolvido um **módulo de I/O** dedicado à leitura dos dados dos botões e do joystick. Esse módulo é responsável por capturar e enviar essas informações ao processador sempre que solicitado. Nesta seção, será explicado o funcionamento do módulo tanto no nível de hardware quanto no nível de software, detalhando sua arquitetura, interfaces e como os desenvolvedores podem integrá-lo em suas aplicações.
@@ -77,7 +77,7 @@ Para gerenciar os periféricos de controle, foi desenvolvido um **módulo de I/O
 
 <h3>Hadware</h3>
 
-<h4> Interface de Comunicação</h4>
+<h3> Interface de Comunicação</h3>
 
 
 <div align="center">
@@ -97,24 +97,25 @@ Para gerenciar os periféricos de controle, foi desenvolvido um **módulo de I/O
 <strong> Tabela com os opcodes da interface de comunicação</strong></p>
 
 <p align="center">
-  <img src="img/INtrução WDEC.png" width = "1000" />
+  <img src="img/INT4.png" width = "1000" />
+</p>
+<p align="center"><strong> Formato da instrução RCTL, RDEC e RMIRQ</strong></p>
+
+
+<p align="center">
+  <img src="img/INT1.png" width = "1000" />
 </p>
 <p align="center"><strong> Formato da instrução WCTL</strong></p>
 
 <p align="center">
-  <img src="img/intrução WCLT.png" width = "1000" />
+  <img src="img/INT2.png" width = "1000" />
 </p>
 <p align="center"><strong> Formato da instrução WDEC</strong></p>
 
 <p align="center">
-  <img src="img/instrução WMIRQ.png" width = "1000" />
+  <img src="img/INT3.png" width = "1000" />
 </p>
 <p align="center"><strong> Formato da instrução WMIRQ</strong></p>
-
-
-
-
-
 
 <h3>Biblioteca</h3>
 
