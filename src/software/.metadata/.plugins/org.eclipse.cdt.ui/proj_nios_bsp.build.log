@@ -1,6 +1,0 @@
-00:02:14 **** Clean-only build of configuration Nios II for project proj_nios_bsp ****
-wsl make clean 
-[BSP clean complete]
-
-00:02:15 Build Finished (took 1s.154ms)
-

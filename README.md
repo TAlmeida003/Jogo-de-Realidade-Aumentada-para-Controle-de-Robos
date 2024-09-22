@@ -77,6 +77,45 @@ Para gerenciar os periféricos de controle, foi desenvolvido um **módulo de I/O
 
 <h3>Hadware</h3>
 
+<h4> Interface de Comunicação</h4>
+
+
+<div align="center">
+
+| Opcode | Instrução |         Descrição         |
+|--------|-----------|---------------------------|
+| 0x00   |  RDEC     | Lê o registrador de dados/edgeCapture|
+| 0x01   |  RCTL     | Lê o registrador de controle|
+| 0x02   |  RMIRQ    | Lê o registrador de máscara de interrupção|
+| 0x03   |  -----   | Não utilizado|
+| 0x04   |  WDEC     | Escreve no registrador de dados/edgeCapture|
+| 0x05   |  WCTL     | Escreve no registrador de controle|   
+| 0x06   |  WMIRQ    | Escreve no registrador de máscara de interrupção|
+
+</div>
+<p align="center">
+<strong> Tabela com os opcodes da interface de comunicação</strong></p>
+
+<p align="center">
+  <img src="img/INtrução WDEC.png" width = "600" />
+</p>
+<p align="center"><strong> Formato da instrução WCTL</strong></p>
+
+<p align="center">
+  <img src="img/intrução WCLT.png" width = "600" />
+</p>
+<p align="center"><strong> Formato da instrução WDEC</strong></p>
+
+<p align="center">
+  <img src="img/instrução WMIRQ.png" width = "600" />
+</p>
+<p align="center"><strong> Formato da instrução WMIRQ</strong></p>
+
+
+
+
+
+
 <h3>Biblioteca</h3>
 
 Para facilitar o uso do módulo de I/O, foi desenvolvida uma biblioteca em C que contém funções para inicializar, finalizar e ler os dados dos botões e do joystick, chamada `joystick_io.h`. Ela encontrasse no diretótio `src/software/lib_joystick` do projeto. Para se utilizar essa biblioteca, basta incluir o arquivo `joystick_io.h` no código do projeto.
