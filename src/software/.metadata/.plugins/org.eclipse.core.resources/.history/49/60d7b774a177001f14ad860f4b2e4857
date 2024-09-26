@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include "system.h"
+#include <alt_types.h>
+#include "lib_KEY/KEY.h"
+
+int main() {
+	printf("init\n");
+	initialize_joystick();
+
+
+
+	while (1){
+			for (int i = 0; i < 8; i++){
+ 				if (is_KEY_released(i)){
+					printf("Botão %d foi solto\n",i);
+				}
+				if (is_KEY_pressed(i)){
+					printf("Botão %d foi precionado\n",i);
+				}
+			}
+	}
+	 return 0;
+}
+

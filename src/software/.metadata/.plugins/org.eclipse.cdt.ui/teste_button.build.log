@@ -1,0 +1,9 @@
+19:50:29 **** Incremental Build of configuration Nios II for project teste_button ****
+wsl make all 
+Info: Building /mnt/c/Users/thiag/Documents/New_Ic/software/teste_button_bsp/
+make --no-print-directory -C /mnt/c/Users/thiag/Documents/New_Ic/software/teste_button_bsp/
+[BSP build complete]
+[teste_button build complete]
+
+19:50:31 Build Finished (took 2s.802ms)
+

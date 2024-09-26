@@ -1,0 +1,99 @@
+#define MEMORIA_BASE_JOYSTICK 0x03000
+
+#define REG_DATA_OFFSET 0
+#define REG_CONTROLE_OFFSET 1
+#define REG_INTERRUPT_MASK_OFFSET 1
+
+// Controle de acesso ao perif√©rico
+void initialize_joystick(){
+    volatile int *p_led = (int *) MEMORIA_BASE_JOYSTICK;
+    *(p_led + REG_CONTROLE_OFFSET) = 0;
+	*(p_led + REG_CONTROLE_OFFSET) = 3;
+
+	// Tempo para limpar o registrador de descida
+}
+
+void close_joystick(){
+    volatile int *p_led = (int *) MEMORIA_BASE_JOYSTICK;
+    *(p_led + REG_CONTROLE_OFFSET) = 0;
+}
+
+int is_KEY_pressed(int button){
+	if (button < 0 || button > 7) {
+		printf("ExceptionKEY: Bot„o invalido\n");
+		return -1;
+	}
+
+	volatile int *p_led = (int *) MEMORIA_BASE_JOYSTICK;
+
+	int data = *(p_led + REG_CONTROLE_OFFSET);
+	data = 1 << (2 + button) | data; // Retirar o ruido
+	data = ~(3 << (12 + 2 * button)) & data; //limpar seletor de edge
+	*(p_led + REG_CONTROLE_OFFSET) = data;
+
+	if ((*(p_led + REG_DATA_OFFSET) & 1 << button) != 0){
+		*(p_led + REG_DATA_OFFSET) =  1 << button;
+		return 1;
+	}
+	return 0;
+}
+
+int is_KEY_released(int button){
+	if (button < 0 || button > 7) {
+		printf("ExceptionKEY: Bot„o invalido\n");
+		return -1;
+	}
+
+	volatile int *p_led = (int *) MEMORIA_BASE_JOYSTICK;
+
+	int data = *(p_led + REG_CONTROLE_OFFSET);
+	data = 1 << (2 + button) | data; // Retirar o ruido
+	data = ~(3 << (12 + 2 * button)) & data; //limpar seletor de edge
+	data = 1 << (12 + 2 * button) | data;
+	*(p_led + REG_CONTROLE_OFFSET) = data;
+
+	if ((*(p_led + REG_DATA_OFFSET) & 1 << button) != 0){
+		*(p_led + REG_DATA_OFFSET) =  1 << button;
+		return 1;
+	}
+	return 0;
+}
+
+int detect_KEY_change(int button){
+	if (button < 0 || button > 7) {
+		printf("ExceptionKEY: Bot„o invalido\n");
+		return -1;
+	}
+
+	volatile int *p_led = (int *) MEMORIA_BASE_JOYSTICK;
+
+	int data = *(p_led + REG_CONTROLE_OFFSET);
+	data = 1 << (2 + button) | data; // Retirar o ruido
+	data = ~(3 << (13 + 2 * button)) & data; //limpar seletor de edge
+	data = 2 << (13 + 2 * button) | data; // escolher a descidar
+
+	if ((*(p_led + REG_DATA_OFFSET) & 1 << button) != 0){
+		*(p_led + REG_DATA_OFFSET) =  1 << button;
+		return 1;
+	}
+	return 0;
+}
+
+int state_KEY(int button){
+	if (button < 0 || button > 7) {
+		printf("ExceptionKEY: Bot„o invalido\n");
+		return -1;
+	}
+
+	volatile int *p_led = (int *) MEMORIA_BASE_JOYSTICK;
+
+	int data = *(p_led + REG_CONTROLE_OFFSET);
+	*(p_led + REG_CONTROLE_OFFSET) = data & ~(1 << (2 + button));
+
+	if ((*(p_led + REG_DATA_OFFSET) & 1 << button) != 0){
+		*(p_led + REG_DATA_OFFSET) =  1 << button;
+		return 1;
+	}
+	return 0;
+}
+

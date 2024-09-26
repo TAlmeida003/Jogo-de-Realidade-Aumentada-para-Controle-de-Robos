@@ -1,0 +1,29 @@
+module select_data (
+    input       clk, rst_n, enable, data, clr, en_noise_cancelling,
+    input [1:0] select_edge,  // Seleção do tipo de borda a ser detectada
+    // Outputs
+    output capture
+);
+    wire edge_capture;
+    reg reg_data;
+
+    edge_capture ec(
+        /*I*/ .clk(clk),                     // Sinal de clock
+        /*I*/ .rst_n(rst_n),     // Habilita o cancelamento de ruído
+        /*I*/ .enable(enable),                 // Habilita a detecção de bordas
+        /*I*/ .data(data),                   // Sinal de entrada
+        /*I*/ .clr(clr),                   // Sinal de entrada
+        /*I*/ .select_edge(select_edge),     // Seleciona o tipo de borda
+        /*O*/ .edge_capture(edge_capture)                  // Sinal de pulso de saída
+    );
+
+    always @(posedge clk or posedge rst_n) begin
+        if (!rst_n) begin
+            reg_data <= 1'b0;
+        end else (enable) begin
+            reg_data <= data;
+        end
+    end
+    assign capture = (en_noise_cancelling) ? edge_capture : data; 
+    
+endmodule

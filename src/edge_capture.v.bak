@@ -1,0 +1,62 @@
+module edge_capture (
+    // Inputs
+    input       clk, rst_n, enable, data, clr,
+    input [1:0] select_edge,  // Seleção do tipo de borda a ser detectada
+    // Outputs
+    output reg     edge_capture
+); 
+ 
+    wire pulso_posedge, pulso_negedge, pulso_both;
+
+    reg [2:0] reg_capture;
+
+    initial begin
+        reg_capture = 3'b000;
+    end
+
+    edge_detector ed(
+        /*I*/ .clk(clk),                     // Sinal de clock
+        /*I*/ .rst_n(rst_n),     // Habilita o cancelamento de ruído
+        /*I*/ .enable(enable),                 // Habilita a detecção de bordas
+        /*I*/ .data(data),                   // Sinal de entrada
+        /*O*/ .pulso_posedge(pulso_posedge),                  // Sinal de pulso de saída
+        /*O*/ .pulso_negedge(pulso_negedge),                  // Sinal de pulso de saída
+        /*O*/ .pulso_both(pulso_both)                  // Sinal de pulso de saída
+    );
+
+    always @(posedge clk or negedge rst_n) begin
+        if (!rst_n) begin
+            reg_capture <= 3'b000;
+        end else if (enable) begin
+            if (clr) begin
+                case (select_edge)
+                    2'b00: reg_capture <= {reg_capture[2:1], 1'b0};
+                    2'b01: reg_capture <= {reg_capture[2], 1'b0, reg_capture[1]};
+                    2'b10: reg_capture <= {1'b0, reg_capture[1:0]};
+                    2'b11: reg_capture <= reg_capture;
+                    default: reg_capture <= 3'b000;
+                endcase
+            end else begin
+                if (pulso_posedge) 
+                    reg_capture <= {reg_capture[2:1], 1'b1};
+                if (pulso_negedge) 
+                    reg_capture <= {reg_capture[2], 1'b1, reg_capture[1]};
+                if (pulso_both) 
+                    reg_capture <= {1'b1, reg_capture[1:0]};
+            end
+        end
+    end
+
+
+    // Atribuição do sinal de saída 'capture' baseado no cancelamento de ruído
+    always @(*) begin
+        case (select_edge)
+            2'b00: edge_capture = reg_capture[1];
+            2'b01: edge_capture = reg_capture[2];
+            2'b10: edge_capture = reg_capture[0];
+            2'b11: edge_capture = 1'b0;
+            default: edge_capture = 1'b0;
+        endcase
+    end
+
+endmodule

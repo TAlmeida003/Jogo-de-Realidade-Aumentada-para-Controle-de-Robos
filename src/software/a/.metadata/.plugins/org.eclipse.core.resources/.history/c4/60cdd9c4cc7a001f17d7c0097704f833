@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include "system.h"
+#include <alt_types.h>
+#include "altera_avalon_pio_regs.h"
+#include "sys/alt_irq.h"
+//#include "lib_KEY/KEY.h"
+#include "io.h"
+
+
+int main() {
+	printf("init\n");
+	IOWR(0x3030,0, 0);
+	IOWR(0x3010,0,1);
+	IOWR(0x3010,0,0);
+
+	IOWR(0x3030,0, 255 << 5 | 3 << 3 | 5);
+	IOWR(0x3010,0,1);
+	IOWR(0x3010,0,0);
+    //alt_ic_isr_register(1, 1, (void *)interrupt_handler, NULL, 0x0);
+
+
+	while (1){
+		/*
+			for (int i = 0; i < 8; i++){
+ 				if (is_KEY_released(i)){
+				}
+				if (is_KEY_pressed(i)){
+				}
+			}
+			*/
+	}
+	 return 0;
+}

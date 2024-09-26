@@ -74,8 +74,22 @@ Modelo Altera Cyclone IV **EP4CE22F17C6N** FPGA;
 
 Para gerenciar os periféricos de controle, foi desenvolvido um **módulo de I/O** dedicado à leitura dos dados dos botões e do joystick. Esse módulo é responsável por capturar e enviar essas informações ao processador sempre que solicitado. Nesta seção, será explicado o funcionamento do módulo tanto no nível de hardware quanto no nível de software, detalhando sua arquitetura, interfaces e como os desenvolvedores podem integrá-lo em suas aplicações.
 
+<h3>Funcionalidades</h3>
+
+<h4>dados do botão</h4>
+
+Adquirir o estado atual dos botões
+* Capturar as bordas de mudança de estados: 
+  * Borda de subida: Quando o botão sai do estado 0 para o 1;
+  * Borda de decida: Quando o botão sai do estado 1 para o 0;
+  * Borda dupla: No qual é possivel capturar as duas bordas;
+
+<h4>Interrupção</h4>
+
+Adquirir um sinal de interrupção a partir das mudanças de borda. Nesse sentido, o modulo conta com um sistema de interrupção baseado na mudança de estado dos botões é possivel selecionar qual 0 botão desejasse adquirir a interrupção, como também a possibilidade de escolher em qual das três bordas de captura será acionado esse sinal.
 
 <h3>Hadware</h3>
+
 
 <h3> Interface de Comunicação</h3>
 
