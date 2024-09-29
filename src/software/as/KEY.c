@@ -76,7 +76,6 @@ void initialize_joystick(){
 
 	we_CTL(0, 0);
 	we_CTL(0, 3);
-	we_MIRQ(0, 0);
 
 	//alt_ic_isr_register(JOYSTICK_IRQ, JOYSTICK_IRQ, (void *)interrupt_handler, NULL, 0x0);
 }
@@ -85,7 +84,6 @@ void close_joystick(){
 	IOWR(MEMORIA_BASE_WR_DATA_LSB,0, 0);
 	IOWR(MEMORIA_BASE_WR_DATA_MSB,0, 0);
 	we_CTL(0, 0);
-	we_MIRQ(0, 0);
 	IOWR(MEMORIA_BASE_IRQ, 2, 0);
 }
 
@@ -100,8 +98,8 @@ int is_KEY_pressed(int button){
 	re_CTL(&data_MSB, &data_LSB);
 
 	unsigned int data = 1 << (2 + button) | data_LSB; // Retirar o ruido
-	data_LSB = ~(3 << (14 + 2 * button)) & data; //limpar seletor de edge
-	we_CTL(data_MSB, data_LSB);
+	data = ~(3 << (14 + 2 * button)) & data; //limpar seletor de edge
+	we_CTL(data_MSB, data);
 
 	re_DEC(&data_MSB, &data_LSB);
 	if ((data_LSB & 1 << button) != 0){
@@ -150,6 +148,48 @@ int detect_KEY_change(int button){
 
 	re_DEC(&data_MSB, &data_LSB);
 
+	if ((data_LSB & 1 << button) != 0){
+		we_DEC(data_MSB, 1 << button);
+		return 1;
+	}
+	return 0;
+}
+
+int edge_KEY(int button, int edge){
+	if (button < 0 || button > 7) {
+			printf("ExceptionKEY: Botao invalido\n");
+			return -1;
+	}
+
+	unsigned int data_MSB, data_LSB;
+	re_CTL(&data_MSB, &data_LSB);
+	unsigned int data;
+
+	switch (edge) {
+	case 0:
+		data = 1 << (2 + button) | data_LSB; // Retirar o ruido
+		data = ~(3 << (14 + 2 * button)) & data; //limpar seletor de edge
+		we_CTL(data_MSB, data);
+		break;
+	case 1:
+		data = 1 << (2 + button) | data_LSB; // Retirar o ruido
+		data = ~(3 << (14 + 2 * button)) & data; //limpar seletor de edge
+		data = 1 << (14 + 2 * button) | data;
+		break;
+	case 2:
+		data = 1 << (2 + button) | data_LSB; // Retirar o ruido
+		data = ~(3 << (14 + 2 * button)) & data; //limpar seletor de edge
+		data = 2 << (14 + 2 * button) | data;
+		break;
+	default:
+		printf("ExceptionKEY: Edge invalido\n");
+		return -1;
+		break;
+	}
+
+	we_CTL(data_MSB, data);
+
+	re_DEC(&data_MSB, &data_LSB);
 	if ((data_LSB & 1 << button) != 0){
 		we_DEC(data_MSB, 1 << button);
 		return 1;

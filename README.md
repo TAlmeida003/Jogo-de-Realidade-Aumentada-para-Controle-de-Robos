@@ -72,21 +72,35 @@ Modelo Altera Cyclone IV **EP4CE22F17C6N** FPGA;
 <div id="io"> 
 <h2>Módulo I/O</h2>
 
-Para gerenciar os periféricos de controle, foi desenvolvido um **módulo de I/O** dedicado à leitura dos dados dos botões e do joystick. Esse módulo é responsável por capturar e enviar essas informações ao processador sempre que solicitado. Nesta seção, será explicado o funcionamento do módulo tanto no nível de hardware quanto no nível de software, detalhando sua arquitetura, interfaces e como os desenvolvedores podem integrá-lo em suas aplicações.
+
+O gerenciamento de dispositivos de Entrada/Saída, com a sigla E/S (em inglês: Input/Output, I/O), sempre foi um grande desafio na área de sistemas embarcados. Isso se deve tanto à natureza assíncrona dos dados quanto à diferença de velocidade entre o processador e os dispositivos periféricos, o que pode afetar significativamente o desempenho da CPU. Para fornecer uma interface simples e confiável ao usuário e às aplicações, utiliza-se uma estrutura de camadas de hardware (HW) e software (SW). Essa organização em camadas permite ocultar os detalhes específicos dos periféricos para as camadas superiores [ANDREW S. TANENBAUM, 2003]. A Figura 1 ilustra essa arquitetura de camadas entre o software e o hardware.
+
+<p align="center">
+  <img src="img/camadas.png" width = "800" />
+</p>
+<p align="center"><strong>Figura 1: Arquitetura de camadas entre o software e o hardware</strong></p>
+
+Neste projeto, focou-se no gerenciamento dos periféricos de um controle de videogame, como o Game Hat. Desenvolvemos um módulo de I/O em linguagem de descrição de hardware Verilog, implementado em uma FPGA DE0-Nano, juntamente com seus drivers em linguagem C. O principal objetivo desse módulo é realizar a leitura dos dados dos botões e do joystick. Ele é responsável por capturar e armazenar as informações provenientes dos periféricos e transmiti-las à CPU sob demanda, além de atender às configurações solicitadas pela CPU via software.
+
+Este projeto detalhará o funcionamento do módulo tanto no nível de hardware quanto no nível de software, abordando sua arquitetura, interfaces e como os desenvolvedores podem integrá-lo em suas aplicações.
 
 <h3>Funcionalidades</h3>
 
-<h4>dados do botão</h4>
+<h4>Leitura dos Dados dos Botões</h4>
 
-Adquirir o estado atual dos botões
-* Capturar as bordas de mudança de estados: 
-  * Borda de subida: Quando o botão sai do estado 0 para o 1;
-  * Borda de decida: Quando o botão sai do estado 1 para o 0;
-  * Borda dupla: No qual é possivel capturar as duas bordas;
+* **Estado atual dos botões:** O módulo adquire e reporta o estado atual dos botões.
 
-<h4>Interrupção</h4>
+* **Captura de bordas de mudança de estado:** O módulo detecta e reporta as bordas de mudança de estado dos botões.
 
-Adquirir um sinal de interrupção a partir das mudanças de borda. Nesse sentido, o modulo conta com um sistema de interrupção baseado na mudança de estado dos botões é possivel selecionar qual 0 botão desejasse adquirir a interrupção, como também a possibilidade de escolher em qual das três bordas de captura será acionado esse sinal.
+  * Borda de subida: Detecta a transição do estado 0 para o estado 1.
+
+  * Borda de descida: Detecta a transição do estado 1 para o estado 0.
+
+  * Borda dupla: Captura ambas as transições (subida e descida).
+
+<h4>Sistema de Interrupção</h4>
+
+O módulo possui um sistema de interrupção baseado nas mudanças de estado dos botões. É possível configurar a interrupção para um botão específico e escolher em qual das três bordas (subida, descida ou dupla) o sinal de interrupção será acionado.
 
 <h3>Hadware</h3>
 

@@ -1,7 +1,7 @@
 #ifndef _KEY_INTERFACE_H_
 #define _KEY_INTERFACE_H_
 
-// Endereço base do periférico
+// Endereï¿½o base do perifï¿½rico
 #define MEMORIA_BASE_JOYSTICK 0x03000
 
 // Offsets dos registradores
@@ -11,7 +11,7 @@
 
 #define IRQ_JOYSTICK 1
 
-// Definição dos botões
+// Definiï¿½ï¿½o dos botï¿½es
 #define SELECT 0
 #define START  1
 #define TL     2
@@ -21,7 +21,7 @@
 #define Y      6
 #define X      7
 
-// Definição dos direcionais
+// Definiï¿½ï¿½o dos direcionais
 #define LEFT   8
 #define RIGHT  9
 #define UP     10
@@ -32,7 +32,7 @@
 #include <alt_types.h>
 #include "io.h"
 
-// Controle de acesso ao periférico
+// Controle de acesso ao perifï¿½rico
 
 void initialize_joystick();
 
@@ -47,6 +47,8 @@ int is_KEY_released(int button);
 int detect_KEY_change(int button);
 
 int state_KEY(int button);
+
+int edge_KEY(int button, int edge);
 
 #endif
 
