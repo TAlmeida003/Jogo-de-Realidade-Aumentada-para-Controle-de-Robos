@@ -1,6 +1,4 @@
-<p align="center">
-  <img src="img/kart.png" width = "350" />
-</p>
+
 
 <h1 align="center">Modulo de I/O
 </h1>
@@ -20,17 +18,7 @@ O gerenciamento de dispositivos de Entrada/Saída, com a sigla E/S (em inglês: 
 </p>
 <p align="center"><strong>Figura 1: Arquitetura de camadas entre o software e o hardware</strong></p>
 
-Neste projeto, focou-se no gerenciamento dos periféricos de um controle de videogame, como o Game Hat (figure 2). Desenvolvemos um módulo de I/O em linguagem de descrição de hardware Verilog, implementado em uma FPGA DE0-Nano (figure 3), juntamente com seus drivers em linguagem C. O principal objetivo desse módulo é realizar a leitura dos dados dos botões e do joystick. Ele é responsável por capturar e armazenar as informações provenientes dos periféricos e transmiti-las à CPU sob demanda, além de atender às configurações solicitadas pela CPU via software. Este projeto detalhará o funcionamento do módulo tanto no nível de hardware quanto no nível de software, abordando sua arquitetura, interfaces e como os desenvolvedores podem integrá-lo em suas aplicações.
-
-<p align="center">
-  <img src="img/gamehat.png" width = "600" />
-</p>
-<p align="center"><strong>Figura 2: Game Hat</strong></p>
-
-<p align="center">
-  <img src="img/deonano.png" width = "600" />
-</p>
-<p align="center"><strong>Figura 3: FPGA DE0-Nano</strong></p>
+Neste projeto, focou-se no gerenciamento dos periféricos de um controle de videogame. Desenvolvemos um módulo de I/O em linguagem de descrição de hardware Verilog, implementado em uma FPGA, juntamente com seus drivers em linguagem C. O principal objetivo desse módulo é realizar a leitura dos dados dos botões e do joystick. Ele é responsável por capturar e armazenar as informações provenientes dos periféricos e transmiti-las à CPU sob demanda, além de atender às configurações solicitadas pela CPU via software. Este projeto detalhará o funcionamento do módulo tanto no nível de hardware quanto no nível de software, abordando sua arquitetura, interfaces e como os desenvolvedores podem integrá-lo em suas aplicações.
 
 </div>
 
