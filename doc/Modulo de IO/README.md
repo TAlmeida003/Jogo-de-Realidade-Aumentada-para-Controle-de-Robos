@@ -18,7 +18,7 @@ O gerenciamento de dispositivos de Entrada/Saída, com a sigla E/S (em inglês: 
 </p>
 <p align="center"><strong>Figura 1: Arquitetura de camadas entre o software e o hardware</strong></p>
 
-Neste projeto, focou-se no gerenciamento dos periféricos de um controle de videogame. Desenvolvemos um módulo de I/O em linguagem de descrição de hardware Verilog, implementado em uma FPGA, juntamente com seus drivers em linguagem C. O principal objetivo desse módulo é realizar a leitura dos dados dos botões e do joystick. Ele é responsável por capturar e armazenar as informações provenientes dos periféricos e transmiti-las à CPU sob demanda, além de atender às configurações solicitadas pela CPU via software. Este projeto detalhará o funcionamento do módulo tanto no nível de hardware quanto no nível de software, abordando sua arquitetura, interfaces e como os desenvolvedores podem integrá-lo em suas aplicações.
+Neste projeto, focou-se no gerenciamento dos periféricos de um controle de videogame. Desenvolveu-se um **módulo de I/O** em linguagem de descrição de hardware Verilog, implementado em uma FPGA, juntamente com sua biblioteca em linguagem C. O principal objetivo desse módulo é realizar a leitura dos dados dos botões e do joystick. Ele é responsável por capturar e armazenar as informações provenientes dos periféricos e transmiti-las à CPU sob demanda, além de atender às configurações solicitadas pela CPU via software. Este projeto detalhará o funcionamento do módulo tanto no nível de hardware quanto no nível de software, abordando sua arquitetura, interfaces e como os desenvolvedores podem integrá-lo em suas aplicações.
 
 </div>
 
@@ -47,7 +47,7 @@ Neste projeto, focou-se no gerenciamento dos periféricos de um controle de vide
         <li><a href="#VES"> Descrição dos Equipamentos e Software Utilizados </a></li>
         <li><a href="#FH"> Funcinalidades do Hardware </a></li>
         <li><a href="#DH"> Descrição do Hardware</a></li>
-        <li><a href="#D"> Drives </a></li>
+        <li><a href="#D"> Bibliotecas </a></li>
         <li><a href="#AP"> Análise de Pinout </a></li>
         <li><a href="#OCF"> Organização do Código Fonte </a></li>
         <li><a href="#TR">Testes Realizados </a></li>
@@ -64,6 +64,10 @@ Neste projeto, focou-se no gerenciamento dos periféricos de um controle de vide
 
 <h2>Visão Geral do Sistema</h2>
 
+<p align="center">
+  <img src="img/geral.png" width = "800" />
+</p>
+<p align="center"><strong>Figura 2: Visão geral do sistema</strong></p>
 </div>
 </div>
 
@@ -77,6 +81,12 @@ Neste projeto, focou-se no gerenciamento dos periféricos de um controle de vide
 
 Modelo Altera Cyclone IV **EP4CE22F17C6N** FPGA;
 
+<h3>Game Hat</h3>
+
+<h3>Quartus</h3>
+
+<h3>Eclipse</h3>
+
 </div>
 </div>
 
@@ -86,21 +96,6 @@ Modelo Altera Cyclone IV **EP4CE22F17C6N** FPGA;
 <div id="FH"> 
 
 <h2>Funcinalidades do Hardware</h2>
-<h4>Leitura dos Dados dos Botões</h4>
-
-* **Estado atual dos botões:** O módulo adquire e reporta o estado atual dos botões.
-
-* **Captura de bordas de mudança de estado:** O módulo detecta e reporta as bordas de mudança de estado dos botões.
-
-  * Borda de subida: Detecta a transição do estado 0 para o estado 1.
-
-  * Borda de descida: Detecta a transição do estado 1 para o estado 0.
-
-  * Borda dupla: Captura ambas as transições (subida e descida).
-
-<h4>Sistema de Interrupção</h4>
-
-O módulo possui um sistema de interrupção baseado nas mudanças de estado dos botões. É possível configurar a interrupção para um botão específico e escolher em qual das três bordas (subida, descida ou dupla) o sinal de interrupção será acionado.
 
 </div>
 </div>
@@ -163,15 +158,15 @@ O módulo possui um sistema de interrupção baseado nas mudanças de estado dos
 <div align="justify"> 
 <div id="D"> 
 
-<h2>Drives</h2>
+<h2>Biblioteca</h2>
 
-Para facilitar o uso do módulo de I/O, foi desenvolvida uma drive em C que contém funções para inicializar, finalizar e ler os dados dos botões e do joystick, chamada `joystick_io.h`. Ela encontrasse no diretótio `src/software/lib_joystick` do projeto. Para se utilizar essa biblioteca, basta incluir o arquivo `joystick_io.h` no código do projeto.
+Para facilitar o uso do módulo de I/O, foi desenvolvida uma biblioteca em C que contém funções para inicializar, finalizar e ler os dados dos botões e do joystick, chamada `joystick_io.h`. Ela encontrasse no diretótio `src/software/lib_joystick` do projeto. Para se utilizar essa biblioteca, basta incluir o arquivo `joystick_io.h` no código do projeto.
 
 ```c
 #include "joystick_io.h"
 ```
 
-Para entender como utilizar as funções do drive, a seguir será explicado o funcionamento de cada uma delas, divididas em funções de controle, funções de leitura de botões e funções de leitura do joystick.
+Para entender como utilizar as funções do biblioteca, a seguir será explicado o funcionamento de cada uma delas, divididas em funções de controle, funções de leitura de botões e funções de leitura do joystick.
 
 <h4>Funções de Controle</h4>
 
@@ -295,7 +290,7 @@ close_joystick();
 <div id="referencias"> 
 <h2>Referências</h2>
 
-> Embedfire. **Design e verificação do driver de vídeo HDMI**. <https://doc.embedfire.com/fpga/altera/ep4ce10_pro/zh/latest/code/hdmi.html>.
+> Embedfire. **Design e verificação do bibliotecar de vídeo HDMI**. <https://doc.embedfire.com/fpga/altera/ep4ce10_pro/zh/latest/code/hdmi.html>.
 >
 > Ti. **PMP10580 DE0-Nano User Manual (Terasic/Altera)**. <https://www.ti.com/lit/ug/tidu737/tidu737.pdf>.
 >
