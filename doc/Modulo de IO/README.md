@@ -8,6 +8,8 @@
 <h3 align="center"> Projeto de Desenvolvimento de uma Interface de Entrada e Saída para Controle de Videogame Usando FPGA
 </h3>
 
+![-----------------------------------------------------](img/len.png)
+
 <div align="justify"> 
 <h2>Descrição do Projeto</h2>
 
@@ -21,27 +23,53 @@ O gerenciamento de dispositivos de Entrada/Saída, com a sigla E/S (em inglês: 
 Neste projeto, focou-se no gerenciamento dos periféricos de um controle de videogame, como o Game Hat (figure 2). Desenvolvemos um módulo de I/O em linguagem de descrição de hardware Verilog, implementado em uma FPGA DE0-Nano (figure 3), juntamente com seus drivers em linguagem C. O principal objetivo desse módulo é realizar a leitura dos dados dos botões e do joystick. Ele é responsável por capturar e armazenar as informações provenientes dos periféricos e transmiti-las à CPU sob demanda, além de atender às configurações solicitadas pela CPU via software. Este projeto detalhará o funcionamento do módulo tanto no nível de hardware quanto no nível de software, abordando sua arquitetura, interfaces e como os desenvolvedores podem integrá-lo em suas aplicações.
 
 <p align="center">
-  <img src="img/gamehat.png" width = "400" />
+  <img src="img/gamehat.png" width = "600" />
 </p>
 <p align="center"><strong>Figura 2: Game Hat</strong></p>
 
 <p align="center">
-  <img src="img/deonano.png" width = "400" />
+  <img src="img/deonano.png" width = "600" />
 </p>
 <p align="center"><strong>Figura 3: FPGA DE0-Nano</strong></p>
 
-
 </div>
+
+![-----------------------------------------------------](img/len.png)
+
+<h2> Autor <br></h2>
+<uL>
+  <li><a href="https://github.com/TAlmeida003">Thiago Neri dos Santos Almeida</a></li>
+  <li>Engenharia de Computação — UEFS</li>
+</ul>
+
+![-----------------------------------------------------](img/len.png)
+
+<h2> Orientador <br></h2>
+<ul>
+      <li>Dr. Anfranserai Morais Dias</li>
+      <li>Departamento de Tecnologia (DTEC) — UEFS</li>
+</ul>
+
+![-----------------------------------------------------](img/len.png)
 
 <h1 align="center"> Sumário </h1>
 <div id="sumario">
 	<ul>
-        <li><a href="#FPGA"> FPGA De0-Nano </a></li>
-        <li><a href="#io"> Módulo I/O </a></li>
+        <li><a href="#VGS"> Visão Geral do Sistema </a></li>
+        <li><a href="#VES"> Descrição dos Equipamentos e Software Utilizados </a></li>
+        <li><a href="#FH"> Funcinalidades do Hardware </a></li>
+        <li><a href="#DH"> Descrição do Hardware</a></li>
+        <li><a href="#D"> Drives </a></li>
+        <li><a href="#AP"> Análise de Pinout </a></li>
+        <li><a href="#OCF"> Organização do Código Fonte </a></li>
+        <li><a href="#TR">Testes Realizados </a></li>
+        <li><a href="#EP"> Execução do Projeto </a></li>
         <li><a href="#referencias"> Referências </a></li>
 	</ul>	
 </div>
 
+
+![-----------------------------------------------------](img/len.png)
 
 <div align="justify"> 
 <div id="VGS"> 
@@ -51,8 +79,9 @@ Neste projeto, focou-se no gerenciamento dos periféricos de um controle de vide
 </div>
 </div>
 
+![-----------------------------------------------------](img/len.png)
 <div align="justify"> 
-<div id="VGS"> 
+<div id="VES"> 
 
 <h2>Descrição dos Equipamentos e Software Utilizados</h2>
 
@@ -62,6 +91,8 @@ Modelo Altera Cyclone IV **EP4CE22F17C6N** FPGA;
 
 </div>
 </div>
+
+![-----------------------------------------------------](img/len.png)
 
 <div align="justify"> 
 <div id="FH"> 
@@ -85,6 +116,8 @@ O módulo possui um sistema de interrupção baseado nas mudanças de estado dos
 
 </div>
 </div>
+
+![-----------------------------------------------------](img/len.png)
 
 <div align="justify"> 
 <div id="DH"> 
@@ -136,6 +169,8 @@ O módulo possui um sistema de interrupção baseado nas mudanças de estado dos
 
 </div>
 </div>
+
+![-----------------------------------------------------](img/len.png)
 
 <div align="justify"> 
 <div id="D"> 
@@ -204,6 +239,7 @@ close_joystick();
 </div>
 </div>
 
+![-----------------------------------------------------](img/len.png)
 <div align="justify"> 
 <div id="AP"> 
 
@@ -236,14 +272,37 @@ close_joystick();
 </div>
 </div>
 
+![-----------------------------------------------------](img/len.png)
 <div align="justify"> 
-<div id="TST"> 
+<div id="OCF"> 
 
-<h2>Testes</h2>
+<h2>Organização do Código Fonte</h2>
 
 </div>
 </div>
 
+
+![-----------------------------------------------------](img/len.png)
+<div align="justify"> 
+<div id="TR"> 
+
+<h2>Testes Realizados</h2>
+
+</div>
+</div>
+
+
+
+![-----------------------------------------------------](img/len.png)
+<div align="justify"> 
+<div id="EP"> 
+
+<h2>Execução do Projeto</h2>
+
+</div>
+</div>
+
+![-----------------------------------------------------](img/len.png)
 <div align="justify"> 
 <div id="referencias"> 
 <h2>Referências</h2>
