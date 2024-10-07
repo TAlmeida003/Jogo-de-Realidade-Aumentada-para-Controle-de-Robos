@@ -141,7 +141,7 @@ O módulo de hardware desenvolvido realiza a leitura dos dados dos botões e do 
 
 Os dados dos botões e do joystick são armazenados em registradores de 64 bits, permitindo a leitura simultânea de todos os botões e direções. O módulo também conta com registradores de controle que permitem habilitar ou desabilitar a leitura dos botões e do joystick, além de configurar o controle de borda e sua seleção.
 
-<h3>Controle de Interrupções</h3>
+<h3>Controle de Interrupção</h3> 
 
 O módulo de I/O oferece suporte a interrupções para notificar o processador sobre eventos importantes, como a pressão de um botão ou o movimento do joystick. Quando um botão é pressionado ou o joystick é movido, o módulo gera uma interrupção que permite ao processador tratar o evento imediatamente. Isso possibilita uma resposta rápida a entradas, eliminando a necessidade de verificar constantemente os botões e o joystick.
 
@@ -156,6 +156,32 @@ Além disso, o módulo possui registradores de máscara de interrupção que per
 <div id="DH"> 
 
 <h2>Arquitetura</h2>
+
+<h3>Interface do modulo de I/O</h3>
+
+O módulo de I/O é equipado com 145 pinos. Para facilitar a compreensão da organização desses pinos, a tabela a seguir fornece uma visão detalhada de cada um deles, e uma figura ilustra a interface do módulo:
+
+<div align="center">
+
+| Nome   | Tipo       | tamanho |         Descrição         |
+|--------|------------|---------|---------------------------|
+| clk    | Entrada    | 1       | Sinal de clock de entrada |
+| rst_n  | Entrada    | 1       | Sinal de reset ativo em nível baixo |
+| we     | Entrada    | 1       | Sinal de escrita ativo em nível alto |
+| buttons| Entrada    | 8       | Barramento para leitura dos botões |
+| joystick| Entrada   | 4       | Barramento para leitura do joystick |
+| writedata| Entrada  | 64      | Barramento para escrita de dados |
+| readdata| Saída     | 64      | Barramento para leitura de dados |
+| waitrequest| Saída  | 1       | Sinal para indicar que o módulo está ocupado |
+| irq    | Saída      | 1       | Sinal de interrupção para o processador |
+</div>
+<p align="center">
+<strong> Tabela 1: Pinagem do módulo de I/O</strong></p>
+
+<p align="center">
+  <img src="img/interfece.png" width = "800" />
+</p>
+<p align="center"><strong>Figura 5: Interface do módulo de I/O</strong></p>
 
 <h3>Conjunto de Instruções</h3>
 
