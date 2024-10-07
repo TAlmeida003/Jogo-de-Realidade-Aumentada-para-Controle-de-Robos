@@ -159,7 +159,8 @@ Além disso, o módulo possui registradores de máscara de interrupção que per
 
 <h3>Interface do modulo de I/O</h3>
 
-O módulo de I/O é equipado com 145 pinos. Para facilitar a compreensão da organização desses pinos, a tabela a seguir fornece uma visão detalhada de cada um deles, e uma figura ilustra a interface do módulo:
+Para se comunicar com o barramento de sistema, o modulo de I/O é equipado com 145 pinos. Para facilitar a compreensão da organização desses pinos, a tabela a seguir fornece uma visão detalhada de cada um deles. A Figura 5 apresenta a interface do módulo de I/O, mostrando os sinais de entrada e saída, bem como os barramentos de dados e controle.
+
 
 <div align="center">
 
@@ -177,6 +178,7 @@ O módulo de I/O é equipado com 145 pinos. Para facilitar a compreensão da org
 </div>
 <p align="center">
 <strong> Tabela 1: Pinagem do módulo de I/O</strong></p>
+
 
 <p align="center">
   <img src="img/interfece.png" width = "800" />
