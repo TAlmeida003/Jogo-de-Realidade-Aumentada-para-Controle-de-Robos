@@ -34,7 +34,7 @@ abordando sua arquitetura, interfaces e como os desenvolvedores podem integrá-l
 a Figura 2 apresenta o diagrama geral do projeto.
 
 <p align="center">
-  <img src="img/geral.png" width = "800" />
+  <img src="img/geral.png" width = "1000" />
 </p>
 <p align="center"><strong>Figura 2: Visão geral do sistema</strong></p>
 
@@ -87,7 +87,7 @@ Nesta seção, serão apresentados os equipamentos e softwares utilizados no des
 O **Kit FPGA DE0-Nano**, baseado na FPGA **Altera Cyclone IV EP4CE22F17C6N**, é uma plataforma de desenvolvimento ideal para projetos de hardware e sistemas embarcados. A FPGA possui 22.320 elementos lógicos, 594 Kbits de memória RAM interna, 66 multiplicadores e 4 PLLs para controle de clock, proporcionando um excelente desempenho e flexibilidade. Com 256 pinos disponíveis, o kit é amplamente utilizado em aplicações que exigem processamento eficiente e personalizável, como sistemas embarcados, controle industrial e processamento de sinais digitais. A imagem a seguir mostra o kit FPGA DE0-Nano e seus principais componentes.
 
 <p align="center">
-  <img src="img/deonano.png" width = "400" />
+  <img src="img/deonano.png" width = "600" />
 </p>
 <p align="center"><strong>Figura 3: Kit FPGA DE0-Nano</strong></p>
 
@@ -96,7 +96,7 @@ O **Kit FPGA DE0-Nano**, baseado na FPGA **Altera Cyclone IV EP4CE22F17C6N**, é
 O **Game HAT** é uma placa de expansão projetada para transformar o Raspberry Pi em um console portátil de videogame. Ele possui uma tela LCD de 3,5 polegadas, botões físicos, um D-pad, além de interfaces para áudio e bateria, proporcionando uma experiência de jogo completa. O Game HAT é compatível com vários emuladores e sistemas operacionais, como o RetroPie, permitindo rodar jogos clássicos de diversas plataformas. Essa solução é ideal para entusiastas de jogos retrô que buscam criar seus próprios consoles portáteis usando o Raspberry Pi. A imagem a seguir mostra o Game HAT.
 
 <p align="center">
-  <img src="img/gamehat.png" width = "500" />
+  <img src="img/gamehat.png" width = "700" />
 </p>
 <p align="center"><strong>Figura 4: Game HAT</strong></p>
 
@@ -139,13 +139,20 @@ Nesta seção, serão apresentadas as funcionalidades do módulo de I/O, que inc
 
 O módulo de hardware desenvolvido realiza a leitura dos dados dos botões e do joystick, armazenando-os em registradores internos. O sistema suporta 8 botões (Y, X, A, B, TL, TX, START e SELECT) e um joystick com 4 direções (UP, DOWN, LEFT e RIGHT). Para cada botão e direção do joystick, é possível ler o estado atual e o estado de borda (subida, descida ou ambos).
 
-Os dados dos botões e do joystick são armazenados em registradores de 64 bits, permitindo a leitura simultânea de todos os botões e direções. O módulo também conta com registradores de controle que permitem habilitar ou desabilitar a leitura dos botões e do joystick, além de configurar o controle de borda e sua seleção.
+Os dados dos botões e do joystick são armazenados em registradores de 64 bits, permitindo a leitura simultânea de todos os botões e direções. O módulo também conta com registradores de controle que permitem habilitar ou desabilitar a leitura dos botões e do joystick, além de configurar o controle de borda e sua seleção. 
+
+Além disso, o módulo possui regisradores de captura de borda que armazenam as mudanças de borda dos periféricos, permitindo a detecção de bordas para que o processador possa identificar que um botão foi pressionado ou o joystick foi movido, mesmo que o estado do periférico tenha mudado. Isso é útil para
+poder detectar eventos mesmo que o processador não tenha lido o estado do periférico no momento da mudança. 
+
+> **Observação:** Os registradores armazenam o estado de borda para leitura pelo processador. Ao realizar a leitura, é necessário limpar o registrador de captura de borda via software.
 
 <h3>Controle de Interrupção</h3> 
 
 O módulo de I/O oferece suporte a interrupções para notificar o processador sobre eventos importantes, como a pressão de um botão ou o movimento do joystick. Quando um botão é pressionado ou o joystick é movido, o módulo gera uma interrupção que permite ao processador tratar o evento imediatamente. Isso possibilita uma resposta rápida a entradas, eliminando a necessidade de verificar constantemente os botões e o joystick.
 
 Além disso, o módulo possui registradores de máscara de interrupção que permitem habilitar ou desabilitar interrupções específicas, possibilitando a seleção de quais eventos devem acionar interrupções.
+
+A interrupção pode ser configurada para borda ou nível, permitindo que o processador seja notificado quando um botão é pressionado ou solto, ou quando o joystick é movido em uma direção específica. Isso torna o controle de interrupção mais flexível e eficiente, garantindo que o processador possa responder rapidamente a eventos de entrada.
 
 </div>
 </div>
@@ -155,11 +162,12 @@ Além disso, o módulo possui registradores de máscara de interrupção que per
 <div align="justify"> 
 <div id="DH"> 
 
-<h2>Arquitetura</h2>
+<h2>Arquitetura do Modulo de I/O</h2>
+
 
 <h3>Interface do modulo de I/O</h3>
 
-Para se comunicar com o barramento de sistema, o modulo de I/O é equipado com 145 pinos. Para facilitar a compreensão da organização desses pinos, a tabela a seguir fornece uma visão detalhada de cada um deles. A Figura 5 apresenta a interface do módulo de I/O, mostrando os sinais de entrada e saída, bem como os barramentos de dados e controle.
+Para se comunicar com o barramento de sistema, o modulo de I/O é equipado com 145 pinos. Para facilitar a compreensão da organização desses pinos, a tabela a seguir fornece uma visão detalhada de cada um deles. A Figura 5 apresenta o diagrama em blocos da interface do módulo de I/O, mostrando os sinais de entrada e saída, bem como os barramentos de dados e controle.
 
 
 <div align="center">
@@ -183,10 +191,44 @@ Para se comunicar com o barramento de sistema, o modulo de I/O é equipado com 1
 <p align="center">
   <img src="img/interfece.png" width = "800" />
 </p>
-<p align="center"><strong>Figura 5: Interface do módulo de I/O</strong></p>
+<p align="center"><strong>Figura 5: Diagrama em blocos da interface do módulo de I/O</strong></p>
+
+<h3>Discrição Geral</h3>
+
+Nesta seção, primeiro precisamos ter uma compreensão geral de todo o projeto experimental. Primeiro, vamos dar uma olhada no diagrama de blocos geral do projeto, conforme mostrado na Figura 6.
+
+<h4>Controle</h4>
+
+O **módulo de Controle** gerencia o estado das configurações do módulo de I/O e a máscara de interrupção. Ele contém um **registrador de controle**, acessível pelo endereço 0, com várias funções: um bit para reiniciar o módulo (0 para reiniciar e 1 para manter o estado atual), um bit de enable (0 para desativar o módulo e impedir alterações, e 1 para permitir modificações), um bit para habilitar ou desabilitar o cancelamento de ruído (0 para usar o sinal atual do botão e 1 para ativar os registradores de captura de borda), e um seletor de borda que pode ser configurado como subida (01), descida (00) ou ambas (10). Cada um dos 12 periféricos de entrada possui um espaço no registrador para controlar o tipo de dado e a borda. A figura a seguir ilustra a organização dos registradores de controle.
+
+<p align="center">
+  <img src="img/reg1.png" width = "1000" />
+</p>
+<p align="center"><strong>Figura 6: registrador de controle</strong></p>
+
+Além disso, o módulo de I/O inclui um **registrador de máscara de interrupção**, acessível pelo endereço 2, que permite habilitar ou desabilitar interrupções específicas. Cada bit desse registrador corresponde a um periférico de entrada, permitindo a seleção de quais devem acionar a interrupção. Também há dois bits reservados para cada periférico, permitindo definir a borda na qual a interrupção será acionada. A figura a seguir mostra a estrutura do registrador de máscara de interrupção.
+
+Por fim, o módulo conta com um sinal de done, que indica se a escrita foi realizada com sucesso tanto no registrador de controle quanto no registrador de máscara.
+
+<h4>Edge Capture Clear</h4>
+
+O módulo Edge Capture Clear é responsável por limpar os registradores de captura de borda, que armazenam as mudanças de estado dos periféricos. Ele é ativado pelo processador, que envia um sinal de escrita para realizar a limpeza. Para acessar este módulo, o processador deve escrever no endereço 1, correspondente ao registrador de dados. Ao escrever o valor 1 no bit que representa o periférico desejado, o respectivo registrador de captura de borda é limpo. A figura a seguir ilustra a estrutura do registrador de captura de borda.
+
+> **Observação:** O sinal de limpeza depende da configuração de borda do registrador de controle. Por exemplo, se a borda estiver configurada como subida, a limpeza ocorrerá apenas no registrador de subida, e os demais registradores não serão afetados.
+
+<h4>IO Data</h4>
+
+O **módulo de IO Data** é responsável por armazenar os dados dos botões e do joystick. Ele possui 4 registradores de 1 bit para cada um dos perféricos, sendo 3 para bordas (subida, descida e ambos) e 1 para o estado atual. Nesse sentido, é nele que ficam armazenados os registradores de captura de borda e o sinal de interrupção que se baseia nesses registradores. 
+
+Os dados de saída do módulo são baseados no registrador de controle, que define o tipo de dado a ser lido (borda ou estado atual) e seu tipo de borda
+
+Uma decisão importante foi utilizar uma unica sáida para todos os sinais de dados, o que facilita a leitura dos dados pelo processador.
+
+<h4>MUX</h4>
 
 <h3>Conjunto de Instruções</h3>
 
+O módulo de I/O suporta um conjunto de instruções para comunicação com o processador. Essas instruções permitem ler e escrever dados nos registradores internos do módulo, bem como configurar os parâmetros de controle. A tabela a seguir apresenta o conjunto de instruções suportadas pelo módulo de I/O.
 
 <div align="center">
 
@@ -225,7 +267,7 @@ Para se comunicar com o barramento de sistema, o modulo de I/O é equipado com 1
 </p>
 <p align="center"><strong> Formato da instrução WMIRQ</strong></p>
 
-
+<h3> Comunicação com o Processador</h3>
 
 
 </div>
@@ -261,6 +303,7 @@ A função não retorna nada.
 initialize_joystick();
 ```
 
+> 
 > **Observação:** A função deve ser chamada antes de qualquer outra função.
 
 `close_joystick`: Finalizar o módulo de I/O zerando todos os valores de controle e desabilitando o sinal de enable.
