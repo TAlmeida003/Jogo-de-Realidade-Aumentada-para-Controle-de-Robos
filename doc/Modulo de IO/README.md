@@ -11,14 +11,32 @@
 <div align="justify"> 
 <h2>Descrição do Projeto</h2>
 
-O gerenciamento de dispositivos de Entrada/Saída, com a sigla E/S (em inglês: Input/Output, I/O), sempre foi um grande desafio na área de sistemas embarcados. Isso se deve tanto à natureza assíncrona dos dados quanto à diferença de velocidade entre o processador e os dispositivos periféricos, o que pode afetar significativamente o desempenho da CPU. Para fornecer uma interface simples e confiável ao usuário e às aplicações, utiliza-se uma estrutura de camadas de hardware (HW) e software (SW). Essa organização em camadas permite ocultar os detalhes específicos dos periféricos para as camadas superiores [ANDREW S. TANENBAUM, 2003]. A Figura 1 ilustra essa arquitetura de camadas entre o software e o hardware.
+O gerenciamento de dispositivos de Entrada/Saída, com a sigla E/S (em inglês: *Input/Output*, I/O), sempre foi um grande
+desafio na área de sistemas embarcados. Isso se deve tanto à natureza assíncrona dos dados quanto à diferença de velocidade 
+entre o processador e os dispositivos periféricos, o que pode afetar significativamente o desempenho da CPU. Para fornecer uma
+interface simples e confiável ao usuário e às aplicações, utiliza-se uma estrutura de camadas de hardware (HW) e software 
+(SW). Essa organização em camadas permite ocultar os detalhes específicos dos periféricos para as camadas superiores
+[ANDREW S. TANENBAUM, 2003]. A Figura 1 ilustra essa arquitetura de camadas entre o software e o hardware.
 
 <p align="center">
   <img src="img/camadas.png" width = "600" />
 </p>
 <p align="center"><strong>Figura 1: Arquitetura de camadas entre o software e o hardware</strong></p>
 
-Neste projeto, focou-se no gerenciamento dos periféricos de um controle de videogame. Desenvolveu-se um **módulo de I/O** em linguagem de descrição de hardware Verilog, implementado em uma FPGA, juntamente com sua biblioteca em linguagem C. O principal objetivo desse módulo é realizar a leitura dos dados dos botões e do joystick. Ele é responsável por capturar e armazenar as informações provenientes dos periféricos e transmiti-las à CPU sob demanda, além de atender às configurações solicitadas pela CPU via software. Este projeto detalhará o funcionamento do módulo tanto no nível de hardware quanto no nível de software, abordando sua arquitetura, interfaces e como os desenvolvedores podem integrá-lo em suas aplicações.
+Neste projeto, o foco está no gerenciamento dos periféricos de um controle de videogame.
+Desenvolveu-se um **módulo de I/O** de 64 *bits* em *Verilog*, uma linguagem de descrição de hardware, 
+implementado em uma *Field-Programmable Gate Array* (FPGA) com processador **NIOS II**, acompanhado de uma biblioteca em linguagem C para facilitar o acesso ao hardware. 
+O principal objetivo desse módulo é realizar a leitura dos dados dos botões e do joystick. 
+Ele é responsável por capturar e armazenar as informações provenientes dos periféricos e transmiti-las
+à CPU sob demanda ou via interrupção. Além disso, o módulo processa as configurações solicitadas pela CPU por meio de software. 
+Este projeto detalhará o funcionamento do módulo tanto no nível de hardware quanto no nível de software, 
+abordando sua arquitetura, interfaces e como os desenvolvedores podem integrá-lo em suas aplicações. Pra se ter uma visão geral do sistema,
+a Figura 2 apresenta o diagrama geral do projeto.
+
+<p align="center">
+  <img src="img/geral.png" width = "800" />
+</p>
+<p align="center"><strong>Figura 2: Visão geral do sistema</strong></p>
 
 </div>
 
@@ -43,10 +61,9 @@ Neste projeto, focou-se no gerenciamento dos periféricos de um controle de vide
 <h1 align="center"> Sumário </h1>
 <div id="sumario">
 	<ul>
-        <li><a href="#VGS"> Visão Geral do Sistema </a></li>
         <li><a href="#VES"> Descrição dos Equipamentos e Software Utilizados </a></li>
-        <li><a href="#FH"> Funcinalidades do Hardware </a></li>
-        <li><a href="#DH"> Descrição do Hardware</a></li>
+        <li><a href="#FH"> Funcinalidades</a></li>
+        <li><a href="#DH"> Arquitetura</a></li>
         <li><a href="#D"> Bibliotecas </a></li>
         <li><a href="#AP"> Análise de Pinout </a></li>
         <li><a href="#OCF"> Organização do Código Fonte </a></li>
@@ -58,18 +75,6 @@ Neste projeto, focou-se no gerenciamento dos periféricos de um controle de vide
 
 
 ![-----------------------------------------------------](img/len.png)
-
-<div align="justify"> 
-<div id="VGS"> 
-
-<h2>Visão Geral do Sistema</h2>
-
-<p align="center">
-  <img src="img/geral.png" width = "800" />
-</p>
-<p align="center"><strong>Figura 2: Visão geral do sistema</strong></p>
-</div>
-</div>
 
 ![-----------------------------------------------------](img/len.png)
 <div align="justify"> 
@@ -95,7 +100,7 @@ Modelo Altera Cyclone IV **EP4CE22F17C6N** FPGA;
 <div align="justify"> 
 <div id="FH"> 
 
-<h2>Funcinalidades do Hardware</h2>
+<h2>Funcinalidades</h2>
 
 </div>
 </div>
@@ -105,22 +110,22 @@ Modelo Altera Cyclone IV **EP4CE22F17C6N** FPGA;
 <div align="justify"> 
 <div id="DH"> 
 
-<h2>Descrição do Hardware</h2>
+<h2>Arquitetura</h2>
 
-<h3> Interface de Comunicação</h3>
+<h3>Conjunto de Instruções</h3>
 
 
 <div align="center">
 
 | Opcode | Instrução |         Descrição         |
 |--------|-----------|---------------------------|
-| 0x00   |  RDEC     | Lê o registrador de dados/edgeCapture|
-| 0x01   |  RCTL     | Lê o registrador de controle|
-| 0x02   |  RMIRQ    | Lê o registrador de máscara de interrupção|
-| 0x03   |  -----   | Não utilizado|
-| 0x04   |  WDEC     | Escreve no registrador de dados/edgeCapture|
-| 0x05   |  WCTL     | Escreve no registrador de controle|   
-| 0x06   |  WMIRQ    | Escreve no registrador de máscara de interrupção|
+| 0x04   |  RDEC     | Lê o registrador de dados/edgeCapture|
+| 0x05   |  RCTL     | Lê o registrador de controle|
+| 0x06   |  RMIRQ    | Lê o registrador de máscara de interrupção|
+| 0x07   |  ------   | Não utilizado|
+| 0x08   |  WDEC     | Escreve no registrador de dados/edgeCapture|
+| 0x09   |  WCTL     | Escreve no registrador de controle|   
+| 0x0A   |  WMIRQ    | Escreve no registrador de máscara de interrupção|
 
 </div>
 <p align="center">
@@ -172,7 +177,7 @@ Para entender como utilizar as funções do biblioteca, a seguir será explicado
 
 `initialize_joystick`: Inicializar o módulo de I/O para leitura dos botões e do joystick. Ao chamar essa função o módulo é reiniciado tendo os valores de controle zerados e é habilitado o sinal de enable.
 
-**parametros:** 
+**parâmetros:** 
 A função não recebe parâmetros.
 
 **retorno:** 
@@ -187,7 +192,7 @@ initialize_joystick();
 
 `close_joystick`: Finalizar o módulo de I/O zerando todos os valores de controle e desabilitando o sinal de enable.
 
-**parametros:**
+**parâmetros:**
 A função não recebe parâmetros.
 
 **retorno:**
@@ -204,13 +209,9 @@ close_joystick();
 
 `read_KEY`: 
 
-`is_KEY_pressed`:
+`read_KEY_edge`:
 
-`is_KEY_released`:
-
-`set_KEY_callback`:
-
-`clear_edge_capture`:
+`read_KEY_edge_all`:
 
 <h4> Funções de Leitura do Joystick</h4>
 
@@ -236,7 +237,6 @@ close_joystick();
 | 6   | GPIO0_03  | PIN_A3  | A                  |
 | 8   | GPIO0_05  | PIN_B4  | RIGHT              |
 | 10  | GPIO0_07  | PIN_B5  | LEFT               |
-| 12  | GND       | -       | -                  |
 | 14  | GPIO0_09  | PIN_D5  | DOWN               |
 | 16  | GPIO0_011 | PIN_A6  | UP                 |
 | 18  | GPIO0_013 | PIN_D6  | B                  |
@@ -244,7 +244,6 @@ close_joystick();
 | 22  | GPIO0_017 | PIN_E6  | SELECT             |
 | 24  | GPIO0_019 | PIN_D8  | X                  |
 | 26  | GPIO0_021 | PIN_F8  | TL                 |
-| 30  | GND       |         | -                  |
 | -   | CLOCK_50  | PIN_R8  | -                  |
 
 </div>
