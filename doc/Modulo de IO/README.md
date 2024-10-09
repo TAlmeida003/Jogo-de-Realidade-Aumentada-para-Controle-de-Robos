@@ -167,7 +167,7 @@ A interrupção pode ser configurada para borda ou nível, permitindo que o proc
 
 <h3>Interface do modulo de I/O</h3>
 
-Para se comunicar com o barramento de sistema, o modulo de I/O é equipado com 145 pinos. Para facilitar a compreensão da organização desses pinos, a tabela a seguir fornece uma visão detalhada de cada um deles. A Figura 5 apresenta o diagrama em blocos da interface do módulo de I/O, mostrando os sinais de entrada e saída, bem como os barramentos de dados e controle.
+Para se comunicar com o barramento de sistema, o modulo de I/O é equipado com 145 pinos. Para facilitar a compreensão da organização desses pinos, a tabela a seguir fornece uma visão detalhada de cada um deles.
 
 
 <div align="center">
@@ -187,6 +187,7 @@ Para se comunicar com o barramento de sistema, o modulo de I/O é equipado com 1
 <p align="center">
 <strong> Tabela 1: Pinagem do módulo de I/O</strong></p>
 
+A Figura 5 apresenta o diagrama em blocos da interface do módulo de I/O, mostrando os sinais de entrada e saída, bem como os barramentos de dados e controle.
 
 <p align="center">
   <img src="img/interfece.png" width = "800" />
@@ -199,20 +200,54 @@ Nesta seção, primeiro precisamos ter uma compreensão geral de todo o projeto 
 
 <h4>Controle</h4>
 
-O **módulo de Controle** gerencia o estado das configurações do módulo de I/O e a máscara de interrupção. Ele contém um **registrador de controle**, acessível pelo endereço 0, com várias funções: um bit para reiniciar o módulo (0 para reiniciar e 1 para manter o estado atual), um bit de enable (0 para desativar o módulo e impedir alterações, e 1 para permitir modificações), um bit para habilitar ou desabilitar o cancelamento de ruído (0 para usar o sinal atual do botão e 1 para ativar os registradores de captura de borda), e um seletor de borda que pode ser configurado como subida (01), descida (00) ou ambas (10). Cada um dos 12 periféricos de entrada possui um espaço no registrador para controlar o tipo de dado e a borda. A figura a seguir ilustra a organização dos registradores de controle.
+O **módulo de Controle** gerencia o estado das configurações do módulo de I/O e a máscara de interrupção. 
+Ele contém um **registrador de controle**, acessível pelo endereço 0, com várias funções: um bit para reiniciar **(RST)** o módulo 
+(0 para reiniciar e 1 para manter o estado atual), um bit de enable (0 para desativar o módulo e impedir alterações, e 1 para 
+permitir modificações), um bit para habilitar ou desabilitar o cancelamento de ruído **(RCR)** (0 para usar o sinal atual do botão e 1 
+para ativar os registradores de captura de borda), e um seletor de borda **(CCR)** que pode ser configurado como subida (01), descida (00) 
+ou ambas (10). Cada um dos 12 periféricos de entrada possui um espaço no registrador para controlar o tipo de dado e a borda.
+A figura a seguir ilustra a organização dos registradores de controle.
 
 <p align="center">
-  <img src="img/reg1.png" width = "1000" />
+  <img src="img/register_controlle.png" width = "1000" />
 </p>
 <p align="center"><strong>Figura 6: registrador de controle</strong></p>
 
-Além disso, o módulo de I/O inclui um **registrador de máscara de interrupção**, acessível pelo endereço 2, que permite habilitar ou desabilitar interrupções específicas. Cada bit desse registrador corresponde a um periférico de entrada, permitindo a seleção de quais devem acionar a interrupção. Também há dois bits reservados para cada periférico, permitindo definir a borda na qual a interrupção será acionada. A figura a seguir mostra a estrutura do registrador de máscara de interrupção.
+Além disso, o módulo de I/O inclui um **registrador de máscara de interrupção**, acessível pelo endereço 2, 
+que permite habilitar ou desabilitar interrupções específicas. Cada bit desse registrador corresponde a um
+periférico de entrada, permitindo a seleção de quais devem acionar a interrupção **(IRQ)**. Também há dois bits 
+reservados para cada periférico, permitindo definir a borda na qual a interrupção será acionada **(CCR)**. A figura 
+a seguir mostra a estrutura do registrador de máscara de interrupção.
 
-Por fim, o módulo conta com um sinal de done, que indica se a escrita foi realizada com sucesso tanto no registrador de controle quanto no registrador de máscara.
+<p align="center">
+  <img src="img/register_irq.png" width = "1000" />
+</p>
+<p align="center"><strong>Figura 7: registrador de máscara de interrupção</strong></p>
+
+Por fim, o módulo conta com as seguintes entradas e saídas:
+
+| Nome   | Tipo       | tamanho |         Descrição         |
+|--------|------------|---------|---------------------------|
+| clk    | Entrada    | 1       | Sinal de clock de entrada |
+| rst_n  | Entrada    | 1       | Sinal de reset ativo em nível baixo |
+| we     | Entrada    | 1       | Sinal de escrita ativo em nível alto |
+|register_addr | Entrada | 2       | Barramento para endereço do registrador |
+|wr_data | Entrada    | 64      | Barramento para escrita de dados |
+|out_control | Saída   | 64      | Barramento para leitura de dados do registrador de controle|
+|out_interrupt| Saída   | 64      | Barramento para leitura de
+dados do registrador de máscara de interrupção|
+|done | Saída   | 1      | Sinal que indica se a escrita foi realizada com sucesso
+
+Para facilitar a visualização segue uma imagem do diagrama de blocos do módule.
 
 <h4>Edge Capture Clear</h4>
 
-O módulo Edge Capture Clear é responsável por limpar os registradores de captura de borda, que armazenam as mudanças de estado dos periféricos. Ele é ativado pelo processador, que envia um sinal de escrita para realizar a limpeza. Para acessar este módulo, o processador deve escrever no endereço 1, correspondente ao registrador de dados. Ao escrever o valor 1 no bit que representa o periférico desejado, o respectivo registrador de captura de borda é limpo. A figura a seguir ilustra a estrutura do registrador de captura de borda.
+O **módulo Edge Capture Clear** é responsável por limpar os registradores de captura de borda, que armazenam as mudanças de estado dos periféricos. Ele é ativado pelo processador, que envia um sinal de escrita para realizar a limpeza. Para acessar este módulo, o processador deve escrever no endereço 1, correspondente ao registrador de dados. Ao escrever o valor 1 no bit que representa o periférico desejado (RS), o respectivo registrador de captura de borda é limpo. A figura a seguir ilustra a estrutura do registrador de captura de borda e dados.
+
+<p align="center">
+  <img src="img/register_data.png" width = "1000" />
+</p>
+<p align="center"><strong>Figura 8: registrador de dados e captura de borda</strong></p>
 
 > **Observação:** O sinal de limpeza depende da configuração de borda do registrador de controle. Por exemplo, se a borda estiver configurada como subida, a limpeza ocorrerá apenas no registrador de subida, e os demais registradores não serão afetados.
 
