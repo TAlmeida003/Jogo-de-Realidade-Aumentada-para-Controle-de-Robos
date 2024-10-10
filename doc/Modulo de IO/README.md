@@ -329,9 +329,22 @@ O **módulo MUX** é responsável por selecionar o tipo de dado que será lido p
 <p align="center">
 <strong> Tabela 5: Saídas do módulo MUX</strong></p>
 
-<h3>Conjunto de Instruções</h3>
+<h3> Comunicação com o Processador</h3>
 
-O módulo de I/O suporta um conjunto de instruções para comunicação com o processador. Essas instruções permitem ler e escrever dados nos registradores internos do módulo, bem como configurar os parâmetros de controle. A tabela a seguir apresenta o conjunto de instruções suportadas pelo módulo de I/O.
+O módulo de I/O é controlado pelo processador NIOS II, que envia comandos para ler e escrever dados nos registradores internos do módulo. Para realizar essa comunicação, utiliza-se acesso direto à memória, sem o uso de mapeamento de memória. O processador se comunica com todos os módulos da arquitetura através do barramento Avalon MM de 32 bits. Para acomodar o módulo de I/O, foi definida uma estrutura de 64 bits, visando a compatibilidade com projetos futuros.
+
+Para integrar o barramento Avalon ao módulo de I/O, foi necessário implementar um intermediário. Embora essa decisão tenha acarretado a perda de alguns sinais de controle, ela permitiu manter a estrutura de 64 bits para expansões futuras. Para utilizar a leitura de dados, o processdor deve escrever o registrador desejado com base no **conjunto de instrução** e, em seguida, ler o valor do registrador de saída.
+
+A comunicação entre o processador e o módulo de I/O é realizada por meio do **PIO-Core**, utilizando quatro módulos de 32 bits (dois para escrita e dois para leitura). Além disso, um módulo específico para escrita, o **módulo de pulso de escrita**, foi implementado. Esse módulo capta o sinal de um endereço de memória e gera um pulso para o módulo de I/O. Para efetuar a escrita, o processador deve primeiro atribuir o valor 1 ao endereço de memória correspondente e, em seguida, atribuir o valor 0 ao mesmo endereço, garantindo assim que o módulo de I/O realize a operação de escrita.
+
+A seguir, está o diagrama de blocos que ilustra a arquitetura completa do sistema, facilitando a visualização dessa estrutura.
+
+
+<h3>Conjunto de Instruções</h3>
+O módulo de I/O suporta um conjunto de instruções para comunicação com o processador. 
+Essas instruções permitem ler e escrever dados nos registradores internos do módulo, bem como configurar os 
+parâmetros de controle. A tabela a seguir apresenta o conjunto de instruções suportadas pelo módulo de I/O.
+
 
 <div align="center">
 
@@ -348,6 +361,13 @@ O módulo de I/O suporta um conjunto de instruções para comunicação com o pr
 </div>
 <p align="center">
 <strong> Tabela com os opcodes da interface de comunicação</strong></p>
+
+<h4> Instrução RCTL, RDEC e RMIRQ</h4>
+
+A instrução RCTL lê o registrador de controle, a instrução RDEC lê o registrador de dados/edgeCapture e a 
+instrução RMIRQ lê o registrador de máscara de interrupção. Ao escrever o opcode correspondente ao registrador, é enviado para os registradroes 
+de leitura o valor de um desses registradores. A figura a seguir ilustra o formato dessas instruções.
+
 
 <p align="center">
   <img src="img/INT4.png" width = "1000" />
