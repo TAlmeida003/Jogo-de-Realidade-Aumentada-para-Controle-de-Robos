@@ -362,17 +362,18 @@ parâmetros de controle. A tabela a seguir apresenta o conjunto de instruções 
 <p align="center">
 <strong> Tabela com os opcodes da interface de comunicação</strong></p>
 
-<h4> Instrução RCTL, RDEC e RMIRQ</h4>
+<h4> Instruções RCTL, RDEC e RMIRQ</h4>
 
-A instrução RCTL lê o registrador de controle, a instrução RDEC lê o registrador de dados/edgeCapture e a 
-instrução RMIRQ lê o registrador de máscara de interrupção. Ao escrever o opcode correspondente ao registrador, é enviado para os registradroes 
-de leitura o valor de um desses registradores. A figura a seguir ilustra o formato dessas instruções.
+As instruções RCTL, RDEC e RMIRQ são usadas para ler registradores específicos: RCTL lê o registrador de controle, RDEC lê o registrador de dados/captura de borda (*edgeCapture*), e RMIRQ lê o registrador de máscara de interrupção. Quando o opcode correspondente ao registrador é escrito, o valor do registrador respectivo é enviado para os registradores de leitura. A figura a seguir ilustra o formato dessas instruções.
 
+<p align="center"> <img src="img/INT4.png" width="1000" /> </p> <p align="center"><strong> Figura: Formato das instruções RCTL, RDEC e RMIRQ</strong></p>
 
-<p align="center">
-  <img src="img/INT4.png" width = "1000" />
-</p>
-<p align="center"><strong> Formato da instrução RCTL, RDEC e RMIRQ</strong></p>
+Para uso na arquitetura de 32 bits, a instrução é dividida em duas partes: a primeira parte contém o opcode, enquanto a segunda parte é um campo vazio, reservado para possíveis expansões ou configurações adicionais.
+
+<p align="center"> <img src="img/INT4_32.png" width="1000" /> </p> <p align="center"><strong> Figura: Formato das instruções RCTL, RDEC e RMIRQ</strong></p>
+
+<h4> Instrução WDEC</h4>
+
 
 
 <p align="center">
