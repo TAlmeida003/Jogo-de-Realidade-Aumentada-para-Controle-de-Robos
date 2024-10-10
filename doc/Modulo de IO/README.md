@@ -204,8 +204,7 @@ O **módulo de Controle** gerencia o estado das configurações do módulo de I/
 Ele contém um **registrador de controle**, acessível pelo endereço 0, com várias funções: um bit para reiniciar **(RST)** o módulo 
 (0 para reiniciar e 1 para manter o estado atual), um bit de enable (0 para desativar o módulo e impedir alterações, e 1 para 
 permitir modificações), um bit para habilitar ou desabilitar o cancelamento de ruído **(RCR)** (0 para usar o sinal atual do botão e 1 
-para ativar os registradores de captura de borda), e um seletor de borda **(CCR)** que pode ser configurado como subida (01), descida (00) 
-ou ambas (10). Cada um dos 12 periféricos de entrada possui um espaço no registrador para controlar o tipo de dado e a borda.
+para ativar os registradores de captura de borda), e um seletor de borda ou nivel **(CCR)** que pode ser configurado como descida (00), subida (01), ambas (10) ou nivel (11). Cada um dos 12 periféricos de entrada possui um espaço no registrador para controlar o tipo de dado e a borda.
 A figura a seguir ilustra a organização dos registradores de controle.
 
 <p align="center">
@@ -226,6 +225,8 @@ a seguir mostra a estrutura do registrador de máscara de interrupção.
 
 Por fim, o módulo conta com as seguintes entradas e saídas:
 
+<div align="center">
+
 | Nome   | Tipo       | tamanho |         Descrição         |
 |--------|------------|---------|---------------------------|
 | clk    | Entrada    | 1       | Sinal de clock de entrada |
@@ -234,15 +235,18 @@ Por fim, o módulo conta com as seguintes entradas e saídas:
 |register_addr | Entrada | 2       | Barramento para endereço do registrador |
 |wr_data | Entrada    | 64      | Barramento para escrita de dados |
 |out_control | Saída   | 64      | Barramento para leitura de dados do registrador de controle|
-|out_interrupt| Saída   | 64      | Barramento para leitura de
-dados do registrador de máscara de interrupção|
+|out_interrupt| Saída   | 64      | Barramento para leitura dedados do registrador de máscara de interrupção|
 |done | Saída   | 1      | Sinal que indica se a escrita foi realizada com sucesso
+
+</div>
+<p align="center">
+<strong> Tabela 2: Entradas e saídas do módulo de controle</strong></p>
 
 Para facilitar a visualização segue uma imagem do diagrama de blocos do módule.
 
 <h4>Edge Capture Clear</h4>
 
-O **módulo Edge Capture Clear** é responsável por limpar os registradores de captura de borda, que armazenam as mudanças de estado dos periféricos. Ele é ativado pelo processador, que envia um sinal de escrita para realizar a limpeza. Para acessar este módulo, o processador deve escrever no endereço 1, correspondente ao registrador de dados. Ao escrever o valor 1 no bit que representa o periférico desejado (RS), o respectivo registrador de captura de borda é limpo. A figura a seguir ilustra a estrutura do registrador de captura de borda e dados.
+O **módulo Edge Capture Clear** é responsável por limpar os registradores de captura de borda, que armazenam as mudanças de estado dos periféricos. Ele é ativado pelo processador, que envia um sinal de escrita para realizar a limpeza. Para acessar este módulo, o processador deve escrever no endereço 1, correspondente ao registrador de dados. Ao escrever o valor 1 no bit que representa o periférico desejado **(RS)**, o respectivo registrador de captura de borda é limpo. A figura a seguir ilustra a estrutura do registrador de captura de borda e dados.
 
 <p align="center">
   <img src="img/register_data.png" width = "1000" />
@@ -251,15 +255,79 @@ O **módulo Edge Capture Clear** é responsável por limpar os registradores de 
 
 > **Observação:** O sinal de limpeza depende da configuração de borda do registrador de controle. Por exemplo, se a borda estiver configurada como subida, a limpeza ocorrerá apenas no registrador de subida, e os demais registradores não serão afetados.
 
+O módulo conta com as seguintes entradas e saídas:
+
+<div align="center">
+
+| Nome   | Tipo       | tamanho |         Descrição         |
+|--------|------------|---------|---------------------------|
+|clk    | Entrada    | 1       | Sinal de clock de entrada |
+|rst_n  | Entrada    | 1       | Sinal de reset ativo em nível baixo |
+|we     | Entrada    | 1       | Sinal de escrita ativo em nível alto |
+|enable | Entrada    | 1       | Sinal de habilitação da limpeza |
+|register_addr | Entrada | 2       | Barramento para endereço do registrador |
+|wr_data | Entrada    | 64      | Barramento para escrita de dados |
+|noise_canc | Entrada    | 64      | Barramento para limpeza de ruído |
+|clear_data | Saída   | 64      | Barramento para leitura de dados limpos |
+|done | Saída   | 1      | Sinal que indica se a escrita foi realizada com sucesso
+
+</div>
+<p align="center">
+<strong> Tabela 3: Entradas e saídas do módulo de limpeza de borda</strong></p>
+
+Para garantir a visualização do módulo, segue a imagem do diagrama de blocos do módulo.
+
 <h4>IO Data</h4>
 
-O **módulo de IO Data** é responsável por armazenar os dados dos botões e do joystick. Ele possui 4 registradores de 1 bit para cada um dos perféricos, sendo 3 para bordas (subida, descida e ambos) e 1 para o estado atual. Nesse sentido, é nele que ficam armazenados os registradores de captura de borda e o sinal de interrupção que se baseia nesses registradores. 
+O **módulo IO Data** é responsável por armazenar os dados dos botões e do joystick. Ele contém quatro registradores de 1 bit para cada periférico: três registradores para captura de borda (subida, descida e ambas) e um para o estado atual. Dessa forma, os registradores de captura de borda e o sinal de interrupção, que dependem desses registradores, são gerenciados dentro deste módulo.
 
-Os dados de saída do módulo são baseados no registrador de controle, que define o tipo de dado a ser lido (borda ou estado atual) e seu tipo de borda
+A saída de dados do módulo é controlada pelo registrador de controle, que determina se o dado a ser lido é referente às bordas ou ao estado atual. Para habilitar os registradores de captura de borda, é necessário ativar o sinal de enable do módulo, assim como o **Registrador de Cancelamento de Ruído (RCR)**. Caso o enable esteja ativado, mas o RCR não, os registradores de captura de borda não serão capazes de alterar seu estado.
 
-Uma decisão importante foi utilizar uma unica sáida para todos os sinais de dados, o que facilita a leitura dos dados pelo processador.
+Uma decisão importante no design foi utilizar uma única saída multiplexada para selecionar o tipo de dado a ser lido, o que economiza espaço e simplifica o controle de dados.
+
+Por exemplo, se o usuário deseja ler o estado atual do botão Y, ele deve escrever o valor **11** na seção correspondente ao botão Y no registrador de controle (CCR). Isso direcionará a saída do módulo IO Data para o estado atual do botão Y. Da mesma forma, para ler as bordas, o usuário precisa ativar o enable e o RCR, e então escrever o valor **00** no campo CCR.
+
+A interrupção é gerada quando um dos registradores de dados detecta uma mudança de borda ou quando o valor atual do periférico é baixo, uma vez que todos os periféricos funcionam como **pull-up**. Para habilitar a interrupção, o usuário deve escrever o valor **1** no campo correspondente ao periférico desejado no registrador de máscara de interrupção, assim como configurar o tipo de interrupção.
+
+O módulo conta com as seguintes entradas e saídas:
+
+<div align="center">
+
+| Nome   | Tipo       | tamanho |         Descrição         |
+|--------|------------|---------|---------------------------|
+|clk    | Entrada    | 1       | Sinal de clock de entrada |
+|rst_n  | Entrada    | 1       | Sinal de reset ativo em nível baixo |
+|enable | Entrada    | 1       | Sinal de habilita os registradores|
+| en_noise_cancelling | Entrada    | 12       | Barramento para habilitar o registradores de captura de borda |
+|interrupt_mask | Entrada    | 12       | Barramento para habilitar a interrupção |
+|in_data | Entrada    | 8       | Barramento para leitura dos botões |
+|select_edge | Entrada    | 24       | Barramento para seleção de borda |
+|select_interrupt | Entrada    | 24       | Barramento para seleção de tipo de interrupção|
+|out_data | Saída   | 64      | Barramento para leitura de dados |
+|irq | Saída   | 1      | Sinal de interrupção|
+
+</div>
+<p align="center">
+<strong> Tabela 4: Entradas e saídas do módulo de IO Data</strong></p>
+
+Para garantir a visualização do módulo, segue a imagem do diagrama de blocos do módulo.
 
 <h4>MUX</h4>
+
+O **módulo MUX** é responsável por selecionar o tipo de dado que será lido pelo processador. Ele usa como entrada de seleção o endereço do **readdata** e assim pode ter as sequintes saídas:
+
+<div align="center">
+
+|Endereço |        Descrição         |
+|--------|---------------------------|
+| 00      | Registrador de dados     |
+| 01      | Registrador de controle  |
+| 10      | Registrador de máscara de interrupção |
+| 11      |  Não utilizado |
+
+</div>
+<p align="center">
+<strong> Tabela 5: Saídas do módulo MUX</strong></p>
 
 <h3>Conjunto de Instruções</h3>
 
