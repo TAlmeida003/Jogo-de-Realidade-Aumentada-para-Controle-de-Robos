@@ -370,11 +370,9 @@ As instruções RCTL, RDEC e RMIRQ são usadas para ler registradores específic
 
 Para uso na arquitetura de 32 bits, a instrução é dividida em duas partes: a primeira parte contém o opcode, enquanto a segunda parte é um campo vazio, reservado para possíveis expansões ou configurações adicionais.
 
-<p align="center"> <img src="img/INT4_32.png" width="1000" /> </p> <p align="center"><strong> Figura: Formato das instruções RCTL, RDEC e RMIRQ</strong></p>
+<p align="center"> <img src="img/INT4_32.png" width="1000" /> </p> <p align="center"><strong> Figura: Formato das instruções RCTL, RDEC e RMIRQ com 32 bits</strong></p>
 
-<h4> Instrução WDEC</h4>
-
-
+<h4> Instrução WCTL</h4>
 
 <p align="center">
   <img src="img/INT1.png" width = "1000" />
@@ -382,16 +380,33 @@ Para uso na arquitetura de 32 bits, a instrução é dividida em duas partes: a 
 <p align="center"><strong> Formato da instrução WCTL</strong></p>
 
 <p align="center">
-  <img src="img/INT2.png" width = "1000" />
+  <img src="img/INT1_32.png" width = "1000" />
 </p>
-<p align="center"><strong> Formato da instrução WDEC</strong></p>
+<p align="center"><strong> Formato da instrução WCTL para 2 partes de 32 bits</strong></p>
+
+<h4> Instrução WDEC</h4>
 
 <p align="center">
   <img src="img/INT3.png" width = "1000" />
 </p>
+<p align="center"><strong> Formato da instrução WDEC</strong></p>
+
+<p align="center">
+  <img src="img/INT2_32.png" width = "1000" />
+</p>
+<p align="center"><strong> Formato da instrução WDEC para 2 partes de 32 bits</strong></p>
+
+<h4> Instrução WMIRQ</h4>
+
+<p align="center">
+  <img src="img/INT2.png" width = "1000" />
+</p>
 <p align="center"><strong> Formato da instrução WMIRQ</strong></p>
 
-<h3> Comunicação com o Processador</h3>
+<p align="center">
+  <img src="img/INT3_32.png" width = "1000" />
+</p>
+<p align="center"><strong> Formato da instrução WMIRQ para 2 partes de 32 bits</strong></p>
 
 
 </div>
