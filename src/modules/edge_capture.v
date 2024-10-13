@@ -16,7 +16,7 @@ module edge_capture (
 			if (!rst_n) begin
 				reg_capture[0] <= 1'b0;
 			end else if(enable) begin
-				if (clr & (select_edge == 2'b00 || select_edge == 2'b11)) begin
+				if (clr & (select_edge == 2'b00)) begin
 					reg_capture[0] <= 1'b0;
 				end else if (pulso_posedge) begin
 					reg_capture[0] <= 1'b1;
@@ -28,7 +28,7 @@ module edge_capture (
 			if (!rst_n) begin
 				reg_capture[1] <= 1'b0;
 			end else if(enable) begin
-				if (clr & select_edge[0]) begin
+				if (clr & select_edge == 2'b01) begin
 					reg_capture[1] <= 1'b0;
 				end else if (pulso_negedge) begin
 					reg_capture[1] <= 1'b1;
@@ -40,7 +40,7 @@ module edge_capture (
 			if (!rst_n) begin
 				reg_capture[2] <= 1'b0;
 			end else if(enable) begin
-				if (clr & select_edge[1]) begin
+				if (clr & select_edge == 2'b10) begin
 					reg_capture[2] <= 1'b0;
 				end else if (pulso_both) begin
 					reg_capture[2] <= 1'b1;
@@ -54,7 +54,7 @@ module edge_capture (
             2'b00: edge_capture <= reg_capture[0];
             2'b01: edge_capture <= reg_capture[1];
             2'b10: edge_capture <= reg_capture[2];
-            2'b11: edge_capture <= 1'b0;
+            2'b11: edge_capture <= !data;
             default: edge_capture <= 1'b0;
         endcase
     end
@@ -64,7 +64,7 @@ module edge_capture (
             2'b00: irq <= reg_capture[0] & interrupt_mask;
             2'b01: irq <= reg_capture[1] & interrupt_mask;
             2'b10: irq <= reg_capture[2] & interrupt_mask;
-            2'b11: irq <= 1'b0;
+            2'b11: irq <= !data & interrupt_mask;
             default: edge_capture <= 1'b0;
         endcase
     end

@@ -7,13 +7,13 @@ module edge_detector (
     reg [1:0] reg_d;
 
     initial begin
-        reg_d = 2'b00;
+        reg_d = 2'b11;
     end
 
     // Bloco de registro que armazena o valor atual de 'data' na borda de subida do clock
     always @(posedge clk or negedge rst_n) begin
         if (!rst_n) begin
-            reg_d <= 2'b00;
+            reg_d <= 2'b11;
         end else if (enable) begin
             reg_d[0] <= data;
 				reg_d[1] <= reg_d[0];

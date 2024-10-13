@@ -23,6 +23,30 @@
 #define MEMORIA_BASE_IRQ 0x3000
 
 #include "io.h"
+#include <stdio.h>
+#include <unistd.h>
+#include "sys/alt_irq.h"
+#include "system.h"
+#include "altera_avalon_pio_regs.h"
+#include "alt_types.h"
+
+
+void (*callback_button0)() = NULL;
+int edge0 = 0;
+void (*callback_button1)() = NULL;
+int edge1 = 0;
+void (*callback_button2)() = NULL;
+int edge2 = 0;
+void (*callback_button3)() = NULL;
+int edge3 = 0;
+void (*callback_button4)() = NULL;
+int edge4 = 0;
+void (*callback_button5)() = NULL;
+int edge5 = 0;
+void (*callback_button6)() = NULL;
+int edge6 = 0;
+void (*callback_button7)() = NULL;
+int edge7 = 0;
 
 void pulse_we(){
 	IOWR(MEMORIA_BASE_WE,0, 1);
@@ -68,93 +92,6 @@ void re_MIRQ(unsigned int* data_MSB, unsigned int* data_LSB){
 	*data_MSB = IORD(MEMORIA_BASE_RD_DATA_MSB, 0);
 }
 
-void initialize_joystick(){
-	IOWR(MEMORIA_BASE_WR_DATA_LSB,0, 0);
-	IOWR(MEMORIA_BASE_WR_DATA_MSB,0, 0);
-	IOWR(MEMORIA_BASE_WE,0, 0);
-	IOWR(MEMORIA_BASE_IRQ, 2, 1);
-
-	we_CTL(0, 0);
-	we_CTL(0, 3);
-
-	//alt_ic_isr_register(JOYSTICK_IRQ, JOYSTICK_IRQ, (void *)interrupt_handler, NULL, 0x0);
-}
-
-void close_joystick(){
-	IOWR(MEMORIA_BASE_WR_DATA_LSB,0, 0);
-	IOWR(MEMORIA_BASE_WR_DATA_MSB,0, 0);
-	we_CTL(0, 0);
-	IOWR(MEMORIA_BASE_IRQ, 2, 0);
-}
-
-int is_KEY_pressed(int button){
-	if (button < 0 || button > 7) {
-		printf("ExceptionKEY: Botao invalido\n");
-		return -1;
-	}
-
-	int data_MSB, data_LSB;
-
-	re_CTL(&data_MSB, &data_LSB);
-
-	unsigned int data = 1 << (2 + button) | data_LSB; // Retirar o ruido
-	data = ~(3 << (14 + 2 * button)) & data; //limpar seletor de edge
-	we_CTL(data_MSB, data);
-
-	re_DEC(&data_MSB, &data_LSB);
-	if ((data_LSB & 1 << button) != 0){
-		we_DEC(data_MSB, 1 << button);
-		return 1;
-	}
-	return 0;
-}
-
-int is_KEY_released(int button){
-	if (button < 0 || button > 7) {
-		printf("ExceptionKEY: Botao invalido\n");
-		return -1;
-	}
-
-	unsigned int data_MSB, data_LSB;
-
-	re_CTL(&data_MSB, &data_LSB);
-
-	unsigned int data = 1 << (2 + button) | data_LSB; // Retirar o ruido
-	data = ~(3 << (14 + 2 * button)) & data; //limpar seletor de edge
-	data = 1 << (14 + 2 * button) | data;
-	we_CTL(data_MSB, data);
-
-	re_DEC(&data_MSB, &data_LSB);
-	if ((data_LSB & 1 << button) != 0){
-		we_DEC(data_MSB, 1 << button);
-		return 1;
-	}
-	return 0;
-}
-
-int detect_KEY_change(int button){
-	if (button < 0 || button > 7) {
-			printf("ExceptionKEY: Botao invalido\n");
-			return -1;
-		}
-
-	unsigned int data_MSB, data_LSB;
-	re_CTL(&data_MSB, &data_LSB);
-
-	unsigned int data = 1 << (2 + button) | data_LSB; // Retirar o ruido
-	data = ~(3 << (14 + 2 * button)) & data; //limpar seletor de edge
-	data = 2 << (14 + 2 * button) | data;
-	we_CTL(data_MSB, data);
-
-	re_DEC(&data_MSB, &data_LSB);
-
-	if ((data_LSB & 1 << button) != 0){
-		we_DEC(data_MSB, 1 << button);
-		return 1;
-	}
-	return 0;
-}
-
 int edge_KEY(int button, int edge){
 	if (button < 0 || button > 7) {
 			printf("ExceptionKEY: Botao invalido\n");
@@ -163,31 +100,48 @@ int edge_KEY(int button, int edge){
 
 	unsigned int data_MSB, data_LSB;
 	re_CTL(&data_MSB, &data_LSB);
-	unsigned int data;
+	unsigned int data, data_msb;
 
 	switch (edge) {
-	case 0:
-		data = 1 << (2 + button) | data_LSB; // Retirar o ruido
-		data = ~(3 << (14 + 2 * button)) & data; //limpar seletor de edge
-		we_CTL(data_MSB, data);
-		break;
-	case 1:
-		data = 1 << (2 + button) | data_LSB; // Retirar o ruido
-		data = ~(3 << (14 + 2 * button)) & data; //limpar seletor de edge
-		data = 1 << (14 + 2 * button) | data;
-		break;
-	case 2:
-		data = 1 << (2 + button) | data_LSB; // Retirar o ruido
-		data = ~(3 << (14 + 2 * button)) & data; //limpar seletor de edge
-		data = 2 << (14 + 2 * button) | data;
-		break;
-	default:
-		printf("ExceptionKEY: Edge invalido\n");
-		return -1;
-		break;
+		case 0:
+			data = 1 << (2 + button) | data_LSB; // Retirar o ruido
+			data = ~(3 << (14 + 2 * button)) & data; //limpar seletor de edge
+			if (button == 7){
+				data_msb = ~1 & data_MSB;
+				we_CTL(data_msb, data);
+			} else{
+				we_CTL(data_MSB, data);
+			}
+			break;
+		case 1:
+			data = 1 << (2 + button) | data_LSB; // Retirar o ruido
+			data = ~(3 << (14 + 2 * button)) & data; //limpar seletor de edge
+			data = 1 << (14 + 2 * button) | data;
+			if (button == 7){
+				data_msb = ~1 & data_MSB;
+				we_CTL(data_msb, data);
+			} else{
+				we_CTL(data_MSB, data);
+			}
+			break;
+		case 2:
+			data = 1 << (2 + button) | data_LSB; // Retirar o ruido
+			data = ~(3 << (14 + 2 * button)) & data; //limpar seletor de edge
+
+			data = 2 << (14 + 2 * button) | data;
+			if (button == 7){
+				data_msb = 1 | data_MSB;
+				we_CTL(data_msb, data);
+			}else{
+				we_CTL(data_MSB, data);
+			}
+			break;
+		default:
+			printf("ExceptionKEY: Edge invalido\n");
+			return -1;
+			break;
 	}
 
-	we_CTL(data_MSB, data);
 
 	re_DEC(&data_MSB, &data_LSB);
 	if ((data_LSB & 1 << button) != 0){
@@ -196,6 +150,34 @@ int edge_KEY(int button, int edge){
 	}
 	return 0;
 }
+
+
+void initialize_joystick(){
+	IOWR(MEMORIA_BASE_WR_DATA_LSB,0, 0);
+	IOWR(MEMORIA_BASE_WR_DATA_MSB,0, 0);
+	IOWR(MEMORIA_BASE_WE,0, 0);
+	IOWR(MEMORIA_BASE_IRQ, 2, 1);
+
+	we_CTL(0, 0);
+	we_CTL(0, 3);
+	IOWR_ALTERA_AVALON_PIO_IRQ_MASK(MEMORIA_BASE_IRQ, 0x01);
+
+	usleep(100000);
+
+	for (int i = 0; i < 8; i++){
+		edge_KEY(i,1);
+		edge_KEY(i,2);
+	}
+
+}
+
+void close_joystick(){
+	IOWR(MEMORIA_BASE_WR_DATA_LSB,0, 0);
+	IOWR(MEMORIA_BASE_WR_DATA_MSB,0, 0);
+	we_CTL(0, 0);
+	IOWR_ALTERA_AVALON_PIO_IRQ_MASK(MEMORIA_BASE_IRQ, 0x00);
+}
+
 
 int state_KEY(int button){
 	if (button < 0 || button > 7) {
@@ -218,42 +200,102 @@ int state_KEY(int button){
 	return 0;
 }
 
-/*
-int (*callback_all_buttons)();
+void interrupt (void* context){
 
-void set_KEY_callback(void (*callback)(), int button){
-	volatile int *p_led = (int *) MEMORIA_BASE_JOYSTICK;
-	if (button < 0 || button > 8) {
-		printf("ExceptionKEY: Botao invalido\n");
+	if (callback_button0 != NULL){
+		callback_button0();
+		edge_KEY(0, edge0);
+	}
+	if (callback_button1 != NULL){
+		callback_button1();
+		edge_KEY(1, edge1);
+	}
+	if (callback_button2 != NULL){
+		callback_button2();
+		edge_KEY(2, edge2);
+	}
+	if (callback_button3 != NULL){
+		callback_button3();
+		edge_KEY(3, edge3);
+	}
+	if (callback_button4 != NULL){
+		callback_button4();
+		edge_KEY(4, edge4);
+	}
+	if (callback_button5 != NULL){
+		callback_button5();
+		edge_KEY(5, edge5);
+	}
+	if (callback_button6 != NULL){
+		callback_button6();
+		edge_KEY(6, edge6);
+	}
+	if (callback_button7 != NULL){
+		callback_button7();
+		edge_KEY(7, edge7);
+	}
+
+}
+
+void set_KEY_callback(void (*callback)(), int button, int edge){
+
+	if (edge < 0 || edge > 2) {
+		printf("ExceptionKEY: Edge invalido\n");
 		return;
 	}
+	alt_ic_isr_register(0, 1, (void *)interrupt, NULL, 0x0);
 
-	switch (button)
-	{
+	unsigned int data_MSB, data_LSB, data;
+	re_MIRQ(&data_MSB, &data_LSB);
+	data = 1 << button | data_LSB;
+	data = ~(3 << (12 + 2 * button)) & data;
+	data = edge << (12 + 2 * button) | data;
+
+	switch (button){
 	case 0:
+		we_MIRQ(data_MSB, data);
+		callback_button0 = callback;
+		edge0 = edge;
 		break;
 	case 1:
+		we_MIRQ(data_MSB, data);
+		callback_button1 = callback;
+		edge1 = edge;
 		break;
 	case 2:
+		we_MIRQ(data_MSB, data);
+		callback_button2 = callback;
+		edge2 = edge;
 		break;
 	case 3:
+		we_MIRQ(data_MSB, data);
+		callback_button3 = callback;
+		edge3 = edge;
 		break;
 	case 4:
+		we_MIRQ(data_MSB, data);
+		callback_button4 = callback;
+		edge4 = edge;
 		break;
 	case 5:
+		we_MIRQ(data_MSB, data);
+		callback_button5 = callback;
+		edge5 = edge;
 		break;
 	case 6:
+		we_MIRQ(data_MSB, data);
+		callback_button6 = callback;
+		edge6 = edge;
 		break;
 	case 7:
+		we_MIRQ(data_MSB, data);
+		callback_button7 = callback;
+		edge7 = edge;
 		break;
 	default:
-		*(p_led + REG_INTERRUPT_MASK_OFFSET) = 255;
-		callback_all_buttons = callback;
+		printf("ExceptionKEY: Botao invalido\n");
+		return;
 		break;
 	}
 }
 
-void interrupt_handler (void* context, alt_u32 id){
-
-}
-*/

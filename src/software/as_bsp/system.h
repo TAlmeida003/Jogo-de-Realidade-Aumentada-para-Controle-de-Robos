@@ -4,7 +4,7 @@
  * Machine generated for CPU 'nios2_gen2_0' in SOPC Builder design 'IO_contoller'
  * SOPC Builder design path: C:/Users/thiag/Documents/New_Ic/IO_contoller.sopcinfo
  *
- * Generated: Wed Sep 25 23:38:11 BRT 2024
+ * Generated: Mon Sep 30 08:16:45 BRT 2024
  */
 
 /*

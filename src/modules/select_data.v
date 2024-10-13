@@ -46,8 +46,8 @@ module select_data (
     edge_capture ec(
         /*I*/ .clk(clk),                     // Sinal de clock
         /*I*/ .rst_n(rst_n),     // Habilita o cancelamento de ruído
-        /*I*/ .enable(enable),                 // Habilita a detecção de bordas
-        /*I*/ .data(data),                   // Sinal de entrada
+        /*I*/ .enable(enable & en_noise_cancelling),                 // Habilita a detecção de bordas
+        /*I*/ .data(reg_data),                   // Sinal de entrada
         /*I*/ .clr(clr),                   // Sinal de entrada
 		  /*I*/ .interrupt_mask(interrupt_mask),
 		  /*I*/ .select_interrupt(select_interrupt),
@@ -59,6 +59,6 @@ module select_data (
 		  /*O*/ .irq(irq)
     );
 
-    assign capture = (en_noise_cancelling) ? edge_capture : reg_data; 
+    assign capture = edge_capture; 
     
 endmodule

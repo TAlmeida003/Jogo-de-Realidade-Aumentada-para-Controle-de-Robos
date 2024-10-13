@@ -1,0 +1,38 @@
+#include <stdio.h>
+#include "system.h"
+#include <alt_types.h>
+#include "altera_avalon_pio_regs.h"
+#include "sys/alt_irq.h"
+#include "KEY.h"
+
+void interrupt_handler(void* context, alt_u32 id);
+
+int main() {
+	printf("Teste de Botão\n");
+	initialize_joystick();
+	//close_joystick();
+    alt_ic_isr_register(1, 1, (void *) interrupt_handler, NULL, 0x0);
+
+
+	while (1){
+		/*
+		if (edge_KEY(7, 2)){
+			printf("O botão X trocou de estado\n");
+		}
+		if (is_KEY_released(7)){
+			printf("O botão X foi solto\n");
+		}*/
+		if (is_KEY_pressed(7)){
+			printf("O botão X foi precionado\n");
+		}
+	}
+
+	 return 0;
+}
+
+
+void interrupt_handler (void* context, alt_u32 id){
+	if (is_KEY_released(7)){
+		printf("O botão X foi solto\n");
+	}
+}

@@ -21,9 +21,9 @@ module top(
 		.we_data_lsb_export(we_data_lsb), // we_data_lsb.export
 		.we_data_msb_export(we_data_msb)  // we_data_msb.export
 	);
-	wr_pulse(clk, we, button_reset, wr);
+	wr_pulse wp(clk, we, button_reset, wr);
 	
-	io_avalon_interface(
+	io_avalon_interface ioai(
 		.clk(clk),
 		.rst_n(button_reset),
 		.we(wr),

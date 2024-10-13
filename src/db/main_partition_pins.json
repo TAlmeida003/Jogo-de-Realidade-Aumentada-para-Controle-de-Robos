@@ -36,7 +36,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "SELECT",
+					"name" : "button_reset",
 					"strict" : false
 				},
 				{
@@ -44,7 +44,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "button_reset",
+					"name" : "SELECT",
 					"strict" : false
 				},
 				{
@@ -76,19 +76,19 @@
 					"strict" : false
 				},
 				{
-					"name" : "LEFT",
-					"strict" : false
-				},
-				{
-					"name" : "UP",
-					"strict" : false
-				},
-				{
 					"name" : "RIGHT",
 					"strict" : false
 				},
 				{
+					"name" : "LEFT",
+					"strict" : false
+				},
+				{
 					"name" : "DOWN",
+					"strict" : false
+				},
+				{
+					"name" : "UP",
 					"strict" : false
 				},
 				{

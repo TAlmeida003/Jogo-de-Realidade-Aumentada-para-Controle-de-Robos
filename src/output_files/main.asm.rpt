@@ -1,5 +1,5 @@
 Assembler report for main
-Wed Sep 25 20:55:50 2024
+Sun Oct 13 15:01:33 2024
 Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
@@ -39,7 +39,7 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Wed Sep 25 20:55:50 2024 ;
+; Assembler Status      ; Successful - Sun Oct 13 15:01:33 2024 ;
 ; Revision Name         ; main                                  ;
 ; Top-level Entity Name ; top                                   ;
 ; Family                ; Cyclone IV E                          ;
@@ -78,8 +78,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------+----------------------------------------------------------------+
 ; Option         ; Setting                                                        ;
 +----------------+----------------------------------------------------------------+
-; JTAG usercode  ; 0x002ADC0A                                                     ;
-; Checksum       ; 0x002ADC0A                                                     ;
+; JTAG usercode  ; 0x002B94A5                                                     ;
+; Checksum       ; 0x002B94A5                                                     ;
 +----------------+----------------------------------------------------------------+
 
 
@@ -89,15 +89,15 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
     Info: Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
-    Info: Processing started: Wed Sep 25 20:55:45 2024
+    Info: Processing started: Sun Oct 13 15:01:31 2024
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off teste -c main
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus Prime Assembler was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 4717 megabytes
-    Info: Processing ended: Wed Sep 25 20:55:50 2024
-    Info: Elapsed time: 00:00:05
-    Info: Total CPU time (on all processors): 00:00:03
+    Info: Processing ended: Sun Oct 13 15:01:33 2024
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
 
 

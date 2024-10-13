@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <sch:Settings xmlns:sch="http://www.altera.com/embeddedsw/bsp/schema">
         <BspType>hal</BspType>
-        <BspVersion>default</BspVersion>
-        <BspGeneratedTimeStamp>Sep 25, 2024 11:38:10 PM</BspGeneratedTimeStamp>
-        <BspGeneratedUnixTimeStamp>1727318290869</BspGeneratedUnixTimeStamp>
+        <BspVersion>23.1</BspVersion>
+        <BspGeneratedTimeStamp>Sep 30, 2024 8:16:43 AM</BspGeneratedTimeStamp>
+        <BspGeneratedUnixTimeStamp>1727695003397</BspGeneratedUnixTimeStamp>
         <BspGeneratedLocation>C:\Users\thiag\Documents\New_Ic\software\as_bsp</BspGeneratedLocation>
         <BspSettingsFile>C:\Users\thiag\Documents\New_Ic\software\as_bsp\settings.bsp</BspSettingsFile>
         <SopcDesignFile>C:\Users\thiag\Documents\New_Ic\IO_contoller.sopcinfo</SopcDesignFile>
-        <SystemFileHash>e613cbfc2cd2812bf6e73385ad94ca0eff6f777f125b54c857156e2f1df</SystemFileHash>
+        <SystemFileHash>11a7c9c59898386f799f18e3032dadf5543f13f4ea936b79fc47935f5934d6</SystemFileHash>
         <JdiFile>default</JdiFile>
         <Cpu>nios2_gen2_0</Cpu>
         <SchemaVersion>1.9</SchemaVersion>

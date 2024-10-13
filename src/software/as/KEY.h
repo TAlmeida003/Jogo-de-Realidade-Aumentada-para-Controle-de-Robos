@@ -1,7 +1,6 @@
 #ifndef _KEY_INTERFACE_H_
 #define _KEY_INTERFACE_H_
 
-// Endere�o base do perif�rico
 #define MEMORIA_BASE_JOYSTICK 0x03000
 
 // Offsets dos registradores
@@ -11,7 +10,6 @@
 
 #define IRQ_JOYSTICK 1
 
-// Defini��o dos bot�es
 #define SELECT 0
 #define START  1
 #define TL     2
@@ -21,7 +19,6 @@
 #define Y      6
 #define X      7
 
-// Defini��o dos direcionais
 #define LEFT   8
 #define RIGHT  9
 #define UP     10
@@ -32,23 +29,18 @@
 #include <alt_types.h>
 #include "io.h"
 
-// Controle de acesso ao perif�rico
+
 
 void initialize_joystick();
 
 void close_joystick();
 
-
 // KEY Interface
-int is_KEY_pressed(int button);
-
-int is_KEY_released(int button);
-
-int detect_KEY_change(int button);
-
 int state_KEY(int button);
 
 int edge_KEY(int button, int edge);
+
+void set_KEY_callback(void (*callback)(), int button, int edge);
 
 #endif
 

@@ -1,4 +1,5 @@
 eclipse.preferences.version=1
-newSoftwareExampleWizardPage.defaultLocation=C\:\\Users\\thiag\\Documents\\New_Ic\\software\\as
+newApplicationWizardPage.defaultLocation=C\:\\Users\\thiag\\Documents\\New_Ic\\software\\teste
+newSoftwareExampleWizardPage.defaultLocation=C\:\\Users\\thiag\\Documents\\New_Ic\\software\\test
 newSoftwareExampleWizardPage.sopcinfoFile=C\:\\Users\\thiag\\Documents\\New_Ic\\IO_contoller.sopcinfo
-newSoftwareExampleWizardPage2.newBspLocation=C\:\\Users\\thiag\\Documents\\New_Ic\\software\\as_bsp
+newSoftwareExampleWizardPage2.newBspLocation=C\:\\Users\\thiag\\Documents\\New_Ic\\software\\test_bsp

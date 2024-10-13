@@ -1,0 +1,71 @@
+#include <stdio.h>
+#include "system.h"
+#include <alt_types.h>
+#include "altera_avalon_pio_regs.h"
+#include "sys/alt_irq.h"
+#include "KEY.h"
+
+
+int main() {
+	printf("Teste de Botão\n");
+	initialize_joystick();
+	//close_joystick();
+    //alt_ic_isr_register(1, 1, (void *)interrupt_handler, NULL, 0x0);
+
+
+	while (1){
+		if (edge_KEY(0, 2)){
+			printf("SELECT\n");
+		}
+		if (edge_KEY(1, 2)){
+			printf("START\n");
+		}
+		if (edge_KEY(2, 2)){
+			printf("TL\n");
+		}
+		if (edge_KEY(3, 2)){
+			printf("TR\n");
+		}
+		if (edge_KEY(4, 2)){
+			printf("B\n");
+		}
+		if (edge_KEY(5, 2)){
+			printf("A\n");
+		}
+		if (edge_KEY(6, 2)){
+			printf("Y\n");
+		}
+		if (edge_KEY(7, 1)){
+			printf("X\n");
+		}
+	}
+	/*
+	while (1){
+		if (is_KEY_pressed(0)){
+			printf("O botão SELECT foi precionado\n");
+		}
+		if (is_KEY_pressed(1)){
+			printf("O botão START foi precionado\n");
+		}
+		if (is_KEY_pressed(2)){
+			printf("O botão TL foi precionado\n");
+		}
+		if (is_KEY_pressed(3)){
+			printf("O botão TR foi precionado\n");
+		}
+		if (is_KEY_pressed(4)){
+			printf("O botão B foi precionado\n");
+		}
+		if (is_KEY_pressed(5)){
+			printf("O botão A foi precionado\n");
+		}
+		if (is_KEY_pressed(6)){
+			printf("O botão Y foi precionado\n");
+		}
+		if (is_KEY_pressed(7)){
+			printf("O botão X foi precionado\n");
+		}
+	}*/
+
+	 return 0;
+}

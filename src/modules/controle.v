@@ -31,8 +31,12 @@ module controle #(
         end
     end
 	 
-	 always @(posedge clk or negedge rst_n) begin
-        if (!rst_n) begin
+	 wire aux_rst_n;
+	 
+	 assign aux_rst_n = rst_n && reg_control[0][0];
+	 
+	 always @(posedge clk or negedge aux_rst_n) begin
+        if (!aux_rst_n) begin
             reg_control[1] <= 0;
             done_aux[1] <= 1'b0;
         end else if (we & register_addr == 2'b10) begin
