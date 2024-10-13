@@ -320,10 +320,10 @@ O **módulo MUX** é responsável por selecionar o tipo de dado que será lido p
 
 |Endereço |        Descrição         |
 |--------|---------------------------|
-| 00      | Registrador de dados     |
-| 01      | Registrador de controle  |
-| 10      | Registrador de máscara de interrupção |
-| 11      |  Não utilizado |
+| 0b00      | Registrador de dados     |
+| 0b01      | Registrador de controle  |
+| 0b10      | Registrador de máscara de interrupção |
+| 0b11      |  Não utilizado |
 
 </div>
 <p align="center">
@@ -331,7 +331,7 @@ O **módulo MUX** é responsável por selecionar o tipo de dado que será lido p
 
 <h3> Comunicação com o Processador</h3>
 
-O módulo de I/O é controlado pelo processador NIOS II, que envia comandos para ler e escrever dados nos registradores internos do módulo. Para realizar essa comunicação, utiliza-se acesso direto à memória, sem o uso de mapeamento de memória. O processador se comunica com todos os módulos da arquitetura através do barramento Avalon MM de 32 bits. Para acomodar o módulo de I/O, foi definida uma estrutura de 64 bits, visando a compatibilidade com projetos futuros.
+O módulo de I/O é controlado pelo processador NIOS II, que envia comandos para ler e escrever dados nos registradores internos do módulo. Para realizar essa comunicação, utiliza-se acesso direto à memória, sem o uso de mapeamento de memória. O processador se comunica com todos os módulos da arquitetura através do barramento **Avalon MM** de 32 bits. Para acomodar o módulo de I/O, foi definida uma estrutura de 64 bits, visando a compatibilidade com projetos futuros.
 
 Para integrar o barramento Avalon ao módulo de I/O, foi necessário implementar um intermediário. Embora essa decisão tenha acarretado a perda de alguns sinais de controle, ela permitiu manter a estrutura de 64 bits para expansões futuras. Para utilizar a leitura de dados, o processdor deve escrever o registrador desejado com base no **conjunto de instrução** e, em seguida, ler o valor do registrador de saída.
 
@@ -353,60 +353,76 @@ parâmetros de controle. A tabela a seguir apresenta o conjunto de instruções 
 | 0x04   |  RDEC     | Lê o registrador de dados/edgeCapture|
 | 0x05   |  RCTL     | Lê o registrador de controle|
 | 0x06   |  RMIRQ    | Lê o registrador de máscara de interrupção|
-| 0x07   |  ------   | Não utilizado|
-| 0x08   |  WDEC     | Escreve no registrador de dados/edgeCapture|
-| 0x09   |  WCTL     | Escreve no registrador de controle|   
-| 0x0A   |  WMIRQ    | Escreve no registrador de máscara de interrupção|
+| 0x07   |  WDEC     | Escreve no registrador de dados/edgeCapture|
+| 0x08   |  WCTL     | Escreve no registrador de controle|   
+| 0x09   |  WMIRQ    | Escreve no registrador de máscara de interrupção|
 
 </div>
 <p align="center">
-<strong> Tabela com os opcodes da interface de comunicação</strong></p>
+<strong> Tabela 6: Opcodes da interface de comunicação</strong></p>
 
 <h4> Instruções RCTL, RDEC e RMIRQ</h4>
 
-As instruções RCTL, RDEC e RMIRQ são usadas para ler registradores específicos: RCTL lê o registrador de controle, RDEC lê o registrador de dados/captura de borda (*edgeCapture*), e RMIRQ lê o registrador de máscara de interrupção. Quando o opcode correspondente ao registrador é escrito, o valor do registrador respectivo é enviado para os registradores de leitura. A figura a seguir ilustra o formato dessas instruções.
+As **instruções RCTL, RDEC e RMIRQ** são usadas para ler registradores específicos: RCTL lê o registrador de controle, 
+RDEC lê o registrador de dados/captura de borda (*edgeCapture*), e RMIRQ lê o registrador de máscara de interrupção. 
+Quando o opcode correspondente ao registrador é escrito, o valor do registrador respectivo é enviado para os registradores de 
+leitura. A figura a seguir ilustra o formato dessas instruções.
 
 <p align="center"> <img src="img/INT4.png" width="1000" /> </p> <p align="center"><strong> Figura: Formato das instruções RCTL, RDEC e RMIRQ</strong></p>
 
-Para uso na arquitetura de 32 bits, a instrução é dividida em duas partes: a primeira parte contém o opcode, enquanto a segunda parte é um campo vazio, reservado para possíveis expansões ou configurações adicionais.
+Para uso na arquitetura de 32 bits, a instrução é dividida em duas partes: a primeira (32 bits mais significativos, sigla MSB) parte
+ contém o opcode, enquanto a segunda (32 bits menos significativos, sigla LSB) parte é um campo vazio, reservado para possíveis expansões ou configurações adicionais.
 
 <p align="center"> <img src="img/INT4_32.png" width="1000" /> </p> <p align="center"><strong> Figura: Formato das instruções RCTL, RDEC e RMIRQ com 32 bits</strong></p>
 
 <h4> Instrução WCTL</h4>
 
+A **instrução WCTL** é usada para escrever no registrador de controle. O processador deve enviar o opcode correspondente ao registrador de controle, seguido pelo valor a ser escrito. A figura a seguir ilustra o formato dessa instrução.
+
 <p align="center">
   <img src="img/INT1.png" width = "1000" />
 </p>
-<p align="center"><strong> Formato da instrução WCTL</strong></p>
+<p align="center"><strong> Figura: Formato da instrução WCTL</strong></p>
+
+Para uso na arquitetura de 32 bits, a instrução é dividida em duas partes: a primeira (MSB) parte contém o opcode, o sinal de enable, o sinal de reset e o sinal de cancelamento de ruído, enquanto a segunda (LSB) parte contém o seletor de borda. 
+A figura a seguir ilustra o formato dessa instrução para 32 bits.
 
 <p align="center">
   <img src="img/INT1_32.png" width = "1000" />
 </p>
-<p align="center"><strong> Formato da instrução WCTL para 2 partes de 32 bits</strong></p>
+<p align="center"><strong>  Figura: Formato da instrução WCTL para 2 partes de 32 bits</strong></p>
 
 <h4> Instrução WDEC</h4>
+
+A **instrução WDEC** é usada para escrever no registrador de dados/captura de borda (*edgeCapture*). Ao Utilizar essa instrução, os regisradores de captura de borda são limpos nos locais onde o valor 1 é escrito. A figura a seguir ilustra o formato dessa instrução.
 
 <p align="center">
   <img src="img/INT3.png" width = "1000" />
 </p>
-<p align="center"><strong> Formato da instrução WDEC</strong></p>
+<p align="center"><strong>Figura: Formato da instrução WDEC</strong></p>
 
-<p align="center">
-  <img src="img/INT2_32.png" width = "1000" />
-</p>
-<p align="center"><strong> Formato da instrução WDEC para 2 partes de 32 bits</strong></p>
-
-<h4> Instrução WMIRQ</h4>
-
-<p align="center">
-  <img src="img/INT2.png" width = "1000" />
-</p>
-<p align="center"><strong> Formato da instrução WMIRQ</strong></p>
+Para uso na arquitetura de 32 bits, a instrução é dividido em duas partes: a primeira (MSB) parte contém o opcode, enquanto a segunda (LSB) parte é os registradores de captura de borda a serem limpos. A figura a seguir ilustra o formato dessa instrução para 32 bits.
 
 <p align="center">
   <img src="img/INT3_32.png" width = "1000" />
 </p>
-<p align="center"><strong> Formato da instrução WMIRQ para 2 partes de 32 bits</strong></p>
+<p align="center"><strong> Figura: Formato da instrução WDEC para 2 partes de 32 bits</strong></p>
+
+<h4> Instrução WMIRQ</h4>
+
+A **instrução WMIRQ** é usada para escrever no registrador de máscara de interrupção. Ela permite habilitar ou desabilitar interrupções específicas, configurando o tipo de interrupção para cada periférico. A figura a seguir ilustra o formato dessa instrução.
+
+<p align="center">
+  <img src="img/INT2.png" width = "1000" />
+</p>
+<p align="center"><strong> Figura: Formato da instrução WMIRQ</strong></p>
+
+Para uso na arquitetura de 32 bits, a instrução é dividida em duas partes: a primeira (MSB) parte contém o opcode e a seleção de interrupção, enquanto a segunda (LSB) parte é o seletor de borda. A figura a seguir ilustra o formato dessa instrução para 32 bits.
+
+<p align="center">
+  <img src="img/INT2_32.png" width = "1000" />
+</p>
+<p align="center"><strong> Figura: Formato da instrução WMIRQ para 2 partes de 32 bits</strong></p>
 
 
 </div>
