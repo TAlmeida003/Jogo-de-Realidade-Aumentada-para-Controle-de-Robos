@@ -287,7 +287,7 @@ Uma decisão importante no design foi utilizar uma única saída multiplexada pa
 
 Por exemplo, se o usuário deseja ler o estado atual do botão Y, ele deve escrever o valor **11** na seção correspondente ao botão Y no registrador de controle (CCR). Isso direcionará a saída do módulo IO Data para o estado atual do botão Y. Da mesma forma, para ler as bordas, o usuário precisa ativar o enable e o RCR, e então escrever o valor **00** no campo CCR.
 
-A interrupção é gerada quando um dos registradores de dados detecta uma mudança de borda ou quando o valor atual do periférico é baixo, uma vez que todos os periféricos funcionam como **pull-up**. Para habilitar a interrupção, o usuário deve escrever o valor **1** no campo correspondente ao periférico desejado no registrador de máscara de interrupção, assim como configurar o tipo de interrupção.
+A interrupção é gerada quando um dos registradores de dados detecta uma mudança de borda ou quando o valor atual do periférico é baixo, uma vez que todos os periféricos funcionam como ***pull-up***. Para habilitar a interrupção, o usuário deve escrever o valor **1** no campo correspondente ao periférico desejado no registrador de máscara de interrupção, assim como configurar o tipo de interrupção.
 
 O módulo conta com as seguintes entradas e saídas:
 
@@ -314,7 +314,7 @@ Para garantir a visualização do módulo, segue a imagem do diagrama de blocos 
 
 <h4>MUX</h4>
 
-O **módulo MUX** é responsável por selecionar o tipo de dado que será lido pelo processador. Ele usa como entrada de seleção o endereço do **readdata** e assim pode ter as sequintes saídas:
+O **módulo MUX** é responsável por selecionar o tipo de dado que será lido pelo processador. Ele usa como entrada de seleção o endereço dos registradore e assim pode ter as sequintes saídas:
 
 <div align="center">
 
@@ -441,11 +441,41 @@ Para facilitar o uso do módulo de I/O, foi desenvolvida uma biblioteca em C que
 #include "joystick_io.h"
 ```
 
-Para entender como utilizar as funções do biblioteca, a seguir será explicado o funcionamento de cada uma delas, divididas em funções de controle, funções de leitura de botões e funções de leitura do joystick.
+Para entender como utilizar as funções da biblioteca e suas constantes, a seguir será explicado o funcionamento de cada uma delas.
 
-<h4>Funções de Controle</h4>
+<h3>Constantes</h3>
 
-`initialize_joystick`: Inicializar o módulo de I/O para leitura dos botões e do joystick. Ao chamar essa função o módulo é reiniciado tendo os valores de controle zerados e é habilitado o sinal de enable.
+Para facilitar o uso do módulo de I/O, foram definidas algumas
+constantes que representam o botões, as direções do joystick e 
+as formas de leitura dos botões e do joystick. A tabela a seguir mostra as constantes definidas na biblioteca.
+
+<div align="center">
+
+|Constante | Valor | Descrição |
+|----------|-------|-----------|
+| SELECT   | 0     | Representação do botão SELECT |
+| START    | 1     | Representação do botão START |
+| TL       | 2     | Representação do botão TL |
+| TR       | 3     | Representação do botão TR |
+| B        | 4     | Representação do botão B |
+| A        | 5     | Representação do botão A |
+| Y        | 6     | Representação do botão Y |
+| X        | 7     | Representação do botão X |
+| LEFT     | 8     | Representação da direção LEFT do joystick |
+| RIGHT    | 9     | Representação da direção RIGHT do joystick |
+| UP       | 10    | Representação da direção UP do joystick |
+| DOWN     | 11    | Representação da direção DOWN do joystick |
+| POS_EDGE | 0     | Representação da borda de subida |
+| NEG_EDGE | 1     | Representação da borda de descida |
+| BOTH_EDGE| 2     | Representação de ambas as bordas |
+| LEVEL  | 3     | Representação do estado atual do botão ou direção do joystick |
+
+</div>
+
+
+<h3>Funções</h3>
+
+`initialize_joystick`: Inicializar o módulo de I/O para leitura dos botões e do joystick. Ao chamar essa função o módulo é reiniciado tendo os valores de controle zerados e é habilitado o sinal de enable. Além disso, é habilitado o cancelamento de ruído.
 
 **parâmetros:** 
 A função não recebe parâmetros.
@@ -458,10 +488,9 @@ A função não retorna nada.
 initialize_joystick();
 ```
 
-> 
 > **Observação:** A função deve ser chamada antes de qualquer outra função.
 
-`close_joystick`: Finalizar o módulo de I/O zerando todos os valores de controle e desabilitando o sinal de enable.
+`close_joystick`: Finalizar o módulo de I/O zerando todos os valores de controle.
 
 **parâmetros:**
 A função não recebe parâmetros.
@@ -476,20 +505,178 @@ close_joystick();
 
 > **Observação:** A função  deve ser chamada ao final do programa para liberar os recursos utilizados pelo módulo de I/O.
 
-<h4> Funções de Leitura de Botões</h4>
+`read_KEY`: Ler o estado de um botão específico. Esta função permite verificar o estado de um botão, identificando se houve uma mudança (borda) ou apenas o estado atual do botão.
 
-`read_KEY`: 
+**parâmetros:**
 
-`read_KEY_edge`:
+- `KEY`: O botão a ser lido. Deve ser uma das constantes definidas na biblioteca, como `Y`, `X`, `A`, `B`, `TL`, `TX`, `START` ou `SELECT`.
 
-`read_KEY_edge_all`:
+- `state`: estado a ser verificado. Pode ser uma das seguintes constantes:
 
-<h4> Funções de Leitura do Joystick</h4>
+  - `POS_EDGE`: Verifica se o botão foi pressionado (borda de subida);
 
-`read_JOY`:
+  - `NEG_EDGE`: Verifica se o botão foi solto (borda de descida);
 
-`get_joystick_direction`:
+  - `BOTH_EDGE`: Verifica se houve uma mudança de borda no botão;
 
+  - `LEVEL`: Lê o estado atual do botão, sem considerar mudanças de borda.
+
+**retorno:**
+
+A função retorna **1** se o botão estiver no estado especificado e **0** caso contrário.
+
+**exemplo de uso:**
+```c
+// Verificando se o botão Y foi pressionado
+
+if (read_KEY(Y, POS_EDGE)) {
+    // Botão Y foi pressionado
+}
+```
+
+```c
+// Verificando se o botão B foi solto
+
+if (read_KEY(B, NEG_EDGE)) {
+    // Botão B foi solto
+}
+```
+
+```c
+// Verificar se houve uma mudança de borda no botão A
+
+if (read_KEY(A, BOTH_EDGE)) {
+    // Botão A teve uma mudança de borda
+}
+```
+
+```c
+// Verificar o estado atual do botão X
+
+if (read_KEY(X, LEVEL)) {
+    // Botão X está pressionado
+}
+```
+
+`read_JOYSTICK`: Ler o estado de uma direção específica do joystick. Esta função permite verificar o estado de uma direção do joystick, identificando se houve uma mudança (borda) ou apenas o estado atual da direção.
+
+**parâmetros:**
+
+- `direction`: A direção do joystick a ser lida. Deve ser uma das constantes pré-definidas na biblioteca, como `UP`, `DOWN`, `LEFT`, `RIGHT`.
+
+- `state`: estado a ser verificado. Pode ser uma das seguintes constantes:
+
+  - `POS_EDGE`: Verifica se a direção foi ativada (borda de subida);
+
+  - `NEG_EDGE`: Verifica se a direção foi desativada (borda de descida);
+
+  - `BOTH_EDGE`: Verifica se houve uma mudança de borda na direção;
+
+  - `LEVEL`: Lê o estado atual da direção, sem considerar mudanças de borda.
+
+**retorno:**
+
+A função retorna **1** se a direção estiver no estado especificado e **0** caso contrário.
+
+**exemplo de uso:**
+```c
+// Verificando se a direção UP foi ativada (borda de subida)
+if (read_JOYSTICK(UP, POS_EDGE)) {
+    // A direção UP foi pressionada
+}
+```
+
+```c
+// Verificando se a direção LEFT foi desativada (borda de descida)
+if (read_JOYSTICK(LEFT, NEG_EDGE)) {
+    // A direção LEFT foi solta
+}
+```
+
+```c
+// Verificando se houve uma mudança de borda na direção RIGHT
+if (read_JOYSTICK(RIGHT, BOTH_EDGE)) {
+    // A direção RIGHT teve uma mudança de borda
+}
+```
+
+```c
+// Verificando o estado atual da direção DOWN
+if (read_JOYSTICK(DOWN, LEVEL)) {
+    // A direção DOWN está sendo pressionada
+}
+```
+
+
+`set_callback`: Configurar uma função de callback para ser chamada quando uma interrupção for gerada. Esta função permite definir uma função de callback que será chamada quando uma interrupção for gerada pelo módulo de I/O.
+
+**parâmetros:**
+
+- `callback`: Ponteiro para a função de callback. A função de callback deve ter o seguinte protótipo:
+
+```c
+void callback(void)
+```
+
+**retorno:**
+Sem retorno.
+
+**exemplo de uso:**
+```c
+void my_callback() {
+    // Função de callback
+}
+
+set_callback(my_callback);
+```
+
+> **Observação:** As funções de callback devem ser definidas
+pelo usuário, a biblioteca não fornece a logica de limpeza de interrupção de borda, essa deve ser feita pelo usuário, usando a função `read_JOYSTICK` ou `read_KEY` para limpar a interrupção.
+
+
+`peripheral_enable_callback`: Habilita um periférico específico para gerar interrupções em uma borda específica.
+
+**parâmetros:**
+
+- `peripheral`: O periférico a ser habilitado. Deve ser uma das constantes pré-definidas na biblioteca, como `Y`, `X`, `A`, `B`, `TL`, `TX`, `START` ou `SELECT`.
+
+- `state`: A borda na qual a interrupção deve ser gerada. Deve ser uma das constantes pré-definidas na biblioteca, como `POS_EDGE`, `NEG_EDGE`, `BOTH_EDGE` ou `LEVEL`.
+
+**retorno:**
+Sem retorno.
+
+**exemplo de uso:**
+```c
+// Habilitando o botão Y para gerar interrupções na borda de subida
+peripheral_enable_callback(Y, POS_EDGE);
+```
+```c
+// Habilitando a direção UP do joystick para gerar interrupções na borda de descida
+peripheral_enable_callback(UP, NEG_EDGE);
+```
+```c
+// habilitando o botão SELECT para gerar interrupção em troca de borda
+peripheral_enable_callback(SELECT, BOTH_EDGE);
+```
+```c
+// habilitando o botão START para gerar interrupção por nivel
+peripheral_enable_callback(START, LEVEL);
+```
+
+
+`peripheral_disable_callback`: Desabilita um periférico específico para gerar interrupções.
+
+**parâmetros:**
+
+- `peripheral`: O periférico a ser desabilitado. Deve ser uma das constantes pré-definidas na biblioteca, como `Y`, `X`, `A`, `B`, `TL`, `TX`, `START` ou `SELECT`.
+
+**retorno:**
+Sem retorno.
+
+**exemplo de uso:**
+```c
+peripheral_disable_callback(Y);
+```
 
 </div>
 </div>
