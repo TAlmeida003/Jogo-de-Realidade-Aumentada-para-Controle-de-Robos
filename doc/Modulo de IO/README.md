@@ -329,6 +329,36 @@ O **módulo MUX** é responsável por selecionar o tipo de dado que será lido p
 <p align="center">
 <strong> Tabela 5: Saídas do módulo MUX</strong></p>
 
+<h4>Opcode Control</h4>
+
+O **módulo Opcode Control** é responsável por interpretar os 
+opcodes enviados e direcionalos corretamente para o módulo.
+Nesse sentido, a nivel de hardware, o módulo é capaz de interpretar o formato dos dados tanto de 32 bits quanto de 64 bits, montando os dados para cada um dos formatos. 
+
+Em caso de envio de opcode que não pertence ao módulo,
+o módulo zera a saída para evitar erros de leitura. Usando o
+endereço 0b11, o módulo não realiza nenhuma operação.
+
+O módulo conta com as seguintes entradas e saídas:
+
+<div align="center">
+
+| Nome   | Tipo       | tamanho |         Descrição         |
+|--------|------------|---------|---------------------------|
+|in_reg_data | Entrada    | 64       | Barramento com os dados de enviados pelo processador |
+|opcode | Entrada    | 4       | Barramento com os opcodes enviados pelo processador |
+|out_reg_data | Saída   | 64      | Barramento com os dados de entrada do módulo |
+|we | Saída   | 1      | Sinal de escrita |
+|addr | Saída   | 2      | Barramento com o endereço do registrador|
+
+</div>
+<p align="center">
+<strong> Tabela 6: Entradas e saídas do módulo Opcode Control</strong></p>
+
+Para garantir a visualização do módulo, segue a imagem do diagrama de blocos do módulo.
+
+
+
 <h3> Comunicação com o Processador</h3>
 
 O módulo de I/O é controlado pelo processador NIOS II, que envia comandos para ler e escrever dados nos registradores internos do módulo. Para realizar essa comunicação, utiliza-se acesso direto à memória, sem o uso de mapeamento de memória. O processador se comunica com todos os módulos da arquitetura através do barramento **Avalon MM** de 32 bits. Para acomodar o módulo de I/O, foi definida uma estrutura de 64 bits, visando a compatibilidade com projetos futuros.
@@ -451,24 +481,24 @@ as formas de leitura dos botões e do joystick. A tabela a seguir mostra as cons
 
 <div align="center">
 
-|Constante | Valor | Descrição |
-|----------|-------|-----------|
-| SELECT   | 0     | Representação do botão SELECT |
-| START    | 1     | Representação do botão START |
-| TL       | 2     | Representação do botão TL |
-| TR       | 3     | Representação do botão TR |
-| B        | 4     | Representação do botão B |
-| A        | 5     | Representação do botão A |
-| Y        | 6     | Representação do botão Y |
-| X        | 7     | Representação do botão X |
-| LEFT     | 8     | Representação da direção LEFT do joystick |
-| RIGHT    | 9     | Representação da direção RIGHT do joystick |
-| UP       | 10    | Representação da direção UP do joystick |
-| DOWN     | 11    | Representação da direção DOWN do joystick |
-| POS_EDGE | 0     | Representação da borda de subida |
-| NEG_EDGE | 1     | Representação da borda de descida |
-| BOTH_EDGE| 2     | Representação de ambas as bordas |
-| LEVEL  | 3     | Representação do estado atual do botão ou direção do joystick |
+|Constante         | Valor | Descrição |
+|------------------|-------|-----------|
+| SELECT_BUTTON    | 0     | Representação do botão SELECT |
+| START_BUTTON     | 1     | Representação do botão START |
+| TL_BUTTON        | 2     | Representação do botão TL |
+| TR_BUTTON        | 3     | Representação do botão TR |
+| B_BUTTON         | 4     | Representação do botão B |
+| A_BUTTON         | 5     | Representação do botão A |
+| Y_BUTTON         | 6     | Representação do botão Y |
+| X_BUTTON         | 7     | Representação do botão X |
+| LEFT_DIR      | 8     | Representação da direção LEFT do joystick |
+| RIGHT_DIR     | 9     | Representação da direção RIGHT do joystick |
+| UP_DIR        | 10    | Representação da direção UP do joystick |
+| DOWN_DIR      | 11    | Representação da direção DOWN do joystick |
+| POS_EDGE  | 0     | Representação da borda de subida |
+| NEG_EDGE  | 1     | Representação da borda de descida |
+| BOTH_EDGE | 2     | Representação de ambas as bordas |
+| LEVEL    | 3     | Representação do estado atual do botão ou direção do joystick |
 
 </div>
 
@@ -685,29 +715,53 @@ peripheral_disable_callback(Y);
 <div align="justify"> 
 <div id="AP"> 
 
+
 <h2>Análise de Pinout</h2>
+
+Para utilizar o projeto é necessário usar alguns pinos e periféricos da FPGA DE0-Nano. A tabela a seguir mostra a pinagem utilizada no projeto.
+
 <div align="center">
 
-| PIN | Name PIN | FPGA PIN | Função no Controle |
+| PIN | Name PIN | FPGA PIN | Função             |
 |-----|----------|----------|--------------------|
-| 2   | GPIO0_00  | PIN_D3  | Y                  |
-| 4   | GPIO0_01  | PIN_C3  | START              |
-| 6   | GPIO0_03  | PIN_A3  | A                  |
-| 8   | GPIO0_05  | PIN_B4  | RIGHT              |
-| 10  | GPIO0_07  | PIN_B5  | LEFT               |
-| 14  | GPIO0_09  | PIN_D5  | DOWN               |
-| 16  | GPIO0_011 | PIN_A6  | UP                 |
-| 18  | GPIO0_013 | PIN_D6  | B                  |
-| 20  | GPIO0_015 | PIN_C6  | TR                 |
-| 22  | GPIO0_017 | PIN_E6  | SELECT             |
-| 24  | GPIO0_019 | PIN_D8  | X                  |
-| 26  | GPIO0_021 | PIN_F8  | TL                 |
-| -   | CLOCK_50  | PIN_R8  | -                  |
+| 39  | GPIO0_132 | PIN_J13 | Botão Y            |
+| 37  | GPIO0_130 | PIN_C3  | Botão START        |
+| 35  | GPIO0_128 | PIN_A3  | Botão A            |
+| 33  | GPIO0_126 | PIN_B4  | Direcional RIGHT   |
+| 31  | GPIO0_124 | PIN_B5  | Direcional LEFT    |
+| 40  | GPIO0_133 | PIN_D5  | Direcional DOWN    |
+| 38  | GPIO0_131 | PIN_A6  | Direcional UP      |
+| 36  | GPIO0_129 | PIN_D6  | Botão B            |
+| 34  | GPIO0_127 | PIN_C6  | Botão TR           |
+| 32  | GPIO0_125 | PIN_E6  | Botão SELECT       |
+| 28  | GPIO0_123 | PIN_F8  | Botão TL           |
+| 26  | GPIO0_121 | PIN_D8  | Botão X            |
+| -   | CLOCK_50  | PIN_R8  | CLOCK principal    |
+| -   | KEY1      | PIN_E1  | Botão de reset     |
 
 </div>
 
 <p align="center">
-<strong> Tabela com a pinagem do FPGA De0-Nano</strong></p>
+<strong> Tabela: Pinagem do FPGA De0-Nano</strong></p>
+
+Para utilizar os botões do controle foi ncessario utilizar um resistor de *pull-up* interno da FPGA, para isso foi necessário configurar o pino como entrada e ativar o resistor de *weak pull-up resistor*. Para visualizar
+como foi feito a configuração dos pinos, segue o *chip planner* do Quartus.
+
+<p align="center">
+  <img src="img/chip-planner.png" width = "1000" />
+</p>
+<p align="center"><strong>Figura: Chip Planner do Quartus</strong></p>
+
+</div>
+</div>
+
+![-----------------------------------------------------](img/len.png)
+<div align="justify"> 
+<div id="AR"> 
+
+<h2>Análise de Recursos</h2>
+
+
 
 </div>
 </div>
@@ -732,15 +786,6 @@ peripheral_disable_callback(Y);
 </div>
 
 
-
-![-----------------------------------------------------](img/len.png)
-<div align="justify"> 
-<div id="EP"> 
-
-<h2>Execução do Projeto</h2>
-
-</div>
-</div>
 
 ![-----------------------------------------------------](img/len.png)
 <div align="justify"> 
