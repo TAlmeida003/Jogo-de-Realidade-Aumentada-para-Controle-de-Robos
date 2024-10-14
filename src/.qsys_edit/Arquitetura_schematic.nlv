@@ -1,0 +1,43 @@
+# # File gsaved with Nlview version 6.3.8  2013-12-19 bk=1.2992 VDI=34 GEI=35
+# 
+preplace inst Arquitetura.rd_joystick_msb -pg 1 -lvl 5 -y 130
+preplace inst Arquitetura.data_A -pg 1 -lvl 6 -y 440
+preplace inst Arquitetura.nios2_gen2_0.clock_bridge -pg 1
+preplace inst Arquitetura.data_B -pg 1 -lvl 6 -y 700
+preplace inst Arquitetura.nios2_gen2_0.cpu -pg 1
+preplace inst Arquitetura.wrfull -pg 1 -lvl 5 -y 910
+preplace inst Arquitetura.nios2_gen2_0.reset_bridge -pg 1
+preplace inst Arquitetura.jtag_uart_0 -pg 1 -lvl 6 -y 1000
+preplace inst Arquitetura.wrreg -pg 1 -lvl 5 -y 1050
+preplace inst Arquitetura -pg 1 -lvl 1 -y 40 -regy -20
+preplace inst Arquitetura.we_joystick_lsb -pg 1 -lvl 5 -y 330
+preplace inst Arquitetura.nios2_gen2_0 -pg 1 -lvl 4 -y 380
+preplace inst Arquitetura.we_joystick_msb -pg 1 -lvl 5 -y 470
+preplace inst Arquitetura.sysid_qsys_0 -pg 1 -lvl 6 -y 920
+preplace inst Arquitetura.reset_pulseCounter -pg 1 -lvl 5 -y 570
+preplace inst Arquitetura.we_joystick -pg 1 -lvl 5 -y 230
+preplace inst Arquitetura.rd_joystick_lsb -pg 1 -lvl 5 -y 30
+preplace inst Arquitetura.onchip_memory2_0 -pg 1 -lvl 6 -y 840
+preplace inst Arquitetura.clk_0 -pg 1 -lvl 1 -y 660
+preplace inst Arquitetura.irq_joystick -pg 1 -lvl 5 -y 770
+preplace inst Arquitetura.screen -pg 1 -lvl 5 -y 670
+preplace netloc EXPORT<net_container>Arquitetura</net_container>(SLAVE)we_joystick.external_connection,(SLAVE)Arquitetura.we_joystick) 1 0 5 NJ 260 NJ 260 NJ 260 NJ 260 NJ
+preplace netloc EXPORT<net_container>Arquitetura</net_container>(SLAVE)we_joystick_lsb.external_connection,(SLAVE)Arquitetura.we_joystick_lsb) 1 0 5 NJ 340 NJ 340 NJ 340 NJ 340 NJ
+preplace netloc EXPORT<net_container>Arquitetura</net_container>(SLAVE)screen.external_connection,(SLAVE)Arquitetura.screen) 1 0 5 NJ 760 NJ 760 NJ 760 NJ 760 NJ
+preplace netloc EXPORT<net_container>Arquitetura</net_container>(SLAVE)Arquitetura.wrreg,(SLAVE)wrreg.external_connection) 1 0 5 NJ 1080 NJ 1080 NJ 1080 NJ 1080 NJ
+preplace netloc EXPORT<net_container>Arquitetura</net_container>(SLAVE)rd_joystick_msb.external_connection,(SLAVE)Arquitetura.rd_joystick_msb) 1 0 5 NJ 160 NJ 160 NJ 160 NJ 160 NJ
+preplace netloc EXPORT<net_container>Arquitetura</net_container>(SLAVE)Arquitetura.rd_joystick_lsb,(SLAVE)rd_joystick_lsb.external_connection) 1 0 5 NJ 60 NJ 60 NJ 60 NJ 60 NJ
+preplace netloc EXPORT<net_container>Arquitetura</net_container>(SLAVE)we_joystick_msb.external_connection,(SLAVE)Arquitetura.we_joystick_msb) 1 0 5 NJ 630 NJ 630 NJ 630 NJ 630 NJ
+preplace netloc EXPORT<net_container>Arquitetura</net_container>(SLAVE)Arquitetura.data_b,(SLAVE)data_B.external_connection) 1 0 6 NJ 610 NJ 610 NJ 610 NJ 610 NJ 460 NJ
+preplace netloc INTERCONNECT<net_container>Arquitetura</net_container>(SLAVE)data_A.reset,(SLAVE)sysid_qsys_0.reset,(SLAVE)jtag_uart_0.reset,(SLAVE)we_joystick.reset,(SLAVE)nios2_gen2_0.reset,(SLAVE)rd_joystick_lsb.reset,(SLAVE)screen.reset,(MASTER)nios2_gen2_0.debug_reset_request,(SLAVE)we_joystick_lsb.reset,(MASTER)clk_0.clk_reset,(SLAVE)wrfull.reset,(SLAVE)data_B.reset,(SLAVE)onchip_memory2_0.reset1,(SLAVE)rd_joystick_msb.reset,(SLAVE)irq_joystick.reset,(SLAVE)wrreg.reset,(SLAVE)we_joystick_msb.reset,(SLAVE)reset_pulseCounter.reset) 1 1 5 350 530 NJ 530 1060 650 1690 1160 2010
+preplace netloc FAN_OUT<net_container>Arquitetura</net_container>(MASTER)nios2_gen2_0.irq,(SLAVE)jtag_uart_0.irq,(SLAVE)irq_joystick.irq) 1 4 2 1650 900 NJ
+preplace netloc FAN_OUT<net_container>Arquitetura</net_container>(SLAVE)we_joystick_lsb.clk,(SLAVE)data_B.clk,(SLAVE)rd_joystick_msb.clk,(SLAVE)data_A.clk,(SLAVE)we_joystick_msb.clk,(MASTER)clk_0.clk,(SLAVE)reset_pulseCounter.clk,(SLAVE)nios2_gen2_0.clk,(SLAVE)we_joystick.clk,(SLAVE)jtag_uart_0.clk,(SLAVE)sysid_qsys_0.clk,(SLAVE)irq_joystick.clk,(SLAVE)rd_joystick_lsb.clk,(SLAVE)wrfull.clk,(SLAVE)onchip_memory2_0.clk1,(SLAVE)screen.clk,(SLAVE)wrreg.clk) 1 1 5 330 510 NJ 510 1040 570 1730 1040 1990
+preplace netloc EXPORT<net_container>Arquitetura</net_container>(SLAVE)reset_pulseCounter.external_connection,(SLAVE)Arquitetura.reset_pulsecounter) 1 0 5 NJ 650 NJ 650 NJ 650 NJ 680 NJ
+preplace netloc EXPORT<net_container>Arquitetura</net_container>(SLAVE)irq_joystick.external_connection,(SLAVE)Arquitetura.irq_joystick) 1 0 5 NJ 800 NJ 800 NJ 800 NJ 800 NJ
+preplace netloc EXPORT<net_container>Arquitetura</net_container>(SLAVE)wrfull.external_connection,(SLAVE)Arquitetura.wrfull) 1 0 5 NJ 820 NJ 820 NJ 820 NJ 820 NJ
+preplace netloc EXPORT<net_container>Arquitetura</net_container>(SLAVE)Arquitetura.reset,(SLAVE)clk_0.clk_in_reset) 1 0 1 NJ
+preplace netloc EXPORT<net_container>Arquitetura</net_container>(SLAVE)data_A.external_connection,(SLAVE)Arquitetura.data_a) 1 0 6 NJ 550 NJ 550 NJ 550 NJ 550 NJ 440 NJ
+preplace netloc EXPORT<net_container>Arquitetura</net_container>(SLAVE)Arquitetura.clk,(SLAVE)clk_0.clk_in) 1 0 1 NJ
+preplace netloc INTERCONNECT<net_container>Arquitetura</net_container>(SLAVE)we_joystick_lsb.s1,(MASTER)nios2_gen2_0.data_master,(SLAVE)irq_joystick.s1,(SLAVE)nios2_gen2_0.debug_mem_slave,(SLAVE)wrfull.s1,(SLAVE)rd_joystick_lsb.s1,(SLAVE)we_joystick_msb.s1,(SLAVE)onchip_memory2_0.s1,(SLAVE)sysid_qsys_0.control_slave,(SLAVE)jtag_uart_0.avalon_jtag_slave,(SLAVE)data_B.s1,(SLAVE)data_A.s1,(SLAVE)reset_pulseCounter.s1,(MASTER)nios2_gen2_0.instruction_master,(SLAVE)we_joystick.s1,(SLAVE)wrreg.s1,(SLAVE)rd_joystick_msb.s1,(SLAVE)screen.s1) 1 3 3 1080 590 1630 1020 1970
+levelinfo -pg 1 0 120 2240
+levelinfo -hier Arquitetura 130 160 550 1020 1370 1800 2080 2230

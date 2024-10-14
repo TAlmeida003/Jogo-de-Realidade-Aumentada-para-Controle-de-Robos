@@ -1,0 +1,259 @@
+# Loading project testFrequency_Divisor
+# reading /opt/intelFPGA_lite/20.1/modelsim_ase/linuxaloem/../modelsim.ini
+# Loading project test_decoderInstruction
+# Compile of decoderInstruction_test.v was successful.
+# Compile of decoderInstruction.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim work.decodeInstruction_test -t ns
+# vsim work.decodeInstruction_test -t ns 
+# Start time: 08:35:14 on May 05,2021
+# Loading work.decodeInstruction_test
+# Loading work.decorderInstruction
+# ** Error (suppressible): (vsim-3389) Port 'clk' not found in the connected module (1st connection).
+#    Time: 0 ns  Iteration: 0  Instance: /decodeInstruction_test/decorderInstruction_inst File: /home/gabriel/Documents/ConsoleFPGA/testes/decoderInstruction_test/decoderInstruction_test.v Line: 36
+# ** Error (suppressible): (vsim-3389) Port 'reset' not found in the connected module (6th connection).
+#    Time: 0 ns  Iteration: 0  Instance: /decodeInstruction_test/decorderInstruction_inst File: /home/gabriel/Documents/ConsoleFPGA/testes/decoderInstruction_test/decoderInstruction_test.v Line: 36
+# Error loading design
+# End time: 08:35:15 on May 05,2021, Elapsed time: 0:00:01
+# Errors: 2, Warnings: 6
+# Compile of decoderInstruction_test.v failed with 1 errors.
+# Compile of decoderInstruction.v was successful.
+# 2 compiles, 1 failed with 1 error.
+# Compile of decoderInstruction_test.v was successful.
+# Compile of decoderInstruction.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -t ns work.decodeInstruction_test
+# vsim -t ns work.decodeInstruction_test 
+# Start time: 08:43:44 on May 05,2021
+# Loading work.decodeInstruction_test
+# Loading work.decorderInstruction
+add wave -position insertpoint  \
+sim:/decodeInstruction_test/clk_en
+add wave -position insertpoint  \
+sim:/decodeInstruction_test/dataA
+add wave -position insertpoint  \
+sim:/decodeInstruction_test/dataB
+add wave -position insertpoint  \
+sim:/decodeInstruction_test/out_opcode
+add wave -position insertpoint  \
+sim:/decodeInstruction_test/out_register
+add wave -position insertpoint  \
+sim:/decodeInstruction_test/out_data
+add wave -position insertpoint  \
+sim:/decodeInstruction_test/new_instruction
+# Compile of decoderInstruction_test.v was successful.
+# Compile of decoderInstruction.v was successful.
+# 2 compiles, 0 failed with no errors.
+run -all
+# out_opcode: 0001 | out_register: 11111111111111 | out_data: 00000000000000000000000000111000
+# out_opcode: 1111 | out_register: 00000000000000 | out_data: 00000000000000000000000000000000
+# ** Note: $stop    : /home/gabriel/Documents/ConsoleFPGA/testes/decoderInstruction_test/decoderInstruction_test.v(35)
+#    Time: 40 ns  Iteration: 1  Instance: /decodeInstruction_test
+# Break in Module decodeInstruction_test at /home/gabriel/Documents/ConsoleFPGA/testes/decoderInstruction_test/decoderInstruction_test.v line 35
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.decodeInstruction_test
+# Loading work.decorderInstruction
+force -freeze sim:/decodeInstruction_test/clk_en 0 0, 1 {5 ns} -r 10
+# Compile of decoderInstruction_test.v was successful.
+# Compile of decoderInstruction.v was successful.
+# 2 compiles, 0 failed with no errors.
+run -all
+# out_opcode: 0001 | out_register: 11111111111111 | out_data: 00000000000000000000000000111000
+# out_opcode: 1111 | out_register: 00000000000000 | out_data: 00000000000000000000000000000000
+# out_opcode: 0001 | out_register: 11111111111111 | out_data: 00000000000000000000000000111000
+# out_opcode: 0000 | out_register: 00000000000000 | out_data: 00100110010000100101100000000000
+# ** Note: $stop    : /home/gabriel/Documents/ConsoleFPGA/testes/decoderInstruction_test/decoderInstruction_test.v(37)
+#    Time: 55 ns  Iteration: 0  Instance: /decodeInstruction_test
+# Break in Module decodeInstruction_test at /home/gabriel/Documents/ConsoleFPGA/testes/decoderInstruction_test/decoderInstruction_test.v line 37
+# Compile of decoderInstruction_test.v was successful.
+# Compile of decoderInstruction.v was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.decodeInstruction_test
+# Loading work.decorderInstruction
+force -freeze sim:/decodeInstruction_test/clk_en 0 0, 1 {5 ns} -r 10
+run -all
+# out_opcode: 0001 | out_register: 11111111111111 | out_data: 00000000000000000000000000111000
+# out_opcode: 1111 | out_register: 00000000000000 | out_data: 00000000000000000000000000000000
+# out_opcode: 0000 | out_register: 00000000000000 | out_data: 00100110010000100101100000000000
+# ** Note: $stop    : /home/gabriel/Documents/ConsoleFPGA/testes/decoderInstruction_test/decoderInstruction_test.v(37)
+#    Time: 55 ns  Iteration: 0  Instance: /decodeInstruction_test
+# Break in Module decodeInstruction_test at /home/gabriel/Documents/ConsoleFPGA/testes/decoderInstruction_test/decoderInstruction_test.v line 37
+# Compile of decoderInstruction_test.v was successful.
+# Compile of decoderInstruction.v was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.decodeInstruction_test
+# Loading work.decorderInstruction
+run -all
+# ** Note: $stop    : /home/gabriel/Documents/ConsoleFPGA/testes/decoderInstruction_test/decoderInstruction_test.v(37)
+#    Time: 55 ns  Iteration: 1  Instance: /decodeInstruction_test
+# Break in Module decodeInstruction_test at /home/gabriel/Documents/ConsoleFPGA/testes/decoderInstruction_test/decoderInstruction_test.v line 37
+# Compile of decoderInstruction_test.v was successful.
+# Compile of decoderInstruction.v was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.decodeInstruction_test
+# Loading work.decorderInstruction
+force -freeze sim:/decodeInstruction_test/clk_en 0 0, 1 {5 ns} -r 10
+run -all
+# out_opcode: 1111 | out_register: 00000000000000 | out_data: 00000000000000000000000000000000
+# out_opcode: 0001 | out_register: 11111111111111 | out_data: 00000000000000000000000000111000
+# out_opcode: 1111 | out_register: 00000000000000 | out_data: 00000000000000000000000000000000
+# out_opcode: 0000 | out_register: 00000000000000 | out_data: 00100110010000100101100000000000
+# ** Note: $stop    : /home/gabriel/Documents/ConsoleFPGA/testes/decoderInstruction_test/decoderInstruction_test.v(37)
+#    Time: 55 ns  Iteration: 0  Instance: /decodeInstruction_test
+# Break in Module decodeInstruction_test at /home/gabriel/Documents/ConsoleFPGA/testes/decoderInstruction_test/decoderInstruction_test.v line 37
+# Compile of decoderInstruction_test.v was successful.
+# Compile of decoderInstruction.v was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.decodeInstruction_test
+# Loading work.decorderInstruction
+force -freeze sim:/decodeInstruction_test/clk_en 0 0, 1 {5 ns} -r 10
+run -all
+# out_opcode: 1111 | out_register: 00000000000000 | out_data: 00000000000000000000000000000000
+# out_opcode: 0001 | out_register: 11111111111111 | out_data: 00000000000000000000000000111000
+# out_opcode: 1111 | out_register: 00000000000000 | out_data: 00000000000000000000000000000000
+# out_opcode: 0000 | out_register: 00000000000000 | out_data: 00100110010000100101100000000000
+# ** Note: $stop    : /home/gabriel/Documents/ConsoleFPGA/testes/decoderInstruction_test/decoderInstruction_test.v(34)
+#    Time: 55 ns  Iteration: 0  Instance: /decodeInstruction_test
+# Break in Module decodeInstruction_test at /home/gabriel/Documents/ConsoleFPGA/testes/decoderInstruction_test/decoderInstruction_test.v line 34
+vsim -t ns work.decodeInstruction_test
+# End time: 10:36:10 on May 05,2021, Elapsed time: 1:52:26
+# Errors: 0, Warnings: 1
+# vsim -t ns work.decodeInstruction_test 
+# Start time: 10:36:10 on May 05,2021
+# Loading work.decodeInstruction_test
+# Loading work.decorderInstruction
+quit -sim
+# End time: 10:37:55 on May 05,2021, Elapsed time: 0:01:45
+# Errors: 0, Warnings: 1
+cd /home/gabriel/Documents/ConsoleFPGA/testes/ControlUnitTest
+# reading /opt/intelFPGA_lite/20.1/modelsim_ase/linuxaloem/../modelsim.ini
+vsim -t ns work.controleUnitTeste
+# vsim -t ns work.controleUnitTeste 
+# Start time: 10:39:20 on May 05,2021
+# ** Fatal: (vsim-3381) Obsolete library format for design unit. Design unit '/home/gabriel/Documents/ConsoleFPGA/testes/ControlUnitTest/work.controleUnitTeste'
+#    Time: 0 ns  Iteration: 0  Root: / File: NOFILE
+# FATAL ERROR while loading design
+# Error loading design
+# End time: 10:39:20 on May 05,2021, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# Loading project controlUnit_test
+# Compile of controlUnitTeste.v was successful.
+# Compile of controlUnit.v was successful.
+# 2 compiles, 0 failed with no errors.
+# Compile of controlUnitTeste.v was successful.
+# Compile of controlUnit.v was successful.
+# 2 compiles, 0 failed with no errors.
+# Compile of controlUnitTeste.v was successful.
+# Compile of controlUnit.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -t ns work.controleUnitTeste
+# vsim -t ns work.controleUnitTeste 
+# Start time: 11:27:40 on May 05,2021
+# Loading work.controleUnitTeste
+# Loading work.controlUnit
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'opCode'. The port definition is at: /home/gabriel/Documents/ConsoleFPGA/modulos/ControlUnit/controlUnit.v(28).
+#    Time: 0 ns  Iteration: 0  Instance: /controleUnitTeste/controlUnit_inst File: /home/gabriel/Documents/ConsoleFPGA/testes/ControlUnitTest/controlUnitTeste.v Line: 62
+vsim -t ns work.controleUnitTeste
+# End time: 11:28:04 on May 05,2021, Elapsed time: 0:00:24
+# Errors: 0, Warnings: 9
+# vsim -t ns work.controleUnitTeste 
+# Start time: 11:28:04 on May 05,2021
+# Loading work.controleUnitTeste
+# Loading work.controlUnit
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'opCode'. The port definition is at: /home/gabriel/Documents/ConsoleFPGA/modulos/ControlUnit/controlUnit.v(28).
+#    Time: 0 ns  Iteration: 0  Instance: /controleUnitTeste/controlUnit_inst File: /home/gabriel/Documents/ConsoleFPGA/testes/ControlUnitTest/controlUnitTeste.v Line: 62
+# Compile of controlUnitTeste.v was successful.
+# Compile of controlUnit.v was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.controleUnitTeste
+# Loading work.controlUnit
+vsim -t ns work.controleUnitTeste
+# End time: 11:30:13 on May 05,2021, Elapsed time: 0:02:09
+# Errors: 0, Warnings: 1
+# vsim -t ns work.controleUnitTeste 
+# Start time: 11:30:13 on May 05,2021
+# Loading work.controleUnitTeste
+# Loading work.controlUnit
+add wave -position insertpoint  \
+sim:/controleUnitTeste/clk
+add wave -position insertpoint  \
+sim:/controleUnitTeste/reset
+add wave -position insertpoint  \
+sim:/controleUnitTeste/controlUnit_inst/opCode
+add wave -position insertpoint  \
+sim:/controleUnitTeste/controlUnit_inst/printtingScreen
+add wave -position insertpoint  \
+sim:/controleUnitTeste/controlUnit_inst/doneInst
+add wave -position insertpoint  \
+sim:/controleUnitTeste/controlUnit_inst/fifo_empty
+add wave -position insertpoint  \
+sim:/controleUnitTeste/controlUnit_inst/state
+add wave -position insertpoint  \
+sim:/controleUnitTeste/controlUnit_inst/next
+# Compile of controlUnitTeste.v was successful.
+# Compile of controlUnit.v was successful.
+# 2 compiles, 0 failed with no errors.
+force -freeze sim:/controleUnitTeste/clk 1 0, 0 {5 ns} -r 10
+run -all
+# ** Warning: (vsim-7) Failed to open readmem file "/home/gabriel/Documents/ConsoleFPGA/testes/ControlUnitTest/inputs_test2/newInputDatas.mem" in read mode.
+# No such file or directory. (errno = ENOENT)    : /home/gabriel/Documents/ConsoleFPGA/testes/ControlUnitTest/controlUnitTeste.v(42)
+#    Time: 0 ns  Iteration: 0  Instance: /controleUnitTeste
+# ** Note: $stop    : /home/gabriel/Documents/ConsoleFPGA/testes/ControlUnitTest/controlUnitTeste.v(58)
+#    Time: 170 ns  Iteration: 0  Instance: /controleUnitTeste
+# Break in Module controleUnitTeste at /home/gabriel/Documents/ConsoleFPGA/testes/ControlUnitTest/controlUnitTeste.v line 58
+# Compile of controlUnitTeste.v was successful.
+# Compile of controlUnit.v was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.controleUnitTeste
+# Loading work.controlUnit
+force -freeze sim:/controleUnitTeste/clk 1 0, 0 {5 ns} -r 10
+run -all
+# ** Warning: (vsim-PLI-3406) Too many digits (7) in data on line 2 of file "/home/gabriel/Documents/ConsoleFPGA/testes/ControlUnitTest/inputs_test2/newInputData.mem". (Max is 4.)    : /home/gabriel/Documents/ConsoleFPGA/testes/ControlUnitTest/controlUnitTeste.v(42)
+#    Time: 0 ns  Iteration: 0  Instance: /controleUnitTeste
+# ** Note: $stop    : /home/gabriel/Documents/ConsoleFPGA/testes/ControlUnitTest/controlUnitTeste.v(58)
+#    Time: 170 ns  Iteration: 0  Instance: /controleUnitTeste
+# Break in Module controleUnitTeste at /home/gabriel/Documents/ConsoleFPGA/testes/ControlUnitTest/controlUnitTeste.v line 58
+# Compile of controlUnitTeste.v was successful.
+# Compile of controlUnit.v was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.controleUnitTeste
+# Loading work.controlUnit
+force -freeze sim:/controleUnitTeste/clk 1 0, 0 {5 ns} -r 10
+run -all
+# ** Note: $stop    : /home/gabriel/Documents/ConsoleFPGA/testes/ControlUnitTest/controlUnitTeste.v(58)
+#    Time: 170 ns  Iteration: 0  Instance: /controleUnitTeste
+# Break in Module controleUnitTeste at /home/gabriel/Documents/ConsoleFPGA/testes/ControlUnitTest/controlUnitTeste.v line 58
+# Compile of controlUnitTeste.v was successful.
+# Compile of controlUnit.v was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.controleUnitTeste
+# Loading work.controlUnit
+force -freeze sim:/controleUnitTeste/clk 1 0, 0 {5 ns} -r 10
+run -all
+# ** Note: $stop    : /home/gabriel/Documents/ConsoleFPGA/testes/ControlUnitTest/controlUnitTeste.v(58)
+#    Time: 170 ns  Iteration: 0  Instance: /controleUnitTeste
+# Break in Module controleUnitTeste at /home/gabriel/Documents/ConsoleFPGA/testes/ControlUnitTest/controlUnitTeste.v line 58
+restart
+run -all
+# ** Note: $stop    : /home/gabriel/Documents/ConsoleFPGA/testes/ControlUnitTest/controlUnitTeste.v(58)
+#    Time: 170 ns  Iteration: 1  Instance: /controleUnitTeste
+# Break in Module controleUnitTeste at /home/gabriel/Documents/ConsoleFPGA/testes/ControlUnitTest/controlUnitTeste.v line 58
+# End time: 11:49:24 on May 05,2021, Elapsed time: 0:19:11
+# Errors: 0, Warnings: 1

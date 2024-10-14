@@ -1,0 +1,6 @@
+00:45:35 **** Build of configuration Nios II for project sas_bsp ****
+wsl make all 
+Command canceled
+
+00:45:40 Build Cancelled (took 4s.328ms)
+

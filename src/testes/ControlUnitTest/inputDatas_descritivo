@@ -1,0 +1,54 @@
+//ordem: opcode, done, printtingScreen
+//escrita na memória
+0001    //entrou na escrita
+xxxx11  //vai para habilitar impressão
+xxxxx0  //vai para estado de PRONTO.
+0001    //entrou na escrita
+000100  //permanece na escrita
+000110  //terminou a escrita, volta para o estado de PRONTO.
+
+
+//escrita no banco
+0000    //entrou na escrita
+xxxx11  //vai para habilitar impressão
+xxxxx0  //vai para estado de PRONTO.
+0000    //entrou na escrita
+000000  //permanece na escrita
+000010  //terminou a escrita, volta para o estado de PRONTO.
+
+
+//escrita no banco
+0010    //entrou na escrita
+xxxx11  //vai para habilitar impressão
+xxxxx0  //vai para estado de PRONTO.
+0010    //entrou na escrita
+001000  //permanece na escrita
+001010  //terminou a escrita volta para o estado de PRONTO.
+
+//habilitar impressão
+000001   //entrou na impressão
+000001   //permanece na impressão
+000000   //vai para o estado de pronto.
+
+
+//teste do estado de pronto
+000000  //vai para escrita no banco
+000010  //volta para o estado de PRONTO
+001000  //vai para escrita no banco
+001010  //volta para o estado de PRONTO
+000100  //vai para escrita na memória
+000110  //volta para o estado de PRONTO
+000101  //vai para habilitar impressão
+000100  //volta para o estado de PRONTO
+xxxxx0  //permanece no estado de PRONTO
+xxxxx1  //habilita impressão
+xxxxx0  //volta ao estado de PRONTO
+
+
+
+
+
+
+
+
+

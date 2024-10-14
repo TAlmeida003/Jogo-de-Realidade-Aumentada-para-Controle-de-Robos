@@ -1,0 +1,673 @@
+Archive member included to satisfy reference by file (symbol)
+
+/opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul/libgcc.a(lib2-divmod.o)
+                              obj/default/new_asteroids_game.o (__modsi3)
+/opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-rand.o)
+                              obj/default/new_asteroids_game.o (srand)
+/opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-time.o)
+                              obj/default/new_asteroids_game.o (time)
+/opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-gettimeofdayr.o)
+                              /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-time.o) (_gettimeofday_r)
+/opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-impure.o)
+                              /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-time.o) (_impure_ptr)
+/opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-int_errno.o)
+                              /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-gettimeofdayr.o) (errno)
+/opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul/libgcc.a(_muldi3.o)
+                              /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-rand.o) (__muldi3)
+/opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul/libgcc.a(lib2-mul.o)
+                              /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul/libgcc.a(_muldi3.o) (__mulsi3)
+../CollendaProgram_bsp//libhal_bsp.a(alt_gettod.o)
+                              /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-gettimeofdayr.o) (gettimeofday)
+../CollendaProgram_bsp//libhal_bsp.a(alt_load.o)
+                              ../CollendaProgram_bsp//obj/HAL/src/crt0.o (alt_load)
+../CollendaProgram_bsp//libhal_bsp.a(alt_main.o)
+                              ../CollendaProgram_bsp//obj/HAL/src/crt0.o (alt_main)
+../CollendaProgram_bsp//libhal_bsp.a(alt_tick.o)
+                              ../CollendaProgram_bsp//libhal_bsp.a(alt_gettod.o) (_alt_nticks)
+../CollendaProgram_bsp//libhal_bsp.a(alt_sys_init.o)
+                              ../CollendaProgram_bsp//libhal_bsp.a(alt_main.o) (alt_irq_init)
+../CollendaProgram_bsp//libhal_bsp.a(alt_dcache_flush_all.o)
+                              ../CollendaProgram_bsp//libhal_bsp.a(alt_load.o) (alt_dcache_flush_all)
+../CollendaProgram_bsp//libhal_bsp.a(alt_icache_flush_all.o)
+                              ../CollendaProgram_bsp//libhal_bsp.a(alt_load.o) (alt_icache_flush_all)
+../CollendaProgram_bsp//libhal_bsp.a(altera_nios2_gen2_irq.o)
+                              ../CollendaProgram_bsp//libhal_bsp.a(alt_sys_init.o) (altera_nios2_gen2_irq_init)
+/opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul/libgcc.a(_moddi3.o)
+                              ../CollendaProgram_bsp//libhal_bsp.a(alt_gettod.o) (__moddi3)
+/opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul/libgcc.a(_umoddi3.o)
+                              ../CollendaProgram_bsp//libhal_bsp.a(alt_gettod.o) (__umoddi3)
+/opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul/libgcc.a(_clz.o)
+                              /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul/libgcc.a(_moddi3.o) (__clz_tab)
+
+Allocating common symbols
+Common symbol       size              file
+
+errno               0x4               /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-int_errno.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+reset            0x0000000000008000 0x0000000000000020
+onchip_memory2_0 0x0000000000008020 0x0000000000007510
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD ../CollendaProgram_bsp//obj/HAL/src/crt0.o
+LOAD obj/default/lib_graphic_processor/graphic_processor.o
+LOAD obj/default/new_asteroids_game.o
+LOAD /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libstdc++.a
+LOAD /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libm.a
+LOAD /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul/libgcc.a
+START GROUP
+LOAD /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a
+LOAD /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul/libgcc.a
+LOAD ../CollendaProgram_bsp//libhal_bsp.a
+LOAD /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libm.a
+END GROUP
+LOAD /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul/libgcc.a
+                0x0000000000008000                __alt_mem_onchip_memory2_0 = 0x8000
+
+.entry          0x0000000000008000       0x20
+ *(.entry)
+ .entry         0x0000000000008000       0x20 ../CollendaProgram_bsp//obj/HAL/src/crt0.o
+                0x0000000000008000                __reset
+                0x000000000000800c                _exit
+
+.exceptions     0x0000000000008020        0x0
+                0x0000000000008020                PROVIDE (__ram_exceptions_start = ABSOLUTE (.))
+                0x0000000000008020                . = ALIGN (0x20)
+ *(.irq)
+ *(.exceptions.entry.label)
+ *(.exceptions.entry.user)
+ *(.exceptions.entry.ecc_fatal)
+ *(.exceptions.entry)
+ *(.exceptions.irqtest.user)
+ *(.exceptions.irqtest)
+ *(.exceptions.irqhandler.user)
+ *(.exceptions.irqhandler)
+ *(.exceptions.irqreturn.user)
+ *(.exceptions.irqreturn)
+ *(.exceptions.notirq.label)
+ *(.exceptions.notirq.user)
+ *(.exceptions.notirq)
+ *(.exceptions.soft.user)
+ *(.exceptions.soft)
+ *(.exceptions.unknown.user)
+ *(.exceptions.unknown)
+ *(.exceptions.exit.label)
+ *(.exceptions.exit.user)
+ *(.exceptions.exit)
+ *(.exceptions)
+                0x0000000000008020                PROVIDE (__ram_exceptions_end = ABSOLUTE (.))
+                0x0000000000008020                PROVIDE (__flash_exceptions_start = LOADADDR (.exceptions))
+
+.text           0x0000000000008020     0x2704
+                [!provide]                        PROVIDE (stext = ABSOLUTE (.))
+ *(.interp)
+ *(.hash)
+ *(.dynsym)
+ *(.dynstr)
+ *(.gnu.version)
+ *(.gnu.version_d)
+ *(.gnu.version_r)
+ *(.rel.init)
+ *(.rela.init)
+ *(.rel.text .rel.text.* .rel.gnu.linkonce.t.*)
+ *(.rela.text .rela.text.* .rela.gnu.linkonce.t.*)
+ *(.rel.fini)
+ *(.rela.fini)
+ *(.rel.rodata .rel.rodata.* .rel.gnu.linkonce.r.*)
+ *(.rela.rodata .rela.rodata.* .rela.gnu.linkonce.r.*)
+ *(.rel.data .rel.data.* .rel.gnu.linkonce.d.*)
+ *(.rela.data .rela.data.* .rela.gnu.linkonce.d.*)
+ *(.rel.tdata .rel.tdata.* .rel.gnu.linkonce.td.*)
+ *(.rela.tdata .rela.tdata.* .rela.gnu.linkonce.td.*)
+ *(.rel.tbss .rel.tbss.* .rel.gnu.linkonce.tb.*)
+ *(.rela.tbss .rela.tbss.* .rela.gnu.linkonce.tb.*)
+ *(.rel.ctors)
+ *(.rela.ctors)
+ *(.rel.dtors)
+ *(.rela.dtors)
+ *(.rel.got)
+ *(.rela.got)
+ *(.rel.sdata .rel.sdata.* .rel.gnu.linkonce.s.*)
+ *(.rela.sdata .rela.sdata.* .rela.gnu.linkonce.s.*)
+ *(.rel.sbss .rel.sbss.* .rel.gnu.linkonce.sb.*)
+ *(.rela.sbss .rela.sbss.* .rela.gnu.linkonce.sb.*)
+ *(.rel.sdata2 .rel.sdata2.* .rel.gnu.linkonce.s2.*)
+ *(.rela.sdata2 .rela.sdata2.* .rela.gnu.linkonce.s2.*)
+ *(.rel.sbss2 .rel.sbss2.* .rel.gnu.linkonce.sb2.*)
+ *(.rela.sbss2 .rela.sbss2.* .rela.gnu.linkonce.sb2.*)
+ *(.rel.bss .rel.bss.* .rel.gnu.linkonce.b.*)
+ *(.rela.bss .rela.bss.* .rela.gnu.linkonce.b.*)
+ *(.rel.plt)
+ *(.rela.plt)
+ *(.rel.dyn)
+ *(.init)
+ *(.plt)
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ .text          0x0000000000008020       0x3c ../CollendaProgram_bsp//obj/HAL/src/crt0.o
+                0x0000000000008020                _start
+ .text          0x000000000000805c      0x2f8 obj/default/lib_graphic_processor/graphic_processor.o
+                0x0000000000008094                set_sprite
+                0x00000000000080b8                set_background_color
+                0x00000000000080d0                set_background_block
+                0x0000000000008100                increase_coordinate
+                0x0000000000008304                collision
+ .text          0x0000000000008354      0x398 obj/default/new_asteroids_game.o
+                0x0000000000008354                initialize_sprite_random
+                0x00000000000083cc                increase_points
+                0x000000000000846c                collision_between_tiro_and_ast
+                0x0000000000008574                atirar_sp
+ .text.startup  0x00000000000086ec      0xcf0 obj/default/new_asteroids_game.o
+                0x00000000000086ec                main
+ .text          0x00000000000093dc      0x1b4 /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul/libgcc.a(lib2-divmod.o)
+                0x00000000000093dc                __divsi3
+                0x000000000000945c                __modsi3
+                0x00000000000094d0                __udivsi3
+                0x0000000000009534                __umodsi3
+ .text          0x0000000000009590        0x0 /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-rand.o)
+ .text.srand    0x0000000000009590       0x14 /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-rand.o)
+                0x0000000000009590                srand
+ .text.rand     0x00000000000095a4       0x60 /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-rand.o)
+                0x00000000000095a4                rand
+ .text          0x0000000000009604        0x0 /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-time.o)
+ .text.time     0x0000000000009604       0x58 /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-time.o)
+                0x0000000000009604                time
+ .text          0x000000000000965c        0x0 /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-gettimeofdayr.o)
+ .text._gettimeofday_r
+                0x000000000000965c       0x4c /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-gettimeofdayr.o)
+                0x000000000000965c                _gettimeofday_r
+ .text          0x00000000000096a8        0x0 /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-impure.o)
+ .text          0x00000000000096a8        0x0 /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-int_errno.o)
+ .text          0x00000000000096a8      0x104 /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul/libgcc.a(_muldi3.o)
+                0x00000000000096a8                __muldi3
+ .text          0x00000000000097ac       0x28 /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul/libgcc.a(lib2-mul.o)
+                0x00000000000097ac                __mulsi3
+ .text          0x00000000000097d4      0x17c ../CollendaProgram_bsp//libhal_bsp.a(alt_gettod.o)
+                0x00000000000097d4                gettimeofday
+ .text          0x0000000000009950       0xb4 ../CollendaProgram_bsp//libhal_bsp.a(alt_load.o)
+                0x0000000000009950                alt_load
+ .text          0x0000000000009a04       0x2c ../CollendaProgram_bsp//libhal_bsp.a(alt_main.o)
+                0x0000000000009a04                alt_main
+ .text          0x0000000000009a30       0xe8 ../CollendaProgram_bsp//libhal_bsp.a(alt_tick.o)
+                0x0000000000009a30                alt_alarm_stop
+                0x0000000000009a60                alt_tick
+ .text          0x0000000000009b18       0x24 ../CollendaProgram_bsp//libhal_bsp.a(alt_sys_init.o)
+                0x0000000000009b18                alt_irq_init
+                0x0000000000009b38                alt_sys_init
+ .text          0x0000000000009b3c        0x4 ../CollendaProgram_bsp//libhal_bsp.a(alt_dcache_flush_all.o)
+                0x0000000000009b3c                alt_dcache_flush_all
+ .text          0x0000000000009b40        0x4 ../CollendaProgram_bsp//libhal_bsp.a(alt_icache_flush_all.o)
+                0x0000000000009b40                alt_icache_flush_all
+ .text          0x0000000000009b44        0x8 ../CollendaProgram_bsp//libhal_bsp.a(altera_nios2_gen2_irq.o)
+                0x0000000000009b44                altera_nios2_gen2_irq_init
+ .text          0x0000000000009b4c      0x614 /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul/libgcc.a(_moddi3.o)
+                0x0000000000009b4c                __moddi3
+ .text          0x000000000000a160      0x5c4 /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul/libgcc.a(_umoddi3.o)
+                0x000000000000a160                __umoddi3
+ .text          0x000000000000a724        0x0 /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul/libgcc.a(_clz.o)
+ *(.gnu.warning.*)
+ *(.fini)
+                [!provide]                        PROVIDE (__etext = ABSOLUTE (.))
+                [!provide]                        PROVIDE (_etext = ABSOLUTE (.))
+                [!provide]                        PROVIDE (etext = ABSOLUTE (.))
+ *(.eh_frame_hdr)
+                0x000000000000a724                . = ALIGN (0x4)
+                [!provide]                        PROVIDE (__preinit_array_start = ABSOLUTE (.))
+ *(.preinit_array)
+                [!provide]                        PROVIDE (__preinit_array_end = ABSOLUTE (.))
+                [!provide]                        PROVIDE (__init_array_start = ABSOLUTE (.))
+ *(.init_array)
+                [!provide]                        PROVIDE (__init_array_end = ABSOLUTE (.))
+                [!provide]                        PROVIDE (__fini_array_start = ABSOLUTE (.))
+ *(.fini_array)
+                [!provide]                        PROVIDE (__fini_array_end = ABSOLUTE (.))
+ *(.eh_frame)
+ *(.gcc_except_table .gcc_except_table.*)
+ *(.dynamic)
+                [!provide]                        PROVIDE (__CTOR_LIST__ = ABSOLUTE (.))
+ *(.ctors)
+ *(SORT_BY_NAME(.ctors.*))
+                [!provide]                        PROVIDE (__CTOR_END__ = ABSOLUTE (.))
+                [!provide]                        PROVIDE (__DTOR_LIST__ = ABSOLUTE (.))
+ *(.dtors)
+ *(SORT_BY_NAME(.dtors.*))
+                [!provide]                        PROVIDE (__DTOR_END__ = ABSOLUTE (.))
+ *(.jcr)
+                0x000000000000a724                . = ALIGN (0x4)
+
+.rodata         0x000000000000a724      0x100
+                0x000000000000a724                PROVIDE (__ram_rodata_start = ABSOLUTE (.))
+                0x000000000000a724                . = ALIGN (0x4)
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata        0x000000000000a724      0x100 /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul/libgcc.a(_clz.o)
+                0x000000000000a724                __clz_tab
+ *(.rodata1)
+                0x000000000000a824                . = ALIGN (0x4)
+                0x000000000000a824                PROVIDE (__ram_rodata_end = ABSOLUTE (.))
+                0x000000000000a724                PROVIDE (__flash_rodata_start = LOADADDR (.rodata))
+
+.rwdata         0x000000000000a824       0xfc load address 0x000000000000a920
+                0x000000000000a824                PROVIDE (__ram_rwdata_start = ABSOLUTE (.))
+                0x000000000000a824                . = ALIGN (0x4)
+ *(.got.plt)
+ *(.got)
+ *(.data1)
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data          0x000000000000a824        0x0 ../CollendaProgram_bsp//obj/HAL/src/crt0.o
+ .data          0x000000000000a824        0x0 obj/default/lib_graphic_processor/graphic_processor.o
+ .data          0x000000000000a824        0x0 obj/default/new_asteroids_game.o
+ .data          0x000000000000a824        0x0 /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul/libgcc.a(lib2-divmod.o)
+ .data          0x000000000000a824        0x0 /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-rand.o)
+ .data          0x000000000000a824        0x0 /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-time.o)
+ .data          0x000000000000a824        0x0 /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-gettimeofdayr.o)
+ .data          0x000000000000a824        0x0 /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-impure.o)
+ .data.impure_data
+                0x000000000000a824       0xe4 /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-impure.o)
+ .data          0x000000000000a908        0x0 /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-int_errno.o)
+ .data          0x000000000000a908        0x0 /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul/libgcc.a(_muldi3.o)
+ .data          0x000000000000a908        0x0 /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul/libgcc.a(lib2-mul.o)
+ .data          0x000000000000a908        0x0 ../CollendaProgram_bsp//libhal_bsp.a(alt_gettod.o)
+ .data          0x000000000000a908        0x0 ../CollendaProgram_bsp//libhal_bsp.a(alt_load.o)
+ .data          0x000000000000a908        0x0 ../CollendaProgram_bsp//libhal_bsp.a(alt_main.o)
+ .data          0x000000000000a908        0x0 ../CollendaProgram_bsp//libhal_bsp.a(alt_tick.o)
+ .data          0x000000000000a908        0x0 ../CollendaProgram_bsp//libhal_bsp.a(alt_sys_init.o)
+ .data          0x000000000000a908        0x0 ../CollendaProgram_bsp//libhal_bsp.a(alt_dcache_flush_all.o)
+ .data          0x000000000000a908        0x0 ../CollendaProgram_bsp//libhal_bsp.a(alt_icache_flush_all.o)
+ .data          0x000000000000a908        0x0 ../CollendaProgram_bsp//libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .data          0x000000000000a908        0x0 /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul/libgcc.a(_moddi3.o)
+ .data          0x000000000000a908        0x0 /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul/libgcc.a(_umoddi3.o)
+ .data          0x000000000000a908        0x0 /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul/libgcc.a(_clz.o)
+                0x0000000000012908                _gp = ABSOLUTE ((. + 0x8000))
+                [!provide]                        PROVIDE (gp = _gp)
+ *(.rwdata .rwdata.*)
+ *(.sdata .sdata.* .gnu.linkonce.s.*)
+ .sdata         0x000000000000a908        0x4 obj/default/new_asteroids_game.o
+                0x000000000000a908                number_of_asteroids
+ .sdata._global_impure_ptr
+                0x000000000000a90c        0x4 /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-impure.o)
+                0x000000000000a90c                _global_impure_ptr
+ .sdata._impure_ptr
+                0x000000000000a910        0x4 /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-impure.o)
+                0x000000000000a910                _impure_ptr
+ .sdata         0x000000000000a914        0x8 ../CollendaProgram_bsp//libhal_bsp.a(alt_tick.o)
+                0x000000000000a914                alt_alarm_list
+ .sdata         0x000000000000a91c        0x4 ../CollendaProgram_bsp//libhal_bsp.a(alt_sys_init.o)
+                0x000000000000a91c                jtag_uart_0
+ *(.sdata2 .sdata2.* .gnu.linkonce.s2.*)
+                0x000000000000a920                . = ALIGN (0x4)
+                0x000000000000a920                _edata = ABSOLUTE (.)
+                [!provide]                        PROVIDE (edata = ABSOLUTE (.))
+                0x000000000000a920                PROVIDE (__ram_rwdata_end = ABSOLUTE (.))
+                0x000000000000a920                PROVIDE (__flash_rwdata_start = LOADADDR (.rwdata))
+
+.bss            0x000000000000aa1c       0x3c
+                0x000000000000aa1c                __bss_start = ABSOLUTE (.)
+                [!provide]                        PROVIDE (__sbss_start = ABSOLUTE (.))
+                [!provide]                        PROVIDE (___sbss_start = ABSOLUTE (.))
+ *(.dynsbss)
+ *(.sbss .sbss.* .gnu.linkonce.sb.*)
+ .sbss          0x000000000000aa1c        0x8 obj/default/new_asteroids_game.o
+                0x000000000000aa1c                state_placar
+                0x000000000000aa20                points
+ .sbss._randbits
+                0x000000000000aa24        0x8 /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-rand.o)
+ .sbss          0x000000000000aa2c        0x4 /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-int_errno.o)
+                0x000000000000aa2c                errno
+ .sbss          0x000000000000aa30        0x8 ../CollendaProgram_bsp//libhal_bsp.a(alt_gettod.o)
+                0x000000000000aa30                alt_timezone
+ .sbss          0x000000000000aa38        0xc ../CollendaProgram_bsp//libhal_bsp.a(alt_main.o)
+                0x000000000000aa38                alt_envp
+                0x000000000000aa3c                alt_argv
+                0x000000000000aa40                alt_argc
+ .sbss          0x000000000000aa44        0x8 ../CollendaProgram_bsp//libhal_bsp.a(alt_tick.o)
+                0x000000000000aa44                _alt_nticks
+                0x000000000000aa48                _alt_tick_rate
+ *(.sbss2 .sbss2.* .gnu.linkonce.sb2.*)
+ *(.scommon)
+                [!provide]                        PROVIDE (__sbss_end = ABSOLUTE (.))
+                [!provide]                        PROVIDE (___sbss_end = ABSOLUTE (.))
+ *(.dynbss)
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss           0x000000000000aa4c        0x0 ../CollendaProgram_bsp//obj/HAL/src/crt0.o
+ .bss           0x000000000000aa4c        0x0 obj/default/lib_graphic_processor/graphic_processor.o
+ .bss           0x000000000000aa4c        0x0 obj/default/new_asteroids_game.o
+ .bss           0x000000000000aa4c        0x0 /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul/libgcc.a(lib2-divmod.o)
+ .bss           0x000000000000aa4c        0x0 /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-rand.o)
+ .bss           0x000000000000aa4c        0x0 /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-time.o)
+ .bss           0x000000000000aa4c        0x0 /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-gettimeofdayr.o)
+ .bss           0x000000000000aa4c        0x0 /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-impure.o)
+ .bss           0x000000000000aa4c        0x0 /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-int_errno.o)
+ .bss           0x000000000000aa4c        0x0 /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul/libgcc.a(_muldi3.o)
+ .bss           0x000000000000aa4c        0x0 /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul/libgcc.a(lib2-mul.o)
+ .bss           0x000000000000aa4c        0xc ../CollendaProgram_bsp//libhal_bsp.a(alt_gettod.o)
+                0x000000000000aa4c                alt_resettime
+ .bss           0x000000000000aa58        0x0 ../CollendaProgram_bsp//libhal_bsp.a(alt_load.o)
+ .bss           0x000000000000aa58        0x0 ../CollendaProgram_bsp//libhal_bsp.a(alt_main.o)
+ .bss           0x000000000000aa58        0x0 ../CollendaProgram_bsp//libhal_bsp.a(alt_tick.o)
+ .bss           0x000000000000aa58        0x0 ../CollendaProgram_bsp//libhal_bsp.a(alt_sys_init.o)
+ .bss           0x000000000000aa58        0x0 ../CollendaProgram_bsp//libhal_bsp.a(alt_dcache_flush_all.o)
+ .bss           0x000000000000aa58        0x0 ../CollendaProgram_bsp//libhal_bsp.a(alt_icache_flush_all.o)
+ .bss           0x000000000000aa58        0x0 ../CollendaProgram_bsp//libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .bss           0x000000000000aa58        0x0 /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul/libgcc.a(_moddi3.o)
+ .bss           0x000000000000aa58        0x0 /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul/libgcc.a(_umoddi3.o)
+ .bss           0x000000000000aa58        0x0 /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul/libgcc.a(_clz.o)
+ *(COMMON)
+                0x000000000000aa58                . = ALIGN (0x4)
+                0x000000000000aa58                __bss_end = ABSOLUTE (.)
+
+.onchip_memory2_0
+                0x000000000000aa58        0x0
+                [!provide]                        PROVIDE (_alt_partition_onchip_memory2_0_start = ABSOLUTE (.))
+ *(.onchip_memory2_0 .onchip_memory2_0. onchip_memory2_0.*)
+                0x000000000000aa58                . = ALIGN (0x4)
+                [!provide]                        PROVIDE (_alt_partition_onchip_memory2_0_end = ABSOLUTE (.))
+                0x000000000000aa58                _end = ABSOLUTE (.)
+                0x000000000000aa58                end = ABSOLUTE (.)
+                0x000000000000aa58                __alt_stack_base = ABSOLUTE (.)
+                [!provide]                        PROVIDE (_alt_partition_onchip_memory2_0_load_addr = LOADADDR (.onchip_memory2_0))
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x0000000000000000       0x2c
+ *(.comment)
+ .comment       0x0000000000000000       0x2c obj/default/lib_graphic_processor/graphic_processor.o
+                                         0x2d (size before relaxing)
+ .comment       0x000000000000002c       0x2d obj/default/new_asteroids_game.o
+ .comment       0x000000000000002c       0x2d /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul/libgcc.a(lib2-divmod.o)
+ .comment       0x000000000000002c       0x2d /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-rand.o)
+ .comment       0x000000000000002c       0x2d /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-time.o)
+ .comment       0x000000000000002c       0x2d /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-gettimeofdayr.o)
+ .comment       0x000000000000002c       0x2d /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-impure.o)
+ .comment       0x000000000000002c       0x2d /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-int_errno.o)
+ .comment       0x000000000000002c       0x2d /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul/libgcc.a(_muldi3.o)
+ .comment       0x000000000000002c       0x2d /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul/libgcc.a(lib2-mul.o)
+ .comment       0x000000000000002c       0x2d ../CollendaProgram_bsp//libhal_bsp.a(alt_gettod.o)
+ .comment       0x000000000000002c       0x2d ../CollendaProgram_bsp//libhal_bsp.a(alt_load.o)
+ .comment       0x000000000000002c       0x2d ../CollendaProgram_bsp//libhal_bsp.a(alt_main.o)
+ .comment       0x000000000000002c       0x2d ../CollendaProgram_bsp//libhal_bsp.a(alt_tick.o)
+ .comment       0x000000000000002c       0x2d ../CollendaProgram_bsp//libhal_bsp.a(alt_sys_init.o)
+ .comment       0x000000000000002c       0x2d ../CollendaProgram_bsp//libhal_bsp.a(alt_dcache_flush_all.o)
+ .comment       0x000000000000002c       0x2d ../CollendaProgram_bsp//libhal_bsp.a(alt_icache_flush_all.o)
+ .comment       0x000000000000002c       0x2d ../CollendaProgram_bsp//libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .comment       0x000000000000002c       0x2d /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul/libgcc.a(_moddi3.o)
+ .comment       0x000000000000002c       0x2d /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul/libgcc.a(_umoddi3.o)
+ .comment       0x000000000000002c       0x2d /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul/libgcc.a(_clz.o)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x0000000000000000      0x2c0
+ *(.debug_aranges)
+ .debug_aranges
+                0x0000000000000000       0x28 ../CollendaProgram_bsp//obj/HAL/src/crt0.o
+ .debug_aranges
+                0x0000000000000028       0x20 obj/default/lib_graphic_processor/graphic_processor.o
+ .debug_aranges
+                0x0000000000000048       0x28 obj/default/new_asteroids_game.o
+ .debug_aranges
+                0x0000000000000070       0x20 /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul/libgcc.a(lib2-divmod.o)
+ .debug_aranges
+                0x0000000000000090       0x28 /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-rand.o)
+ .debug_aranges
+                0x00000000000000b8       0x20 /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-time.o)
+ .debug_aranges
+                0x00000000000000d8       0x20 /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-gettimeofdayr.o)
+ .debug_aranges
+                0x00000000000000f8       0x18 /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-impure.o)
+ .debug_aranges
+                0x0000000000000110       0x18 /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-int_errno.o)
+ .debug_aranges
+                0x0000000000000128       0x20 /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul/libgcc.a(_muldi3.o)
+ .debug_aranges
+                0x0000000000000148       0x20 /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul/libgcc.a(lib2-mul.o)
+ .debug_aranges
+                0x0000000000000168       0x20 ../CollendaProgram_bsp//libhal_bsp.a(alt_gettod.o)
+ .debug_aranges
+                0x0000000000000188       0x20 ../CollendaProgram_bsp//libhal_bsp.a(alt_load.o)
+ .debug_aranges
+                0x00000000000001a8       0x20 ../CollendaProgram_bsp//libhal_bsp.a(alt_main.o)
+ .debug_aranges
+                0x00000000000001c8       0x20 ../CollendaProgram_bsp//libhal_bsp.a(alt_tick.o)
+ .debug_aranges
+                0x00000000000001e8       0x20 ../CollendaProgram_bsp//libhal_bsp.a(alt_sys_init.o)
+ .debug_aranges
+                0x0000000000000208       0x20 ../CollendaProgram_bsp//libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_aranges
+                0x0000000000000228       0x20 ../CollendaProgram_bsp//libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_aranges
+                0x0000000000000248       0x20 ../CollendaProgram_bsp//libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .debug_aranges
+                0x0000000000000268       0x20 /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul/libgcc.a(_moddi3.o)
+ .debug_aranges
+                0x0000000000000288       0x20 /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul/libgcc.a(_umoddi3.o)
+ .debug_aranges
+                0x00000000000002a8       0x18 /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul/libgcc.a(_clz.o)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x0000000000000000     0xb175
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x0000000000000000       0x22 ../CollendaProgram_bsp//obj/HAL/src/crt0.o
+ .debug_info    0x0000000000000022      0x613 obj/default/lib_graphic_processor/graphic_processor.o
+ .debug_info    0x0000000000000635     0x16b6 obj/default/new_asteroids_game.o
+ .debug_info    0x0000000000001ceb      0x368 /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul/libgcc.a(lib2-divmod.o)
+ .debug_info    0x0000000000002053      0x670 /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-rand.o)
+ .debug_info    0x00000000000026c3      0x6ed /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-time.o)
+ .debug_info    0x0000000000002db0      0x72c /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-gettimeofdayr.o)
+ .debug_info    0x00000000000034dc      0x6e8 /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-impure.o)
+ .debug_info    0x0000000000003bc4      0x614 /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-int_errno.o)
+ .debug_info    0x00000000000041d8      0x317 /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul/libgcc.a(_muldi3.o)
+ .debug_info    0x00000000000044ef       0xcb /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul/libgcc.a(lib2-mul.o)
+ .debug_info    0x00000000000045ba      0xb5e ../CollendaProgram_bsp//libhal_bsp.a(alt_gettod.o)
+ .debug_info    0x0000000000005118      0xaed ../CollendaProgram_bsp//libhal_bsp.a(alt_load.o)
+ .debug_info    0x0000000000005c05      0xeb0 ../CollendaProgram_bsp//libhal_bsp.a(alt_main.o)
+ .debug_info    0x0000000000006ab5      0xbc5 ../CollendaProgram_bsp//libhal_bsp.a(alt_tick.o)
+ .debug_info    0x000000000000767a      0xa6e ../CollendaProgram_bsp//libhal_bsp.a(alt_sys_init.o)
+ .debug_info    0x00000000000080e8      0x934 ../CollendaProgram_bsp//libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_info    0x0000000000008a1c      0x934 ../CollendaProgram_bsp//libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_info    0x0000000000009350      0x955 ../CollendaProgram_bsp//libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .debug_info    0x0000000000009ca5      0x9bf /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul/libgcc.a(_moddi3.o)
+ .debug_info    0x000000000000a664      0x998 /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul/libgcc.a(_umoddi3.o)
+ .debug_info    0x000000000000affc      0x179 /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul/libgcc.a(_clz.o)
+
+.debug_abbrev   0x0000000000000000     0x2835
+ *(.debug_abbrev)
+ .debug_abbrev  0x0000000000000000       0x12 ../CollendaProgram_bsp//obj/HAL/src/crt0.o
+ .debug_abbrev  0x0000000000000012      0x1f4 obj/default/lib_graphic_processor/graphic_processor.o
+ .debug_abbrev  0x0000000000000206      0x3bf obj/default/new_asteroids_game.o
+ .debug_abbrev  0x00000000000005c5      0x103 /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul/libgcc.a(lib2-divmod.o)
+ .debug_abbrev  0x00000000000006c8      0x1e0 /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-rand.o)
+ .debug_abbrev  0x00000000000008a8      0x1e4 /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-time.o)
+ .debug_abbrev  0x0000000000000a8c      0x1fb /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-gettimeofdayr.o)
+ .debug_abbrev  0x0000000000000c87      0x18d /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-impure.o)
+ .debug_abbrev  0x0000000000000e14      0x186 /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-int_errno.o)
+ .debug_abbrev  0x0000000000000f9a      0x157 /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul/libgcc.a(_muldi3.o)
+ .debug_abbrev  0x00000000000010f1       0x7d /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul/libgcc.a(lib2-mul.o)
+ .debug_abbrev  0x000000000000116e      0x252 ../CollendaProgram_bsp//libhal_bsp.a(alt_gettod.o)
+ .debug_abbrev  0x00000000000013c0      0x277 ../CollendaProgram_bsp//libhal_bsp.a(alt_load.o)
+ .debug_abbrev  0x0000000000001637      0x252 ../CollendaProgram_bsp//libhal_bsp.a(alt_main.o)
+ .debug_abbrev  0x0000000000001889      0x2df ../CollendaProgram_bsp//libhal_bsp.a(alt_tick.o)
+ .debug_abbrev  0x0000000000001b68      0x279 ../CollendaProgram_bsp//libhal_bsp.a(alt_sys_init.o)
+ .debug_abbrev  0x0000000000001de1      0x1e0 ../CollendaProgram_bsp//libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_abbrev  0x0000000000001fc1      0x1e0 ../CollendaProgram_bsp//libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_abbrev  0x00000000000021a1      0x1e5 ../CollendaProgram_bsp//libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .debug_abbrev  0x0000000000002386      0x207 /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul/libgcc.a(_moddi3.o)
+ .debug_abbrev  0x000000000000258d      0x200 /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul/libgcc.a(_umoddi3.o)
+ .debug_abbrev  0x000000000000278d       0xa8 /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul/libgcc.a(_clz.o)
+
+.debug_line     0x0000000000000000     0x3d66
+ *(.debug_line)
+ .debug_line    0x0000000000000000       0x66 ../CollendaProgram_bsp//obj/HAL/src/crt0.o
+ .debug_line    0x0000000000000066      0x416 obj/default/lib_graphic_processor/graphic_processor.o
+ .debug_line    0x000000000000047c      0xdbc obj/default/new_asteroids_game.o
+ .debug_line    0x0000000000001238      0x2f9 /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul/libgcc.a(lib2-divmod.o)
+ .debug_line    0x0000000000001531      0x22d /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-rand.o)
+ .debug_line    0x000000000000175e      0x2ab /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-time.o)
+ .debug_line    0x0000000000001a09      0x2c0 /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-gettimeofdayr.o)
+ .debug_line    0x0000000000001cc9      0x15c /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-impure.o)
+ .debug_line    0x0000000000001e25      0x1ce /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-int_errno.o)
+ .debug_line    0x0000000000001ff3      0x190 /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul/libgcc.a(_muldi3.o)
+ .debug_line    0x0000000000002183       0xb6 /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul/libgcc.a(lib2-mul.o)
+ .debug_line    0x0000000000002239      0x3a7 ../CollendaProgram_bsp//libhal_bsp.a(alt_gettod.o)
+ .debug_line    0x00000000000025e0      0x270 ../CollendaProgram_bsp//libhal_bsp.a(alt_load.o)
+ .debug_line    0x0000000000002850      0x325 ../CollendaProgram_bsp//libhal_bsp.a(alt_main.o)
+ .debug_line    0x0000000000002b75      0x2c8 ../CollendaProgram_bsp//libhal_bsp.a(alt_tick.o)
+ .debug_line    0x0000000000002e3d      0x20a ../CollendaProgram_bsp//libhal_bsp.a(alt_sys_init.o)
+ .debug_line    0x0000000000003047      0x194 ../CollendaProgram_bsp//libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_line    0x00000000000031db      0x192 ../CollendaProgram_bsp//libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_line    0x000000000000336d      0x148 ../CollendaProgram_bsp//libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .debug_line    0x00000000000034b5      0x425 /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul/libgcc.a(_moddi3.o)
+ .debug_line    0x00000000000038da      0x3d8 /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul/libgcc.a(_umoddi3.o)
+ .debug_line    0x0000000000003cb2       0xb4 /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul/libgcc.a(_clz.o)
+
+.debug_frame    0x0000000000000000      0x4d4
+ *(.debug_frame)
+ .debug_frame   0x0000000000000000       0x70 obj/default/lib_graphic_processor/graphic_processor.o
+ .debug_frame   0x0000000000000070       0xd4 obj/default/new_asteroids_game.o
+ .debug_frame   0x0000000000000144       0x50 /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul/libgcc.a(lib2-divmod.o)
+ .debug_frame   0x0000000000000194       0x3c /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-rand.o)
+ .debug_frame   0x00000000000001d0       0x30 /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-time.o)
+ .debug_frame   0x0000000000000200       0x30 /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-gettimeofdayr.o)
+ .debug_frame   0x0000000000000230       0x50 /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul/libgcc.a(_muldi3.o)
+ .debug_frame   0x0000000000000280       0x20 /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul/libgcc.a(lib2-mul.o)
+ .debug_frame   0x00000000000002a0       0x44 ../CollendaProgram_bsp//libhal_bsp.a(alt_gettod.o)
+ .debug_frame   0x00000000000002e4       0x30 ../CollendaProgram_bsp//libhal_bsp.a(alt_load.o)
+ .debug_frame   0x0000000000000314       0x2c ../CollendaProgram_bsp//libhal_bsp.a(alt_main.o)
+ .debug_frame   0x0000000000000340       0x50 ../CollendaProgram_bsp//libhal_bsp.a(alt_tick.o)
+ .debug_frame   0x0000000000000390       0x3c ../CollendaProgram_bsp//libhal_bsp.a(alt_sys_init.o)
+ .debug_frame   0x00000000000003cc       0x20 ../CollendaProgram_bsp//libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_frame   0x00000000000003ec       0x20 ../CollendaProgram_bsp//libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_frame   0x000000000000040c       0x20 ../CollendaProgram_bsp//libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .debug_frame   0x000000000000042c       0x54 /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul/libgcc.a(_moddi3.o)
+ .debug_frame   0x0000000000000480       0x54 /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul/libgcc.a(_umoddi3.o)
+
+.debug_str      0x0000000000000000     0x15ce
+ *(.debug_str)
+ .debug_str     0x0000000000000000       0x5f ../CollendaProgram_bsp//obj/HAL/src/crt0.o
+ .debug_str     0x000000000000005f      0x245 obj/default/lib_graphic_processor/graphic_processor.o
+                                        0x290 (size before relaxing)
+ .debug_str     0x00000000000002a4      0x596 obj/default/new_asteroids_game.o
+                                        0x7c5 (size before relaxing)
+ .debug_str     0x000000000000083a      0x194 /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul/libgcc.a(lib2-divmod.o)
+                                        0x1df (size before relaxing)
+ .debug_str     0x00000000000009ce      0x18d /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-rand.o)
+                                        0x4e6 (size before relaxing)
+ .debug_str     0x0000000000000b5b      0x114 /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-time.o)
+                                        0x531 (size before relaxing)
+ .debug_str     0x0000000000000c6f       0xfb /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-gettimeofdayr.o)
+                                        0x55d (size before relaxing)
+ .debug_str     0x0000000000000d6a       0x89 /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-impure.o)
+                                        0x529 (size before relaxing)
+ .debug_str     0x0000000000000df3       0x41 /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-int_errno.o)
+                                        0x4cf (size before relaxing)
+ .debug_str     0x0000000000000e34      0x10d /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul/libgcc.a(_muldi3.o)
+                                        0x2b5 (size before relaxing)
+ .debug_str     0x0000000000000f41       0x42 /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul/libgcc.a(lib2-mul.o)
+                                        0x1a0 (size before relaxing)
+ .debug_str     0x0000000000000f83       0xde ../CollendaProgram_bsp//libhal_bsp.a(alt_gettod.o)
+                                        0x693 (size before relaxing)
+ .debug_str     0x0000000000001061      0x113 ../CollendaProgram_bsp//libhal_bsp.a(alt_load.o)
+                                        0x62c (size before relaxing)
+ .debug_str     0x0000000000001174      0x1be ../CollendaProgram_bsp//libhal_bsp.a(alt_main.o)
+                                        0x7de (size before relaxing)
+ .debug_str     0x0000000000001332       0xa6 ../CollendaProgram_bsp//libhal_bsp.a(alt_tick.o)
+                                        0x64f (size before relaxing)
+ .debug_str     0x00000000000013d8       0xa1 ../CollendaProgram_bsp//libhal_bsp.a(alt_sys_init.o)
+                                        0x634 (size before relaxing)
+ .debug_str     0x0000000000001479       0x1f ../CollendaProgram_bsp//libhal_bsp.a(alt_dcache_flush_all.o)
+                                        0x545 (size before relaxing)
+ .debug_str     0x0000000000001498       0x1f ../CollendaProgram_bsp//libhal_bsp.a(alt_icache_flush_all.o)
+                                        0x545 (size before relaxing)
+ .debug_str     0x00000000000014b7       0x20 ../CollendaProgram_bsp//libhal_bsp.a(altera_nios2_gen2_irq.o)
+                                        0x559 (size before relaxing)
+ .debug_str     0x00000000000014d7       0xed /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul/libgcc.a(_moddi3.o)
+                                        0x310 (size before relaxing)
+ .debug_str     0x00000000000015c4        0xa /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul/libgcc.a(_umoddi3.o)
+                                        0x311 (size before relaxing)
+ .debug_str     0x00000000000015ce      0x258 /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul/libgcc.a(_clz.o)
+
+.debug_loc      0x0000000000000000     0x3a04
+ *(.debug_loc)
+ .debug_loc     0x0000000000000000      0x6b7 obj/default/lib_graphic_processor/graphic_processor.o
+ .debug_loc     0x00000000000006b7      0x7cc obj/default/new_asteroids_game.o
+ .debug_loc     0x0000000000000e83      0x5d0 /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul/libgcc.a(lib2-divmod.o)
+ .debug_loc     0x0000000000001453       0x32 /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-time.o)
+ .debug_loc     0x0000000000001485       0x9e /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-gettimeofdayr.o)
+ .debug_loc     0x0000000000001523      0x1eb /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul/libgcc.a(_muldi3.o)
+ .debug_loc     0x000000000000170e       0xa7 /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul/libgcc.a(lib2-mul.o)
+ .debug_loc     0x00000000000017b5       0xe7 ../CollendaProgram_bsp//libhal_bsp.a(alt_gettod.o)
+ .debug_loc     0x000000000000189c       0x66 ../CollendaProgram_bsp//libhal_bsp.a(alt_load.o)
+ .debug_loc     0x0000000000001902       0xba ../CollendaProgram_bsp//libhal_bsp.a(alt_tick.o)
+ .debug_loc     0x00000000000019bc       0x25 ../CollendaProgram_bsp//libhal_bsp.a(alt_sys_init.o)
+ .debug_loc     0x00000000000019e1      0xe84 /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul/libgcc.a(_moddi3.o)
+ .debug_loc     0x0000000000002865     0x119f /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul/libgcc.a(_umoddi3.o)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_alt_sim_info
+                0x0000000000000000       0x10
+ *(.debug_alt_sim_info)
+ .debug_alt_sim_info
+                0x0000000000000000       0x10 ../CollendaProgram_bsp//obj/HAL/src/crt0.o
+                0x000000000000f530                __alt_data_end = 0xf530
+                0x000000000000f530                PROVIDE (__alt_stack_pointer = __alt_data_end)
+                [!provide]                        PROVIDE (__alt_stack_limit = __alt_stack_base)
+                [!provide]                        PROVIDE (__alt_heap_start = end)
+                [!provide]                        PROVIDE (__alt_heap_limit = 0xf530)
+OUTPUT(CollendaProgram.elf elf32-littlenios2)
+
+.debug_ranges   0x0000000000000000      0x598
+ .debug_ranges  0x0000000000000000       0x20 ../CollendaProgram_bsp//obj/HAL/src/crt0.o
+ .debug_ranges  0x0000000000000020       0x30 obj/default/lib_graphic_processor/graphic_processor.o
+ .debug_ranges  0x0000000000000050       0x88 obj/default/new_asteroids_game.o
+ .debug_ranges  0x00000000000000d8       0x70 /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul/libgcc.a(lib2-divmod.o)
+ .debug_ranges  0x0000000000000148       0x18 /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-rand.o)
+ .debug_ranges  0x0000000000000160       0x10 /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-time.o)
+ .debug_ranges  0x0000000000000170       0x10 /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/mno-hw-mul/libsmallc.a(lib_a-gettimeofdayr.o)
+ .debug_ranges  0x0000000000000180       0x40 /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul/libgcc.a(_muldi3.o)
+ .debug_ranges  0x00000000000001c0       0x30 ../CollendaProgram_bsp//libhal_bsp.a(alt_gettod.o)
+ .debug_ranges  0x00000000000001f0       0xa0 ../CollendaProgram_bsp//libhal_bsp.a(alt_load.o)
+ .debug_ranges  0x0000000000000290      0x1a0 /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul/libgcc.a(_moddi3.o)
+ .debug_ranges  0x0000000000000430      0x168 /opt/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/9.2.1/mno-hw-mul/libgcc.a(_umoddi3.o)

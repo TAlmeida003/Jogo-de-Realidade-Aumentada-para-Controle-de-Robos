@@ -1,0 +1,23 @@
+IP Ports Diff Report for Arquitetura
+Sun Oct 13 22:30:54 2024
+Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. IP Information
+
+
+
++------------------------------------------------------------+
+; IP Information                                             ;
++----------------------+-------------------------------------+
+; IP Variation Name    ; Arquitetura                         ;
+; Prior Version        ; ACDS_v20.1                          ;
+; New Version          ; ACDS_v23.1                          ;
+; New File             ; Arquitetura/synthesis/Arquitetura.v ;
+; Has Port Differences ; No                                  ;
++----------------------+-------------------------------------+
+
+

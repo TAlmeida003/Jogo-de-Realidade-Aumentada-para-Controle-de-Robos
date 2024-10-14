@@ -1,0 +1,9 @@
+15:21:25 **** Build of configuration Debug for project tste ****
+make all 
+Cannot run program "make": Launching failed
+
+Error: Program "make" not found in PATH
+PATH=[C:/intelfpga_lite/23.1std/quartus/bin64;C:/intelfpga_lite/23.1std/nios2eds/bin/cygpath;C:/intelfpga_lite/23.1std/quartus/sopc_builder/model/lib;C:/intelfpga_lite/23.1std/quartus/bin32;c:\intelfpga_lite\23.1std\quartus\bin64\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\nodejs\;C:\Users\thiag\AppData\Local\Programs\Python\Launcher\;C:\Users\thiag\AppData\Local\Microsoft\WindowsApps;C:\Users\thiag\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\thiag\AppData\Local\GitHubDesktop\bin;C:\Users\thiag\AppData\Local\Microsoft\WinGet\Links;C:\Users\thiag\AppData\Roaming\npm;C:\intelFPGA_lite\23.1std\questa_fse\win64]
+
+15:21:26 Build Finished (took 297ms)
+

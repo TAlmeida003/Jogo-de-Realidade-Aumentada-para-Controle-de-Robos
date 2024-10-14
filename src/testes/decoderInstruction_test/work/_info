@@ -1,0 +1,59 @@
+m255
+K4
+z2
+!s11f MIXED_VERSIONS
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/gabriel/Documents/ConsoleFPGA/testes/decoderInstruction_test
+vdecodeInstruction_test
+!s110 1620307710
+!i10b 1
+!s100 O7HaFfGzV9V_UWT8DST140
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+Ifj?<0g9j[GE6n0kJ=WaGP3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1620307706
+8/home/gabriel/Documents/ConsoleFPGA/testes/decoderInstruction_test/decoderInstruction_test.v
+F/home/gabriel/Documents/ConsoleFPGA/testes/decoderInstruction_test/decoderInstruction_test.v
+!i122 22
+L0 2 49
+Z3 OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1620307710.000000
+!s107 /home/gabriel/Documents/ConsoleFPGA/testes/decoderInstruction_test/decoderInstruction_test.v|
+!s90 -reportprogress|300|-work|work|/home/gabriel/Documents/ConsoleFPGA/testes/decoderInstruction_test/decoderInstruction_test.v|
+!i113 1
+Z4 o-work work
+Z5 tCvgOpt 0
+ndecode@instruction_test
+vdecorderInstruction
+!s110 1620306517
+!i10b 1
+!s100 JC=`L@_IaFiZb6Z?HBfck3
+R1
+IWXNkY_:KKVG`>;D8KEOzO2
+R2
+R0
+w1620251128
+8/home/gabriel/Documents/ConsoleFPGA/modulos/decoderInstruction/decoderInstruction.v
+F/home/gabriel/Documents/ConsoleFPGA/modulos/decoderInstruction/decoderInstruction.v
+!i122 19
+L0 19 73
+R3
+r1
+!s85 0
+31
+!s108 1620306517.000000
+!s107 /home/gabriel/Documents/ConsoleFPGA/modulos/decoderInstruction/decoderInstruction.v|
+!s90 -reportprogress|300|-work|work|/home/gabriel/Documents/ConsoleFPGA/modulos/decoderInstruction/decoderInstruction.v|
+!i113 1
+R4
+R5
+ndecorder@instruction

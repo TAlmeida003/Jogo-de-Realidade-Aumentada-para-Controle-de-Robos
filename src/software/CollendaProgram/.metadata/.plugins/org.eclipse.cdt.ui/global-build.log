@@ -1,0 +1,1223 @@
+08:39:19 **** Incremental Build of configuration Nios II for project sas ****
+wsl make all 
+Info: Building /mnt/c/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/
+make --no-print-directory -C /mnt/c/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/
+[BSP build complete]
+Info: Compiling new_asteroids_game.c to obj/default/new_asteroids_game.o
+nios2-elf-gcc.exe -xc -MP -MMD -c -Ic:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//HAL/inc -Ic:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/ -Ic:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall  -mno-hw-div -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o "obj/default/new_asteroids_game.o" "new_asteroids_game.c"
+Info: Linking sas.elf
+nios2-elf-g++.exe -T'c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//linker.x' -msys-crt0='c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -Lc:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/ -msmallc  -Wl,-Map=sas.map   -Os -g -Wall  -mno-hw-div -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o sas.elf obj/default/lib_graphic_processor/graphic_processor.o obj/default/new_asteroids_game.o -lm -msys-lib=m
+nios2-elf-insert.exe sas.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x11110 --timestamp 1728871358 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name Arquitetura --quartus_project_dir "c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano" --jdi ../..//output_files/ConsoleFPGA.jdi --sopcinfo C:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/Arquitetura.sopcinfo
+Info: (sas.elf) 9852 Bytes program size (code + initialized data).
+Info:           19 KBytes free for stack + heap.
+Info: Creating sas.objdump
+nios2-elf-objdump.exe --disassemble --syms --all-header --source sas.elf >sas.objdump
+[sas build complete]
+08:40:08 **** Incremental Build of configuration Nios II for project sas ****
+wsl make all 
+Info: Building /mnt/c/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/
+make --no-print-directory -C /mnt/c/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/
+[BSP build complete]
+Info: Compiling new_asteroids_game.c to obj/default/new_asteroids_game.o
+nios2-elf-gcc.exe -xc -MP -MMD -c -Ic:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//HAL/inc -Ic:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/ -Ic:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall  -mno-hw-div -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o "obj/default/new_asteroids_game.o" "new_asteroids_game.c"
+Info: Linking sas.elf
+nios2-elf-g++.exe -T'c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//linker.x' -msys-crt0='c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -Lc:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/ -msmallc  -Wl,-Map=sas.map   -Os -g -Wall  -mno-hw-div -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o sas.elf obj/default/lib_graphic_processor/graphic_processor.o obj/default/new_asteroids_game.o -lm -msys-lib=m
+nios2-elf-insert.exe sas.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x11110 --timestamp 1728871358 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name Arquitetura --quartus_project_dir "c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano" --jdi ../..//output_files/ConsoleFPGA.jdi --sopcinfo C:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/Arquitetura.sopcinfo
+Info: (sas.elf) 11 KBytes program size (code + initialized data).
+Info:           17 KBytes free for stack + heap.
+Info: Creating sas.objdump
+nios2-elf-objdump.exe --disassemble --syms --all-header --source sas.elf >sas.objdump
+[sas build complete]
+08:44:30 **** Incremental Build of configuration Nios II for project sas ****
+wsl make all 
+Info: Building /mnt/c/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/
+make --no-print-directory -C /mnt/c/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/
+[BSP build complete]
+Info: Compiling new_asteroids_game.c to obj/default/new_asteroids_game.o
+nios2-elf-gcc.exe -xc -MP -MMD -c -Ic:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//HAL/inc -Ic:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/ -Ic:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall  -mno-hw-div -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o "obj/default/new_asteroids_game.o" "new_asteroids_game.c"
+Info: Linking sas.elf
+nios2-elf-g++.exe -T'c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//linker.x' -msys-crt0='c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -Lc:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/ -msmallc  -Wl,-Map=sas.map   -Os -g -Wall  -mno-hw-div -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o sas.elf obj/default/lib_graphic_processor/graphic_processor.o obj/default/new_asteroids_game.o -lm -msys-lib=m
+nios2-elf-insert.exe sas.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x11110 --timestamp 1728871358 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name Arquitetura --quartus_project_dir "c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano" --jdi ../..//output_files/ConsoleFPGA.jdi --sopcinfo C:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/Arquitetura.sopcinfo
+Info: (sas.elf) 10 KBytes program size (code + initialized data).
+Info:           18 KBytes free for stack + heap.
+Info: Creating sas.objdump
+nios2-elf-objdump.exe --disassemble --syms --all-header --source sas.elf >sas.objdump
+[sas build complete]
+08:49:05 **** Incremental Build of configuration Nios II for project sas ****
+wsl make all 
+Info: Building /mnt/c/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/
+make --no-print-directory -C /mnt/c/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/
+[BSP build complete]
+Info: Compiling lib_graphic_processor/graphic_processor.c to obj/default/lib_graphic_processor/graphic_processor.o
+nios2-elf-gcc.exe -xc -MP -MMD -c -Ic:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//HAL/inc -Ic:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/ -Ic:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall  -mno-hw-div -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o "obj/default/lib_graphic_processor/graphic_processor.o" "lib_graphic_processor/graphic_processor.c"
+Info: Linking sas.elf
+nios2-elf-g++.exe -T'c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//linker.x' -msys-crt0='c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -Lc:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/ -msmallc  -Wl,-Map=sas.map   -Os -g -Wall  -mno-hw-div -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o sas.elf obj/default/lib_graphic_processor/graphic_processor.o obj/default/new_asteroids_game.o -lm -msys-lib=m
+nios2-elf-insert.exe sas.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x11110 --timestamp 1728871358 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name Arquitetura --quartus_project_dir "c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano" --jdi ../..//output_files/ConsoleFPGA.jdi --sopcinfo C:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/Arquitetura.sopcinfo
+Info: (sas.elf) 10 KBytes program size (code + initialized data).
+Info:           18 KBytes free for stack + heap.
+Info: Creating sas.objdump
+nios2-elf-objdump.exe --disassemble --syms --all-header --source sas.elf >sas.objdump
+[sas build complete]
+08:50:06 **** Incremental Build of configuration Nios II for project sas ****
+wsl make all 
+Info: Building /mnt/c/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/
+make --no-print-directory -C /mnt/c/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/
+[BSP build complete]
+Info: Compiling new_asteroids_game.c to obj/default/new_asteroids_game.o
+nios2-elf-gcc.exe -xc -MP -MMD -c -Ic:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//HAL/inc -Ic:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/ -Ic:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall  -mno-hw-div -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o "obj/default/new_asteroids_game.o" "new_asteroids_game.c"
+Info: Linking sas.elf
+nios2-elf-g++.exe -T'c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//linker.x' -msys-crt0='c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -Lc:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/ -msmallc  -Wl,-Map=sas.map   -Os -g -Wall  -mno-hw-div -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o sas.elf obj/default/lib_graphic_processor/graphic_processor.o obj/default/new_asteroids_game.o -lm -msys-lib=m
+nios2-elf-insert.exe sas.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x11110 --timestamp 1728871358 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name Arquitetura --quartus_project_dir "c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano" --jdi ../..//output_files/ConsoleFPGA.jdi --sopcinfo C:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/Arquitetura.sopcinfo
+Info: (sas.elf) 9852 Bytes program size (code + initialized data).
+Info:           19 KBytes free for stack + heap.
+Info: Creating sas.objdump
+nios2-elf-objdump.exe --disassemble --syms --all-header --source sas.elf >sas.objdump
+[sas build complete]
+08:51:05 **** Incremental Build of configuration Nios II for project sas ****
+wsl make all 
+Info: Building /mnt/c/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/
+make --no-print-directory -C /mnt/c/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/
+[BSP build complete]
+[sas build complete]
+08:54:02 **** Incremental Build of configuration Nios II for project sas ****
+wsl make all 
+Info: Building /mnt/c/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/
+make --no-print-directory -C /mnt/c/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/
+[BSP build complete]
+Info: Compiling lib_JOYSTICK/KEY.c to obj/default/lib_JOYSTICK/KEY.o
+nios2-elf-gcc.exe -xc -MP -MMD -c -Ic:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//HAL/inc -Ic:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/ -Ic:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall  -mno-hw-div -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o "obj/default/lib_JOYSTICK/KEY.o" "lib_JOYSTICK/KEY.c"
+lib_JOYSTICK/KEY.c: In function 'initialize_joystick':
+lib_JOYSTICK/KEY.c:141:29: error: 'IRQ_IRQ_INTERRUPT_CONTROLLER_ID' undeclared (first use in this function); did you mean 'WRREG_IRQ_INTERRUPT_CONTROLLER_ID'?
+  141 |         alt_ic_isr_register(IRQ_IRQ_INTERRUPT_CONTROLLER_ID, IRQ_IRQ, (void *)interrupt, NULL, 0x0);
+      |                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                             WRREG_IRQ_INTERRUPT_CONTROLLER_ID
+lib_JOYSTICK/KEY.c:141:29: note: each undeclared identifier is reported only once for each function it appears in
+lib_JOYSTICK/KEY.c:141:62: error: 'IRQ_IRQ' undeclared (first use in this function); did you mean 'RMIRQ'?
+  141 |         alt_ic_isr_register(IRQ_IRQ_INTERRUPT_CONTROLLER_ID, IRQ_IRQ, (void *)interrupt, NULL, 0x0);
+      |                                                              ^~~~~~~
+      |                                                              RMIRQ
+make: *** [Makefile:727: obj/default/lib_JOYSTICK/KEY.o] Error 1
+08:56:05 **** Incremental Build of configuration Nios II for project sas ****
+wsl make all 
+Info: Building /mnt/c/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/
+make --no-print-directory -C /mnt/c/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/
+[BSP build complete]
+Info: Compiling lib_JOYSTICK/KEY.c to obj/default/lib_JOYSTICK/KEY.o
+nios2-elf-gcc.exe -xc -MP -MMD -c -Ic:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//HAL/inc -Ic:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/ -Ic:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall  -mno-hw-div -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o "obj/default/lib_JOYSTICK/KEY.o" "lib_JOYSTICK/KEY.c"
+Info: Linking sas.elf
+nios2-elf-g++.exe -T'c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//linker.x' -msys-crt0='c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -Lc:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/ -msmallc  -Wl,-Map=sas.map   -Os -g -Wall  -mno-hw-div -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o sas.elf obj/default/lib_JOYSTICK/KEY.o obj/default/lib_graphic_processor/graphic_processor.o obj/default/new_asteroids_game.o -lm -msys-lib=m
+nios2-elf-insert.exe sas.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x11110 --timestamp 1728871358 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name Arquitetura --quartus_project_dir "c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano" --jdi ../..//output_files/ConsoleFPGA.jdi --sopcinfo C:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/Arquitetura.sopcinfo
+Info: (sas.elf) 11 KBytes program size (code + initialized data).
+Info:           17 KBytes free for stack + heap.
+Info: Creating sas.objdump
+nios2-elf-objdump.exe --disassemble --syms --all-header --source sas.elf >sas.objdump
+[sas build complete]
+09:18:21 **** Incremental Build of configuration Nios II for project sas ****
+wsl make all 
+Info: Building /mnt/c/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/
+make --no-print-directory -C /mnt/c/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/
+[BSP build complete]
+Info: Compiling new_asteroids_game.c to obj/default/new_asteroids_game.o
+nios2-elf-gcc.exe -xc -MP -MMD -c -Ic:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//HAL/inc -Ic:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/ -Ic:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall  -mno-hw-div -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o "obj/default/new_asteroids_game.o" "new_asteroids_game.c"
+In file included from new_asteroids_game.c:10:
+lib_JOYSTICK/KEY.h:19: warning: "LEFT" redefined
+   19 | #define LEFT   8
+      | 
+In file included from new_asteroids_game.c:9:
+lib_graphic_processor/graphic_processor.h:8: note: this is the location of the previous definition
+    8 | #define LEFT             0
+      | 
+lib_JOYSTICK/KEY.h:20: warning: "RIGHT" redefined
+   20 | #define RIGHT  9
+      | 
+lib_graphic_processor/graphic_processor.h:12: note: this is the location of the previous definition
+   12 | #define RIGHT            4
+      | 
+lib_JOYSTICK/KEY.h:21: warning: "UP" redefined
+   21 | #define UP     10
+      | 
+lib_graphic_processor/graphic_processor.h:10: note: this is the location of the previous definition
+   10 | #define UP                       2
+      | 
+lib_JOYSTICK/KEY.h:22: warning: "DOWN" redefined
+   22 | #define DOWN   11
+      | 
+lib_graphic_processor/graphic_processor.h:14: note: this is the location of the previous definition
+   14 | #define DOWN         6
+      | 
+new_asteroids_game.c: In function 'main':
+lib_JOYSTICK/KEY.h:13:16: error: expected identifier or '(' before numeric constant
+   13 | #define TR     3
+      |                ^
+new_asteroids_game.c:163:13: note: in expansion of macro 'TR'
+  163 |         int TR   = 0;
+      |             ^~
+lib_JOYSTICK/KEY.h:12:16: error: expected identifier or '(' before numeric constant
+   12 | #define TL     2
+      |                ^
+new_asteroids_game.c:164:13: note: in expansion of macro 'TL'
+  164 |         int TL   = 0;
+      |             ^~
+lib_JOYSTICK/KEY.h:15:16: error: expected identifier or '(' before numeric constant
+   15 | #define A      5
+      |                ^
+new_asteroids_game.c:165:13: note: in expansion of macro 'A'
+  165 |         int A    = 0;
+      |             ^
+new_asteroids_game.c:176:23: error: lvalue required as left operand of assignment
+  176 |                 TR    = read_KEY(TR, LEVEL);
+      |                       ^
+new_asteroids_game.c:177:23: error: lvalue required as left operand of assignment
+  177 |                 TL    = read_KEY(TL, LEVEL);
+      |                       ^
+new_asteroids_game.c:178:23: error: lvalue required as left operand of assignment
+  178 |                 A     = read_KEY(SELECT, LEVEL);
+      |                       ^
+make: *** [Makefile:727: obj/default/new_asteroids_game.o] Error 1
+09:23:39 **** Incremental Build of configuration Nios II for project sas ****
+wsl make all 
+Info: Building /mnt/c/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/
+make --no-print-directory -C /mnt/c/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/
+[BSP build complete]
+Info: Compiling new_asteroids_game.c to obj/default/new_asteroids_game.o
+nios2-elf-gcc.exe -xc -MP -MMD -c -Ic:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//HAL/inc -Ic:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/ -Ic:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall  -mno-hw-div -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o "obj/default/new_asteroids_game.o" "new_asteroids_game.c"
+In file included from new_asteroids_game.c:10:
+lib_JOYSTICK/KEY.h:19: warning: "LEFT" redefined
+   19 | #define LEFT   8
+      | 
+In file included from new_asteroids_game.c:9:
+lib_graphic_processor/graphic_processor.h:8: note: this is the location of the previous definition
+    8 | #define LEFT             0
+      | 
+lib_JOYSTICK/KEY.h:20: warning: "RIGHT" redefined
+   20 | #define RIGHT  9
+      | 
+lib_graphic_processor/graphic_processor.h:12: note: this is the location of the previous definition
+   12 | #define RIGHT            4
+      | 
+lib_JOYSTICK/KEY.h:21: warning: "UP" redefined
+   21 | #define UP     10
+      | 
+lib_graphic_processor/graphic_processor.h:10: note: this is the location of the previous definition
+   10 | #define UP                       2
+      | 
+lib_JOYSTICK/KEY.h:22: warning: "DOWN" redefined
+   22 | #define DOWN   11
+      | 
+lib_graphic_processor/graphic_processor.h:14: note: this is the location of the previous definition
+   14 | #define DOWN         6
+      | 
+Info: Linking sas.elf
+nios2-elf-g++.exe -T'c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//linker.x' -msys-crt0='c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -Lc:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/ -msmallc  -Wl,-Map=sas.map   -Os -g -Wall  -mno-hw-div -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o sas.elf obj/default/lib_JOYSTICK/KEY.o obj/default/lib_graphic_processor/graphic_processor.o obj/default/new_asteroids_game.o -lm -msys-lib=m
+nios2-elf-insert.exe sas.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x11110 --timestamp 1728871358 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name Arquitetura --quartus_project_dir "c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano" --jdi ../..//output_files/ConsoleFPGA.jdi --sopcinfo C:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/Arquitetura.sopcinfo
+Info: (sas.elf) 12 KBytes program size (code + initialized data).
+Info:           17 KBytes free for stack + heap.
+Info: Creating sas.objdump
+nios2-elf-objdump.exe --disassemble --syms --all-header --source sas.elf >sas.objdump
+[sas build complete]
+09:25:26 **** Incremental Build of configuration Nios II for project sas ****
+wsl make all 
+Info: Building /mnt/c/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/
+make --no-print-directory -C /mnt/c/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/
+[BSP build complete]
+Info: Compiling lib_JOYSTICK/KEY.c to obj/default/lib_JOYSTICK/KEY.o
+nios2-elf-gcc.exe -xc -MP -MMD -c -Ic:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//HAL/inc -Ic:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/ -Ic:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall  -mno-hw-div -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o "obj/default/lib_JOYSTICK/KEY.o" "lib_JOYSTICK/KEY.c"
+Info: Linking sas.elf
+nios2-elf-g++.exe -T'c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//linker.x' -msys-crt0='c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -Lc:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/ -msmallc  -Wl,-Map=sas.map   -Os -g -Wall  -mno-hw-div -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o sas.elf obj/default/lib_JOYSTICK/KEY.o obj/default/lib_graphic_processor/graphic_processor.o obj/default/new_asteroids_game.o -lm -msys-lib=m
+nios2-elf-insert.exe sas.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x11110 --timestamp 1728871358 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name Arquitetura --quartus_project_dir "c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano" --jdi ../..//output_files/ConsoleFPGA.jdi --sopcinfo C:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/Arquitetura.sopcinfo
+Info: (sas.elf) 12 KBytes program size (code + initialized data).
+Info:           17 KBytes free for stack + heap.
+Info: Creating sas.objdump
+nios2-elf-objdump.exe --disassemble --syms --all-header --source sas.elf >sas.objdump
+[sas build complete]
+09:25:55 **** Incremental Build of configuration Nios II for project sas ****
+wsl make all 
+Info: Building /mnt/c/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/
+make --no-print-directory -C /mnt/c/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/
+[BSP build complete]
+[sas build complete]
+09:28:11 **** Incremental Build of configuration Nios II for project sas ****
+wsl make all 
+Info: Building /mnt/c/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/
+make --no-print-directory -C /mnt/c/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/
+[BSP build complete]
+Info: Compiling lib_JOYSTICK/KEY.c to obj/default/lib_JOYSTICK/KEY.o
+nios2-elf-gcc.exe -xc -MP -MMD -c -Ic:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//HAL/inc -Ic:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/ -Ic:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall  -mno-hw-div -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o "obj/default/lib_JOYSTICK/KEY.o" "lib_JOYSTICK/KEY.c"
+Info: Linking sas.elf
+nios2-elf-g++.exe -T'c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//linker.x' -msys-crt0='c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -Lc:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/ -msmallc  -Wl,-Map=sas.map   -Os -g -Wall  -mno-hw-div -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o sas.elf obj/default/lib_JOYSTICK/KEY.o obj/default/lib_graphic_processor/graphic_processor.o obj/default/new_asteroids_game.o -lm -msys-lib=m
+nios2-elf-insert.exe sas.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x11110 --timestamp 1728871358 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name Arquitetura --quartus_project_dir "c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano" --jdi ../..//output_files/ConsoleFPGA.jdi --sopcinfo C:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/Arquitetura.sopcinfo
+Info: (sas.elf) 11 KBytes program size (code + initialized data).
+Info:           17 KBytes free for stack + heap.
+Info: Creating sas.objdump
+nios2-elf-objdump.exe --disassemble --syms --all-header --source sas.elf >sas.objdump
+[sas build complete]
+09:31:23 **** Incremental Build of configuration Nios II for project sas ****
+wsl make all 
+Info: Building /mnt/c/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/
+make --no-print-directory -C /mnt/c/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/
+[BSP build complete]
+[sas build complete]
+09:31:52 **** Incremental Build of configuration Nios II for project sas ****
+wsl make all 
+Info: Building /mnt/c/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/
+make --no-print-directory -C /mnt/c/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/
+[BSP build complete]
+[sas build complete]
+09:32:38 **** Incremental Build of configuration Nios II for project sas ****
+wsl make all 
+Info: Building /mnt/c/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/
+make --no-print-directory -C /mnt/c/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/
+[BSP build complete]
+Info: Compiling new_asteroids_game.c to obj/default/new_asteroids_game.o
+nios2-elf-gcc.exe -xc -MP -MMD -c -Ic:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//HAL/inc -Ic:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/ -Ic:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall  -mno-hw-div -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o "obj/default/new_asteroids_game.o" "new_asteroids_game.c"
+In file included from new_asteroids_game.c:10:
+lib_JOYSTICK/KEY.h:19: warning: "LEFT" redefined
+   19 | #define LEFT   8
+      | 
+In file included from new_asteroids_game.c:9:
+lib_graphic_processor/graphic_processor.h:8: note: this is the location of the previous definition
+    8 | #define LEFT             0
+      | 
+lib_JOYSTICK/KEY.h:20: warning: "RIGHT" redefined
+   20 | #define RIGHT  9
+      | 
+lib_graphic_processor/graphic_processor.h:12: note: this is the location of the previous definition
+   12 | #define RIGHT            4
+      | 
+lib_JOYSTICK/KEY.h:21: warning: "UP" redefined
+   21 | #define UP     10
+      | 
+lib_graphic_processor/graphic_processor.h:10: note: this is the location of the previous definition
+   10 | #define UP                       2
+      | 
+lib_JOYSTICK/KEY.h:22: warning: "DOWN" redefined
+   22 | #define DOWN   11
+      | 
+lib_graphic_processor/graphic_processor.h:14: note: this is the location of the previous definition
+   14 | #define DOWN         6
+      | 
+new_asteroids_game.c:475:6: warning: 'atirar_sp' defined but not used [-Wunused-function]
+  475 | void atirar_sp(Sprite *nave, Sprite *tiro){
+      |      ^~~~~~~~~
+new_asteroids_game.c:438:6: warning: 'increase_points' defined but not used [-Wunused-function]
+  438 | void increase_points(Sprite_Fixed *dg_1, Sprite_Fixed *dg_2, Sprite_Fixed *dg_3){
+      |      ^~~~~~~~~~~~~~~
+new_asteroids_game.c:419:6: warning: 'collision_between_tiro_and_ast' defined but not used [-Wunused-function]
+  419 | void collision_between_tiro_and_ast(Sprite *tiro, Sprite* asteroids[], Sprite_Fixed* placar[]){
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+new_asteroids_game.c:411:6: warning: 'initialize_sprite_random' defined but not used [-Wunused-function]
+  411 | void initialize_sprite_random(int offset, Sprite *sp){
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~
+Info: Linking sas.elf
+nios2-elf-g++.exe -T'c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//linker.x' -msys-crt0='c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -Lc:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/ -msmallc  -Wl,-Map=sas.map   -Os -g -Wall  -mno-hw-div -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o sas.elf obj/default/lib_JOYSTICK/KEY.o obj/default/lib_graphic_processor/graphic_processor.o obj/default/new_asteroids_game.o -lm -msys-lib=m
+c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/bin/ld.exe: obj/default/new_asteroids_game.o: in function `main':
+C:\Users\thiag\Downloads\CoLendaFPGA\CoLendaFPGA\DE0-Nano\software\sas/new_asteroids_game.c:79: undefined reference to `initialize_sprite_random'
+c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/bin/ld.exe: C:\Users\thiag\Downloads\CoLendaFPGA\CoLendaFPGA\DE0-Nano\software\sas/new_asteroids_game.c:80: undefined reference to `initialize_sprite_random'
+c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/bin/ld.exe: C:\Users\thiag\Downloads\CoLendaFPGA\CoLendaFPGA\DE0-Nano\software\sas/new_asteroids_game.c:81: undefined reference to `initialize_sprite_random'
+c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/bin/ld.exe: C:\Users\thiag\Downloads\CoLendaFPGA\CoLendaFPGA\DE0-Nano\software\sas/new_asteroids_game.c:82: undefined reference to `initialize_sprite_random'
+c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/bin/ld.exe: C:\Users\thiag\Downloads\CoLendaFPGA\CoLendaFPGA\DE0-Nano\software\sas/new_asteroids_game.c:83: undefined reference to `initialize_sprite_random'
+c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/bin/ld.exe: obj/default/new_asteroids_game.o:C:\Users\thiag\Downloads\CoLendaFPGA\CoLendaFPGA\DE0-Nano\software\sas/new_asteroids_game.c:84: more undefined references to `initialize_sprite_random' follow
+c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/bin/ld.exe: obj/default/new_asteroids_game.o: in function `main':
+C:\Users\thiag\Downloads\CoLendaFPGA\CoLendaFPGA\DE0-Nano\software\sas/new_asteroids_game.c:212: undefined reference to `collision_between_tiro_and_ast'
+c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/bin/ld.exe: C:\Users\thiag\Downloads\CoLendaFPGA\CoLendaFPGA\DE0-Nano\software\sas/new_asteroids_game.c:213: undefined reference to `collision_between_tiro_and_ast'
+c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/bin/ld.exe: C:\Users\thiag\Downloads\CoLendaFPGA\CoLendaFPGA\DE0-Nano\software\sas/new_asteroids_game.c:214: undefined reference to `collision_between_tiro_and_ast'
+c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/bin/ld.exe: C:\Users\thiag\Downloads\CoLendaFPGA\CoLendaFPGA\DE0-Nano\software\sas/new_asteroids_game.c:215: undefined reference to `collision_between_tiro_and_ast'
+c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/bin/ld.exe: C:\Users\thiag\Downloads\CoLendaFPGA\CoLendaFPGA\DE0-Nano\software\sas/new_asteroids_game.c:216: undefined reference to `collision_between_tiro_and_ast'
+c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/bin/ld.exe: C:\Users\thiag\Downloads\CoLendaFPGA\CoLendaFPGA\DE0-Nano\software\sas/new_asteroids_game.c:260: undefined reference to `atirar_sp'
+collect2.exe: error: ld returned 1 exit status
+make: *** [Makefile:1017: sas.elf] Error 1
+09:33:37 **** Incremental Build of configuration Nios II for project sas ****
+wsl make all 
+Info: Building /mnt/c/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/
+make --no-print-directory -C /mnt/c/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/
+[BSP build complete]
+Info: Compiling new_asteroids_game.c to obj/default/new_asteroids_game.o
+nios2-elf-gcc.exe -xc -MP -MMD -c -Ic:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//HAL/inc -Ic:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/ -Ic:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall  -mno-hw-div -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o "obj/default/new_asteroids_game.o" "new_asteroids_game.c"
+In file included from new_asteroids_game.c:10:
+lib_JOYSTICK/KEY.h:19: warning: "LEFT" redefined
+   19 | #define LEFT   8
+      | 
+In file included from new_asteroids_game.c:9:
+lib_graphic_processor/graphic_processor.h:8: note: this is the location of the previous definition
+    8 | #define LEFT             0
+      | 
+lib_JOYSTICK/KEY.h:20: warning: "RIGHT" redefined
+   20 | #define RIGHT  9
+      | 
+lib_graphic_processor/graphic_processor.h:12: note: this is the location of the previous definition
+   12 | #define RIGHT            4
+      | 
+lib_JOYSTICK/KEY.h:21: warning: "UP" redefined
+   21 | #define UP     10
+      | 
+lib_graphic_processor/graphic_processor.h:10: note: this is the location of the previous definition
+   10 | #define UP                       2
+      | 
+lib_JOYSTICK/KEY.h:22: warning: "DOWN" redefined
+   22 | #define DOWN   11
+      | 
+lib_graphic_processor/graphic_processor.h:14: note: this is the location of the previous definition
+   14 | #define DOWN         6
+      | 
+Info: Linking sas.elf
+nios2-elf-g++.exe -T'c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//linker.x' -msys-crt0='c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -Lc:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/ -msmallc  -Wl,-Map=sas.map   -Os -g -Wall  -mno-hw-div -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o sas.elf obj/default/lib_JOYSTICK/KEY.o obj/default/lib_graphic_processor/graphic_processor.o obj/default/new_asteroids_game.o -lm -msys-lib=m
+nios2-elf-insert.exe sas.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x11110 --timestamp 1728871358 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name Arquitetura --quartus_project_dir "c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano" --jdi ../..//output_files/ConsoleFPGA.jdi --sopcinfo C:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/Arquitetura.sopcinfo
+Info: (sas.elf) 11 KBytes program size (code + initialized data).
+Info:           17 KBytes free for stack + heap.
+Info: Creating sas.objdump
+nios2-elf-objdump.exe --disassemble --syms --all-header --source sas.elf >sas.objdump
+[sas build complete]
+09:35:41 **** Incremental Build of configuration Nios II for project sas ****
+wsl make all 
+Info: Building /mnt/c/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/
+make --no-print-directory -C /mnt/c/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/
+[BSP build complete]
+[sas build complete]
+09:39:04 **** Incremental Build of configuration Nios II for project sas ****
+wsl make all 
+Info: Building /mnt/c/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/
+make --no-print-directory -C /mnt/c/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/
+[BSP build complete]
+Info: Compiling new_asteroids_game.c to obj/default/new_asteroids_game.o
+nios2-elf-gcc.exe -xc -MP -MMD -c -Ic:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//HAL/inc -Ic:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/ -Ic:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall  -mno-hw-div -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o "obj/default/new_asteroids_game.o" "new_asteroids_game.c"
+In file included from new_asteroids_game.c:10:
+lib_JOYSTICK/KEY.h:19: warning: "LEFT" redefined
+   19 | #define LEFT   8
+      | 
+In file included from new_asteroids_game.c:9:
+lib_graphic_processor/graphic_processor.h:8: note: this is the location of the previous definition
+    8 | #define LEFT             0
+      | 
+lib_JOYSTICK/KEY.h:20: warning: "RIGHT" redefined
+   20 | #define RIGHT  9
+      | 
+lib_graphic_processor/graphic_processor.h:12: note: this is the location of the previous definition
+   12 | #define RIGHT            4
+      | 
+lib_JOYSTICK/KEY.h:21: warning: "UP" redefined
+   21 | #define UP     10
+      | 
+lib_graphic_processor/graphic_processor.h:10: note: this is the location of the previous definition
+   10 | #define UP                       2
+      | 
+lib_JOYSTICK/KEY.h:22: warning: "DOWN" redefined
+   22 | #define DOWN   11
+      | 
+lib_graphic_processor/graphic_processor.h:14: note: this is the location of the previous definition
+   14 | #define DOWN         6
+      | 
+Info: Linking sas.elf
+nios2-elf-g++.exe -T'c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//linker.x' -msys-crt0='c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -Lc:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/ -msmallc  -Wl,-Map=sas.map   -Os -g -Wall  -mno-hw-div -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o sas.elf obj/default/lib_JOYSTICK/KEY.o obj/default/lib_graphic_processor/graphic_processor.o obj/default/new_asteroids_game.o -lm -msys-lib=m
+nios2-elf-insert.exe sas.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x11110 --timestamp 1728871358 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name Arquitetura --quartus_project_dir "c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano" --jdi ../..//output_files/ConsoleFPGA.jdi --sopcinfo C:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/Arquitetura.sopcinfo
+Info: (sas.elf) 11 KBytes program size (code + initialized data).
+Info:           17 KBytes free for stack + heap.
+Info: Creating sas.objdump
+nios2-elf-objdump.exe --disassemble --syms --all-header --source sas.elf >sas.objdump
+[sas build complete]
+09:39:41 **** Incremental Build of configuration Nios II for project sas ****
+wsl make all 
+Info: Building /mnt/c/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/
+make --no-print-directory -C /mnt/c/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/
+[BSP build complete]
+[sas build complete]
+09:40:42 **** Incremental Build of configuration Nios II for project sas ****
+wsl make all 
+Info: Building /mnt/c/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/
+make --no-print-directory -C /mnt/c/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/
+[BSP build complete]
+Info: Compiling new_asteroids_game.c to obj/default/new_asteroids_game.o
+nios2-elf-gcc.exe -xc -MP -MMD -c -Ic:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//HAL/inc -Ic:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/ -Ic:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall  -mno-hw-div -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o "obj/default/new_asteroids_game.o" "new_asteroids_game.c"
+In file included from new_asteroids_game.c:10:
+lib_JOYSTICK/KEY.h:19: warning: "LEFT" redefined
+   19 | #define LEFT   8
+      | 
+In file included from new_asteroids_game.c:9:
+lib_graphic_processor/graphic_processor.h:8: note: this is the location of the previous definition
+    8 | #define LEFT             0
+      | 
+lib_JOYSTICK/KEY.h:20: warning: "RIGHT" redefined
+   20 | #define RIGHT  9
+      | 
+lib_graphic_processor/graphic_processor.h:12: note: this is the location of the previous definition
+   12 | #define RIGHT            4
+      | 
+lib_JOYSTICK/KEY.h:21: warning: "UP" redefined
+   21 | #define UP     10
+      | 
+lib_graphic_processor/graphic_processor.h:10: note: this is the location of the previous definition
+   10 | #define UP                       2
+      | 
+lib_JOYSTICK/KEY.h:22: warning: "DOWN" redefined
+   22 | #define DOWN   11
+      | 
+lib_graphic_processor/graphic_processor.h:14: note: this is the location of the previous definition
+   14 | #define DOWN         6
+      | 
+Info: Linking sas.elf
+nios2-elf-g++.exe -T'c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//linker.x' -msys-crt0='c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -Lc:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/ -msmallc  -Wl,-Map=sas.map   -Os -g -Wall  -mno-hw-div -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o sas.elf obj/default/lib_JOYSTICK/KEY.o obj/default/lib_graphic_processor/graphic_processor.o obj/default/new_asteroids_game.o -lm -msys-lib=m
+nios2-elf-insert.exe sas.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x11110 --timestamp 1728871358 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name Arquitetura --quartus_project_dir "c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano" --jdi ../..//output_files/ConsoleFPGA.jdi --sopcinfo C:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/Arquitetura.sopcinfo
+Info: (sas.elf) 11 KBytes program size (code + initialized data).
+Info:           17 KBytes free for stack + heap.
+Info: Creating sas.objdump
+nios2-elf-objdump.exe --disassemble --syms --all-header --source sas.elf >sas.objdump
+[sas build complete]
+09:44:28 **** Incremental Build of configuration Nios II for project sas ****
+wsl make all 
+Info: Building /mnt/c/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/
+make --no-print-directory -C /mnt/c/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/
+[BSP build complete]
+Info: Compiling new_asteroids_game.c to obj/default/new_asteroids_game.o
+nios2-elf-gcc.exe -xc -MP -MMD -c -Ic:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//HAL/inc -Ic:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/ -Ic:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall  -mno-hw-div -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o "obj/default/new_asteroids_game.o" "new_asteroids_game.c"
+In file included from new_asteroids_game.c:10:
+lib_JOYSTICK/KEY.h:19: warning: "LEFT" redefined
+   19 | #define LEFT   8
+      | 
+In file included from new_asteroids_game.c:9:
+lib_graphic_processor/graphic_processor.h:8: note: this is the location of the previous definition
+    8 | #define LEFT             0
+      | 
+lib_JOYSTICK/KEY.h:20: warning: "RIGHT" redefined
+   20 | #define RIGHT  9
+      | 
+lib_graphic_processor/graphic_processor.h:12: note: this is the location of the previous definition
+   12 | #define RIGHT            4
+      | 
+lib_JOYSTICK/KEY.h:21: warning: "UP" redefined
+   21 | #define UP     10
+      | 
+lib_graphic_processor/graphic_processor.h:10: note: this is the location of the previous definition
+   10 | #define UP                       2
+      | 
+lib_JOYSTICK/KEY.h:22: warning: "DOWN" redefined
+   22 | #define DOWN   11
+      | 
+lib_graphic_processor/graphic_processor.h:14: note: this is the location of the previous definition
+   14 | #define DOWN         6
+      | 
+Info: Linking sas.elf
+nios2-elf-g++.exe -T'c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//linker.x' -msys-crt0='c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -Lc:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/ -msmallc  -Wl,-Map=sas.map   -Os -g -Wall  -mno-hw-div -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o sas.elf obj/default/lib_JOYSTICK/KEY.o obj/default/lib_graphic_processor/graphic_processor.o obj/default/new_asteroids_game.o -lm -msys-lib=m
+nios2-elf-insert.exe sas.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x11110 --timestamp 1728871358 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name Arquitetura --quartus_project_dir "c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano" --jdi ../..//output_files/ConsoleFPGA.jdi --sopcinfo C:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/Arquitetura.sopcinfo
+Info: (sas.elf) 11 KBytes program size (code + initialized data).
+Info:           17 KBytes free for stack + heap.
+Info: Creating sas.objdump
+nios2-elf-objdump.exe --disassemble --syms --all-header --source sas.elf >sas.objdump
+[sas build complete]
+09:46:34 **** Incremental Build of configuration Nios II for project sas ****
+wsl make all 
+Info: Building /mnt/c/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/
+make --no-print-directory -C /mnt/c/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/
+[BSP build complete]
+Info: Compiling new_asteroids_game.c to obj/default/new_asteroids_game.o
+nios2-elf-gcc.exe -xc -MP -MMD -c -Ic:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//HAL/inc -Ic:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/ -Ic:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall  -mno-hw-div -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o "obj/default/new_asteroids_game.o" "new_asteroids_game.c"
+In file included from new_asteroids_game.c:10:
+lib_JOYSTICK/KEY.h:19: warning: "LEFT" redefined
+   19 | #define LEFT   8
+      | 
+In file included from new_asteroids_game.c:9:
+lib_graphic_processor/graphic_processor.h:8: note: this is the location of the previous definition
+    8 | #define LEFT             0
+      | 
+lib_JOYSTICK/KEY.h:20: warning: "RIGHT" redefined
+   20 | #define RIGHT  9
+      | 
+lib_graphic_processor/graphic_processor.h:12: note: this is the location of the previous definition
+   12 | #define RIGHT            4
+      | 
+lib_JOYSTICK/KEY.h:21: warning: "UP" redefined
+   21 | #define UP     10
+      | 
+lib_graphic_processor/graphic_processor.h:10: note: this is the location of the previous definition
+   10 | #define UP                       2
+      | 
+lib_JOYSTICK/KEY.h:22: warning: "DOWN" redefined
+   22 | #define DOWN   11
+      | 
+lib_graphic_processor/graphic_processor.h:14: note: this is the location of the previous definition
+   14 | #define DOWN         6
+      | 
+Info: Linking sas.elf
+nios2-elf-g++.exe -T'c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//linker.x' -msys-crt0='c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -Lc:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/ -msmallc  -Wl,-Map=sas.map   -Os -g -Wall  -mno-hw-div -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o sas.elf obj/default/lib_JOYSTICK/KEY.o obj/default/lib_graphic_processor/graphic_processor.o obj/default/new_asteroids_game.o -lm -msys-lib=m
+nios2-elf-insert.exe sas.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x11110 --timestamp 1728871358 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name Arquitetura --quartus_project_dir "c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano" --jdi ../..//output_files/ConsoleFPGA.jdi --sopcinfo C:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/Arquitetura.sopcinfo
+Info: (sas.elf) 11 KBytes program size (code + initialized data).
+Info:           17 KBytes free for stack + heap.
+Info: Creating sas.objdump
+nios2-elf-objdump.exe --disassemble --syms --all-header --source sas.elf >sas.objdump
+[sas build complete]
+09:47:18 **** Incremental Build of configuration Nios II for project sas ****
+wsl make all 
+Info: Building /mnt/c/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/
+make --no-print-directory -C /mnt/c/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/
+[BSP build complete]
+[sas build complete]
+09:57:01 **** Incremental Build of configuration Nios II for project sas ****
+wsl make all 
+Info: Building /mnt/c/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/
+make --no-print-directory -C /mnt/c/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/
+[BSP build complete]
+[sas build complete]
+09:58:51 **** Incremental Build of configuration Nios II for project sas ****
+wsl make all 
+Info: Building /mnt/c/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/
+make --no-print-directory -C /mnt/c/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/
+[BSP build complete]
+Info: Compiling new_asteroids_game.c to obj/default/new_asteroids_game.o
+nios2-elf-gcc.exe -xc -MP -MMD -c -Ic:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//HAL/inc -Ic:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/ -Ic:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall  -mno-hw-div -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o "obj/default/new_asteroids_game.o" "new_asteroids_game.c"
+In file included from new_asteroids_game.c:10:
+lib_JOYSTICK/KEY.h:19: warning: "LEFT" redefined
+   19 | #define LEFT   8
+      | 
+In file included from new_asteroids_game.c:9:
+lib_graphic_processor/graphic_processor.h:8: note: this is the location of the previous definition
+    8 | #define LEFT             0
+      | 
+lib_JOYSTICK/KEY.h:20: warning: "RIGHT" redefined
+   20 | #define RIGHT  9
+      | 
+lib_graphic_processor/graphic_processor.h:12: note: this is the location of the previous definition
+   12 | #define RIGHT            4
+      | 
+lib_JOYSTICK/KEY.h:21: warning: "UP" redefined
+   21 | #define UP     10
+      | 
+lib_graphic_processor/graphic_processor.h:10: note: this is the location of the previous definition
+   10 | #define UP                       2
+      | 
+lib_JOYSTICK/KEY.h:22: warning: "DOWN" redefined
+   22 | #define DOWN   11
+      | 
+lib_graphic_processor/graphic_processor.h:14: note: this is the location of the previous definition
+   14 | #define DOWN         6
+      | 
+Info: Linking sas.elf
+nios2-elf-g++.exe -T'c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//linker.x' -msys-crt0='c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -Lc:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/ -msmallc  -Wl,-Map=sas.map   -Os -g -Wall  -mno-hw-div -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o sas.elf obj/default/lib_JOYSTICK/KEY.o obj/default/lib_graphic_processor/graphic_processor.o obj/default/new_asteroids_game.o -lm -msys-lib=m
+nios2-elf-insert.exe sas.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x11110 --timestamp 1728871358 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name Arquitetura --quartus_project_dir "c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano" --jdi ../..//output_files/ConsoleFPGA.jdi --sopcinfo C:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/Arquitetura.sopcinfo
+Info: (sas.elf) 11 KBytes program size (code + initialized data).
+Info:           17 KBytes free for stack + heap.
+Info: Creating sas.objdump
+nios2-elf-objdump.exe --disassemble --syms --all-header --source sas.elf >sas.objdump
+[sas build complete]
+10:00:21 **** Incremental Build of configuration Nios II for project sas ****
+wsl make all 
+Info: Building /mnt/c/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/
+make --no-print-directory -C /mnt/c/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/
+[BSP build complete]
+Info: Compiling new_asteroids_game.c to obj/default/new_asteroids_game.o
+nios2-elf-gcc.exe -xc -MP -MMD -c -Ic:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//HAL/inc -Ic:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/ -Ic:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall  -mno-hw-div -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o "obj/default/new_asteroids_game.o" "new_asteroids_game.c"
+In file included from new_asteroids_game.c:10:
+lib_JOYSTICK/KEY.h:19: warning: "LEFT" redefined
+   19 | #define LEFT   8
+      | 
+In file included from new_asteroids_game.c:9:
+lib_graphic_processor/graphic_processor.h:8: note: this is the location of the previous definition
+    8 | #define LEFT             0
+      | 
+lib_JOYSTICK/KEY.h:20: warning: "RIGHT" redefined
+   20 | #define RIGHT  9
+      | 
+lib_graphic_processor/graphic_processor.h:12: note: this is the location of the previous definition
+   12 | #define RIGHT            4
+      | 
+lib_JOYSTICK/KEY.h:21: warning: "UP" redefined
+   21 | #define UP     10
+      | 
+lib_graphic_processor/graphic_processor.h:10: note: this is the location of the previous definition
+   10 | #define UP                       2
+      | 
+lib_JOYSTICK/KEY.h:22: warning: "DOWN" redefined
+   22 | #define DOWN   11
+      | 
+lib_graphic_processor/graphic_processor.h:14: note: this is the location of the previous definition
+   14 | #define DOWN         6
+      | 
+Info: Linking sas.elf
+nios2-elf-g++.exe -T'c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//linker.x' -msys-crt0='c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -Lc:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/ -msmallc  -Wl,-Map=sas.map   -Os -g -Wall  -mno-hw-div -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o sas.elf obj/default/lib_JOYSTICK/KEY.o obj/default/lib_graphic_processor/graphic_processor.o obj/default/new_asteroids_game.o -lm -msys-lib=m
+nios2-elf-insert.exe sas.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x11110 --timestamp 1728871358 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name Arquitetura --quartus_project_dir "c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano" --jdi ../..//output_files/ConsoleFPGA.jdi --sopcinfo C:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/Arquitetura.sopcinfo
+Info: (sas.elf) 11 KBytes program size (code + initialized data).
+Info:           17 KBytes free for stack + heap.
+Info: Creating sas.objdump
+nios2-elf-objdump.exe --disassemble --syms --all-header --source sas.elf >sas.objdump
+[sas build complete]
+10:03:11 **** Incremental Build of configuration Nios II for project sas ****
+wsl make all 
+Info: Building /mnt/c/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/
+make --no-print-directory -C /mnt/c/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/
+[BSP build complete]
+Info: Compiling new_asteroids_game.c to obj/default/new_asteroids_game.o
+nios2-elf-gcc.exe -xc -MP -MMD -c -Ic:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//HAL/inc -Ic:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/ -Ic:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall  -mno-hw-div -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o "obj/default/new_asteroids_game.o" "new_asteroids_game.c"
+In file included from new_asteroids_game.c:10:
+lib_JOYSTICK/KEY.h:19: warning: "LEFT" redefined
+   19 | #define LEFT   8
+      | 
+In file included from new_asteroids_game.c:9:
+lib_graphic_processor/graphic_processor.h:8: note: this is the location of the previous definition
+    8 | #define LEFT             0
+      | 
+lib_JOYSTICK/KEY.h:20: warning: "RIGHT" redefined
+   20 | #define RIGHT  9
+      | 
+lib_graphic_processor/graphic_processor.h:12: note: this is the location of the previous definition
+   12 | #define RIGHT            4
+      | 
+lib_JOYSTICK/KEY.h:21: warning: "UP" redefined
+   21 | #define UP     10
+      | 
+lib_graphic_processor/graphic_processor.h:10: note: this is the location of the previous definition
+   10 | #define UP                       2
+      | 
+lib_JOYSTICK/KEY.h:22: warning: "DOWN" redefined
+   22 | #define DOWN   11
+      | 
+lib_graphic_processor/graphic_processor.h:14: note: this is the location of the previous definition
+   14 | #define DOWN         6
+      | 
+Info: Linking sas.elf
+nios2-elf-g++.exe -T'c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//linker.x' -msys-crt0='c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -Lc:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/ -msmallc  -Wl,-Map=sas.map   -Os -g -Wall  -mno-hw-div -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o sas.elf obj/default/lib_JOYSTICK/KEY.o obj/default/lib_graphic_processor/graphic_processor.o obj/default/new_asteroids_game.o -lm -msys-lib=m
+nios2-elf-insert.exe sas.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x11110 --timestamp 1728871358 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name Arquitetura --quartus_project_dir "c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano" --jdi ../..//output_files/ConsoleFPGA.jdi --sopcinfo C:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/Arquitetura.sopcinfo
+Info: (sas.elf) 11 KBytes program size (code + initialized data).
+Info:           17 KBytes free for stack + heap.
+Info: Creating sas.objdump
+nios2-elf-objdump.exe --disassemble --syms --all-header --source sas.elf >sas.objdump
+[sas build complete]
+10:05:24 **** Incremental Build of configuration Nios II for project sas ****
+wsl make all 
+Info: Building /mnt/c/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/
+make --no-print-directory -C /mnt/c/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/
+[BSP build complete]
+Info: Compiling new_asteroids_game.c to obj/default/new_asteroids_game.o
+nios2-elf-gcc.exe -xc -MP -MMD -c -Ic:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//HAL/inc -Ic:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/ -Ic:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall  -mno-hw-div -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o "obj/default/new_asteroids_game.o" "new_asteroids_game.c"
+In file included from new_asteroids_game.c:10:
+lib_JOYSTICK/KEY.h:19: warning: "LEFT" redefined
+   19 | #define LEFT   8
+      | 
+In file included from new_asteroids_game.c:9:
+lib_graphic_processor/graphic_processor.h:8: note: this is the location of the previous definition
+    8 | #define LEFT             0
+      | 
+lib_JOYSTICK/KEY.h:20: warning: "RIGHT" redefined
+   20 | #define RIGHT  9
+      | 
+lib_graphic_processor/graphic_processor.h:12: note: this is the location of the previous definition
+   12 | #define RIGHT            4
+      | 
+lib_JOYSTICK/KEY.h:21: warning: "UP" redefined
+   21 | #define UP     10
+      | 
+lib_graphic_processor/graphic_processor.h:10: note: this is the location of the previous definition
+   10 | #define UP                       2
+      | 
+lib_JOYSTICK/KEY.h:22: warning: "DOWN" redefined
+   22 | #define DOWN   11
+      | 
+lib_graphic_processor/graphic_processor.h:14: note: this is the location of the previous definition
+   14 | #define DOWN         6
+      | 
+Info: Linking sas.elf
+nios2-elf-g++.exe -T'c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//linker.x' -msys-crt0='c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -Lc:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/ -msmallc  -Wl,-Map=sas.map   -Os -g -Wall  -mno-hw-div -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o sas.elf obj/default/lib_JOYSTICK/KEY.o obj/default/lib_graphic_processor/graphic_processor.o obj/default/new_asteroids_game.o -lm -msys-lib=m
+nios2-elf-insert.exe sas.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x11110 --timestamp 1728871358 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name Arquitetura --quartus_project_dir "c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano" --jdi ../..//output_files/ConsoleFPGA.jdi --sopcinfo C:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/Arquitetura.sopcinfo
+Info: (sas.elf) 11 KBytes program size (code + initialized data).
+Info:           17 KBytes free for stack + heap.
+Info: Creating sas.objdump
+nios2-elf-objdump.exe --disassemble --syms --all-header --source sas.elf >sas.objdump
+[sas build complete]
+10:06:06 **** Incremental Build of configuration Nios II for project sas ****
+wsl make all 
+Info: Building /mnt/c/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/
+make --no-print-directory -C /mnt/c/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/
+[BSP build complete]
+Info: Compiling new_asteroids_game.c to obj/default/new_asteroids_game.o
+nios2-elf-gcc.exe -xc -MP -MMD -c -Ic:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//HAL/inc -Ic:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/ -Ic:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall  -mno-hw-div -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o "obj/default/new_asteroids_game.o" "new_asteroids_game.c"
+In file included from new_asteroids_game.c:10:
+lib_JOYSTICK/KEY.h:19: warning: "LEFT" redefined
+   19 | #define LEFT   8
+      | 
+In file included from new_asteroids_game.c:9:
+lib_graphic_processor/graphic_processor.h:8: note: this is the location of the previous definition
+    8 | #define LEFT             0
+      | 
+lib_JOYSTICK/KEY.h:20: warning: "RIGHT" redefined
+   20 | #define RIGHT  9
+      | 
+lib_graphic_processor/graphic_processor.h:12: note: this is the location of the previous definition
+   12 | #define RIGHT            4
+      | 
+lib_JOYSTICK/KEY.h:21: warning: "UP" redefined
+   21 | #define UP     10
+      | 
+lib_graphic_processor/graphic_processor.h:10: note: this is the location of the previous definition
+   10 | #define UP                       2
+      | 
+lib_JOYSTICK/KEY.h:22: warning: "DOWN" redefined
+   22 | #define DOWN   11
+      | 
+lib_graphic_processor/graphic_processor.h:14: note: this is the location of the previous definition
+   14 | #define DOWN         6
+      | 
+Info: Linking sas.elf
+nios2-elf-g++.exe -T'c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//linker.x' -msys-crt0='c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -Lc:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/ -msmallc  -Wl,-Map=sas.map   -Os -g -Wall  -mno-hw-div -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o sas.elf obj/default/lib_JOYSTICK/KEY.o obj/default/lib_graphic_processor/graphic_processor.o obj/default/new_asteroids_game.o -lm -msys-lib=m
+nios2-elf-insert.exe sas.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x11110 --timestamp 1728871358 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name Arquitetura --quartus_project_dir "c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano" --jdi ../..//output_files/ConsoleFPGA.jdi --sopcinfo C:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/Arquitetura.sopcinfo
+Info: (sas.elf) 11 KBytes program size (code + initialized data).
+Info:           17 KBytes free for stack + heap.
+Info: Creating sas.objdump
+nios2-elf-objdump.exe --disassemble --syms --all-header --source sas.elf >sas.objdump
+[sas build complete]
+10:09:26 **** Incremental Build of configuration Nios II for project sas ****
+wsl make all 
+Info: Building /mnt/c/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/
+make --no-print-directory -C /mnt/c/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/
+[BSP build complete]
+Info: Compiling new_asteroids_game.c to obj/default/new_asteroids_game.o
+nios2-elf-gcc.exe -xc -MP -MMD -c -Ic:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//HAL/inc -Ic:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/ -Ic:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall  -mno-hw-div -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o "obj/default/new_asteroids_game.o" "new_asteroids_game.c"
+In file included from new_asteroids_game.c:10:
+lib_JOYSTICK/KEY.h:19: warning: "LEFT" redefined
+   19 | #define LEFT   8
+      | 
+In file included from new_asteroids_game.c:9:
+lib_graphic_processor/graphic_processor.h:8: note: this is the location of the previous definition
+    8 | #define LEFT             0
+      | 
+lib_JOYSTICK/KEY.h:20: warning: "RIGHT" redefined
+   20 | #define RIGHT  9
+      | 
+lib_graphic_processor/graphic_processor.h:12: note: this is the location of the previous definition
+   12 | #define RIGHT            4
+      | 
+lib_JOYSTICK/KEY.h:21: warning: "UP" redefined
+   21 | #define UP     10
+      | 
+lib_graphic_processor/graphic_processor.h:10: note: this is the location of the previous definition
+   10 | #define UP                       2
+      | 
+lib_JOYSTICK/KEY.h:22: warning: "DOWN" redefined
+   22 | #define DOWN   11
+      | 
+lib_graphic_processor/graphic_processor.h:14: note: this is the location of the previous definition
+   14 | #define DOWN         6
+      | 
+Info: Linking sas.elf
+nios2-elf-g++.exe -T'c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//linker.x' -msys-crt0='c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -Lc:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/ -msmallc  -Wl,-Map=sas.map   -Os -g -Wall  -mno-hw-div -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o sas.elf obj/default/lib_JOYSTICK/KEY.o obj/default/lib_graphic_processor/graphic_processor.o obj/default/new_asteroids_game.o -lm -msys-lib=m
+nios2-elf-insert.exe sas.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x11110 --timestamp 1728871358 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name Arquitetura --quartus_project_dir "c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano" --jdi ../..//output_files/ConsoleFPGA.jdi --sopcinfo C:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/Arquitetura.sopcinfo
+Info: (sas.elf) 11 KBytes program size (code + initialized data).
+Info:           17 KBytes free for stack + heap.
+Info: Creating sas.objdump
+nios2-elf-objdump.exe --disassemble --syms --all-header --source sas.elf >sas.objdump
+[sas build complete]
+10:09:51 **** Incremental Build of configuration Nios II for project sas ****
+wsl make all 
+Info: Building /mnt/c/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/
+make --no-print-directory -C /mnt/c/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/
+[BSP build complete]
+Info: Compiling new_asteroids_game.c to obj/default/new_asteroids_game.o
+nios2-elf-gcc.exe -xc -MP -MMD -c -Ic:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//HAL/inc -Ic:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/ -Ic:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall  -mno-hw-div -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o "obj/default/new_asteroids_game.o" "new_asteroids_game.c"
+In file included from new_asteroids_game.c:10:
+lib_JOYSTICK/KEY.h:19: warning: "LEFT" redefined
+   19 | #define LEFT   8
+      | 
+In file included from new_asteroids_game.c:9:
+lib_graphic_processor/graphic_processor.h:8: note: this is the location of the previous definition
+    8 | #define LEFT             0
+      | 
+lib_JOYSTICK/KEY.h:20: warning: "RIGHT" redefined
+   20 | #define RIGHT  9
+      | 
+lib_graphic_processor/graphic_processor.h:12: note: this is the location of the previous definition
+   12 | #define RIGHT            4
+      | 
+lib_JOYSTICK/KEY.h:21: warning: "UP" redefined
+   21 | #define UP     10
+      | 
+lib_graphic_processor/graphic_processor.h:10: note: this is the location of the previous definition
+   10 | #define UP                       2
+      | 
+lib_JOYSTICK/KEY.h:22: warning: "DOWN" redefined
+   22 | #define DOWN   11
+      | 
+lib_graphic_processor/graphic_processor.h:14: note: this is the location of the previous definition
+   14 | #define DOWN         6
+      | 
+new_asteroids_game.c: In function 'main':
+new_asteroids_game.c:225:33: error: duplicate case value
+  225 |                                 case 0b01000:
+      |                                 ^~~~
+new_asteroids_game.c:221:33: note: previously used here
+  221 |                                 case 0b1000:
+      |                                 ^~~~
+make: *** [Makefile:727: obj/default/new_asteroids_game.o] Error 1
+10:10:09 **** Incremental Build of configuration Nios II for project sas ****
+wsl make all 
+Info: Building /mnt/c/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/
+make --no-print-directory -C /mnt/c/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/
+[BSP build complete]
+Info: Compiling new_asteroids_game.c to obj/default/new_asteroids_game.o
+nios2-elf-gcc.exe -xc -MP -MMD -c -Ic:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//HAL/inc -Ic:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/ -Ic:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall  -mno-hw-div -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o "obj/default/new_asteroids_game.o" "new_asteroids_game.c"
+In file included from new_asteroids_game.c:10:
+lib_JOYSTICK/KEY.h:19: warning: "LEFT" redefined
+   19 | #define LEFT   8
+      | 
+In file included from new_asteroids_game.c:9:
+lib_graphic_processor/graphic_processor.h:8: note: this is the location of the previous definition
+    8 | #define LEFT             0
+      | 
+lib_JOYSTICK/KEY.h:20: warning: "RIGHT" redefined
+   20 | #define RIGHT  9
+      | 
+lib_graphic_processor/graphic_processor.h:12: note: this is the location of the previous definition
+   12 | #define RIGHT            4
+      | 
+lib_JOYSTICK/KEY.h:21: warning: "UP" redefined
+   21 | #define UP     10
+      | 
+lib_graphic_processor/graphic_processor.h:10: note: this is the location of the previous definition
+   10 | #define UP                       2
+      | 
+lib_JOYSTICK/KEY.h:22: warning: "DOWN" redefined
+   22 | #define DOWN   11
+      | 
+lib_graphic_processor/graphic_processor.h:14: note: this is the location of the previous definition
+   14 | #define DOWN         6
+      | 
+Info: Linking sas.elf
+nios2-elf-g++.exe -T'c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//linker.x' -msys-crt0='c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -Lc:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/ -msmallc  -Wl,-Map=sas.map   -Os -g -Wall  -mno-hw-div -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o sas.elf obj/default/lib_JOYSTICK/KEY.o obj/default/lib_graphic_processor/graphic_processor.o obj/default/new_asteroids_game.o -lm -msys-lib=m
+nios2-elf-insert.exe sas.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x11110 --timestamp 1728871358 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name Arquitetura --quartus_project_dir "c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano" --jdi ../..//output_files/ConsoleFPGA.jdi --sopcinfo C:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/Arquitetura.sopcinfo
+Info: (sas.elf) 11 KBytes program size (code + initialized data).
+Info:           17 KBytes free for stack + heap.
+Info: Creating sas.objdump
+nios2-elf-objdump.exe --disassemble --syms --all-header --source sas.elf >sas.objdump
+[sas build complete]
+10:12:38 **** Incremental Build of configuration Nios II for project sas ****
+wsl make all 
+Info: Building /mnt/c/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/
+make --no-print-directory -C /mnt/c/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/
+[BSP build complete]
+Info: Compiling new_asteroids_game.c to obj/default/new_asteroids_game.o
+nios2-elf-gcc.exe -xc -MP -MMD -c -Ic:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//HAL/inc -Ic:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/ -Ic:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall  -mno-hw-div -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o "obj/default/new_asteroids_game.o" "new_asteroids_game.c"
+In file included from new_asteroids_game.c:10:
+lib_JOYSTICK/KEY.h:19: warning: "LEFT" redefined
+   19 | #define LEFT   8
+      | 
+In file included from new_asteroids_game.c:9:
+lib_graphic_processor/graphic_processor.h:8: note: this is the location of the previous definition
+    8 | #define LEFT             0
+      | 
+lib_JOYSTICK/KEY.h:20: warning: "RIGHT" redefined
+   20 | #define RIGHT  9
+      | 
+lib_graphic_processor/graphic_processor.h:12: note: this is the location of the previous definition
+   12 | #define RIGHT            4
+      | 
+lib_JOYSTICK/KEY.h:21: warning: "UP" redefined
+   21 | #define UP     10
+      | 
+lib_graphic_processor/graphic_processor.h:10: note: this is the location of the previous definition
+   10 | #define UP                       2
+      | 
+lib_JOYSTICK/KEY.h:22: warning: "DOWN" redefined
+   22 | #define DOWN   11
+      | 
+lib_graphic_processor/graphic_processor.h:14: note: this is the location of the previous definition
+   14 | #define DOWN         6
+      | 
+Info: Linking sas.elf
+nios2-elf-g++.exe -T'c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//linker.x' -msys-crt0='c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -Lc:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/ -msmallc  -Wl,-Map=sas.map   -Os -g -Wall  -mno-hw-div -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o sas.elf obj/default/lib_JOYSTICK/KEY.o obj/default/lib_graphic_processor/graphic_processor.o obj/default/new_asteroids_game.o -lm -msys-lib=m
+nios2-elf-insert.exe sas.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x11110 --timestamp 1728871358 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name Arquitetura --quartus_project_dir "c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano" --jdi ../..//output_files/ConsoleFPGA.jdi --sopcinfo C:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/Arquitetura.sopcinfo
+Info: (sas.elf) 11 KBytes program size (code + initialized data).
+Info:           17 KBytes free for stack + heap.
+Info: Creating sas.objdump
+nios2-elf-objdump.exe --disassemble --syms --all-header --source sas.elf >sas.objdump
+[sas build complete]
+10:14:06 **** Incremental Build of configuration Nios II for project sas ****
+wsl make all 
+Info: Building /mnt/c/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/
+make --no-print-directory -C /mnt/c/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/
+[BSP build complete]
+Info: Compiling new_asteroids_game.c to obj/default/new_asteroids_game.o
+nios2-elf-gcc.exe -xc -MP -MMD -c -Ic:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//HAL/inc -Ic:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/ -Ic:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall  -mno-hw-div -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o "obj/default/new_asteroids_game.o" "new_asteroids_game.c"
+In file included from new_asteroids_game.c:10:
+lib_JOYSTICK/KEY.h:19: warning: "LEFT" redefined
+   19 | #define LEFT   8
+      | 
+In file included from new_asteroids_game.c:9:
+lib_graphic_processor/graphic_processor.h:8: note: this is the location of the previous definition
+    8 | #define LEFT             0
+      | 
+lib_JOYSTICK/KEY.h:20: warning: "RIGHT" redefined
+   20 | #define RIGHT  9
+      | 
+lib_graphic_processor/graphic_processor.h:12: note: this is the location of the previous definition
+   12 | #define RIGHT            4
+      | 
+lib_JOYSTICK/KEY.h:21: warning: "UP" redefined
+   21 | #define UP     10
+      | 
+lib_graphic_processor/graphic_processor.h:10: note: this is the location of the previous definition
+   10 | #define UP                       2
+      | 
+lib_JOYSTICK/KEY.h:22: warning: "DOWN" redefined
+   22 | #define DOWN   11
+      | 
+lib_graphic_processor/graphic_processor.h:14: note: this is the location of the previous definition
+   14 | #define DOWN         6
+      | 
+Info: Linking sas.elf
+nios2-elf-g++.exe -T'c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//linker.x' -msys-crt0='c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -Lc:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/ -msmallc  -Wl,-Map=sas.map   -Os -g -Wall  -mno-hw-div -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o sas.elf obj/default/lib_JOYSTICK/KEY.o obj/default/lib_graphic_processor/graphic_processor.o obj/default/new_asteroids_game.o -lm -msys-lib=m
+nios2-elf-insert.exe sas.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x11110 --timestamp 1728871358 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name Arquitetura --quartus_project_dir "c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano" --jdi ../..//output_files/ConsoleFPGA.jdi --sopcinfo C:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/Arquitetura.sopcinfo
+Info: (sas.elf) 11 KBytes program size (code + initialized data).
+Info:           17 KBytes free for stack + heap.
+Info: Creating sas.objdump
+nios2-elf-objdump.exe --disassemble --syms --all-header --source sas.elf >sas.objdump
+[sas build complete]
+10:40:05 **** Incremental Build of configuration Nios II for project sas ****
+wsl make all 
+Info: Building /mnt/c/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/
+make --no-print-directory -C /mnt/c/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/
+[BSP build complete]
+Info: Compiling lib_graphic_processor/graphic_processor.c to obj/default/lib_graphic_processor/graphic_processor.o
+nios2-elf-gcc.exe -xc -MP -MMD -c -Ic:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//HAL/inc -Ic:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/ -Ic:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall  -mno-hw-div -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o "obj/default/lib_graphic_processor/graphic_processor.o" "lib_graphic_processor/graphic_processor.c"
+Info: Compiling new_asteroids_game.c to obj/default/new_asteroids_game.o
+nios2-elf-gcc.exe -xc -MP -MMD -c -Ic:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//HAL/inc -Ic:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/ -Ic:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall  -mno-hw-div -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o "obj/default/new_asteroids_game.o" "new_asteroids_game.c"
+Info: Linking sas.elf
+nios2-elf-g++.exe -T'c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//linker.x' -msys-crt0='c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -Lc:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/ -msmallc  -Wl,-Map=sas.map   -Os -g -Wall  -mno-hw-div -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o sas.elf obj/default/lib_JOYSTICK/KEY.o obj/default/lib_graphic_processor/graphic_processor.o obj/default/new_asteroids_game.o -lm -msys-lib=m
+nios2-elf-insert.exe sas.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x11110 --timestamp 1728871358 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name Arquitetura --quartus_project_dir "c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano" --jdi ../..//output_files/ConsoleFPGA.jdi --sopcinfo C:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/Arquitetura.sopcinfo
+Info: (sas.elf) 12 KBytes program size (code + initialized data).
+Info:           16 KBytes free for stack + heap.
+Info: Creating sas.objdump
+nios2-elf-objdump.exe --disassemble --syms --all-header --source sas.elf >sas.objdump
+[sas build complete]
+10:41:28 **** Incremental Build of configuration Nios II for project sas ****
+wsl make all 
+Info: Building /mnt/c/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/
+make --no-print-directory -C /mnt/c/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/
+[BSP build complete]
+[sas build complete]
+10:42:10 **** Incremental Build of configuration Nios II for project sas ****
+wsl make all 
+Info: Building /mnt/c/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/
+make --no-print-directory -C /mnt/c/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/
+[BSP build complete]
+Info: Compiling new_asteroids_game.c to obj/default/new_asteroids_game.o
+nios2-elf-gcc.exe -xc -MP -MMD -c -Ic:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//HAL/inc -Ic:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/ -Ic:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall  -mno-hw-div -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o "obj/default/new_asteroids_game.o" "new_asteroids_game.c"
+Info: Linking sas.elf
+nios2-elf-g++.exe -T'c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//linker.x' -msys-crt0='c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -Lc:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/ -msmallc  -Wl,-Map=sas.map   -Os -g -Wall  -mno-hw-div -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o sas.elf obj/default/lib_JOYSTICK/KEY.o obj/default/lib_graphic_processor/graphic_processor.o obj/default/new_asteroids_game.o -lm -msys-lib=m
+nios2-elf-insert.exe sas.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x11110 --timestamp 1728871358 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name Arquitetura --quartus_project_dir "c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano" --jdi ../..//output_files/ConsoleFPGA.jdi --sopcinfo C:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/Arquitetura.sopcinfo
+Info: (sas.elf) 11 KBytes program size (code + initialized data).
+Info:           17 KBytes free for stack + heap.
+Info: Creating sas.objdump
+nios2-elf-objdump.exe --disassemble --syms --all-header --source sas.elf >sas.objdump
+[sas build complete]
+10:43:55 **** Incremental Build of configuration Nios II for project sas ****
+wsl make all 
+Info: Building /mnt/c/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/
+make --no-print-directory -C /mnt/c/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/
+[BSP build complete]
+Info: Compiling new_asteroids_game.c to obj/default/new_asteroids_game.o
+nios2-elf-gcc.exe -xc -MP -MMD -c -Ic:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//HAL/inc -Ic:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/ -Ic:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall  -mno-hw-div -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o "obj/default/new_asteroids_game.o" "new_asteroids_game.c"
+Info: Linking sas.elf
+nios2-elf-g++.exe -T'c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//linker.x' -msys-crt0='c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -Lc:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/ -msmallc  -Wl,-Map=sas.map   -Os -g -Wall  -mno-hw-div -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o sas.elf obj/default/lib_JOYSTICK/KEY.o obj/default/lib_graphic_processor/graphic_processor.o obj/default/new_asteroids_game.o -lm -msys-lib=m
+nios2-elf-insert.exe sas.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x11110 --timestamp 1728871358 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name Arquitetura --quartus_project_dir "c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano" --jdi ../..//output_files/ConsoleFPGA.jdi --sopcinfo C:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/Arquitetura.sopcinfo
+Info: (sas.elf) 11 KBytes program size (code + initialized data).
+Info:           17 KBytes free for stack + heap.
+Info: Creating sas.objdump
+nios2-elf-objdump.exe --disassemble --syms --all-header --source sas.elf >sas.objdump
+[sas build complete]
+10:45:08 **** Incremental Build of configuration Nios II for project sas ****
+wsl make all 
+Info: Building /mnt/c/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/
+make --no-print-directory -C /mnt/c/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/
+[BSP build complete]
+[sas build complete]
+10:45:14 **** Incremental Build of configuration Nios II for project sas ****
+wsl make all 
+Info: Building /mnt/c/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/
+make --no-print-directory -C /mnt/c/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/
+[BSP build complete]
+[sas build complete]
+10:45:19 **** Incremental Build of configuration Nios II for project sas ****
+wsl make all 
+Info: Building /mnt/c/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/
+make --no-print-directory -C /mnt/c/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/
+[BSP build complete]
+[sas build complete]
+10:46:12 **** Incremental Build of configuration Nios II for project sas ****
+wsl make all 
+Info: Building /mnt/c/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/
+make --no-print-directory -C /mnt/c/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/
+[BSP build complete]
+[sas build complete]
+10:47:30 **** Incremental Build of configuration Nios II for project sas ****
+wsl make all 
+Info: Building /mnt/c/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/
+make --no-print-directory -C /mnt/c/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/
+[BSP build complete]
+Info: Compiling new_asteroids_game.c to obj/default/new_asteroids_game.o
+nios2-elf-gcc.exe -xc -MP -MMD -c -Ic:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//HAL/inc -Ic:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/ -Ic:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall  -mno-hw-div -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o "obj/default/new_asteroids_game.o" "new_asteroids_game.c"
+Info: Linking sas.elf
+nios2-elf-g++.exe -T'c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//linker.x' -msys-crt0='c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -Lc:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/ -msmallc  -Wl,-Map=sas.map   -Os -g -Wall  -mno-hw-div -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o sas.elf obj/default/lib_JOYSTICK/KEY.o obj/default/lib_graphic_processor/graphic_processor.o obj/default/new_asteroids_game.o -lm -msys-lib=m
+nios2-elf-insert.exe sas.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x11110 --timestamp 1728871358 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name Arquitetura --quartus_project_dir "c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano" --jdi ../..//output_files/ConsoleFPGA.jdi --sopcinfo C:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/Arquitetura.sopcinfo
+Info: (sas.elf) 11 KBytes program size (code + initialized data).
+Info:           17 KBytes free for stack + heap.
+Info: Creating sas.objdump
+nios2-elf-objdump.exe --disassemble --syms --all-header --source sas.elf >sas.objdump
+[sas build complete]
+10:50:39 **** Incremental Build of configuration Nios II for project sas ****
+wsl make all 
+Info: Building /mnt/c/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/
+make --no-print-directory -C /mnt/c/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/
+[BSP build complete]
+Info: Compiling new_asteroids_game.c to obj/default/new_asteroids_game.o
+nios2-elf-gcc.exe -xc -MP -MMD -c -Ic:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//HAL/inc -Ic:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/ -Ic:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall  -mno-hw-div -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o "obj/default/new_asteroids_game.o" "new_asteroids_game.c"
+Info: Linking sas.elf
+nios2-elf-g++.exe -T'c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//linker.x' -msys-crt0='c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -Lc:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/ -msmallc  -Wl,-Map=sas.map   -Os -g -Wall  -mno-hw-div -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o sas.elf obj/default/lib_JOYSTICK/KEY.o obj/default/lib_graphic_processor/graphic_processor.o obj/default/new_asteroids_game.o -lm -msys-lib=m
+nios2-elf-insert.exe sas.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x11110 --timestamp 1728871358 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name Arquitetura --quartus_project_dir "c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano" --jdi ../..//output_files/ConsoleFPGA.jdi --sopcinfo C:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/Arquitetura.sopcinfo
+Info: (sas.elf) 11 KBytes program size (code + initialized data).
+Info:           17 KBytes free for stack + heap.
+Info: Creating sas.objdump
+nios2-elf-objdump.exe --disassemble --syms --all-header --source sas.elf >sas.objdump
+[sas build complete]
+10:51:05 **** Incremental Build of configuration Nios II for project sas ****
+wsl make all 
+Info: Building /mnt/c/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/
+make --no-print-directory -C /mnt/c/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/
+[BSP build complete]
+Info: Compiling new_asteroids_game.c to obj/default/new_asteroids_game.o
+nios2-elf-gcc.exe -xc -MP -MMD -c -Ic:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//HAL/inc -Ic:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/ -Ic:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall  -mno-hw-div -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o "obj/default/new_asteroids_game.o" "new_asteroids_game.c"
+Info: Linking sas.elf
+nios2-elf-g++.exe -T'c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//linker.x' -msys-crt0='c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -Lc:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/ -msmallc  -Wl,-Map=sas.map   -Os -g -Wall  -mno-hw-div -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o sas.elf obj/default/lib_JOYSTICK/KEY.o obj/default/lib_graphic_processor/graphic_processor.o obj/default/new_asteroids_game.o -lm -msys-lib=m
+nios2-elf-insert.exe sas.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x11110 --timestamp 1728871358 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name Arquitetura --quartus_project_dir "c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano" --jdi ../..//output_files/ConsoleFPGA.jdi --sopcinfo C:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/Arquitetura.sopcinfo
+Info: (sas.elf) 11 KBytes program size (code + initialized data).
+Info:           17 KBytes free for stack + heap.
+Info: Creating sas.objdump
+nios2-elf-objdump.exe --disassemble --syms --all-header --source sas.elf >sas.objdump
+[sas build complete]
+10:51:50 **** Incremental Build of configuration Nios II for project sas ****
+wsl make all 
+Info: Building /mnt/c/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/
+make --no-print-directory -C /mnt/c/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/
+[BSP build complete]
+Info: Compiling new_asteroids_game.c to obj/default/new_asteroids_game.o
+nios2-elf-gcc.exe -xc -MP -MMD -c -Ic:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//HAL/inc -Ic:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/ -Ic:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall  -mno-hw-div -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o "obj/default/new_asteroids_game.o" "new_asteroids_game.c"
+Info: Linking sas.elf
+nios2-elf-g++.exe -T'c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//linker.x' -msys-crt0='c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -Lc:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/ -msmallc  -Wl,-Map=sas.map   -Os -g -Wall  -mno-hw-div -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o sas.elf obj/default/lib_JOYSTICK/KEY.o obj/default/lib_graphic_processor/graphic_processor.o obj/default/new_asteroids_game.o -lm -msys-lib=m
+nios2-elf-insert.exe sas.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x11110 --timestamp 1728871358 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name Arquitetura --quartus_project_dir "c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano" --jdi ../..//output_files/ConsoleFPGA.jdi --sopcinfo C:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/Arquitetura.sopcinfo
+Info: (sas.elf) 11 KBytes program size (code + initialized data).
+Info:           17 KBytes free for stack + heap.
+Info: Creating sas.objdump
+nios2-elf-objdump.exe --disassemble --syms --all-header --source sas.elf >sas.objdump
+[sas build complete]
+11:02:10 **** Incremental Build of configuration Nios II for project sas ****
+wsl make all 
+Info: Building /mnt/c/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/
+make --no-print-directory -C /mnt/c/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/
+[BSP build complete]
+Info: Compiling new_asteroids_game.c to obj/default/new_asteroids_game.o
+nios2-elf-gcc.exe -xc -MP -MMD -c -Ic:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//HAL/inc -Ic:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/ -Ic:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall  -mno-hw-div -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o "obj/default/new_asteroids_game.o" "new_asteroids_game.c"
+Info: Linking sas.elf
+nios2-elf-g++.exe -T'c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//linker.x' -msys-crt0='c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -Lc:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/ -msmallc  -Wl,-Map=sas.map   -Os -g -Wall  -mno-hw-div -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o sas.elf obj/default/lib_JOYSTICK/KEY.o obj/default/lib_graphic_processor/graphic_processor.o obj/default/new_asteroids_game.o -lm -msys-lib=m
+nios2-elf-insert.exe sas.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x11110 --timestamp 1728871358 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name Arquitetura --quartus_project_dir "c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano" --jdi ../..//output_files/ConsoleFPGA.jdi --sopcinfo C:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/Arquitetura.sopcinfo
+Info: (sas.elf) 12 KBytes program size (code + initialized data).
+Info:           16 KBytes free for stack + heap.
+Info: Creating sas.objdump
+nios2-elf-objdump.exe --disassemble --syms --all-header --source sas.elf >sas.objdump
+[sas build complete]
+11:04:25 **** Incremental Build of configuration Nios II for project sas ****
+wsl make all 
+Info: Building /mnt/c/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/
+make --no-print-directory -C /mnt/c/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/
+[BSP build complete]
+Info: Compiling new_asteroids_game.c to obj/default/new_asteroids_game.o
+nios2-elf-gcc.exe -xc -MP -MMD -c -Ic:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//HAL/inc -Ic:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/ -Ic:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall  -mno-hw-div -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o "obj/default/new_asteroids_game.o" "new_asteroids_game.c"
+Info: Linking sas.elf
+nios2-elf-g++.exe -T'c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//linker.x' -msys-crt0='c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -Lc:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/ -msmallc  -Wl,-Map=sas.map   -Os -g -Wall  -mno-hw-div -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o sas.elf obj/default/lib_JOYSTICK/KEY.o obj/default/lib_graphic_processor/graphic_processor.o obj/default/new_asteroids_game.o -lm -msys-lib=m
+nios2-elf-insert.exe sas.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x11110 --timestamp 1728871358 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name Arquitetura --quartus_project_dir "c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano" --jdi ../..//output_files/ConsoleFPGA.jdi --sopcinfo C:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/Arquitetura.sopcinfo
+Info: (sas.elf) 12 KBytes program size (code + initialized data).
+Info:           16 KBytes free for stack + heap.
+Info: Creating sas.objdump
+nios2-elf-objdump.exe --disassemble --syms --all-header --source sas.elf >sas.objdump
+[sas build complete]
+11:10:37 **** Incremental Build of configuration Nios II for project sas ****
+wsl make all 
+Info: Building /mnt/c/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/
+make --no-print-directory -C /mnt/c/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/
+[BSP build complete]
+[sas build complete]
+11:11:03 **** Incremental Build of configuration Nios II for project sas ****
+wsl make all 
+Info: Building /mnt/c/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/
+make --no-print-directory -C /mnt/c/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/
+[BSP build complete]
+Info: Compiling new_asteroids_game.c to obj/default/new_asteroids_game.o
+nios2-elf-gcc.exe -xc -MP -MMD -c -Ic:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//HAL/inc -Ic:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/ -Ic:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall  -mno-hw-div -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o "obj/default/new_asteroids_game.o" "new_asteroids_game.c"
+Info: Linking sas.elf
+nios2-elf-g++.exe -T'c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//linker.x' -msys-crt0='c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -Lc:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/ -msmallc  -Wl,-Map=sas.map   -Os -g -Wall  -mno-hw-div -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o sas.elf obj/default/lib_JOYSTICK/KEY.o obj/default/lib_graphic_processor/graphic_processor.o obj/default/new_asteroids_game.o -lm -msys-lib=m
+nios2-elf-insert.exe sas.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x11110 --timestamp 1728871358 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name Arquitetura --quartus_project_dir "c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano" --jdi ../..//output_files/ConsoleFPGA.jdi --sopcinfo C:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/Arquitetura.sopcinfo
+Info: (sas.elf) 12 KBytes program size (code + initialized data).
+Info:           16 KBytes free for stack + heap.
+Info: Creating sas.objdump
+nios2-elf-objdump.exe --disassemble --syms --all-header --source sas.elf >sas.objdump
+[sas build complete]
+11:11:25 **** Incremental Build of configuration Nios II for project sas ****
+wsl make all 
+Info: Building /mnt/c/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/
+make --no-print-directory -C /mnt/c/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/
+[BSP build complete]
+Info: Compiling new_asteroids_game.c to obj/default/new_asteroids_game.o
+nios2-elf-gcc.exe -xc -MP -MMD -c -Ic:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//HAL/inc -Ic:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/ -Ic:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall  -mno-hw-div -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o "obj/default/new_asteroids_game.o" "new_asteroids_game.c"
+Info: Linking sas.elf
+nios2-elf-g++.exe -T'c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//linker.x' -msys-crt0='c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -Lc:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/ -msmallc  -Wl,-Map=sas.map   -Os -g -Wall  -mno-hw-div -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o sas.elf obj/default/lib_JOYSTICK/KEY.o obj/default/lib_graphic_processor/graphic_processor.o obj/default/new_asteroids_game.o -lm -msys-lib=m
+nios2-elf-insert.exe sas.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x11110 --timestamp 1728871358 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name Arquitetura --quartus_project_dir "c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano" --jdi ../..//output_files/ConsoleFPGA.jdi --sopcinfo C:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/Arquitetura.sopcinfo
+Info: (sas.elf) 12 KBytes program size (code + initialized data).
+Info:           16 KBytes free for stack + heap.
+Info: Creating sas.objdump
+nios2-elf-objdump.exe --disassemble --syms --all-header --source sas.elf >sas.objdump
+[sas build complete]
+11:12:39 **** Incremental Build of configuration Nios II for project sas ****
+wsl make all 
+Info: Building /mnt/c/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/
+make --no-print-directory -C /mnt/c/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/
+[BSP build complete]
+Info: Compiling new_asteroids_game.c to obj/default/new_asteroids_game.o
+nios2-elf-gcc.exe -xc -MP -MMD -c -Ic:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//HAL/inc -Ic:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/ -Ic:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall  -mno-hw-div -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o "obj/default/new_asteroids_game.o" "new_asteroids_game.c"
+new_asteroids_game.c: In function 'main':
+new_asteroids_game.c:165:13: warning: variable 'tl' set but not used [-Wunused-but-set-variable]
+  165 |         int tl   = 0;
+      |             ^~
+new_asteroids_game.c:164:13: warning: variable 'tr' set but not used [-Wunused-but-set-variable]
+  164 |         int tr   = 0;
+      |             ^~
+Info: Linking sas.elf
+nios2-elf-g++.exe -T'c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//linker.x' -msys-crt0='c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -Lc:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/ -msmallc  -Wl,-Map=sas.map   -Os -g -Wall  -mno-hw-div -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o sas.elf obj/default/lib_JOYSTICK/KEY.o obj/default/lib_graphic_processor/graphic_processor.o obj/default/new_asteroids_game.o -lm -msys-lib=m
+nios2-elf-insert.exe sas.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x11110 --timestamp 1728871358 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name Arquitetura --quartus_project_dir "c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano" --jdi ../..//output_files/ConsoleFPGA.jdi --sopcinfo C:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/Arquitetura.sopcinfo
+Info: (sas.elf) 12 KBytes program size (code + initialized data).
+Info:           16 KBytes free for stack + heap.
+Info: Creating sas.objdump
+nios2-elf-objdump.exe --disassemble --syms --all-header --source sas.elf >sas.objdump
+[sas build complete]
+11:14:28 **** Incremental Build of configuration Nios II for project sas ****
+wsl make all 
+Info: Building /mnt/c/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/
+make --no-print-directory -C /mnt/c/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/
+[BSP build complete]
+Info: Compiling new_asteroids_game.c to obj/default/new_asteroids_game.o
+nios2-elf-gcc.exe -xc -MP -MMD -c -Ic:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//HAL/inc -Ic:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/ -Ic:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall  -mno-hw-div -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o "obj/default/new_asteroids_game.o" "new_asteroids_game.c"
+new_asteroids_game.c: In function 'main':
+new_asteroids_game.c:166:13: warning: unused variable 'a' [-Wunused-variable]
+  166 |         int a    = 0;
+      |             ^
+new_asteroids_game.c:165:13: warning: unused variable 'tl' [-Wunused-variable]
+  165 |         int tl   = 0;
+      |             ^~
+new_asteroids_game.c:164:13: warning: unused variable 'tr' [-Wunused-variable]
+  164 |         int tr   = 0;
+      |             ^~
+Info: Linking sas.elf
+nios2-elf-g++.exe -T'c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//linker.x' -msys-crt0='c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -Lc:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/ -msmallc  -Wl,-Map=sas.map   -Os -g -Wall  -mno-hw-div -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o sas.elf obj/default/lib_JOYSTICK/KEY.o obj/default/lib_graphic_processor/graphic_processor.o obj/default/new_asteroids_game.o -lm -msys-lib=m
+nios2-elf-insert.exe sas.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x11110 --timestamp 1728871358 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name Arquitetura --quartus_project_dir "c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano" --jdi ../..//output_files/ConsoleFPGA.jdi --sopcinfo C:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/Arquitetura.sopcinfo
+Info: (sas.elf) 12 KBytes program size (code + initialized data).
+Info:           16 KBytes free for stack + heap.
+Info: Creating sas.objdump
+nios2-elf-objdump.exe --disassemble --syms --all-header --source sas.elf >sas.objdump
+[sas build complete]
+11:15:47 **** Incremental Build of configuration Nios II for project sas ****
+wsl make all 
+Info: Building /mnt/c/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/
+make --no-print-directory -C /mnt/c/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/
+[BSP build complete]
+[sas build complete]

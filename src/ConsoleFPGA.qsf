@@ -1,0 +1,156 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 2018  Intel Corporation. All rights reserved.
+# Your use of Intel Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Intel Program License 
+# Subscription Agreement, the Intel Quartus Prime License Agreement,
+# the Intel FPGA IP License Agreement, or other applicable license
+# agreement, including, without limitation, that your use is for
+# the sole purpose of programming logic devices manufactured by
+# Intel and sold by Intel or its authorized distributors.  Please
+# refer to the applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus Prime
+# Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+# Date created = 11:26:16  September 10, 2020
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		ConsoleFPGA_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus Prime software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone IV E"
+set_global_assignment -name DEVICE EP4CE22F17C6
+set_global_assignment -name TOP_LEVEL_ENTITY ArquiteturaCollenda
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 18.1.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "11:26:16  SEPTEMBER 10, 2020"
+set_global_assignment -name LAST_QUARTUS_VERSION "23.1std.1 Lite Edition"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
+set_global_assignment -name NOMINAL_CORE_SUPPLY_VOLTAGE 1.2V
+set_global_assignment -name EDA_SIMULATION_TOOL "Questa Intel FPGA (Verilog)"
+set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_location_assignment PIN_A4 -to out_hsync
+set_location_assignment PIN_B5 -to out_vsync
+set_location_assignment PIN_F8 -to R[2]
+set_location_assignment PIN_E9 -to R[1]
+set_location_assignment PIN_F9 -to R[0]
+set_location_assignment PIN_D5 -to B[2]
+set_location_assignment PIN_A6 -to B[1]
+set_location_assignment PIN_D6 -to B[0]
+set_location_assignment PIN_C6 -to G[2]
+set_location_assignment PIN_E6 -to G[1]
+set_location_assignment PIN_D8 -to G[0]
+set_location_assignment PIN_J15 -to reset
+set_location_assignment PIN_A15 -to rdempty_A
+set_location_assignment PIN_A13 -to rdempty_B
+set_location_assignment PIN_B13 -to wrfull_A
+set_location_assignment PIN_A11 -to wrfull_B
+set_location_assignment PIN_R8 -to main_clk
+set_global_assignment -name ENABLE_SIGNALTAP OFF
+set_global_assignment -name USE_SIGNALTAP_FILE Collenda_SignalTap.stp
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name VERILOG_FILE modulos/module_io/edge_capture_clear.v
+set_global_assignment -name VERILOG_FILE modulos/module_io/select_read_data.v
+set_global_assignment -name VERILOG_FILE modulos/module_io/i_o_data.v
+set_global_assignment -name VERILOG_FILE modulos/module_io/wr_pulse.v
+set_global_assignment -name VERILOG_FILE modulos/module_io/top_input_controller.v
+set_global_assignment -name VERILOG_FILE modulos/module_io/controle.v
+set_global_assignment -name VERILOG_FILE modulos/module_io/select_data.v
+set_global_assignment -name VERILOG_FILE modulos/module_io/opcode_controller.v
+set_global_assignment -name VERILOG_FILE modulos/module_io/io_avalon_interface.v
+set_global_assignment -name VERILOG_FILE modulos/module_io/edge_detector.v
+set_global_assignment -name VERILOG_FILE modulos/module_io/edge_capture.v
+set_global_assignment -name VERILOG_FILE Arquitetura/ArquiteturaCollenda.v
+set_global_assignment -name VERILOG_FILE modulos/Co_Processor/color_comparator.v
+set_global_assignment -name VERILOG_FILE modulos/Co_Processor/vertice_calculator.v
+set_global_assignment -name VERILOG_FILE modulos/Co_Processor/table_size.v
+set_global_assignment -name VERILOG_FILE modulos/Co_Processor/registers_file.v
+set_global_assignment -name VERILOG_FILE modulos/Co_Processor/pipeline_geometricForms.v
+set_global_assignment -name VERILOG_FILE modulos/Co_Processor/geometric_Forms_Processor.v
+set_global_assignment -name VERILOG_FILE modulos/Co_Processor/determinants.v
+set_global_assignment -name VERILOG_FILE modulos/Co_Processor/controls_pipeline.v
+set_global_assignment -name VERILOG_FILE modulos/written_pulse/written_pulse.v
+set_global_assignment -name VERILOG_FILE modulos/generator_rgb/rgb_out_generator.v
+set_global_assignment -name VERILOG_FILE modulos/Drawing_Module/background_block/BlockModule.v
+set_global_assignment -name VERILOG_FILE modulos/Drawing_Module/background_block/background_block.v
+set_global_assignment -name VERILOG_FILE modulos/background_memory/back_memory.v
+set_global_assignment -name VERILOG_FILE modulos/debounce/debounce.v
+set_global_assignment -name VERILOG_FILE modulos/ControlUnit/ControlUnit_aux.v
+set_global_assignment -name VERILOG_FILE modulos/sprite_memory/calculo_address_memory.v
+set_global_assignment -name VERILOG_FILE modulos/pulseCounter/pulseCounter.v
+set_global_assignment -name VERILOG_FILE modulos/VGA_Controller/VGA_sync.v
+set_global_assignment -name VERILOG_FILE modulos/Drawing_Module/stateMachine_2.v
+set_global_assignment -name VERILOG_FILE modulos/Drawing_Module/stateMachine_1.v
+set_global_assignment -name VERILOG_FILE modulos/Drawing_Module/DrawingModule.v
+set_global_assignment -name VERILOG_FILE modulos/Counter/counter.v
+set_global_assignment -name VERILOG_FILE modulos/ControlUnit/controlUnit.v
+set_global_assignment -name VERILOG_FILE modulos/mod_comparator/comparator_module.v
+set_global_assignment -name VERILOG_FILE modulos/mod_comparator/data_select.v
+set_global_assignment -name SDC_FILE ConsoleFPGA.sdc
+set_global_assignment -name QIP_FILE Arquitetura/synthesis/Arquitetura.qip
+set_global_assignment -name VERILOG_FILE modulos/Top_level/video_processor.v
+set_global_assignment -name VERILOG_FILE modulos/sprite_memory/sprite_memory.v
+set_global_assignment -name VERILOG_FILE modulos/registerFile/registerFile.v
+set_global_assignment -name VERILOG_FILE modulos/multiplexador/multiplexador.v
+set_global_assignment -name VERILOG_FILE modulos/mod_comparator/mod_comparator.v
+set_global_assignment -name VERILOG_FILE modulos/mod_comparator/comparator.v
+set_global_assignment -name VERILOG_FILE modulos/demultiplexador/demultiplexador.v
+set_global_assignment -name VERILOG_FILE modulos/decoderInstruction/decoderInstruction.v
+set_global_assignment -name QIP_FILE modulos/FIFO/FIFO.qip
+set_global_assignment -name QIP_FILE modulos/PLL/clock_pll.qip
+set_global_assignment -name SIGNALTAP_FILE Collenda_SignalTap.stp
+set_global_assignment -name VECTOR_WAVEFORM_FILE testesWaveForm/testeControlUnit.vwf
+set_global_assignment -name QIP_FILE modulos/background_memory/background_memory.qip
+set_global_assignment -name QIP_FILE modulos/sprite_memory/memory.qip
+set_global_assignment -name QIP_FILE modulos/Co_Processor/memory_fg/memory_fg.qip
+set_global_assignment -name QIP_FILE modulos/Co_Processor/pixels_memory/pixels_memory.qip
+set_location_assignment PIN_M10 -to A
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to A
+set_location_assignment PIN_L13 -to B_button
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to B_button
+set_location_assignment PIN_J14 -to DOWN
+set_location_assignment PIN_N15 -to LEFT
+set_location_assignment PIN_L14 -to RIGHT
+set_location_assignment PIN_P14 -to SELECT
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to SELECT
+set_location_assignment PIN_J16 -to START
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to START
+set_location_assignment PIN_N16 -to TL
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to TL
+set_location_assignment PIN_N14 -to TR
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to TR
+set_location_assignment PIN_K15 -to UP
+set_location_assignment PIN_P16 -to X
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to X
+set_location_assignment PIN_J13 -to Y
+set_location_assignment PIN_D1 -to leds[4]
+set_location_assignment PIN_F3 -to leds[5]
+set_location_assignment PIN_B1 -to leds[6]
+set_location_assignment PIN_L3 -to leds[7]
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to Y
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

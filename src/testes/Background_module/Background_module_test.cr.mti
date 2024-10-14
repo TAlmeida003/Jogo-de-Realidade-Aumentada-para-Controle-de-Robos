@@ -1,0 +1,50 @@
+/home/gabriel/Documents/ConsoleFPGA/modulos/ControlUnit/controlUnit.v {1 {vlog -work work -stats=none /home/gabriel/Documents/ConsoleFPGA/modulos/ControlUnit/controlUnit.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module controlUnit
+
+Top level modules:
+	controlUnit
+
+} {} {}} /home/gabriel/Documents/ConsoleFPGA/testes/Background_module/background_module_test.v {1 {vlog -work work -stats=none /home/gabriel/Documents/ConsoleFPGA/testes/Background_module/background_module_test.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module background_module_test
+
+Top level modules:
+	background_module_test
+
+} {} {}} /home/gabriel/Documents/ConsoleFPGA/modulos/VGA_Controller/VGA_sync.v {1 {vlog -work work -stats=none /home/gabriel/Documents/ConsoleFPGA/modulos/VGA_Controller/VGA_sync.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module VGA_sync
+
+Top level modules:
+	VGA_sync
+
+} {} {}} /home/gabriel/Documents/ConsoleFPGA/modulos/PLL/clock_pll.v {1 {vlog -work work -stats=none /home/gabriel/Documents/ConsoleFPGA/modulos/PLL/clock_pll.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module clock_pll
+
+Top level modules:
+	clock_pll
+
+} {} {}} /home/gabriel/Documents/ConsoleFPGA/modulos/Drawing_Module/background_block/BlockModule.v {1 {vlog -work work -stats=none /home/gabriel/Documents/ConsoleFPGA/modulos/Drawing_Module/background_block/BlockModule.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module BlockModule
+
+Top level modules:
+	BlockModule
+
+} {} {}} /home/gabriel/Documents/ConsoleFPGA/modulos/Counter/counter.v {1 {vlog -work work -stats=none /home/gabriel/Documents/ConsoleFPGA/modulos/Counter/counter.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module counter
+
+Top level modules:
+	counter
+
+} {} {}} /home/gabriel/Documents/ConsoleFPGA/modulos/Drawing_Module/background_block/background_block.v {1 {vlog -work work -stats=none /home/gabriel/Documents/ConsoleFPGA/modulos/Drawing_Module/background_block/background_block.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module background_block
+
+Top level modules:
+	background_block
+
+} {} {}}

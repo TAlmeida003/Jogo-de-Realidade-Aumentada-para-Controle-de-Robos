@@ -1,0 +1,9 @@
+11:15:47 **** Incremental Build of configuration Nios II for project sas ****
+wsl make all 
+Info: Building /mnt/c/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/
+make --no-print-directory -C /mnt/c/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/
+[BSP build complete]
+[sas build complete]
+
+11:15:52 Build Finished (took 4s.474ms)
+

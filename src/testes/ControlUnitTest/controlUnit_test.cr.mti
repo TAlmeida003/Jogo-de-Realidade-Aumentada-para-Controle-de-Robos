@@ -1,0 +1,15 @@
+/home/gabriel/Documents/ConsoleFPGA/modulos/ControlUnit/controlUnit.v {1 {vlog -work work -stats=none /home/gabriel/Documents/ConsoleFPGA/modulos/ControlUnit/controlUnit.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module controlUnit
+
+Top level modules:
+	controlUnit
+
+} {} {}} /home/gabriel/Documents/ConsoleFPGA/testes/ControlUnitTest/controlUnitTeste.v {1 {vlog -work work -stats=none /home/gabriel/Documents/ConsoleFPGA/testes/ControlUnitTest/controlUnitTeste.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module controleUnitTeste
+
+Top level modules:
+	controleUnitTeste
+
+} {} {}}

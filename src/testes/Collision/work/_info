@@ -1,0 +1,150 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+d/home/gabriel
+vcheck_collision
+Z0 !s110 1615944588
+!i10b 1
+!s100 1FFSMOZi@m7jjC:kkE8j82
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I8iUCBWRhMOId>T5=:B@Pa1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 d/home/gabriel/Documents/ConsoleFPGA/testes/Collision
+w1615481153
+8/home/gabriel/Documents/ConsoleFPGA/modulos/collision/check_collision.v
+F/home/gabriel/Documents/ConsoleFPGA/modulos/collision/check_collision.v
+!i122 532
+L0 13 103
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1615944588.000000
+!s107 /home/gabriel/Documents/ConsoleFPGA/modulos/collision/check_collision.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/gabriel/Documents/ConsoleFPGA/modulos/collision/check_collision.v|
+!i113 1
+Z6 o-work work
+Z7 tCvgOpt 0
+vcollision
+R0
+!i10b 1
+!s100 _4_9<baEY:E6N2Rcjd2Jg0
+R1
+IRgSYbCnHb3?=O[>_Id22^2
+R2
+R3
+w1615432210
+8/home/gabriel/Documents/ConsoleFPGA/modulos/collision/collision.v
+F/home/gabriel/Documents/ConsoleFPGA/modulos/collision/collision.v
+!i122 533
+L0 15 136
+R4
+r1
+!s85 0
+31
+R5
+!s107 /home/gabriel/Documents/ConsoleFPGA/modulos/collision/collision.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/gabriel/Documents/ConsoleFPGA/modulos/collision/collision.v|
+!i113 1
+R6
+R7
+vcollision_controler
+Z8 !s110 1615944589
+!i10b 1
+!s100 >lW4LRN^=?G4aAOdSQU@g1
+R1
+IIB0`ejacJnke?M38K[maU1
+R2
+R3
+w1615944584
+8/home/gabriel/Documents/ConsoleFPGA/modulos/collision/collision_controller.v
+F/home/gabriel/Documents/ConsoleFPGA/modulos/collision/collision_controller.v
+!i122 534
+L0 19 289
+R4
+r1
+!s85 0
+31
+Z9 !s108 1615944589.000000
+!s107 /home/gabriel/Documents/ConsoleFPGA/modulos/collision/collision_controller.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/gabriel/Documents/ConsoleFPGA/modulos/collision/collision_controller.v|
+!i113 1
+R6
+R7
+vCollisionTest
+R0
+!i10b 1
+!s100 Jmb?K4DEYa:d;NCkd4a`i2
+R1
+I^i2WY6N[T53cAG@^@XBQ`1
+R2
+R3
+w1615942784
+8/home/gabriel/Documents/ConsoleFPGA/testes/Collision/CollisionTest.v
+F/home/gabriel/Documents/ConsoleFPGA/testes/Collision/CollisionTest.v
+!i122 531
+L0 1 141
+R4
+r1
+!s85 0
+31
+R5
+!s107 /home/gabriel/Documents/ConsoleFPGA/testes/Collision/CollisionTest.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/gabriel/Documents/ConsoleFPGA/testes/Collision/CollisionTest.v|
+!i113 1
+R6
+R7
+n@collision@test
+vmux_32x1
+R8
+!i10b 1
+!s100 mE=?W;9AX?6le7ZzHQ7DZ0
+R1
+IE>JaiUZkOn;[2QkL`eTOG2
+R2
+R3
+w1615481764
+8/home/gabriel/Documents/ConsoleFPGA/modulos/collision/mux_32x1.v
+F/home/gabriel/Documents/ConsoleFPGA/modulos/collision/mux_32x1.v
+!i122 535
+L0 13 81
+R4
+r1
+!s85 0
+31
+R9
+!s107 /home/gabriel/Documents/ConsoleFPGA/modulos/collision/mux_32x1.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/gabriel/Documents/ConsoleFPGA/modulos/collision/mux_32x1.v|
+!i113 1
+R6
+R7
+vrefresh_flags
+R8
+!i10b 1
+!s100 cX>VMe9J7B>>VS9I@VXPN1
+R1
+IAHDWRfZFb>GVO@88hi9iS2
+R2
+R3
+w1615481219
+8/home/gabriel/Documents/ConsoleFPGA/modulos/collision/refresh_flags.v
+F/home/gabriel/Documents/ConsoleFPGA/modulos/collision/refresh_flags.v
+!i122 536
+L0 16 262
+R4
+r1
+!s85 0
+31
+R9
+!s107 /home/gabriel/Documents/ConsoleFPGA/modulos/collision/refresh_flags.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/gabriel/Documents/ConsoleFPGA/modulos/collision/refresh_flags.v|
+!i113 1
+R6
+R7

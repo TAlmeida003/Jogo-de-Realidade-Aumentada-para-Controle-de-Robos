@@ -1,0 +1,57 @@
+
+State Machine - |ArquiteturaCollenda|video_processor:b2v_inst5|geometric_Forms_Processor:geometric_Forms_Processor_inst|controls_pipeline:controls_pipeline_inst|state
+Name state.STEP_PROCESSING state.STEP_RESET state.REFRESH_INST_MEMORY state.PROCESSING state.READ_MEMORY state.UPLOAD_DATA state.WAIT state.RESET 
+state.RESET 0 0 0 0 0 0 0 0 
+state.WAIT 0 0 0 0 0 0 1 1 
+state.UPLOAD_DATA 0 0 0 0 0 1 0 1 
+state.READ_MEMORY 0 0 0 0 1 0 0 1 
+state.PROCESSING 0 0 0 1 0 0 0 1 
+state.REFRESH_INST_MEMORY 0 0 1 0 0 0 0 1 
+state.STEP_RESET 0 1 0 0 0 0 0 1 
+state.STEP_PROCESSING 1 0 0 0 0 0 0 1 
+
+State Machine - |ArquiteturaCollenda|video_processor:b2v_inst5|DrawingModule:DrawingModule_inst|BlockModule:BlockModule_inst|background_block:background_block_inst|state
+Name state.WAIT_NEW_LINE state.WAIT_NEW_SCREEN state.WAIT state.REFRESH_ADDR state.COUNT_LINES state.SYNC_TIME state.RESET 
+state.RESET 0 0 0 0 0 0 0 
+state.SYNC_TIME 0 0 0 0 0 1 1 
+state.COUNT_LINES 0 0 0 0 1 0 1 
+state.REFRESH_ADDR 0 0 0 1 0 0 1 
+state.WAIT 0 0 1 0 0 0 1 
+state.WAIT_NEW_SCREEN 0 1 0 0 0 0 1 
+state.WAIT_NEW_LINE 1 0 0 0 0 0 1 
+
+State Machine - |ArquiteturaCollenda|video_processor:b2v_inst5|DrawingModule:DrawingModule_inst|stateMachine_2:stateMachine_2_inst|state
+Name state.D2 state.C2 state.B2 state.RESET state.E2 
+state.RESET 0 0 0 0 0 
+state.B2 0 0 1 1 0 
+state.C2 0 1 0 1 0 
+state.D2 1 0 0 1 0 
+state.E2 0 0 0 1 1 
+
+State Machine - |ArquiteturaCollenda|video_processor:b2v_inst5|DrawingModule:DrawingModule_inst|stateMachine_1:stateMachine_1_inst|state
+Name state.WAIT state.D1 state.C1 state.B1 state.A1 state.RESET 
+state.RESET 0 0 0 0 0 0 
+state.A1 0 0 0 0 1 1 
+state.B1 0 0 0 1 0 1 
+state.C1 0 0 1 0 0 1 
+state.D1 0 1 0 0 0 1 
+state.WAIT 1 0 0 0 0 1 
+
+State Machine - |ArquiteturaCollenda|video_processor:b2v_inst5|ControlUnit_aux:ControlUnit_aux_inst|state
+Name state.REFRESH_OUT state.READING state.ENABLE_READING state.WAIT state.END_INST 
+state.WAIT 0 0 0 0 0 
+state.ENABLE_READING 0 0 1 1 0 
+state.READING 0 1 0 1 0 
+state.REFRESH_OUT 1 0 0 1 0 
+state.END_INST 0 0 0 1 1 
+
+State Machine - |ArquiteturaCollenda|video_processor:b2v_inst5|controlUnit:controlUnit_inst|state
+Name state.ESCRITA_NO_CO_PROCESSOR state.ESCRITA_NA_MEMORIA_BK state.ESCRITA_NA_MEMORIA_SP state.HABILITAR_IMPRESSAO state.ESCREVER_NO_BANCO state.PRONTO state.INIT state.RESET 
+state.RESET 0 0 0 0 0 0 0 0 
+state.INIT 0 0 0 0 0 0 1 1 
+state.PRONTO 0 0 0 0 0 1 0 1 
+state.ESCREVER_NO_BANCO 0 0 0 0 1 0 0 1 
+state.HABILITAR_IMPRESSAO 0 0 0 1 0 0 0 1 
+state.ESCRITA_NA_MEMORIA_SP 0 0 1 0 0 0 0 1 
+state.ESCRITA_NA_MEMORIA_BK 0 1 0 0 0 0 0 1 
+state.ESCRITA_NO_CO_PROCESSOR 1 0 0 0 0 0 0 1 

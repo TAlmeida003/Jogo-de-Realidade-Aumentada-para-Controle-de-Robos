@@ -1,0 +1,82 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+d/home/gabriel/Documents/ConsoleFPGA/testes/Collision
+vFIFO
+Z0 !s110 1653308147
+!i10b 1
+!s100 GSk5YhPg?DWVfRT8Bm3VY0
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+If2ThF_foL@XSYFK]ZoKoK0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 d/home/gabriel/Documents/ConsoleFPGA/testes/FIFOTest
+w1653308143
+8/home/gabriel/Documents/ConsoleFPGA/modulos/FIFO/FIFO.v
+F/home/gabriel/Documents/ConsoleFPGA/modulos/FIFO/FIFO.v
+!i122 158
+L0 40 57
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1653308147.000000
+!s107 /home/gabriel/Documents/ConsoleFPGA/modulos/FIFO/FIFO.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/gabriel/Documents/ConsoleFPGA/modulos/FIFO/FIFO.v|
+!i113 1
+Z6 o-work work
+Z7 tCvgOpt 0
+n@f@i@f@o
+vFIFO_Test
+R0
+!i10b 1
+!s100 Jdk`L?f9S3K0I@O@S^?9V2
+R1
+Ia4A[gVVnPb45Y3g`1c5?f3
+R2
+R3
+w1653307812
+8/home/gabriel/Documents/ConsoleFPGA/testes/FIFOTest/FIFO_Test.v
+F/home/gabriel/Documents/ConsoleFPGA/testes/FIFOTest/FIFO_Test.v
+!i122 157
+L0 2 104
+R4
+r1
+!s85 0
+31
+R5
+!s107 /home/gabriel/Documents/ConsoleFPGA/testes/FIFOTest/FIFO_Test.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/gabriel/Documents/ConsoleFPGA/testes/FIFOTest/FIFO_Test.v|
+!i113 1
+R6
+R7
+n@f@i@f@o_@test
+vwritten_pulse
+!s110 1653308148
+!i10b 1
+!s100 g0fIQC_ULzgceeBE:Nz[m2
+R1
+I;5HV5]AXDLQjH>kIf=;Fg1
+R2
+R3
+w1653053287
+8/home/gabriel/Documents/ConsoleFPGA/modulos/written_pulse/written_pulse.v
+F/home/gabriel/Documents/ConsoleFPGA/modulos/written_pulse/written_pulse.v
+!i122 159
+L0 1 42
+R4
+r1
+!s85 0
+31
+!s108 1653308148.000000
+!s107 /home/gabriel/Documents/ConsoleFPGA/modulos/written_pulse/written_pulse.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/gabriel/Documents/ConsoleFPGA/modulos/written_pulse/written_pulse.v|
+!i113 1
+R6
+R7

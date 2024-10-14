@@ -1,0 +1,19 @@
+	component Arquitetura is
+		port (
+			clk_clk                   : in  std_logic                     := 'X';             -- clk
+			data_a_export             : out std_logic_vector(31 downto 0);                    -- export
+			data_b_export             : out std_logic_vector(31 downto 0);                    -- export
+			irq_joystick_export       : in  std_logic_vector(7 downto 0)  := (others => 'X'); -- export
+			rd_joystick_lsb_export    : in  std_logic_vector(31 downto 0) := (others => 'X'); -- export
+			rd_joystick_msb_export    : in  std_logic_vector(31 downto 0) := (others => 'X'); -- export
+			reset_reset_n             : in  std_logic                     := 'X';             -- reset_n
+			reset_pulsecounter_export : out std_logic;                                        -- export
+			screen_export             : in  std_logic                     := 'X';             -- export
+			we_joystick_export        : out std_logic;                                        -- export
+			we_joystick_lsb_export    : out std_logic_vector(31 downto 0);                    -- export
+			we_joystick_msb_export    : out std_logic_vector(31 downto 0);                    -- export
+			wrfull_export             : in  std_logic                     := 'X';             -- export
+			wrreg_export              : out std_logic                                         -- export
+		);
+	end component Arquitetura;
+

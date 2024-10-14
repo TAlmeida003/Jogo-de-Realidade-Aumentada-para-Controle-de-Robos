@@ -1,0 +1,389 @@
+# Loading project printModule_fullTest
+cd /home/gabriel/Documents/ConsoleFPGA/testes/decoderInstruction_test
+# reading /opt/intelFPGA_lite/20.1/modelsim_ase/linuxaloem/../modelsim.ini
+vsim work.decodeInstruction_test -t ns
+# vsim work.decodeInstruction_test -t ns 
+# Start time: 09:59:04 on May 06,2021
+# Loading work.decodeInstruction_test
+# Loading work.decorderInstruction
+add wave -position insertpoint  \
+sim:/decodeInstruction_test/clk_en
+add wave -position insertpoint  \
+sim:/decodeInstruction_test/dataA
+add wave -position insertpoint  \
+sim:/decodeInstruction_test/dataB
+add wave -position insertpoint  \
+sim:/decodeInstruction_test/out_opcode
+add wave -position insertpoint  \
+sim:/decodeInstruction_test/out_register
+add wave -position insertpoint  \
+sim:/decodeInstruction_test/out_data
+run -all
+# out_opcode: 1111 | out_register: 00000000000000 | out_data: 00000000000000000000000000000000
+# out_opcode: 0001 | out_register: 11111111111111 | out_data: 00000000000000000000000000111000
+# out_opcode: 1111 | out_register: 00000000000000 | out_data: 00000000000000000000000000000000
+# out_opcode: 0000 | out_register: 00000000000000 | out_data: 00100110010000100101100000000000
+# ** Note: $stop    : /home/gabriel/Documents/ConsoleFPGA/testes/decoderInstruction_test/decoderInstruction_test.v(34)
+#    Time: 55 ns  Iteration: 1  Instance: /decodeInstruction_test
+# Break in Module decodeInstruction_test at /home/gabriel/Documents/ConsoleFPGA/testes/decoderInstruction_test/decoderInstruction_test.v line 34
+quit -sim
+# End time: 10:01:34 on May 06,2021, Elapsed time: 0:02:30
+# Errors: 0, Warnings: 0
+vsim -t ns work.decodeInstruction_test work.decorderInstruction
+# vsim -t ns work.decodeInstruction_test work.decorderInstruction 
+# Start time: 10:01:48 on May 06,2021
+# Loading work.decodeInstruction_test
+# Loading work.decorderInstruction
+quit -sim
+# End time: 10:02:02 on May 06,2021, Elapsed time: 0:00:14
+# Errors: 0, Warnings: 0
+cd /home/gabriel/Documents/ConsoleFPGA/testes/decoderInstruction_test
+vsim -t ns work.decodeInstruction_test work.decorderInstruction
+# vsim -t ns work.decodeInstruction_test work.decorderInstruction 
+# Start time: 10:02:31 on May 06,2021
+# Loading work.decodeInstruction_test
+# Loading work.decorderInstruction
+add wave -position insertpoint  \
+sim:/decodeInstruction_test/new_instruction \
+sim:/decodeInstruction_test/clk_en \
+sim:/decodeInstruction_test/dataA \
+sim:/decodeInstruction_test/dataB \
+sim:/decodeInstruction_test/out_opcode \
+sim:/decodeInstruction_test/out_register \
+sim:/decodeInstruction_test/out_data
+add wave -position insertpoint  \
+sim:/decodeInstruction_test/new_instruction
+run -all
+# out_opcode: 1111 | out_register: 00000000000000 | out_data: 00000000000000000000000000000000
+# out_opcode: 0001 | out_register: 11111111111111 | out_data: 00000000000000000000000000111000
+# out_opcode: 1111 | out_register: 00000000000000 | out_data: 00000000000000000000000000000000
+# out_opcode: 0000 | out_register: 00000000000000 | out_data: 00100110010000100101100000000000
+# ** Note: $stop    : /home/gabriel/Documents/ConsoleFPGA/testes/decoderInstruction_test/decoderInstruction_test.v(34)
+#    Time: 55 ns  Iteration: 1  Instance: /decodeInstruction_test
+# Break in Module decodeInstruction_test at /home/gabriel/Documents/ConsoleFPGA/testes/decoderInstruction_test/decoderInstruction_test.v line 34
+vsim work.decodeInstruction_test
+# End time: 10:04:00 on May 06,2021, Elapsed time: 0:01:29
+# Errors: 0, Warnings: 0
+# vsim work.decodeInstruction_test 
+# Start time: 10:04:00 on May 06,2021
+# Loading work.decodeInstruction_test
+# Loading work.decorderInstruction
+add wave -position insertpoint  \
+sim:/decodeInstruction_test/new_instruction \
+sim:/decodeInstruction_test/clk_en \
+sim:/decodeInstruction_test/dataA \
+sim:/decodeInstruction_test/dataB \
+sim:/decodeInstruction_test/out_opcode \
+sim:/decodeInstruction_test/out_register \
+sim:/decodeInstruction_test/out_data
+vlog -work work /home/gabriel/Documents/ConsoleFPGA/testes/decoderInstruction_test/decoderInstruction_test.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 10:04:17 on May 06,2021
+# vlog -reportprogress 300 -work work /home/gabriel/Documents/ConsoleFPGA/testes/decoderInstruction_test/decoderInstruction_test.v 
+# -- Compiling module decodeInstruction_test
+# 
+# Top level modules:
+# 	decodeInstruction_test
+# End time: 10:04:18 on May 06,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+run -all
+# out_opcode: 1111 | out_register: 00000000000000 | out_data: 00000000000000000000000000000000
+# out_opcode: 0001 | out_register: 11111111111111 | out_data: 00000000000000000000000000111000
+# out_opcode: 1111 | out_register: 00000000000000 | out_data: 00000000000000000000000000000000
+# out_opcode: 0000 | out_register: 00000000000000 | out_data: 00100110010000100101100000000000
+# ** Note: $stop    : /home/gabriel/Documents/ConsoleFPGA/testes/decoderInstruction_test/decoderInstruction_test.v(34)
+#    Time: 55 ps  Iteration: 1  Instance: /decodeInstruction_test
+# Break in Module decodeInstruction_test at /home/gabriel/Documents/ConsoleFPGA/testes/decoderInstruction_test/decoderInstruction_test.v line 34
+restart
+# Loading work.decodeInstruction_test
+run -all
+# out_opcode: 1111 | out_register: 00000000000000 | out_data: 00000000000000000000000000000000
+# out_opcode: 0001 | out_register: 11111111111111 | out_data: 00000000000000000000000000111000
+# out_opcode: 1111 | out_register: 00000000000000 | out_data: 00000000000000000000000000000000
+# out_opcode: 0000 | out_register: 00000000000000 | out_data: 00100110010000100101100000000000
+# ** Note: $stop    : /home/gabriel/Documents/ConsoleFPGA/testes/decoderInstruction_test/decoderInstruction_test.v(34)
+#    Time: 110 ps  Iteration: 1  Instance: /decodeInstruction_test
+# Break in Module decodeInstruction_test at /home/gabriel/Documents/ConsoleFPGA/testes/decoderInstruction_test/decoderInstruction_test.v line 34
+vlog -work work /home/gabriel/Documents/ConsoleFPGA/testes/decoderInstruction_test/decoderInstruction_test.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 10:08:00 on May 06,2021
+# vlog -reportprogress 300 -work work /home/gabriel/Documents/ConsoleFPGA/testes/decoderInstruction_test/decoderInstruction_test.v 
+# -- Compiling module decodeInstruction_test
+# 
+# Top level modules:
+# 	decodeInstruction_test
+# End time: 10:08:00 on May 06,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.decodeInstruction_test
+run -all
+# out_opcode: 1111 | out_register: 00000000000000 | out_data: 00000000000000000000000000000000
+# out_opcode: 0001 | out_register: 11111111111111 | out_data: 00000000000000000000000000111000
+# out_opcode: 1111 | out_register: 00000000000000 | out_data: 00000000000000000000000000000000
+# out_opcode: 0000 | out_register: 00000000000000 | out_data: 00100110010000100101100000000000
+# ** Note: $stop    : /home/gabriel/Documents/ConsoleFPGA/testes/decoderInstruction_test/decoderInstruction_test.v(33)
+#    Time: 90 ps  Iteration: 1  Instance: /decodeInstruction_test
+# Break in Module decodeInstruction_test at /home/gabriel/Documents/ConsoleFPGA/testes/decoderInstruction_test/decoderInstruction_test.v line 33
+vlog -work work /home/gabriel/Documents/ConsoleFPGA/modulos/decoderInstruction/decoderInstruction.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 10:08:37 on May 06,2021
+# vlog -reportprogress 300 -work work /home/gabriel/Documents/ConsoleFPGA/modulos/decoderInstruction/decoderInstruction.v 
+# -- Compiling module decorderInstruction
+# 
+# Top level modules:
+# 	decorderInstruction
+# End time: 10:08:37 on May 06,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.decorderInstruction
+run -all
+# out_opcode: 1111 | out_register: 00000000000000 | out_data: 00000000000000000000000000000000
+# out_opcode: 0001 | out_register: 11111111111111 | out_data: 00000000000000000000000000111000
+# out_opcode: 1111 | out_register: 00000000000000 | out_data: 00000000000000000000000000000000
+# out_opcode: 0000 | out_register: 00000000000000 | out_data: 00100110010000100101100000000000
+# ** Note: $stop    : /home/gabriel/Documents/ConsoleFPGA/testes/decoderInstruction_test/decoderInstruction_test.v(33)
+#    Time: 90 ps  Iteration: 1  Instance: /decodeInstruction_test
+# Break in Module decodeInstruction_test at /home/gabriel/Documents/ConsoleFPGA/testes/decoderInstruction_test/decoderInstruction_test.v line 33
+vlog -work work /home/gabriel/Documents/ConsoleFPGA/testes/decoderInstruction_test/decoderInstruction_test.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 10:12:25 on May 06,2021
+# vlog -reportprogress 300 -work work /home/gabriel/Documents/ConsoleFPGA/testes/decoderInstruction_test/decoderInstruction_test.v 
+# -- Compiling module decodeInstruction_test
+# 
+# Top level modules:
+# 	decodeInstruction_test
+# End time: 10:12:25 on May 06,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.decodeInstruction_test
+vsim work.decodeInstruction_test work.decorderInstruction -t ns
+# End time: 10:13:10 on May 06,2021, Elapsed time: 0:09:10
+# Errors: 0, Warnings: 0
+# vsim work.decodeInstruction_test work.decorderInstruction -t ns 
+# Start time: 10:13:10 on May 06,2021
+# Loading work.decodeInstruction_test
+# Loading work.decorderInstruction
+add wave -position insertpoint  \
+sim:/decodeInstruction_test/dataB
+add wave -position insertpoint  \
+sim:/decodeInstruction_test/new_instruction \
+sim:/decodeInstruction_test/clk_en \
+sim:/decodeInstruction_test/dataA \
+sim:/decodeInstruction_test/dataB \
+sim:/decodeInstruction_test/out_opcode \
+sim:/decodeInstruction_test/out_register \
+sim:/decodeInstruction_test/out_data
+run -all
+# out_opcode: 1111 | out_register: 00000000000000 | out_data: 00000000000000000000000000000000
+# out_opcode: 0001 | out_register: 11111111111111 | out_data: 00000000000000000000000000111000
+# out_opcode: 1111 | out_register: 00000000000000 | out_data: 00000000000000000000000000000000
+# out_opcode: 0000 | out_register: 00000000000000 | out_data: 00100110010000100101100000000000
+# ** Note: $stop    : /home/gabriel/Documents/ConsoleFPGA/testes/decoderInstruction_test/decoderInstruction_test.v(34)
+#    Time: 90 ns  Iteration: 1  Instance: /decodeInstruction_test
+# Break in Module decodeInstruction_test at /home/gabriel/Documents/ConsoleFPGA/testes/decoderInstruction_test/decoderInstruction_test.v line 34
+vlog -work work /home/gabriel/Documents/ConsoleFPGA/testes/decoderInstruction_test/decoderInstruction_test.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 10:28:11 on May 06,2021
+# vlog -reportprogress 300 -work work /home/gabriel/Documents/ConsoleFPGA/testes/decoderInstruction_test/decoderInstruction_test.v 
+# -- Compiling module decodeInstruction_test
+# 
+# Top level modules:
+# 	decodeInstruction_test
+# End time: 10:28:11 on May 06,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.decodeInstruction_test
+run -all
+# out_opcode: 1111 | out_register: 00000000000000 | out_data: 00000000000000000000000000000000
+# out_opcode: 0001 | out_register: 11111111111111 | out_data: 00000000000000000000000000111000
+# out_opcode: 1111 | out_register: 00000000000000 | out_data: 00000000000000000000000000000000
+# out_opcode: 0000 | out_register: 00000000000000 | out_data: 00100110010000100101100000000000
+# ** Note: $stop    : /home/gabriel/Documents/ConsoleFPGA/testes/decoderInstruction_test/decoderInstruction_test.v(35)
+#    Time: 90 ns  Iteration: 1  Instance: /decodeInstruction_test
+# Break in Module decodeInstruction_test at /home/gabriel/Documents/ConsoleFPGA/testes/decoderInstruction_test/decoderInstruction_test.v line 35
+vlog -work work /home/gabriel/Documents/ConsoleFPGA/testes/decoderInstruction_test/decoderInstruction_test.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 10:28:30 on May 06,2021
+# vlog -reportprogress 300 -work work /home/gabriel/Documents/ConsoleFPGA/testes/decoderInstruction_test/decoderInstruction_test.v 
+# -- Compiling module decodeInstruction_test
+# 
+# Top level modules:
+# 	decodeInstruction_test
+# End time: 10:28:30 on May 06,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.decodeInstruction_test
+run -all
+# out_opcode: 1111 | out_register: 00000000000000 | out_data: 00000000000000000000000000000000
+# out_opcode: 0001 | out_register: 11111111111111 | out_data: 00000000000000000000000000111000
+# out_opcode: 1111 | out_register: 00000000000000 | out_data: 00000000000000000000000000000000
+# out_opcode: 0000 | out_register: 00000000000000 | out_data: 00100110010000100101100000000000
+# ** Note: $stop    : /home/gabriel/Documents/ConsoleFPGA/testes/decoderInstruction_test/decoderInstruction_test.v(35)
+#    Time: 90 ns  Iteration: 1  Instance: /decodeInstruction_test
+# Break in Module decodeInstruction_test at /home/gabriel/Documents/ConsoleFPGA/testes/decoderInstruction_test/decoderInstruction_test.v line 35
+quit -sim
+# End time: 10:50:52 on May 06,2021, Elapsed time: 0:37:42
+# Errors: 0, Warnings: 0
+cd /home/gabriel/Documents/ConsoleFPGA/testes/ControlUnitTest
+vsim work.controleUnitTeste work.controlUnit -t ns
+# vsim work.controleUnitTeste work.controlUnit -t ns 
+# Start time: 10:51:17 on May 06,2021
+# Loading work.controleUnitTeste
+# Loading work.controlUnit
+add wave -position insertpoint  \
+sim:/controleUnitTeste/controlUnit_inst/clk
+add wave -position insertpoint  \
+sim:/controleUnitTeste/controlUnit_inst/reset
+add wave -position insertpoint  \
+sim:/controleUnitTeste/controlUnit_inst/opCode
+add wave -position insertpoint  \
+sim:/controleUnitTeste/controlUnit_inst/printtingScreen
+add wave -position insertpoint  \
+sim:/controleUnitTeste/controlUnit_inst/doneInst
+add wave -position insertpoint  \
+sim:/controleUnitTeste/controlUnit_inst/fifo_empty
+add wave -position insertpoint  \
+sim:/controleUnitTeste/controlUnit_inst/state
+add wave -position insertpoint  \
+sim:/controleUnitTeste/controlUnit_inst/next
+run -all
+# ** Note: $stop    : /home/gabriel/Documents/ConsoleFPGA/testes/ControlUnitTest/controlUnitTeste.v(58)
+#    Time: 165 ns  Iteration: 1  Instance: /controleUnitTeste
+# Break in Module controleUnitTeste at /home/gabriel/Documents/ConsoleFPGA/testes/ControlUnitTest/controlUnitTeste.v line 58
+vlog -work work /home/gabriel/Documents/ConsoleFPGA/testes/ControlUnitTest/controlUnitTeste.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:32:03 on May 06,2021
+# vlog -reportprogress 300 -work work /home/gabriel/Documents/ConsoleFPGA/testes/ControlUnitTest/controlUnitTeste.v 
+# -- Compiling module controleUnitTeste
+# 
+# Top level modules:
+# 	controleUnitTeste
+# End time: 11:32:03 on May 06,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -work work /home/gabriel/Documents/ConsoleFPGA/modulos/ControlUnit/controlUnit.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:32:06 on May 06,2021
+# vlog -reportprogress 300 -work work /home/gabriel/Documents/ConsoleFPGA/modulos/ControlUnit/controlUnit.v 
+# -- Compiling module controlUnit
+# 
+# Top level modules:
+# 	controlUnit
+# End time: 11:32:06 on May 06,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.controleUnitTeste
+# Loading work.controlUnit
+run -all
+# ** Note: $stop    : /home/gabriel/Documents/ConsoleFPGA/testes/ControlUnitTest/controlUnitTeste.v(58)
+#    Time: 145 ns  Iteration: 1  Instance: /controleUnitTeste
+# Break in Module controleUnitTeste at /home/gabriel/Documents/ConsoleFPGA/testes/ControlUnitTest/controlUnitTeste.v line 58
+vlog -work work /home/gabriel/Documents/ConsoleFPGA/testes/ControlUnitTest/controlUnitTeste.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:34:21 on May 06,2021
+# vlog -reportprogress 300 -work work /home/gabriel/Documents/ConsoleFPGA/testes/ControlUnitTest/controlUnitTeste.v 
+# -- Compiling module controleUnitTeste
+# 
+# Top level modules:
+# 	controleUnitTeste
+# End time: 11:34:21 on May 06,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.controleUnitTeste
+run -all
+# ** Note: $stop    : /home/gabriel/Documents/ConsoleFPGA/testes/ControlUnitTest/controlUnitTeste.v(58)
+#    Time: 165 ns  Iteration: 1  Instance: /controleUnitTeste
+# Break in Module controleUnitTeste at /home/gabriel/Documents/ConsoleFPGA/testes/ControlUnitTest/controlUnitTeste.v line 58
+vlog -work work /home/gabriel/Documents/ConsoleFPGA/testes/ControlUnitTest/controlUnitTeste.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:35:27 on May 06,2021
+# vlog -reportprogress 300 -work work /home/gabriel/Documents/ConsoleFPGA/testes/ControlUnitTest/controlUnitTeste.v 
+# -- Compiling module controleUnitTeste
+# 
+# Top level modules:
+# 	controleUnitTeste
+# End time: 11:35:27 on May 06,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.controleUnitTeste
+run -all
+# ** Note: $stop    : /home/gabriel/Documents/ConsoleFPGA/testes/ControlUnitTest/controlUnitTeste.v(58)
+#    Time: 165 ns  Iteration: 1  Instance: /controleUnitTeste
+# Break in Module controleUnitTeste at /home/gabriel/Documents/ConsoleFPGA/testes/ControlUnitTest/controlUnitTeste.v line 58
+vlog -work work /home/gabriel/Documents/ConsoleFPGA/testes/ControlUnitTest/controlUnitTeste.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:41:42 on May 06,2021
+# vlog -reportprogress 300 -work work /home/gabriel/Documents/ConsoleFPGA/testes/ControlUnitTest/controlUnitTeste.v 
+# -- Compiling module controleUnitTeste
+# 
+# Top level modules:
+# 	controleUnitTeste
+# End time: 11:41:42 on May 06,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.controleUnitTeste
+run -all
+# ** Note: $stop    : /home/gabriel/Documents/ConsoleFPGA/testes/ControlUnitTest/controlUnitTeste.v(58)
+#    Time: 155 ns  Iteration: 1  Instance: /controleUnitTeste
+# Break in Module controleUnitTeste at /home/gabriel/Documents/ConsoleFPGA/testes/ControlUnitTest/controlUnitTeste.v line 58
+quit -sim
+# End time: 11:57:23 on May 06,2021, Elapsed time: 1:06:06
+# Errors: 0, Warnings: 0
+cd /home/gabriel/Documents/ConsoleFPGA/testes/printModule_full_test
+vsim work.printModule_full_test -t ns
+# vsim work.printModule_full_test -t ns 
+# Start time: 11:57:53 on May 06,2021
+# Loading work.printModule_full_test
+# Loading work.full_print_module
+# Loading work.printModule
+# Loading work.calculoAddress
+# Loading work.multiplexador
+add wave -position insertpoint  \
+sim:/printModule_full_test/full_print_module_inst/clk
+add wave -position insertpoint  \
+sim:/printModule_full_test/full_print_module_inst/clk_pixel
+add wave -position insertpoint  \
+sim:/printModule_full_test/full_print_module_inst/reset
+add wave -position insertpoint  \
+sim:/printModule_full_test/full_print_module_inst/data_reg
+add wave -position insertpoint  \
+sim:/printModule_full_test/full_print_module_inst/active_area
+add wave -position insertpoint  \
+sim:/printModule_full_test/full_print_module_inst/pixel_x
+add wave -position insertpoint  \
+sim:/printModule_full_test/full_print_module_inst/pixel_y
+add wave -position insertpoint  \
+sim:/printModule_full_test/full_print_module_inst/check_value
+add wave -position insertpoint  \
+sim:/printModule_full_test/full_print_module_inst/sprite_on
+add wave -position insertpoint  \
+sim:/printModule_full_test/full_print_module_inst/memory_address
+run -all
+# saidas: address_memory:     x | printtingScreen: x
+# saidas: address_memory:     x | printtingScreen: 1
+# saidas: address_memory: 16383 | printtingScreen: 1
+# saidas: address_memory:     0 | printtingScreen: 1
+# saidas: address_memory:     1 | printtingScreen: 1
+# saidas: address_memory:     2 | printtingScreen: 1
+# saidas: address_memory:     3 | printtingScreen: 1
+# saidas: address_memory:     4 | printtingScreen: 1
+# saidas: address_memory:     5 | printtingScreen: 1
+# saidas: address_memory:     6 | printtingScreen: 1
+# saidas: address_memory:     7 | printtingScreen: 1
+# saidas: address_memory:     8 | printtingScreen: 1
+# saidas: address_memory:     9 | printtingScreen: 1
+# saidas: address_memory:    10 | printtingScreen: 1
+# saidas: address_memory:    11 | printtingScreen: 1
+# saidas: address_memory:    12 | printtingScreen: 1
+# saidas: address_memory:    13 | printtingScreen: 1
+# saidas: address_memory:    14 | printtingScreen: 1
+# saidas: address_memory:    15 | printtingScreen: 1
+# saidas: address_memory:    16 | printtingScreen: 1
+# saidas: address_memory:    17 | printtingScreen: 1
+# saidas: address_memory:    18 | printtingScreen: 1
+# saidas: address_memory:    19 | printtingScreen: 1
+# saidas: address_memory:     0 | printtingScreen: 1
+# ** Note: $stop    : /home/gabriel/Documents/ConsoleFPGA/testes/printModule_full_test/printModule_full_test.v(66)
+#    Time: 920 ns  Iteration: 1  Instance: /printModule_full_test
+# Break in Module printModule_full_test at /home/gabriel/Documents/ConsoleFPGA/testes/printModule_full_test/printModule_full_test.v line 66
+# End time: 14:59:35 on May 06,2021, Elapsed time: 3:01:42
+# Errors: 0, Warnings: 0

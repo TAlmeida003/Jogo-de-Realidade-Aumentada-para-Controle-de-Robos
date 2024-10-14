@@ -1,0 +1,42 @@
+//escrita na memória
+11xxxxx000
+10xxxx0xx1
+0xxxxxxxxx
+11xxxxx000
+11xxxxx000
+0xxxxxxxxx
+
+//escrita no banco (instrução 0000)
+1x0000111x
+10xxxx0xx1
+0xxxxxxxxx
+1x0000111x
+1x0000111x
+0xxxxxxxxx
+
+//escrita no banco (instrução 0010)
+1x0000111x
+10xxxx0xx1
+0xxxxxxxxx
+1x0000111x
+1x0000111x
+0xxxxxxxxx
+
+//habilitar impressão
+10xxxx0xx1
+10xxxx0xx1
+0xxxxxxxxx
+
+
+//estado de PRONTO
+1x0000111x
+0xxxxxxxxx
+1x0000111x
+0xxxxxxxxx
+11xxxxx000
+0xxxxxxxxx
+10xxxx0xx1
+0xxxxxxxxx
+0xxxxxxxxx
+10xxxx0xx1
+0xxxxxxxxx
