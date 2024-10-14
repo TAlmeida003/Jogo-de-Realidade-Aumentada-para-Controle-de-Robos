@@ -352,6 +352,7 @@ O módulo conta com as seguintes entradas e saídas:
 |addr | Saída   | 2      | Barramento com o endereço do registrador|
 
 </div>
+
 <p align="center">
 <strong> Tabela 6: Entradas e saídas do módulo Opcode Control</strong></p>
 
@@ -371,6 +372,7 @@ A seguir, está o diagrama de blocos que ilustra a arquitetura completa do siste
 
 
 <h3>Conjunto de Instruções</h3>
+
 O módulo de I/O suporta um conjunto de instruções para comunicação com o processador. 
 Essas instruções permitem ler e escrever dados nos registradores internos do módulo, bem como configurar os 
 parâmetros de controle. A tabela a seguir apresenta o conjunto de instruções suportadas pelo módulo de I/O.
@@ -388,6 +390,7 @@ parâmetros de controle. A tabela a seguir apresenta o conjunto de instruções 
 | 0x09   |  WMIRQ    | Escreve no registrador de máscara de interrupção|
 
 </div>
+
 <p align="center">
 <strong> Tabela 6: Opcodes da interface de comunicação</strong></p>
 
