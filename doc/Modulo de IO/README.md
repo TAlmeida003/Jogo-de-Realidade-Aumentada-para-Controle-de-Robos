@@ -11,10 +11,10 @@
 <div align="justify"> 
 <h2>Descrição do Projeto</h2>
 
-O gerenciamento de dispositivos de Entrada/Saída, com a sigla E/S (em inglês: *Input/Output*, I/O), sempre foi um grande
+O gerenciamento de dispositivos de Entrada/Saída, com a sigla E/S (em inglês: *Input/Output*, com a sigla I/O), sempre foi um grande
 desafio na área de sistemas embarcados. Isso se deve tanto à natureza assíncrona dos dados quanto à diferença de velocidade 
 entre o processador e os dispositivos periféricos, o que pode afetar significativamente o desempenho da CPU. Para fornecer uma
-interface simples e confiável ao usuário e às aplicações, utiliza-se uma estrutura de camadas de hardware (HW) e software 
+interface simples e confiável ao usuário e às aplicações, utiliza-se uma estrutura de camadas de *hardware* (HW) e *software* 
 (SW). Essa organização em camadas permite ocultar os detalhes específicos dos periféricos para as camadas superiores
 [ANDREW S. TANENBAUM, 2003]. A Figura 1 ilustra essa arquitetura de camadas entre o software e o hardware.
 
@@ -25,12 +25,12 @@ interface simples e confiável ao usuário e às aplicações, utiliza-se uma es
 
 Neste projeto, o foco está no gerenciamento dos periféricos de um controle de videogame.
 Desenvolveu-se um **módulo de I/O** de 64 *bits* em *Verilog*, uma linguagem de descrição de hardware, 
-implementado em uma matriz de portas programáveis (em inglês: *Field-Programmable Gate Array*, com a sigla FPGA) com processador **NIOS II**, acompanhado de uma biblioteca em linguagem C para facilitar o acesso ao hardware. 
+implementado em uma matriz de portas programáveis (em inglês: *Field-Programmable Gate Array*, com a sigla FPGA) com processador **NIOS II**, acompanhado de uma biblioteca em linguagem C para facilitar o acesso ao *hardware*. 
 O principal objetivo desse módulo é realizar a leitura dos dados dos botões e do joystick. 
 Ele é responsável por capturar e armazenar as informações provenientes dos periféricos e transmiti-las
-à CPU sob demanda ou via interrupção. Além disso, o módulo processa as configurações solicitadas pela CPU por meio de software. 
-Este projeto detalhará o funcionamento do módulo tanto no nível de hardware quanto no nível de software, 
-abordando sua arquitetura, interfaces e como os desenvolvedores podem integrá-lo em suas aplicações. Pra se ter uma visão geral do sistema,
+à CPU sob demanda ou via interrupção. Além disso, o módulo processa as configurações solicitadas pela CPU por meio de *software*. 
+Este projeto detalhará o funcionamento do módulo tanto no nível de *hardware* quanto no nível de *software*, 
+abordando sua arquitetura, interfaces e como os desenvolvedores podem integrá-lo em suas aplicações. Para se ter uma visão geral do sistema,
 a Figura 2 apresenta o diagrama geral do projeto.
 
 <p align="center">
