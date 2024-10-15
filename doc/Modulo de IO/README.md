@@ -1,4 +1,7 @@
 
+<p align="center">
+  <img src="img/controle.png" width = "200" />
+</p>
 
 <h1 align="center">Modulo de I/O
 </h1>
@@ -19,7 +22,7 @@ interface simples e confiável ao usuário e às aplicações, utiliza-se uma es
 [ANDREW S. TANENBAUM, 2003]. A Figura 1 ilustra essa arquitetura de camadas entre o software e o hardware.
 
 <p align="center">
-  <img src="img/camadas.png" width = "1000" />
+  <img src="img/camadas.png" width = "800" />
 </p>
 <p align="center"><strong>Figura 1: Arquitetura de camadas entre o software e o hardware</strong></p>
 
