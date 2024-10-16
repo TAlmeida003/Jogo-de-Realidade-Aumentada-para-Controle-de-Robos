@@ -326,9 +326,9 @@ O módulo conta com as seguintes entradas e saídas:
 |we     | Entrada    | 1       | Sinal de escrita ativo em nível alto |
 |enable | Entrada    | 1       | Sinal de habilitação da limpeza |
 |register_addr | Entrada | 2       | Barramento para endereço do registrador |
-|wr_data | Entrada    | 64      | Barramento para escrita de dados |
-|noise_canc | Entrada    | 64      | Barramento para limpeza de ruído |
-|clear_data | Saída   | 64      | Barramento para leitura de dados limpos |
+|wr_data | Entrada    | 12      | Barramento para escrita de dados |
+|noise_canc | Entrada    | 12      | Barramento para limpeza de ruído |
+|clear_data | Saída   | 12      | Barramento para leitura de dados limpos |
 |done | Saída   | 1      | Sinal que indica se a escrita foi realizada com sucesso
 
 </div>
@@ -336,6 +336,11 @@ O módulo conta com as seguintes entradas e saídas:
 <strong> Tabela 3: Entradas e saídas do módulo de limpeza de borda</strong></p>
 
 Para garantir a visualização do módulo, segue a imagem do diagrama de blocos do módulo.
+
+<div align="center">
+  <img src="img/edgeCaptureClear.png" width = "800" />
+</div>
+<p align="center"><strong>Figura 9: Diagrama de blocos do módulo de limpeza de borda</strong></p>
 
 <h4>IO Data</h4>
 
