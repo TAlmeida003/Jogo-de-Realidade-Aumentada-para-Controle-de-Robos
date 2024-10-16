@@ -27,11 +27,11 @@ interface simples e confiável ao usuário e às aplicações, utiliza-se uma es
 <p align="center"><strong>Figura 1: Arquitetura de camadas entre o software e o hardware</strong></p>
 
 Neste projeto, o foco está no gerenciamento dos periféricos de um controle de videogame.
-Desenvolveu-se um **módulo de I/O** de 64 *bits* em *Verilog*, uma linguagem de descrição de hardware, 
+Desenvolveu-se um **módulo de I/O** de 64 bits em Verilog, uma linguagem de descrição de hardware, 
 implementado em uma matriz de portas programáveis (em inglês: *Field-Programmable Gate Array*, com a sigla FPGA) com processador **NIOS II**, acompanhado de uma biblioteca em linguagem C para facilitar o acesso ao hardware. 
 O principal objetivo desse módulo é realizar a leitura dos dados dos botões e do joystick. 
 Ele é responsável por capturar e armazenar as informações provenientes dos periféricos e transmiti-las
-à CPU sob demanda ou via interrupção. Além disso, o módulo processa as configurações solicitadas pela CPU por meio de software. 
+à CPU sob demanda ou via interrupção. Além disso, o módulo processa as configurações solicitadas pelo processador por meio de software. 
 Este projeto detalhará o funcionamento do módulo tanto no nível de hardware quanto no nível de software, 
 abordando sua arquitetura, interfaces e como os desenvolvedores podem integrá-lo em suas aplicações. Para se ter uma visão geral do sistema,
 a Figura 2 apresenta o diagrama geral do projeto.
@@ -87,7 +87,10 @@ Nesta seção, serão apresentados os equipamentos e softwares utilizados no des
 
 <h3>Kit FPGA DE0-Nano</h3>
 
-O **Kit FPGA DE0-Nano**, baseado na FPGA **Altera Cyclone IV EP4CE22F17C6N**, é uma plataforma de desenvolvimento ideal para projetos de hardware e sistemas embarcados. A FPGA possui 22.320 elementos lógicos, 594 Kbits de memória RAM interna, 66 multiplicadores e 4 PLLs para controle de clock, proporcionando um excelente desempenho e flexibilidade. Com 256 pinos disponíveis, o kit é amplamente utilizado em aplicações que exigem processamento eficiente e personalizável, como sistemas embarcados, controle industrial e processamento de sinais digitais. A imagem a seguir mostra o kit FPGA DE0-Nano e seus principais componentes.
+O **Kit FPGA DE0-Nano**, baseado na FPGA **Altera Cyclone IV EP4CE22F17C6N**, é uma plataforma de desenvolvimento ideal para projetos de hardware e sistemas embarcados.
+ A FPGA possui 22.320 elementos lógicos, 594 Kbits de memória RAM interna, 66 multiplicadores e 4 PLLs para controle de clock, proporcionando um excelente desempenho e
+  flexibilidade. Com 256 pinos disponíveis, o kit é amplamente utilizado em aplicações que exigem processamento eficiente e personalizável, como sistemas embarcados,
+  controle industrial e processamento de sinais digitais [Embarcados, 2014]. A imagem a seguir mostra o kit FPGA DE0-Nano e seus principais componentes.
 
 <p align="center">
   <img src="img/deonano.png" width = "600" />
@@ -96,7 +99,10 @@ O **Kit FPGA DE0-Nano**, baseado na FPGA **Altera Cyclone IV EP4CE22F17C6N**, é
 
 <h3>Game Hat</h3>
 
-O **Game HAT** é uma placa de expansão projetada para transformar o Raspberry Pi em um console portátil de videogame. Ele possui uma tela LCD de 3,5 polegadas, botões físicos, um D-pad, além de interfaces para áudio e bateria, proporcionando uma experiência de jogo completa. O Game HAT é compatível com vários emuladores e sistemas operacionais, como o RetroPie, permitindo rodar jogos clássicos de diversas plataformas. Essa solução é ideal para entusiastas de jogos retrô que buscam criar seus próprios consoles portáteis usando o Raspberry Pi. A imagem a seguir mostra o Game HAT.
+O **Game HAT** é uma placa de expansão projetada para transformar o Raspberry Pi em um console portátil de videogame.
+ Ele possui uma tela LCD de 3,5 polegadas, botões físicos, um D-pad, além de interfaces para áudio e bateria, proporcionando uma experiência de jogo
+  completa. O Game HAT é compatível com vários emuladores e sistemas operacionais, como o RetroPie, permitindo rodar jogos clássicos de diversas plataformas. 
+  Essa solução é ideal para entusiastas de jogos retrô que buscam criar seus próprios consoles portáteis usando o Raspberry Pi [waveshare, 2019]. A imagem a seguir mostra o Game HAT.
 
 <p align="center">
   <img src="img/gamehat.png" width = "700" />
@@ -111,21 +117,21 @@ Dispositivo lógico complexo programável (em inglês: *Complex Programmable Log
 
 <h3>Eclipse</h3>
 
-O **Eclipse** do Quartus é um ambiente de desenvolvimento integrado (IDE) baseado no Eclipse, utilizado para desenvolver software embarcado em sistemas com o processador NIOS II. Ele permite a criação, depuração e compilação de aplicativos em C/C++ para sistemas embarcados, oferecendo ferramentas específicas para programação de FPGAs da Intel (Altera). O ambiente facilita a integração entre o hardware descrito no Quartus e o software, permitindo o controle eficiente de periféricos e outras funções no sistema embarcado.
+O **Eclipse** do Quartus é um ambiente de desenvolvimento integrado (IDE) baseado no Eclipse, utilizado para desenvolver software embarcado em sistemas com o processador NIOS II. Ele permite a criação, depuração e compilação de aplicativos em C/C++ para sistemas embarcados, oferecendo ferramentas específicas para programação de FPGAs da Intel (Altera). O ambiente facilita a integração entre o hardware descrito no Quartus e o software, permitindo o controle eficiente de periféricos e outras funções no sistema embarcado [Macnica, 2019].
 
 <h3>ModelSim</h3>
 
 O **ModelSim** é uma ferramenta de simulação de hardware amplamente utilizada para simular o comportamento de circuitos digitais. É uma ferramenta essencial no desenvolvimento e verificação de projetos de lógica digital, incluindo circuitos integrados e FPGA. Permite criar modelos de simulação de circuitos digitais e executar testes para verificar o funcionamento correto antes de implementar o projeto em hardware real.
 
-O ModelSim é essencial no desenvolvimento de hardware digital, pois ajuda a identificar erros, depurar problemas e otimizar o design, economizando tempo e recursos. Além da simulação funcional, suporta simulação de tempo, considerando atrasos e características temporais, permitindo verificar o desempenho em tempo real.
+O ModelSim é essencial no desenvolvimento de hardware digital, pois ajuda a identificar erros, depurar problemas e otimizar o design, economizando tempo e recursos. Além da simulação funcional, suporta simulação de tempo, considerando atrasos e características temporais, permitindo verificar o desempenho em tempo real [Embarcados, 2014].
 
 <h3>NIOS II</h3>
 
-O **NIOS II** é um processador soft-core da Intel (Altera), projetado para ser usado em FPGAs, como a Cyclone IV. Ele permite personalizar o processador conforme as necessidades do projeto, ajustando dados, caches e outros recursos. Utilizado em sistemas embarcados, o NIOS II realiza tarefas como controle de periféricos e processamento de sinais, sendo programado em C/C++. Com o Quartus e o ambiente Eclipse, ele oferece uma solução flexível e eficiente para controle e processamento de hardware.
+O **NIOS II** é um processador soft-core da Intel (Altera), projetado para ser usado em FPGAs, como a Cyclone IV. Ele permite personalizar o processador conforme as necessidades do projeto, ajustando dados, caches e outros recursos. Utilizado em sistemas embarcados, o NIOS II realiza tarefas como controle de periféricos e processamento de sinais, sendo programado em C/C++. Com o Quartus e o ambiente Eclipse, ele oferece uma solução flexível e eficiente para controle e processamento de hardware [Embarcados, 2014].
 
 <h3>PIO Core</h3>
 
-O  ***Parallel Input/Output Core***, com sigla PIO Core, é um componente de hardware em FPGAs que gerencia entradas e saídas de dados, permitindo que o processador, como o NIOS II, se comunique com dispositivos externos. Ele lê sinais de botões e armazena os dados no modo de entrada, enquanto no modo de saída, envia informações do processador para controlar dispositivos como LEDs. Além disso, o PIO Core pode gerar interrupções para avisar o processador sobre eventos importantes, tornando o gerenciamento de entradas e saídas mais eficiente.
+O  ***Parallel Input/Output Core***, com sigla PIO Core, é um componente de hardware em FPGAs que gerencia entradas e saídas de dados, permitindo que o processador, como o NIOS II, se comunique com dispositivos externos. Ele lê sinais de botões e armazena os dados no modo de entrada, enquanto no modo de saída, envia informações do processador para controlar dispositivos como LEDs. Além disso, o PIO Core pode gerar interrupções para avisar o processador sobre eventos importantes, tornando o gerenciamento de entradas e saídas mais eficiente [Intel, 2024].
 </div>
 </div>
 
@@ -799,6 +805,18 @@ como foi feito a configuração dos pinos, segue o *chip planner* do Quartus.
 <h2>Referências</h2>
 
 > Tanenbaum, Andrew S. **Organização Estruturada de Computadores**. 5. ed. São Paulo: Pearson Prentice Hall, 2003.
+>
+> Embarcados. **DE0-Nano**. Disponível em: <https://www.embarcados.com.br/de0-nano/>. Acesso em: 15 de Outrubro de 2024.
+>
+> Waveshare. **Game HAT**. Disponível em: <https://www.waveshare.com/wiki/Game_HAT>. Acesso em: 15 de Outrubro de 2024.
+>
+> Macnica. **nstallation instructions for using Nios® II Software Build Tools / SoC Embedded Development Suite with Quartus® Prime Pro Edition 19.1**. Disponível: <https://www.macnica.co.jp/en/business/semiconductor/articles/intel/133716/>. Acesso em: 15 de Outrubro de 2024.
+>
+> Embarcados. **Tutorial de Modelsim: Verificando o VHDL antes de programar o FPGA**. Disponível em: <https://embarcados.com.br/tutorial-de-modelsim-vhdl-fpga/>. Acesso em: 15 de Outrubro de 2024.
+>
+> Embarcados. **Processador softcore Altera Nios II**. Disponível em: <https://embarcados.com.br/altera-nios-ii/>. Acesso em: 15 de Outrubro de 2024.
+>
+> Intel. **PIO Core**. Disponível em: <https://www.intel.com/content/www/us/en/docs/programmable/683130/21-3/pio-core.html>. Acesso em: 16 de Outrubro de 2024.
 >
 > Intel. **Software de projeto Quartus® Prime**. Disponível em: <https://www.intel.com.br/content/www/br/pt/products/details/fpga/development-tools/quartus-prime.html>
 >
