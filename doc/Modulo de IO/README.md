@@ -178,7 +178,7 @@ A interrupção pode ser configurada para borda ou nível, permitindo que o proc
 
 <h2>Arquitetura do Modulo de I/O</h2>
 
-Essa seção apresenta a arquitetura do módulo de I/O, detalhando sua estrutura interna, interfaces e funcionamento. O módulo é composto por cinco submódulos principais: **Controller**, **Edge Capture Clear**, **IO Data**, **Select Data Read** e **Opcode Control**. Cada submódulo desempenha funções específicas para gerenciar os dados dos botões e do joystick, controlar interrupções e processar comandos do processador.
+Essa seção apresenta a arquitetura do módulo de I/O, detalhando sua estrutura interna, interfaces e funcionamento. O módulo é composto por cinco submódulos principais: **Opcode Control**, **Register Controller**, **Edge Capture Clear**, **IO Data** e **Select Data Read**. Cada submódulo desempenha funções específicas para gerenciar os dados dos botões e do joystick, controlar interrupções e processar comandos do processador.
 Além disso, o módulo de I/O possui um **conjunto de instruções** para comunicação com o processador, permitindo ler e escrever dados nos registradores internos e configurar os parâmetros de controle e interrupção.
 
 <h3>Interface do modulo de I/O</h3>
@@ -220,28 +220,61 @@ Nesta seção, abordamos uma visão ampla do projeto experimental. Começamos an
 </p>
 <p align="center"><strong>Figura 6: Diagrama de blocos geral da interface do módulo de I/O</strong></p>
 
-<h4>Controle</h4>
+<h4>Opcode Controller</h4>
 
-O **módulo de Controle** gerencia o estado das configurações do módulo de I/O e a máscara de interrupção. 
-Ele contém um **registrador de controle**, acessível pelo endereço 0, com várias funções: um bit para reiniciar **(RST)** o módulo 
+O **módulo Opcode Controler** é responsável por interpretar os 
+opcodes enviados e direcionalos corretamente para o módulo.
+Em termos de montagem de hardware, ele é capaz de interpretar dados nos formatos de 32 e 64 bits, ajustando automaticamente os dados conforme o formato especificado. Essa configuração pode ser alterada no arquivo *Verilog* do módulo, modificando o parâmetro **CPU** para 32 ou 64 bits.
+
+Se um opcode não pertencer ao conjunto reconhecido pelo módulo, sua saída é zerada para evitar erros de leitura. Quando o endereço **3** é utilizado dentro do módulo não é realiza nenhuma operação.
+
+O módulo conta com as seguintes entradas e saídas:
+
+<div align="center">
+
+| Nome   | Tipo       | tamanho |         Descrição         |
+|--------|------------|---------|---------------------------|
+|in_reg_data | Entrada    | 64       | Barramento com os dados de enviados pelo processador |
+|opcode | Entrada    | 4       | Barramento com os opcodes  retirados dos 4 bits iniciais do in_reg_data|
+|out_reg_data | Saída   | 64      | Barramento com os dados de entrada do módulo |
+|we | Saída   | 1      | Sinal de escrita |
+|addr | Saída   | 2      | Barramento com o endereço do registrador|
+
+</div>
+
+<p align="center">
+<strong> Tabela 6: Entradas e saídas do módulo Opcode Control</strong></p>
+
+Para garantir a visualização do módulo, segue a imagem do diagrama de blocos do módulo.
+
+
+<div align="center">
+  <img src="img/opcodeController.png" width = "800" />
+</div>
+<p align="center"><strong>Figura 7: Diagrama de blocos do módulo Opcode Control</strong></p>
+
+<h4>Register Controller</h4>
+
+O **módulo de Register Controller** gerencia o estado das configurações do módulo de I/O e a máscara de interrupção. 
+Ele contém um **registrador de controle**, acessível pelo endereço **0**, com várias funções: um bit para reiniciar **(RST)** o módulo 
 (0 para reiniciar e 1 para manter o estado atual), um bit de enable (0 para desativar o módulo e impedir alterações, e 1 para 
 permitir modificações), um bit para habilitar ou desabilitar o cancelamento de ruído **(RCR)** (0 para usar o sinal atual do botão e 1 
 para ativar os registradores de captura de borda), e um seletor de borda ou nivel **(CCR)** que pode ser configurado como descida (00), subida (01), ambas (10) ou nivel (11). Cada um dos 12 periféricos de entrada possui um espaço no registrador para controlar o tipo de dado e a borda.
 A figura a seguir ilustra a organização dos registradores de controle.
 
 <p align="center">
-  <img src="img/register_controlle.png" width = "1000" />
+  <img src="img/register_controlle.png" width = "800" />
 </p>
 <p align="center"><strong>Figura 6: registrador de controle</strong></p>
 
-Além disso, o módulo de I/O inclui um **registrador de máscara de interrupção**, acessível pelo endereço 2, 
+Além disso, o módulo de I/O inclui um **registrador de máscara de interrupção**, acessível pelo endereço **2**, 
 que permite habilitar ou desabilitar interrupções específicas. Cada bit desse registrador corresponde a um
 periférico de entrada, permitindo a seleção de quais devem acionar a interrupção **(IRQ)**. Também há dois bits 
-reservados para cada periférico, permitindo definir a borda na qual a interrupção será acionada **(CCR)**. A figura 
+reservados para cada periférico, permitindo definir a borda na qual a interrupção será acionada **(CCR)** suas opções são semelhantes ao CCR do registrador de controle. A figura 
 a seguir mostra a estrutura do registrador de máscara de interrupção.
 
 <p align="center">
-  <img src="img/register_irq.png" width = "1000" />
+  <img src="img/register_irq.png" width = "800" />
 </p>
 <p align="center"><strong>Figura 7: registrador de máscara de interrupção</strong></p>
 
@@ -266,12 +299,17 @@ Por fim, o módulo conta com as seguintes entradas e saídas:
 
 Para facilitar a visualização segue uma imagem do diagrama de blocos do módule.
 
+<div align="center">
+  <img src="img/registerController.png" width = "800" />
+</div>
+<p align="center"><strong>Figura 8: Diagrama de blocos do módulo de controle</strong></p>
+
 <h4>Edge Capture Clear</h4>
 
 O **módulo Edge Capture Clear** é responsável por limpar os registradores de captura de borda, que armazenam as mudanças de estado dos periféricos. Ele é ativado pelo processador, que envia um sinal de escrita para realizar a limpeza. Para acessar este módulo, o processador deve escrever no endereço 1, correspondente ao registrador de dados. Ao escrever o valor 1 no bit que representa o periférico desejado **(RS)**, o respectivo registrador de captura de borda é limpo. A figura a seguir ilustra a estrutura do registrador de captura de borda e dados.
 
 <p align="center">
-  <img src="img/register_data.png" width = "1000" />
+  <img src="img/register_data.png" width = "800" />
 </p>
 <p align="center"><strong>Figura 8: registrador de dados e captura de borda</strong></p>
 
@@ -350,36 +388,6 @@ O **módulo MUX** é responsável por selecionar o tipo de dado que será lido p
 </div>
 <p align="center">
 <strong> Tabela 5: Saídas do módulo MUX</strong></p>
-
-<h4>Opcode Control</h4>
-
-O **módulo Opcode Control** é responsável por interpretar os 
-opcodes enviados e direcionalos corretamente para o módulo.
-Nesse sentido, a nivel de hardware, o módulo é capaz de interpretar o formato dos dados tanto de 32 bits quanto de 64 bits, montando os dados para cada um dos formatos. 
-
-Em caso de envio de opcode que não pertence ao módulo,
-o módulo zera a saída para evitar erros de leitura. Usando o
-endereço 0b11, o módulo não realiza nenhuma operação.
-
-O módulo conta com as seguintes entradas e saídas:
-
-<div align="center">
-
-| Nome   | Tipo       | tamanho |         Descrição         |
-|--------|------------|---------|---------------------------|
-|in_reg_data | Entrada    | 64       | Barramento com os dados de enviados pelo processador |
-|opcode | Entrada    | 4       | Barramento com os opcodes enviados pelo processador |
-|out_reg_data | Saída   | 64      | Barramento com os dados de entrada do módulo |
-|we | Saída   | 1      | Sinal de escrita |
-|addr | Saída   | 2      | Barramento com o endereço do registrador|
-
-</div>
-
-<p align="center">
-<strong> Tabela 6: Entradas e saídas do módulo Opcode Control</strong></p>
-
-Para garantir a visualização do módulo, segue a imagem do diagrama de blocos do módulo.
-
 
 <h3> Comunicação com o Processador</h3>
 
