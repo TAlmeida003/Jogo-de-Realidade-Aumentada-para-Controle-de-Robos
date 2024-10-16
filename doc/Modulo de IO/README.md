@@ -102,7 +102,7 @@ O **Kit FPGA DE0-Nano**, baseado na FPGA **Altera Cyclone IV EP4CE22F17C6N**, é
 O **Game HAT** é uma placa de expansão projetada para transformar o Raspberry Pi em um console portátil de videogame.
  Ele possui uma tela LCD de 3,5 polegadas, botões físicos, um D-pad, além de interfaces para áudio e bateria, proporcionando uma experiência de jogo
   completa. O Game HAT é compatível com vários emuladores e sistemas operacionais, como o RetroPie, permitindo rodar jogos clássicos de diversas plataformas. 
-  Essa solução é ideal para entusiastas de jogos retrô que buscam criar seus próprios consoles portáteis usando o Raspberry Pi [waveshare, 2019]. A imagem a seguir mostra o Game HAT.
+  Essa solução é ideal para entusiastas de jogos retrô que buscam criar seus próprios consoles portáteis usando o Raspberry Pi [Waveshare, 2019]. A imagem a seguir mostra o Game HAT.
 
 <p align="center">
   <img src="img/gamehat.png" width = "700" />
@@ -146,22 +146,27 @@ Nesta seção, serão apresentadas as funcionalidades do módulo de I/O, que inc
 
 <h3>Gerenciamento de Botões e Joystick</h3>
 
-O módulo de hardware desenvolvido realiza a leitura dos dados dos botões e do joystick, armazenando-os em registradores internos. O sistema suporta 8 botões (Y, X, A, B, TL, TX, START e SELECT) e um joystick com 4 direções (UP, DOWN, LEFT e RIGHT). Para cada botão e direção do joystick, é possível ler o estado atual e o estado de borda (subida, descida ou ambos).
+O módulo de hardware desenvolvido realiza a leitura dos dados dos botões e do joystick, armazenando-os em registradores internos. O sistema suporta 8 botões (Y, X, A, B, TL, TX, START e SELECT) e um joystick com 4 direções (UP, DOWN, LEFT e RIGHT). Para cada botão e direção do joystick, é possível ler o estado atual (1 para ativo/pressinado e 0 para o desativado/solto) e o estado de borda (subida, descida ou ambos).
 
 Os dados dos botões e do joystick são armazenados em registradores de 64 bits, permitindo a leitura simultânea de todos os botões e direções. O módulo também conta com registradores de controle que permitem habilitar ou desabilitar a leitura dos botões e do joystick, além de configurar o controle de borda e sua seleção. 
 
 Além disso, o módulo possui regisradores de captura de borda que armazenam as mudanças de borda dos periféricos, permitindo a detecção de bordas para que o processador possa identificar que um botão foi pressionado ou o joystick foi movido, mesmo que o estado do periférico tenha mudado. Isso é útil para
 poder detectar eventos mesmo que o processador não tenha lido o estado do periférico no momento da mudança. 
 
-> **Observação:** Os registradores armazenam o estado de borda para leitura pelo processador. Ao realizar a leitura, é necessário limpar o registrador de captura de borda via software.
+> **Observação:** Os registradores armazenam o estado de borda para leitura pelo processador. 
+> Ao realizar a leitura, é necessário limpar o registrador de captura de borda via software.
 
 <h3>Controle de Interrupção</h3> 
 
-O módulo de I/O oferece suporte a interrupções para notificar o processador sobre eventos importantes, como a pressão de um botão ou o movimento do joystick. Quando um botão é pressionado ou o joystick é movido, o módulo gera uma interrupção que permite ao processador tratar o evento imediatamente. Isso possibilita uma resposta rápida a entradas, eliminando a necessidade de verificar constantemente os botões e o joystick.
+O módulo de I/O oferece suporte a interrupções para notificar o processador sobre eventos importantes, como a pressão de um botão ou o movimento do joystick. Quando um botão é pressionado ou o joystick é movido, o módulo gera uma interrupção que permite ao processador tratar o evento imediatamente. Isso possibilita uma resposta rápida a entradas, eliminando a necessidade de verificar constantemente os botões e o joystick (*polling*).
 
 Além disso, o módulo possui registradores de máscara de interrupção que permitem habilitar ou desabilitar interrupções específicas, possibilitando a seleção de quais eventos devem acionar interrupções.
 
 A interrupção pode ser configurada para borda ou nível, permitindo que o processador seja notificado quando um botão é pressionado ou solto, ou quando o joystick é movido em uma direção específica. Isso torna o controle de interrupção mais flexível e eficiente, garantindo que o processador possa responder rapidamente a eventos de entrada.
+
+> **Observação:** Ao gerar uma interrução, o módulo de I/O envia um sinal para o processador, que deve tratar a interrupção e limpar o registrador de captura de borda para evitar interrupções repetidas. 
+> Em caso de nível, a interrupção é gerada enquanto o botão estiver pressionado e pode ser desativada pela mascará de interrupção.
+
 
 </div>
 </div>
@@ -173,6 +178,8 @@ A interrupção pode ser configurada para borda ou nível, permitindo que o proc
 
 <h2>Arquitetura do Modulo de I/O</h2>
 
+Essa seção apresenta a arquitetura do módulo de I/O, detalhando sua estrutura interna, interfaces e funcionamento. O módulo é composto por cinco submódulos principais: **Controller**, **Edge Capture Clear**, **IO Data**, **Select Data Read** e **Opcode Control**. Cada submódulo desempenha funções específicas para gerenciar os dados dos botões e do joystick, controlar interrupções e processar comandos do processador.
+Além disso, o módulo de I/O possui um **conjunto de instruções** para comunicação com o processador, permitindo ler e escrever dados nos registradores internos e configurar os parâmetros de controle e interrupção.
 
 <h3>Interface do modulo de I/O</h3>
 
@@ -181,31 +188,37 @@ Para se comunicar com o barramento de sistema, o modulo de I/O é equipado com 1
 
 <div align="center">
 
-| Nome   | Tipo       | tamanho |         Descrição         |
-|--------|------------|---------|---------------------------|
-| clk    | Entrada    | 1       | Sinal de clock de entrada |
-| rst_n  | Entrada    | 1       | Sinal de reset ativo em nível baixo |
-| we     | Entrada    | 1       | Sinal de escrita ativo em nível alto |
-| buttons| Entrada    | 8       | Barramento para leitura dos botões |
-| joystick| Entrada   | 4       | Barramento para leitura do joystick |
-| writedata| Entrada  | 64      | Barramento para escrita de dados |
-| readdata| Saída     | 64      | Barramento para leitura de dados |
-| waitrequest| Saída  | 1       | Sinal para indicar que o módulo está ocupado |
-| irq    | Saída      | 1       | Sinal de interrupção para o processador |
+| Nome   | Tipo       | tamanho |         Descrição         | Exposição na FPGA |
+|--------|------------|---------|---------------------------|---|
+| clk    | Entrada    | 1       | Sinal de clock de entrada | Não |
+| rst_n  | Entrada    | 1       | Sinal de reset ativo em nível baixo | Não |
+| we     | Entrada    | 1       | Sinal de escrita ativo em nível alto | Não |
+| buttons| Entrada    | 8       | Barramento para leitura dos botões | Sim |
+| joystick| Entrada   | 4       | Barramento para leitura do joystick | Sim |
+| writedata| Entrada  | 64      | Barramento para escrita de dados | Não |
+| readdata| Saída     | 64      | Barramento para leitura de dados | Não |
+| waitrequest| Saída  | 1       | Sinal para indicar que o módulo está ocupado | Não |
+| irq    | Saída      | 1       | Sinal de interrupção para o processador | Não |
 </div>
 <p align="center">
 <strong> Tabela 1: Pinagem do módulo de I/O</strong></p>
 
-A Figura 5 apresenta o diagrama em blocos da interface do módulo de I/O, mostrando os sinais de entrada e saída, bem como os barramentos de dados e controle.
+A Figura 5 apresenta o diagrama em blocos da interface do módulo de I/O, mostrando os sinais de entrada e saída, bem como os barramentos de dados e controle. Nesse sentido, as 
+entradas estão localizadas à esquerda, enquanto as saídas estão à direita.
 
 <p align="center">
-  <img src="img/interfece.png" width = "800" />
+  <img src="img/interface.png" width = "800" />
 </p>
 <p align="center"><strong>Figura 5: Diagrama em blocos da interface do módulo de I/O</strong></p>
 
 <h3>Discrição Geral</h3>
 
-Nesta seção, primeiro precisamos ter uma compreensão geral de todo o projeto experimental. Primeiro, vamos dar uma olhada no diagrama de blocos geral do projeto, conforme mostrado na Figura 6.
+Nesta seção, abordamos uma visão ampla do projeto experimental. Começamos analisando o diagrama de blocos geral, mostrado na Figura 6. Esse diagrama ilustra a conexão entre os submódulos e a interface do módulo com o barramento do sistema. As entradas e saídas provenientes dos barramentos estão localizadas à esquerda, enquanto as entradas expostas na FPGA estão à direita.
+
+<p align="center">
+  <img src="img/diagramaIO.png" width = "1000" />
+</p>
+<p align="center"><strong>Figura 6: Diagrama de blocos geral da interface do módulo de I/O</strong></p>
 
 <h4>Controle</h4>
 
@@ -366,7 +379,6 @@ O módulo conta com as seguintes entradas e saídas:
 <strong> Tabela 6: Entradas e saídas do módulo Opcode Control</strong></p>
 
 Para garantir a visualização do módulo, segue a imagem do diagrama de blocos do módulo.
-
 
 
 <h3> Comunicação com o Processador</h3>
