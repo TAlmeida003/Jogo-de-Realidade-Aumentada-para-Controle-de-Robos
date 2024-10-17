@@ -365,7 +365,7 @@ O módulo conta com as seguintes entradas e saídas:
 |enable | Entrada    | 1       | Sinal de habilita os registradores|
 | en_noise_cancelling | Entrada    | 12       | Barramento para habilitar o registradores de captura de borda |
 |interrupt_mask | Entrada    | 12       | Barramento para habilitar a interrupção |
-|in_data | Entrada    | 8       | Barramento para leitura dos botões |
+|in_data | Entrada    | 12       | Barramento para leitura dos periféricos |
 |select_edge | Entrada    | 24       | Barramento para seleção de borda |
 |select_interrupt | Entrada    | 24       | Barramento para seleção de tipo de interrupção|
 |out_data | Saída   | 64      | Barramento para leitura de dados |
@@ -377,9 +377,15 @@ O módulo conta com as seguintes entradas e saídas:
 
 Para garantir a visualização do módulo, segue a imagem do diagrama de blocos do módulo.
 
-<h4>MUX</h4>
+<div align="center">
+  <img src="img/IOData.png" width = "800" />
+</div>
+<p align="center"><strong>Figura 10: Diagrama de blocos do módulo IO Data</strong></p>
 
-O **módulo MUX** é responsável por selecionar o tipo de dado que será lido pelo processador. Ele usa como entrada de seleção o endereço dos registradore e assim pode ter as sequintes saídas:
+<h4>Select Data Read</h4>
+
+O **módulo Select Data Read** é responsável por selecionar o tipo de dado que será lido pelo processador. Seu funcionamento é de um multiplexador 4 para 1, que seleciona o tipo de dado 
+com base no valor dos seletores. Nesse sentido, é usado como entrada de seleção o endereço dos registradore e assim pode ter as sequintes saídas:
 
 <div align="center">
 
@@ -392,7 +398,30 @@ O **módulo MUX** é responsável por selecionar o tipo de dado que será lido p
 
 </div>
 <p align="center">
-<strong> Tabela 5: Saídas do módulo MUX</strong></p>
+<strong> Tabela 5: Saídas do módulo Select Data Read</strong></p>
+
+O módulo conta com as seguintes entradas e saídas:
+
+<div align="center">
+
+| Nome   | Tipo       | tamanho |         Descrição         |
+|--------|------------|---------|---------------------------|
+|reg_control | Entrada    | 64       | Barramento com os dados do registrador de controle |
+|reg_data_io | Entrada    | 64       | Barramento com os dados do registrador de dados/captura de borda |
+|reg_interrupt | Entrada    | 64       | Barramento com os dados do registrador de máscara de interrupção |
+|read_addr | Entrada    | 2       | Barramento para seleção do tipo de dado |
+|read_data | Saída   | 64      | Barramento para leitura de dados |
+
+</div>
+<p align="center">
+<strong> Tabela 6: Entradas e saídas do módulo Select Data Read</strong></p>
+
+Para garantir a visualização do módulo, segue a imagem do diagrama de blocos do módulo.
+
+<div align="center">
+  <img src="img/selectDataRead.png" width = "800" />
+</div>
+<p align="center"><strong>Figura 11: Diagrama de blocos do módulo Select Data Read</strong></p>
 
 <h3> Comunicação com o Processador</h3>
 
