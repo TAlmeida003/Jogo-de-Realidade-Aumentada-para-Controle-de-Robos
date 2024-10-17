@@ -203,20 +203,20 @@ Para se comunicar com o barramento de sistema, o modulo de I/O é equipado com 1
 <p align="center">
 <strong> Tabela 1: Pinagem do módulo de I/O</strong></p>
 
-A Figura 5 apresenta o diagrama em blocos da interface do módulo de I/O, mostrando os sinais de entrada e saída, bem como os barramentos de dados e controle. Nesse sentido, as 
-entradas estão localizadas à esquerda, enquanto as saídas estão à direita.
+A Figura 5 apresenta o diagrama em blocos da interface do módulo de I/O, com as conexão entre os submódulos e a interface do módulo com o barramento do sistema. As entradas e saídas provenientes dos barramentos estão localizadas à esquerda, enquanto as entradas expostas na FPGA estão à direita.
+
 
 <p align="center">
-  <img src="img/interface.png" width = "800" />
+  <img src="img/diagramaIO.png" width = "800" />
 </p>
 <p align="center"><strong>Figura 5: Diagrama em blocos da interface do módulo de I/O</strong></p>
 
 <h3>Discrição Geral</h3>
 
-Nesta seção, abordamos uma visão ampla do projeto experimental. Começamos analisando o diagrama de blocos geral, mostrado na Figura 6. Esse diagrama ilustra a conexão entre os submódulos e a interface do módulo com o barramento do sistema. As entradas e saídas provenientes dos barramentos estão localizadas à esquerda, enquanto as entradas expostas na FPGA estão à direita.
+Nesta seção, abordamos uma visão ampla do projeto experimental. Começamos analisando o diagrama de blocos geral, mostrado na Figura 6. Esse diagrama ilustra todas as conexões entre os submódulos do módulo de I/O.
 
 <p align="center">
-  <img src="img/diagramaIO.png" width = "1000" />
+  <img src="img/total.png" width = "1300" />
 </p>
 <p align="center"><strong>Figura 6: Diagrama de blocos geral da interface do módulo de I/O</strong></p>
 
