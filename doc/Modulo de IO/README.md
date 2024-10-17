@@ -243,7 +243,7 @@ O módulo conta com as seguintes entradas e saídas:
 </div>
 
 <p align="center">
-<strong> Tabela 6: Entradas e saídas do módulo Opcode Control</strong></p>
+<strong> Tabela 2: Entradas e saídas do módulo Opcode Control</strong></p>
 
 Para garantir a visualização do módulo, segue a imagem do diagrama de blocos do módulo.
 
@@ -265,7 +265,7 @@ A figura a seguir ilustra a organização dos registradores de controle.
 <p align="center">
   <img src="img/register_controlle.png" width = "800" />
 </p>
-<p align="center"><strong>Figura 6: registrador de controle</strong></p>
+<p align="center"><strong>Figura 8: registrador de controle</strong></p>
 
 Além disso, o módulo de I/O inclui um **registrador de máscara de interrupção**, acessível pelo endereço **2**, 
 que permite habilitar ou desabilitar interrupções específicas. Cada bit desse registrador corresponde a um
@@ -276,7 +276,7 @@ a seguir mostra a estrutura do registrador de máscara de interrupção.
 <p align="center">
   <img src="img/register_irq.png" width = "800" />
 </p>
-<p align="center"><strong>Figura 7: registrador de máscara de interrupção</strong></p>
+<p align="center"><strong>Figura 9: registrador de máscara de interrupção</strong></p>
 
 Por fim, o módulo conta com as seguintes entradas e saídas:
 
@@ -295,14 +295,14 @@ Por fim, o módulo conta com as seguintes entradas e saídas:
 
 </div>
 <p align="center">
-<strong> Tabela 2: Entradas e saídas do módulo de controle</strong></p>
+<strong> Tabela 3: Entradas e saídas do módulo de controle</strong></p>
 
 Para facilitar a visualização segue uma imagem do diagrama de blocos do módule.
 
 <div align="center">
   <img src="img/registerController.png" width = "800" />
 </div>
-<p align="center"><strong>Figura 8: Diagrama de blocos do módulo de controle</strong></p>
+<p align="center"><strong>Figura 10: Diagrama de blocos do módulo de controle</strong></p>
 
 <h4>Edge Capture Clear</h4>
 
@@ -311,7 +311,7 @@ O **módulo Edge Capture Clear** é responsável por limpar os registradores de 
 <p align="center">
   <img src="img/register_data.png" width = "800" />
 </p>
-<p align="center"><strong>Figura 8: registrador de dados e captura de borda</strong></p>
+<p align="center"><strong>Figura 11: registrador de dados e captura de borda</strong></p>
 
 > **Observação:** O sinal de limpeza depende da configuração de borda do registrador de controle. Por exemplo, se a borda estiver configurada como subida, a limpeza ocorrerá apenas no registrador de subida, e os demais registradores não serão afetados.
 
@@ -333,14 +333,14 @@ O módulo conta com as seguintes entradas e saídas:
 
 </div>
 <p align="center">
-<strong> Tabela 3: Entradas e saídas do módulo de limpeza de borda</strong></p>
+<strong> Tabela 4: Entradas e saídas do módulo de limpeza de borda</strong></p>
 
 Para garantir a visualização do módulo, segue a imagem do diagrama de blocos do módulo.
 
 <div align="center">
   <img src="img/edgeCaptureClear.png" width = "800" />
 </div>
-<p align="center"><strong>Figura 9: Diagrama de blocos do módulo de limpeza de borda</strong></p>
+<p align="center"><strong>Figura 12: Diagrama de blocos do módulo de limpeza de borda</strong></p>
 
 <h4>IO Data</h4>
 
@@ -374,7 +374,7 @@ O módulo conta com as seguintes entradas e saídas:
 
 </div>
 <p align="center">
-<strong> Tabela 4: Entradas e saídas do módulo de IO Data</strong></p>
+<strong> Tabela 5: Entradas e saídas do módulo de IO Data</strong></p>
 
 Para garantir a visualização do módulo, segue a imagem do diagrama de blocos do módulo.
 
@@ -384,7 +384,7 @@ Para garantir a visualização do módulo, segue a imagem do diagrama de blocos 
 
 </div>
 
-<p align="center"><strong>Figura 10: Diagrama de blocos do módulo IO Data</strong></p>
+<p align="center"><strong>Figura 13: Diagrama de blocos do módulo IO Data</strong></p>
 
 <h4>Select Data Read</h4>
 
@@ -402,7 +402,7 @@ com base no valor dos seletores. Nesse sentido, é usado como entrada de seleç�
 
 </div>
 <p align="center">
-<strong> Tabela 5: Saídas do módulo Select Data Read</strong></p>
+<strong> Tabela 6: Saídas do módulo Select Data Read</strong></p>
 
 O módulo conta com as seguintes entradas e saídas:
 
@@ -418,14 +418,14 @@ O módulo conta com as seguintes entradas e saídas:
 
 </div>
 <p align="center">
-<strong> Tabela 6: Entradas e saídas do módulo Select Data Read</strong></p>
+<strong> Tabela 7: Entradas e saídas do módulo Select Data Read</strong></p>
 
 Para garantir a visualização do módulo, segue a imagem do diagrama de blocos do módulo.
 
 <div align="center">
   <img src="img/selectDataRead.png" width = "800" />
 </div>
-<p align="center"><strong>Figura 11: Diagrama de blocos do módulo Select Data Read</strong></p>
+<p align="center"><strong>Figura 14: Diagrama de blocos do módulo Select Data Read</strong></p>
 
 <h3> Comunicação com o Processador</h3>
 
@@ -440,7 +440,7 @@ A seguir, está o diagrama de blocos que ilustra a arquitetura completa do siste
 <div align="center">
   <img src="img/to.png" width = "800" />
 </div>
-<p align="center"><strong>Figura 12: Diagrama de blocos da arquitetura geral</strong></p>
+<p align="center"><strong>Figura 15: Diagrama de blocos da arquitetura geral</strong></p>
 
 <h3>Conjunto de Instruções</h3>
 
@@ -463,7 +463,7 @@ parâmetros de controle. A tabela a seguir apresenta o conjunto de instruções 
 </div>
 
 <p align="center">
-<strong> Tabela 6: Opcodes da interface de comunicação</strong></p>
+<strong> Tabela 8: Opcodes da interface de comunicação</strong></p>
 
 <h4> Instruções RCTL, RDEC e RMIRQ</h4>
 
@@ -472,12 +472,12 @@ RDEC lê o registrador de dados/captura de borda (*edgeCapture*), e RMIRQ lê o 
 Quando o opcode correspondente ao registrador é escrito, o valor do registrador respectivo é enviado para os registradores de 
 leitura. A figura a seguir ilustra o formato dessas instruções.
 
-<p align="center"> <img src="img/INT4.png" width="1000" /> </p> <p align="center"><strong> Figura: Formato das instruções RCTL, RDEC e RMIRQ</strong></p>
+<p align="center"> <img src="img/INT4.png" width="1000" /> </p> <p align="center"><strong> Figura 16: Formato das instruções RCTL, RDEC e RMIRQ</strong></p>
 
 Para uso na arquitetura de 32 bits, a instrução é dividida em duas partes: a primeira (32 bits mais significativos, sigla MSB) parte
  contém o opcode, enquanto a segunda (32 bits menos significativos, sigla LSB) parte é um campo vazio, reservado para possíveis expansões ou configurações adicionais.
 
-<p align="center"> <img src="img/INT4_32.png" width="1000" /> </p> <p align="center"><strong> Figura: Formato das instruções RCTL, RDEC e RMIRQ com 32 bits</strong></p>
+<p align="center"> <img src="img/INT4_32.png" width="1000" /> </p> <p align="center"><strong> Figura 17: Formato das instruções RCTL, RDEC e RMIRQ com 32 bits</strong></p>
 
 <h4> Instrução WCTL</h4>
 
@@ -486,7 +486,7 @@ A **instrução WCTL** é usada para escrever no registrador de controle. O proc
 <p align="center">
   <img src="img/INT1.png" width = "1000" />
 </p>
-<p align="center"><strong> Figura: Formato da instrução WCTL</strong></p>
+<p align="center"><strong> Figura 18: Formato da instrução WCTL</strong></p>
 
 Para uso na arquitetura de 32 bits, a instrução é dividida em duas partes: a primeira (MSB) parte contém o opcode, o sinal de enable, o sinal de reset e o sinal de cancelamento de ruído, enquanto a segunda (LSB) parte contém o seletor de borda. 
 A figura a seguir ilustra o formato dessa instrução para 32 bits.
@@ -494,7 +494,7 @@ A figura a seguir ilustra o formato dessa instrução para 32 bits.
 <p align="center">
   <img src="img/INT1_32.png" width = "1000" />
 </p>
-<p align="center"><strong>  Figura: Formato da instrução WCTL para 2 partes de 32 bits</strong></p>
+<p align="center"><strong>  Figura 19: Formato da instrução WCTL para 2 partes de 32 bits</strong></p>
 
 <h4> Instrução WDEC</h4>
 
@@ -503,14 +503,14 @@ A **instrução WDEC** é usada para escrever no registrador de dados/captura de
 <p align="center">
   <img src="img/INT3.png" width = "1000" />
 </p>
-<p align="center"><strong>Figura: Formato da instrução WDEC</strong></p>
+<p align="center"><strong>Figura 20: Formato da instrução WDEC</strong></p>
 
 Para uso na arquitetura de 32 bits, a instrução é dividido em duas partes: a primeira (MSB) parte contém o opcode, enquanto a segunda (LSB) parte é os registradores de captura de borda a serem limpos. A figura a seguir ilustra o formato dessa instrução para 32 bits.
 
 <p align="center">
   <img src="img/INT3_32.png" width = "1000" />
 </p>
-<p align="center"><strong> Figura: Formato da instrução WDEC para 2 partes de 32 bits</strong></p>
+<p align="center"><strong> Figura 21: Formato da instrução WDEC para 2 partes de 32 bits</strong></p>
 
 <h4> Instrução WMIRQ</h4>
 
@@ -519,14 +519,14 @@ A **instrução WMIRQ** é usada para escrever no registrador de máscara de int
 <p align="center">
   <img src="img/INT2.png" width = "1000" />
 </p>
-<p align="center"><strong> Figura: Formato da instrução WMIRQ</strong></p>
+<p align="center"><strong> Figura 22: Formato da instrução WMIRQ</strong></p>
 
 Para uso na arquitetura de 32 bits, a instrução é dividida em duas partes: a primeira (MSB) parte contém o opcode e a seleção de interrupção, enquanto a segunda (LSB) parte é o seletor de borda. A figura a seguir ilustra o formato dessa instrução para 32 bits.
 
 <p align="center">
   <img src="img/INT2_32.png" width = "1000" />
 </p>
-<p align="center"><strong> Figura: Formato da instrução WMIRQ para 2 partes de 32 bits</strong></p>
+<p align="center"><strong> Figura 23: Formato da instrução WMIRQ para 2 partes de 32 bits</strong></p>
 
 
 </div>
@@ -576,6 +576,9 @@ as formas de leitura dos botões e do joystick. A tabela a seguir mostra as cons
 
 </div>
 
+<p align="center">
+<strong> Tabela 9: Constantes definidas na biblioteca</strong></p>
+
 
 <h3>Funções</h3>
 
@@ -586,6 +589,11 @@ A função não recebe parâmetros.
 
 **retorno:** 
 A função não retorna nada.
+
+**Cabeçalho da função:**
+```c
+void initialize_joystick(void);
+```
 
 **exemplo de uso:**
 ```c
@@ -601,6 +609,11 @@ A função não recebe parâmetros.
 
 **retorno:**
 A função não retorna nada.
+
+**Cabeçalho da função:**
+```c
+void close_joystick(void);
+```
 
 **exemplo de uso:**
 ```c
@@ -628,6 +641,11 @@ close_joystick();
 **retorno:**
 
 A função retorna **1** se o botão estiver no estado especificado e **0** caso contrário.
+
+**Cabeçalho da função:**
+```c
+int read_KEY(unsigned int KEY, unsigned int state);
+```
 
 **exemplo de uso:**
 ```c
@@ -682,6 +700,11 @@ if (read_KEY(X, LEVEL)) {
 
 A função retorna **1** se a direção estiver no estado especificado e **0** caso contrário.
 
+**Cabeçalho da função:**
+```c
+int read_JOYSTICK(unsigned int direction, unsigned int state);
+```
+
 **exemplo de uso:**
 ```c
 // Verificando se a direção UP foi ativada (borda de subida)
@@ -725,6 +748,11 @@ void callback(void)
 **retorno:**
 Sem retorno.
 
+**Cabeçalho da função:**
+```c
+void set_callback(void (*callback)(void));
+```
+
 **exemplo de uso:**
 ```c
 void my_callback() {
@@ -748,6 +776,11 @@ pelo usuário, a biblioteca não fornece a logica de limpeza de interrupção de
 
 **retorno:**
 Sem retorno.
+
+**Cabeçalho da função:**
+```c
+void peripheral_enable_callback(unsigned int peripheral, unsigned int state);
+```
 
 **exemplo de uso:**
 ```c
@@ -776,6 +809,11 @@ peripheral_enable_callback(START, LEVEL);
 
 **retorno:**
 Sem retorno.
+
+**Cabeçalho da função:**
+```c
+void peripheral_disable_callback(unsigned int peripheral);
+```
 
 **exemplo de uso:**
 ```c
@@ -816,7 +854,7 @@ Para utilizar o projeto é necessário usar alguns pinos e periféricos da FPGA 
 </div>
 
 <p align="center">
-<strong> Tabela: Pinagem do FPGA De0-Nano</strong></p>
+<strong> Tabela 10: Pinagem do FPGA De0-Nano</strong></p>
 
 Para utilizar os botões do controle foi ncessario utilizar um resistor de *pull-up* interno da FPGA, para isso foi necessário configurar o pino como entrada e ativar o resistor de *weak pull-up resistor*. Para visualizar
 como foi feito a configuração dos pinos, segue o *chip planner* do Quartus.
@@ -824,7 +862,7 @@ como foi feito a configuração dos pinos, segue o *chip planner* do Quartus.
 <p align="center">
   <img src="img/chip-planner.png" width = "1000" />
 </p>
-<p align="center"><strong>Figura: Chip Planner do Quartus</strong></p>
+<p align="center"><strong>Figura 24: Chip Planner do Quartus</strong></p>
 
 </div>
 </div>
