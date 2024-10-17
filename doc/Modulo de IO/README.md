@@ -368,6 +368,7 @@ O módulo conta com as seguintes entradas e saídas:
 |in_data | Entrada    | 12       | Barramento para leitura dos periféricos |
 |select_edge | Entrada    | 24       | Barramento para seleção de borda |
 |select_interrupt | Entrada    | 24       | Barramento para seleção de tipo de interrupção|
+|clr | Entrada    | 12       | Sinal de limpeza de registrador de captura |
 |out_data | Saída   | 64      | Barramento para leitura de dados |
 |irq | Saída   | 1      | Sinal de interrupção|
 
@@ -378,8 +379,11 @@ O módulo conta com as seguintes entradas e saídas:
 Para garantir a visualização do módulo, segue a imagem do diagrama de blocos do módulo.
 
 <div align="center">
-  <img src="img/IOData.png" width = "800" />
+
+  <img src="img/ioData.png" width = "800" />
+
 </div>
+
 <p align="center"><strong>Figura 10: Diagrama de blocos do módulo IO Data</strong></p>
 
 <h4>Select Data Read</h4>
