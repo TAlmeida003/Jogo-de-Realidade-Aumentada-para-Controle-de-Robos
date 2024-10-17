@@ -438,7 +438,7 @@ A comunicação entre o processador e o módulo de I/O é realizada por meio do 
 A seguir, está o diagrama de blocos que ilustra a arquitetura completa do sistema, facilitando a visualização dessa estrutura.
 
 <div align="center">
-  <img src="img/to.png" width = "1000" />
+  <img src="img/to.png" width = "800" />
 </div>
 <p align="center"><strong>Figura 12: Diagrama de blocos da arquitetura geral</strong></p>
 
