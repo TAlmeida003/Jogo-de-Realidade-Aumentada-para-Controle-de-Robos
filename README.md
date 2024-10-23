@@ -43,7 +43,31 @@ Realidade Aumentada Usando FPGA
 </div>
 
 <p align="center">
-<strong> Tabela com a pinagem do FPGA De0-Nano</strong></p>
+<strong> Tabela com a pinagem do VGA</strong></p>
+
+<div align="center">
+
+| PIN | Name PIN | FPGA PIN | Função             |
+|-----|----------|----------|--------------------|
+| 39  | GPIO_032 | PIN_D12  | Botão Y            |
+| 37  | GPIO_030 | PIN_A12  | Botão START        |
+| 35  | GPIO_028 | PIN_C11  | Botão A            |
+| 33  | GPIO_026 | PIN_E11  | Direcional RIGHT   |
+| 31  | GPIO_024 | PIN_C9   | Direcional LEFT    |
+| 40  | GPIO_033 | PIN_B12  | Direcional DOWN    |
+| 38  | GPIO_031 | PIN_D11  | Direcional UP      |
+| 36  | GPIO_029 | PIN_B11  | Botão B            |
+| 34  | GPIO_027 | PIN_E10  | Botão TR           |
+| 32  | GPIO_025 | PIN_D9   | Botão SELECT       |
+| 28  | GPIO_023 | PIN_E9   | Botão TL           |
+| 26  | GPIO_021 | PIN_F8   | Botão X            |
+| -   | CLOCK_50 | PIN_R8   | CLOCK principal    |
+| -   | KEY1     | PIN_E1   | Botão de reset     |
+
+</div>
+
+<p align="center">
+<strong> Tabela 10: Pinagem dos botões e analogico</strong></p>
 
 
 </div>

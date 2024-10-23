@@ -836,20 +836,20 @@ Para utilizar o projeto é necessário usar alguns pinos e periféricos da FPGA 
 
 | PIN | Name PIN | FPGA PIN | Função             |
 |-----|----------|----------|--------------------|
-| 39  | GPIO0_132 | PIN_J13 | Botão Y            |
-| 37  | GPIO0_130 | PIN_C3  | Botão START        |
-| 35  | GPIO0_128 | PIN_A3  | Botão A            |
-| 33  | GPIO0_126 | PIN_B4  | Direcional RIGHT   |
-| 31  | GPIO0_124 | PIN_B5  | Direcional LEFT    |
-| 40  | GPIO0_133 | PIN_D5  | Direcional DOWN    |
-| 38  | GPIO0_131 | PIN_A6  | Direcional UP      |
-| 36  | GPIO0_129 | PIN_D6  | Botão B            |
-| 34  | GPIO0_127 | PIN_C6  | Botão TR           |
-| 32  | GPIO0_125 | PIN_E6  | Botão SELECT       |
-| 28  | GPIO0_123 | PIN_F8  | Botão TL           |
-| 26  | GPIO0_121 | PIN_D8  | Botão X            |
-| -   | CLOCK_50  | PIN_R8  | CLOCK principal    |
-| -   | KEY1      | PIN_E1  | Botão de reset     |
+| 39  | GPIO_032 | PIN_D12  | Botão Y            |
+| 37  | GPIO_030 | PIN_A12  | Botão START        |
+| 35  | GPIO_028 | PIN_C11  | Botão A            |
+| 33  | GPIO_026 | PIN_E11  | Direcional RIGHT   |
+| 31  | GPIO_024 | PIN_C9   | Direcional LEFT    |
+| 40  | GPIO_033 | PIN_B12  | Direcional DOWN    |
+| 38  | GPIO_031 | PIN_D11  | Direcional UP      |
+| 36  | GPIO_029 | PIN_B11  | Botão B            |
+| 34  | GPIO_027 | PIN_E10  | Botão TR           |
+| 32  | GPIO_025 | PIN_D9   | Botão SELECT       |
+| 28  | GPIO_023 | PIN_E9   | Botão TL           |
+| 26  | GPIO_021 | PIN_F8   | Botão X            |
+| -   | CLOCK_50 | PIN_R8   | CLOCK principal    |
+| -   | KEY1     | PIN_E1   | Botão de reset     |
 
 </div>
 
