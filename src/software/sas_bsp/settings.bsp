@@ -2,8 +2,8 @@
 <sch:Settings xmlns:sch="http://www.altera.com/embeddedsw/bsp/schema">
         <BspType>hal</BspType>
         <BspVersion>default</BspVersion>
-        <BspGeneratedTimeStamp>Oct 14, 2024 12:46:04 AM</BspGeneratedTimeStamp>
-        <BspGeneratedUnixTimeStamp>1728877564127</BspGeneratedUnixTimeStamp>
+        <BspGeneratedTimeStamp>19/10/2024 15:02:10</BspGeneratedTimeStamp>
+        <BspGeneratedUnixTimeStamp>1729360930861</BspGeneratedUnixTimeStamp>
         <BspGeneratedLocation>C:\Users\thiag\Downloads\CoLendaFPGA\CoLendaFPGA\DE0-Nano\software\sas_bsp</BspGeneratedLocation>
         <BspSettingsFile>settings.bsp</BspSettingsFile>
         <SopcDesignFile>C:\Users\thiag\Downloads\CoLendaFPGA\CoLendaFPGA\DE0-Nano\Arquitetura.sopcinfo</SopcDesignFile>

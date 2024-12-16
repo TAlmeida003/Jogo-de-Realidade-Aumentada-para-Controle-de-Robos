@@ -92,7 +92,7 @@ ELF := sas.elf
 # Paths to C, C++, and assembly source files.
 C_SRCS += new_asteroids_game.c
 C_SRCS += lib_graphic_processor/graphic_processor.c
-C_SRCS += lib_JOYSTICK/KEY.c
+C_SRCS += lib_JOYSTICK/joystick_io.c
 CXX_SRCS :=
 ASM_SRCS :=
 

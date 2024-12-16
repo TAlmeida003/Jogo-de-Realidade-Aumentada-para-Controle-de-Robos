@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;sas/lib_JOYSTICK/KEY.c&apos; to &apos;joystick_io.c&apos;" description="Rename resource &apos;KEY.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="lib_JOYSTICK/KEY.c" name="joystick_io.c" stamp="1729359821393" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;sas/lib_JOYSTICK/KEY.h&apos; to &apos;joystick_io.h&apos;" description="Rename resource &apos;KEY.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="lib_JOYSTICK/KEY.h" name="joystick_io.h" stamp="1729359854047" updateReferences="true"/>
+</session>

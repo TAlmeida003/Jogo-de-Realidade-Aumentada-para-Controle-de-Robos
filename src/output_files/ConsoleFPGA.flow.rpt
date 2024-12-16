@@ -1,5 +1,5 @@
 Flow report for ConsoleFPGA
-Mon Oct 14 09:49:06 2024
+Wed Oct 23 19:29:07 2024
 Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
@@ -41,14 +41,14 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------------+
 ; Flow Summary                                                                        ;
 +------------------------------------+------------------------------------------------+
-; Flow Status                        ; Successful - Mon Oct 14 09:49:06 2024          ;
+; Flow Status                        ; Successful - Wed Oct 23 19:29:07 2024          ;
 ; Quartus Prime Version              ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
 ; Revision Name                      ; ConsoleFPGA                                    ;
 ; Top-level Entity Name              ; ArquiteturaCollenda                            ;
 ; Family                             ; Cyclone IV E                                   ;
 ; Device                             ; EP4CE22F17C6                                   ;
 ; Timing Models                      ; Final                                          ;
-; Total logic elements               ; 10,698 / 22,320 ( 48 % )                       ;
+; Total logic elements               ; 10,683 / 22,320 ( 48 % )                       ;
 ;     Total combinational functions  ; 8,825 / 22,320 ( 40 % )                        ;
 ;     Dedicated logic registers      ; 5,645 / 22,320 ( 25 % )                        ;
 ; Total registers                    ; 5645                                           ;
@@ -65,7 +65,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 10/14/2024 09:45:59 ;
+; Start date & time ; 10/23/2024 19:26:27 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; ConsoleFPGA         ;
 +-------------------+---------------------+
@@ -76,7 +76,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+---------------------------------------------------------------+---------------+---------------------+----------------+
 ; Assignment Name                     ; Value                                                         ; Default Value ; Entity Name         ; Section Id     ;
 +-------------------------------------+---------------------------------------------------------------+---------------+---------------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 2499180843995.172890995937004                                 ; --            ; --                  ; --             ;
+; COMPILER_SIGNATURE_ID               ; 2499180843995.172972238611588                                 ; --            ; --                  ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                                                   ; --            ; --                  ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; Questa Intel FPGA (Verilog)                                   ; <None>        ; --                  ; --             ;
 ; EDA_TIME_SCALE                      ; 1 ps                                                          ; --            ; --                  ; eda_simulation ;
@@ -126,12 +126,12 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:01:23     ; 1.0                     ; 5117 MB             ; 00:01:02                           ;
-; Fitter               ; 00:01:09     ; 1.5                     ; 6687 MB             ; 00:01:03                           ;
-; Assembler            ; 00:00:04     ; 1.0                     ; 4762 MB             ; 00:00:02                           ;
-; Timing Analyzer      ; 00:00:09     ; 1.7                     ; 5059 MB             ; 00:00:07                           ;
-; EDA Netlist Writer   ; 00:00:05     ; 1.0                     ; 4719 MB             ; 00:00:03                           ;
-; Total                ; 00:02:50     ; --                      ; --                  ; 00:02:17                           ;
+; Analysis & Synthesis ; 00:01:22     ; 1.0                     ; 5117 MB             ; 00:01:16                           ;
+; Fitter               ; 00:00:55     ; 1.6                     ; 6694 MB             ; 00:00:59                           ;
+; Assembler            ; 00:00:03     ; 1.0                     ; 4766 MB             ; 00:00:02                           ;
+; Timing Analyzer      ; 00:00:06     ; 1.7                     ; 5080 MB             ; 00:00:04                           ;
+; EDA Netlist Writer   ; 00:00:04     ; 1.0                     ; 4719 MB             ; 00:00:03                           ;
+; Total                ; 00:02:30     ; --                      ; --                  ; 00:02:24                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

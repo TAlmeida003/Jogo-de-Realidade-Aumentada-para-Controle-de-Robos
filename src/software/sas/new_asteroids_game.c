@@ -7,7 +7,7 @@
 #include "time.h"
 #include <unistd.h>
 #include "lib_graphic_processor/graphic_processor.h"
-#include "lib_JOYSTICK/KEY.h"
+#include "lib_JOYSTICK/joystick_io.h"
 
 /* =========================================================
 Configuracao do barramento de botoes:
@@ -174,7 +174,7 @@ int main(){
 	/*----------------------------LOOP PRINCIPAL-----------------------------*/
 	while(nave.collision == 0){
 		start_pause = read_KEY(START_BUTTON, POS_EDGE);
-		move  = (read_KEY(A_BUTTON, LEVEL) << 3) | (read_KEY(Y_BUTTON, LEVEL) << 2)  | (read_KEY(X_BUTTON, LEVEL)<< 1) | read_KEY(B_BUTTON, LEVEL);
+		move  = (read_JOYSTICK(RIGHT_DIR, LEVEL) << 3) | (read_JOYSTICK(LEFT_DIR, LEVEL) << 2)  | (read_JOYSTICK(UP_DIR, LEVEL)<< 1) | read_JOYSTICK(DOWN_DIR, LEVEL);
 
 		if(IORD(SCREEN_BASE,0) == 1){ // Verifica se uma tela terminou de ser impressa
 			// Estrutura para contagem de telas e configuracao de parametros
@@ -248,7 +248,7 @@ int main(){
 					refresh_coord = 1;
 					break;
 			}
-			if(read_KEY(SELECT_BUTTON, POS_EDGE) == 1 && atirar == 1){ // Verificar a possibilidade de novos tiros.
+			if(read_KEY(Y_BUTTON, POS_EDGE) == 1 && atirar == 1){ // Verificar a possibilidade de novos tiros.
 				atirar     = 0; // Depois de atirar, espera um novo momento.
 				wait_shoot = 0;
 				/*----- Estrutura condicional que verifica quais tiros estao disponiveis para serem utilizados.-----*/
@@ -263,14 +263,12 @@ int main(){
 			if(number_screen_2 == 6){
 				number_screen_2 = 0;
 				if(read_KEY(TR_BUTTON, POS_EDGE) == 1){
-					printf("ssbdfsds\n");
 					nave.offset += 1;       // muda o sprite de animacao da nave
 					if(nave.offset > 10){
 						nave.offset = 3;    // muda o sprite de animacao da nave
 					}
 					refresh_coord = 0;
 				}else if(read_KEY(TL_BUTTON, POS_EDGE) == 1){
-					printf("ssbdfsds\n");
 					nave.offset -= 1;       // muda o sprite de animacao da nave
 					if(nave.offset < 3){
 						nave.offset = 10;   // muda o sprite de animacao da nave
