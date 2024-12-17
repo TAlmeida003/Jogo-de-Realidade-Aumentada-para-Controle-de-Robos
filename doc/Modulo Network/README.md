@@ -57,7 +57,7 @@ O ESP8266 12e se comunica com a FPGA através de comandos AT, que são comandos 
 Comandos basicos:
 
 
-<div align="justify"> 
+<div align="center"> 
 
 |comando             |descrição| resposta|
 |--------------------|---------|---------|
@@ -70,11 +70,15 @@ AT+RESTORE|Restaura as configurações de fábrica.|OK|
 
 </div>
 
+<p align="center">
+<strong> Tabela X: Comandos básicos do ESP8266 12e</strong>
+</p>
+
 >  O comando AT+UART_CUR=115200,8,1,0,3 configura a UART para 115200 bps, 8 bits de dados, 1 bit de parada, sem paridade e com controle de fluxo RTS/CTS.
 
 Comandos wifi:
 
-<div align="justify"> 
+<div align="center"> 
 
 |comando|descrição| resposta|
 |-------------------|---------|---------|
@@ -86,13 +90,17 @@ Comandos wifi:
 
 </div>
 
+<p align="center">
+<strong> Tabela X: Comandos de configuração Wi-Fi do ESP8266 12e</strong>
+</p>
+
 > O comando AT+CWMODE=3 configura o módulo para operar em modo AP e STA.
 
 > O comando AT+CWJAP="ssid","password" conecta o módulo a uma rede Wi-Fi com SSID e senha especificados.
 
 Comandos TCP/IP:
 
-<div align="justify"> 
+<div align="center"> 
 
 |comando|descrição| resposta|
 |-------------------|---------|---------|
@@ -106,6 +114,10 @@ Comandos TCP/IP:
 |AT+CIPRECVDATA=\<length>|Recebe dados no modo manual.|OK|
 
 </div>
+
+<p align="center">
+<strong> Tabela X: Comandos de configuração TCP/IP do ESP8266 12e</strong>
+</p>
 
 > Ao usar AT+CIPSEND espera-se que o módulo responda com o caractere >, indicando que o módulo está pronto para receber os dados a serem enviados.
 
