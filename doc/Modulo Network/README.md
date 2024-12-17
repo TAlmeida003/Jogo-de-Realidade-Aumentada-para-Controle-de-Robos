@@ -58,6 +58,7 @@ Comandos basicos:
 
 
 <div align="justify"> 
+
 |comando             |descrição| resposta|
 |--------------------|---------|---------|
 |AT|Teste de comunicação|OK|
