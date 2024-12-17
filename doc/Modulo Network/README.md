@@ -1,6 +1,6 @@
 
 <p align="center">
-  <img src="img/capa.png" width = "200" />
+  <img src="img/capa.png" width = "225" />
 </p>
 
 
@@ -39,6 +39,9 @@ Desenvolvimento de um Módulo de Comunicação em Rede entre FPGA e ESP8266 12E 
 <div id="sumario">
   <ul>
         <li><a href="#esp"> ESP8266 12e </a></li>
+        <ul>
+          <li><a href="#comand"> Comandos de Controle </a></li>
+      </ul>
         <li><a href="#referencias"> Referências </a></li>
   </ul>	
 </div>
@@ -50,6 +53,7 @@ Desenvolvimento de um Módulo de Comunicação em Rede entre FPGA e ESP8266 12E 
 <div id="esp"> 
 <h2>ESP8266 12e</h2>
 
+<div id="comand">
 <h3> Comandos de Controle</h3>
 
 O ESP8266 12e se comunica com a FPGA através de comandos AT, que são comandos de controle que permitem a configuração do módulo. Os comandos AT são enviados pela FPGA para o ESP através da comunicação UART. Por default, o ESP opera a uma taxa de 115200 bps.
@@ -122,8 +126,12 @@ Comandos TCP/IP:
 > Ao usar AT+CIPSEND espera-se que o módulo responda com o caractere >, indicando que o módulo está pronto para receber os dados a serem enviados.
 
 > O comando AT+CIPRECVMODE=0 configura o módulo para receber dados de forma automática e AT+CIPRECVMODE = 1 configura o módulo para receber dados manualmente.
+
+</div>
+
 </div>
 </div>
+
 
 ![-----------------------------------------------------](img/len.png)
 
