@@ -56,6 +56,8 @@ O ESP8266 12e se comunica com a FPGA através de comandos AT, que são comandos 
 
 Comandos basicos:
 
+
+<div align="justify"> 
 |comando             |descrição| resposta|
 |--------------------|---------|---------|
 |AT|Teste de comunicação|OK|
@@ -65,9 +67,13 @@ AT+RESTORE|Restaura as configurações de fábrica.|OK|
 |AT+UART_CUR=\<baud>,\<databits>,\<stopbits>,\<parity>,\<flow control>|Configura a UART.|OK|
 |AT+UART_DEF=\<baud>,\<databits>,\<stopbits>,\<parity>,\<flow control>|Configura a UART de forma permanente.|OK|
 
+</div>
+
 >  O comando AT+UART_CUR=115200,8,1,0,3 configura a UART para 115200 bps, 8 bits de dados, 1 bit de parada, sem paridade e com controle de fluxo RTS/CTS.
 
 Comandos wifi:
+
+<div align="justify"> 
 
 |comando|descrição| resposta|
 |-------------------|---------|---------|
@@ -77,12 +83,15 @@ Comandos wifi:
 |AT+CWQAP|Desconecta o módulo da rede Wi-Fi.|OK|
 |AT+CWAUTOCONN=\<enable>|Habilita/desabilita a conexão automática à rede Wi-Fi.|OK|
 
+</div>
 
 > O comando AT+CWMODE=3 configura o módulo para operar em modo AP e STA.
 
 > O comando AT+CWJAP="ssid","password" conecta o módulo a uma rede Wi-Fi com SSID e senha especificados.
 
 Comandos TCP/IP:
+
+<div align="justify"> 
 
 |comando|descrição| resposta|
 |-------------------|---------|---------|
@@ -94,6 +103,8 @@ Comandos TCP/IP:
 |+IPD|Recebe dados pela conexão TCP/IP.|+IPD,\<length>:\<data>|
 |AT+CIPRECVMODE=\<mode>|Configura o modo de recepção de dados.|OK|
 |AT+CIPRECVDATA=\<length>|Recebe dados no modo manual.|OK|
+
+</div>
 
 > Ao usar AT+CIPSEND espera-se que o módulo responda com o caractere >, indicando que o módulo está pronto para receber os dados a serem enviados.
 
