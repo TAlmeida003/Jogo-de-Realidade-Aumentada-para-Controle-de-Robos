@@ -84,23 +84,51 @@ Abaixo, é apresentada uma figura que ilustra a estrutura de um quadro de dados 
 </p>
 
 <div id="baud">
-<h3>Baud Rate</h3>
+  <h3>Baud Rate</h3>
 
-Para a comunicação entre a FPGA e o ESP8266 12e, é necessário que ambos os dispositivos usem a mesma taxa de transmissão de dados, conhecida como Baud Rate. Esta taxa é a quantidade de bits transmitidos por segundo (bps) e pode ter valores como 9 600 bps, 115 200 bps, 921 600 bps, entre outros.
+  <p>Para a comunicação entre a FPGA e o ESP8266 12e, ambos os dispositivos precisam usar a mesma taxa de transmissão de dados, chamada Baud Rate. Essa taxa, medida em bits por segundo (bps), pode ter valores como 9.600 bps, 115.200 bps, 921.600 bps, entre outros.</p>
 
-No projeto, foi utilizada a taxa de 115 200 bps, que é o padrão do ESP8266. Para configurar a taxa na FPGA, é necessário calcular o divisor de frequência do clock do módulo UART usando a fórmula:
+  <p>No projeto, foi utilizada a taxa de 115.200 bps, que é o padrão do ESP8266. Para garantir a correta amostragem dos dados, foi aplicado um procedimento de <strong>sobreamostragem</strong>, que consiste em amostrar o sinal de entrada a uma frequência 16 vezes maior que a taxa de transmissão. Isso assegura que o sinal seja capturado no momento correto, reduzindo erros.</p>
+
+  <p>Para configurar a taxa na FPGA, calcula-se o divisor de frequência do clock do módulo UART com a fórmula:</p>
+
+  <p align="center">
+    <img src="img/divA.png" width="300" alt="Fórmula do divisor de clock" />
+  </p>
+
+  <p>Onde:</p>
+
+  <p align="center">
+    <img src="img/divB.png" width="300" alt="Descrição dos parâmetros" />
+  </p>
+
+  <p>Essa configuração gera uma margem de erro de apenas <strong>0,004%</strong>, que é aceitável para a comunicação serial.</p>
+</div>
+
+<div id="flow control">
+<h3>Controle de Fluxo</h3>
+
+O controle de fluxo é usado para garantir que os dados sejam transmitidos sem perda de informações. Ele permite que o receptor avise o transmissor quando está pronto para receber dados. Existem dois métodos principais: <strong>XON/XOFF</strong> e <strong>RTS/CTS</strong>. Este projeto utiliza o método RTS/CTS devido à sua eficiência e para evitar sobrecarga de dados (overhead).
+
+No método <strong>RTS/CTS</strong>, o transmissor ativa (nível lógico LOW) o sinal <strong>RTS</strong> quando está pronto para enviar dados, indicando que seu buffer de transmissão está vazio. O receptor ativa (nível lógico LOW) o sinal <strong>CTS</strong> quando está pronto para receber dados, indicando que seu buffer de recepção está vazio.
+
+O sinal <strong>RTS</strong> do transmissor é conectado ao pino <strong>CTS</strong> do receptor, e o sinal <strong>CTS</strong> do receptor é conectado ao pino <strong>RTS</strong> do transmissor.
+
+Abaixo, são apresentados os diagramas temporais dos sinais RTS e CTS:
 
 <p align="center">
-  <img src="img/divA.png" width = "300" />
+  <img src="img/DiagramaCTS.png" width = "500" />
 </p>
-
-Onde:
+<p align="center">
+<strong> Figura X: Diagrama temporal dos sinais CTS</strong>
+</p>
 
 <p align="center">
-  <img src="img/divB.png" width = "300" />
+  <img src="img/DiagramaRTS.png" width = "500" />
 </p>
-
-Essa configuração resulta em uma margem de erro de apenas **0,004%**, que é aceitável para a comunicação serial.
+<p align="center">
+<strong> Figura X: Diagrama de temporal dos sinais RTS</strong>
+</p>
 
 </div>
 
@@ -131,46 +159,62 @@ A figura a seguir ilustra a conexão entre a FPGA e o ESP8266 12e usando o padr�
 
 </div>
 
-<div id="flow control">
-<h3>Controle de Fluxo</h3>
-
-O controle de fluxo é usado para garantir que os dados sejam transmitidos sem perda de informações. Ele permite que o receptor avise o transmissor quando está pronto para receber dados. Existem dois métodos principais: <strong>XON/XOFF</strong> e <strong>RTS/CTS</strong>. Este projeto utiliza o método RTS/CTS devido à sua eficiência e para evitar ovehreads de dados. 
-
-No método <strong>RTS/CTS</strong>, o transmissor ativa (sinal LOW) o sinal RTS quando está pronto para enviar dados, indicando que seu buffer de transmissão está vazio. O receptor ativa (sina LOW) o sinal CTS quando está pronto para receber dados, indicando que seu buffer de recepção está vazio.
-
-O sinal RTS do transmissor é conectado ao pino CTS do receptor, e o sinal CTS do receptor é conectado ao pino RTS do transmissor.
-
-<p align="center">
-  <img src="img/DiagramaCTS.png" width = "500" />
-</p>
-<p align="center">
-<strong> Figura X: Diagrama de conexão dos sinais CTS</strong>
-</p>
-
-<p align="center">
-  <img src="img/DiagramaRTS.png" width = "500" />
-</p>
-<p align="center">
-<strong> Figura X: Diagrama de conexão dos sinais RTS</strong>
-</p>
-
-</div>
-
 <div id="rx">
 <h3>Receptor UART</h3>
+
+O receptor UART é responsável por receber os dados transmitidos pelo transmissor e enviá-los para a FPGA. É usado uma máquina de estados para controlar a recepção dos dados. A máquina de estados é composta por quatro estados: **IDLE**, **START**, **DATA** e **STOP**.
+
+Estado **IDLE**: O receptor aguarda a detecção do bit de início, que é o bit 0. Quando o bit de início é detectado, o receptor muda para o estado **START** e então inicie
+o contador de tiques de amostragem.
+
+Estado **START**: O receptor aguarda o meio do bit de início para sincronizar a amostragem dos dados. Quando o meio do bit de início é detectado, o receptor muda para o estado **DATA** e inicia a amostragem dos bits de dados.
+
+Estado **DATA**: Quando o contador atinge 15, o sinal de entrada progride por um bit e atinge
+o meio do primeiro bit de dados. Recupere seu valor, desloque-o para um registrador e reinicie
+o contador. O receptor permanece neste estado até que todos os bits de dados sejam recebidos. Quando o último bit de dados é recebido, o receptor muda para o estado **STOP**.
+
+Estado **STOP**: O receptor aguarda o meio do bit de parada. Quando o meio do bit de parada é detectado, o receptor muda para o estado **IDLE** e envia os dados recebidos para a FPGA junto com o sinal confirmado o recebimento dos dados.
+
+
+<p align="center">
+  <img src="img/rcv.png" width = "800" />
+</p>
+<p align="center">
+<strong> Figura X: Fluxograma da máquina de estados do receptor UART</strong>
+</p>
 
 </div>
 
 <div id="tx">
-<h3>Transmissor UART</h3>
+  <h3>Transmissor UART</h3>
 
+  <p>
+    O transmissor UART é responsável por enviar os dados recebidos pela FPGA para o ESP8266 12e. A organização de um subsistema de transmissão UART é semelhante à do subsistema de recepção, com a principal diferença sendo os sinais de controle e a lógica de transmissão.
+  </p>
+
+  <p>
+    A taxa de transmissão é controlada por tiques gerados a partir de um ciclo de clock, que são produzidos por um gerador de taxa de transmissão. Como não há sobreamostragem no transmissor, a frequência dos tiques é 16 vezes mais lenta do que a do receptor UART. Para controlar o número de tiques, o transmissor geralmente compartilha o gerador de taxa do receptor e utiliza um contador interno. A cada 16 tiques de habilitação, um bit é deslocado e enviado.
+  </p>
+</div>
+
+<div id="fifo">
+<h3>FIFO</h3>
+
+Para armazenar os dados recebidos e transmitidos, é utilizado um buffer FIFO (First In, First Out). O buffer FIFO é uma estrutura de dados que armazena os dados de forma sequencial, permitindo a leitura e escrita de dados de forma ordenada. O buffer FIFO é composto por um ponteiro de leitura e um ponteiro de escrita, que indicam a posição do próximo dado a ser lido ou escrito, respectivamente. Quando o buffer está vazio, os ponteiros de leitura e escrita apontam para a mesma posição. Quando o buffer está cheio, os ponteiros de leitura e escrita apontam para posições diferentes. 
+
+<p align="center">
+  <img src="img/fifo.png" width = "600" />
+</p>
+<p align="center">
+<strong> Figura X: Estrutura de um buffer FIFO</strong>
+
+</div>
+
+
+</div>
 </div>
 
 ![-----------------------------------------------------](img/len.png)
-
-
-</div>
-</div>
 
 <div align="justify"> 
 <div id="esp"> 
