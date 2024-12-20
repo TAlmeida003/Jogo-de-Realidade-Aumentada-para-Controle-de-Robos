@@ -136,10 +136,23 @@ A figura a seguir ilustra a conexão entre a FPGA e o ESP8266 12e usando o padr�
 
 O controle de fluxo é usado para garantir que os dados sejam transmitidos sem perda de informações. Ele permite que o receptor avise o transmissor quando está pronto para receber dados. Existem dois métodos principais: <strong>XON/XOFF</strong> e <strong>RTS/CTS</strong>. Este projeto utiliza o método RTS/CTS devido à sua eficiência e para evitar ovehreads de dados. 
 
-No método <strong>RTS/CTS</strong>, o transmissor ativa o sinal RTS quando está pronto para enviar dados, indicando que seu buffer de transmissão está vazio. O receptor ativa o sinal CTS quando está pronto para receber dados, indicando que seu buffer de recepção está vazio.
+No método <strong>RTS/CTS</strong>, o transmissor ativa (sinal LOW) o sinal RTS quando está pronto para enviar dados, indicando que seu buffer de transmissão está vazio. O receptor ativa (sina LOW) o sinal CTS quando está pronto para receber dados, indicando que seu buffer de recepção está vazio.
 
 O sinal RTS do transmissor é conectado ao pino CTS do receptor, e o sinal CTS do receptor é conectado ao pino RTS do transmissor.
 
+<p align="center">
+  <img src="img/DiagramaCTS.png" width = "500" />
+</p>
+<p align="center">
+<strong> Figura X: Diagrama de conexão dos sinais CTS</strong>
+</p>
+
+<p align="center">
+  <img src="img/DiagramaRTS.png" width = "500" />
+</p>
+<p align="center">
+<strong> Figura X: Diagrama de conexão dos sinais RTS</strong>
+</p>
 
 </div>
 
