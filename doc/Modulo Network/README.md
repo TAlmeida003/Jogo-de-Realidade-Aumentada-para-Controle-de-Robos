@@ -77,7 +77,7 @@ Abaixo, é apresentada uma figura que ilustra a estrutura de um quadro de dados 
 
 
 <p align="center">
-  <img src="img/frameUART.png" width = "500" />
+  <img src="img/frameUART.png" width = "600" />
 </p>
 <p align="center">
 <strong> Figura X: Estrutura de um quadro de dados UART</strong>
@@ -90,15 +90,15 @@ Para a comunicação entre a FPGA e o ESP8266 12e, é necessário que ambos os d
 
 No projeto, foi utilizada a taxa de 115 200 bps, que é o padrão do ESP8266. Para configurar a taxa na FPGA, é necessário calcular o divisor de frequência do clock do módulo UART usando a fórmula:
 
-<div style="text-align: center;">
-  <code>Divisor = ClockFrequency / (16 * BaudRate)</code>
-</div>
+<p align="center">
+  <img src="img/divA.png" width = "300" />
+</p>
 
 Onde:
 
-<div style="text-align: center;">
-  <code>Divisor = 50 000 000 / (16 * 115 200) ≈ 27</code>
-</div>
+<p align="center">
+  <img src="img/divB.png" width = "300" />
+</p>
 
 Essa configuração resulta em uma margem de erro de apenas **0,004%**, que é aceitável para a comunicação serial.
 
@@ -134,6 +134,11 @@ A figura a seguir ilustra a conexão entre a FPGA e o ESP8266 12e usando o padr�
 <div id="flow control">
 <h3>Controle de Fluxo</h3>
 
+O controle de fluxo é usado para garantir que os dados sejam transmitidos sem perda de informações. Ele permite que o receptor avise o transmissor quando está pronto para receber dados. Existem dois métodos principais: <strong>XON/XOFF</strong> e <strong>RTS/CTS</strong>. Este projeto utiliza o método RTS/CTS devido à sua eficiência e para evitar ovehreads de dados. 
+
+No método <strong>RTS/CTS</strong>, o transmissor ativa o sinal RTS quando está pronto para enviar dados, indicando que seu buffer de transmissão está vazio. O receptor ativa o sinal CTS quando está pronto para receber dados, indicando que seu buffer de recepção está vazio.
+
+O sinal RTS do transmissor é conectado ao pino CTS do receptor, e o sinal CTS do receptor é conectado ao pino RTS do transmissor.
 
 
 </div>
@@ -244,13 +249,13 @@ Comandos TCP/IP:
 <div id="referencias"> 
 <h2>Referências</h2>
 
-> Espressif. **ESP8266 AT Instruction Set**. Disponível em:
-<https://www.espressif.com/sites/default/files/documentation/4a-esp8266_at_instruction_set_en.pdf>.
-Acesso em: 16 de Dezembro de 2024.
-
 > PEDRONI, Volnei A. FPGA Prototyping by Verilog Examples: Xilinx Spartan-3 Version. 1st ed. Hoboken: Wiley-Interscience, 2008.
 
 > EPUSP — PCS 2021 — Laboratório Digital. **UART**. Versão 2015. Disponível em: <a href="https://www2.pcs.usp.br/~labdig/pdffiles_2015/uart.pdf" target="_blank">https://www2.pcs.usp.br/~labdig/pdffiles_2015/uart.pdf</a>. Acesso em 19 de Dezembro de 2024.
+
+> Espressif. **ESP8266 AT Instruction Set**. Disponível em:
+<https://www.espressif.com/sites/default/files/documentation/4a-esp8266_at_instruction_set_en.pdf>.
+Acesso em: 16 de Dezembro de 2024.
 
 </div>
 </div>
