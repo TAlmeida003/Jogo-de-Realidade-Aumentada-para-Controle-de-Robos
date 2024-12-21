@@ -45,6 +45,7 @@ Desenvolvimento de um Módulo de Comunicação em Rede entre FPGA e ESP8266 12E 
           <li><a href="#flow control"> Controle de Fluxo </a></li>
           <li><a href="#rx"> Receptor UART </a></li>
           <li><a href="#tx"> Transmissor UART </a></li>
+          <li><a href="#fifo"> FIFO </a></li>
         </ul>
       <li><a href="#esp"> ESP8266 12e </a></li>
         <ul>

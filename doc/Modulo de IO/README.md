@@ -207,7 +207,7 @@ A Figura 5 apresenta o diagrama em blocos da interface do módulo de I/O, com as
 
 
 <p align="center">
-  <img src="img/diagramaIO.png" width = "800" />
+  <img src="img/diagIO.png" width = "800" />
 </p>
 <p align="center"><strong>Figura 5: Diagrama em blocos da interface do módulo de I/O</strong></p>
 
