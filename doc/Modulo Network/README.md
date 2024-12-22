@@ -111,9 +111,11 @@ Abaixo, é apresentada uma figura que ilustra a estrutura de um quadro de dados 
 
 O controle de fluxo é usado para garantir que os dados sejam transmitidos sem perda de informações. Ele permite que o receptor avise o transmissor quando está pronto para receber dados. Existem dois métodos principais: <strong>XON/XOFF</strong> e <strong>RTS/CTS</strong>. Este projeto utiliza o método RTS/CTS devido à sua eficiência e para evitar sobrecarga de dados (overhead).
 
-No método <strong>RTS/CTS</strong>, o transmissor ativa (nível lógico LOW) o sinal <strong>RTS</strong> quando está pronto para enviar dados, indicando que seu buffer de transmissão está vazio. O receptor ativa (nível lógico LOW) o sinal <strong>CTS</strong> quando está pronto para receber dados, indicando que seu buffer de recepção está vazio.
+No método <strong>RTS/CTS</strong>, o transmissor ativa (nível lógico LOW) o sinal <strong>RTS</strong> quando está pronto para enviar dados, indicando que seu buffer de transmissão está vazio. O receptor ativa (nível lógico LOW) o sinal <strong>CTS</strong> quando está pronto para receber dados, indicando que seu buffer de recepção está vazio. 
 
-O sinal <strong>RTS</strong> do transmissor é conectado ao pino <strong>CTS</strong> do receptor, e o sinal <strong>CTS</strong> do receptor é conectado ao pino <strong>RTS</strong> do transmissor.
+Para garantir que nada seja perdido por overflow, o sinal é assionado quando o buffer está 75% cheio. Isso permite que mesmo que o transmissor envie dados a maior que a taxa de recepção, o receptor ainda possa receber os dados sem perda de informações.
+
+O sinal RTS do transmissor é conectado ao pino CTS do receptor, e o sinal CTS do receptor é conectado ao pino RTS do transmissor. Isso permite que o transmissor e o receptor se comuniquem entre si, garantindo que os dados sejam transmitidos corretamente.
 
 Abaixo, são apresentados os diagramas temporais dos sinais RTS e CTS:
 
