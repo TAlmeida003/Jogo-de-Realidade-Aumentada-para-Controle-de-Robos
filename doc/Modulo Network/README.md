@@ -165,25 +165,27 @@ A figura a seguir ilustra a conexão entre a FPGA e o ESP8266 12e usando o padr�
 <div id="rx">
 <h3>Receptor UART</h3>
 
-O receptor UART é responsável por receber os dados transmitidos pelo transmissor e enviá-los para a FPGA. É usado uma máquina de estados para controlar a recepção dos dados. A máquina de estados é composta por quatro estados: **IDLE**, **START**, **DATA** e **STOP**.
+O receptor UART é responsável por receber os dados transmitidos pelo transmissor e enviá-los para a FPGA. É usado uma máquina de estados para controlar a recepção dos dados. A máquina de estados é composta por quatro estados: **IDLE**, **START**, **DATA**, **STOP** e **ERROR**.
 
 Estado **IDLE**: O receptor aguarda a detecção do bit de início, que é o bit 0. Quando o bit de início é detectado, o receptor muda para o estado **START** e então inicie
 o contador de tiques de amostragem.
 
-Estado **START**: O receptor aguarda o meio do bit de início para sincronizar a amostragem dos dados. Quando o meio do bit de início é detectado, o receptor muda para o estado **DATA** e inicia a amostragem dos bits de dados.
+Estado **START**: O receptor aguarda o meio do bit de início para sincronizar a amostragem dos dados. Quando o meio do bit de início é detectado, o receptor muda para o estado **DATA** e inicia a amostragem dos bits de dados. Em caso de uma falha na detecção do bit de início, o receptor vai para o estado de **ERROR**.
 
 Estado **DATA**: Quando o contador atinge 15, o sinal de entrada progride por um bit e atinge
 o meio do primeiro bit de dados. Recupere seu valor, desloque-o para um registrador e reinicie
 o contador. O receptor permanece neste estado até que todos os bits de dados sejam recebidos. Quando o último bit de dados é recebido, o receptor muda para o estado **STOP**.
 
-Estado **STOP**: O receptor aguarda o meio do bit de parada. Quando o meio do bit de parada é detectado, o receptor muda para o estado **IDLE** e envia os dados recebidos para a FPGA junto com o sinal confirmado o recebimento dos dados.
+Estado **STOP**: O receptor aguarda o meio do bit de parada. Quando o meio do bit de parada é detectado, o receptor muda para o estado **IDLE** e envia os dados recebidos para a FPGA junto com o sinal confirmado o recebimento dos dados. Em caso de uma falha na detecção do bit de parada, o receptor vai para o estado de **ERROR**.
+
+Estado **ERROR**: O receptor fica nesse até que o que o sinal de entrada volte a ser 1, indicando que o sinal estabilizou. Quando o sinal estabiliza, o receptor volta para o estado **IDLE**.
 
 
 <p align="center">
-  <img src="img/rcv.png" width = "800" />
+  <img src="img/rcv.png" width = "600" />
 </p>
 <p align="center">
-<strong> Figura X: Fluxograma da máquina de estados do receptor UART</strong>
+<strong> Figura X: Máquina de estados do receptor UART</strong>
 </p>
 
 </div>
@@ -198,6 +200,33 @@ Estado **STOP**: O receptor aguarda o meio do bit de parada. Quando o meio do bi
   <p>
     A taxa de transmissão é controlada por tiques gerados a partir de um ciclo de clock, que são produzidos por um gerador de taxa de transmissão. Como não há sobreamostragem no transmissor, a frequência dos tiques é 16 vezes mais lenta do que a do receptor UART. Para controlar o número de tiques, o transmissor geralmente compartilha o gerador de taxa do receptor e utiliza um contador interno. A cada 16 tiques de habilitação, um bit é deslocado e enviado.
   </p>
+
+  <p>
+    O transmissor UART é composto por uma máquina de estados que controla a transmissão dos dados. A máquina de estados é composta por quatro estados: **IDLE**, **START**, **DATA** e **STOP**.
+  </p>
+
+  <p>
+    Estado **IDLE**: O transmissor aguarda a solicitação de transmissão de dados. Quando a solicitação é recebida, o transmissor muda para o estado **START** e inicia o contador de tiques de transmissão.
+
+    Estado **START**: O transmissor aguarda os 16 tiques de transmissão para sincronizar a transmissão dos dados. Quando os 16 tiques são contados, o transmissor muda para o estado **DATA** e inicia a transmissão dos bits de dados.
+
+    Estado **DATA**: Quando o contador atinge 15, o sinal de saída progride por um bit deslando o valor de entrada até que todos os bits de dados sejam transmitidos. Quando o último bit de dados é transmitido, o transmissor muda para o estado **STOP**.
+
+    Estado **STOP**: O transmissor aguarda os 16 tiques de transmissão para sincronizar a transmissão do bit de parada. Quando os 16 tiques são contados, o transmissor muda para o estado **IDLE**.
+    
+  </p>
+
+  <p>
+    A figura a seguir ilustra a máquina de estados do transmissor UART.
+  </p>
+
+  <p align="center">
+    <img src="img/tx.png" width = "600" />
+  </p>
+  <p align="center">
+    <strong> Figura X: Máquina de estados do transmissor UART</strong>
+  </p>
+
 </div>
 
 <div id="fifo">
