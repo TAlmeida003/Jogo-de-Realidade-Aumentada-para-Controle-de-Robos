@@ -51,6 +51,10 @@ Desenvolvimento de um Módulo de Comunicação em Rede entre FPGA e ESP8266 12E 
         <ul>
           <li><a href="#comand"> Comandos de Controle </a></li>
         </ul>
+      <li><a href="#arq"> Arquitetura do Projeto </a></li>
+        <ul>
+          <li><a href="#arqUARTt"> Modulo UART </a></li>
+        </ul>
       <li><a href="#referencias"> Referências </a></li>
   </ul>	
 </div>
@@ -103,7 +107,7 @@ Abaixo, é apresentada uma figura que ilustra a estrutura de um quadro de dados 
     <img src="img/divB.png" width="300" alt="Descrição dos parâmetros" />
   </p>
 
-  <p>Essa configuração gera uma margem de erro de apenas <strong>0,004%</strong>, que é aceitável para a comunicação serial.</p>
+  <p>Essa configuração gera uma margem de erro de apenas <strong>0,47%</strong>, que é aceitável para a comunicação serial.</p>
 </div>
 
 <div id="flow control">
@@ -331,6 +335,26 @@ Comandos TCP/IP:
 </div>
 </div>
 
+<div align="justify"> 
+<div id="arq"> 
+<h2>Arquitetura do Projeto</h2>
+
+<div id="arqUARTt">
+<h3>Modulo UART</h3>
+
+Versão simplificada da arquitetura do módulo UART:
+
+<p align="center">
+  <img src="img/diagSimplificado.png" width = "600" />
+</p>
+<p align="center">
+<strong> Figura X: Versão simplificada da arquitetura do módulo UART</strong>
+</p>
+
+</div>
+
+</div>
+</div>
 
 ![-----------------------------------------------------](img/len.png)
 
