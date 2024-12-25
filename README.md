@@ -71,7 +71,7 @@ Realidade Aumentada Usando FPGA
 
 
 <p align="center">
-  <img src="img/arqtotal.png" width = "700" />
+  <img src="img/arqTotal.png" width = "700" />
 </p>
 <p align="center">
 <strong> Figura 1: Arquitetura total do projeto</strong></p>
