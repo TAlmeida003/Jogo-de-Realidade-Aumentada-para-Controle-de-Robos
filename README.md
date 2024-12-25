@@ -70,6 +70,14 @@ Realidade Aumentada Usando FPGA
 <strong> Tabela 10: Pinagem dos botões e analogico</strong></p>
 
 
+<p align="center">
+  <img src="img/arqtotal.png" width = "700" />
+</p>
+<p align="center">
+<strong> Figura 1: Arquitetura total do projeto</strong></p>
+
+
+
 </div>
 </div>
 
