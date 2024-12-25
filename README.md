@@ -13,16 +13,31 @@ Realidade Aumentada Usando FPGA
 <div id="sumario">
 	<ul>
         <li><a href="#FPGA"> FPGA De0-Nano </a></li>
-        <li><a href="#io"> Módulo I/O </a></li>
+        <li><a href="#pinout"> Pinout </a></li>
         <li><a href="#referencias"> Referências </a></li>
 	</ul>	
 </div>
 
+<div align="justify">
+<div id="arqFPGA">
+<h2>Arquitetura do hardware</h2>
+
+A figura a seguir mostra a versão simplificada da arquitetura total do sistema já desevolvida:
+
+<p align="center">
+  <img src="img/arqTotal.png" width = "700" />
+</p>
+<p align="center">
+<strong> Figura 1: Arquitetura total do projeto</strong></p>
+
+</div>
+</div>
+
 
 <div align="justify"> 
-<div id="FPGA"> 
+<div id="pinout"> 
 
-<h2>PINOUT</h2>
+<h2>Pinout</h2>
 
 <div align="center">
 
@@ -68,15 +83,6 @@ Realidade Aumentada Usando FPGA
 
 <p align="center">
 <strong> Tabela 10: Pinagem dos botões e analogico</strong></p>
-
-
-<p align="center">
-  <img src="img/arqTotal.png" width = "700" />
-</p>
-<p align="center">
-<strong> Figura 1: Arquitetura total do projeto</strong></p>
-
-
 
 </div>
 </div>

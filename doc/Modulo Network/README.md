@@ -205,20 +205,19 @@ Estado **ERROR**: O receptor fica nesse até que o que o sinal de entrada volte 
     A taxa de transmissão é controlada por tiques gerados a partir de um ciclo de clock, que são produzidos por um gerador de taxa de transmissão. Como não há sobreamostragem no transmissor, a frequência dos tiques é 16 vezes mais lenta do que a do receptor UART. Para controlar o número de tiques, o transmissor geralmente compartilha o gerador de taxa do receptor e utiliza um contador interno. A cada 16 tiques de habilitação, um bit é deslocado e enviado.
   </p>
 
-  <p>
-    O transmissor UART é composto por uma máquina de estados que controla a transmissão dos dados. A máquina de estados é composta por quatro estados: **IDLE**, **START**, **DATA** e **STOP**.
-  </p>
+ 
+  O transmissor UART é composto por uma máquina de estados que controla a transmissão dos dados. A máquina de estados é composta por quatro estados: **IDLE**, **START**, **DATA** e **STOP**.
 
-  <p>
-    Estado **IDLE**: O transmissor aguarda a solicitação de transmissão de dados. Quando a solicitação é recebida, o transmissor muda para o estado **START** e inicia o contador de tiques de transmissão.
 
-    Estado **START**: O transmissor aguarda os 16 tiques de transmissão para sincronizar a transmissão dos dados. Quando os 16 tiques são contados, o transmissor muda para o estado **DATA** e inicia a transmissão dos bits de dados.
+ 
+  Estado **IDLE**: O transmissor aguarda a solicitação de transmissão de dados. Quando a solicitação é recebida, o transmissor muda para o estado **START** e inicia o contador de tiques de transmissão.
 
-    Estado **DATA**: Quando o contador atinge 15, o sinal de saída progride por um bit deslando o valor de entrada até que todos os bits de dados sejam transmitidos. Quando o último bit de dados é transmitido, o transmissor muda para o estado **STOP**.
+  Estado **START**: O transmissor aguarda os 16 tiques de transmissão para sincronizar a transmissão dos dados. Quando os 16 tiques são contados, o transmissor muda para o estado **DATA** e inicia a transmissão dos bits de dados.
 
-    Estado **STOP**: O transmissor aguarda os 16 tiques de transmissão para sincronizar a transmissão do bit de parada. Quando os 16 tiques são contados, o transmissor muda para o estado **IDLE**.
-    
-  </p>
+  Estado **DATA**: Quando o contador atinge 15, o sinal de saída progride por um bit deslando o valor de entrada até que todos os bits de dados sejam transmitidos. Quando o último bit de dados é transmitido, o transmissor muda para o estado **STOP**.
+
+  Estado **STOP**: O transmissor aguarda os 16 tiques de transmissão para sincronizar a transmissão do bit de parada. Quando os 16 tiques são contados, o transmissor muda para o estado **IDLE**.
+  
 
   <p>
     A figura a seguir ilustra a máquina de estados do transmissor UART.
