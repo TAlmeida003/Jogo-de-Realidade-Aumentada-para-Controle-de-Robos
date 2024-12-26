@@ -1,9 +1,15 @@
 <p align="center">
-  <img src="img/kart.png" width = "350" />
+  <img src="img/logo.png" width = "700" />
 </p>
 
-<h1 align="center">Game Kart
+<h1 align="center">TeleCore64 Console
 </h1>
+
+<div align="justify"> 
+<h2>Descrição do Projeto</h2>
+
+
+</div>
 
 <h3 align="center"> Projeto de Desenvolvimento de uma Interface Portátil para Teleoperação de Robô em Ambiente de 
 Realidade Aumentada Usando FPGA
@@ -12,11 +18,12 @@ Realidade Aumentada Usando FPGA
 <h1 align="center"> Sumário </h1>
 <div id="sumario">
 	<ul>
-        <li><a href="#FPGA"> FPGA De0-Nano </a></li>
+        <li><a href="#arqFPGA"> Arquitetura do hardware</a></li>
         <li><a href="#pinout"> Pinout </a></li>
         <li><a href="#referencias"> Referências </a></li>
 	</ul>	
 </div>
+
 
 <div align="justify">
 <div id="arqFPGA">
