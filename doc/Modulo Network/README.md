@@ -268,6 +268,7 @@ Comandos basicos:
 |comando             |descrição| resposta|
 |--------------------|---------|---------|
 |AT|Teste de comunicação|OK|
+|ATE0|Desabilita o eco de caracteres.|OK|
 |AT+RST|Reinicia o módulo.|OK|
 |AT+GSLP=\<time>|Coloca o módulo em modo de baixo consumo de energia por um tempo especificado.|\<time> OK|
 AT+RESTORE|Restaura as configurações de fábrica.|OK|

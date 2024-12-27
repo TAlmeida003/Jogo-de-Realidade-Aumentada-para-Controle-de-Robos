@@ -5,15 +5,34 @@
 <h1 align="center">TeleCore64 Console
 </h1>
 
+<h3 align="center"> Projeto de Desenvolvimento de uma Interface Portátil para Teleoperação de Robô em Ambiente de 
+Realidade Aumentada Usando FPGA
+</h3>
+
 <div align="justify"> 
 <h2>Descrição do Projeto</h2>
 
 
-</div>
+Este repositório documenta um projeto de iniciação científica, patrocinado pelo **CNPq**, que tem como objetivo desenvolver uma interface portátil de videogame para jogos 2D (console) e controlar um robô utilizando uma **FPGA**. O projeto explora a integração de sistemas embarcados, comunicação serial e protocolos de rede, promovendo uma interação inovadora entre jogos e robótica.  
 
-<h3 align="center"> Projeto de Desenvolvimento de uma Interface Portátil para Teleoperação de Robô em Ambiente de 
-Realidade Aumentada Usando FPGA
-</h3>
+O projeto é dividido em três etapas principais:  
+
+### 1. Desenvolvimento do Console de Videogame  
+- Utilização do processador **Nios II** e de um processador gráfico **CoLenda**.  
+- Desenvolvimento da interface de controle do console.  
+- Criação da interface de vídeo utilizando **HDMI**.  
+
+### 2. Comunicação entre a FPGA e o Robô  
+- Implementação de um **ESP** como intermediário para conectar a FPGA ao robô.  
+- Utilização de **UART** para a comunicação entre a FPGA e o ESP.  
+- Uso do protocolo **TCP/IP** para a comunicação do ESP com o **ROS (Robot Operating System)**.  
+
+### 3. Integração do Console com o Robô  
+- O console envia comandos para o robô enquanto o jogo é jogado.  
+- Sincronização entre os dados do jogo e as ações do robô. 
+
+
+</div>
 
 <h1 align="center"> Sumário </h1>
 <div id="sumario">
