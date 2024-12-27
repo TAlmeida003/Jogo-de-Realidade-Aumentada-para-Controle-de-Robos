@@ -38,6 +38,7 @@ O projeto é dividido em três etapas principais:
 <div id="sumario">
 	<ul>
         <li><a href="#arqFPGA"> Arquitetura do hardware</a></li>
+        <li><a href="#descrip"> Visão Geral </a></li>
         <li><a href="#pinout"> Pinout </a></li>
         <li><a href="#referencias"> Referências </a></li>
 	</ul>	
@@ -54,7 +55,7 @@ A figura a seguir mostra a versão simplificada da arquitetura total do sistema 
   <img src="img/arqTotal.png" width = "700" />
 </p>
 <p align="center">
-<strong> Figura 1: Arquitetura total do projeto</strong></p>
+<strong> Figura X: Arquitetura total do projeto</strong></p>
 
 </div>
 </div>
