@@ -9,6 +9,8 @@
 Realidade Aumentada Usando FPGA
 </h3>
 
+![-----------------------------------------------------](img/len.png)
+
 <div align="justify"> 
 <h2>Descrição do Projeto</h2>
 
@@ -34,6 +36,8 @@ O projeto é dividido em três etapas principais:
 
 </div>
 
+![-----------------------------------------------------](img/len.png)
+
 <h1 align="center"> Sumário </h1>
 <div id="sumario">
 	<ul>
@@ -47,6 +51,9 @@ O projeto é dividido em três etapas principais:
 
 <div align="justify">
 <div id="arqFPGA">
+
+![-----------------------------------------------------](img/len.png)
+
 <h2>Arquitetura do hardware</h2>
 
 A figura a seguir mostra a versão simplificada da arquitetura total do sistema já desevolvida:
@@ -63,6 +70,8 @@ A figura a seguir mostra a versão simplificada da arquitetura total do sistema 
 
 <div align="justify"> 
 <div id="pinout"> 
+
+![-----------------------------------------------------](img/len.png)
 
 <h2>Pinout</h2>
 
@@ -118,6 +127,8 @@ A figura a seguir mostra a versão simplificada da arquitetura total do sistema 
 
 <div align="justify"> 
 <div id="referencias"> 
+
+![-----------------------------------------------------](img/len.png)
 <h2>Referências</h2>
 
 > Embedfire. **Design e verificação do driver de vídeo HDMI**. <https://doc.embedfire.com/fpga/altera/ep4ce10_pro/zh/latest/code/hdmi.html>.

@@ -17,7 +17,7 @@ Desenvolvimento de um Módulo de Comunicação em Rede entre FPGA e ESP8266 12E 
 
 </div>
 
-![-----------------------------------------------------](img/len.png)
+
 
 <h2> Autor <br></h2>
 <uL>
