@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="img/logo.png" width = "700" />
+  <img src="img/logo.png" width = "1000" />
 </p>
 
 <h1 align="center">TeleCore64 Console

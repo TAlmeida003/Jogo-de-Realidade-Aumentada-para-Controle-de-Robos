@@ -352,6 +352,17 @@ Versão simplificada da arquitetura do módulo UART:
 
 </div>
 
+<div id="comunPross">
+<h3>Comunicação entre o processador e o ESP8266 12e</h3>
+
+Segue a versão simplificada da comunicação entre o processador e o ESP8266 12e utilizando a UART:
+
+<p align="center">
+  <img src="img/arqTo.png" width = "600" />
+</p>
+<p align="center">
+<strong> Figura X: Versão simplificada da comunicação entre o processador e o ESP8266 12e</strong>
+
 </div>
 </div>
 
