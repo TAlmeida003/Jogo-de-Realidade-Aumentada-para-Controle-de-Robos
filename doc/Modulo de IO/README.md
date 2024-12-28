@@ -64,7 +64,6 @@ a Figura 2 apresenta o diagrama geral do projeto.
 <h1 align="center"> Sumário </h1>
 <div id="sumario">
 	<ul>
-        <li><a href="#VES"> Descrição dos Equipamentos e Software Utilizados </a></li>
         <li><a href="#FH"> Funcinalidades</a></li>
         <li><a href="#DH"> Arquitetura</a></li>
         <li><a href="#D"> Bibliotecas </a></li>
@@ -76,64 +75,6 @@ a Figura 2 apresenta o diagrama geral do projeto.
 	</ul>	
 </div>
 
-
-![-----------------------------------------------------](img/len.png)
-<div align="justify"> 
-<div id="VES"> 
-
-<h2>Descrição dos Equipamentos e Software Utilizados</h2>
-
-Nesta seção, serão apresentados os equipamentos e softwares utilizados no desenvolvimento do projeto, incluindo a placa FPGA DE0-Nano, o Game HAT, o software Quartus Lite, o ambiente Eclipse, o ModelSim e o processador NIOS II.
-
-<h3>Kit FPGA DE0-Nano</h3>
-
-O **Kit FPGA DE0-Nano**, baseado na FPGA **Altera Cyclone IV EP4CE22F17C6N**, é uma plataforma de desenvolvimento ideal para projetos de hardware e sistemas embarcados.
- A FPGA possui 22.320 elementos lógicos, 594 Kbits de memória RAM interna, 66 multiplicadores e 4 PLLs para controle de clock, proporcionando um excelente desempenho e
-  flexibilidade. Com 256 pinos disponíveis, o kit é amplamente utilizado em aplicações que exigem processamento eficiente e personalizável, como sistemas embarcados,
-  controle industrial e processamento de sinais digitais [Embarcados, 2014]. A imagem a seguir mostra o kit FPGA DE0-Nano e seus principais componentes.
-
-<p align="center">
-  <img src="img/deonano.png" width = "600" />
-</p>
-<p align="center"><strong>Figura 3: Kit FPGA DE0-Nano</strong></p>
-
-<h3>Game Hat</h3>
-
-O **Game HAT** é uma placa de expansão projetada para transformar o Raspberry Pi em um console portátil de videogame.
- Ele possui uma tela LCD de 3,5 polegadas, botões físicos, um D-pad, além de interfaces para áudio e bateria, proporcionando uma experiência de jogo
-  completa. O Game HAT é compatível com vários emuladores e sistemas operacionais, como o RetroPie, permitindo rodar jogos clássicos de diversas plataformas. 
-  Essa solução é ideal para entusiastas de jogos retrô que buscam criar seus próprios consoles portáteis usando o Raspberry Pi [Waveshare, 2019]. A imagem a seguir mostra o Game HAT.
-
-<p align="center">
-  <img src="img/gamehat.png" width = "700" />
-</p>
-<p align="center"><strong>Figura 4: Game HAT</strong></p>
-
-<h3>Quartus Lite</h3>
-
-O **Quartus Lite** é uma edição gratuita do software Quartus Prime, desenvolvido pela Intel (anteriormente conhecida como Altera). Essa ferramenta é empregada no projeto, simulação e programação de dispositivos de lógica programável, como uma FPGA ou um
-Dispositivo lógico complexo programável (em inglês: *Complex Programmable Logic Device*, com sigla CPLD). No contexto deste projeto, o Quartus Lite desempenhou um papel fundamental ao ser utilizado para programar a placa FPGA e, posteriormente, transmitir essa programação por meio do *USB-Blaster*, que está integrado à placa e conectado à porta USB do computador
-[Intel, 2024].
-
-<h3>Eclipse</h3>
-
-O **Eclipse** do Quartus é um ambiente de desenvolvimento integrado (IDE) baseado no Eclipse, utilizado para desenvolver software embarcado em sistemas com o processador NIOS II. Ele permite a criação, depuração e compilação de aplicativos em C/C++ para sistemas embarcados, oferecendo ferramentas específicas para programação de FPGAs da Intel (Altera). O ambiente facilita a integração entre o hardware descrito no Quartus e o software, permitindo o controle eficiente de periféricos e outras funções no sistema embarcado [Macnica, 2019].
-
-<h3>ModelSim</h3>
-
-O **ModelSim** é uma ferramenta de simulação de hardware amplamente utilizada para simular o comportamento de circuitos digitais. É uma ferramenta essencial no desenvolvimento e verificação de projetos de lógica digital, incluindo circuitos integrados e FPGA. Permite criar modelos de simulação de circuitos digitais e executar testes para verificar o funcionamento correto antes de implementar o projeto em hardware real.
-
-O ModelSim é essencial no desenvolvimento de hardware digital, pois ajuda a identificar erros, depurar problemas e otimizar o design, economizando tempo e recursos. Além da simulação funcional, suporta simulação de tempo, considerando atrasos e características temporais, permitindo verificar o desempenho em tempo real [Embarcados, 2014].
-
-<h3>NIOS II</h3>
-
-O **NIOS II** é um processador soft-core da Intel (Altera), projetado para ser usado em FPGAs, como a Cyclone IV. Ele permite personalizar o processador conforme as necessidades do projeto, ajustando dados, caches e outros recursos. Utilizado em sistemas embarcados, o NIOS II realiza tarefas como controle de periféricos e processamento de sinais, sendo programado em C/C++. Com o Quartus e o ambiente Eclipse, ele oferece uma solução flexível e eficiente para controle e processamento de hardware [Embarcados, 2014].
-
-<h3>PIO Core</h3>
-
-O  ***Parallel Input/Output Core***, com sigla PIO Core, é um componente de hardware em FPGAs que gerencia entradas e saídas de dados, permitindo que o processador, como o NIOS II, se comunique com dispositivos externos. Ele lê sinais de botões e armazena os dados no modo de entrada, enquanto no modo de saída, envia informações do processador para controlar dispositivos como LEDs. Além disso, o PIO Core pode gerar interrupções para avisar o processador sobre eventos importantes, tornando o gerenciamento de entradas e saídas mais eficiente [Intel, 2024].
-</div>
-</div>
 
 ![-----------------------------------------------------](img/len.png)
 
@@ -866,27 +807,6 @@ como foi feito a configuração dos pinos, segue o *chip planner* do Quartus.
 
 </div>
 </div>
-
-![-----------------------------------------------------](img/len.png)
-<div align="justify"> 
-<div id="AR"> 
-
-<h2>Análise de Recursos</h2>
-
-
-
-</div>
-</div>
-
-![-----------------------------------------------------](img/len.png)
-<div align="justify"> 
-<div id="OCF"> 
-
-<h2>Organização do Código Fonte</h2>
-
-</div>
-</div>
-
 
 ![-----------------------------------------------------](img/len.png)
 <div align="justify"> 
