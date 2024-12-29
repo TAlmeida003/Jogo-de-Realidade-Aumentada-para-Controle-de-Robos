@@ -294,7 +294,7 @@ Comandos basicos:
 AT+RESTORE|Restaura as configurações de fábrica.|OK|
 |AT+UART_CUR=\<baud>,\<databits>,\<stopbits>,\<parity>,\<flow control>|Configura a UART.|OK|
 |AT+UART_DEF=\<baud>,\<databits>,\<stopbits>,\<parity>,\<flow control>|Configura a UART de forma permanente.|OK|
-
+------------------------------------------
 </div>
 
 <p align="center">
@@ -314,7 +314,7 @@ Comandos wifi:
 |AT+CWLAP|Lista as redes Wi-Fi disponíveis.|OK|
 |AT+CWQAP|Desconecta o módulo da rede Wi-Fi.|OK|
 |AT+CWAUTOCONN=\<enable>|Habilita/desabilita a conexão automática à rede Wi-Fi.|OK|
-
+------------------------------------------
 </div>
 
 <p align="center">
@@ -339,7 +339,7 @@ Comandos TCP/IP:
 |+IPD|Recebe dados pela conexão TCP/IP.|+IPD,\<length>:\<data>|
 |AT+CIPRECVMODE=\<mode>|Configura o modo de recepção de dados.|OK|
 |AT+CIPRECVDATA=\<length>|Recebe dados no modo manual.|OK|
-
+------------------------------------------
 </div>
 
 <p align="center">
@@ -392,10 +392,109 @@ Segue a versão simplificada da comunicação entre o processador e o ESP8266 12
 <div id="reg">
 <h3>Organização dos Registradores</h3>
 
+Tabela dos os endereços dos registradores:
+
+<div align="center">
+
+|Endereço |Registrador                    |
+|---------|-------------------------------|
+|0x00     |Dados de transmissão e recepção|
+|0x01     | Controle do Modulo UART       |
+|0x02     | Mascara de interrupção        |
+|0x03     | status de interrupção    |
+
+</div>
+
+<p align="center">
+<strong> Tabela X: Endereços dos registradores</strong>
+</p>
+
+</div>
+
+Tabela de dados de transmissão e recepção:
+
+<div align="center">
+
+|Bit Index| Descrição           |Sigla|tipo |
+|---------|---------------------|-----|-----|
+|7 - 0    | Dados de transmissão| RBR |  W  |
+|7 - 0    | Dados de recepção   | TBR |  R  |
+|31 - 8   | Não utilizado       |     |     |
 
 
 </div>
 
+<p align="center">
+<strong> Tabela X: Organização dos dados do registrador de transmissão e recepção</strong>
+</p>
+
+Tabela de controle do módulo UART:
+
+<div align="center">
+
+|Bit Index| Descrição                  |Sigla |tipo  |
+|---------|----------------------------|------|------|
+|0        | Reset do Módulo UART       | RST  |  W/R |
+|1        | Habilitar Controle de Fluxo| ENFC |  W/R |
+|2        | Reiniciar FIFO de Transmissão| TXRST |  W/R |
+|3        | Reiniciar FIFO de Recebimento| RXRST |  W/R |
+|4        | Habilitar Módulos de Transmissão e Recebimento| EN     |  W/R |
+|5        | Buffer de Recebimento Cheio                   | RXFULL |  R |
+|6        | Buffer de Recebimento Vazio                    | RXEMPTY|  R |
+|7        | Buffer de Transmissão Cheio                    | TXFULL |  R |
+|8        | Buffer de Transmissão Vazio                    | TXEMPTY|  R |
+|9        | Erro no Frame                                  | EFRM   |  R |
+|31 - 10  | Não utilizado                                  |        |     |
+
+
+</div>
+
+<p align="center">
+<strong> Tabela X: Organização dos dados do registrador de controle do módulo UART</strong>
+</p>
+
+Tabela de máscara de interrupção:
+
+<div align="center">
+
+|Bit Index| Descrição                  |Sigla |tipo  |
+|---------|----------------------------|------|------|
+|0        | Habilita interrupções na transmissão | TX_INT_EN |  W/R |
+|1        | Habilita Byte Recebido  (RX Ready)   | RX_READY_INT |  W/R |
+|2        | Habilitar Interrupção do Buffer de Recebimento Cheio| RX_FULL_INT_EN |  W/R |
+|3        | Habilitar Interrupção quando o Buffer de Recebimento não está vazio| RX_NOT_EMPTY_INT_EN |  W/R |
+|4        | Habilitar interrupção do Buffer de Transmissão Cheio| TX_FULL_INT_EN |  W/R |
+|5        | Habilitar interrupção do Buffer de Transmissão Vazio| TX_EMPTY_INT_EN |  W/R |
+|6        | Mudança no Estado do RTS (Delta RTS)| DRTS |  W/R |
+|31 - 7   | Não utilizado                          |        |     |
+						
+
+</div>
+
+<p align="center">
+<strong> Tabela X: Organização dos dados do registrador de máscara de interrupção</strong>
+</p>
+
+Tabela de status de interrupção:
+
+<div align="center">
+
+|Bit Index| Descrição                  |Sigla |tipo  |
+|---------|----------------------------|------|------|
+|0        | Status de Interrupção ao Transmitir um Byte| TX_INT_STATUS |  W/R |
+|1        | Status de Interrupção ao Receber um Byte  (RX Ready)   | RX_READY_INT_STATUS |  W/R |
+|2        | Status de Interrupção do Buffer de Recebimento Cheio| RX_FULL_INT_STATUS |  W/R |
+|3        | Status de Interrupção quando o Buffer de Recebimento não está vazio| RX_NOT_EMPTY_INT_STATUS |  W/R |
+|4        | Status de Interrupção do Buffer de Transmissão Cheio| TX_FULL_INT_STATUS |  W/R |
+|5        | Status de Interrupção do Buffer de Transmissão Vazio| TX_EMPTY_INT_STATUS |  W/R |
+|6        | Status de Mudança no Estado do RTS (Delta RTS)| DRTS_INT_STATUS |  W/R |
+|31 - 7   | Não utilizado                          |        |     |
+
+</div>
+
+<p align="center">
+<strong> Tabela X: Organização dos dados do registrador de status de interrupção</strong>
+</p>
 
 </div>
 </div>
