@@ -45,8 +45,8 @@ Desenvolvimento de um Módulo de Comunicação em Rede entre FPGA e ESP8266 12E 
           <li><a href="#flow control"> Controle de Fluxo </a></li>
           <li><a href="#rx"> Receptor UART </a></li>
           <li><a href="#tx"> Transmissor UART </a></li>
-          <li><a href="#fifo"> FIFO </a></li>
         </ul>
+      <li><a href="#fifo"> FIFO </a></li>
       <li><a href="#esp"> ESP8266 12e </a></li>
         <ul>
           <li><a href="#comand"> Comandos de Controle </a></li>
@@ -54,6 +54,8 @@ Desenvolvimento de um Módulo de Comunicação em Rede entre FPGA e ESP8266 12E 
       <li><a href="#arq"> Arquitetura do Projeto </a></li>
         <ul>
           <li><a href="#arqUARTt"> Modulo UART </a></li>
+          <li><a href="#comunPross"> Comunicação entre o processador e o ESP8266 12e </a></li>
+          <li><a href="#reg"> Organização dos Registradores </a></li>
         </ul>
       <li><a href="#referencias"> Referências </a></li>
   </ul>	
@@ -209,7 +211,6 @@ Estado **ERROR**: O receptor fica nesse até que o que o sinal de entrada volte 
   O transmissor UART é composto por uma máquina de estados que controla a transmissão dos dados. A máquina de estados é composta por quatro estados: **IDLE**, **START**, **DATA** e **STOP**.
 
 
- 
   Estado **IDLE**: O transmissor aguarda a solicitação de transmissão de dados. Quando a solicitação é recebida, o transmissor muda para o estado **START** e inicia o contador de tiques de transmissão.
 
   Estado **START**: O transmissor aguarda os 16 tiques de transmissão para sincronizar a transmissão dos dados. Quando os 16 tiques são contados, o transmissor muda para o estado **DATA** e inicia a transmissão dos bits de dados.
@@ -232,19 +233,38 @@ Estado **ERROR**: O receptor fica nesse até que o que o sinal de entrada volte 
 
 </div>
 
-<div id="fifo">
-<h3>FIFO</h3>
+</div>
+</div>
 
-Para armazenar os dados recebidos e transmitidos, é utilizado um buffer FIFO (First In, First Out). O buffer FIFO é uma estrutura de dados que armazena os dados de forma sequencial, permitindo a leitura e escrita de dados de forma ordenada. O buffer FIFO é composto por um ponteiro de leitura e um ponteiro de escrita, que indicam a posição do próximo dado a ser lido ou escrito, respectivamente. Quando o buffer está vazio, os ponteiros de leitura e escrita apontam para a mesma posição. Quando o buffer está cheio, os ponteiros de leitura e escrita apontam para posições diferentes. 
+<div align="justify">
+<div id="fifo">
+
+![-----------------------------------------------------](img/len.png)
+
+<h2>FIFO</h2>
+
+Para armazenar dados recebidos e transmitidos em sistemas digitais, é amplamente utilizado um buffer FIFO (First In, First Out). Essa estrutura de dados segue o princípio "o primeiro que entra é o primeiro que sai", garantindo que os dados sejam lidos na mesma ordem em que foram escritos, o que é essencial para manter a integridade e a sequência de informações em diversas aplicações.
 
 <p align="center">
   <img src="img/fifo.png" width = "600" />
 </p>
 <p align="center">
-<strong> Figura X: Estrutura de um buffer FIFO</strong>
+<strong> Figura X: Estrutura 
+de um buffer FIFO</strong>
 
-</div>
+O funcionamento do FIFO é baseado em dois ponteiros: o ponteiro de escrita e o ponteiro de leitura. O ponteiro de escrita aponta para a posição onde o próximo dado será armazenado, enquanto o ponteiro de leitura aponta para a posição do próximo dado a ser lido. Quando o buffer está vazio, ambos os ponteiros apontam para a mesma posição, indicando que não há dados disponíveis para leitura. Quando o buffer está cheio, o ponteiro de escrita atinge a posição imediatamente anterior ao ponteiro de leitura, impedindo novas operações de escrita até que algum dado seja lido.
 
+Essa estrutura é projetada para operar de forma eficiente em sistemas com múltiplos processos ou dispositivos que compartilham dados. Além disso, o FIFO pode incorporar sinalizadores auxiliares, como "quase cheio" (almost full) e "quase vazio" (almost empty), que ajudam no gerenciamento do buffer, prevenindo sobrecargas e melhorando o desempenho do sistema. A figura a seguir ilustra a estrutura de um buffer FIFO:
+
+<p align="center">
+  <img src="img/exemFIFO.png" width = "800" />
+</p>
+
+<p align="center">
+<strong> Figura X: Exemplo das fases de um buffer FIFO</strong>
+
+
+Os buffers FIFOs foram utilizados no projeto para armazenar os dados recebidos e transmitidos pela FPGA, garantindo a integridade e a ordem dos dados durante a comunicação com o ESP8266 12e. 
 
 </div>
 </div>
@@ -336,7 +356,10 @@ Comandos TCP/IP:
 </div>
 
 <div align="justify"> 
-<div id="arq"> 
+<div id="arq">
+
+![-----------------------------------------------------](img/len.png)
+
 <h2>Arquitetura do Projeto</h2>
 
 <div id="arqUARTt">
@@ -363,6 +386,16 @@ Segue a versão simplificada da comunicação entre o processador e o ESP8266 12
 </p>
 <p align="center">
 <strong> Figura X: Versão simplificada da comunicação entre o processador e o ESP8266 12e</strong>
+
+</div>
+
+<div id="reg">
+<h3>Organização dos Registradores</h3>
+
+
+
+</div>
+
 
 </div>
 </div>
