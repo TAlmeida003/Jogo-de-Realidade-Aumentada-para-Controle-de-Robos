@@ -38,6 +38,23 @@ O projeto é dividido em três etapas principais:
 
 ![-----------------------------------------------------](img/len.png)
 
+
+<h2> Autor <br></h2>
+<uL>
+  <li><a href="https://github.com/TAlmeida003">Thiago Neri dos Santos Almeida</a></li>
+  <li>Engenharia de Computação — UEFS</li>
+</ul>
+
+![-----------------------------------------------------](img/len.png)
+
+<h2> Orientador <br></h2>
+<ul>
+      <li>Dr. Anfranserai Morais Dias</li>
+      <li>Departamento de Tecnologia (DTEC) — UEFS</li>
+</ul>
+
+![-----------------------------------------------------](img/len.png)
+
 <h1 align="center"> Sumário </h1>
 <div id="sumario">
 	<ul>
@@ -69,6 +86,18 @@ O projeto é dividido em três etapas principais:
 ![-----------------------------------------------------](img/len.png)
 
 <h2>Visão Geral do Sistema</h2>
+
+<div id="arqGeral">
+<h3>Arquitetura Geral</h3>
+
+A figura a seguir mostra a arquitetura geral do sistema:
+
+<p align="center">
+  <img src="img/arqGeral.png" width = "700" />
+</p>
+<p align="center">
+<strong> Figura X: Arquitetura geral do projeto</strong>
+</p>
 
 <div id="arqFPGA">
 
