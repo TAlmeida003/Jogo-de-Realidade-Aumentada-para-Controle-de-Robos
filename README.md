@@ -60,6 +60,7 @@ O projeto é dividido em três etapas principais:
 	<ul>
         <li><a href="#vg"> Visão Geral do Sistema</a></li>
         <ul>
+          <li><a href="#arqGeral">Arquitetura Geral</a></li>
           <li><a href="#arqFPGA">Arquitetura do hardware</a></li>
         </ul>
         <li><a href="#VES"> Descrição dos Equipamentos e Software Utilizados</a></li>

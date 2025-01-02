@@ -449,7 +449,8 @@ Tabela de controle do módulo UART:
 |7        | Buffer de Transmissão Cheio                    | TXFULL |  R |
 |8        | Buffer de Transmissão Vazio                    | TXEMPTY|  R |
 |9        | Erro no Frame                                  | EFRM   |  R |
-|31 - 10  | Não utilizado                                  |        |     |
+|10       | RTS Ativo                                      | RTS    |  R |
+|31 - 11  | Não utilizado                                  |        |     |
 
 
 </div>
