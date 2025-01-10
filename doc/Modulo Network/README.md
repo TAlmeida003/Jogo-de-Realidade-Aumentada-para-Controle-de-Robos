@@ -9,7 +9,7 @@
 
 <h3 align="center">
 Desenvolvimento de um Módulo de Comunicação em Rede entre FPGA e ESP8266 12E utilizando UART
-<h3>
+</h3>
 
 <div align="justify"> 
 
@@ -18,6 +18,9 @@ Desenvolvimento de um Módulo de Comunicação em Rede entre FPGA e ESP8266 12E 
 
 <h2>Descrição do Projeto</h2>
 
+A comunicação entre dispositivos é essencial para o funcionamento de sistemas digitais, permitindo a troca de informações e o controle de processos. Nesse contexto, a comunicação serial **UART** (*Universal Asynchronous Receiver and Transmitter*) é amplamente utilizada para conectar dispositivos digitais, como microcontroladores, sensores e módulos de comunicação em rede.
+
+Este projeto tem como objetivo desenvolver um módulo de comunicação em rede entre uma **FPGA** e um módulo **ESP8266 12e**, utilizando a comunicação serial UART. A FPGA será responsável por controlar a comunicação com o ESP8266 12e, enviando e recebendo dados por meio de **comandos AT**. O módulo ESP8266 12e, por sua vez, será responsável por se conectar a uma rede Wi-Fi e estabelecer uma conexão **TCP/IP** com a FPGA para a troca de dados.
 
 </div>
 
