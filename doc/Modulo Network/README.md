@@ -469,10 +469,11 @@ Tabela de máscara de interrupção:
 |1        | Habilita Byte Recebido  (RX Ready)   | RX_READY_INT |  W/R |
 |2        | Habilitar Interrupção do Buffer de Recebimento Cheio| RX_FULL_INT_EN |  W/R |
 |3        | Habilitar Interrupção quando o Buffer de Recebimento não está vazio| RX_NOT_EMPTY_INT_EN |  W/R |
-|4        | Habilitar interrupção do Buffer de Transmissão Cheio| TX_FULL_INT_EN |  W/R |
-|5        | Habilitar interrupção do Buffer de Transmissão Vazio| TX_EMPTY_INT_EN |  W/R |
-|6        | Mudança no Estado do RTS (Delta RTS)| DRTS |  W/R |
-|31 - 7   | Não utilizado                          |        |     |
+|4        | Habilitar Interrupção do Buffer de Transmissão Cheio| TX_FULL_INT_EN |  W/R |
+|5        | Habilitar Interrupção do Buffer de Transmissão Vazio| TX_EMPTY_INT_EN |  W/R |
+|6        | Habilitar Mudança no Estado do RTS (Delta RTS)| DRTS |  W/R |
+|7        | Habilitar Interrupção Buffer de Transmissão não está cheio| TX_NOT_FULL_INT_EN |  W/R |
+|31 - 8   | Não utilizado                          |        |     |
 						
 
 </div>
@@ -494,7 +495,8 @@ Tabela de status de interrupção:
 |4        | Status de Interrupção do Buffer de Transmissão Cheio| TX_FULL_INT_STATUS |  W/R |
 |5        | Status de Interrupção do Buffer de Transmissão Vazio| TX_EMPTY_INT_STATUS |  W/R |
 |6        | Status de Mudança no Estado do RTS (Delta RTS)| DRTS_INT_STATUS |  W/R |
-|31 - 7   | Não utilizado                          |        |     |
+|7        | Status de Interrupção Buffer de Transmissão não está cheio| TX_NOT_FULL_INT_STATUS |  W/R |
+|31 - 8   | Não utilizado                          |        |     |
 
 </div>
 
