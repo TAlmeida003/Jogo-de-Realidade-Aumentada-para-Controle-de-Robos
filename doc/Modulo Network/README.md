@@ -18,8 +18,7 @@ Desenvolvimento de um Módulo de Comunicação em Rede entre FPGA e ESP8266 12E 
 
 <h2>Descrição do Projeto</h2>
 
-A comunicação entre dispositivos é essencial para o funcionamento de sistemas digitais, permitindo a troca de informações e o controle de processos. Nesse contexto, a comunicação serial **UART** (*Universal Asynchronous Receiver and Transmitter*) é amplamente utilizada para conectar dispositivos digitais, como microcontroladores, sensores e módulos de comunicação em rede.
-
+A comunicação entre dispositivos é essencial para o funcionamento de sistemas digitais, permitindo a troca de informações e o controle de processos. Nesse contexto, a comunicação serial **UART** (*Universal Asynchronous Receiver and Transmitter*) é amplamente utilizada para conectar dispositivos digitais, como microcontroladores, sensores e módulos de comunicação em rede. 
 Este projeto tem como objetivo desenvolver um módulo de comunicação em rede entre uma **FPGA** e um módulo **ESP8266 12e**, utilizando a comunicação serial UART. A FPGA será responsável por controlar a comunicação com o ESP8266 12e, enviando e recebendo dados por meio de **comandos AT**. O módulo ESP8266 12e, por sua vez, será responsável por se conectar a uma rede Wi-Fi e estabelecer uma conexão **TCP/IP** com a FPGA para a troca de dados.
 
 </div>
@@ -53,6 +52,7 @@ Este projeto tem como objetivo desenvolver um módulo de comunicação em rede e
           <li><a href="#flow control"> Controle de Fluxo </a></li>
           <li><a href="#rx"> Receptor UART </a></li>
           <li><a href="#tx"> Transmissor UART </a></li>
+          <li><a href="#comunIRQ"> Comunicação orientada a interrupções </a></li>
         </ul>
       <li><a href="#fifo"> FIFO </a></li>
       <li><a href="#esp"> ESP8266 12e </a></li>
@@ -241,6 +241,17 @@ Estado **ERROR**: O receptor fica nesse até que o que o sinal de entrada volte 
 
 </div>
 
+<div id="comunIRQ">
+<h3>Comunicação orientada a interrupções</h3>
+
+A comunicação UART orientada a interrupções é uma abordagem eficiente para maximizar o desempenho do sistema. Nesse modelo, a FPGA pode executar outras tarefas enquanto monitora eventos UART, como o recebimento ou envio de dados. Quando ocorre um evento, o módulo UART gera uma interrupção, alertando a FPGA para suspender temporariamente sua tarefa atual e processar a comunicação UART. Esse mecanismo otimiza o uso do tempo de processamento da FPGA, garantindo maior eficiência no sistema.
+
+Para implementar esse modelo, são utilizados registradores de controle e status que registram o estado da comunicação UART. Ao detectar um evento, o módulo UART atualiza esses registradores e aciona uma interrupção, que é tratada pela FPGA. Durante o tratamento, a FPGA gerencia a leitura e escrita de dados nos registradores e retoma a troca de informações com o ESP8266 12e, garantindo uma comunicação confiável e eficiente.
+
+No software, a configuração da FPGA para lidar com interrupções envolve a definição de rotinas específicas. Essas rotinas tratam os eventos de interrupção, gerenciam os registradores de controle e status, e asseguram o fluxo correto de dados. Essa abordagem é fundamental para manter a integridade da comunicação entre a FPGA e o ESP8266 12e, maximizando a eficiência do sistema.
+
+</div>
+
 </div>
 </div>
 
@@ -382,6 +393,12 @@ Versão simplificada da arquitetura do módulo UART:
 <strong> Figura X: Versão simplificada da arquitetura do módulo UART</strong>
 </p>
 
+<p align="center">
+  <img src="img/total64.png" width = "600" />
+</p>
+<p align="center">
+<strong> Figura X: Versão simplificada da arquitetura do módulo UART para 64 bits</strong>
+
 </div>
 
 <div id="comunPross">
@@ -395,7 +412,13 @@ Segue a versão simplificada da comunicação entre o processador e o ESP8266 12
 <p align="center">
 <strong> Figura X: Versão simplificada da comunicação entre o processador e o ESP8266 12e</strong>
 
+<p align="center">
+  <img src="img/arqTO64.png" width = "600" />
+</p>
+<p align="center">
+<strong> Figura X: Versão simplificada da comunicação entre o processador e o ESP8266 12e para 64 bits</strong>
 </div>
+
 
 <div id="reg">
 <h3>Organização dos Registradores</h3>
@@ -505,6 +528,29 @@ Tabela de status de interrupção:
 
 <p align="center">
 <strong> Tabela X: Organização dos dados do registrador de status de interrupção</strong>
+</p>
+
+<div id="opcode">
+<h3>Organização dos Opcodes</h3>
+
+Os opcodes são utilizados para identificar as operações que serão realizadas pelo módulo UART. A tabela a seguir apresenta os opcodes utilizados no projeto:
+
+<div align="center">
+
+|Opcode |Instrução           |Descrição|
+|-------|--------------------|---------|
+|0x0A   |WUBRT                |Escreve um byte no registrador de transmissão|
+|0x0B   |WUBRR                |Lê um byte do registrador de recepção|
+|0x0C   |WUCR                 |Escreve um byte no registrador de controle|
+|0x0D   |RUCR                 |Lê um byte do registrador de controle|
+|0x0E   |WUMIR                |Escreve um byte no registrador de máscara de interrupção|
+|0x0F   |RUMIR                |Lê um byte do registrador de máscara de interrupção|
+|0x10   |WUSIR                |Escreve um byte no registrador de status de interrupção|
+|0x11   |RUSIR                |Lê um byte do registrador de status de interrupção|
+
+</div>
+<p align="center">
+<strong> Tabela X: Organização dos opcodes</strong>
 </p>
 
 </div>
