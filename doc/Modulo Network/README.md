@@ -564,6 +564,12 @@ Os opcodes são utilizados para identificar as operações que serão realizadas
 
 O ROS 2 é uma plataforma de código aberto para o desenvolvimento de robótica. Ele fornece uma estrutura flexível e modular para a criação de aplicativos robóticos, permitindo a integração de diferentes componentes de hardware e software. O ROS 2 é baseado em uma arquitetura distribuída, que facilita a comunicação entre os diversos módulos de um sistema robótico, como sensores, atuadores e algoritmos de controle.
 
+<div id="comuROS">
+<h3>Conceitos</h3>
+
+
+</div>
+
 </div>
 </div>
 
