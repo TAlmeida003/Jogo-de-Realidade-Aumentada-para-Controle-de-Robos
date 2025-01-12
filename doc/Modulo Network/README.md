@@ -64,7 +64,9 @@ Este projeto tem como objetivo desenvolver um módulo de comunicação em rede e
           <li><a href="#arqUARTt"> Modulo UART </a></li>
           <li><a href="#comunPross"> Comunicação entre o processador e o ESP8266 12e </a></li>
           <li><a href="#reg"> Organização dos Registradores </a></li>
+          <li><a href="#opcode"> Organização dos Opcodes </a></li>
         </ul>
+      <li><a href="#ROS"> ROS 2</a></li>
       <li><a href="#referencias"> Referências </a></li>
   </ul>	
 </div>
@@ -552,6 +554,15 @@ Os opcodes são utilizados para identificar as operações que serão realizadas
 <p align="center">
 <strong> Tabela X: Organização dos opcodes</strong>
 </p>
+
+</div>
+</div>
+
+<div align="justify">
+<div id="ROS">
+<h2>ROS 2</h2>
+
+O ROS 2 é uma plataforma de código aberto para o desenvolvimento de robótica. Ele fornece uma estrutura flexível e modular para a criação de aplicativos robóticos, permitindo a integração de diferentes componentes de hardware e software. O ROS 2 é baseado em uma arquitetura distribuída, que facilita a comunicação entre os diversos módulos de um sistema robótico, como sensores, atuadores e algoritmos de controle.
 
 </div>
 </div>
