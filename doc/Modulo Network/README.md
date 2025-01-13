@@ -415,7 +415,7 @@ Segue a versão simplificada da comunicação entre o processador e o ESP8266 12
 <strong> Figura X: Versão simplificada da comunicação entre o processador e o ESP8266 12e</strong>
 
 <p align="center">
-  <img src="img/arqTO64.png" width = "600" />
+  <img src="img/arqTo64.png" width = "600" />
 </p>
 <p align="center">
 <strong> Figura X: Versão simplificada da comunicação entre o processador e o ESP8266 12e para 64 bits</strong>
