@@ -132,7 +132,7 @@ No método <strong>RTS/CTS</strong>, o transmissor ativa (nível lógico LOW) o 
 Para garantir que nada seja perdido por overflow, o sinal é assionado quando o buffer está 75% cheio. Isso permite que mesmo que o transmissor envie dados a maior que a taxa de recepção, o receptor ainda possa receber os dados sem perda de informações.
 
 <p align="center">
-  <img src="img/flowdiag.png" width = "500" />
+  <img src="img/flowdiag.png" width = "800" />
 </p>
 <p align="center">
 <strong> Figura X: Diagrama de controle de fluxo RTS/CTS</strong>
