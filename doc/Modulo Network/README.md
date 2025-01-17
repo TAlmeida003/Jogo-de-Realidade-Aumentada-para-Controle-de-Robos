@@ -146,7 +146,14 @@ Abaixo, são apresentados os diagramas temporais dos sinais RTS e CTS:
   <img src="img/DiagramaRTS.png" width = "500" />
 </p>
 <p align="center">
-<strong> Figura X: Diagrama de temporal dos sinais RTS</strong>
+  <strong> Figura X: Diagrama de temporal dos sinais RTS</strong>
+</p>
+
+<p align="center">
+  <img src="img/rtsDiag.png" width = "500" />
+</p>
+  <p align="center">
+  <strong> Figura X: Diagrama rts automatico</strong>
 </p>
 
 </div>
@@ -421,6 +428,7 @@ Segue a versão simplificada da comunicação entre o processador e o ESP8266 12
 <strong> Figura X: Versão simplificada da comunicação entre o processador e o ESP8266 12e para 64 bits</strong>
 </div>
 
+Para facilitar a visualização, segue um diagrama de sequência que ilustra a comunicação entre o processador e o ESP8266 12e com os comandos AT para realizar a conexão Wi-Fi e a comunicação TCP/IP:
 
 <div id="reg">
 <h3>Organização dos Registradores</h3>
@@ -542,7 +550,7 @@ Os opcodes são utilizados para identificar as operações que serão realizadas
 |Opcode |Instrução           |Descrição|
 |-------|--------------------|---------|
 |0x0A   |WUBRT                |Escreve um byte no registrador de transmissão|
-|0x0B   |WUBRR                |Lê um byte do registrador de recepção|
+|0x0B   |RUBRR                |Lê um byte do registrador de recepção|
 |0x0C   |WUCR                 |Escreve um byte no registrador de controle|
 |0x0D   |RUCR                 |Lê um byte do registrador de controle|
 |0x0E   |WUMIR                |Escreve um byte no registrador de máscara de interrupção|
@@ -556,6 +564,31 @@ Os opcodes são utilizados para identificar as operações que serão realizadas
 </p>
 
 </div>
+
+<div id="irqSW">
+<h3>Lógica de Envio de dados</h3>
+
+<p align="center">
+  <img src="img/fluxoMain.png" width = "1000" />
+</p>
+<p align="center">
+<strong> Figura X: Fluxograma de envio de dados</strong>
+</p>
+
+</div>
+</div>
+
+
+<p align="center">
+  <img src="img/fluxoIRQ.png" width = "1000" />
+</p>
+<p align="center">
+<strong> Figura X: Fluxograma de interrupção</strong>
+</p>
+
+</div>
+
+</div>
 </div>
 
 <div align="justify">
@@ -566,6 +599,14 @@ O ROS 2 é uma plataforma de código aberto para o desenvolvimento de robótica.
 
 <div id="comuROS">
 <h3>Conceitos</h3>
+
+**Nodes**: São processos que executam tarefas específicas, como aquisição de dados de sensores, processamento de imagens ou controle de motores. Os nós se comunicam entre si por meio de mensagens, que são pacotes de dados estruturados que contêm informações relevantes para a execução das tarefas.
+
+**Topics**: São canais de comunicação unidirecional que permitem a troca de mensagens entre os nós. Cada tópico possui um nome único e um tipo de mensagem associado, que define a estrutura dos dados transmitidos.
+
+**Messages**: São os diferentes tipos de informações que podem ser passadas pelos tópicos. Cada mensagem é definida por um tipo de dado específico, como inteiros, floats, strings ou estruturas mais complexas.
+
+**Services**: São canais de comunicação bidirecional que permitem a execução de operações específicas em um nó remoto. Os serviços são compostos por duas partes: uma requisição, que contém os dados necessários para a operação, e uma resposta, que contém o resultado da operação.
 
 
 </div>
