@@ -618,6 +618,20 @@ O ROS 2 é uma plataforma de código aberto para o desenvolvimento de robótica.
 
 </div>
 
+<div id="comuFPGA">
+<h3>Comunicação FPGA - ROS 2</h3>
+
+Formato da mensagem com 17 bytes:
+
+```json
+{
+  "a": 0.5,
+  "l": 1.0
+}
+```
+
+</div>
+
 </div>
 </div>
 
