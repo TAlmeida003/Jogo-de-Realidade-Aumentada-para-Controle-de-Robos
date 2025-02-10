@@ -4,7 +4,7 @@
  * Machine generated for CPU 'nios2_gen2_0' in SOPC Builder design 'Arquitetura'
  * SOPC Builder design path: C:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/Arquitetura.sopcinfo
  *
- * Generated: Sat Oct 19 15:02:13 BRT 2024
+ * Generated: Wed Oct 30 13:28:07 BRT 2024
  */
 
 /*

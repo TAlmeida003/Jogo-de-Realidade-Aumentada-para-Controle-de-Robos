@@ -1,11 +1,11 @@
 //dcfifo CBX_SINGLE_OUTPUT_FILE="ON" CLOCKS_ARE_SYNCHRONIZED="FALSE" INTENDED_DEVICE_FAMILY=""Cyclone IV E"" LPM_NUMWORDS=16 LPM_SHOWAHEAD="OFF" LPM_TYPE="dcfifo" LPM_WIDTH=32 LPM_WIDTHU=4 OVERFLOW_CHECKING="ON" RDSYNC_DELAYPIPE=4 UNDERFLOW_CHECKING="ON" USE_EAB="OFF" WRSYNC_DELAYPIPE=4 data q rdclk rdempty rdreq wrclk wrfull wrreq
-//VERSION_BEGIN 20.1 cbx_mgl 2020:06:05:13:25:21:SJ cbx_stratixii 2020:06:05:12:04:24:SJ cbx_util_mgl 2020:06:05:12:04:24:SJ  VERSION_END
+//VERSION_BEGIN 23.1 cbx_mgl 2024:05:14:17:57:46:SC cbx_stratixii 2024:05:14:17:57:38:SC cbx_util_mgl 2024:05:14:17:57:38:SC  VERSION_END
 // synthesis VERILOG_INPUT_VERSION VERILOG_2001
 // altera message_off 10463
 
 
 
-// Copyright (C) 2020  Intel Corporation. All rights reserved.
+// Copyright (C) 2024  Intel Corporation. All rights reserved.
 //  Your use of Intel Corporation's design tools, logic functions 
 //  and other software and tools, and any partner logic 
 //  functions, and any output files from any of the foregoing 

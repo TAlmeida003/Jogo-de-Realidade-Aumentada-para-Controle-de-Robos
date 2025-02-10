@@ -1,0 +1,229 @@
+/* 
+ * "Small Hello World" example. 
+ * 
+ * This example prints 'Hello from Nios II' to the STDOUT stream. It runs on
+ * the Nios II 'standard', 'full_featured', 'fast', and 'low_cost' example 
+ * designs. It requires a STDOUT  device in your system's hardware. 
+ *
+ * The purpose of this example is to demonstrate the smallest possible Hello 
+ * World application, using the Nios II HAL library.  The memory footprint
+ * of this hosted application is ~332 bytes by default using the standard 
+ * reference design.  For a more fully featured Hello World application
+ * example, see the example titled "Hello World".
+ *
+ * The memory footprint of this example has been reduced by making the
+ * following changes to the normal "Hello World" example.
+ * Check in the Nios II Software Developers Manual for a more complete 
+ * description.
+ * 
+ * In the SW Application project (small_hello_world):
+ *
+ *  - In the C/C++ Build page
+ * 
+ *    - Set the Optimization Level to -Os
+ * 
+ * In System Library project (small_hello_world_syslib):
+ *  - In the C/C++ Build page
+ * 
+ *    - Set the Optimization Level to -Os
+ * 
+ *    - Define the preprocessor option ALT_NO_INSTRUCTION_EMULATION 
+ *      This removes software exception handling, which means that you cannot 
+ *      run code compiled for Nios II cpu with a hardware multiplier on a core 
+ *      without a the multiply unit. Check the Nios II Software Developers 
+ *      Manual for more details.
+ *
+ *  - In the System Library page:
+ *    - Set Periodic system timer and Timestamp timer to none
+ *      This prevents the automatic inclusion of the timer driver.
+ *
+ *    - Set Max file descriptors to 4
+ *      This reduces the size of the file handle pool.
+ *
+ *    - Check Main function does not exit
+ *    - Uncheck Clean exit (flush buffers)
+ *      This removes the unneeded call to exit when main returns, since it
+ *      won't.
+ *
+ *    - Check Don't use C++
+ *      This builds without the C++ support code.
+ *
+ *    - Check Small C library
+ *      This uses a reduced functionality C library, which lacks  
+ *      support for buffering, file IO, floating point and getch(), etc. 
+ *      Check the Nios II Software Developers Manual for a complete list.
+ *
+ *    - Check Reduced device drivers
+ *      This uses reduced functionality drivers if they're available. For the
+ *      standard design this means you get polled UART and JTAG UART drivers,
+ *      no support for the LCD driver and you lose the ability to program 
+ *      CFI compliant flash devices.
+ *
+ *    - Check Access device drivers directly
+ *      This bypasses the device file system to access device drivers directly.
+ *      This eliminates the space required for the device file system services.
+ *      It also provides a HAL version of libc services that access the drivers
+ *      directly, further reducing space. Only a limited number of libc
+ *      functions are available in this configuration.
+ *
+ *    - Use ALT versions of stdio routines:
+ *
+ *           Function                  Description
+ *        ===============  =====================================
+ *        alt_printf       Only supports %s, %x, and %c ( < 1 Kbyte)
+ *        alt_putstr       Smaller overhead than puts with direct drivers
+ *                         Note this function doesn't add a newline.
+ *        alt_putchar      Smaller overhead than putchar with direct drivers
+ *        alt_getchar      Smaller overhead than getchar with direct drivers
+ *
+ */
+
+#include "sys/alt_stdio.h"
+#include "lib_graphic_processor/graphic_processor.h"
+#include "lib_JOYSTICK/joystick_io.h"
+#include "system.h"
+#include "altera_avalon_pio_regs.h"
+#include "stdio.h"
+#include "time.h"
+
+#define YMAX 98
+
+
+void clear (){
+	for (int i = 0; i < 60; i++) {
+		for (int j = 0; j < 80; j++) {
+			while (!set_background_block(j , i, 0, 0, 0)){
+			}
+	   }
+	}
+}
+
+void baseBeckgraud(){
+
+	for (int i = 5; i < 55; i++) {
+		for (int j = 20; j < 70; j++) {
+			while (!set_background_block(j , i, 1, 1, 1)){
+			}
+		}
+	}
+}
+
+void setbase(int *intrucoes1, int *intrucoes2, int *intrucoes3){
+	for (int j = 0; j < 55; j++){
+		intrucoes1[j] = 0x010101;
+		intrucoes2[j] = 0x010101;
+		intrucoes3[j] = 0x010101;
+	}
+}
+
+void printLaterais(int *instrucoesLeft, int *instrucoesRight, int *instrucoesUp){
+	for (int i = 0; i < 2; i++){
+		for (int j = 0; j < 50; j++){
+			while (!set_background_block(i + 20 , j+5,
+					instrucoesLeft[j] & 0xFF, instrucoesLeft[j] >> 8 & 0xFF,  instrucoesLeft[j] >> 16 & 0xFF)){}
+			while (!set_background_block(i + 70 , j+5,
+					instrucoesRight[j] & 0xFF, instrucoesRight[j] >> 8 & 0xFF,  instrucoesRight[j] >> 16 & 0xFF)){}
+			while (!set_background_block(20 + j , i+5,
+					instrucoesUp[j] & 0xFF, instrucoesUp[j] >> 8 & 0xFF,  instrucoesUp[j] >> 16 & 0xFF)){}
+		}
+	}
+}
+
+
+void scroolLombadaVerticalLeft(int *instrucoesLeft, int  x, int y){
+	if ((y <= 97 && x > 26) || x < - 50){
+		for (int i = 0; i < 50; i += 2) {
+			if ((!(y > 50 && i < y - 50 && x > -50) && y + 50 + 49 > i) || x < - 50){
+				if ((i % 4 == 0 && y % 4 == 0) || (i % 4 != 0 && y % 4 != 0)){
+					instrucoesLeft[i] = 3;
+					instrucoesLeft[i+1] = 3;
+				} else {
+					instrucoesLeft[i] = 0x070707;
+				    instrucoesLeft[i + 1] = 0x070707;
+				}
+			}
+		}
+	}
+}
+
+
+void scroolLombadaVerticalRight(int *instrucoesRight, int  x, int y){
+	 for (int i = 0; i < 50; i += 2) {
+	        if ((i % 4 == 0 && y % 4 == 0) || (i % 4 != 0 && y % 4 != 0)){  // Alteração para que dois elementos seguidos recebam o mesmo valor
+	        	instrucoesRight[i] = 3;
+	        	instrucoesRight[i+1] = 3;
+	        } else {
+	        	instrucoesRight[i] = 0x070707;
+	        	instrucoesRight[i + 1] = 0x070707;
+	        }
+	    }
+}
+
+void scroolLombadaHorizontalUp(int *screen, int xcar, int ycar) {
+    if (ycar >= 97 || ycar < -100) {
+        for (int i = 0; i < 50; i += 2) {
+        	if (ycar >= 97) {
+        		if ((i % 4 == 0 && xcar % 4 == 0) || (i % 4 != 0 && xcar % 4 != 0)){
+        			screen[i] = 3;
+        			screen[i+1] = 3;
+        		} else {
+        			screen[i] = 0x070707;
+        			screen[i + 1] = 0x070707;
+        		}
+        	}
+
+        }
+    }
+}
+
+/*
+ * def scroolLombadaHorizontalUp(screen, xcar, ycar):
+    if y >= maxY or y < -10:
+        for i in range(tam):
+            if ((i % 2 == 0 and xcar % 2 == 0) or (i % 2 == 1 and xcar % 2 == 1)) and
+            (((i < -x + 3 ) and not (x < -6 and i < -x - 6)) or ycar >= maxY):
+                screen[0][i] = 1
+            elif ((i < -x + 3 ) and not (x < -6 and i < -x - 6)) or ycar >= maxY:
+                screen[0][i] = 2
+ *
+ */
+int main()
+{
+	initialize_joystick();
+	clear();
+	baseBeckgraud();
+
+	int instrucoesLeft[50] = {};
+	int instrucoesRight[50] = {};
+	int instrucoesUp[50] = {};
+
+	int y = 0;
+	int x = 27;
+
+
+
+	while (1){
+		setbase(instrucoesLeft, instrucoesRight, instrucoesUp);
+
+		scroolLombadaVerticalLeft(instrucoesLeft,x, y);
+		scroolLombadaVerticalRight(instrucoesRight,x, y);
+		scroolLombadaHorizontalUp(instrucoesUp, x, y);
+
+		printLaterais(instrucoesLeft, instrucoesRight, instrucoesUp);
+
+		if (read_KEY(B_BUTTON, POS_EDGE) &&  y < 97){
+			y ++;
+		} else if (read_JOYSTICK(DOWN_DIR, POS_EDGE)&& y > -97){
+			y--;
+		}
+
+		if (read_JOYSTICK(RIGHT_DIR, POS_EDGE)){
+			x ++;
+		} else if (read_JOYSTICK(LEFT_DIR, POS_EDGE)){
+			x--;
+		}
+
+		usleep(10*1000);
+	}
+    return 0;
+}

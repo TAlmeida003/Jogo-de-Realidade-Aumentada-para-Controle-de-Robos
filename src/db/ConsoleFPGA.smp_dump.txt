@@ -1,4 +1,19 @@
 
+State Machine - |ArquiteturaCollenda|Arquitetura:b2v_inst9|uart_interface:uart_interface_0|uart_unit:uart_unit_inst|uart_tx:uart_tx_inst|state
+Name state.STOP state.DATA state.START state.IDLE 
+state.IDLE 0 0 0 0 
+state.START 0 0 1 1 
+state.DATA 0 1 0 1 
+state.STOP 1 0 0 1 
+
+State Machine - |ArquiteturaCollenda|Arquitetura:b2v_inst9|uart_interface:uart_interface_0|uart_unit:uart_unit_inst|uart_rx:uart_rx_inst|state
+Name state.STOP state.DATA state.START state.IDLE state.ERROR 
+state.IDLE 0 0 0 0 0 
+state.START 0 0 1 1 0 
+state.DATA 0 1 0 1 0 
+state.STOP 1 0 0 1 0 
+state.ERROR 0 0 0 1 1 
+
 State Machine - |ArquiteturaCollenda|video_processor:b2v_inst5|geometric_Forms_Processor:geometric_Forms_Processor_inst|controls_pipeline:controls_pipeline_inst|state
 Name state.STEP_PROCESSING state.STEP_RESET state.REFRESH_INST_MEMORY state.PROCESSING state.READ_MEMORY state.UPLOAD_DATA state.WAIT state.RESET 
 state.RESET 0 0 0 0 0 0 0 0 

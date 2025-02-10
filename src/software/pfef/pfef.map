@@ -1,0 +1,777 @@
+Archive member included to satisfy reference by file (symbol)
+
+c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-memcpy.o)
+                              obj/default/hello_world_small.o (memcpy)
+c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-strlen.o)
+                              obj/default/hello_world_small.o (strlen)
+c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-strncpy.o)
+                              obj/default/hello_world_small.o (strncpy)
+c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-strstr.o)
+                              obj/default/hello_world_small.o (strstr)
+c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_iic.o)
+                              obj/default/hello_world_small.o (alt_ic_isr_register)
+c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+                              c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_iic.o) (alt_iic_isr_register)
+c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_irq_entry.o)
+                              c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_iic_isr_register.o) (alt_irq_entry)
+c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_irq_handler.o)
+                              c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_iic_isr_register.o) (alt_irq_handler)
+c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_irq_vars.o)
+                              c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_iic.o) (alt_irq_active)
+c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_load.o)
+                              c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp//obj/HAL/src/crt0.o (alt_load)
+c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_main.o)
+                              c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp//obj/HAL/src/crt0.o (alt_main)
+c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_putstr.o)
+                              obj/default/hello_world_small.o (alt_putstr)
+c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_sys_init.o)
+                              c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_main.o) (alt_irq_init)
+c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+                              c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_putstr.o) (altera_avalon_jtag_uart_write)
+c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+                              c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_load.o) (alt_dcache_flush_all)
+c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_exception_entry.o)
+                              c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_irq_entry.o) (alt_exception)
+c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+                              c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_load.o) (alt_icache_flush_all)
+c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
+                              c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_exception_entry.o) (alt_instruction_exception_entry)
+c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+                              c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_sys_init.o) (altera_nios2_gen2_irq_init)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+reset            0x00008000         0x00000020
+onchip_memory2_0 0x00008020         0x00007510
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp//obj/HAL/src/crt0.o
+LOAD obj/default/hello_world_small.o
+LOAD obj/default/lib_JOYSTICK/joystick_io.o
+LOAD c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libstdc++.a
+LOAD c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libm.a
+LOAD c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/mno-hw-mul\libgcc.a
+START GROUP
+LOAD c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a
+LOAD c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/mno-hw-mul\libgcc.a
+LOAD c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a
+LOAD c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libm.a
+END GROUP
+LOAD c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/mno-hw-mul\libgcc.a
+                0x00008000                        __alt_mem_onchip_memory2_0 = 0x8000
+
+.entry          0x00008000       0x20
+ *(.entry)
+ .entry         0x00008000       0x20 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp//obj/HAL/src/crt0.o
+                0x00008000                __reset
+                0x0000800c                _exit
+
+.exceptions     0x00008020      0x160
+                0x00008020                        PROVIDE (__ram_exceptions_start = ABSOLUTE (.))
+                0x00008020                        . = ALIGN (0x20)
+ *(.irq)
+ *(.exceptions.entry.label)
+ .exceptions.entry.label
+                0x00008020        0x0 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_irq_entry.o)
+                0x00008020                alt_irq_entry
+ .exceptions.entry.label
+                0x00008020        0x0 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_exception_entry.o)
+                0x00008020                alt_exception
+ *(.exceptions.entry.user)
+ *(.exceptions.entry.ecc_fatal)
+ *(.exceptions.entry)
+ .exceptions.entry
+                0x00008020       0x54 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ *(.exceptions.irqtest.user)
+ *(.exceptions.irqtest)
+ .exceptions.irqtest
+                0x00008074       0x10 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ *(.exceptions.irqhandler.user)
+ *(.exceptions.irqhandler)
+ .exceptions.irqhandler
+                0x00008084        0x4 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ *(.exceptions.irqreturn.user)
+ *(.exceptions.irqreturn)
+ .exceptions.irqreturn
+                0x00008088        0x4 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ *(.exceptions.notirq.label)
+ .exceptions.notirq.label
+                0x0000808c        0x0 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ *(.exceptions.notirq.user)
+ *(.exceptions.notirq)
+ .exceptions.notirq
+                0x0000808c        0x8 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ *(.exceptions.soft.user)
+ *(.exceptions.soft)
+ *(.exceptions.unknown.user)
+ *(.exceptions.unknown)
+ .exceptions.unknown
+                0x00008094       0x14 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ *(.exceptions.exit.label)
+ .exceptions.exit.label
+                0x000080a8        0x0 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .exceptions.exit.label
+                0x000080a8        0x0 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ *(.exceptions.exit.user)
+ *(.exceptions.exit)
+ .exceptions.exit
+                0x000080a8       0x54 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ *(.exceptions)
+ .exceptions    0x000080fc       0x60 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_irq_handler.o)
+                0x000080fc                alt_irq_handler
+ .exceptions    0x0000815c       0x24 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
+                0x0000815c                alt_instruction_exception_entry
+                0x00008180                        PROVIDE (__ram_exceptions_end = ABSOLUTE (.))
+                0x00008020                        PROVIDE (__flash_exceptions_start = LOADADDR (.exceptions))
+
+.text           0x00008180      0xa88
+                [!provide]                        PROVIDE (stext = ABSOLUTE (.))
+ *(.interp)
+ *(.hash)
+ *(.dynsym)
+ *(.dynstr)
+ *(.gnu.version)
+ *(.gnu.version_d)
+ *(.gnu.version_r)
+ *(.rel.init)
+ *(.rela.init)
+ *(.rel.text .rel.text.* .rel.gnu.linkonce.t.*)
+ *(.rela.text .rela.text.* .rela.gnu.linkonce.t.*)
+ *(.rel.fini)
+ *(.rela.fini)
+ *(.rel.rodata .rel.rodata.* .rel.gnu.linkonce.r.*)
+ *(.rela.rodata .rela.rodata.* .rela.gnu.linkonce.r.*)
+ *(.rel.data .rel.data.* .rel.gnu.linkonce.d.*)
+ *(.rela.data .rela.data.* .rela.gnu.linkonce.d.*)
+ *(.rel.tdata .rel.tdata.* .rel.gnu.linkonce.td.*)
+ *(.rela.tdata .rela.tdata.* .rela.gnu.linkonce.td.*)
+ *(.rel.tbss .rel.tbss.* .rel.gnu.linkonce.tb.*)
+ *(.rela.tbss .rela.tbss.* .rela.gnu.linkonce.tb.*)
+ *(.rel.ctors)
+ *(.rela.ctors)
+ *(.rel.dtors)
+ *(.rela.dtors)
+ *(.rel.got)
+ *(.rela.got)
+ *(.rel.sdata .rel.sdata.* .rel.gnu.linkonce.s.*)
+ *(.rela.sdata .rela.sdata.* .rela.gnu.linkonce.s.*)
+ *(.rel.sbss .rel.sbss.* .rel.gnu.linkonce.sb.*)
+ *(.rela.sbss .rela.sbss.* .rela.gnu.linkonce.sb.*)
+ *(.rel.sdata2 .rel.sdata2.* .rel.gnu.linkonce.s2.*)
+ *(.rela.sdata2 .rela.sdata2.* .rela.gnu.linkonce.s2.*)
+ *(.rel.sbss2 .rel.sbss2.* .rel.gnu.linkonce.sb2.*)
+ *(.rela.sbss2 .rela.sbss2.* .rela.gnu.linkonce.sb2.*)
+ *(.rel.bss .rel.bss.* .rel.gnu.linkonce.b.*)
+ *(.rela.bss .rela.bss.* .rela.gnu.linkonce.b.*)
+ *(.rel.plt)
+ *(.rela.plt)
+ *(.rel.dyn)
+ *(.init)
+ *(.plt)
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ .text          0x00008180       0x3c c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp//obj/HAL/src/crt0.o
+                0x00008180                _start
+ .text          0x000081bc      0x250 obj/default/hello_world_small.o
+                0x00008280                joiIrq
+                0x000082c8                sendReceive
+                0x000083f0                executeCommand
+ .text.startup  0x0000840c      0x1f8 obj/default/hello_world_small.o
+                0x0000840c                main
+ .text          0x00008604      0x2c4 obj/default/lib_JOYSTICK/joystick_io.o
+                0x000086d8                read_KEY
+                0x00008718                read_JOYSTICK
+                0x0000875c                initialize_joystick
+                0x000087e0                close_joystick
+                0x00008800                peripheral_enable_callback
+                0x00008864                peripheral_disable_callback
+                0x000088c0                set_callback
+ .text          0x000088c8        0x0 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-memcpy.o)
+ .text.memcpy   0x000088c8       0x28 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-memcpy.o)
+                0x000088c8                memcpy
+ .text          0x000088f0        0x0 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-strlen.o)
+ .text.strlen   0x000088f0       0x1c c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-strlen.o)
+                0x000088f0                strlen
+ .text          0x0000890c        0x0 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-strncpy.o)
+ .text.strncpy  0x0000890c       0x48 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-strncpy.o)
+                0x0000890c                strncpy
+ .text          0x00008954        0x0 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-strstr.o)
+ .text.strstr   0x00008954       0x50 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-strstr.o)
+                0x00008954                strstr
+ .text          0x000089a4       0x8c c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_iic.o)
+                0x000089a4                alt_ic_isr_register
+                0x000089a8                alt_ic_irq_enable
+                0x000089e0                alt_ic_irq_disable
+                0x00008a18                alt_ic_irq_enabled
+ .text          0x00008a30       0x68 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+                0x00008a30                alt_iic_isr_register
+ .text          0x00008a98        0x0 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .text          0x00008a98        0x0 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .text          0x00008a98        0x0 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .text          0x00008a98       0x84 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_load.o)
+                0x00008a98                alt_load
+ .text          0x00008b1c       0x2c c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_main.o)
+                0x00008b1c                alt_main
+ .text          0x00008b48       0x38 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_putstr.o)
+                0x00008b48                alt_putstr
+ .text          0x00008b80       0x24 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_sys_init.o)
+                0x00008b80                alt_irq_init
+                0x00008ba0                alt_sys_init
+ .text          0x00008ba4       0x30 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+                0x00008ba4                altera_avalon_jtag_uart_write
+ .text          0x00008bd4        0x4 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+                0x00008bd4                alt_dcache_flush_all
+ .text          0x00008bd8        0x0 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .text          0x00008bd8        0x4 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+                0x00008bd8                alt_icache_flush_all
+ .text          0x00008bdc       0x24 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
+                0x00008bdc                alt_exception_cause_generated_bad_addr
+ .text          0x00008c00        0x8 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+                0x00008c00                altera_nios2_gen2_irq_init
+ *(.gnu.warning.*)
+ *(.fini)
+                [!provide]                        PROVIDE (__etext = ABSOLUTE (.))
+                [!provide]                        PROVIDE (_etext = ABSOLUTE (.))
+                [!provide]                        PROVIDE (etext = ABSOLUTE (.))
+ *(.eh_frame_hdr)
+                0x00008c08                        . = ALIGN (0x4)
+                [!provide]                        PROVIDE (__preinit_array_start = ABSOLUTE (.))
+ *(.preinit_array)
+                [!provide]                        PROVIDE (__preinit_array_end = ABSOLUTE (.))
+                [!provide]                        PROVIDE (__init_array_start = ABSOLUTE (.))
+ *(SORT_BY_INIT_PRIORITY(.init_array.*))
+ *(.init_array)
+                [!provide]                        PROVIDE (__init_array_end = ABSOLUTE (.))
+                [!provide]                        PROVIDE (__fini_array_start = ABSOLUTE (.))
+ *(.fini_array)
+                [!provide]                        PROVIDE (__fini_array_end = ABSOLUTE (.))
+ *(.eh_frame)
+ *(.gcc_except_table .gcc_except_table.*)
+ *(.dynamic)
+                [!provide]                        PROVIDE (__CTOR_LIST__ = ABSOLUTE (.))
+ *(.ctors)
+ *(SORT_BY_NAME(.ctors.*))
+                [!provide]                        PROVIDE (__CTOR_END__ = ABSOLUTE (.))
+                [!provide]                        PROVIDE (__DTOR_LIST__ = ABSOLUTE (.))
+ *(.dtors)
+ *(SORT_BY_NAME(.dtors.*))
+                [!provide]                        PROVIDE (__DTOR_END__ = ABSOLUTE (.))
+ *(.jcr)
+                0x00008c08                        . = ALIGN (0x4)
+
+.rodata         0x00008c08       0xdc
+                0x00008c08                        PROVIDE (__ram_rodata_start = ABSOLUTE (.))
+                0x00008c08                        . = ALIGN (0x4)
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata.str1.4
+                0x00008c08       0xda obj/default/hello_world_small.o
+ *(.rodata1)
+                0x00008ce4                        . = ALIGN (0x4)
+ *fill*         0x00008ce2        0x2 
+                0x00008ce4                        PROVIDE (__ram_rodata_end = ABSOLUTE (.))
+                0x00008c08                        PROVIDE (__flash_rodata_start = LOADADDR (.rodata))
+
+.rwdata         0x00008ce4        0xc load address 0x00008cf0
+                0x00008ce4                        PROVIDE (__ram_rwdata_start = ABSOLUTE (.))
+                0x00008ce4                        . = ALIGN (0x4)
+ *(.got.plt)
+ *(.got)
+ *(.data1)
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data          0x00008ce4        0x0 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp//obj/HAL/src/crt0.o
+ .data          0x00008ce4        0x0 obj/default/hello_world_small.o
+ .data          0x00008ce4        0x0 obj/default/lib_JOYSTICK/joystick_io.o
+ .data          0x00008ce4        0x0 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-memcpy.o)
+ .data          0x00008ce4        0x0 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-strlen.o)
+ .data          0x00008ce4        0x0 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-strncpy.o)
+ .data          0x00008ce4        0x0 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-strstr.o)
+ .data          0x00008ce4        0x0 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_iic.o)
+ .data          0x00008ce4        0x0 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+ .data          0x00008ce4        0x0 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .data          0x00008ce4        0x0 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .data          0x00008ce4        0x0 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .data          0x00008ce4        0x0 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_load.o)
+ .data          0x00008ce4        0x0 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_main.o)
+ .data          0x00008ce4        0x0 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_putstr.o)
+ .data          0x00008ce4        0x0 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .data          0x00008ce4        0x0 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .data          0x00008ce4        0x0 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .data          0x00008ce4        0x0 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .data          0x00008ce4        0x0 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .data          0x00008ce4        0x0 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
+ .data          0x00008ce4        0x0 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+                0x00010ce4                        _gp = ABSOLUTE ((. + 0x8000))
+                [!provide]                        PROVIDE (gp = _gp)
+ *(.rwdata .rwdata.*)
+ *(.sdata .sdata.* .gnu.linkonce.s.*)
+ .sdata         0x00008ce4        0x4 obj/default/hello_world_small.o
+                0x00008ce4                uart_ptr
+ .sdata         0x00008ce8        0x4 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_irq_vars.o)
+                0x00008ce8                alt_priority_mask
+ .sdata         0x00008cec        0x4 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_sys_init.o)
+                0x00008cec                jtag_uart_0
+ *(.sdata2 .sdata2.* .gnu.linkonce.s2.*)
+                0x00008cf0                        . = ALIGN (0x4)
+                0x00008cf0                        _edata = ABSOLUTE (.)
+                [!provide]                        PROVIDE (edata = ABSOLUTE (.))
+                0x00008cf0                        PROVIDE (__ram_rwdata_end = ABSOLUTE (.))
+                0x00008cf0                        PROVIDE (__flash_rwdata_start = LOADADDR (.rwdata))
+
+.bss            0x00008cfc      0x1f8
+                0x00008cfc                        __bss_start = ABSOLUTE (.)
+                [!provide]                        PROVIDE (__sbss_start = ABSOLUTE (.))
+                [!provide]                        PROVIDE (___sbss_start = ABSOLUTE (.))
+ *(.dynsbss)
+ *(.sbss .sbss.* .gnu.linkonce.sb.*)
+ .sbss          0x00008cfc       0x18 obj/default/hello_world_small.o
+                0x00008cfc                JoyState
+                0x00008d00                receive_byte
+                0x00008d04                send_command
+                0x00008d08                rxIndex
+                0x00008d0c                txIndex
+                0x00008d10                txlength
+ .sbss          0x00008d14        0x4 obj/default/lib_JOYSTICK/joystick_io.o
+ .sbss          0x00008d18        0x4 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_irq_vars.o)
+                0x00008d18                alt_irq_active
+ .sbss          0x00008d1c        0xc c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_main.o)
+                0x00008d1c                alt_envp
+                0x00008d20                alt_argv
+                0x00008d24                alt_argc
+ .sbss          0x00008d28        0x4 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
+                0x00008d28                alt_instruction_exception_handler
+ *(.sbss2 .sbss2.* .gnu.linkonce.sb2.*)
+ *(.scommon)
+                [!provide]                        PROVIDE (__sbss_end = ABSOLUTE (.))
+                [!provide]                        PROVIDE (___sbss_end = ABSOLUTE (.))
+ *(.dynbss)
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss           0x00008d2c        0x0 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp//obj/HAL/src/crt0.o
+ .bss           0x00008d2c       0xc8 obj/default/hello_world_small.o
+                0x00008d2c                rxBuffer
+                0x00008d90                txBuffer
+ .bss           0x00008df4        0x0 obj/default/lib_JOYSTICK/joystick_io.o
+ .bss           0x00008df4        0x0 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-memcpy.o)
+ .bss           0x00008df4        0x0 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-strlen.o)
+ .bss           0x00008df4        0x0 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-strncpy.o)
+ .bss           0x00008df4        0x0 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-strstr.o)
+ .bss           0x00008df4        0x0 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_iic.o)
+ .bss           0x00008df4        0x0 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+ .bss           0x00008df4        0x0 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .bss           0x00008df4      0x100 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_irq_handler.o)
+                0x00008df4                alt_irq
+ .bss           0x00008ef4        0x0 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .bss           0x00008ef4        0x0 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_load.o)
+ .bss           0x00008ef4        0x0 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_main.o)
+ .bss           0x00008ef4        0x0 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_putstr.o)
+ .bss           0x00008ef4        0x0 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .bss           0x00008ef4        0x0 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .bss           0x00008ef4        0x0 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .bss           0x00008ef4        0x0 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .bss           0x00008ef4        0x0 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .bss           0x00008ef4        0x0 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
+ .bss           0x00008ef4        0x0 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+ *(COMMON)
+                0x00008ef4                        . = ALIGN (0x4)
+                0x00008ef4                        __bss_end = ABSOLUTE (.)
+
+.onchip_memory2_0
+                0x00008ef4        0x0
+                [!provide]                        PROVIDE (_alt_partition_onchip_memory2_0_start = ABSOLUTE (.))
+ *(.onchip_memory2_0 .onchip_memory2_0. onchip_memory2_0.*)
+                0x00008ef4                        . = ALIGN (0x4)
+                [!provide]                        PROVIDE (_alt_partition_onchip_memory2_0_end = ABSOLUTE (.))
+                0x00008ef4                        _end = ABSOLUTE (.)
+                0x00008ef4                        end = ABSOLUTE (.)
+                0x00008ef4                        __alt_stack_base = ABSOLUTE (.)
+                [!provide]                        PROVIDE (_alt_partition_onchip_memory2_0_load_addr = LOADADDR (.onchip_memory2_0))
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x00000000       0x2d
+ *(.comment)
+ .comment       0x00000000       0x2d obj/default/hello_world_small.o
+                                 0x2e (size before relaxing)
+ .comment       0x0000002d       0x2e obj/default/lib_JOYSTICK/joystick_io.o
+ .comment       0x0000002d       0x2e c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-memcpy.o)
+ .comment       0x0000002d       0x2e c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-strlen.o)
+ .comment       0x0000002d       0x2e c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-strncpy.o)
+ .comment       0x0000002d       0x2e c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-strstr.o)
+ .comment       0x0000002d       0x2e c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_iic.o)
+ .comment       0x0000002d       0x2e c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+ .comment       0x0000002d       0x2e c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .comment       0x0000002d       0x2e c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .comment       0x0000002d       0x2e c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_load.o)
+ .comment       0x0000002d       0x2e c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_main.o)
+ .comment       0x0000002d       0x2e c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_putstr.o)
+ .comment       0x0000002d       0x2e c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .comment       0x0000002d       0x2e c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .comment       0x0000002d       0x2e c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .comment       0x0000002d       0x2e c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .comment       0x0000002d       0x2e c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
+ .comment       0x0000002d       0x2e c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000      0x2f0
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x28 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp//obj/HAL/src/crt0.o
+ .debug_aranges
+                0x00000028       0x28 obj/default/hello_world_small.o
+ .debug_aranges
+                0x00000050       0x20 obj/default/lib_JOYSTICK/joystick_io.o
+ .debug_aranges
+                0x00000070       0x20 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-memcpy.o)
+ .debug_aranges
+                0x00000090       0x20 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-strlen.o)
+ .debug_aranges
+                0x000000b0       0x20 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-strncpy.o)
+ .debug_aranges
+                0x000000d0       0x20 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-strstr.o)
+ .debug_aranges
+                0x000000f0       0x20 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_iic.o)
+ .debug_aranges
+                0x00000110       0x20 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+ .debug_aranges
+                0x00000130       0x30 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .debug_aranges
+                0x00000160       0x20 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .debug_aranges
+                0x00000180       0x18 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .debug_aranges
+                0x00000198       0x20 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_aranges
+                0x000001b8       0x20 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_aranges
+                0x000001d8       0x20 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_putstr.o)
+ .debug_aranges
+                0x000001f8       0x20 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_aranges
+                0x00000218       0x20 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_aranges
+                0x00000238       0x20 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_aranges
+                0x00000258       0x30 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .debug_aranges
+                0x00000288       0x20 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_aranges
+                0x000002a8       0x28 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
+ .debug_aranges
+                0x000002d0       0x20 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x00000000     0x2612
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x00000000       0x3f c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp//obj/HAL/src/crt0.o
+ .debug_info    0x0000003f      0x6fd obj/default/hello_world_small.o
+ .debug_info    0x0000073c      0x735 obj/default/lib_JOYSTICK/joystick_io.o
+ .debug_info    0x00000e71      0x121 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-memcpy.o)
+ .debug_info    0x00000f92       0xd1 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-strlen.o)
+ .debug_info    0x00001063      0x116 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-strncpy.o)
+ .debug_info    0x00001179       0xef c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-strstr.o)
+ .debug_info    0x00001268      0x3d8 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_iic.o)
+ .debug_info    0x00001640      0x27f c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+ .debug_info    0x000018bf       0x22 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .debug_info    0x000018e1      0x195 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .debug_info    0x00001a76       0x88 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .debug_info    0x00001afe      0x239 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_info    0x00001d37      0x13e c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_info    0x00001e75      0x15c c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_putstr.o)
+ .debug_info    0x00001fd1      0x127 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_info    0x000020f8      0x149 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_info    0x00002241       0x8d c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_info    0x000022ce       0x22 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .debug_info    0x000022f0       0x8d c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_info    0x0000237d      0x208 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
+ .debug_info    0x00002585       0x8d c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+
+.debug_abbrev   0x00000000     0x12e8
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000       0x1f c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp//obj/HAL/src/crt0.o
+ .debug_abbrev  0x0000001f      0x1e4 obj/default/hello_world_small.o
+ .debug_abbrev  0x00000203      0x253 obj/default/lib_JOYSTICK/joystick_io.o
+ .debug_abbrev  0x00000456       0xc1 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-memcpy.o)
+ .debug_abbrev  0x00000517       0x8c c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-strlen.o)
+ .debug_abbrev  0x000005a3       0x96 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-strncpy.o)
+ .debug_abbrev  0x00000639       0x9f c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-strstr.o)
+ .debug_abbrev  0x000006d8      0x1dd c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_iic.o)
+ .debug_abbrev  0x000008b5      0x1d9 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+ .debug_abbrev  0x00000a8e       0x12 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .debug_abbrev  0x00000aa0      0x147 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .debug_abbrev  0x00000be7       0x46 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .debug_abbrev  0x00000c2d      0x12c c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_abbrev  0x00000d59       0xeb c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_abbrev  0x00000e44       0xd3 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_putstr.o)
+ .debug_abbrev  0x00000f17      0x107 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_abbrev  0x0000101e       0xdc c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_abbrev  0x000010fa       0x43 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_abbrev  0x0000113d       0x12 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .debug_abbrev  0x0000114f       0x43 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_abbrev  0x00001192      0x113 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
+ .debug_abbrev  0x000012a5       0x43 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+
+.debug_line     0x00000000     0x12dd
+ *(.debug_line)
+ .debug_line    0x00000000       0x66 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp//obj/HAL/src/crt0.o
+ .debug_line    0x00000066      0x371 obj/default/hello_world_small.o
+ .debug_line    0x000003d7      0x33f obj/default/lib_JOYSTICK/joystick_io.o
+ .debug_line    0x00000716       0x8c c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-memcpy.o)
+ .debug_line    0x000007a2       0x7c c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-strlen.o)
+ .debug_line    0x0000081e       0xaa c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-strncpy.o)
+ .debug_line    0x000008c8       0xba c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-strstr.o)
+ .debug_line    0x00000982      0x152 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_iic.o)
+ .debug_line    0x00000ad4      0x115 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+ .debug_line    0x00000be9       0x6b c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .debug_line    0x00000c54       0xf9 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .debug_line    0x00000d4d       0x43 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .debug_line    0x00000d90       0xd2 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_line    0x00000e62       0xa2 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_line    0x00000f04       0x79 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_putstr.o)
+ .debug_line    0x00000f7d       0x92 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_line    0x0000100f       0x93 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_line    0x000010a2       0x4e c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_line    0x000010f0       0x9d c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .debug_line    0x0000118d       0x4c c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_line    0x000011d9       0xb0 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
+ .debug_line    0x00001289       0x54 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+
+.debug_frame    0x00000000      0x44c
+ *(.debug_frame)
+ .debug_frame   0x00000000       0xa0 obj/default/hello_world_small.o
+ .debug_frame   0x000000a0       0xfc obj/default/lib_JOYSTICK/joystick_io.o
+ .debug_frame   0x0000019c       0x20 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-memcpy.o)
+ .debug_frame   0x000001bc       0x20 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-strlen.o)
+ .debug_frame   0x000001dc       0x20 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-strncpy.o)
+ .debug_frame   0x000001fc       0x20 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-strstr.o)
+ .debug_frame   0x0000021c       0x50 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_iic.o)
+ .debug_frame   0x0000026c       0x38 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+ .debug_frame   0x000002a4       0x34 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .debug_frame   0x000002d8       0x2c c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_frame   0x00000304       0x2c c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_frame   0x00000330       0x30 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_putstr.o)
+ .debug_frame   0x00000360       0x3c c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_frame   0x0000039c       0x20 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_frame   0x000003bc       0x20 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_frame   0x000003dc       0x20 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_frame   0x000003fc       0x30 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
+ .debug_frame   0x0000042c       0x20 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+
+.debug_str      0x00000000      0xb6d
+ *(.debug_str)
+ .debug_str     0x00000000       0x72 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp//obj/HAL/src/crt0.o
+                                 0x79 (size before relaxing)
+ .debug_str     0x00000072      0x1fb obj/default/hello_world_small.o
+                                0x250 (size before relaxing)
+ .debug_str     0x0000026d       0xd3 obj/default/lib_JOYSTICK/joystick_io.o
+                                0x254 (size before relaxing)
+ .debug_str     0x00000340       0x7f c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-memcpy.o)
+                                0x122 (size before relaxing)
+ .debug_str     0x000003bf       0x7f c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-strlen.o)
+                                0x114 (size before relaxing)
+ .debug_str     0x000003bf       0x12 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-strncpy.o)
+                                0x12b (size before relaxing)
+ .debug_str     0x000003d1      0x10e c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-strstr.o)
+ .debug_str     0x000003d1       0xca c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_iic.o)
+                                0x1f6 (size before relaxing)
+ .debug_str     0x0000049b       0x18 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+                                0x1b5 (size before relaxing)
+ .debug_str     0x000004b3       0x18 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_irq_entry.o)
+                                 0x73 (size before relaxing)
+ .debug_str     0x000004cb       0x20 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_irq_handler.o)
+                                0x144 (size before relaxing)
+ .debug_str     0x000004eb       0x12 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_irq_vars.o)
+                                 0xf3 (size before relaxing)
+ .debug_str     0x000004fd      0x100 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_load.o)
+                                0x208 (size before relaxing)
+ .debug_str     0x000005fd       0x4b c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_main.o)
+                                0x138 (size before relaxing)
+ .debug_str     0x00000648       0x4a c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_putstr.o)
+                                0x14b (size before relaxing)
+ .debug_str     0x00000692       0x5c c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_sys_init.o)
+                                0x18a (size before relaxing)
+ .debug_str     0x000006ee      0x15c c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_str     0x000006ee       0xfd c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_str     0x000006ee       0x1e c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_exception_entry.o)
+                                 0x79 (size before relaxing)
+ .debug_str     0x0000070c       0xfd c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_str     0x0000070c      0x461 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
+                                0x546 (size before relaxing)
+ .debug_str     0x00000b6d      0x103 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_alt_sim_info
+                0x00000000       0x10
+ *(.debug_alt_sim_info)
+ .debug_alt_sim_info
+                0x00000000       0x10 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp//obj/HAL/src/crt0.o
+                0x0000f530                        __alt_data_end = 0xf530
+                0x0000f530                        PROVIDE (__alt_stack_pointer = __alt_data_end)
+                [!provide]                        PROVIDE (__alt_stack_limit = __alt_stack_base)
+                [!provide]                        PROVIDE (__alt_heap_start = end)
+                [!provide]                        PROVIDE (__alt_heap_limit = 0xf530)
+OUTPUT(pfef.elf elf32-littlenios2)
+LOAD linker stubs
+
+.debug_ranges   0x00000000       0x70
+ .debug_ranges  0x00000000       0x20 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp//obj/HAL/src/crt0.o
+ .debug_ranges  0x00000020       0x28 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .debug_ranges  0x00000048       0x28 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_exception_entry.o)
+
+.debug_loclists
+                0x00000000      0xb30
+ .debug_loclists
+                0x00000000      0x124 obj/default/hello_world_small.o
+ .debug_loclists
+                0x00000124      0x4ac obj/default/lib_JOYSTICK/joystick_io.o
+ .debug_loclists
+                0x000005d0       0xcc c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-memcpy.o)
+ .debug_loclists
+                0x0000069c       0x32 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-strlen.o)
+ .debug_loclists
+                0x000006ce       0x95 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-strncpy.o)
+ .debug_loclists
+                0x00000763       0x47 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-strstr.o)
+ .debug_loclists
+                0x000007aa       0xf9 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_iic.o)
+ .debug_loclists
+                0x000008a3      0x130 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+ .debug_loclists
+                0x000009d3       0x6e c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .debug_loclists
+                0x00000a41       0x2c c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_putstr.o)
+ .debug_loclists
+                0x00000a6d       0x1e c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_loclists
+                0x00000a8b       0x5e c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_loclists
+                0x00000ae9       0x47 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
+
+.debug_rnglists
+                0x00000000      0x14c
+ .debug_rnglists
+                0x00000000       0x27 obj/default/hello_world_small.o
+ .debug_rnglists
+                0x00000027       0x6b obj/default/lib_JOYSTICK/joystick_io.o
+ .debug_rnglists
+                0x00000092       0x13 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-memcpy.o)
+ .debug_rnglists
+                0x000000a5       0x13 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-strlen.o)
+ .debug_rnglists
+                0x000000b8       0x13 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-strncpy.o)
+ .debug_rnglists
+                0x000000cb       0x13 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-strstr.o)
+ .debug_rnglists
+                0x000000de       0x13 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+ .debug_rnglists
+                0x000000f1       0x1f c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .debug_rnglists
+                0x00000110       0x23 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_rnglists
+                0x00000133       0x19 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
+
+.debug_line_str
+                0x00000000      0x72c
+ .debug_line_str
+                0x00000000      0x20d obj/default/hello_world_small.o
+                                0x27d (size before relaxing)
+ .debug_line_str
+                0x0000020d       0x1b obj/default/lib_JOYSTICK/joystick_io.o
+                                0x196 (size before relaxing)
+ .debug_line_str
+                0x00000228      0x1b3 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-memcpy.o)
+                                0x259 (size before relaxing)
+ .debug_line_str
+                0x000003db       0x39 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-strlen.o)
+                                0x259 (size before relaxing)
+ .debug_line_str
+                0x00000414       0x3a c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-strncpy.o)
+                                0x25c (size before relaxing)
+ .debug_line_str
+                0x0000044e       0x39 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-strstr.o)
+                                0x259 (size before relaxing)
+ .debug_line_str
+                0x00000487       0xb5 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_iic.o)
+                                0x12b (size before relaxing)
+ .debug_line_str
+                0x0000053c       0x2f c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+                                0x13a (size before relaxing)
+ .debug_line_str
+                0x0000056b       0x1a c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_irq_handler.o)
+                                0x10c (size before relaxing)
+ .debug_line_str
+                0x00000585       0x17 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_irq_vars.o)
+                                 0xeb (size before relaxing)
+ .debug_line_str
+                0x0000059c       0x2a c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_load.o)
+                                0x10f (size before relaxing)
+ .debug_line_str
+                0x000005c6       0x31 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_main.o)
+                                0x10e (size before relaxing)
+ .debug_line_str
+                0x000005f7       0x15 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_putstr.o)
+                                0x18c (size before relaxing)
+ .debug_line_str
+                0x0000060c       0x4f c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_sys_init.o)
+                                0x127 (size before relaxing)
+ .debug_line_str
+                0x0000065b       0x38 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+                                0x14e (size before relaxing)
+ .debug_line_str
+                0x00000693       0x1f c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+                                 0xed (size before relaxing)
+ .debug_line_str
+                0x000006b2       0x1f c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+                                 0xed (size before relaxing)
+ .debug_line_str
+                0x000006d1       0x3b c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
+                                0x143 (size before relaxing)
+ .debug_line_str
+                0x0000070c       0x20 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/pfef_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+                                 0xf0 (size before relaxing)

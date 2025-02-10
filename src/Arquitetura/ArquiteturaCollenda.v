@@ -1,40 +1,41 @@
-	
-module ArquiteturaCollenda(
-	input wire	main_clk, reset,
+module ArquiteturaCollenda (	
+	input wire main_clk, reset,
 	input wire DOWN, UP, RIGHT, LEFT, X, Y, A, B_button, TR, TL, START, SELECT,
+	input wire rx, cts,
 	
-	output [7:0] leds,
+	output wire [7:0] leds,
 	output wire	rdempty_A, rdempty_B,wrfull_A,wrfull_B,out_hsync, out_vsync,
-	output wire	[2:0] B, G, R
+	output wire	[2:0] B, G, R,
+	output wire tx, rts
 );
 
 
-wire	SYNTHESIZED_WIRE_31;
-wire	SYNTHESIZED_WIRE_32;
-wire	SYNTHESIZED_WIRE_33;
-wire	[31:0] SYNTHESIZED_WIRE_3;
-wire	[31:0] SYNTHESIZED_WIRE_7;
-wire	SYNTHESIZED_WIRE_8;
-wire	SYNTHESIZED_WIRE_9;
-wire	SYNTHESIZED_WIRE_34;
-wire	SYNTHESIZED_WIRE_11;
-wire	SYNTHESIZED_WIRE_14;
-wire	SYNTHESIZED_WIRE_15;
-wire	[31:0] SYNTHESIZED_WIRE_16;
-wire	[31:0] SYNTHESIZED_WIRE_17;
-wire	SYNTHESIZED_WIRE_18;
-wire	SYNTHESIZED_WIRE_19;
-wire	SYNTHESIZED_WIRE_20;
-wire	SYNTHESIZED_WIRE_21;
-wire	SYNTHESIZED_WIRE_22;
-wire	SYNTHESIZED_WIRE_23;
-wire	SYNTHESIZED_WIRE_24;
-wire	SYNTHESIZED_WIRE_25;
-wire	SYNTHESIZED_WIRE_26;
-wire	SYNTHESIZED_WIRE_27;
-wire	SYNTHESIZED_WIRE_28;
-wire	SYNTHESIZED_WIRE_29;
-wire	SYNTHESIZED_WIRE_30;
+	wire	SYNTHESIZED_WIRE_31;
+	wire	SYNTHESIZED_WIRE_32;
+	wire	SYNTHESIZED_WIRE_33;
+	wire	[31:0] SYNTHESIZED_WIRE_3;
+	wire	[31:0] SYNTHESIZED_WIRE_7;
+	wire	SYNTHESIZED_WIRE_8;
+	wire	SYNTHESIZED_WIRE_9;
+	wire	SYNTHESIZED_WIRE_34;
+	wire	SYNTHESIZED_WIRE_11;
+	wire	SYNTHESIZED_WIRE_14;
+	wire	SYNTHESIZED_WIRE_15;
+	wire	[31:0] SYNTHESIZED_WIRE_16;
+	wire	[31:0] SYNTHESIZED_WIRE_17;
+	wire	SYNTHESIZED_WIRE_18;
+	wire	SYNTHESIZED_WIRE_19;
+	wire	SYNTHESIZED_WIRE_20;
+	wire	SYNTHESIZED_WIRE_21;
+	wire	SYNTHESIZED_WIRE_22;
+	wire	SYNTHESIZED_WIRE_23;
+	wire	SYNTHESIZED_WIRE_24;
+	wire	SYNTHESIZED_WIRE_25;
+	wire	SYNTHESIZED_WIRE_26;
+	wire	SYNTHESIZED_WIRE_27;
+	wire	SYNTHESIZED_WIRE_28;
+	wire	SYNTHESIZED_WIRE_29;
+	wire	SYNTHESIZED_WIRE_30;
 
 	 wire        irq, wr;         //         irq.export
 	 wire [31:0] rd_data_lsb; // rd_data_lsb.export
@@ -130,7 +131,11 @@ Arquitetura	b2v_inst9(
 	.rd_joystick_msb_export(rd_data_msb),
 	.we_joystick_export(we),        
 	.we_joystick_lsb_export(we_data_lsb),   
-	.we_joystick_msb_export(we_data_msb), 
+	.we_joystick_msb_export(we_data_msb),
+	.tx_writeresponsevalid_n(tx),
+	.rx_beginbursttransfer(rx),
+	.rts_writeresponsevalid_n(rts),
+	.cts_beginbursttransfer(cts),
 );
 
 	wr_pulse wp(main_clk, we, reset, wr);

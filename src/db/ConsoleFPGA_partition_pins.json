@@ -96,6 +96,14 @@
 					"strict" : false
 				},
 				{
+					"name" : "tx",
+					"strict" : false
+				},
+				{
+					"name" : "rts",
+					"strict" : false
+				},
+				{
 					"name" : "reset",
 					"strict" : false
 				},
@@ -133,6 +141,14 @@
 				},
 				{
 					"name" : "X",
+					"strict" : false
+				},
+				{
+					"name" : "cts",
+					"strict" : false
+				},
+				{
+					"name" : "rx",
 					"strict" : false
 				},
 				{

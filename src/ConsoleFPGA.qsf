@@ -74,6 +74,40 @@ set_global_assignment -name USE_SIGNALTAP_FILE Collenda_SignalTap.stp
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_location_assignment PIN_C11 -to A
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to A
+set_location_assignment PIN_B11 -to B_button
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to B_button
+set_location_assignment PIN_B12 -to DOWN
+set_location_assignment PIN_C9 -to LEFT
+set_location_assignment PIN_E11 -to RIGHT
+set_location_assignment PIN_D9 -to SELECT
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to SELECT
+set_location_assignment PIN_A12 -to START
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to START
+set_location_assignment PIN_E9 -to TL
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to TL
+set_location_assignment PIN_E10 -to TR
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to TR
+set_location_assignment PIN_D11 -to UP
+set_location_assignment PIN_F8 -to X
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to X
+set_location_assignment PIN_D12 -to Y
+set_location_assignment PIN_D1 -to leds[4]
+set_location_assignment PIN_F3 -to leds[5]
+set_location_assignment PIN_B1 -to leds[6]
+set_location_assignment PIN_L3 -to leds[7]
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to Y
+set_global_assignment -name VERILOG_FILE modulos/UART/uart_tx.v
+set_global_assignment -name VERILOG_FILE modulos/UART/uart_rx.v
+set_global_assignment -name VERILOG_FILE modulos/UART/uart_interface.v
+set_global_assignment -name VERILOG_FILE modulos/UART/select_read.v
+set_global_assignment -name VERILOG_FILE modulos/UART/baud_rate_gen.v
+set_global_assignment -name VERILOG_FILE modulos/UART/modem_control.v
+set_global_assignment -name VERILOG_FILE modulos/UART/fifo_cir.v
+set_global_assignment -name VERILOG_FILE modulos/UART/uart_unit.v
+set_global_assignment -name VERILOG_FILE modulos/UART/interrupt_control.v
+set_global_assignment -name VERILOG_FILE modulos/UART/reg_control.v
 set_global_assignment -name VERILOG_FILE modulos/module_io/edge_capture_clear.v
 set_global_assignment -name VERILOG_FILE modulos/module_io/select_read_data.v
 set_global_assignment -name VERILOG_FILE modulos/module_io/i_o_data.v
@@ -129,28 +163,8 @@ set_global_assignment -name QIP_FILE modulos/background_memory/background_memory
 set_global_assignment -name QIP_FILE modulos/sprite_memory/memory.qip
 set_global_assignment -name QIP_FILE modulos/Co_Processor/memory_fg/memory_fg.qip
 set_global_assignment -name QIP_FILE modulos/Co_Processor/pixels_memory/pixels_memory.qip
-set_location_assignment PIN_C11 -to A
-set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to A
-set_location_assignment PIN_B11 -to B_button
-set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to B_button
-set_location_assignment PIN_B12 -to DOWN
-set_location_assignment PIN_C9 -to LEFT
-set_location_assignment PIN_E11 -to RIGHT
-set_location_assignment PIN_D9 -to SELECT
-set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to SELECT
-set_location_assignment PIN_A12 -to START
-set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to START
-set_location_assignment PIN_E9 -to TL
-set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to TL
-set_location_assignment PIN_E10 -to TR
-set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to TR
-set_location_assignment PIN_D11 -to UP
-set_location_assignment PIN_F8 -to X
-set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to X
-set_location_assignment PIN_D12 -to Y
-set_location_assignment PIN_D1 -to leds[4]
-set_location_assignment PIN_F3 -to leds[5]
-set_location_assignment PIN_B1 -to leds[6]
-set_location_assignment PIN_L3 -to leds[7]
-set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to Y
+set_location_assignment PIN_L13 -to cts
+set_location_assignment PIN_K15 -to rts
+set_location_assignment PIN_P14 -to rx
+set_location_assignment PIN_N14 -to tx
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

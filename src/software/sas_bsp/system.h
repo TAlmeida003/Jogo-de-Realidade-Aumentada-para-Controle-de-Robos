@@ -4,7 +4,7 @@
  * Machine generated for CPU 'nios2_gen2_0' in SOPC Builder design 'Arquitetura'
  * SOPC Builder design path: C:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/Arquitetura.sopcinfo
  *
- * Generated: Sat Oct 19 15:02:13 BRT 2024
+ * Generated: Wed Oct 30 13:28:06 BRT 2024
  */
 
 /*
@@ -437,7 +437,7 @@
 #define SYSID_QSYS_0_IRQ_INTERRUPT_CONTROLLER_ID -1
 #define SYSID_QSYS_0_NAME "/dev/sysid_qsys_0"
 #define SYSID_QSYS_0_SPAN 8
-#define SYSID_QSYS_0_TIMESTAMP 1728871358
+#define SYSID_QSYS_0_TIMESTAMP 1729951157
 #define SYSID_QSYS_0_TYPE "altera_avalon_sysid_qsys"
 
 
@@ -555,7 +555,7 @@
  */
 
 #define ALT_MODULE_CLASS_wrreg altera_avalon_pio
-#define WRREG_BASE 0x110c0
+#define WRREG_BASE 0x10010
 #define WRREG_BIT_CLEARING_EDGE_REGISTER 0
 #define WRREG_BIT_MODIFYING_OUTPUT_REGISTER 0
 #define WRREG_CAPTURE 0

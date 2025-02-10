@@ -60,6 +60,7 @@ int state_placar = 0;
 /*-------------------------------------------------------------*/
 /*---------------FUNCAO PRINCIPAL-------------------------*/
 int main(){
+	
 	int refresh_coord = 0;
 	int screen_for_1s = 59;
 	int number_screen = 0, number_screen_2 = 0, number_screen_3 = 0, number_screen_4 = 0;
@@ -291,7 +292,7 @@ int main(){
 		/*-----------------------------------------------------------------------------*/
 		/*--------Estrutura que realiza a tentativa de envio de novas instrucoes para o processador grafico---------*/
 		if(number_screen == 2){
-			if(IORD(WRFULL_BASE,0) == 0){                           //FIFO nao esta cheia
+			if(IORD(WRFULL_BASE, 0) == 0){                           //FIFO nao esta cheia
 				number_screen = 0;
 				/*-----------------------IF de PAUSE e START------------------------------------*/
 				if(state_game == 0) { 
@@ -398,11 +399,7 @@ int main(){
 			IOWR_ALTERA_AVALON_PIO_DATA(RESET_PULSECOUNTER_BASE,0);
 			send++;
 		}
-		if(IORD(WRFULL_BASE,0) == 0 && send == 1 && lot1 == 0){
-			set_sprite(1,240,240, 25, 1); //G
-			set_sprite(2,260,240, 26, 1); //A
-			set_sprite(3,280,240, 27, 1); //M
-			set_sprite(4,300,240, 28, 1); //E
+ 
 			lot1 = 1;
 		}else if(IORD(WRFULL_BASE,0) == 0 && send == 2){
 			set_sprite(5,340,240, 29, 1); //O

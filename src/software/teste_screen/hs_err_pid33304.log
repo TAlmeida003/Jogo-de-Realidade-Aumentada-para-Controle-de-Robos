@@ -1,0 +1,162 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (malloc) failed to allocate 1048576 bytes for AllocateHeap
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   The process is running with CompressedOops enabled, and the Java Heap may be blocking the growth of the native heap
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+#   JVM is running with Unscaled Compressed Oops mode in which the Java heap is
+#     placed in the first 4GB address space. The Java Heap base address is the
+#     maximum limit for the native heap growth. Please use -XX:HeapBaseMinAddress
+#     to set the Java Heap base and to place the Java Heap above 4GB virtual address.
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (memory/allocation.inline.hpp:61), pid=33304, tid=0x00000000000082d0
+#
+# JRE version:  (8.0_392-b08) (build )
+# Java VM: OpenJDK 64-Bit Server VM (25.392-b08 mixed mode windows-amd64 compressed oops)
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x00000252fdaa5000):  JavaThread "Unknown thread" [_thread_in_vm, id=33488, stack(0x000000fa6d400000,0x000000fa6d500000)]
+
+Stack: [0x000000fa6d400000,0x000000fa6d500000]
+[error occurred during error reporting (printing stack bounds), id 0xc0000005]
+
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x00000252fdaa5000 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=33488, stack(0x000000fa6d400000,0x000000fa6d500000)]
+
+VM state:not at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+heap address: 0x00000000a2600000, size: 1498 MB, Compressed Oops mode: 32-bit
+Narrow klass base: 0x0000000000000000, Narrow klass shift: 3
+Compressed class space size: 1073741824 Address: 0x0000000100000000
+
+Heap:
+ PSYoungGen      total 28160K, used 491K [0x00000000e0d00000, 0x00000000e2c00000, 0x0000000100000000)
+  eden space 24576K, 2% used [0x00000000e0d00000,0x00000000e0d7ae20,0x00000000e2500000)
+  from space 3584K, 0% used [0x00000000e2880000,0x00000000e2880000,0x00000000e2c00000)
+  to   space 3584K, 0% used [0x00000000e2500000,0x00000000e2500000,0x00000000e2880000)
+ ParOldGen       total 64512K, used 0K [0x00000000a2600000, 0x00000000a6500000, 0x00000000e0d00000)
+  object space 64512K, 0% used [0x00000000a2600000,0x00000000a2600000,0x00000000a6500000)
+ Metaspace       used 791K, capacity 1156K, committed 1408K, reserved 1060864K
+  class space    used 76K, capacity 384K, committed 384K, reserved 1048576K
+
+Card table byte_map: [0x00000252ff950000,0x00000252ffc40000] byte_map_base: 0x00000252ff43d000
+
+Marking Bits: (ParMarkBitMap*) 0x0000000069900830
+ Begin Bits: [0x000002528f000000, 0x0000025290768000)
+ End Bits:   [0x0000025290768000, 0x0000025291ed0000)
+
+Polling page: 0x00000252fdcd0000
+
+CodeCache: size=245760Kb used=327Kb max_used=327Kb free=245432Kb
+ bounds [0x0000025280000000, 0x0000025280270000, 0x000002528f000000]
+ total_blobs=56 nmethods=0 adapters=38
+ compilation: enabled
+
+Compilation events (0 events):
+No events
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Classes redefined (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (10 events):
+Event: 0.055 loading class java/lang/Short
+Event: 0.056 loading class java/lang/Short done
+Event: 0.056 loading class java/lang/Integer
+Event: 0.056 loading class java/lang/Integer done
+Event: 0.056 loading class java/lang/Long
+Event: 0.057 loading class java/lang/Long done
+Event: 0.057 loading class java/lang/NullPointerException
+Event: 0.058 loading class java/lang/NullPointerException done
+Event: 0.058 loading class java/lang/ArithmeticException
+Event: 0.058 loading class java/lang/ArithmeticException done
+
+
+Dynamic libraries:
+0x00007ff68ff50000 - 0x00007ff68ffa1000 	C:\intelfpga_lite\23.1std\quartus\bin64\jre64\bin\java.exe
+0x00007ffc07770000 - 0x00007ffc07987000 	C:\WINDOWS\SYSTEM32\ntdll.dll
+0x00007ffc061e0000 - 0x00007ffc062a4000 	C:\WINDOWS\System32\KERNEL32.DLL
+0x00007ffc04e70000 - 0x00007ffc05229000 	C:\WINDOWS\System32\KERNELBASE.dll
+0x00007ffc06490000 - 0x00007ffc06542000 	C:\WINDOWS\System32\ADVAPI32.dll
+0x00007ffc063e0000 - 0x00007ffc06487000 	C:\WINDOWS\System32\msvcrt.dll
+0x00007ffc07340000 - 0x00007ffc073e7000 	C:\WINDOWS\System32\sechost.dll
+0x00007ffc04be0000 - 0x00007ffc04c08000 	C:\WINDOWS\System32\bcrypt.dll
+0x00007ffc075b0000 - 0x00007ffc076c4000 	C:\WINDOWS\System32\RPCRT4.dll
+0x00007ffc054c0000 - 0x00007ffc0566e000 	C:\WINDOWS\System32\USER32.dll
+0x00007ffc05230000 - 0x00007ffc05256000 	C:\WINDOWS\System32\win32u.dll
+0x00007ffc060a0000 - 0x00007ffc060c9000 	C:\WINDOWS\System32\GDI32.dll
+0x00007ffc05370000 - 0x00007ffc0548b000 	C:\WINDOWS\System32\gdi32full.dll
+0x00007ffc05260000 - 0x00007ffc052fa000 	C:\WINDOWS\System32\msvcp_win.dll
+0x00007ffc04cd0000 - 0x00007ffc04de1000 	C:\WINDOWS\System32\ucrtbase.dll
+0x00007ffbe8470000 - 0x00007ffbe8702000 	C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.22621.4391_none_2715d37f73803e96\COMCTL32.dll
+0x00007ffc062b0000 - 0x00007ffc062e1000 	C:\WINDOWS\System32\IMM32.DLL
+0x00007ffbc4c00000 - 0x00007ffbc4c15000 	C:\intelfpga_lite\23.1std\quartus\bin64\jre64\bin\vcruntime140.dll
+0x00007ffb4f930000 - 0x00007ffb4f9cb000 	C:\intelfpga_lite\23.1std\quartus\bin64\jre64\bin\msvcp140.dll
+0x0000000069120000 - 0x0000000069979000 	C:\intelfpga_lite\23.1std\quartus\bin64\jre64\bin\server\jvm.dll
+0x00007ffc05710000 - 0x00007ffc05718000 	C:\WINDOWS\System32\PSAPI.DLL
+0x00007ffc00730000 - 0x00007ffc00764000 	C:\WINDOWS\SYSTEM32\WINMM.dll
+0x00007ffbfb9f0000 - 0x00007ffbfb9fa000 	C:\WINDOWS\SYSTEM32\VERSION.dll
+0x00007ffbf49a0000 - 0x00007ffbf49a9000 	C:\WINDOWS\SYSTEM32\WSOCK32.dll
+0x00007ffc05690000 - 0x00007ffc05701000 	C:\WINDOWS\System32\WS2_32.dll
+0x00007ffc03a90000 - 0x00007ffc03aa8000 	C:\WINDOWS\SYSTEM32\kernel.appcore.dll
+0x00007ffbd8ef0000 - 0x00007ffbd8f00000 	C:\intelfpga_lite\23.1std\quartus\bin64\jre64\bin\verify.dll
+0x00007ffbc3f70000 - 0x00007ffbc3f9b000 	C:\intelfpga_lite\23.1std\quartus\bin64\jre64\bin\java.dll
+0x00007ffbc41d0000 - 0x00007ffbc41e8000 	C:\intelfpga_lite\23.1std\quartus\bin64\jre64\bin\zip.dll
+
+VM Arguments:
+java_command: com.altera.util.elf.FattenELF teste_screen.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x11110 --timestamp 1729951157 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name Arquitetura --quartus_project_dir c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano --jdi ../..//output_files/ConsoleFPGA.jdi --sopcinfo c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/Arquitetura.sopcinfo
+java_class_path (initial): C:/intelfpga_lite/23.1std/nios2eds/sdk2/lib\TableLayout.jar;C:/intelfpga_lite/23.1std/nios2eds/sdk2/lib\appframework-1.03.jar;C:/intelfpga_lite/23.1std/nios2eds/sdk2/lib\beansbinding-1.2.1.jar;C:/intelfpga_lite/23.1std/nios2eds/sdk2/lib\binding-2.0.6.jar;C:/intelfpga_lite/23.1std/nios2eds/sdk2/lib\com.altera.embeddedsw.app_lib.jar;C:/intelfpga_lite/23.1std/nios2eds/sdk2/lib\com.altera.embeddedsw.bsp.editor.jar;C:/intelfpga_lite/23.1std/nios2eds/sdk2/lib\com.altera.embeddedsw.bsp.elements.jar;C:/intelfpga_lite/23.1std/nios2eds/sdk2/lib\com.altera.embeddedsw.bsp.jar;C:/intelfpga_lite/23.1std/nios2eds/sdk2/lib\com.altera.embeddedsw.bsp.plugin.core.jar;C:/intelfpga_lite/23.1std/nios2eds/sdk2/lib\com.altera.embeddedsw.bsp.plugin.hal.jar;C:/intelfpga_lite/23.1std/nios2eds/sdk2/lib\com.altera.embeddedsw.bsp.plugin.lwhal.jar;C:/intelfpga_lite/23.1std/nios2eds/sdk2/lib\com.altera.embeddedsw.bsp.schema.jar;C:/intelfpga_lite/23.1std/nios2eds/sdk2/lib\com.altera.embeddedsw.bsp.scripting.jar;C:/intelfpga_lite/23.1std/nios2eds/sdk2/lib\com.altera.embeddedsw.commandline.jar;C:/intelfpga_lite/23.1std/nios2eds/sdk2/lib\com.altera.embeddedsw.cpexample.jar;C:/intelfpga_lite/23.1std/nios2eds/sdk2/lib\com.altera.embeddedsw.flash.jar;C:/intelfpga_lite/23.1std/nios2eds/sdk2/lib\com.altera.embeddedsw.launch.jar;C:/intelfpga_lite/23.1std/nios2eds/sdk2/lib\com.altera.embeddedsw.swinfo.jar;C:/intelfpga_lite/23.1std/nios2eds/sdk2/lib\com.altera.embeddedsw.utilities.jar;C:/intelfpga_lite/23.1std/nios2eds/sdk2/lib\com.altera.entityinterfaces.jar;C:/intelfpga_lite/23.1std/nios2eds/sdk2/lib\com.altera.hdlcomponent.jar;C:/intelfpga_lite/23.1std/nios2eds/sdk2/lib\com.altera.hdlwriter.jar;C:/intelfpga_lite/23.1std/nios2eds/sdk2/lib\com.altera.infrastructure.jar;C:/intelfpga_lite/23.1std/nios2eds/sdk2/lib\com.altera.jdbcsqlite.jar;C:/intelfpga_lite/23.1std/nios2eds/sdk2/lib\com.altera.jtagsimulator.jar;C:/intelfpga_lite/23.1std/nios2eds/sdk2/lib\com.altera.librarian.jar;C:
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+PATH=C:\intelFPGA_lite\23.1std\nios2eds\bin\gnu\H-x86_64-mingw32\bin;C:\intelFPGA_lite\23.1std\nios2eds\sdk2\bin;C:\intelFPGA_lite\23.1std\nios2eds\bin;C:/intelfpga_lite/23.1std/quartus/bin64;C:/intelfpga_lite/23.1std/nios2eds/bin/cygpath;C:/intelfpga_lite/23.1std/quartus/sopc_builder/model/lib;C:/intelfpga_lite/23.1std/quartus/bin32;c:\intelfpga_lite\23.1std\quartus\bin64\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\java8path;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\nodejs\;C:\Users\thiag\AppData\Local\Programs\Python\Launcher\;C:\Users\thiag\AppData\Local\Microsoft\WindowsApps;C:\Users\thiag\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\thiag\AppData\Local\GitHubDesktop\bin;C:\Users\thiag\AppData\Local\Microsoft\WinGet\Links;C:\intelFPGA_lite\23.1std\questa_fse\win64;C:\Users\thiag\AppData\Roaming\npm
+USERNAME=thiag
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=AMD64 Family 23 Model 104 Stepping 1, AuthenticAMD
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 11 , 64 bit Build 22621 (10.0.22621.4391)
+
+CPU:total 16 (initial active 16) (16 cores per cpu, 1 threads per core) family 23 model 104 stepping 1, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, avx2, aes, clmul, mmxext, 3dnowpref, lzcnt, sse4a, tsc, tscinvbit, tscinv, bmi1
+
+Memory: 4k page, physical 6133240k(627632k free), swap 25007608k(5004k free)
+
+vm_info: OpenJDK 64-Bit Server VM (25.392-b08) for windows-amd64 JRE (1.8.0_392-b08), built on Oct 18 2023 01:02:03 by "jenkins" with MS VC++ 15.9 (VS2017)
+
+time: Sat Nov 16 01:10:12 2024
+timezone: Hora Padrão da Bahia
+elapsed time: 0.064186 seconds (0d 0h 0m 0s)
+

@@ -2,12 +2,12 @@
 <sch:Settings xmlns:sch="http://www.altera.com/embeddedsw/bsp/schema">
         <BspType>hal</BspType>
         <BspVersion>default</BspVersion>
-        <BspGeneratedTimeStamp>19/10/2024 15:02:10</BspGeneratedTimeStamp>
-        <BspGeneratedUnixTimeStamp>1729360930861</BspGeneratedUnixTimeStamp>
+        <BspGeneratedTimeStamp>Oct 30, 2024 1:28:05 PM</BspGeneratedTimeStamp>
+        <BspGeneratedUnixTimeStamp>1730305685319</BspGeneratedUnixTimeStamp>
         <BspGeneratedLocation>C:\Users\thiag\Downloads\CoLendaFPGA\CoLendaFPGA\DE0-Nano\software\sas_bsp</BspGeneratedLocation>
-        <BspSettingsFile>settings.bsp</BspSettingsFile>
+        <BspSettingsFile>C:\Users\thiag\Downloads\CoLendaFPGA\CoLendaFPGA\DE0-Nano\software\sas_bsp\settings.bsp</BspSettingsFile>
         <SopcDesignFile>C:\Users\thiag\Downloads\CoLendaFPGA\CoLendaFPGA\DE0-Nano\Arquitetura.sopcinfo</SopcDesignFile>
-        <SystemFileHash>779ebeda4925a4cfe5b21b8cfe5786afc932c68ade944d41ac39e41f9bed2c</SystemFileHash>
+        <SystemFileHash>d67e3c88d7494f569b5268a577e1ca0e3fefeea1ede19c9bed9a2add35cc2f</SystemFileHash>
         <JdiFile>default</JdiFile>
         <Cpu>nios2_gen2_0</Cpu>
         <SchemaVersion>1.9</SchemaVersion>
@@ -906,6 +906,12 @@
                 <attributes>memory</attributes>
         </MemoryMap>
         <MemoryMap>
+                <slaveDescriptor>wrreg</slaveDescriptor>
+                <addressRange>0x00010010 - 0x0001001F</addressRange>
+                <addressSpan>16</addressSpan>
+                <attributes/>
+        </MemoryMap>
+        <MemoryMap>
                 <slaveDescriptor>irq_joystick</slaveDescriptor>
                 <addressRange>0x00011050 - 0x0001105F</addressRange>
                 <addressSpan>16</addressSpan>
@@ -944,12 +950,6 @@
         <MemoryMap>
                 <slaveDescriptor>wrfull</slaveDescriptor>
                 <addressRange>0x000110B0 - 0x000110BF</addressRange>
-                <addressSpan>16</addressSpan>
-                <attributes/>
-        </MemoryMap>
-        <MemoryMap>
-                <slaveDescriptor>wrreg</slaveDescriptor>
-                <addressRange>0x000110C0 - 0x000110CF</addressRange>
                 <addressSpan>16</addressSpan>
                 <attributes/>
         </MemoryMap>

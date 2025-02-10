@@ -1,23 +1,5 @@
 Archive member included to satisfy reference by file (symbol)
 
-c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/mno-hw-mul\libgcc.a(lib2-divmod.o)
-                              obj/default/new_asteroids_game.o (__modsi3)
-c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-rand.o)
-                              obj/default/new_asteroids_game.o (srand)
-c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-time.o)
-                              obj/default/new_asteroids_game.o (time)
-c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-impure.o)
-                              c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-time.o) (_impure_ptr)
-c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-gettimeofdayr.o)
-                              c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-time.o) (_gettimeofday_r)
-c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-int_errno.o)
-                              c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-gettimeofdayr.o) (errno)
-c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/mno-hw-mul\libgcc.a(_muldi3.o)
-                              c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-rand.o) (__muldi3)
-c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/mno-hw-mul\libgcc.a(lib2-mul.o)
-                              c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/mno-hw-mul\libgcc.a(_muldi3.o) (__mulsi3)
-c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_gettod.o)
-                              c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-gettimeofdayr.o) (gettimeofday)
 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_iic.o)
                               obj/default/lib_JOYSTICK/joystick_io.o (alt_ic_isr_register)
 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
@@ -32,8 +14,6 @@ c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libh
                               c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//obj/HAL/src/crt0.o (alt_load)
 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_main.o)
                               c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//obj/HAL/src/crt0.o (alt_main)
-c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_tick.o)
-                              c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_gettod.o) (_alt_nticks)
 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_sys_init.o)
                               c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_main.o) (alt_irq_init)
 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
@@ -48,12 +28,6 @@ c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libh
                               c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_sys_init.o) (altera_nios2_gen2_irq_init)
 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-memcpy.o)
                               c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_load.o) (memcpy)
-c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/mno-hw-mul\libgcc.a(_udivdi3.o)
-                              c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_gettod.o) (__udivdi3)
-c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/mno-hw-mul\libgcc.a(_umoddi3.o)
-                              c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_gettod.o) (__umoddi3)
-c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/mno-hw-mul\libgcc.a(_clz.o)
-                              c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/mno-hw-mul\libgcc.a(_udivdi3.o) (__clz_tab)
 
 Memory Configuration
 
@@ -144,7 +118,7 @@ LOAD c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/
                 0x00008180                        PROVIDE (__ram_exceptions_end = ABSOLUTE (.))
                 0x00008020                        PROVIDE (__flash_exceptions_start = LOADADDR (.exceptions))
 
-.text           0x00008180     0x2b4c
+.text           0x00008180      0x8b4
                 [!provide]                        PROVIDE (stext = ABSOLUTE (.))
  *(.interp)
  *(.hash)
@@ -205,82 +179,45 @@ LOAD c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/
                 0x000084f4                set_background_block
                 0x00008524                increase_coordinate
                 0x00008728                collision
- .text          0x00008774      0x388 obj/default/new_asteroids_game.o
-                0x00008774                initialize_sprite_random
-                0x000087ec                increase_points
-                0x0000887c                collision_between_tiro_and_ast
-                0x00008984                atirar_sp
- .text.startup  0x00008afc      0xe00 obj/default/new_asteroids_game.o
-                0x00008afc                main
- .text          0x000098fc      0x1b4 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/mno-hw-mul\libgcc.a(lib2-divmod.o)
-                0x000098fc                __divsi3
-                0x0000997c                __modsi3
-                0x000099f0                __udivsi3
-                0x00009a54                __umodsi3
- .text          0x00009ab0        0x0 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-rand.o)
- .text.srand    0x00009ab0       0x14 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-rand.o)
-                0x00009ab0                srand
- .text.rand     0x00009ac4       0x60 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-rand.o)
-                0x00009ac4                rand
- .text          0x00009b24        0x0 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-time.o)
- .text.time     0x00009b24       0x68 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-time.o)
-                0x00009b24                time
- .text          0x00009b8c        0x0 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-impure.o)
- .text          0x00009b8c        0x0 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-gettimeofdayr.o)
- .text._gettimeofday_r
-                0x00009b8c       0x4c c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-gettimeofdayr.o)
-                0x00009b8c                _gettimeofday_r
- .text          0x00009bd8        0x0 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-int_errno.o)
- .text          0x00009bd8      0x104 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/mno-hw-mul\libgcc.a(_muldi3.o)
-                0x00009bd8                __muldi3
- .text          0x00009cdc       0x28 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/mno-hw-mul\libgcc.a(lib2-mul.o)
-                0x00009cdc                __mulsi3
- .text          0x00009d04      0x18c c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_gettod.o)
-                0x00009d04                gettimeofday
- .text          0x00009e90       0x8c c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_iic.o)
-                0x00009e90                alt_ic_isr_register
-                0x00009e94                alt_ic_irq_enable
-                0x00009ecc                alt_ic_irq_disable
-                0x00009f04                alt_ic_irq_enabled
- .text          0x00009f1c       0x68 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
-                0x00009f1c                alt_iic_isr_register
- .text          0x00009f84        0x0 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_irq_entry.o)
- .text          0x00009f84        0x0 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_irq_handler.o)
- .text          0x00009f84        0x0 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_irq_vars.o)
- .text          0x00009f84       0x84 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_load.o)
-                0x00009f84                alt_load
- .text          0x0000a008       0x2c c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_main.o)
-                0x0000a008                alt_main
- .text          0x0000a034       0xe4 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_tick.o)
-                0x0000a034                alt_alarm_stop
-                0x0000a064                alt_tick
- .text          0x0000a118       0x24 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_sys_init.o)
-                0x0000a118                alt_irq_init
-                0x0000a138                alt_sys_init
- .text          0x0000a13c        0x4 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
-                0x0000a13c                alt_dcache_flush_all
- .text          0x0000a140        0x0 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_exception_entry.o)
- .text          0x0000a140        0x4 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
-                0x0000a140                alt_icache_flush_all
- .text          0x0000a144       0x24 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
-                0x0000a144                alt_exception_cause_generated_bad_addr
- .text          0x0000a168        0x8 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
-                0x0000a168                altera_nios2_gen2_irq_init
- .text          0x0000a170        0x0 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-memcpy.o)
- .text.memcpy   0x0000a170       0x28 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-memcpy.o)
-                0x0000a170                memcpy
- .text          0x0000a198      0x5d8 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/mno-hw-mul\libgcc.a(_udivdi3.o)
-                0x0000a198                __udivdi3
- .text          0x0000a770      0x55c c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/mno-hw-mul\libgcc.a(_umoddi3.o)
-                0x0000a770                __umoddi3
- .text          0x0000accc        0x0 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/mno-hw-mul\libgcc.a(_clz.o)
+ .text          0x00008774        0x0 obj/default/new_asteroids_game.o
+ .text.startup  0x00008774       0x9c obj/default/new_asteroids_game.o
+                0x00008774                main
+ .text          0x00008810       0x8c c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_iic.o)
+                0x00008810                alt_ic_isr_register
+                0x00008814                alt_ic_irq_enable
+                0x0000884c                alt_ic_irq_disable
+                0x00008884                alt_ic_irq_enabled
+ .text          0x0000889c       0x68 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+                0x0000889c                alt_iic_isr_register
+ .text          0x00008904        0x0 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .text          0x00008904        0x0 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .text          0x00008904        0x0 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .text          0x00008904       0x84 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_load.o)
+                0x00008904                alt_load
+ .text          0x00008988       0x2c c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_main.o)
+                0x00008988                alt_main
+ .text          0x000089b4       0x24 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_sys_init.o)
+                0x000089b4                alt_irq_init
+                0x000089d4                alt_sys_init
+ .text          0x000089d8        0x4 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+                0x000089d8                alt_dcache_flush_all
+ .text          0x000089dc        0x0 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .text          0x000089dc        0x4 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+                0x000089dc                alt_icache_flush_all
+ .text          0x000089e0       0x24 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
+                0x000089e0                alt_exception_cause_generated_bad_addr
+ .text          0x00008a04        0x8 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+                0x00008a04                altera_nios2_gen2_irq_init
+ .text          0x00008a0c        0x0 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-memcpy.o)
+ .text.memcpy   0x00008a0c       0x28 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-memcpy.o)
+                0x00008a0c                memcpy
  *(.gnu.warning.*)
  *(.fini)
                 [!provide]                        PROVIDE (__etext = ABSOLUTE (.))
                 [!provide]                        PROVIDE (_etext = ABSOLUTE (.))
                 [!provide]                        PROVIDE (etext = ABSOLUTE (.))
  *(.eh_frame_hdr)
-                0x0000accc                        . = ALIGN (0x4)
+                0x00008a34                        . = ALIGN (0x4)
                 [!provide]                        PROVIDE (__preinit_array_start = ABSOLUTE (.))
  *(.preinit_array)
                 [!provide]                        PROVIDE (__preinit_array_end = ABSOLUTE (.))
@@ -303,161 +240,111 @@ LOAD c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/
  *(SORT_BY_NAME(.dtors.*))
                 [!provide]                        PROVIDE (__DTOR_END__ = ABSOLUTE (.))
  *(.jcr)
-                0x0000accc                        . = ALIGN (0x4)
+                0x00008a34                        . = ALIGN (0x4)
 
-.rodata         0x0000accc      0x100
-                0x0000accc                        PROVIDE (__ram_rodata_start = ABSOLUTE (.))
-                0x0000accc                        . = ALIGN (0x4)
+.rodata         0x00008a34     0xe100
+                0x00008a34                        PROVIDE (__ram_rodata_start = ABSOLUTE (.))
+                0x00008a34                        . = ALIGN (0x4)
  *(.rodata .rodata.* .gnu.linkonce.r.*)
- .rodata        0x0000accc      0x100 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/mno-hw-mul\libgcc.a(_clz.o)
-                0x0000accc                __clz_tab
+ .rodata        0x00008a34     0xe100 obj/default/new_asteroids_game.o
  *(.rodata1)
-                0x0000adcc                        . = ALIGN (0x4)
-                0x0000adcc                        PROVIDE (__ram_rodata_end = ABSOLUTE (.))
-                0x0000accc                        PROVIDE (__flash_rodata_start = LOADADDR (.rodata))
+                0x00016b34                        . = ALIGN (0x4)
+                0x00016b34                        PROVIDE (__ram_rodata_end = ABSOLUTE (.))
+                0x00008a34                        PROVIDE (__flash_rodata_start = LOADADDR (.rodata))
 
-.rwdata         0x0000adcc       0x6c load address 0x0000ae38
-                0x0000adcc                        PROVIDE (__ram_rwdata_start = ABSOLUTE (.))
-                0x0000adcc                        . = ALIGN (0x4)
+.rwdata         0x00016b34        0x8 load address 0x00016b3c
+                0x00016b34                        PROVIDE (__ram_rwdata_start = ABSOLUTE (.))
+                0x00016b34                        . = ALIGN (0x4)
  *(.got.plt)
  *(.got)
  *(.data1)
  *(.data .data.* .gnu.linkonce.d.*)
- .data          0x0000adcc        0x0 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//obj/HAL/src/crt0.o
- .data          0x0000adcc        0x0 obj/default/lib_JOYSTICK/joystick_io.o
- .data          0x0000adcc        0x0 obj/default/lib_graphic_processor/graphic_processor.o
- .data          0x0000adcc        0x0 obj/default/new_asteroids_game.o
- .data          0x0000adcc        0x0 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/mno-hw-mul\libgcc.a(lib2-divmod.o)
- .data          0x0000adcc        0x0 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-rand.o)
- .data          0x0000adcc        0x0 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-time.o)
- .data          0x0000adcc        0x0 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-impure.o)
- .data._impure_data
-                0x0000adcc       0x54 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-impure.o)
-                0x0000adcc                _impure_data
- .data          0x0000ae20        0x0 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-gettimeofdayr.o)
- .data          0x0000ae20        0x0 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-int_errno.o)
- .data          0x0000ae20        0x0 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/mno-hw-mul\libgcc.a(_muldi3.o)
- .data          0x0000ae20        0x0 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/mno-hw-mul\libgcc.a(lib2-mul.o)
- .data          0x0000ae20        0x0 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_gettod.o)
- .data          0x0000ae20        0x0 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_iic.o)
- .data          0x0000ae20        0x0 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
- .data          0x0000ae20        0x0 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_irq_entry.o)
- .data          0x0000ae20        0x0 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_irq_handler.o)
- .data          0x0000ae20        0x0 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_irq_vars.o)
- .data          0x0000ae20        0x0 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_load.o)
- .data          0x0000ae20        0x0 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_main.o)
- .data          0x0000ae20        0x0 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_tick.o)
- .data          0x0000ae20        0x0 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_sys_init.o)
- .data          0x0000ae20        0x0 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
- .data          0x0000ae20        0x0 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_exception_entry.o)
- .data          0x0000ae20        0x0 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
- .data          0x0000ae20        0x0 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
- .data          0x0000ae20        0x0 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
- .data          0x0000ae20        0x0 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-memcpy.o)
- .data          0x0000ae20        0x0 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/mno-hw-mul\libgcc.a(_udivdi3.o)
- .data          0x0000ae20        0x0 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/mno-hw-mul\libgcc.a(_umoddi3.o)
- .data          0x0000ae20        0x0 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/mno-hw-mul\libgcc.a(_clz.o)
-                0x00012e20                        _gp = ABSOLUTE ((. + 0x8000))
+ .data          0x00016b34        0x0 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//obj/HAL/src/crt0.o
+ .data          0x00016b34        0x0 obj/default/lib_JOYSTICK/joystick_io.o
+ .data          0x00016b34        0x0 obj/default/lib_graphic_processor/graphic_processor.o
+ .data          0x00016b34        0x0 obj/default/new_asteroids_game.o
+ .data          0x00016b34        0x0 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_iic.o)
+ .data          0x00016b34        0x0 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+ .data          0x00016b34        0x0 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .data          0x00016b34        0x0 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .data          0x00016b34        0x0 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .data          0x00016b34        0x0 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_load.o)
+ .data          0x00016b34        0x0 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_main.o)
+ .data          0x00016b34        0x0 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .data          0x00016b34        0x0 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .data          0x00016b34        0x0 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .data          0x00016b34        0x0 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .data          0x00016b34        0x0 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
+ .data          0x00016b34        0x0 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .data          0x00016b34        0x0 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-memcpy.o)
+                0x0001eb34                        _gp = ABSOLUTE ((. + 0x8000))
                 [!provide]                        PROVIDE (gp = _gp)
  *(.rwdata .rwdata.*)
  *(.sdata .sdata.* .gnu.linkonce.s.*)
- .sdata         0x0000ae20        0x4 obj/default/new_asteroids_game.o
-                0x0000ae20                number_of_asteroids
- .sdata._impure_ptr
-                0x0000ae24        0x4 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-impure.o)
-                0x0000ae24                _impure_ptr
- .sdata         0x0000ae28        0x4 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_irq_vars.o)
-                0x0000ae28                alt_priority_mask
- .sdata         0x0000ae2c        0x8 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_tick.o)
-                0x0000ae2c                alt_alarm_list
- .sdata         0x0000ae34        0x4 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_sys_init.o)
-                0x0000ae34                jtag_uart_0
+ .sdata         0x00016b34        0x4 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_irq_vars.o)
+                0x00016b34                alt_priority_mask
+ .sdata         0x00016b38        0x4 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_sys_init.o)
+                0x00016b38                jtag_uart_0
  *(.sdata2 .sdata2.* .gnu.linkonce.s2.*)
-                0x0000ae38                        . = ALIGN (0x4)
-                0x0000ae38                        _edata = ABSOLUTE (.)
+                0x00016b3c                        . = ALIGN (0x4)
+                0x00016b3c                        _edata = ABSOLUTE (.)
                 [!provide]                        PROVIDE (edata = ABSOLUTE (.))
-                0x0000ae38                        PROVIDE (__ram_rwdata_end = ABSOLUTE (.))
-                0x0000ae38                        PROVIDE (__flash_rwdata_start = LOADADDR (.rwdata))
+                0x00016b3c                        PROVIDE (__ram_rwdata_end = ABSOLUTE (.))
+                0x00016b3c                        PROVIDE (__flash_rwdata_start = LOADADDR (.rwdata))
 
-.bss            0x0000aea4      0x14c
-                0x0000aea4                        __bss_start = ABSOLUTE (.)
+.bss            0x00016b44      0x118
+                0x00016b44                        __bss_start = ABSOLUTE (.)
                 [!provide]                        PROVIDE (__sbss_start = ABSOLUTE (.))
                 [!provide]                        PROVIDE (___sbss_start = ABSOLUTE (.))
  *(.dynsbss)
  *(.sbss .sbss.* .gnu.linkonce.sb.*)
- .sbss          0x0000aea4        0x4 obj/default/lib_JOYSTICK/joystick_io.o
- .sbss          0x0000aea8        0x8 obj/default/new_asteroids_game.o
-                0x0000aea8                state_placar
-                0x0000aeac                points
- .sbss._randbits
-                0x0000aeb0        0x8 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-rand.o)
- .sbss.errno    0x0000aeb8        0x4 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-int_errno.o)
-                0x0000aeb8                errno
- .sbss          0x0000aebc        0x8 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_gettod.o)
-                0x0000aebc                alt_timezone
- .sbss          0x0000aec4        0x4 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_irq_vars.o)
-                0x0000aec4                alt_irq_active
- .sbss          0x0000aec8        0xc c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_main.o)
-                0x0000aec8                alt_envp
-                0x0000aecc                alt_argv
-                0x0000aed0                alt_argc
- .sbss          0x0000aed4        0xc c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_tick.o)
-                0x0000aed4                _alt_nticks
-                0x0000aedc                _alt_tick_rate
- .sbss          0x0000aee0        0x4 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
-                0x0000aee0                alt_instruction_exception_handler
+ .sbss          0x00016b44        0x4 obj/default/lib_JOYSTICK/joystick_io.o
+ .sbss          0x00016b48        0x4 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_irq_vars.o)
+                0x00016b48                alt_irq_active
+ .sbss          0x00016b4c        0xc c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_main.o)
+                0x00016b4c                alt_envp
+                0x00016b50                alt_argv
+                0x00016b54                alt_argc
+ .sbss          0x00016b58        0x4 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
+                0x00016b58                alt_instruction_exception_handler
  *(.sbss2 .sbss2.* .gnu.linkonce.sb2.*)
  *(.scommon)
                 [!provide]                        PROVIDE (__sbss_end = ABSOLUTE (.))
                 [!provide]                        PROVIDE (___sbss_end = ABSOLUTE (.))
  *(.dynbss)
  *(.bss .bss.* .gnu.linkonce.b.*)
- .bss           0x0000aee4        0x0 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//obj/HAL/src/crt0.o
- .bss           0x0000aee4        0x0 obj/default/lib_JOYSTICK/joystick_io.o
- .bss           0x0000aee4        0x0 obj/default/lib_graphic_processor/graphic_processor.o
- .bss           0x0000aee4        0x0 obj/default/new_asteroids_game.o
- .bss           0x0000aee4        0x0 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/mno-hw-mul\libgcc.a(lib2-divmod.o)
- .bss           0x0000aee4        0x0 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-rand.o)
- .bss           0x0000aee4        0x0 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-time.o)
- .bss           0x0000aee4        0x0 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-impure.o)
- .bss           0x0000aee4        0x0 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-gettimeofdayr.o)
- .bss           0x0000aee4        0x0 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-int_errno.o)
- .bss           0x0000aee4        0x0 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/mno-hw-mul\libgcc.a(_muldi3.o)
- .bss           0x0000aee4        0x0 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/mno-hw-mul\libgcc.a(lib2-mul.o)
- .bss           0x0000aee4        0xc c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_gettod.o)
-                0x0000aee4                alt_resettime
- .bss           0x0000aef0        0x0 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_iic.o)
- .bss           0x0000aef0        0x0 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
- .bss           0x0000aef0        0x0 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_irq_entry.o)
- .bss           0x0000aef0      0x100 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_irq_handler.o)
-                0x0000aef0                alt_irq
- .bss           0x0000aff0        0x0 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_irq_vars.o)
- .bss           0x0000aff0        0x0 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_load.o)
- .bss           0x0000aff0        0x0 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_main.o)
- .bss           0x0000aff0        0x0 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_tick.o)
- .bss           0x0000aff0        0x0 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_sys_init.o)
- .bss           0x0000aff0        0x0 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
- .bss           0x0000aff0        0x0 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_exception_entry.o)
- .bss           0x0000aff0        0x0 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
- .bss           0x0000aff0        0x0 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
- .bss           0x0000aff0        0x0 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
- .bss           0x0000aff0        0x0 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-memcpy.o)
- .bss           0x0000aff0        0x0 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/mno-hw-mul\libgcc.a(_udivdi3.o)
- .bss           0x0000aff0        0x0 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/mno-hw-mul\libgcc.a(_umoddi3.o)
- .bss           0x0000aff0        0x0 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/mno-hw-mul\libgcc.a(_clz.o)
+ .bss           0x00016b5c        0x0 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//obj/HAL/src/crt0.o
+ .bss           0x00016b5c        0x0 obj/default/lib_JOYSTICK/joystick_io.o
+ .bss           0x00016b5c        0x0 obj/default/lib_graphic_processor/graphic_processor.o
+ .bss           0x00016b5c        0x0 obj/default/new_asteroids_game.o
+ .bss           0x00016b5c        0x0 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_iic.o)
+ .bss           0x00016b5c        0x0 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+ .bss           0x00016b5c        0x0 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .bss           0x00016b5c      0x100 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_irq_handler.o)
+                0x00016b5c                alt_irq
+ .bss           0x00016c5c        0x0 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .bss           0x00016c5c        0x0 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_load.o)
+ .bss           0x00016c5c        0x0 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_main.o)
+ .bss           0x00016c5c        0x0 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .bss           0x00016c5c        0x0 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .bss           0x00016c5c        0x0 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .bss           0x00016c5c        0x0 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .bss           0x00016c5c        0x0 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
+ .bss           0x00016c5c        0x0 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .bss           0x00016c5c        0x0 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-memcpy.o)
  *(COMMON)
-                0x0000aff0                        . = ALIGN (0x4)
-                0x0000aff0                        __bss_end = ABSOLUTE (.)
+                0x00016c5c                        . = ALIGN (0x4)
+                0x00016c5c                        __bss_end = ABSOLUTE (.)
 
 .onchip_memory2_0
-                0x0000aff0        0x0
+                0x00016c5c        0x0
                 [!provide]                        PROVIDE (_alt_partition_onchip_memory2_0_start = ABSOLUTE (.))
  *(.onchip_memory2_0 .onchip_memory2_0. onchip_memory2_0.*)
-                0x0000aff0                        . = ALIGN (0x4)
+                0x00016c5c                        . = ALIGN (0x4)
                 [!provide]                        PROVIDE (_alt_partition_onchip_memory2_0_end = ABSOLUTE (.))
-                0x0000aff0                        _end = ABSOLUTE (.)
-                0x0000aff0                        end = ABSOLUTE (.)
-                0x0000aff0                        __alt_stack_base = ABSOLUTE (.)
+                0x00016c5c                        _end = ABSOLUTE (.)
+                0x00016c5c                        end = ABSOLUTE (.)
+                0x00016c5c                        __alt_stack_base = ABSOLUTE (.)
                 [!provide]                        PROVIDE (_alt_partition_onchip_memory2_0_load_addr = LOADADDR (.onchip_memory2_0))
 
 .stab
@@ -484,31 +371,18 @@ LOAD c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/
                                  0x2e (size before relaxing)
  .comment       0x0000002d       0x2e obj/default/lib_graphic_processor/graphic_processor.o
  .comment       0x0000002d       0x2e obj/default/new_asteroids_game.o
- .comment       0x0000002d       0x2e c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/mno-hw-mul\libgcc.a(lib2-divmod.o)
- .comment       0x0000002d       0x2e c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-rand.o)
- .comment       0x0000002d       0x2e c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-time.o)
- .comment       0x0000002d       0x2e c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-impure.o)
- .comment       0x0000002d       0x2e c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-gettimeofdayr.o)
- .comment       0x0000002d       0x2e c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-int_errno.o)
- .comment       0x0000002d       0x2e c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/mno-hw-mul\libgcc.a(_muldi3.o)
- .comment       0x0000002d       0x2e c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/mno-hw-mul\libgcc.a(lib2-mul.o)
- .comment       0x0000002d       0x2e c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_gettod.o)
  .comment       0x0000002d       0x2e c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_iic.o)
  .comment       0x0000002d       0x2e c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
  .comment       0x0000002d       0x2e c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_irq_handler.o)
  .comment       0x0000002d       0x2e c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_irq_vars.o)
  .comment       0x0000002d       0x2e c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_load.o)
  .comment       0x0000002d       0x2e c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_main.o)
- .comment       0x0000002d       0x2e c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_tick.o)
  .comment       0x0000002d       0x2e c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_sys_init.o)
  .comment       0x0000002d       0x2e c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
  .comment       0x0000002d       0x2e c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
  .comment       0x0000002d       0x2e c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
  .comment       0x0000002d       0x2e c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
  .comment       0x0000002d       0x2e c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-memcpy.o)
- .comment       0x0000002d       0x2e c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/mno-hw-mul\libgcc.a(_udivdi3.o)
- .comment       0x0000002d       0x2e c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/mno-hw-mul\libgcc.a(_umoddi3.o)
- .comment       0x0000002d       0x2e c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/mno-hw-mul\libgcc.a(_clz.o)
 
 .debug
  *(.debug)
@@ -522,7 +396,7 @@ LOAD c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/
 .debug_sfnames
  *(.debug_sfnames)
 
-.debug_aranges  0x00000000      0x400
+.debug_aranges  0x00000000      0x268
  *(.debug_aranges)
  .debug_aranges
                 0x00000000       0x28 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//obj/HAL/src/crt0.o
@@ -531,251 +405,154 @@ LOAD c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/
  .debug_aranges
                 0x00000048       0x20 obj/default/lib_graphic_processor/graphic_processor.o
  .debug_aranges
-                0x00000068       0x28 obj/default/new_asteroids_game.o
+                0x00000068       0x20 obj/default/new_asteroids_game.o
  .debug_aranges
-                0x00000090       0x20 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/mno-hw-mul\libgcc.a(lib2-divmod.o)
+                0x00000088       0x20 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_iic.o)
  .debug_aranges
-                0x000000b0       0x28 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-rand.o)
+                0x000000a8       0x20 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
  .debug_aranges
-                0x000000d8       0x20 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-time.o)
+                0x000000c8       0x30 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_irq_entry.o)
  .debug_aranges
-                0x000000f8       0x18 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-impure.o)
+                0x000000f8       0x20 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_irq_handler.o)
  .debug_aranges
-                0x00000110       0x20 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-gettimeofdayr.o)
+                0x00000118       0x18 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_irq_vars.o)
  .debug_aranges
-                0x00000130       0x18 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-int_errno.o)
+                0x00000130       0x20 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_load.o)
  .debug_aranges
-                0x00000148       0x20 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/mno-hw-mul\libgcc.a(_muldi3.o)
+                0x00000150       0x20 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_main.o)
  .debug_aranges
-                0x00000168       0x20 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/mno-hw-mul\libgcc.a(lib2-mul.o)
+                0x00000170       0x20 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_sys_init.o)
  .debug_aranges
-                0x00000188       0x20 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_gettod.o)
+                0x00000190       0x20 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
  .debug_aranges
-                0x000001a8       0x20 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_iic.o)
+                0x000001b0       0x30 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_exception_entry.o)
  .debug_aranges
-                0x000001c8       0x20 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+                0x000001e0       0x20 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
  .debug_aranges
-                0x000001e8       0x30 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_irq_entry.o)
+                0x00000200       0x28 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
  .debug_aranges
-                0x00000218       0x20 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_irq_handler.o)
+                0x00000228       0x20 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
  .debug_aranges
-                0x00000238       0x18 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_irq_vars.o)
- .debug_aranges
-                0x00000250       0x20 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_load.o)
- .debug_aranges
-                0x00000270       0x20 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_main.o)
- .debug_aranges
-                0x00000290       0x20 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_tick.o)
- .debug_aranges
-                0x000002b0       0x20 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_sys_init.o)
- .debug_aranges
-                0x000002d0       0x20 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
- .debug_aranges
-                0x000002f0       0x30 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_exception_entry.o)
- .debug_aranges
-                0x00000320       0x20 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
- .debug_aranges
-                0x00000340       0x28 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
- .debug_aranges
-                0x00000368       0x20 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
- .debug_aranges
-                0x00000388       0x20 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-memcpy.o)
- .debug_aranges
-                0x000003a8       0x20 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/mno-hw-mul\libgcc.a(_udivdi3.o)
- .debug_aranges
-                0x000003c8       0x20 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/mno-hw-mul\libgcc.a(_umoddi3.o)
- .debug_aranges
-                0x000003e8       0x18 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/mno-hw-mul\libgcc.a(_clz.o)
+                0x00000248       0x20 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-memcpy.o)
 
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x00000000     0x6323
+.debug_info     0x00000000     0x210f
  *(.debug_info .gnu.linkonce.wi.*)
  .debug_info    0x00000000       0x3f c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//obj/HAL/src/crt0.o
  .debug_info    0x0000003f      0x734 obj/default/lib_JOYSTICK/joystick_io.o
  .debug_info    0x00000773      0x5c9 obj/default/lib_graphic_processor/graphic_processor.o
- .debug_info    0x00000d3c      0xe5e obj/default/new_asteroids_game.o
- .debug_info    0x00001b9a      0x347 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/mno-hw-mul\libgcc.a(lib2-divmod.o)
- .debug_info    0x00001ee1      0x54a c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-rand.o)
- .debug_info    0x0000242b      0x5a9 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-time.o)
- .debug_info    0x000029d4      0x4eb c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-impure.o)
- .debug_info    0x00002ebf      0x5d5 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-gettimeofdayr.o)
- .debug_info    0x00003494       0x85 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-int_errno.o)
- .debug_info    0x00003519      0x246 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/mno-hw-mul\libgcc.a(_muldi3.o)
- .debug_info    0x0000375f       0xc4 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/mno-hw-mul\libgcc.a(lib2-mul.o)
- .debug_info    0x00003823      0x24f c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_gettod.o)
- .debug_info    0x00003a72      0x3d8 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_iic.o)
- .debug_info    0x00003e4a      0x27f c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
- .debug_info    0x000040c9       0x22 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_irq_entry.o)
- .debug_info    0x000040eb      0x195 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_irq_handler.o)
- .debug_info    0x00004280       0x88 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_irq_vars.o)
- .debug_info    0x00004308      0x239 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_load.o)
- .debug_info    0x00004541      0x13e c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_main.o)
- .debug_info    0x0000467f      0x2df c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_tick.o)
- .debug_info    0x0000495e      0x127 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_sys_init.o)
- .debug_info    0x00004a85       0x8d c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
- .debug_info    0x00004b12       0x22 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_exception_entry.o)
- .debug_info    0x00004b34       0x8d c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
- .debug_info    0x00004bc1      0x208 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
- .debug_info    0x00004dc9       0x8d c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
- .debug_info    0x00004e56      0x121 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-memcpy.o)
- .debug_info    0x00004f77      0x942 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/mno-hw-mul\libgcc.a(_udivdi3.o)
- .debug_info    0x000058b9      0x9a7 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/mno-hw-mul\libgcc.a(_umoddi3.o)
- .debug_info    0x00006260       0xc3 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/mno-hw-mul\libgcc.a(_clz.o)
+ .debug_info    0x00000d3c      0x1ad obj/default/new_asteroids_game.o
+ .debug_info    0x00000ee9      0x3d8 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_iic.o)
+ .debug_info    0x000012c1      0x27f c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+ .debug_info    0x00001540       0x22 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .debug_info    0x00001562      0x195 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .debug_info    0x000016f7       0x88 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .debug_info    0x0000177f      0x239 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_info    0x000019b8      0x13e c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_info    0x00001af6      0x127 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_info    0x00001c1d       0x8d c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_info    0x00001caa       0x22 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .debug_info    0x00001ccc       0x8d c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_info    0x00001d59      0x208 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
+ .debug_info    0x00001f61       0x8d c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .debug_info    0x00001fee      0x121 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-memcpy.o)
 
-.debug_abbrev   0x00000000     0x2210
+.debug_abbrev   0x00000000     0x1093
  *(.debug_abbrev)
  .debug_abbrev  0x00000000       0x1f c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//obj/HAL/src/crt0.o
  .debug_abbrev  0x0000001f      0x253 obj/default/lib_JOYSTICK/joystick_io.o
  .debug_abbrev  0x00000272      0x1fc obj/default/lib_graphic_processor/graphic_processor.o
- .debug_abbrev  0x0000046e      0x246 obj/default/new_asteroids_game.o
- .debug_abbrev  0x000006b4      0x10c c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/mno-hw-mul\libgcc.a(lib2-divmod.o)
- .debug_abbrev  0x000007c0      0x1bd c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-rand.o)
- .debug_abbrev  0x0000097d      0x1ad c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-time.o)
- .debug_abbrev  0x00000b2a      0x142 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-impure.o)
- .debug_abbrev  0x00000c6c      0x1ca c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-gettimeofdayr.o)
- .debug_abbrev  0x00000e36       0x39 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-int_errno.o)
- .debug_abbrev  0x00000e6f      0x124 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/mno-hw-mul\libgcc.a(_muldi3.o)
- .debug_abbrev  0x00000f93       0x80 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/mno-hw-mul\libgcc.a(lib2-mul.o)
- .debug_abbrev  0x00001013      0x125 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_gettod.o)
- .debug_abbrev  0x00001138      0x1dd c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_iic.o)
- .debug_abbrev  0x00001315      0x1d9 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
- .debug_abbrev  0x000014ee       0x12 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_irq_entry.o)
- .debug_abbrev  0x00001500      0x147 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_irq_handler.o)
- .debug_abbrev  0x00001647       0x46 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_irq_vars.o)
- .debug_abbrev  0x0000168d      0x12c c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_load.o)
- .debug_abbrev  0x000017b9       0xeb c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_main.o)
- .debug_abbrev  0x000018a4      0x1a4 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_tick.o)
- .debug_abbrev  0x00001a48      0x107 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_sys_init.o)
- .debug_abbrev  0x00001b4f       0x43 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
- .debug_abbrev  0x00001b92       0x12 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_exception_entry.o)
- .debug_abbrev  0x00001ba4       0x43 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
- .debug_abbrev  0x00001be7      0x113 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
- .debug_abbrev  0x00001cfa       0x43 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
- .debug_abbrev  0x00001d3d       0xc1 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-memcpy.o)
- .debug_abbrev  0x00001dfe      0x1bb c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/mno-hw-mul\libgcc.a(_udivdi3.o)
- .debug_abbrev  0x00001fb9      0x1e7 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/mno-hw-mul\libgcc.a(_umoddi3.o)
- .debug_abbrev  0x000021a0       0x70 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/mno-hw-mul\libgcc.a(_clz.o)
+ .debug_abbrev  0x0000046e      0x103 obj/default/new_asteroids_game.o
+ .debug_abbrev  0x00000571      0x1dd c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_iic.o)
+ .debug_abbrev  0x0000074e      0x1d9 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+ .debug_abbrev  0x00000927       0x12 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .debug_abbrev  0x00000939      0x147 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .debug_abbrev  0x00000a80       0x46 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .debug_abbrev  0x00000ac6      0x12c c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_abbrev  0x00000bf2       0xeb c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_abbrev  0x00000cdd      0x107 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_abbrev  0x00000de4       0x43 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_abbrev  0x00000e27       0x12 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .debug_abbrev  0x00000e39       0x43 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_abbrev  0x00000e7c      0x113 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
+ .debug_abbrev  0x00000f8f       0x43 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .debug_abbrev  0x00000fd2       0xc1 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-memcpy.o)
 
-.debug_line     0x00000000     0x2e1e
+.debug_line     0x00000000     0x110c
  *(.debug_line)
  .debug_line    0x00000000       0x66 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//obj/HAL/src/crt0.o
  .debug_line    0x00000066      0x33f obj/default/lib_JOYSTICK/joystick_io.o
  .debug_line    0x000003a5      0x3a4 obj/default/lib_graphic_processor/graphic_processor.o
- .debug_line    0x00000749      0xcd7 obj/default/new_asteroids_game.o
- .debug_line    0x00001420      0x2e3 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/mno-hw-mul\libgcc.a(lib2-divmod.o)
- .debug_line    0x00001703       0xbd c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-rand.o)
- .debug_line    0x000017c0       0xd0 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-time.o)
- .debug_line    0x00001890       0x4c c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-impure.o)
- .debug_line    0x000018dc       0xbb c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-gettimeofdayr.o)
- .debug_line    0x00001997       0x3a c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-int_errno.o)
- .debug_line    0x000019d1      0x10e c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/mno-hw-mul\libgcc.a(_muldi3.o)
- .debug_line    0x00001adf       0x88 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/mno-hw-mul\libgcc.a(lib2-mul.o)
- .debug_line    0x00001b67      0x1a3 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_gettod.o)
- .debug_line    0x00001d0a      0x152 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_iic.o)
- .debug_line    0x00001e5c      0x115 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
- .debug_line    0x00001f71       0x6b c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_irq_entry.o)
- .debug_line    0x00001fdc       0xf9 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_irq_handler.o)
- .debug_line    0x000020d5       0x43 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_irq_vars.o)
- .debug_line    0x00002118       0xd2 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_load.o)
- .debug_line    0x000021ea       0xa2 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_main.o)
- .debug_line    0x0000228c      0x15e c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_tick.o)
- .debug_line    0x000023ea       0x92 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_sys_init.o)
- .debug_line    0x0000247c       0x4e c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
- .debug_line    0x000024ca       0x9d c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_exception_entry.o)
- .debug_line    0x00002567       0x4c c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
- .debug_line    0x000025b3       0xb0 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
- .debug_line    0x00002663       0x54 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
- .debug_line    0x000026b7       0x8c c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-memcpy.o)
- .debug_line    0x00002743      0x33c c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/mno-hw-mul\libgcc.a(_udivdi3.o)
- .debug_line    0x00002a7f      0x360 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/mno-hw-mul\libgcc.a(_umoddi3.o)
- .debug_line    0x00002ddf       0x3f c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/mno-hw-mul\libgcc.a(_clz.o)
+ .debug_line    0x00000749       0xe8 obj/default/new_asteroids_game.o
+ .debug_line    0x00000831      0x152 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_iic.o)
+ .debug_line    0x00000983      0x115 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+ .debug_line    0x00000a98       0x6b c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .debug_line    0x00000b03       0xf9 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .debug_line    0x00000bfc       0x43 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .debug_line    0x00000c3f       0xd2 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_line    0x00000d11       0xa2 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_line    0x00000db3       0x92 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_line    0x00000e45       0x4e c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_line    0x00000e93       0x9d c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .debug_line    0x00000f30       0x4c c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_line    0x00000f7c       0xb0 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
+ .debug_line    0x0000102c       0x54 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .debug_line    0x00001080       0x8c c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-memcpy.o)
 
-.debug_frame    0x00000000      0x6c8
+.debug_frame    0x00000000      0x3ac
  *(.debug_frame)
  .debug_frame   0x00000000       0xfc obj/default/lib_JOYSTICK/joystick_io.o
  .debug_frame   0x000000fc       0x70 obj/default/lib_graphic_processor/graphic_processor.o
- .debug_frame   0x0000016c       0xb8 obj/default/new_asteroids_game.o
- .debug_frame   0x00000224       0x50 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/mno-hw-mul\libgcc.a(lib2-divmod.o)
- .debug_frame   0x00000274       0x3c c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-rand.o)
- .debug_frame   0x000002b0       0x38 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-time.o)
- .debug_frame   0x000002e8       0x30 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-gettimeofdayr.o)
- .debug_frame   0x00000318       0x50 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/mno-hw-mul\libgcc.a(_muldi3.o)
- .debug_frame   0x00000368       0x20 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/mno-hw-mul\libgcc.a(lib2-mul.o)
- .debug_frame   0x00000388       0x4c c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_gettod.o)
- .debug_frame   0x000003d4       0x50 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_iic.o)
- .debug_frame   0x00000424       0x38 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
- .debug_frame   0x0000045c       0x34 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_irq_handler.o)
- .debug_frame   0x00000490       0x2c c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_load.o)
- .debug_frame   0x000004bc       0x2c c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_main.o)
- .debug_frame   0x000004e8       0x4c c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_tick.o)
- .debug_frame   0x00000534       0x3c c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_sys_init.o)
- .debug_frame   0x00000570       0x20 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
- .debug_frame   0x00000590       0x20 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
- .debug_frame   0x000005b0       0x30 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
- .debug_frame   0x000005e0       0x20 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
- .debug_frame   0x00000600       0x20 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-memcpy.o)
- .debug_frame   0x00000620       0x54 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/mno-hw-mul\libgcc.a(_udivdi3.o)
- .debug_frame   0x00000674       0x54 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/mno-hw-mul\libgcc.a(_umoddi3.o)
+ .debug_frame   0x0000016c       0x40 obj/default/new_asteroids_game.o
+ .debug_frame   0x000001ac       0x50 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_iic.o)
+ .debug_frame   0x000001fc       0x38 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+ .debug_frame   0x00000234       0x34 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .debug_frame   0x00000268       0x2c c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_frame   0x00000294       0x2c c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_frame   0x000002c0       0x3c c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_frame   0x000002fc       0x20 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_frame   0x0000031c       0x20 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_frame   0x0000033c       0x30 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
+ .debug_frame   0x0000036c       0x20 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .debug_frame   0x0000038c       0x20 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-memcpy.o)
 
-.debug_str      0x00000000     0x1395
+.debug_str      0x00000000      0xbe4
  *(.debug_str)
  .debug_str     0x00000000       0x71 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp//obj/HAL/src/crt0.o
                                  0x78 (size before relaxing)
  .debug_str     0x00000071      0x1ff obj/default/lib_JOYSTICK/joystick_io.o
                                 0x254 (size before relaxing)
- .debug_str     0x00000270      0x132 obj/default/lib_graphic_processor/graphic_processor.o
+ .debug_str     0x00000270      0x141 obj/default/lib_graphic_processor/graphic_processor.o
                                 0x22a (size before relaxing)
- .debug_str     0x000003a2      0x1d4 obj/default/new_asteroids_game.o
-                                0x38d (size before relaxing)
- .debug_str     0x00000576       0xce c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/mno-hw-mul\libgcc.a(lib2-divmod.o)
-                                0x122 (size before relaxing)
- .debug_str     0x00000644      0x2e6 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-rand.o)
-                                0x3ac (size before relaxing)
- .debug_str     0x0000092a       0x2d c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-time.o)
-                                0x3e0 (size before relaxing)
- .debug_str     0x00000957        0xd c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-impure.o)
-                                0x390 (size before relaxing)
- .debug_str     0x00000964       0x20 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-gettimeofdayr.o)
-                                0x3f5 (size before relaxing)
- .debug_str     0x00000984      0x106 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-int_errno.o)
- .debug_str     0x00000984       0x64 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/mno-hw-mul\libgcc.a(_muldi3.o)
-                                0x194 (size before relaxing)
- .debug_str     0x000009e8       0xe6 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/mno-hw-mul\libgcc.a(lib2-mul.o)
- .debug_str     0x000009e8       0x90 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_gettod.o)
-                                0x220 (size before relaxing)
- .debug_str     0x00000a78       0xcb c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_iic.o)
+ .debug_str     0x000003b1       0x17 obj/default/new_asteroids_game.o
+                                0x137 (size before relaxing)
+ .debug_str     0x000003c8       0xd1 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_iic.o)
                                 0x1f6 (size before relaxing)
- .debug_str     0x00000b43       0x18 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+ .debug_str     0x00000499       0x18 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
                                 0x1b5 (size before relaxing)
- .debug_str     0x00000b5b       0x18 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .debug_str     0x000004b1       0x18 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_irq_entry.o)
                                  0x72 (size before relaxing)
- .debug_str     0x00000b73       0x20 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .debug_str     0x000004c9       0x20 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_irq_handler.o)
                                 0x144 (size before relaxing)
- .debug_str     0x00000b93       0x12 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .debug_str     0x000004e9       0x12 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_irq_vars.o)
                                  0xf3 (size before relaxing)
- .debug_str     0x00000ba5      0x111 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_str     0x000004fb      0x111 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_load.o)
                                 0x208 (size before relaxing)
- .debug_str     0x00000cb6       0x4b c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_str     0x0000060c       0x4b c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_main.o)
                                 0x138 (size before relaxing)
- .debug_str     0x00000d01       0x7b c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_tick.o)
-                                0x1fe (size before relaxing)
- .debug_str     0x00000d7c       0x88 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_str     0x00000657       0x88 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_sys_init.o)
                                 0x18a (size before relaxing)
- .debug_str     0x00000e04       0xfd c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
- .debug_str     0x00000e04       0x1e c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .debug_str     0x000006df       0xfd c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_str     0x000006df       0x1e c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_exception_entry.o)
                                  0x78 (size before relaxing)
- .debug_str     0x00000e22       0xfd c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
- .debug_str     0x00000e22      0x461 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
+ .debug_str     0x000006fd       0xfd c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_str     0x000006fd      0x461 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
                                 0x546 (size before relaxing)
- .debug_str     0x00001283      0x103 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
- .debug_str     0x00001283       0x1b c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-memcpy.o)
+ .debug_str     0x00000b5e      0x103 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .debug_str     0x00000b5e       0x86 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-memcpy.o)
                                 0x122 (size before relaxing)
- .debug_str     0x0000129e       0xf7 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/mno-hw-mul\libgcc.a(_udivdi3.o)
-                                0x216 (size before relaxing)
- .debug_str     0x00001395      0x216 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/mno-hw-mul\libgcc.a(_umoddi3.o)
- .debug_str     0x00001395      0x140 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/mno-hw-mul\libgcc.a(_clz.o)
 
 .debug_loc
  *(.debug_loc)
@@ -814,81 +591,47 @@ LOAD linker stubs
  .debug_ranges  0x00000048       0x28 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_exception_entry.o)
 
 .debug_loclists
-                0x00000000     0x31fa
+                0x00000000      0xca0
  .debug_loclists
                 0x00000000      0x4ac obj/default/lib_JOYSTICK/joystick_io.o
  .debug_loclists
                 0x000004ac      0x3f6 obj/default/lib_graphic_processor/graphic_processor.o
  .debug_loclists
-                0x000008a2      0x5af obj/default/new_asteroids_game.o
+                0x000008a2       0x36 obj/default/new_asteroids_game.o
  .debug_loclists
-                0x00000e51      0x37a c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/mno-hw-mul\libgcc.a(lib2-divmod.o)
+                0x000008d8       0xf9 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_iic.o)
  .debug_loclists
-                0x000011cb       0x2a c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-time.o)
+                0x000009d1      0x130 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
  .debug_loclists
-                0x000011f5       0x6a c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-gettimeofdayr.o)
+                0x00000b01       0x6e c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_irq_handler.o)
  .debug_loclists
-                0x0000125f      0x11d c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/mno-hw-mul\libgcc.a(_muldi3.o)
+                0x00000b6f       0x1e c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_sys_init.o)
  .debug_loclists
-                0x0000137c       0x5b c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/mno-hw-mul\libgcc.a(lib2-mul.o)
+                0x00000b8d       0x47 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
  .debug_loclists
-                0x000013d7       0xc4 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_gettod.o)
- .debug_loclists
-                0x0000149b       0xf9 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_iic.o)
- .debug_loclists
-                0x00001594      0x130 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
- .debug_loclists
-                0x000016c4       0x6e c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_irq_handler.o)
- .debug_loclists
-                0x00001732       0x63 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_tick.o)
- .debug_loclists
-                0x00001795       0x1e c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_sys_init.o)
- .debug_loclists
-                0x000017b3       0x47 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
- .debug_loclists
-                0x000017fa       0xcc c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-memcpy.o)
- .debug_loclists
-                0x000018c6      0xdbb c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/mno-hw-mul\libgcc.a(_udivdi3.o)
- .debug_loclists
-                0x00002681      0xb79 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/mno-hw-mul\libgcc.a(_umoddi3.o)
+                0x00000bd4       0xcc c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-memcpy.o)
 
 .debug_rnglists
-                0x00000000      0x3e2
+                0x00000000      0x134
  .debug_rnglists
                 0x00000000       0x6b obj/default/lib_JOYSTICK/joystick_io.o
  .debug_rnglists
                 0x0000006b       0x1c obj/default/lib_graphic_processor/graphic_processor.o
  .debug_rnglists
-                0x00000087       0x4a obj/default/new_asteroids_game.o
+                0x00000087       0x2c obj/default/new_asteroids_game.o
  .debug_rnglists
-                0x000000d1       0x3f c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/mno-hw-mul\libgcc.a(lib2-divmod.o)
+                0x000000b3       0x13 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
  .debug_rnglists
-                0x00000110       0x19 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-rand.o)
+                0x000000c6       0x1f c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_irq_handler.o)
  .debug_rnglists
-                0x00000129       0x13 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-time.o)
+                0x000000e5       0x23 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_load.o)
  .debug_rnglists
-                0x0000013c       0x13 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-gettimeofdayr.o)
+                0x00000108       0x19 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
  .debug_rnglists
-                0x0000014f       0x22 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/mno-hw-mul\libgcc.a(_muldi3.o)
- .debug_rnglists
-                0x00000171       0x1a c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_gettod.o)
- .debug_rnglists
-                0x0000018b       0x13 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
- .debug_rnglists
-                0x0000019e       0x1f c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_irq_handler.o)
- .debug_rnglists
-                0x000001bd       0x23 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_load.o)
- .debug_rnglists
-                0x000001e0       0x19 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
- .debug_rnglists
-                0x000001f9       0x13 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-memcpy.o)
- .debug_rnglists
-                0x0000020c      0x106 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/mno-hw-mul\libgcc.a(_udivdi3.o)
- .debug_rnglists
-                0x00000312       0xd0 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/mno-hw-mul\libgcc.a(_umoddi3.o)
+                0x00000121       0x13 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-memcpy.o)
 
 .debug_line_str
-                0x00000000      0xb28
+                0x00000000      0x682
  .debug_line_str
                 0x00000000      0x12f obj/default/lib_JOYSTICK/joystick_io.o
                                 0x192 (size before relaxing)
@@ -896,77 +639,41 @@ LOAD linker stubs
                 0x0000012f       0x54 obj/default/lib_graphic_processor/graphic_processor.o
                                 0x169 (size before relaxing)
  .debug_line_str
-                0x00000183      0x145 obj/default/new_asteroids_game.o
-                                0x293 (size before relaxing)
+                0x00000183       0xd8 obj/default/new_asteroids_game.o
+                                0x1ba (size before relaxing)
  .debug_line_str
-                0x000002c8       0xf2 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/mno-hw-mul\libgcc.a(lib2-divmod.o)
-                                0x187 (size before relaxing)
- .debug_line_str
-                0x000003ba      0x221 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-rand.o)
-                                0x2c3 (size before relaxing)
- .debug_line_str
-                0x000005db       0xc6 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-time.o)
-                                0x344 (size before relaxing)
- .debug_line_str
-                0x000006a1       0x67 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-impure.o)
-                                0x25a (size before relaxing)
- .debug_line_str
-                0x00000708       0x3f c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-gettimeofdayr.o)
-                                0x361 (size before relaxing)
- .debug_line_str
-                0x00000747       0x3b c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-int_errno.o)
-                                0x186 (size before relaxing)
- .debug_line_str
-                0x00000782       0x58 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/mno-hw-mul\libgcc.a(_muldi3.o)
-                                0x15e (size before relaxing)
- .debug_line_str
-                0x000007da       0x3a c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/mno-hw-mul\libgcc.a(lib2-mul.o)
-                                0x17e (size before relaxing)
- .debug_line_str
-                0x00000814       0x9b c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_gettod.o)
-                                0x1ec (size before relaxing)
- .debug_line_str
-                0x000008af       0x3a c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_iic.o)
+                0x0000025b       0xb4 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_iic.o)
                                 0x129 (size before relaxing)
  .debug_line_str
-                0x000008e9       0x2f c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+                0x0000030f       0x2f c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
                                 0x138 (size before relaxing)
  .debug_line_str
-                0x00000918       0x1a c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_irq_handler.o)
+                0x0000033e       0x1a c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_irq_handler.o)
                                 0x10a (size before relaxing)
  .debug_line_str
-                0x00000932       0x17 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_irq_vars.o)
+                0x00000358       0x17 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_irq_vars.o)
                                  0xe9 (size before relaxing)
  .debug_line_str
-                0x00000949       0x35 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_load.o)
+                0x0000036f       0x35 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_load.o)
                                 0x10d (size before relaxing)
  .debug_line_str
-                0x0000097e       0x31 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_main.o)
+                0x000003a4       0x31 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_main.o)
                                 0x10c (size before relaxing)
  .debug_line_str
-                0x000009af       0x1f c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_tick.o)
-                                0x128 (size before relaxing)
- .debug_line_str
-                0x000009ce       0x4f c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_sys_init.o)
+                0x000003d5       0x4f c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_sys_init.o)
                                 0x125 (size before relaxing)
  .debug_line_str
-                0x00000a1d       0x1f c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+                0x00000424       0x1f c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
                                  0xeb (size before relaxing)
  .debug_line_str
-                0x00000a3c       0x1f c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+                0x00000443       0x1f c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
                                  0xeb (size before relaxing)
  .debug_line_str
-                0x00000a5b       0x3b c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
+                0x00000462       0x3b c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
                                 0x141 (size before relaxing)
  .debug_line_str
-                0x00000a96       0x20 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+                0x0000049d       0x20 c:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/software/sas_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
                                  0xee (size before relaxing)
  .debug_line_str
-                0x00000ab6       0x72 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-memcpy.o)
+                0x000004bd      0x1c5 c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(libc_a-memcpy.o)
                                 0x259 (size before relaxing)
- .debug_line_str
-                0x00000b28      0x15e c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/mno-hw-mul\libgcc.a(_udivdi3.o)
- .debug_line_str
-                0x00000b28      0x15e c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/mno-hw-mul\libgcc.a(_umoddi3.o)
- .debug_line_str
-                0x00000b28      0x15e c:/intelfpga_lite/23.1std/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/12.3.1/mno-hw-mul\libgcc.a(_clz.o)

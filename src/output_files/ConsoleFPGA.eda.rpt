@@ -1,5 +1,5 @@
 EDA Netlist Writer report for ConsoleFPGA
-Wed Oct 23 19:29:07 2024
+Fri Jan 24 12:35:38 2025
 Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
@@ -37,7 +37,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Wed Oct 23 19:29:07 2024 ;
+; EDA Netlist Writer Status ; Successful - Fri Jan 24 12:35:38 2025 ;
 ; Revision Name             ; ConsoleFPGA                           ;
 ; Top-level Entity Name     ; ArquiteturaCollenda                   ;
 ; Family                    ; Cyclone IV E                          ;
@@ -81,14 +81,14 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
     Info: Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
-    Info: Processing started: Wed Oct 23 19:29:03 2024
+    Info: Processing started: Fri Jan 24 12:35:33 2025
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off ConsoleFPGA -c ConsoleFPGA
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (204019): Generated file ConsoleFPGA.vo in folder "C:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/simulation/questa/" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4719 megabytes
-    Info: Processing ended: Wed Oct 23 19:29:07 2024
-    Info: Elapsed time: 00:00:04
+    Info: Peak virtual memory: 4726 megabytes
+    Info: Processing ended: Fri Jan 24 12:35:39 2025
+    Info: Elapsed time: 00:00:06
     Info: Total CPU time (on all processors): 00:00:03
 
 

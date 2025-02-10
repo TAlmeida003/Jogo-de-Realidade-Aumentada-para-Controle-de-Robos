@@ -1,6 +1,6 @@
 <sld_project_info>
   <project>
-    <hash md5_digest_80b="3069d0cf04c85fde275c"/>
+    <hash md5_digest_80b="3ee28912762126efb118"/>
   </project>
   <file_info>
     <file device="EP4CE22F17C6" path="ConsoleFPGA.sof" usercode="0xFFFFFFFF"/>
@@ -139,7 +139,7 @@
   <sld_infos>
     <sld_info hpath="Arquitetura:b2v_inst9" name="b2v_inst9">
       <assignment_values>
-        <assignment_value text="QSYS_NAME Arquitetura HAS_SOPCINFO 1 GENERATION_ID 1728871358"/>
+        <assignment_value text="QSYS_NAME Arquitetura HAS_SOPCINFO 1 GENERATION_ID 1737732650"/>
       </assignment_values>
       <parameters/>
     </sld_info>

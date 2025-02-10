@@ -90,9 +90,9 @@ ACDS_VERSION := 23.1
 ELF := sas.elf
 
 # Paths to C, C++, and assembly source files.
-C_SRCS += new_asteroids_game.c
 C_SRCS += lib_graphic_processor/graphic_processor.c
 C_SRCS += lib_JOYSTICK/joystick_io.c
+C_SRCS += new_asteroids_game.c
 CXX_SRCS :=
 ASM_SRCS :=
 

@@ -1,216 +1,56 @@
-Info: Starting: Create simulation model
-Info: qsys-generate C:\Users\thiag\Downloads\CoLendaFPGA\CoLendaFPGA\DE0-Nano\Arquitetura.qsys --simulation=VERILOG --allow-mixed-language-simulation --output-directory=C:\Users\thiag\Downloads\CoLendaFPGA\CoLendaFPGA\DE0-Nano\Arquitetura\simulation --family="Cyclone IV E" --part=EP4CE22F17C6
-Progress: Loading DE0-Nano/Arquitetura.qsys
-Progress: Reading input file
-Progress: Adding A [altera_avalon_pio 23.1]
-Progress: Parameterizing module A
-Progress: Adding B [altera_avalon_pio 23.1]
-Progress: Parameterizing module B
-Progress: Adding Direction_Analogic [altera_avalon_pio 23.1]
-Progress: Parameterizing module Direction_Analogic
-Progress: Adding TL [altera_avalon_pio 23.1]
-Progress: Parameterizing module TL
-Progress: Adding TR [altera_avalon_pio 23.1]
-Progress: Parameterizing module TR
-Progress: Adding X [altera_avalon_pio 23.1]
-Progress: Parameterizing module X
-Progress: Adding clk_0 [clock_source 23.1]
-Progress: Parameterizing module clk_0
-Progress: Adding data_A [altera_avalon_pio 23.1]
-Progress: Parameterizing module data_A
-Progress: Adding data_B [altera_avalon_pio 23.1]
-Progress: Parameterizing module data_B
-Progress: Adding jtag_uart_0 [altera_avalon_jtag_uart 23.1]
-Progress: Parameterizing module jtag_uart_0
-Progress: Adding nios2_gen2_0 [altera_nios2_gen2 23.1]
-Progress: Parameterizing module nios2_gen2_0
-Progress: Adding onchip_memory2_0 [altera_avalon_onchip_memory2 23.1]
-Progress: Parameterizing module onchip_memory2_0
-Progress: Adding reset_pulseCounter [altera_avalon_pio 23.1]
-Progress: Parameterizing module reset_pulseCounter
-Progress: Adding screen [altera_avalon_pio 23.1]
-Progress: Parameterizing module screen
-Progress: Adding select_button [altera_avalon_pio 23.1]
-Progress: Parameterizing module select_button
-Progress: Adding start [altera_avalon_pio 23.1]
-Progress: Parameterizing module start
-Progress: Adding sysid_qsys_0 [altera_avalon_sysid_qsys 23.1]
-Progress: Parameterizing module sysid_qsys_0
-Progress: Adding wrfull [altera_avalon_pio 23.1]
-Progress: Parameterizing module wrfull
-Progress: Adding wrreg [altera_avalon_pio 23.1]
-Progress: Parameterizing module wrreg
-Progress: Adding y [altera_avalon_pio 23.1]
-Progress: Parameterizing module y
-Progress: Building connections
-Progress: Parameterizing connections
-Progress: Validating
-Progress: Done reading input file
-Info: Arquitetura.A: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
-Info: Arquitetura.B: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
-Info: Arquitetura.Direction_Analogic: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
-Info: Arquitetura.TL: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
-Info: Arquitetura.TR: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
-Info: Arquitetura.X: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
-Info: Arquitetura.jtag_uart_0: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
-Warning: Arquitetura.nios2_gen2_0: Nios II cores are not recommended for new projects and are subject to removal in a future release. Nios V cores are the recommended replacement as applicable.
-Info: Arquitetura.screen: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
-Info: Arquitetura.select_button: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
-Info: Arquitetura.start: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
-Info: Arquitetura.sysid_qsys_0: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
-Info: Arquitetura.sysid_qsys_0: Time stamp will be automatically updated when this component is generated.
-Info: Arquitetura.wrfull: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
-Info: Arquitetura.y: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
-Info: Arquitetura: Generating Arquitetura "Arquitetura" for SIM_VERILOG
-Info: A: Starting RTL generation for module 'Arquitetura_A'
-Info: A:   Generation command is [exec cmd /c {set LC_ALL=C&& C:/intelfpga_lite/23.1std/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/23.1std/quartus/bin64/perl/lib -I C:/intelfpga_lite/23.1std/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/23.1std/quartus/sopc_builder/bin -I C:/intelfpga_lite/23.1std/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/23.1std/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/23.1std/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=Arquitetura_A --dir=C:/Users/thiag/AppData/Local/Temp/alt0010_2468094280704341933.dir/0002_A_gen/ --quartus_dir=C:/intelfpga_lite/23.1std/quartus --verilog --config=C:/Users/thiag/AppData/Local/Temp/alt0010_2468094280704341933.dir/0002_A_gen//Arquitetura_A_component_configuration.pl --do_build_sim=1 --sim_dir=C:/Users/thiag/AppData/Local/Temp/alt0010_2468094280704341933.dir/0002_A_gen/}]
-Info: A: Done RTL generation for module 'Arquitetura_A'
-Info: A: "Arquitetura" instantiated altera_avalon_pio "A"
-Info: Direction_Analogic: Starting RTL generation for module 'Arquitetura_Direction_Analogic'
-Info: Direction_Analogic:   Generation command is [exec cmd /c {set LC_ALL=C&& C:/intelfpga_lite/23.1std/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/23.1std/quartus/bin64/perl/lib -I C:/intelfpga_lite/23.1std/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/23.1std/quartus/sopc_builder/bin -I C:/intelfpga_lite/23.1std/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/23.1std/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/23.1std/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=Arquitetura_Direction_Analogic --dir=C:/Users/thiag/AppData/Local/Temp/alt0010_2468094280704341933.dir/0003_Direction_Analogic_gen/ --quartus_dir=C:/intelfpga_lite/23.1std/quartus --verilog --config=C:/Users/thiag/AppData/Local/Temp/alt0010_2468094280704341933.dir/0003_Direction_Analogic_gen//Arquitetura_Direction_Analogic_component_configuration.pl --do_build_sim=1 --sim_dir=C:/Users/thiag/AppData/Local/Temp/alt0010_2468094280704341933.dir/0003_Direction_Analogic_gen/}]
-Info: Direction_Analogic: Done RTL generation for module 'Arquitetura_Direction_Analogic'
-Info: Direction_Analogic: "Arquitetura" instantiated altera_avalon_pio "Direction_Analogic"
-Info: data_A: Starting RTL generation for module 'Arquitetura_data_A'
-Info: data_A:   Generation command is [exec cmd /c {set LC_ALL=C&& C:/intelfpga_lite/23.1std/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/23.1std/quartus/bin64/perl/lib -I C:/intelfpga_lite/23.1std/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/23.1std/quartus/sopc_builder/bin -I C:/intelfpga_lite/23.1std/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/23.1std/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/23.1std/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=Arquitetura_data_A --dir=C:/Users/thiag/AppData/Local/Temp/alt0010_2468094280704341933.dir/0004_data_A_gen/ --quartus_dir=C:/intelfpga_lite/23.1std/quartus --verilog --config=C:/Users/thiag/AppData/Local/Temp/alt0010_2468094280704341933.dir/0004_data_A_gen//Arquitetura_data_A_component_configuration.pl --do_build_sim=1 --sim_dir=C:/Users/thiag/AppData/Local/Temp/alt0010_2468094280704341933.dir/0004_data_A_gen/}]
-Info: data_A: Done RTL generation for module 'Arquitetura_data_A'
-Info: data_A: "Arquitetura" instantiated altera_avalon_pio "data_A"
-Info: jtag_uart_0: Starting RTL generation for module 'Arquitetura_jtag_uart_0'
-Info: jtag_uart_0:   Generation command is [exec cmd /c {set LC_ALL=C&& C:/intelfpga_lite/23.1std/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/23.1std/quartus/bin64/perl/lib -I C:/intelfpga_lite/23.1std/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/23.1std/quartus/sopc_builder/bin -I C:/intelfpga_lite/23.1std/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/23.1std/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- C:/intelfpga_lite/23.1std/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=Arquitetura_jtag_uart_0 --dir=C:/Users/thiag/AppData/Local/Temp/alt0010_2468094280704341933.dir/0005_jtag_uart_0_gen/ --quartus_dir=C:/intelfpga_lite/23.1std/quartus --verilog --config=C:/Users/thiag/AppData/Local/Temp/alt0010_2468094280704341933.dir/0005_jtag_uart_0_gen//Arquitetura_jtag_uart_0_component_configuration.pl --do_build_sim=1 --sim_dir=C:/Users/thiag/AppData/Local/Temp/alt0010_2468094280704341933.dir/0005_jtag_uart_0_gen/}]
-Info: jtag_uart_0: Done RTL generation for module 'Arquitetura_jtag_uart_0'
-Info: jtag_uart_0: "Arquitetura" instantiated altera_avalon_jtag_uart "jtag_uart_0"
-Info: nios2_gen2_0: "Arquitetura" instantiated altera_nios2_gen2 "nios2_gen2_0"
-Info: onchip_memory2_0: Starting RTL generation for module 'Arquitetura_onchip_memory2_0'
-Info: onchip_memory2_0:   Generation command is [exec cmd /c {set LC_ALL=C&& C:/intelfpga_lite/23.1std/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/23.1std/quartus/bin64/perl/lib -I C:/intelfpga_lite/23.1std/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/23.1std/quartus/sopc_builder/bin -I C:/intelfpga_lite/23.1std/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/23.1std/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/intelfpga_lite/23.1std/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=Arquitetura_onchip_memory2_0 --dir=C:/Users/thiag/AppData/Local/Temp/alt0010_2468094280704341933.dir/0006_onchip_memory2_0_gen/ --quartus_dir=C:/intelfpga_lite/23.1std/quartus --verilog --config=C:/Users/thiag/AppData/Local/Temp/alt0010_2468094280704341933.dir/0006_onchip_memory2_0_gen//Arquitetura_onchip_memory2_0_component_configuration.pl --do_build_sim=1 --sim_dir=C:/Users/thiag/AppData/Local/Temp/alt0010_2468094280704341933.dir/0006_onchip_memory2_0_gen/}]
-Info: onchip_memory2_0: Done RTL generation for module 'Arquitetura_onchip_memory2_0'
-Info: onchip_memory2_0: "Arquitetura" instantiated altera_avalon_onchip_memory2 "onchip_memory2_0"
-Info: reset_pulseCounter: Starting RTL generation for module 'Arquitetura_reset_pulseCounter'
-Info: reset_pulseCounter:   Generation command is [exec cmd /c {set LC_ALL=C&& C:/intelfpga_lite/23.1std/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/23.1std/quartus/bin64/perl/lib -I C:/intelfpga_lite/23.1std/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/23.1std/quartus/sopc_builder/bin -I C:/intelfpga_lite/23.1std/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/23.1std/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/23.1std/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=Arquitetura_reset_pulseCounter --dir=C:/Users/thiag/AppData/Local/Temp/alt0010_2468094280704341933.dir/0007_reset_pulseCounter_gen/ --quartus_dir=C:/intelfpga_lite/23.1std/quartus --verilog --config=C:/Users/thiag/AppData/Local/Temp/alt0010_2468094280704341933.dir/0007_reset_pulseCounter_gen//Arquitetura_reset_pulseCounter_component_configuration.pl --do_build_sim=1 --sim_dir=C:/Users/thiag/AppData/Local/Temp/alt0010_2468094280704341933.dir/0007_reset_pulseCounter_gen/}]
-Info: reset_pulseCounter: Done RTL generation for module 'Arquitetura_reset_pulseCounter'
-Info: reset_pulseCounter: "Arquitetura" instantiated altera_avalon_pio "reset_pulseCounter"
-Info: sysid_qsys_0: "Arquitetura" instantiated altera_avalon_sysid_qsys "sysid_qsys_0"
-Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
-Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
-Info: avalon_st_adapter_002: Inserting error_adapter: error_adapter_0
-Info: avalon_st_adapter_003: Inserting error_adapter: error_adapter_0
-Info: avalon_st_adapter_004: Inserting error_adapter: error_adapter_0
-Info: avalon_st_adapter_005: Inserting error_adapter: error_adapter_0
-Info: avalon_st_adapter_006: Inserting error_adapter: error_adapter_0
-Info: avalon_st_adapter_007: Inserting error_adapter: error_adapter_0
-Info: avalon_st_adapter_008: Inserting error_adapter: error_adapter_0
-Info: avalon_st_adapter_009: Inserting error_adapter: error_adapter_0
-Info: avalon_st_adapter_010: Inserting error_adapter: error_adapter_0
-Info: avalon_st_adapter_011: Inserting error_adapter: error_adapter_0
-Info: avalon_st_adapter_012: Inserting error_adapter: error_adapter_0
-Info: avalon_st_adapter_013: Inserting error_adapter: error_adapter_0
-Info: avalon_st_adapter_014: Inserting error_adapter: error_adapter_0
-Info: avalon_st_adapter_015: Inserting error_adapter: error_adapter_0
-Info: avalon_st_adapter_016: Inserting error_adapter: error_adapter_0
-Info: avalon_st_adapter_017: Inserting error_adapter: error_adapter_0
-Info: avalon_st_adapter_018: Inserting error_adapter: error_adapter_0
-Info: mm_interconnect_0: "Arquitetura" instantiated altera_mm_interconnect "mm_interconnect_0"
-Info: irq_mapper: "Arquitetura" instantiated altera_irq_mapper "irq_mapper"
-Info: rst_controller: "Arquitetura" instantiated altera_reset_controller "rst_controller"
-Info: cpu: Starting RTL generation for module 'Arquitetura_nios2_gen2_0_cpu'
-Info: cpu:   Generation command is [exec C:/intelFPGA_lite/23.1std/quartus/bin64//perl/bin/perl.exe -I C:/intelFPGA_lite/23.1std/quartus/bin64//perl/lib -I C:/intelfpga_lite/23.1std/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/23.1std/quartus/sopc_builder/bin -I C:/intelfpga_lite/23.1std/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/cpu_lib -I C:/intelfpga_lite/23.1std/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/nios_lib -I C:/intelfpga_lite/23.1std/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -I C:/intelfpga_lite/23.1std/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -- C:/intelfpga_lite/23.1std/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/generate_rtl.pl --name=Arquitetura_nios2_gen2_0_cpu --dir=C:/Users/thiag/AppData/Local/Temp/alt0010_2468094280704341933.dir/0011_cpu_gen/ --quartus_bindir=C:/intelFPGA_lite/23.1std/quartus/bin64/ --verilog --config=C:/Users/thiag/AppData/Local/Temp/alt0010_2468094280704341933.dir/0011_cpu_gen//Arquitetura_nios2_gen2_0_cpu_processor_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/thiag/AppData/Local/Temp/alt0010_2468094280704341933.dir/0011_cpu_gen/  ]
-Info: cpu: # 2024.10.13 22:30:00 (*) Starting Nios II generation
-Info: cpu: # 2024.10.13 22:30:00 (*)   Elaborating CPU configuration settings
-Info: cpu: # 2024.10.13 22:30:00 (*)   Creating all objects for CPU
-Info: cpu: # 2024.10.13 22:30:01 (*)   Creating 'C:/Users/thiag/AppData/Local/Temp/alt0010_2468094280704341933.dir/0011_cpu_gen//Arquitetura_nios2_gen2_0_cpu_nios2_waves.do'
-Info: cpu: # 2024.10.13 22:30:01 (*)   Generating RTL from CPU objects
-Info: cpu: # 2024.10.13 22:30:01 (*)   Creating plain-text RTL
-Info: cpu: # 2024.10.13 22:30:01 (*) Done Nios II generation
-Info: cpu: Done RTL generation for module 'Arquitetura_nios2_gen2_0_cpu'
-Info: cpu: "nios2_gen2_0" instantiated altera_nios2_gen2_unit "cpu"
-Info: nios2_gen2_0_data_master_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "nios2_gen2_0_data_master_translator"
-Info: jtag_uart_0_avalon_jtag_slave_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "jtag_uart_0_avalon_jtag_slave_translator"
-Info: nios2_gen2_0_data_master_agent: "mm_interconnect_0" instantiated altera_merlin_master_agent "nios2_gen2_0_data_master_agent"
-Info: jtag_uart_0_avalon_jtag_slave_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "jtag_uart_0_avalon_jtag_slave_agent"
-Info: jtag_uart_0_avalon_jtag_slave_agent_rsp_fifo: "mm_interconnect_0" instantiated altera_avalon_sc_fifo "jtag_uart_0_avalon_jtag_slave_agent_rsp_fifo"
-Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
-Info: router_002: "mm_interconnect_0" instantiated altera_merlin_router "router_002"
-Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
-Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
-Info: rsp_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux"
-Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
-Info: Reusing file C:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/Arquitetura/simulation/submodules/altera_merlin_arbitrator.sv
-Info: avalon_st_adapter: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter"
-Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
-Info: Arquitetura: Done "Arquitetura" with 26 modules, 46 files
-Info: qsys-generate succeeded.
-Info: Finished: Create simulation model
-Info: Starting: Create Modelsim Project.
-Info: sim-script-gen --spd=C:\Users\thiag\Downloads\CoLendaFPGA\CoLendaFPGA\DE0-Nano\Arquitetura\Arquitetura.spd --output-directory=C:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/Arquitetura/simulation/ --use-relative-paths=true
-Info: Doing: ip-make-simscript --spd=C:\Users\thiag\Downloads\CoLendaFPGA\CoLendaFPGA\DE0-Nano\Arquitetura\Arquitetura.spd --output-directory=C:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/Arquitetura/simulation/ --use-relative-paths=true
-Info: Generating the following file(s) for RIVIERA simulator in C:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/Arquitetura/simulation/ directory:
-Info: 	aldec/rivierapro_setup.tcl
-Info: Generating the following file(s) for MODELSIM simulator in C:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/Arquitetura/simulation/ directory:
-Info: 	mentor/msim_setup.tcl
-Info: For information on how to simulate your IP, see the explanatory comments in the simulator-specific subdirectories under C:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/Arquitetura/simulation/.
-Info: Regenerate these scripts whenever you make any change to any Quartus-generated IP in your project.
-Info: Finished: Create Modelsim Project.
 Info: Starting: Create block symbol file (.bsf)
 Info: qsys-generate C:\Users\thiag\Downloads\CoLendaFPGA\CoLendaFPGA\DE0-Nano\Arquitetura.qsys --block-symbol-file --output-directory=C:\Users\thiag\Downloads\CoLendaFPGA\CoLendaFPGA\DE0-Nano\Arquitetura --family="Cyclone IV E" --part=EP4CE22F17C6
 Progress: Loading DE0-Nano/Arquitetura.qsys
 Progress: Reading input file
-Progress: Adding A [altera_avalon_pio 23.1]
-Progress: Parameterizing module A
-Progress: Adding B [altera_avalon_pio 23.1]
-Progress: Parameterizing module B
-Progress: Adding Direction_Analogic [altera_avalon_pio 23.1]
-Progress: Parameterizing module Direction_Analogic
-Progress: Adding TL [altera_avalon_pio 23.1]
-Progress: Parameterizing module TL
-Progress: Adding TR [altera_avalon_pio 23.1]
-Progress: Parameterizing module TR
-Progress: Adding X [altera_avalon_pio 23.1]
-Progress: Parameterizing module X
 Progress: Adding clk_0 [clock_source 23.1]
 Progress: Parameterizing module clk_0
 Progress: Adding data_A [altera_avalon_pio 23.1]
 Progress: Parameterizing module data_A
 Progress: Adding data_B [altera_avalon_pio 23.1]
 Progress: Parameterizing module data_B
+Progress: Adding irq_joystick [altera_avalon_pio 23.1]
+Progress: Parameterizing module irq_joystick
 Progress: Adding jtag_uart_0 [altera_avalon_jtag_uart 23.1]
 Progress: Parameterizing module jtag_uart_0
 Progress: Adding nios2_gen2_0 [altera_nios2_gen2 23.1]
 Progress: Parameterizing module nios2_gen2_0
 Progress: Adding onchip_memory2_0 [altera_avalon_onchip_memory2 23.1]
 Progress: Parameterizing module onchip_memory2_0
+Progress: Adding rd_joystick_lsb [altera_avalon_pio 23.1]
+Progress: Parameterizing module rd_joystick_lsb
+Progress: Adding rd_joystick_msb [altera_avalon_pio 23.1]
+Progress: Parameterizing module rd_joystick_msb
 Progress: Adding reset_pulseCounter [altera_avalon_pio 23.1]
 Progress: Parameterizing module reset_pulseCounter
 Progress: Adding screen [altera_avalon_pio 23.1]
 Progress: Parameterizing module screen
-Progress: Adding select_button [altera_avalon_pio 23.1]
-Progress: Parameterizing module select_button
-Progress: Adding start [altera_avalon_pio 23.1]
-Progress: Parameterizing module start
 Progress: Adding sysid_qsys_0 [altera_avalon_sysid_qsys 23.1]
 Progress: Parameterizing module sysid_qsys_0
+Progress: Adding uart_interface_0 [uart_interface 1.0]
+Progress: Parameterizing module uart_interface_0
+Progress: Adding we_joystick [altera_avalon_pio 23.1]
+Progress: Parameterizing module we_joystick
+Progress: Adding we_joystick_lsb [altera_avalon_pio 23.1]
+Progress: Parameterizing module we_joystick_lsb
+Progress: Adding we_joystick_msb [altera_avalon_pio 23.1]
+Progress: Parameterizing module we_joystick_msb
 Progress: Adding wrfull [altera_avalon_pio 23.1]
 Progress: Parameterizing module wrfull
 Progress: Adding wrreg [altera_avalon_pio 23.1]
 Progress: Parameterizing module wrreg
-Progress: Adding y [altera_avalon_pio 23.1]
-Progress: Parameterizing module y
 Progress: Building connections
 Progress: Parameterizing connections
 Progress: Validating
 Progress: Done reading input file
-Info: Arquitetura.A: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
-Info: Arquitetura.B: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
-Info: Arquitetura.Direction_Analogic: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
-Info: Arquitetura.TL: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
-Info: Arquitetura.TR: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
-Info: Arquitetura.X: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: Arquitetura.irq_joystick: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
 Info: Arquitetura.jtag_uart_0: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
 Warning: Arquitetura.nios2_gen2_0: Nios II cores are not recommended for new projects and are subject to removal in a future release. Nios V cores are the recommended replacement as applicable.
+Info: Arquitetura.rd_joystick_lsb: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: Arquitetura.rd_joystick_msb: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
 Info: Arquitetura.screen: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
-Info: Arquitetura.select_button: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
-Info: Arquitetura.start: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
 Info: Arquitetura.sysid_qsys_0: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
 Info: Arquitetura.sysid_qsys_0: Time stamp will be automatically updated when this component is generated.
 Info: Arquitetura.wrfull: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
-Info: Arquitetura.y: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
 Info: qsys-generate succeeded.
 Info: Finished: Create block symbol file (.bsf)
 Info: 
@@ -218,92 +58,87 @@ Info: Starting: Create HDL design files for synthesis
 Info: qsys-generate C:\Users\thiag\Downloads\CoLendaFPGA\CoLendaFPGA\DE0-Nano\Arquitetura.qsys --synthesis=VERILOG --output-directory=C:\Users\thiag\Downloads\CoLendaFPGA\CoLendaFPGA\DE0-Nano\Arquitetura\synthesis --family="Cyclone IV E" --part=EP4CE22F17C6
 Progress: Loading DE0-Nano/Arquitetura.qsys
 Progress: Reading input file
-Progress: Adding A [altera_avalon_pio 23.1]
-Progress: Parameterizing module A
-Progress: Adding B [altera_avalon_pio 23.1]
-Progress: Parameterizing module B
-Progress: Adding Direction_Analogic [altera_avalon_pio 23.1]
-Progress: Parameterizing module Direction_Analogic
-Progress: Adding TL [altera_avalon_pio 23.1]
-Progress: Parameterizing module TL
-Progress: Adding TR [altera_avalon_pio 23.1]
-Progress: Parameterizing module TR
-Progress: Adding X [altera_avalon_pio 23.1]
-Progress: Parameterizing module X
 Progress: Adding clk_0 [clock_source 23.1]
 Progress: Parameterizing module clk_0
 Progress: Adding data_A [altera_avalon_pio 23.1]
 Progress: Parameterizing module data_A
 Progress: Adding data_B [altera_avalon_pio 23.1]
 Progress: Parameterizing module data_B
+Progress: Adding irq_joystick [altera_avalon_pio 23.1]
+Progress: Parameterizing module irq_joystick
 Progress: Adding jtag_uart_0 [altera_avalon_jtag_uart 23.1]
 Progress: Parameterizing module jtag_uart_0
 Progress: Adding nios2_gen2_0 [altera_nios2_gen2 23.1]
 Progress: Parameterizing module nios2_gen2_0
 Progress: Adding onchip_memory2_0 [altera_avalon_onchip_memory2 23.1]
 Progress: Parameterizing module onchip_memory2_0
+Progress: Adding rd_joystick_lsb [altera_avalon_pio 23.1]
+Progress: Parameterizing module rd_joystick_lsb
+Progress: Adding rd_joystick_msb [altera_avalon_pio 23.1]
+Progress: Parameterizing module rd_joystick_msb
 Progress: Adding reset_pulseCounter [altera_avalon_pio 23.1]
 Progress: Parameterizing module reset_pulseCounter
 Progress: Adding screen [altera_avalon_pio 23.1]
 Progress: Parameterizing module screen
-Progress: Adding select_button [altera_avalon_pio 23.1]
-Progress: Parameterizing module select_button
-Progress: Adding start [altera_avalon_pio 23.1]
-Progress: Parameterizing module start
 Progress: Adding sysid_qsys_0 [altera_avalon_sysid_qsys 23.1]
 Progress: Parameterizing module sysid_qsys_0
+Progress: Adding uart_interface_0 [uart_interface 1.0]
+Progress: Parameterizing module uart_interface_0
+Progress: Adding we_joystick [altera_avalon_pio 23.1]
+Progress: Parameterizing module we_joystick
+Progress: Adding we_joystick_lsb [altera_avalon_pio 23.1]
+Progress: Parameterizing module we_joystick_lsb
+Progress: Adding we_joystick_msb [altera_avalon_pio 23.1]
+Progress: Parameterizing module we_joystick_msb
 Progress: Adding wrfull [altera_avalon_pio 23.1]
 Progress: Parameterizing module wrfull
 Progress: Adding wrreg [altera_avalon_pio 23.1]
 Progress: Parameterizing module wrreg
-Progress: Adding y [altera_avalon_pio 23.1]
-Progress: Parameterizing module y
 Progress: Building connections
 Progress: Parameterizing connections
 Progress: Validating
 Progress: Done reading input file
-Info: Arquitetura.A: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
-Info: Arquitetura.B: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
-Info: Arquitetura.Direction_Analogic: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
-Info: Arquitetura.TL: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
-Info: Arquitetura.TR: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
-Info: Arquitetura.X: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: Arquitetura.irq_joystick: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
 Info: Arquitetura.jtag_uart_0: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
 Warning: Arquitetura.nios2_gen2_0: Nios II cores are not recommended for new projects and are subject to removal in a future release. Nios V cores are the recommended replacement as applicable.
+Info: Arquitetura.rd_joystick_lsb: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: Arquitetura.rd_joystick_msb: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
 Info: Arquitetura.screen: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
-Info: Arquitetura.select_button: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
-Info: Arquitetura.start: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
 Info: Arquitetura.sysid_qsys_0: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
 Info: Arquitetura.sysid_qsys_0: Time stamp will be automatically updated when this component is generated.
 Info: Arquitetura.wrfull: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
-Info: Arquitetura.y: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
 Info: Arquitetura: Generating Arquitetura "Arquitetura" for QUARTUS_SYNTH
-Info: A: Starting RTL generation for module 'Arquitetura_A'
-Info: A:   Generation command is [exec cmd /c {set LC_ALL=C&& C:/intelfpga_lite/23.1std/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/23.1std/quartus/bin64/perl/lib -I C:/intelfpga_lite/23.1std/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/23.1std/quartus/sopc_builder/bin -I C:/intelfpga_lite/23.1std/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/23.1std/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/23.1std/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=Arquitetura_A --dir=C:/Users/thiag/AppData/Local/Temp/alt0010_2468094280704341933.dir/0025_A_gen/ --quartus_dir=C:/intelfpga_lite/23.1std/quartus --verilog --config=C:/Users/thiag/AppData/Local/Temp/alt0010_2468094280704341933.dir/0025_A_gen//Arquitetura_A_component_configuration.pl --do_build_sim=0}]
-Info: A: Done RTL generation for module 'Arquitetura_A'
-Info: A: "Arquitetura" instantiated altera_avalon_pio "A"
-Info: Direction_Analogic: Starting RTL generation for module 'Arquitetura_Direction_Analogic'
-Info: Direction_Analogic:   Generation command is [exec cmd /c {set LC_ALL=C&& C:/intelfpga_lite/23.1std/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/23.1std/quartus/bin64/perl/lib -I C:/intelfpga_lite/23.1std/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/23.1std/quartus/sopc_builder/bin -I C:/intelfpga_lite/23.1std/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/23.1std/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/23.1std/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=Arquitetura_Direction_Analogic --dir=C:/Users/thiag/AppData/Local/Temp/alt0010_2468094280704341933.dir/0026_Direction_Analogic_gen/ --quartus_dir=C:/intelfpga_lite/23.1std/quartus --verilog --config=C:/Users/thiag/AppData/Local/Temp/alt0010_2468094280704341933.dir/0026_Direction_Analogic_gen//Arquitetura_Direction_Analogic_component_configuration.pl --do_build_sim=0}]
-Info: Direction_Analogic: Done RTL generation for module 'Arquitetura_Direction_Analogic'
-Info: Direction_Analogic: "Arquitetura" instantiated altera_avalon_pio "Direction_Analogic"
 Info: data_A: Starting RTL generation for module 'Arquitetura_data_A'
-Info: data_A:   Generation command is [exec cmd /c {set LC_ALL=C&& C:/intelfpga_lite/23.1std/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/23.1std/quartus/bin64/perl/lib -I C:/intelfpga_lite/23.1std/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/23.1std/quartus/sopc_builder/bin -I C:/intelfpga_lite/23.1std/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/23.1std/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/23.1std/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=Arquitetura_data_A --dir=C:/Users/thiag/AppData/Local/Temp/alt0010_2468094280704341933.dir/0027_data_A_gen/ --quartus_dir=C:/intelfpga_lite/23.1std/quartus --verilog --config=C:/Users/thiag/AppData/Local/Temp/alt0010_2468094280704341933.dir/0027_data_A_gen//Arquitetura_data_A_component_configuration.pl --do_build_sim=0}]
+Info: data_A:   Generation command is [exec cmd /c {set LC_ALL=C&& C:/intelfpga_lite/23.1std/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/23.1std/quartus/bin64/perl/lib -I C:/intelfpga_lite/23.1std/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/23.1std/quartus/sopc_builder/bin -I C:/intelfpga_lite/23.1std/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/23.1std/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/23.1std/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=Arquitetura_data_A --dir=C:/Users/thiag/AppData/Local/Temp/alt0112_1111740902504810393.dir/0004_data_A_gen/ --quartus_dir=C:/intelfpga_lite/23.1std/quartus --verilog --config=C:/Users/thiag/AppData/Local/Temp/alt0112_1111740902504810393.dir/0004_data_A_gen//Arquitetura_data_A_component_configuration.pl --do_build_sim=0}]
 Info: data_A: Done RTL generation for module 'Arquitetura_data_A'
 Info: data_A: "Arquitetura" instantiated altera_avalon_pio "data_A"
+Info: irq_joystick: Starting RTL generation for module 'Arquitetura_irq_joystick'
+Info: irq_joystick:   Generation command is [exec cmd /c {set LC_ALL=C&& C:/intelfpga_lite/23.1std/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/23.1std/quartus/bin64/perl/lib -I C:/intelfpga_lite/23.1std/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/23.1std/quartus/sopc_builder/bin -I C:/intelfpga_lite/23.1std/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/23.1std/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/23.1std/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=Arquitetura_irq_joystick --dir=C:/Users/thiag/AppData/Local/Temp/alt0112_1111740902504810393.dir/0005_irq_joystick_gen/ --quartus_dir=C:/intelfpga_lite/23.1std/quartus --verilog --config=C:/Users/thiag/AppData/Local/Temp/alt0112_1111740902504810393.dir/0005_irq_joystick_gen//Arquitetura_irq_joystick_component_configuration.pl --do_build_sim=0}]
+Info: irq_joystick: Done RTL generation for module 'Arquitetura_irq_joystick'
+Info: irq_joystick: "Arquitetura" instantiated altera_avalon_pio "irq_joystick"
 Info: jtag_uart_0: Starting RTL generation for module 'Arquitetura_jtag_uart_0'
-Info: jtag_uart_0:   Generation command is [exec cmd /c {set LC_ALL=C&& C:/intelfpga_lite/23.1std/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/23.1std/quartus/bin64/perl/lib -I C:/intelfpga_lite/23.1std/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/23.1std/quartus/sopc_builder/bin -I C:/intelfpga_lite/23.1std/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/23.1std/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- C:/intelfpga_lite/23.1std/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=Arquitetura_jtag_uart_0 --dir=C:/Users/thiag/AppData/Local/Temp/alt0010_2468094280704341933.dir/0028_jtag_uart_0_gen/ --quartus_dir=C:/intelfpga_lite/23.1std/quartus --verilog --config=C:/Users/thiag/AppData/Local/Temp/alt0010_2468094280704341933.dir/0028_jtag_uart_0_gen//Arquitetura_jtag_uart_0_component_configuration.pl --do_build_sim=0}]
+Info: jtag_uart_0:   Generation command is [exec cmd /c {set LC_ALL=C&& C:/intelfpga_lite/23.1std/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/23.1std/quartus/bin64/perl/lib -I C:/intelfpga_lite/23.1std/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/23.1std/quartus/sopc_builder/bin -I C:/intelfpga_lite/23.1std/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/23.1std/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- C:/intelfpga_lite/23.1std/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=Arquitetura_jtag_uart_0 --dir=C:/Users/thiag/AppData/Local/Temp/alt0112_1111740902504810393.dir/0006_jtag_uart_0_gen/ --quartus_dir=C:/intelfpga_lite/23.1std/quartus --verilog --config=C:/Users/thiag/AppData/Local/Temp/alt0112_1111740902504810393.dir/0006_jtag_uart_0_gen//Arquitetura_jtag_uart_0_component_configuration.pl --do_build_sim=0}]
 Info: jtag_uart_0: Done RTL generation for module 'Arquitetura_jtag_uart_0'
 Info: jtag_uart_0: "Arquitetura" instantiated altera_avalon_jtag_uart "jtag_uart_0"
 Info: nios2_gen2_0: "Arquitetura" instantiated altera_nios2_gen2 "nios2_gen2_0"
 Info: onchip_memory2_0: Starting RTL generation for module 'Arquitetura_onchip_memory2_0'
-Info: onchip_memory2_0:   Generation command is [exec cmd /c {set LC_ALL=C&& C:/intelfpga_lite/23.1std/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/23.1std/quartus/bin64/perl/lib -I C:/intelfpga_lite/23.1std/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/23.1std/quartus/sopc_builder/bin -I C:/intelfpga_lite/23.1std/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/23.1std/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/intelfpga_lite/23.1std/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=Arquitetura_onchip_memory2_0 --dir=C:/Users/thiag/AppData/Local/Temp/alt0010_2468094280704341933.dir/0029_onchip_memory2_0_gen/ --quartus_dir=C:/intelfpga_lite/23.1std/quartus --verilog --config=C:/Users/thiag/AppData/Local/Temp/alt0010_2468094280704341933.dir/0029_onchip_memory2_0_gen//Arquitetura_onchip_memory2_0_component_configuration.pl --do_build_sim=0}]
+Info: onchip_memory2_0:   Generation command is [exec cmd /c {set LC_ALL=C&& C:/intelfpga_lite/23.1std/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/23.1std/quartus/bin64/perl/lib -I C:/intelfpga_lite/23.1std/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/23.1std/quartus/sopc_builder/bin -I C:/intelfpga_lite/23.1std/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/23.1std/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/intelfpga_lite/23.1std/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=Arquitetura_onchip_memory2_0 --dir=C:/Users/thiag/AppData/Local/Temp/alt0112_1111740902504810393.dir/0007_onchip_memory2_0_gen/ --quartus_dir=C:/intelfpga_lite/23.1std/quartus --verilog --config=C:/Users/thiag/AppData/Local/Temp/alt0112_1111740902504810393.dir/0007_onchip_memory2_0_gen//Arquitetura_onchip_memory2_0_component_configuration.pl --do_build_sim=0}]
 Info: onchip_memory2_0: Done RTL generation for module 'Arquitetura_onchip_memory2_0'
 Info: onchip_memory2_0: "Arquitetura" instantiated altera_avalon_onchip_memory2 "onchip_memory2_0"
+Info: rd_joystick_lsb: Starting RTL generation for module 'Arquitetura_rd_joystick_lsb'
+Info: rd_joystick_lsb:   Generation command is [exec cmd /c {set LC_ALL=C&& C:/intelfpga_lite/23.1std/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/23.1std/quartus/bin64/perl/lib -I C:/intelfpga_lite/23.1std/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/23.1std/quartus/sopc_builder/bin -I C:/intelfpga_lite/23.1std/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/23.1std/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/23.1std/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=Arquitetura_rd_joystick_lsb --dir=C:/Users/thiag/AppData/Local/Temp/alt0112_1111740902504810393.dir/0008_rd_joystick_lsb_gen/ --quartus_dir=C:/intelfpga_lite/23.1std/quartus --verilog --config=C:/Users/thiag/AppData/Local/Temp/alt0112_1111740902504810393.dir/0008_rd_joystick_lsb_gen//Arquitetura_rd_joystick_lsb_component_configuration.pl --do_build_sim=0}]
+Info: rd_joystick_lsb: Done RTL generation for module 'Arquitetura_rd_joystick_lsb'
+Info: rd_joystick_lsb: "Arquitetura" instantiated altera_avalon_pio "rd_joystick_lsb"
 Info: reset_pulseCounter: Starting RTL generation for module 'Arquitetura_reset_pulseCounter'
-Info: reset_pulseCounter:   Generation command is [exec cmd /c {set LC_ALL=C&& C:/intelfpga_lite/23.1std/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/23.1std/quartus/bin64/perl/lib -I C:/intelfpga_lite/23.1std/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/23.1std/quartus/sopc_builder/bin -I C:/intelfpga_lite/23.1std/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/23.1std/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/23.1std/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=Arquitetura_reset_pulseCounter --dir=C:/Users/thiag/AppData/Local/Temp/alt0010_2468094280704341933.dir/0030_reset_pulseCounter_gen/ --quartus_dir=C:/intelfpga_lite/23.1std/quartus --verilog --config=C:/Users/thiag/AppData/Local/Temp/alt0010_2468094280704341933.dir/0030_reset_pulseCounter_gen//Arquitetura_reset_pulseCounter_component_configuration.pl --do_build_sim=0}]
+Info: reset_pulseCounter:   Generation command is [exec cmd /c {set LC_ALL=C&& C:/intelfpga_lite/23.1std/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/23.1std/quartus/bin64/perl/lib -I C:/intelfpga_lite/23.1std/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/23.1std/quartus/sopc_builder/bin -I C:/intelfpga_lite/23.1std/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/23.1std/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/23.1std/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=Arquitetura_reset_pulseCounter --dir=C:/Users/thiag/AppData/Local/Temp/alt0112_1111740902504810393.dir/0009_reset_pulseCounter_gen/ --quartus_dir=C:/intelfpga_lite/23.1std/quartus --verilog --config=C:/Users/thiag/AppData/Local/Temp/alt0112_1111740902504810393.dir/0009_reset_pulseCounter_gen//Arquitetura_reset_pulseCounter_component_configuration.pl --do_build_sim=0}]
 Info: reset_pulseCounter: Done RTL generation for module 'Arquitetura_reset_pulseCounter'
 Info: reset_pulseCounter: "Arquitetura" instantiated altera_avalon_pio "reset_pulseCounter"
+Info: screen: Starting RTL generation for module 'Arquitetura_screen'
+Info: screen:   Generation command is [exec cmd /c {set LC_ALL=C&& C:/intelfpga_lite/23.1std/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/23.1std/quartus/bin64/perl/lib -I C:/intelfpga_lite/23.1std/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/23.1std/quartus/sopc_builder/bin -I C:/intelfpga_lite/23.1std/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/23.1std/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/23.1std/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=Arquitetura_screen --dir=C:/Users/thiag/AppData/Local/Temp/alt0112_1111740902504810393.dir/0010_screen_gen/ --quartus_dir=C:/intelfpga_lite/23.1std/quartus --verilog --config=C:/Users/thiag/AppData/Local/Temp/alt0112_1111740902504810393.dir/0010_screen_gen//Arquitetura_screen_component_configuration.pl --do_build_sim=0}]
+Info: screen: Done RTL generation for module 'Arquitetura_screen'
+Info: screen: "Arquitetura" instantiated altera_avalon_pio "screen"
 Info: sysid_qsys_0: "Arquitetura" instantiated altera_avalon_sysid_qsys "sysid_qsys_0"
+Info: uart_interface_0: "Arquitetura" instantiated uart_interface "uart_interface_0"
 Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
 Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
 Info: avalon_st_adapter_002: Inserting error_adapter: error_adapter_0
@@ -321,19 +156,17 @@ Info: avalon_st_adapter_013: Inserting error_adapter: error_adapter_0
 Info: avalon_st_adapter_014: Inserting error_adapter: error_adapter_0
 Info: avalon_st_adapter_015: Inserting error_adapter: error_adapter_0
 Info: avalon_st_adapter_016: Inserting error_adapter: error_adapter_0
-Info: avalon_st_adapter_017: Inserting error_adapter: error_adapter_0
-Info: avalon_st_adapter_018: Inserting error_adapter: error_adapter_0
 Info: mm_interconnect_0: "Arquitetura" instantiated altera_mm_interconnect "mm_interconnect_0"
 Info: irq_mapper: "Arquitetura" instantiated altera_irq_mapper "irq_mapper"
 Info: rst_controller: "Arquitetura" instantiated altera_reset_controller "rst_controller"
 Info: cpu: Starting RTL generation for module 'Arquitetura_nios2_gen2_0_cpu'
-Info: cpu:   Generation command is [exec C:/intelFPGA_lite/23.1std/quartus/bin64//perl/bin/perl.exe -I C:/intelFPGA_lite/23.1std/quartus/bin64//perl/lib -I C:/intelfpga_lite/23.1std/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/23.1std/quartus/sopc_builder/bin -I C:/intelfpga_lite/23.1std/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/cpu_lib -I C:/intelfpga_lite/23.1std/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/nios_lib -I C:/intelfpga_lite/23.1std/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -I C:/intelfpga_lite/23.1std/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -- C:/intelfpga_lite/23.1std/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/generate_rtl.pl --name=Arquitetura_nios2_gen2_0_cpu --dir=C:/Users/thiag/AppData/Local/Temp/alt0010_2468094280704341933.dir/0034_cpu_gen/ --quartus_bindir=C:/intelFPGA_lite/23.1std/quartus/bin64/ --verilog --config=C:/Users/thiag/AppData/Local/Temp/alt0010_2468094280704341933.dir/0034_cpu_gen//Arquitetura_nios2_gen2_0_cpu_processor_configuration.pl  --do_build_sim=0  ]
-Info: cpu: # 2024.10.13 22:30:46 (*) Starting Nios II generation
-Info: cpu: # 2024.10.13 22:30:46 (*)   Elaborating CPU configuration settings
-Info: cpu: # 2024.10.13 22:30:46 (*)   Creating all objects for CPU
-Info: cpu: # 2024.10.13 22:30:47 (*)   Generating RTL from CPU objects
-Info: cpu: # 2024.10.13 22:30:47 (*)   Creating plain-text RTL
-Info: cpu: # 2024.10.13 22:30:47 (*) Done Nios II generation
+Info: cpu:   Generation command is [exec C:/intelFPGA_lite/23.1std/quartus/bin64//perl/bin/perl.exe -I C:/intelFPGA_lite/23.1std/quartus/bin64//perl/lib -I C:/intelfpga_lite/23.1std/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/23.1std/quartus/sopc_builder/bin -I C:/intelfpga_lite/23.1std/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/cpu_lib -I C:/intelfpga_lite/23.1std/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/nios_lib -I C:/intelfpga_lite/23.1std/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -I C:/intelfpga_lite/23.1std/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -- C:/intelfpga_lite/23.1std/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/generate_rtl.pl --name=Arquitetura_nios2_gen2_0_cpu --dir=C:/Users/thiag/AppData/Local/Temp/alt0112_1111740902504810393.dir/0015_cpu_gen/ --quartus_bindir=C:/intelFPGA_lite/23.1std/quartus/bin64/ --verilog --config=C:/Users/thiag/AppData/Local/Temp/alt0112_1111740902504810393.dir/0015_cpu_gen//Arquitetura_nios2_gen2_0_cpu_processor_configuration.pl  --do_build_sim=0  ]
+Info: cpu: # 2025.01.24 00:37:24 (*) Starting Nios II generation
+Info: cpu: # 2025.01.24 00:37:24 (*)   Elaborating CPU configuration settings
+Info: cpu: # 2025.01.24 00:37:24 (*)   Creating all objects for CPU
+Info: cpu: # 2025.01.24 00:37:25 (*)   Generating RTL from CPU objects
+Info: cpu: # 2025.01.24 00:37:25 (*)   Creating plain-text RTL
+Info: cpu: # 2025.01.24 00:37:26 (*) Done Nios II generation
 Info: cpu: Done RTL generation for module 'Arquitetura_nios2_gen2_0_cpu'
 Info: cpu: "nios2_gen2_0" instantiated altera_nios2_gen2_unit "cpu"
 Info: nios2_gen2_0_data_master_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "nios2_gen2_0_data_master_translator"
@@ -342,14 +175,22 @@ Info: nios2_gen2_0_data_master_agent: "mm_interconnect_0" instantiated altera_me
 Info: jtag_uart_0_avalon_jtag_slave_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "jtag_uart_0_avalon_jtag_slave_agent"
 Info: jtag_uart_0_avalon_jtag_slave_agent_rsp_fifo: "mm_interconnect_0" instantiated altera_avalon_sc_fifo "jtag_uart_0_avalon_jtag_slave_agent_rsp_fifo"
 Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
+Info: router_001: "mm_interconnect_0" instantiated altera_merlin_router "router_001"
 Info: router_002: "mm_interconnect_0" instantiated altera_merlin_router "router_002"
+Info: router_003: "mm_interconnect_0" instantiated altera_merlin_router "router_003"
 Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_demux_001: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux_001"
 Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: cmd_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux_001"
+Info: Reusing file C:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/Arquitetura/synthesis/submodules/altera_merlin_arbitrator.sv
 Info: rsp_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: rsp_demux_001: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux_001"
 Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file C:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/Arquitetura/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux_001"
 Info: Reusing file C:/Users/thiag/Downloads/CoLendaFPGA/CoLendaFPGA/DE0-Nano/Arquitetura/synthesis/submodules/altera_merlin_arbitrator.sv
 Info: avalon_st_adapter: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter"
 Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
-Info: Arquitetura: Done "Arquitetura" with 26 modules, 39 files
+Info: Arquitetura: Done "Arquitetura" with 34 modules, 56 files
 Info: qsys-generate succeeded.
 Info: Finished: Create HDL design files for synthesis
